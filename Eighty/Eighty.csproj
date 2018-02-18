@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>benjamin.hodgson</Authors>
+    <Copyright>© Benjamin Hodgson, 2017</Copyright>
+    <Description>A simple HTML generation library, developed at Stack Overflow.</Description>
+    <PackageTags>parser;parsing;language;compiler</PackageTags>
+
+    <PackageProjectUrl>https://github.com/benjamin-hodgson/Eighty</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/benjamin-hodgson/Eighty.git</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/benjamin-hodgson/Eighty/blob/master/LICENSE</PackageLicenseUrl>
+
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Collections.Immutable" Version="1.2.0" />
+  </ItemGroup>
+
+</Project>

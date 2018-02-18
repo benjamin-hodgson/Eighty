@@ -1,0 +1,36 @@
+image: Visual Studio 2017
+configuration: Release
+
+environment:
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+
+nuget:
+  project_feed: true
+  disable_publish_on_pr: true
+
+install:
+  - ps: |
+      $lastTag = git describe --abbrev=0
+      Update-AppveyorBuild -Version "$lastTag-$env:APPVEYOR_BUILD_NUMBER"
+  - cmd: msbuild Eighty.sln /t:restore /p:Configuration=%CONFIGURATION% /v:Minimal
+
+build:
+  project: Eighty.sln
+  verbosity: minimal
+
+after_test:
+  - cmd: dotnet run --configuration %CONFIGURATION% --project Eighty.Bench\Eighty.Bench.csproj
+  - cmd: msbuild Eighty.sln /t:pack /p:Configuration=%CONFIGURATION% /p:IncludeSymbols=true /p:PackageOutputPath=..\nupkgs /v:Minimal
+
+artifacts:
+  - type: NuGetPackage
+    path: nupkgs/*.nupkg
+  - path: BenchmarkDotNet.Artifacts
+
+deploy:
+  provider: NuGet
+  skip_symbols: false
+  api_key:
+    secure: 6sWyJaYueWQvYVwXXKGde44Wpnb0H9/Bnf5JXZVZOKBnoR7V48HRGYwCFz3f7dZz
+  on:
+    appveyor_repo_tag: true
