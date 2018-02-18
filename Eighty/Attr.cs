@@ -10,7 +10,8 @@ namespace Eighty
     /// </summary>
     public readonly struct Attr
     {
-        private readonly string _val;
+        private readonly string _name;
+        private readonly string _value;
 
         /// <summary>
         /// Create an HTML attribute.
@@ -27,7 +28,8 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(value));
             }
-            _val = WebUtility.HtmlEncode(name) + "=\"" + WebUtility.HtmlEncode(value) + "\"";
+            _name = WebUtility.HtmlEncode(name);
+            _value = WebUtility.HtmlEncode(value);
         }
 
         /// <summary>
@@ -40,7 +42,8 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(name));
             }
-            _val = WebUtility.HtmlEncode(name);
+            _name = WebUtility.HtmlEncode(name);
+            _value = null;
         }
 
         /// <summary>
@@ -56,7 +59,8 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(value));
             }
-            _val = name + "=\"" + value + "\"";
+            _name = name;
+            _value = value;
         }
 
         /// <summary>
@@ -68,15 +72,30 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(name));
             }
-            _val = name;
+            _name = name;
+            _value = null;
         }
 
         internal void Write(TextWriter writer)
         {
-            writer.Write(_val);
+            writer.Write(_name);
+            if (_value != null)
+            {
+                writer.Write("=\"");
+                writer.Write(_value);
+                writer.Write('"');
+            }
         }
-        internal Task WriteAsync(TextWriter writer)
-            => writer.WriteAsync(_val);
+        internal async Task WriteAsync(TextWriter writer)
+        {
+            await writer.WriteAsync(_name).ConfigureAwait(false);
+            if (_value != null)
+            {
+                await writer.WriteAsync("=\"").ConfigureAwait(false);
+                await writer.WriteAsync(_value).ConfigureAwait(false);
+                await writer.WriteAsync('"').ConfigureAwait(false);
+            }
+        }
 
         /// <summary>
         /// Create an HTML attribute without HTML-encoding the name and value first.
