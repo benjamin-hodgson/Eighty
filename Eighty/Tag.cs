@@ -11,9 +11,9 @@ namespace Eighty
         private readonly ImmutableArray<Attr> _attributes;
         private readonly ImmutableArray<Html> _children;
 
-        public Tag(string tagName, ImmutableArray<Attr> attributes, ImmutableArray<Html> children)
+        public Tag(string name, ImmutableArray<Attr> attributes, ImmutableArray<Html> children)
         {
-            _tagName = HtmlEncoder.Default.Encode(tagName);
+            _tagName = name;
             _attributes = attributes;
             _children = children;
         }

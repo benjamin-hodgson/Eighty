@@ -13,6 +13,7 @@ namespace Eighty.CodeGen
             return $@"#region GeneratedCode
 using System;
 using System.Collections.Immutable;
+using System.Text.Encodings.Web;
 
 namespace Eighty
 {{
@@ -31,7 +32,7 @@ namespace Eighty
         /// </summary>
         public static TagBuilder Tag(string name, {AttrParams(number)})
         {{
-            return new TagBuilder(name, ImmutableArrayFactory.Create({AttrArgs(number)}));
+            return new TagBuilder(HtmlEncoder.Default.Encode(name), ImmutableArrayFactory.Create({AttrArgs(number)}));
         }}
 ";
         private string TagUnderscoreMethod(int number)
@@ -41,7 +42,7 @@ namespace Eighty
         /// </summary>
         public static Html Tag_(string name, {ChildParams(number)})
         {{{CheckChildNulls(number)}
-            return new Tag(name, ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create({ChildArgs(number)}));
+            return new Tag(HtmlEncoder.Default.Encode(name), ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create({ChildArgs(number)}));
         }}
 ";
         private string SelfClosingTagMethod(int number)
@@ -51,7 +52,7 @@ namespace Eighty
         /// </summary>
         public static Html SelfClosingTag(string name, {AttrParams(number)})
         {{
-            return new SelfClosingTag(name, ImmutableArrayFactory.Create({AttrArgs(number)}));
+            return new SelfClosingTag(HtmlEncoder.Default.Encode(name), ImmutableArrayFactory.Create({AttrArgs(number)}));
         }}
 ";
     }

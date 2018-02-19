@@ -74,7 +74,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder(name, attrs.ToImmutableArray());
+            return new TagBuilder(HtmlEncoder.Default.Encode(name), attrs.ToImmutableArray());
         }
 
 
@@ -120,7 +120,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag(name, ImmutableArray.Create<Attr>(), children);
+            return new Tag(HtmlEncoder.Default.Encode(name), ImmutableArray.Create<Attr>(), children);
         }
 
         
@@ -139,7 +139,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new SelfClosingTag(name, attrs.ToImmutableArray());
+            return new SelfClosingTag(HtmlEncoder.Default.Encode(name), attrs.ToImmutableArray());
         }
 
 

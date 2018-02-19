@@ -1,6 +1,7 @@
 #region GeneratedCode
 using System;
 using System.Collections.Immutable;
+using System.Text.Encodings.Web;
 
 namespace Eighty
 {
@@ -11,7 +12,7 @@ namespace Eighty
         /// </summary>
         public static TagBuilder Tag(string name, Attr attr1)
         {
-            return new TagBuilder(name, ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder(HtmlEncoder.Default.Encode(name), ImmutableArrayFactory.Create(attr1));
         }
 
         /// <summary>
@@ -19,7 +20,7 @@ namespace Eighty
         /// </summary>
         public static TagBuilder Tag(string name, Attr attr1, Attr attr2)
         {
-            return new TagBuilder(name, ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder(HtmlEncoder.Default.Encode(name), ImmutableArrayFactory.Create(attr1, attr2));
         }
 
         /// <summary>
@@ -27,7 +28,7 @@ namespace Eighty
         /// </summary>
         public static TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder(name, ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder(HtmlEncoder.Default.Encode(name), ImmutableArrayFactory.Create(attr1, attr2, attr3));
         }
 
         /// <summary>
@@ -35,7 +36,7 @@ namespace Eighty
         /// </summary>
         public static TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder(name, ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder(HtmlEncoder.Default.Encode(name), ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
         }
 
         /// <summary>
@@ -43,7 +44,7 @@ namespace Eighty
         /// </summary>
         public static TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder(name, ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder(HtmlEncoder.Default.Encode(name), ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
         }
 
         /// <summary>
@@ -51,7 +52,7 @@ namespace Eighty
         /// </summary>
         public static TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder(name, ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder(HtmlEncoder.Default.Encode(name), ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
         }
 
         /// <summary>
@@ -59,7 +60,7 @@ namespace Eighty
         /// </summary>
         public static TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder(name, ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder(HtmlEncoder.Default.Encode(name), ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
         }
 
         /// <summary>
@@ -67,7 +68,7 @@ namespace Eighty
         /// </summary>
         public static TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder(name, ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder(HtmlEncoder.Default.Encode(name), ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
         }
 
         /// <summary>
@@ -79,7 +80,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag(name, ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag(HtmlEncoder.Default.Encode(name), ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
         }
 
         /// <summary>
@@ -95,7 +96,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag(name, ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag(HtmlEncoder.Default.Encode(name), ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
         }
 
         /// <summary>
@@ -115,7 +116,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag(name, ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag(HtmlEncoder.Default.Encode(name), ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
         }
 
         /// <summary>
@@ -139,7 +140,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag(name, ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag(HtmlEncoder.Default.Encode(name), ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
         }
 
         /// <summary>
@@ -167,7 +168,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag(name, ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag(HtmlEncoder.Default.Encode(name), ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
         }
 
         /// <summary>
@@ -199,7 +200,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag(name, ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag(HtmlEncoder.Default.Encode(name), ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
         }
 
         /// <summary>
@@ -235,7 +236,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag(name, ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag(HtmlEncoder.Default.Encode(name), ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
         }
 
         /// <summary>
@@ -275,7 +276,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag(name, ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag(HtmlEncoder.Default.Encode(name), ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
         }
 
         /// <summary>
@@ -283,7 +284,7 @@ namespace Eighty
         /// </summary>
         public static Html SelfClosingTag(string name, Attr attr1)
         {
-            return new SelfClosingTag(name, ImmutableArrayFactory.Create(attr1));
+            return new SelfClosingTag(HtmlEncoder.Default.Encode(name), ImmutableArrayFactory.Create(attr1));
         }
 
         /// <summary>
@@ -291,7 +292,7 @@ namespace Eighty
         /// </summary>
         public static Html SelfClosingTag(string name, Attr attr1, Attr attr2)
         {
-            return new SelfClosingTag(name, ImmutableArrayFactory.Create(attr1, attr2));
+            return new SelfClosingTag(HtmlEncoder.Default.Encode(name), ImmutableArrayFactory.Create(attr1, attr2));
         }
 
         /// <summary>
@@ -299,7 +300,7 @@ namespace Eighty
         /// </summary>
         public static Html SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3)
         {
-            return new SelfClosingTag(name, ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new SelfClosingTag(HtmlEncoder.Default.Encode(name), ImmutableArrayFactory.Create(attr1, attr2, attr3));
         }
 
         /// <summary>
@@ -307,7 +308,7 @@ namespace Eighty
         /// </summary>
         public static Html SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new SelfClosingTag(name, ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new SelfClosingTag(HtmlEncoder.Default.Encode(name), ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
         }
 
         /// <summary>
@@ -315,7 +316,7 @@ namespace Eighty
         /// </summary>
         public static Html SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new SelfClosingTag(name, ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new SelfClosingTag(HtmlEncoder.Default.Encode(name), ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
         }
 
         /// <summary>
@@ -323,7 +324,7 @@ namespace Eighty
         /// </summary>
         public static Html SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new SelfClosingTag(name, ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new SelfClosingTag(HtmlEncoder.Default.Encode(name), ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
         }
 
         /// <summary>
@@ -331,7 +332,7 @@ namespace Eighty
         /// </summary>
         public static Html SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new SelfClosingTag(name, ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new SelfClosingTag(HtmlEncoder.Default.Encode(name), ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
         }
 
         /// <summary>
@@ -339,7 +340,7 @@ namespace Eighty
         /// </summary>
         public static Html SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new SelfClosingTag(name, ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new SelfClosingTag(HtmlEncoder.Default.Encode(name), ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
         }
     }
 }

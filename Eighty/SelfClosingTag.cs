@@ -7,19 +7,19 @@ namespace Eighty
 {
     internal sealed class SelfClosingTag : Html
     {
-        private readonly string _tagName;
+        private readonly string _name;
         private readonly ImmutableArray<Attr> _attributes;
 
-        public SelfClosingTag(string tagName, ImmutableArray<Attr> attributes)
+        public SelfClosingTag(string name, ImmutableArray<Attr> attributes)
         {
-            _tagName = HtmlEncoder.Default.Encode(tagName);
+            _name = name;
             _attributes = attributes;
         }
 
         internal override void WriteImpl(TextWriter writer)
         {
             writer.Write('<');
-            writer.Write(_tagName);
+            writer.Write(_name);
 
             foreach (var attr in _attributes)
             {
@@ -33,7 +33,7 @@ namespace Eighty
         internal override async Task WriteAsyncImpl(TextWriter writer)
         {
             await writer.WriteAsync('<').ConfigureAwait(false);
-            await writer.WriteAsync(_tagName).ConfigureAwait(false);
+            await writer.WriteAsync(_name).ConfigureAwait(false);
 
             foreach (var attr in _attributes)
             {

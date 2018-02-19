@@ -14,9 +14,9 @@ namespace Eighty
         private readonly string _name;
         private readonly ImmutableArray<Attr> _attrs;
 
-        internal TagBuilder(string tagName, ImmutableArray<Attr> attributes)
+        internal TagBuilder(string name, ImmutableArray<Attr> attributes)
         {
-            _name = tagName;
+            _name = name;
             _attrs = attributes;
         }
 
