@@ -1,6 +1,6 @@
 using System.Collections.Immutable;
 using System.IO;
-using System.Net;
+using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 
 namespace Eighty
@@ -12,7 +12,7 @@ namespace Eighty
 
         public SelfClosingTag(string tagName, ImmutableArray<Attr> attributes)
         {
-            _tagName = WebUtility.HtmlEncode(tagName);
+            _tagName = HtmlEncoder.Default.Encode(tagName);
             _attributes = attributes;
         }
 

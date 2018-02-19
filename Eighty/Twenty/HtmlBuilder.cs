@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Net;
+using System.Text.Encodings.Web;
 
 namespace Eighty.Twenty
 {
@@ -59,7 +59,7 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
         protected TagBuilder Tag(string name, params Attr[] attrs)
         {
-            var safeName = WebUtility.HtmlEncode(name);
+            var safeName = HtmlEncoder.Default.Encode(name);
             StartTag(safeName);
             Attrs(attrs);
             _writer.Write('>');
@@ -71,7 +71,7 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
         protected TagBuilder Tag(string name, IEnumerable<Attr> attrs)
         {
-            var safeName = WebUtility.HtmlEncode(name);
+            var safeName = HtmlEncoder.Default.Encode(name);
             StartTag(safeName);
             Attrs(attrs);
             _writer.Write('>');
@@ -83,7 +83,7 @@ namespace Eighty.Twenty
         /// </summary>
         protected void SelfClosingTag(string name, params Attr[] attrs)
         {
-            StartTag(WebUtility.HtmlEncode(name));
+            StartTag(HtmlEncoder.Default.Encode(name));
             Attrs(attrs);
             _writer.Write("/>");
         }
@@ -92,7 +92,7 @@ namespace Eighty.Twenty
         /// </summary>
         protected void SelfClosingTag(string name, IEnumerable<Attr> attrs)
         {
-            StartTag(WebUtility.HtmlEncode(name));
+            StartTag(HtmlEncoder.Default.Encode(name));
             Attrs(attrs);
             _writer.Write("/>");
         }
@@ -103,7 +103,7 @@ namespace Eighty.Twenty
         /// <param name="text">The text to HTML-encode</param>
         protected void Text(string text)
         {
-            _writer.Write(WebUtility.HtmlEncode(text));
+            _writer.Write(HtmlEncoder.Default.Encode(text));
         }
 
         /// <summary>

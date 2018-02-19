@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Net;
+using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 
 namespace Eighty
@@ -12,6 +13,7 @@ namespace Eighty
     {
         private readonly string _name;
         private readonly string _value;
+        private readonly bool _shouldEncode;
 
         /// <summary>
         /// Create an HTML attribute.
@@ -28,8 +30,9 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(value));
             }
-            _name = WebUtility.HtmlEncode(name);
-            _value = WebUtility.HtmlEncode(value);
+            _name = name;
+            _value = value;
+            _shouldEncode = true;
         }
 
         /// <summary>
@@ -42,8 +45,9 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(name));
             }
-            _name = WebUtility.HtmlEncode(name);
+            _name = name;
             _value = null;
+            _shouldEncode = true;
         }
 
         /// <summary>
@@ -61,6 +65,7 @@ namespace Eighty
             }
             _name = name;
             _value = value;
+            _shouldEncode = false;
         }
 
         /// <summary>
@@ -74,25 +79,52 @@ namespace Eighty
             }
             _name = name;
             _value = null;
+            _shouldEncode = false;
         }
 
         internal void Write(TextWriter writer)
         {
-            writer.Write(_name);
-            if (_value != null)
+            if (_shouldEncode)
             {
-                writer.Write("=\"");
-                writer.Write(_value);
-                writer.Write('"');
+                HtmlEncoder.Default.Encode(writer, _name);
+                if (_value != null)
+                {
+                    writer.Write("=\"");
+                    HtmlEncoder.Default.Encode(writer, _value);
+                    writer.Write('"');
+                }
+            }
+            else
+            {
+                writer.Write(_name);
+                if (_value != null)
+                {
+                    writer.Write("=\"");
+                    writer.Write(_value);
+                    writer.Write('"');
+                }
             }
         }
         internal async Task WriteAsync(TextWriter writer)
         {
-            await writer.WriteAsync(_name).ConfigureAwait(false);
-            if (_value != null)
+            string name;
+            string value;
+            if (_shouldEncode)
+            {
+                // there's no async overload of Encode(TextWriter, string)
+                name = HtmlEncoder.Default.Encode(_name);
+                value = _value != null ? HtmlEncoder.Default.Encode(_value) : null;
+            }
+            else
+            {
+                name = _name;
+                value = _value;
+            }
+            await writer.WriteAsync(name).ConfigureAwait(false);
+            if (value != null)
             {
                 await writer.WriteAsync("=\"").ConfigureAwait(false);
-                await writer.WriteAsync(_value).ConfigureAwait(false);
+                await writer.WriteAsync(value).ConfigureAwait(false);
                 await writer.WriteAsync('"').ConfigureAwait(false);
             }
         }

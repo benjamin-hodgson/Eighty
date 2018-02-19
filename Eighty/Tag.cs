@@ -1,6 +1,6 @@
 using System.Collections.Immutable;
 using System.IO;
-using System.Net;
+using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 
 namespace Eighty
@@ -13,7 +13,7 @@ namespace Eighty
 
         public Tag(string tagName, ImmutableArray<Attr> attributes, ImmutableArray<Html> children)
         {
-            _tagName = WebUtility.HtmlEncode(tagName);
+            _tagName = HtmlEncoder.Default.Encode(tagName);
             _attributes = attributes;
             _children = children;
         }

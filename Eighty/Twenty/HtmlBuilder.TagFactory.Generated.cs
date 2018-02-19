@@ -1,6 +1,6 @@
 #region GeneratedCode
 using System;
-using System.Net;
+using System.Text.Encodings.Web;
 
 namespace Eighty.Twenty
 {
@@ -12,7 +12,7 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
         protected TagBuilder Tag(string name, Attr attr1)
         {
-            var safeName = WebUtility.HtmlEncode(name);
+            var safeName = HtmlEncoder.Default.Encode(name);
             StartTag(safeName);
             Attrs(attr1);
             _writer.Write('>');
@@ -25,7 +25,7 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
         protected TagBuilder Tag(string name, Attr attr1, Attr attr2)
         {
-            var safeName = WebUtility.HtmlEncode(name);
+            var safeName = HtmlEncoder.Default.Encode(name);
             StartTag(safeName);
             Attrs(attr1, attr2);
             _writer.Write('>');
@@ -38,7 +38,7 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
         protected TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3)
         {
-            var safeName = WebUtility.HtmlEncode(name);
+            var safeName = HtmlEncoder.Default.Encode(name);
             StartTag(safeName);
             Attrs(attr1, attr2, attr3);
             _writer.Write('>');
@@ -51,7 +51,7 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
         protected TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            var safeName = WebUtility.HtmlEncode(name);
+            var safeName = HtmlEncoder.Default.Encode(name);
             StartTag(safeName);
             Attrs(attr1, attr2, attr3, attr4);
             _writer.Write('>');
@@ -64,7 +64,7 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
         protected TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            var safeName = WebUtility.HtmlEncode(name);
+            var safeName = HtmlEncoder.Default.Encode(name);
             StartTag(safeName);
             Attrs(attr1, attr2, attr3, attr4, attr5);
             _writer.Write('>');
@@ -77,7 +77,7 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
         protected TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            var safeName = WebUtility.HtmlEncode(name);
+            var safeName = HtmlEncoder.Default.Encode(name);
             StartTag(safeName);
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
             _writer.Write('>');
@@ -90,7 +90,7 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
         protected TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            var safeName = WebUtility.HtmlEncode(name);
+            var safeName = HtmlEncoder.Default.Encode(name);
             StartTag(safeName);
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
             _writer.Write('>');
@@ -103,7 +103,7 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
         protected TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            var safeName = WebUtility.HtmlEncode(name);
+            var safeName = HtmlEncoder.Default.Encode(name);
             StartTag(safeName);
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
             _writer.Write('>');
@@ -115,7 +115,7 @@ namespace Eighty.Twenty
         /// </summary>
         protected void SelfClosingTag(string name, Attr attr1)
         {
-            StartTag(WebUtility.HtmlEncode(name));
+            StartTag(HtmlEncoder.Default.Encode(name));
             Attrs(attr1);
             _writer.Write("/>");
         }
@@ -125,7 +125,7 @@ namespace Eighty.Twenty
         /// </summary>
         protected void SelfClosingTag(string name, Attr attr1, Attr attr2)
         {
-            StartTag(WebUtility.HtmlEncode(name));
+            StartTag(HtmlEncoder.Default.Encode(name));
             Attrs(attr1, attr2);
             _writer.Write("/>");
         }
@@ -135,7 +135,7 @@ namespace Eighty.Twenty
         /// </summary>
         protected void SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag(WebUtility.HtmlEncode(name));
+            StartTag(HtmlEncoder.Default.Encode(name));
             Attrs(attr1, attr2, attr3);
             _writer.Write("/>");
         }
@@ -145,7 +145,7 @@ namespace Eighty.Twenty
         /// </summary>
         protected void SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag(WebUtility.HtmlEncode(name));
+            StartTag(HtmlEncoder.Default.Encode(name));
             Attrs(attr1, attr2, attr3, attr4);
             _writer.Write("/>");
         }
@@ -155,7 +155,7 @@ namespace Eighty.Twenty
         /// </summary>
         protected void SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag(WebUtility.HtmlEncode(name));
+            StartTag(HtmlEncoder.Default.Encode(name));
             Attrs(attr1, attr2, attr3, attr4, attr5);
             _writer.Write("/>");
         }
@@ -165,7 +165,7 @@ namespace Eighty.Twenty
         /// </summary>
         protected void SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag(WebUtility.HtmlEncode(name));
+            StartTag(HtmlEncoder.Default.Encode(name));
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
             _writer.Write("/>");
         }
@@ -175,7 +175,7 @@ namespace Eighty.Twenty
         /// </summary>
         protected void SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag(WebUtility.HtmlEncode(name));
+            StartTag(HtmlEncoder.Default.Encode(name));
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
             _writer.Write("/>");
         }
@@ -185,7 +185,7 @@ namespace Eighty.Twenty
         /// </summary>
         protected void SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag(WebUtility.HtmlEncode(name));
+            StartTag(HtmlEncoder.Default.Encode(name));
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
             _writer.Write("/>");
         }

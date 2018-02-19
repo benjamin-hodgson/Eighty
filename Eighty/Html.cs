@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
-using System.Net;
+using System.Text.Encodings.Web;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -154,7 +154,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(text));
             }
-            return Raw(WebUtility.HtmlEncode(text));
+            return Raw(HtmlEncoder.Default.Encode(text));
         }
 
         /// <summary>
