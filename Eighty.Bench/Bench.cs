@@ -22,7 +22,7 @@ namespace Eighty.Bench
         [GlobalSetup]
         public void Setup()
         {
-            _flatPsEighty = _(Enumerable.Repeat(p_(), 1000));
+            _flatPsEighty = _(Enumerable.Repeat(p(@class: "para")._(), 1000));
             _deepPsEighty = DeepPs(1000);
             _flatPsTwenty = new FlatPs();
             _deepPsTwenty = new DeepPs();
@@ -31,11 +31,11 @@ namespace Eighty.Bench
         [Benchmark]
         public void Flat_Eighty_BuildAndRender()
         {
-            var p = p_();
+            var html = p(@class: "para<>")._();
             var builder = ImmutableArray.CreateBuilder<Html>(1000);
             for (var _ = 0; _ < 1000; _++)
             {
-                builder.Add(p);
+                builder.Add(html);
             }
             using (var writer = TextWriter.Null)
             {
@@ -49,7 +49,7 @@ namespace Eighty.Bench
             var builder = ImmutableArray.CreateBuilder<Html>(1000);
             for (var _ = 0; _ < 1000; _++)
             {
-                builder.Add(p_());
+                builder.Add(p(@class: "para<>")._());
             }
             using (var writer = TextWriter.Null)
             {
@@ -107,6 +107,6 @@ namespace Eighty.Bench
         private Html DeepPs(int lvl)
             => lvl == 0
                 ? Text("")
-                : p_(DeepPs(lvl-1));
+                : p(@class: "para<>")._(DeepPs(lvl-1));
     }
 }

@@ -8,7 +8,7 @@ namespace Eighty.Bench
         {
             for (var i = 0; i < 1000; i++)
             {
-                using (p()) { }
+                using (p(@class: "para<>")) { }
             }
         }
     }

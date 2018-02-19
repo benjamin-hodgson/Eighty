@@ -15,7 +15,7 @@ namespace Eighty.Bench
             {
                 return;
             }
-            using (p())
+            using (p(@class: "para<>"))
             {
                 _DeepPs(lvl-1);
             }
