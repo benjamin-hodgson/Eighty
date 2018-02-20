@@ -14,9 +14,6 @@ namespace Eighty
     /// </summary>
     public abstract partial class Html
     {
-        private static readonly ThreadLocal<ImmutableArray<Attr>.Builder> _attrBuilder
-            = new ThreadLocal<ImmutableArray<Attr>.Builder>(() => ImmutableArray.CreateBuilder<Attr>(0));
-            
         private protected Html() { }
 
         internal abstract void WriteImpl(TextWriter writer);

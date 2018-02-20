@@ -53,39 +53,46 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (xmlns != null)
             {
-                builder.Add(new Attr("xmlns", xmlns));
+                array[i] = new Attr("xmlns", xmlns);
+                i++;
             }
 
-            return new TagBuilder("html", builder.MoveToImmutable());
+            return new TagBuilder("html", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -502,35 +509,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("head", builder.MoveToImmutable());
+            return new TagBuilder("head", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -947,35 +960,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("body", builder.MoveToImmutable());
+            return new TagBuilder("body", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -1422,59 +1441,71 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (crossorigin != null)
             {
-                builder.Add(new Attr("crossorigin", crossorigin));
+                array[i] = new Attr("crossorigin", crossorigin);
+                i++;
             }
             if (rel != null)
             {
-                builder.Add(new Attr("rel", rel));
+                array[i] = new Attr("rel", rel);
+                i++;
             }
             if (href != null)
             {
-                builder.Add(new Attr("href", href));
+                array[i] = new Attr("href", href);
+                i++;
             }
             if (type != null)
             {
-                builder.Add(new Attr("type", type));
+                array[i] = new Attr("type", type);
+                i++;
             }
             if (media != null)
             {
-                builder.Add(new Attr("media", media));
+                array[i] = new Attr("media", media);
+                i++;
             }
             if (sizes != null)
             {
-                builder.Add(new Attr("sizes", sizes));
+                array[i] = new Attr("sizes", sizes);
+                i++;
             }
 
-            return new SelfClosingTag("link", builder.MoveToImmutable());
+            return new SelfClosingTag("link", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -1619,43 +1650,51 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (href != null)
             {
-                builder.Add(new Attr("href", href));
+                array[i] = new Attr("href", href);
+                i++;
             }
             if (target != null)
             {
-                builder.Add(new Attr("target", target));
+                array[i] = new Attr("target", target);
+                i++;
             }
 
-            return new SelfClosingTag("base", builder.MoveToImmutable());
+            return new SelfClosingTag("base", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -1800,43 +1839,51 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (charset != null)
             {
-                builder.Add(new Attr("charset", charset));
+                array[i] = new Attr("charset", charset);
+                i++;
             }
             if (target != null)
             {
-                builder.Add(new Attr("target", target));
+                array[i] = new Attr("target", target);
+                i++;
             }
 
-            return new SelfClosingTag("meta", builder.MoveToImmutable());
+            return new SelfClosingTag("meta", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -1981,43 +2028,51 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (type != null)
             {
-                builder.Add(new Attr("type", type));
+                array[i] = new Attr("type", type);
+                i++;
             }
             if (media != null)
             {
-                builder.Add(new Attr("media", media));
+                array[i] = new Attr("media", media);
+                i++;
             }
 
-            return new TagBuilder("style", builder.MoveToImmutable());
+            return new TagBuilder("style", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -2434,35 +2489,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("title", builder.MoveToImmutable());
+            return new TagBuilder("title", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -2899,51 +2960,61 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (type != null)
             {
-                builder.Add(new Attr("type", type));
+                array[i] = new Attr("type", type);
+                i++;
             }
             if (src != null)
             {
-                builder.Add(new Attr("src", src));
+                array[i] = new Attr("src", src);
+                i++;
             }
             if (crossorigin != null)
             {
-                builder.Add(new Attr("crossorigin", crossorigin));
+                array[i] = new Attr("crossorigin", crossorigin);
+                i++;
             }
             if (async)
             {
-                builder.Add(new Attr("async"));
+                array[i] = new Attr("async");
+                i++;
             }
 
-            return new TagBuilder("script", builder.MoveToImmutable());
+            return new TagBuilder("script", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -3360,35 +3431,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("noscript", builder.MoveToImmutable());
+            return new TagBuilder("noscript", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -3805,35 +3882,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("main", builder.MoveToImmutable());
+            return new TagBuilder("main", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -4250,35 +4333,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("header", builder.MoveToImmutable());
+            return new TagBuilder("header", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -4695,35 +4784,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("article", builder.MoveToImmutable());
+            return new TagBuilder("article", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -5140,35 +5235,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("section", builder.MoveToImmutable());
+            return new TagBuilder("section", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -5585,35 +5686,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("footer", builder.MoveToImmutable());
+            return new TagBuilder("footer", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -6030,35 +6137,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("h1", builder.MoveToImmutable());
+            return new TagBuilder("h1", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -6475,35 +6588,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("h2", builder.MoveToImmutable());
+            return new TagBuilder("h2", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -6920,35 +7039,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("h3", builder.MoveToImmutable());
+            return new TagBuilder("h3", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -7365,35 +7490,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("h4", builder.MoveToImmutable());
+            return new TagBuilder("h4", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -7810,35 +7941,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("h5", builder.MoveToImmutable());
+            return new TagBuilder("h5", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -8255,35 +8392,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("h6", builder.MoveToImmutable());
+            return new TagBuilder("h6", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -8700,35 +8843,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("hgroup", builder.MoveToImmutable());
+            return new TagBuilder("hgroup", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -9145,35 +9294,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("div", builder.MoveToImmutable());
+            return new TagBuilder("div", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -9590,35 +9745,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("p", builder.MoveToImmutable());
+            return new TagBuilder("p", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -10035,35 +10196,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("pre", builder.MoveToImmutable());
+            return new TagBuilder("pre", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -10480,35 +10647,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("blockquote", builder.MoveToImmutable());
+            return new TagBuilder("blockquote", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -10925,35 +11098,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("figure", builder.MoveToImmutable());
+            return new TagBuilder("figure", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -11370,35 +11549,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("figcaption", builder.MoveToImmutable());
+            return new TagBuilder("figcaption", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -11815,35 +12000,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("aside", builder.MoveToImmutable());
+            return new TagBuilder("aside", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -12260,35 +12451,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("nav", builder.MoveToImmutable());
+            return new TagBuilder("nav", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -12705,35 +12902,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("address", builder.MoveToImmutable());
+            return new TagBuilder("address", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -13175,55 +13378,66 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (href != null)
             {
-                builder.Add(new Attr("href", href));
+                array[i] = new Attr("href", href);
+                i++;
             }
             if (rel != null)
             {
-                builder.Add(new Attr("rel", rel));
+                array[i] = new Attr("rel", rel);
+                i++;
             }
             if (target != null)
             {
-                builder.Add(new Attr("target", target));
+                array[i] = new Attr("target", target);
+                i++;
             }
             if (type != null)
             {
-                builder.Add(new Attr("type", type));
+                array[i] = new Attr("type", type);
+                i++;
             }
             if (download != null)
             {
-                builder.Add(new Attr("download", download));
+                array[i] = new Attr("download", download);
+                i++;
             }
 
-            return new TagBuilder("a", builder.MoveToImmutable());
+            return new TagBuilder("a", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -13640,35 +13854,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("b", builder.MoveToImmutable());
+            return new TagBuilder("b", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -14085,35 +14305,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("em", builder.MoveToImmutable());
+            return new TagBuilder("em", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -14530,35 +14756,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("i", builder.MoveToImmutable());
+            return new TagBuilder("i", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -14975,35 +15207,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("mark", builder.MoveToImmutable());
+            return new TagBuilder("mark", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -15425,39 +15663,46 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (cite != null)
             {
-                builder.Add(new Attr("cite", cite));
+                array[i] = new Attr("cite", cite);
+                i++;
             }
 
-            return new TagBuilder("q", builder.MoveToImmutable());
+            return new TagBuilder("q", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -15874,35 +16119,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("s", builder.MoveToImmutable());
+            return new TagBuilder("s", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -16319,35 +16570,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("small", builder.MoveToImmutable());
+            return new TagBuilder("small", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -16764,35 +17021,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("span", builder.MoveToImmutable());
+            return new TagBuilder("span", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -17209,35 +17472,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("strong", builder.MoveToImmutable());
+            return new TagBuilder("strong", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -17654,35 +17923,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("sub", builder.MoveToImmutable());
+            return new TagBuilder("sub", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -18099,35 +18374,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("sup", builder.MoveToImmutable());
+            return new TagBuilder("sup", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -18544,35 +18825,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("u", builder.MoveToImmutable());
+            return new TagBuilder("u", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -18989,35 +19276,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new SelfClosingTag("br", builder.MoveToImmutable());
+            return new SelfClosingTag("br", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -19152,35 +19445,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new SelfClosingTag("wbr", builder.MoveToImmutable());
+            return new SelfClosingTag("wbr", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -19315,35 +19614,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new SelfClosingTag("hr", builder.MoveToImmutable());
+            return new SelfClosingTag("hr", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -19478,35 +19783,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("abbr", builder.MoveToImmutable());
+            return new TagBuilder("abbr", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -19923,35 +20234,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("cite", builder.MoveToImmutable());
+            return new TagBuilder("cite", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -20368,35 +20685,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("code", builder.MoveToImmutable());
+            return new TagBuilder("code", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -20818,39 +21141,46 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (value != null)
             {
-                builder.Add(new Attr("value", value));
+                array[i] = new Attr("value", value);
+                i++;
             }
 
-            return new TagBuilder("data", builder.MoveToImmutable());
+            return new TagBuilder("data", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -21267,35 +21597,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("dfn", builder.MoveToImmutable());
+            return new TagBuilder("dfn", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -21712,35 +22048,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("kbd", builder.MoveToImmutable());
+            return new TagBuilder("kbd", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -22157,35 +22499,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("samp", builder.MoveToImmutable());
+            return new TagBuilder("samp", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -22607,39 +22955,46 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (datetime != null)
             {
-                builder.Add(new Attr("datetime", datetime));
+                array[i] = new Attr("datetime", datetime);
+                i++;
             }
 
-            return new TagBuilder("time", builder.MoveToImmutable());
+            return new TagBuilder("time", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -23071,47 +23426,56 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (type != null)
             {
-                builder.Add(new Attr("type", type));
+                array[i] = new Attr("type", type);
+                i++;
             }
             if (reversed)
             {
-                builder.Add(new Attr("reversed"));
+                array[i] = new Attr("reversed");
+                i++;
             }
             if (start != null)
             {
-                builder.Add(new Attr("start", start));
+                array[i] = new Attr("start", start);
+                i++;
             }
 
-            return new TagBuilder("ol", builder.MoveToImmutable());
+            return new TagBuilder("ol", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -23543,47 +23907,56 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (type != null)
             {
-                builder.Add(new Attr("type", type));
+                array[i] = new Attr("type", type);
+                i++;
             }
             if (reversed)
             {
-                builder.Add(new Attr("reversed"));
+                array[i] = new Attr("reversed");
+                i++;
             }
             if (start != null)
             {
-                builder.Add(new Attr("start", start));
+                array[i] = new Attr("start", start);
+                i++;
             }
 
-            return new TagBuilder("ul", builder.MoveToImmutable());
+            return new TagBuilder("ul", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -24005,39 +24378,46 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (value != null)
             {
-                builder.Add(new Attr("value", value));
+                array[i] = new Attr("value", value);
+                i++;
             }
 
-            return new TagBuilder("li", builder.MoveToImmutable());
+            return new TagBuilder("li", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -24454,35 +24834,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("dl", builder.MoveToImmutable());
+            return new TagBuilder("dl", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -24899,35 +25285,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("dt", builder.MoveToImmutable());
+            return new TagBuilder("dt", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -25344,35 +25736,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("dd", builder.MoveToImmutable());
+            return new TagBuilder("dd", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -25789,35 +26187,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("table", builder.MoveToImmutable());
+            return new TagBuilder("table", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -26234,35 +26638,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("caption", builder.MoveToImmutable());
+            return new TagBuilder("caption", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -26679,35 +27089,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("thead", builder.MoveToImmutable());
+            return new TagBuilder("thead", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -27129,39 +27545,46 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (span != null)
             {
-                builder.Add(new Attr("span", span));
+                array[i] = new Attr("span", span);
+                i++;
             }
 
-            return new TagBuilder("colgroup", builder.MoveToImmutable());
+            return new TagBuilder("colgroup", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -27583,39 +28006,46 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (span != null)
             {
-                builder.Add(new Attr("span", span));
+                array[i] = new Attr("span", span);
+                i++;
             }
 
-            return new TagBuilder("col", builder.MoveToImmutable());
+            return new TagBuilder("col", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -28032,35 +28462,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("tbody", builder.MoveToImmutable());
+            return new TagBuilder("tbody", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -28477,35 +28913,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("tr", builder.MoveToImmutable());
+            return new TagBuilder("tr", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -28942,51 +29384,61 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (colspan != null)
             {
-                builder.Add(new Attr("colspan", colspan));
+                array[i] = new Attr("colspan", colspan);
+                i++;
             }
             if (rowspan != null)
             {
-                builder.Add(new Attr("rowspan", rowspan));
+                array[i] = new Attr("rowspan", rowspan);
+                i++;
             }
             if (headers != null)
             {
-                builder.Add(new Attr("headers", headers));
+                array[i] = new Attr("headers", headers);
+                i++;
             }
             if (scope != null)
             {
-                builder.Add(new Attr("scope", scope));
+                array[i] = new Attr("scope", scope);
+                i++;
             }
 
-            return new TagBuilder("th", builder.MoveToImmutable());
+            return new TagBuilder("th", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -29418,47 +29870,56 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (colspan != null)
             {
-                builder.Add(new Attr("colspan", colspan));
+                array[i] = new Attr("colspan", colspan);
+                i++;
             }
             if (rowspan != null)
             {
-                builder.Add(new Attr("rowspan", rowspan));
+                array[i] = new Attr("rowspan", rowspan);
+                i++;
             }
             if (headers != null)
             {
-                builder.Add(new Attr("headers", headers));
+                array[i] = new Attr("headers", headers);
+                i++;
             }
 
-            return new TagBuilder("td", builder.MoveToImmutable());
+            return new TagBuilder("td", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -29875,35 +30336,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("tfoot", builder.MoveToImmutable());
+            return new TagBuilder("tfoot", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -30355,63 +30822,76 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (name != null)
             {
-                builder.Add(new Attr("name", name));
+                array[i] = new Attr("name", name);
+                i++;
             }
             if (action != null)
             {
-                builder.Add(new Attr("action", action));
+                array[i] = new Attr("action", action);
+                i++;
             }
             if (method != null)
             {
-                builder.Add(new Attr("method", method));
+                array[i] = new Attr("method", method);
+                i++;
             }
             if (autocomplete != null)
             {
-                builder.Add(new Attr("autocomplete", autocomplete));
+                array[i] = new Attr("autocomplete", autocomplete);
+                i++;
             }
             if (target != null)
             {
-                builder.Add(new Attr("target", target));
+                array[i] = new Attr("target", target);
+                i++;
             }
             if (enctype != null)
             {
-                builder.Add(new Attr("enctype", enctype));
+                array[i] = new Attr("enctype", enctype);
+                i++;
             }
             if (novalidate)
             {
-                builder.Add(new Attr("novalidate"));
+                array[i] = new Attr("novalidate");
+                i++;
             }
 
-            return new TagBuilder("form", builder.MoveToImmutable());
+            return new TagBuilder("form", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -30843,47 +31323,56 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (name != null)
             {
-                builder.Add(new Attr("name", name));
+                array[i] = new Attr("name", name);
+                i++;
             }
             if (disabled)
             {
-                builder.Add(new Attr("disabled"));
+                array[i] = new Attr("disabled");
+                i++;
             }
             if (form != null)
             {
-                builder.Add(new Attr("form", form));
+                array[i] = new Attr("form", form);
+                i++;
             }
 
-            return new TagBuilder("fieldset", builder.MoveToImmutable());
+            return new TagBuilder("fieldset", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -31305,39 +31794,46 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (@for != null)
             {
-                builder.Add(new Attr("for", @for));
+                array[i] = new Attr("for", @for);
+                i++;
             }
 
-            return new TagBuilder("label", builder.MoveToImmutable());
+            return new TagBuilder("label", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -31894,147 +32390,181 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (name != null)
             {
-                builder.Add(new Attr("name", name));
+                array[i] = new Attr("name", name);
+                i++;
             }
             if (type != null)
             {
-                builder.Add(new Attr("type", type));
+                array[i] = new Attr("type", type);
+                i++;
             }
             if (multiple != null)
             {
-                builder.Add(new Attr("multiple", multiple));
+                array[i] = new Attr("multiple", multiple);
+                i++;
             }
             if (value != null)
             {
-                builder.Add(new Attr("value", value));
+                array[i] = new Attr("value", value);
+                i++;
             }
             if (placeholder != null)
             {
-                builder.Add(new Attr("placeholder", placeholder));
+                array[i] = new Attr("placeholder", placeholder);
+                i++;
             }
             if (size != null)
             {
-                builder.Add(new Attr("size", size));
+                array[i] = new Attr("size", size);
+                i++;
             }
             if (autocomplete != null)
             {
-                builder.Add(new Attr("autocomplete", autocomplete));
+                array[i] = new Attr("autocomplete", autocomplete);
+                i++;
             }
             if (list != null)
             {
-                builder.Add(new Attr("list", list));
+                array[i] = new Attr("list", list);
+                i++;
             }
             if (autofocus)
             {
-                builder.Add(new Attr("autofocus"));
+                array[i] = new Attr("autofocus");
+                i++;
             }
             if (@checked)
             {
-                builder.Add(new Attr("checked"));
+                array[i] = new Attr("checked");
+                i++;
             }
             if (disabled)
             {
-                builder.Add(new Attr("disabled"));
+                array[i] = new Attr("disabled");
+                i++;
             }
             if (@readonly)
             {
-                builder.Add(new Attr("readonly"));
+                array[i] = new Attr("readonly");
+                i++;
             }
             if (required)
             {
-                builder.Add(new Attr("required"));
+                array[i] = new Attr("required");
+                i++;
             }
             if (src != null)
             {
-                builder.Add(new Attr("src", src));
+                array[i] = new Attr("src", src);
+                i++;
             }
             if (height != null)
             {
-                builder.Add(new Attr("height", height));
+                array[i] = new Attr("height", height);
+                i++;
             }
             if (width != null)
             {
-                builder.Add(new Attr("width", width));
+                array[i] = new Attr("width", width);
+                i++;
             }
             if (max != null)
             {
-                builder.Add(new Attr("max", max));
+                array[i] = new Attr("max", max);
+                i++;
             }
             if (min != null)
             {
-                builder.Add(new Attr("min", min));
+                array[i] = new Attr("min", min);
+                i++;
             }
             if (step != null)
             {
-                builder.Add(new Attr("step", step));
+                array[i] = new Attr("step", step);
+                i++;
             }
             if (maxlength != null)
             {
-                builder.Add(new Attr("maxlength", maxlength));
+                array[i] = new Attr("maxlength", maxlength);
+                i++;
             }
             if (minlength != null)
             {
-                builder.Add(new Attr("minlength", minlength));
+                array[i] = new Attr("minlength", minlength);
+                i++;
             }
             if (pattern != null)
             {
-                builder.Add(new Attr("pattern", pattern));
+                array[i] = new Attr("pattern", pattern);
+                i++;
             }
             if (form != null)
             {
-                builder.Add(new Attr("form", form));
+                array[i] = new Attr("form", form);
+                i++;
             }
             if (formaction != null)
             {
-                builder.Add(new Attr("formaction", formaction));
+                array[i] = new Attr("formaction", formaction);
+                i++;
             }
             if (formmethod != null)
             {
-                builder.Add(new Attr("formmethod", formmethod));
+                array[i] = new Attr("formmethod", formmethod);
+                i++;
             }
             if (formtarget != null)
             {
-                builder.Add(new Attr("formtarget", formtarget));
+                array[i] = new Attr("formtarget", formtarget);
+                i++;
             }
             if (formenctype != null)
             {
-                builder.Add(new Attr("formenctype", formenctype));
+                array[i] = new Attr("formenctype", formenctype);
+                i++;
             }
             if (formnovalidate)
             {
-                builder.Add(new Attr("formnovalidate"));
+                array[i] = new Attr("formnovalidate");
+                i++;
             }
 
-            return new TagBuilder("input", builder.MoveToImmutable());
+            return new TagBuilder("input", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -32521,91 +33051,111 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (name != null)
             {
-                builder.Add(new Attr("name", name));
+                array[i] = new Attr("name", name);
+                i++;
             }
             if (type != null)
             {
-                builder.Add(new Attr("type", type));
+                array[i] = new Attr("type", type);
+                i++;
             }
             if (value != null)
             {
-                builder.Add(new Attr("value", value));
+                array[i] = new Attr("value", value);
+                i++;
             }
             if (autofocus)
             {
-                builder.Add(new Attr("autofocus"));
+                array[i] = new Attr("autofocus");
+                i++;
             }
             if (disabled)
             {
-                builder.Add(new Attr("disabled"));
+                array[i] = new Attr("disabled");
+                i++;
             }
             if (src != null)
             {
-                builder.Add(new Attr("src", src));
+                array[i] = new Attr("src", src);
+                i++;
             }
             if (height != null)
             {
-                builder.Add(new Attr("height", height));
+                array[i] = new Attr("height", height);
+                i++;
             }
             if (width != null)
             {
-                builder.Add(new Attr("width", width));
+                array[i] = new Attr("width", width);
+                i++;
             }
             if (form != null)
             {
-                builder.Add(new Attr("form", form));
+                array[i] = new Attr("form", form);
+                i++;
             }
             if (formaction != null)
             {
-                builder.Add(new Attr("formaction", formaction));
+                array[i] = new Attr("formaction", formaction);
+                i++;
             }
             if (formmethod != null)
             {
-                builder.Add(new Attr("formmethod", formmethod));
+                array[i] = new Attr("formmethod", formmethod);
+                i++;
             }
             if (formtarget != null)
             {
-                builder.Add(new Attr("formtarget", formtarget));
+                array[i] = new Attr("formtarget", formtarget);
+                i++;
             }
             if (formenctype != null)
             {
-                builder.Add(new Attr("formenctype", formenctype));
+                array[i] = new Attr("formenctype", formenctype);
+                i++;
             }
             if (formnovalidate)
             {
-                builder.Add(new Attr("formnovalidate"));
+                array[i] = new Attr("formnovalidate");
+                i++;
             }
 
-            return new TagBuilder("button", builder.MoveToImmutable());
+            return new TagBuilder("button", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -33092,91 +33642,111 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (name != null)
             {
-                builder.Add(new Attr("name", name));
+                array[i] = new Attr("name", name);
+                i++;
             }
             if (placeholder != null)
             {
-                builder.Add(new Attr("placeholder", placeholder));
+                array[i] = new Attr("placeholder", placeholder);
+                i++;
             }
             if (autocomplete != null)
             {
-                builder.Add(new Attr("autocomplete", autocomplete));
+                array[i] = new Attr("autocomplete", autocomplete);
+                i++;
             }
             if (cols != null)
             {
-                builder.Add(new Attr("cols", cols));
+                array[i] = new Attr("cols", cols);
+                i++;
             }
             if (rows != null)
             {
-                builder.Add(new Attr("rows", rows));
+                array[i] = new Attr("rows", rows);
+                i++;
             }
             if (wrap != null)
             {
-                builder.Add(new Attr("wrap", wrap));
+                array[i] = new Attr("wrap", wrap);
+                i++;
             }
             if (autofocus)
             {
-                builder.Add(new Attr("autofocus"));
+                array[i] = new Attr("autofocus");
+                i++;
             }
             if (disabled)
             {
-                builder.Add(new Attr("disabled"));
+                array[i] = new Attr("disabled");
+                i++;
             }
             if (@readonly)
             {
-                builder.Add(new Attr("readonly"));
+                array[i] = new Attr("readonly");
+                i++;
             }
             if (required)
             {
-                builder.Add(new Attr("required"));
+                array[i] = new Attr("required");
+                i++;
             }
             if (src != null)
             {
-                builder.Add(new Attr("src", src));
+                array[i] = new Attr("src", src);
+                i++;
             }
             if (maxlength != null)
             {
-                builder.Add(new Attr("maxlength", maxlength));
+                array[i] = new Attr("maxlength", maxlength);
+                i++;
             }
             if (minlength != null)
             {
-                builder.Add(new Attr("minlength", minlength));
+                array[i] = new Attr("minlength", minlength);
+                i++;
             }
             if (form != null)
             {
-                builder.Add(new Attr("form", form));
+                array[i] = new Attr("form", form);
+                i++;
             }
 
-            return new TagBuilder("textarea", builder.MoveToImmutable());
+            return new TagBuilder("textarea", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -33593,35 +34163,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("datalist", builder.MoveToImmutable());
+            return new TagBuilder("datalist", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -34048,43 +34624,51 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (label != null)
             {
-                builder.Add(new Attr("label", label));
+                array[i] = new Attr("label", label);
+                i++;
             }
             if (disabled)
             {
-                builder.Add(new Attr("disabled"));
+                array[i] = new Attr("disabled");
+                i++;
             }
 
-            return new TagBuilder("optgroup", builder.MoveToImmutable());
+            return new TagBuilder("optgroup", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -34536,63 +35120,76 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (name != null)
             {
-                builder.Add(new Attr("name", name));
+                array[i] = new Attr("name", name);
+                i++;
             }
             if (multiple != null)
             {
-                builder.Add(new Attr("multiple", multiple));
+                array[i] = new Attr("multiple", multiple);
+                i++;
             }
             if (size != null)
             {
-                builder.Add(new Attr("size", size));
+                array[i] = new Attr("size", size);
+                i++;
             }
             if (autofocus)
             {
-                builder.Add(new Attr("autofocus"));
+                array[i] = new Attr("autofocus");
+                i++;
             }
             if (disabled)
             {
-                builder.Add(new Attr("disabled"));
+                array[i] = new Attr("disabled");
+                i++;
             }
             if (required)
             {
-                builder.Add(new Attr("required"));
+                array[i] = new Attr("required");
+                i++;
             }
             if (form != null)
             {
-                builder.Add(new Attr("form", form));
+                array[i] = new Attr("form", form);
+                i++;
             }
 
-            return new TagBuilder("select", builder.MoveToImmutable());
+            return new TagBuilder("select", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -35029,51 +35626,61 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (label != null)
             {
-                builder.Add(new Attr("label", label));
+                array[i] = new Attr("label", label);
+                i++;
             }
             if (value != null)
             {
-                builder.Add(new Attr("value", value));
+                array[i] = new Attr("value", value);
+                i++;
             }
             if (disabled)
             {
-                builder.Add(new Attr("disabled"));
+                array[i] = new Attr("disabled");
+                i++;
             }
             if (selected)
             {
-                builder.Add(new Attr("selected"));
+                array[i] = new Attr("selected");
+                i++;
             }
 
-            return new TagBuilder("option", builder.MoveToImmutable());
+            return new TagBuilder("option", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -35490,35 +36097,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("legend", builder.MoveToImmutable());
+            return new TagBuilder("legend", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -35970,63 +36583,76 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (value != null)
             {
-                builder.Add(new Attr("value", value));
+                array[i] = new Attr("value", value);
+                i++;
             }
             if (form != null)
             {
-                builder.Add(new Attr("form", form));
+                array[i] = new Attr("form", form);
+                i++;
             }
             if (max != null)
             {
-                builder.Add(new Attr("max", max));
+                array[i] = new Attr("max", max);
+                i++;
             }
             if (min != null)
             {
-                builder.Add(new Attr("min", min));
+                array[i] = new Attr("min", min);
+                i++;
             }
             if (low != null)
             {
-                builder.Add(new Attr("low", low));
+                array[i] = new Attr("low", low);
+                i++;
             }
             if (high != null)
             {
-                builder.Add(new Attr("high", high));
+                array[i] = new Attr("high", high);
+                i++;
             }
             if (optimum != null)
             {
-                builder.Add(new Attr("optimum", optimum));
+                array[i] = new Attr("optimum", optimum);
+                i++;
             }
 
-            return new TagBuilder("meter", builder.MoveToImmutable());
+            return new TagBuilder("meter", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -36458,47 +37084,56 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (@for != null)
             {
-                builder.Add(new Attr("for", @for));
+                array[i] = new Attr("for", @for);
+                i++;
             }
             if (name != null)
             {
-                builder.Add(new Attr("name", name));
+                array[i] = new Attr("name", name);
+                i++;
             }
             if (form != null)
             {
-                builder.Add(new Attr("form", form));
+                array[i] = new Attr("form", form);
+                i++;
             }
 
-            return new TagBuilder("output", builder.MoveToImmutable());
+            return new TagBuilder("output", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -36925,43 +37560,51 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (value != null)
             {
-                builder.Add(new Attr("value", value));
+                array[i] = new Attr("value", value);
+                i++;
             }
             if (max != null)
             {
-                builder.Add(new Attr("max", max));
+                array[i] = new Attr("max", max);
+                i++;
             }
 
-            return new TagBuilder("progress", builder.MoveToImmutable());
+            return new TagBuilder("progress", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -37388,43 +38031,51 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (type != null)
             {
-                builder.Add(new Attr("type", type));
+                array[i] = new Attr("type", type);
+                i++;
             }
             if (label != null)
             {
-                builder.Add(new Attr("label", label));
+                array[i] = new Attr("label", label);
+                i++;
             }
 
-            return new TagBuilder("menu", builder.MoveToImmutable());
+            return new TagBuilder("menu", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -37881,67 +38532,81 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (type != null)
             {
-                builder.Add(new Attr("type", type));
+                array[i] = new Attr("type", type);
+                i++;
             }
             if (label != null)
             {
-                builder.Add(new Attr("label", label));
+                array[i] = new Attr("label", label);
+                i++;
             }
             if (command != null)
             {
-                builder.Add(new Attr("command", command));
+                array[i] = new Attr("command", command);
+                i++;
             }
             if (icon != null)
             {
-                builder.Add(new Attr("icon", icon));
+                array[i] = new Attr("icon", icon);
+                i++;
             }
             if (radiogroup != null)
             {
-                builder.Add(new Attr("radiogroup", radiogroup));
+                array[i] = new Attr("radiogroup", radiogroup);
+                i++;
             }
             if (disabled)
             {
-                builder.Add(new Attr("disabled"));
+                array[i] = new Attr("disabled");
+                i++;
             }
             if (@default)
             {
-                builder.Add(new Attr("default"));
+                array[i] = new Attr("default");
+                i++;
             }
             if (@checked)
             {
-                builder.Add(new Attr("checked"));
+                array[i] = new Attr("checked");
+                i++;
             }
 
-            return new TagBuilder("menuitem", builder.MoveToImmutable());
+            return new TagBuilder("menuitem", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -38363,39 +39028,46 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (open)
             {
-                builder.Add(new Attr("open"));
+                array[i] = new Attr("open");
+                i++;
             }
 
-            return new TagBuilder("dialog", builder.MoveToImmutable());
+            return new TagBuilder("dialog", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -38817,39 +39489,46 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (open)
             {
-                builder.Add(new Attr("open"));
+                array[i] = new Attr("open");
+                i++;
             }
 
-            return new TagBuilder("details", builder.MoveToImmutable());
+            return new TagBuilder("details", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -39266,35 +39945,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("summary", builder.MoveToImmutable());
+            return new TagBuilder("summary", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -39746,63 +40431,76 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (src != null)
             {
-                builder.Add(new Attr("src", src));
+                array[i] = new Attr("src", src);
+                i++;
             }
             if (alt != null)
             {
-                builder.Add(new Attr("alt", alt));
+                array[i] = new Attr("alt", alt);
+                i++;
             }
             if (height != null)
             {
-                builder.Add(new Attr("height", height));
+                array[i] = new Attr("height", height);
+                i++;
             }
             if (width != null)
             {
-                builder.Add(new Attr("width", width));
+                array[i] = new Attr("width", width);
+                i++;
             }
             if (srcset != null)
             {
-                builder.Add(new Attr("srcset", srcset));
+                array[i] = new Attr("srcset", srcset);
+                i++;
             }
             if (sizes != null)
             {
-                builder.Add(new Attr("sizes", sizes));
+                array[i] = new Attr("sizes", sizes);
+                i++;
             }
             if (crossorigin != null)
             {
-                builder.Add(new Attr("crossorigin", crossorigin));
+                array[i] = new Attr("crossorigin", crossorigin);
+                i++;
             }
 
-            return new SelfClosingTag("img", builder.MoveToImmutable());
+            return new SelfClosingTag("img", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -39972,63 +40670,76 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (src != null)
             {
-                builder.Add(new Attr("src", src));
+                array[i] = new Attr("src", src);
+                i++;
             }
             if (preload != null)
             {
-                builder.Add(new Attr("preload", preload));
+                array[i] = new Attr("preload", preload);
+                i++;
             }
             if (volume != null)
             {
-                builder.Add(new Attr("volume", volume));
+                array[i] = new Attr("volume", volume);
+                i++;
             }
             if (autoplay)
             {
-                builder.Add(new Attr("autoplay"));
+                array[i] = new Attr("autoplay");
+                i++;
             }
             if (loop)
             {
-                builder.Add(new Attr("loop"));
+                array[i] = new Attr("loop");
+                i++;
             }
             if (muted)
             {
-                builder.Add(new Attr("muted"));
+                array[i] = new Attr("muted");
+                i++;
             }
             if (controls)
             {
-                builder.Add(new Attr("controls"));
+                array[i] = new Attr("controls");
+                i++;
             }
 
-            return new TagBuilder("audio", builder.MoveToImmutable());
+            return new TagBuilder("audio", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -40495,75 +41206,91 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (src != null)
             {
-                builder.Add(new Attr("src", src));
+                array[i] = new Attr("src", src);
+                i++;
             }
             if (height != null)
             {
-                builder.Add(new Attr("height", height));
+                array[i] = new Attr("height", height);
+                i++;
             }
             if (width != null)
             {
-                builder.Add(new Attr("width", width));
+                array[i] = new Attr("width", width);
+                i++;
             }
             if (poster != null)
             {
-                builder.Add(new Attr("poster", poster));
+                array[i] = new Attr("poster", poster);
+                i++;
             }
             if (preload != null)
             {
-                builder.Add(new Attr("preload", preload));
+                array[i] = new Attr("preload", preload);
+                i++;
             }
             if (autoplay)
             {
-                builder.Add(new Attr("autoplay"));
+                array[i] = new Attr("autoplay");
+                i++;
             }
             if (loop)
             {
-                builder.Add(new Attr("loop"));
+                array[i] = new Attr("loop");
+                i++;
             }
             if (muted)
             {
-                builder.Add(new Attr("muted"));
+                array[i] = new Attr("muted");
+                i++;
             }
             if (controls)
             {
-                builder.Add(new Attr("controls"));
+                array[i] = new Attr("controls");
+                i++;
             }
             if (crossorigin != null)
             {
-                builder.Add(new Attr("crossorigin", crossorigin));
+                array[i] = new Attr("crossorigin", crossorigin);
+                i++;
             }
 
-            return new TagBuilder("video", builder.MoveToImmutable());
+            return new TagBuilder("video", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -41000,51 +41727,61 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (src != null)
             {
-                builder.Add(new Attr("src", src));
+                array[i] = new Attr("src", src);
+                i++;
             }
             if (label != null)
             {
-                builder.Add(new Attr("label", label));
+                array[i] = new Attr("label", label);
+                i++;
             }
             if (kind != null)
             {
-                builder.Add(new Attr("kind", kind));
+                array[i] = new Attr("kind", kind);
+                i++;
             }
             if (@default)
             {
-                builder.Add(new Attr("default"));
+                array[i] = new Attr("default");
+                i++;
             }
 
-            return new SelfClosingTag("track", builder.MoveToImmutable());
+            return new SelfClosingTag("track", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -41199,51 +41936,61 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (type != null)
             {
-                builder.Add(new Attr("type", type));
+                array[i] = new Attr("type", type);
+                i++;
             }
             if (src != null)
             {
-                builder.Add(new Attr("src", src));
+                array[i] = new Attr("src", src);
+                i++;
             }
             if (height != null)
             {
-                builder.Add(new Attr("height", height));
+                array[i] = new Attr("height", height);
+                i++;
             }
             if (width != null)
             {
-                builder.Add(new Attr("width", width));
+                array[i] = new Attr("width", width);
+                i++;
             }
 
-            return new SelfClosingTag("embed", builder.MoveToImmutable());
+            return new SelfClosingTag("embed", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -41403,55 +42150,66 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (type != null)
             {
-                builder.Add(new Attr("type", type));
+                array[i] = new Attr("type", type);
+                i++;
             }
             if (data != null)
             {
-                builder.Add(new Attr("data", data));
+                array[i] = new Attr("data", data);
+                i++;
             }
             if (height != null)
             {
-                builder.Add(new Attr("height", height));
+                array[i] = new Attr("height", height);
+                i++;
             }
             if (width != null)
             {
-                builder.Add(new Attr("width", width));
+                array[i] = new Attr("width", width);
+                i++;
             }
             if (name != null)
             {
-                builder.Add(new Attr("name", name));
+                array[i] = new Attr("name", name);
+                i++;
             }
 
-            return new TagBuilder("object", builder.MoveToImmutable());
+            return new TagBuilder("object", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -41878,43 +42636,51 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (name != null)
             {
-                builder.Add(new Attr("name", name));
+                array[i] = new Attr("name", name);
+                i++;
             }
             if (value != null)
             {
-                builder.Add(new Attr("value", value));
+                array[i] = new Attr("value", value);
+                i++;
             }
 
-            return new SelfClosingTag("param", builder.MoveToImmutable());
+            return new SelfClosingTag("param", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -42049,35 +42815,41 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
 
-            return new TagBuilder("picture", builder.MoveToImmutable());
+            return new TagBuilder("picture", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -42504,43 +43276,51 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (type != null)
             {
-                builder.Add(new Attr("type", type));
+                array[i] = new Attr("type", type);
+                i++;
             }
             if (src != null)
             {
-                builder.Add(new Attr("src", src));
+                array[i] = new Attr("src", src);
+                i++;
             }
 
-            return new SelfClosingTag("source", builder.MoveToImmutable());
+            return new SelfClosingTag("source", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -42685,43 +43465,51 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (height != null)
             {
-                builder.Add(new Attr("height", height));
+                array[i] = new Attr("height", height);
+                i++;
             }
             if (width != null)
             {
-                builder.Add(new Attr("width", width));
+                array[i] = new Attr("width", width);
+                i++;
             }
 
-            return new TagBuilder("canvas", builder.MoveToImmutable());
+            return new TagBuilder("canvas", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -43143,39 +43931,46 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (dir != null)
             {
-                builder.Add(new Attr("dir", dir));
+                array[i] = new Attr("dir", dir);
+                i++;
             }
 
-            return new TagBuilder("bdi", builder.MoveToImmutable());
+            return new TagBuilder("bdi", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>
@@ -43597,39 +44392,46 @@ namespace Eighty
                 attrCount++;
             }
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
+            var array = new Attr[attrCount];
+            var i = 0;
             
             if (id != null)
             {
-                builder.Add(new Attr("id", id));
+                array[i] = new Attr("id", id);
+                i++;
             }
             if (@class != null)
             {
-                builder.Add(new Attr("class", @class));
+                array[i] = new Attr("class", @class);
+                i++;
             }
             if (style != null)
             {
-                builder.Add(new Attr("style", style));
+                array[i] = new Attr("style", style);
+                i++;
             }
             if (title != null)
             {
-                builder.Add(new Attr("title", title));
+                array[i] = new Attr("title", title);
+                i++;
             }
             if (tabindex != null)
             {
-                builder.Add(new Attr("tabindex", tabindex));
+                array[i] = new Attr("tabindex", tabindex);
+                i++;
             }
             if (contenteditable != null)
             {
-                builder.Add(new Attr("contenteditable", contenteditable));
+                array[i] = new Attr("contenteditable", contenteditable);
+                i++;
             }
             if (dir != null)
             {
-                builder.Add(new Attr("dir", dir));
+                array[i] = new Attr("dir", dir);
+                i++;
             }
 
-            return new TagBuilder("bdo", builder.MoveToImmutable());
+            return new TagBuilder("bdo", ImmutableArrayFactory.UnsafeFreeze(array));
         }
 
         /// <summary>

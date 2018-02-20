@@ -40,11 +40,11 @@ namespace Eighty
             var attrCount = 0;
             {CountNonNulls(attrs)}
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
-            {PackBuilder(attrs)}
+            var array = new Attr[attrCount];
+            var i = 0;
+            {PackArray(attrs)}
 
-            return new TagBuilder(""{name}"", builder.MoveToImmutable());
+            return new TagBuilder(""{name}"", ImmutableArrayFactory.UnsafeFreeze(array));
         }}
 
         /// <summary>
@@ -140,11 +140,11 @@ namespace Eighty
             var attrCount = 0;
             {CountNonNulls(attrs)}
 
-            var builder = _attrBuilder.Value;
-            builder.Capacity = attrCount;
-            {PackBuilder(attrs)}
+            var array = new Attr[attrCount];
+            var i = 0;
+            {PackArray(attrs)}
 
-            return new SelfClosingTag(""{name}"", builder.MoveToImmutable());
+            return new SelfClosingTag(""{name}"", ImmutableArrayFactory.UnsafeFreeze(array));
         }}
 
         /// <summary>
@@ -218,18 +218,20 @@ namespace Eighty
                 attrCount++;
             }}"));
 
-        private string PackBuilder(string[] attrs)
+        private string PackArray(string[] attrs)
             => string.Concat(attrs.Select(a =>
                 a[0] == '!'
                     ? $@"
             if ({CsId(a)})
             {{
-                builder.Add(new Attr(""{a.Substring(1)}""));
+                array[i] = new Attr(""{a.Substring(1)}"");
+                i++;
             }}"
                     : $@"
             if ({CsId(a)} != null)
             {{
-                builder.Add(new Attr(""{a}"", {CsId(a)}));
+                array[i] = new Attr(""{a}"", {CsId(a)});
+                i++;
             }}"));
     }
 }
