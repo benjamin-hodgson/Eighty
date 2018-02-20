@@ -32,7 +32,7 @@ namespace Eighty.Twenty
         /// Write {IndefiniteArticle(name)} {name} element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref=""TagBuilder""/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder {CsId(name)}({Params(attrs)}
+        protected TagBuilder {CsId(name)}({Params(attrs)}
         )
         {{
             StartTag(""{name}"");
@@ -45,7 +45,7 @@ namespace Eighty.Twenty
         /// Write {IndefiniteArticle(name)} {name} element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref=""TagBuilder""/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder {CsId(name)}(params Attr[] attrs)
+        protected TagBuilder {CsId(name)}(params Attr[] attrs)
         {{
             StartTag(""{name}"");
             Attrs(attrs);
@@ -57,7 +57,7 @@ namespace Eighty.Twenty
         /// Write {IndefiniteArticle(name)} {name} element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref=""TagBuilder""/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder {CsId(name)}(IEnumerable<Attr> attrs)
+        protected TagBuilder {CsId(name)}(IEnumerable<Attr> attrs)
         {{
             StartTag(""{name}"");
             Attrs(attrs);
@@ -71,7 +71,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write {IndefiniteArticle(name)} {name} element.
         /// </summary>
-        public void {CsId(name)}({Params(attrs)}
+        protected void {CsId(name)}({Params(attrs)}
         )
         {{
             StartTag(""{name}"");
@@ -82,7 +82,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write {IndefiniteArticle(name)} {name} element.
         /// </summary>
-        public void {CsId(name)}(params Attr[] attrs)
+        protected void {CsId(name)}(params Attr[] attrs)
         {{
             StartTag(""{name}"");
             Attrs(attrs);
@@ -92,7 +92,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write {IndefiniteArticle(name)} {name} element.
         /// </summary>
-        public void {CsId(name)}(IEnumerable<Attr> attrs)
+        protected void {CsId(name)}(IEnumerable<Attr> attrs)
         {{
             StartTag(""{name}"");
             Attrs(attrs);
@@ -121,7 +121,7 @@ namespace Eighty.Twenty
         /// Write {IndefiniteArticle(name)} {name} element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref=""TagBuilder""/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder {CsId(name)}({AttrParams(n)})
+        protected TagBuilder {CsId(name)}({AttrParams(n)})
         {{
             StartTag(""{name}"");
             Attrs({AttrArgs(n)});
@@ -134,7 +134,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write {IndefiniteArticle(name)} {name} element.
         /// </summary>
-        public void {CsId(name)}({AttrParams(n)})
+        protected void {CsId(name)}({AttrParams(n)})
         {{
             StartTag(""{name}"");
             Attrs({AttrArgs(n)});

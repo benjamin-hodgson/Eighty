@@ -11,7 +11,7 @@ namespace Eighty.Twenty
         /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder html(
+        protected TagBuilder html(
             string id = null,
             string @class = null,
             string style = null,
@@ -59,7 +59,7 @@ namespace Eighty.Twenty
         /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder html(params Attr[] attrs)
+        protected TagBuilder html(params Attr[] attrs)
         {
             StartTag("html");
             Attrs(attrs);
@@ -71,7 +71,7 @@ namespace Eighty.Twenty
         /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder html(IEnumerable<Attr> attrs)
+        protected TagBuilder html(IEnumerable<Attr> attrs)
         {
             StartTag("html");
             Attrs(attrs);
@@ -83,7 +83,7 @@ namespace Eighty.Twenty
         /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder html(Attr attr1)
+        protected TagBuilder html(Attr attr1)
         {
             StartTag("html");
             Attrs(attr1);
@@ -95,7 +95,7 @@ namespace Eighty.Twenty
         /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder html(Attr attr1, Attr attr2)
+        protected TagBuilder html(Attr attr1, Attr attr2)
         {
             StartTag("html");
             Attrs(attr1, attr2);
@@ -107,7 +107,7 @@ namespace Eighty.Twenty
         /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder html(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder html(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("html");
             Attrs(attr1, attr2, attr3);
@@ -119,7 +119,7 @@ namespace Eighty.Twenty
         /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("html");
             Attrs(attr1, attr2, attr3, attr4);
@@ -131,7 +131,7 @@ namespace Eighty.Twenty
         /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("html");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -143,7 +143,7 @@ namespace Eighty.Twenty
         /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("html");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -155,7 +155,7 @@ namespace Eighty.Twenty
         /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("html");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -167,7 +167,7 @@ namespace Eighty.Twenty
         /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("html");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -179,7 +179,7 @@ namespace Eighty.Twenty
         /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder head(
+        protected TagBuilder head(
             string id = null,
             string @class = null,
             string style = null,
@@ -222,7 +222,7 @@ namespace Eighty.Twenty
         /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder head(params Attr[] attrs)
+        protected TagBuilder head(params Attr[] attrs)
         {
             StartTag("head");
             Attrs(attrs);
@@ -234,7 +234,7 @@ namespace Eighty.Twenty
         /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder head(IEnumerable<Attr> attrs)
+        protected TagBuilder head(IEnumerable<Attr> attrs)
         {
             StartTag("head");
             Attrs(attrs);
@@ -246,7 +246,7 @@ namespace Eighty.Twenty
         /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder head(Attr attr1)
+        protected TagBuilder head(Attr attr1)
         {
             StartTag("head");
             Attrs(attr1);
@@ -258,7 +258,7 @@ namespace Eighty.Twenty
         /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder head(Attr attr1, Attr attr2)
+        protected TagBuilder head(Attr attr1, Attr attr2)
         {
             StartTag("head");
             Attrs(attr1, attr2);
@@ -270,7 +270,7 @@ namespace Eighty.Twenty
         /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder head(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder head(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("head");
             Attrs(attr1, attr2, attr3);
@@ -282,7 +282,7 @@ namespace Eighty.Twenty
         /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("head");
             Attrs(attr1, attr2, attr3, attr4);
@@ -294,7 +294,7 @@ namespace Eighty.Twenty
         /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("head");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -306,7 +306,7 @@ namespace Eighty.Twenty
         /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("head");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -318,7 +318,7 @@ namespace Eighty.Twenty
         /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("head");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -330,7 +330,7 @@ namespace Eighty.Twenty
         /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("head");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -342,7 +342,7 @@ namespace Eighty.Twenty
         /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder body(
+        protected TagBuilder body(
             string id = null,
             string @class = null,
             string style = null,
@@ -385,7 +385,7 @@ namespace Eighty.Twenty
         /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder body(params Attr[] attrs)
+        protected TagBuilder body(params Attr[] attrs)
         {
             StartTag("body");
             Attrs(attrs);
@@ -397,7 +397,7 @@ namespace Eighty.Twenty
         /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder body(IEnumerable<Attr> attrs)
+        protected TagBuilder body(IEnumerable<Attr> attrs)
         {
             StartTag("body");
             Attrs(attrs);
@@ -409,7 +409,7 @@ namespace Eighty.Twenty
         /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder body(Attr attr1)
+        protected TagBuilder body(Attr attr1)
         {
             StartTag("body");
             Attrs(attr1);
@@ -421,7 +421,7 @@ namespace Eighty.Twenty
         /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder body(Attr attr1, Attr attr2)
+        protected TagBuilder body(Attr attr1, Attr attr2)
         {
             StartTag("body");
             Attrs(attr1, attr2);
@@ -433,7 +433,7 @@ namespace Eighty.Twenty
         /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder body(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder body(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("body");
             Attrs(attr1, attr2, attr3);
@@ -445,7 +445,7 @@ namespace Eighty.Twenty
         /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("body");
             Attrs(attr1, attr2, attr3, attr4);
@@ -457,7 +457,7 @@ namespace Eighty.Twenty
         /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("body");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -469,7 +469,7 @@ namespace Eighty.Twenty
         /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("body");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -481,7 +481,7 @@ namespace Eighty.Twenty
         /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("body");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -493,7 +493,7 @@ namespace Eighty.Twenty
         /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("body");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -504,7 +504,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a link element.
         /// </summary>
-        public void link(
+        protected void link(
             string id = null,
             string @class = null,
             string style = null,
@@ -575,7 +575,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a link element.
         /// </summary>
-        public void link(params Attr[] attrs)
+        protected void link(params Attr[] attrs)
         {
             StartTag("link");
             Attrs(attrs);
@@ -585,7 +585,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a link element.
         /// </summary>
-        public void link(IEnumerable<Attr> attrs)
+        protected void link(IEnumerable<Attr> attrs)
         {
             StartTag("link");
             Attrs(attrs);
@@ -595,7 +595,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a link element.
         /// </summary>
-        public void link(Attr attr1)
+        protected void link(Attr attr1)
         {
             StartTag("link");
             Attrs(attr1);
@@ -605,7 +605,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a link element.
         /// </summary>
-        public void link(Attr attr1, Attr attr2)
+        protected void link(Attr attr1, Attr attr2)
         {
             StartTag("link");
             Attrs(attr1, attr2);
@@ -615,7 +615,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a link element.
         /// </summary>
-        public void link(Attr attr1, Attr attr2, Attr attr3)
+        protected void link(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("link");
             Attrs(attr1, attr2, attr3);
@@ -625,7 +625,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a link element.
         /// </summary>
-        public void link(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected void link(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("link");
             Attrs(attr1, attr2, attr3, attr4);
@@ -635,7 +635,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a link element.
         /// </summary>
-        public void link(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected void link(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("link");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -645,7 +645,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a link element.
         /// </summary>
-        public void link(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected void link(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("link");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -655,7 +655,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a link element.
         /// </summary>
-        public void link(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected void link(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("link");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -665,7 +665,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a link element.
         /// </summary>
-        public void link(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected void link(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("link");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -675,7 +675,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a base element.
         /// </summary>
-        public void @base(
+        protected void @base(
             string id = null,
             string @class = null,
             string style = null,
@@ -726,7 +726,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a base element.
         /// </summary>
-        public void @base(params Attr[] attrs)
+        protected void @base(params Attr[] attrs)
         {
             StartTag("base");
             Attrs(attrs);
@@ -736,7 +736,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a base element.
         /// </summary>
-        public void @base(IEnumerable<Attr> attrs)
+        protected void @base(IEnumerable<Attr> attrs)
         {
             StartTag("base");
             Attrs(attrs);
@@ -746,7 +746,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a base element.
         /// </summary>
-        public void @base(Attr attr1)
+        protected void @base(Attr attr1)
         {
             StartTag("base");
             Attrs(attr1);
@@ -756,7 +756,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a base element.
         /// </summary>
-        public void @base(Attr attr1, Attr attr2)
+        protected void @base(Attr attr1, Attr attr2)
         {
             StartTag("base");
             Attrs(attr1, attr2);
@@ -766,7 +766,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a base element.
         /// </summary>
-        public void @base(Attr attr1, Attr attr2, Attr attr3)
+        protected void @base(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("base");
             Attrs(attr1, attr2, attr3);
@@ -776,7 +776,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a base element.
         /// </summary>
-        public void @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected void @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("base");
             Attrs(attr1, attr2, attr3, attr4);
@@ -786,7 +786,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a base element.
         /// </summary>
-        public void @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected void @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("base");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -796,7 +796,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a base element.
         /// </summary>
-        public void @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected void @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("base");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -806,7 +806,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a base element.
         /// </summary>
-        public void @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected void @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("base");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -816,7 +816,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a base element.
         /// </summary>
-        public void @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected void @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("base");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -826,7 +826,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a meta element.
         /// </summary>
-        public void meta(
+        protected void meta(
             string id = null,
             string @class = null,
             string style = null,
@@ -877,7 +877,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a meta element.
         /// </summary>
-        public void meta(params Attr[] attrs)
+        protected void meta(params Attr[] attrs)
         {
             StartTag("meta");
             Attrs(attrs);
@@ -887,7 +887,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a meta element.
         /// </summary>
-        public void meta(IEnumerable<Attr> attrs)
+        protected void meta(IEnumerable<Attr> attrs)
         {
             StartTag("meta");
             Attrs(attrs);
@@ -897,7 +897,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a meta element.
         /// </summary>
-        public void meta(Attr attr1)
+        protected void meta(Attr attr1)
         {
             StartTag("meta");
             Attrs(attr1);
@@ -907,7 +907,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a meta element.
         /// </summary>
-        public void meta(Attr attr1, Attr attr2)
+        protected void meta(Attr attr1, Attr attr2)
         {
             StartTag("meta");
             Attrs(attr1, attr2);
@@ -917,7 +917,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a meta element.
         /// </summary>
-        public void meta(Attr attr1, Attr attr2, Attr attr3)
+        protected void meta(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("meta");
             Attrs(attr1, attr2, attr3);
@@ -927,7 +927,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a meta element.
         /// </summary>
-        public void meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected void meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("meta");
             Attrs(attr1, attr2, attr3, attr4);
@@ -937,7 +937,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a meta element.
         /// </summary>
-        public void meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected void meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("meta");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -947,7 +947,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a meta element.
         /// </summary>
-        public void meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected void meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("meta");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -957,7 +957,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a meta element.
         /// </summary>
-        public void meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected void meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("meta");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -967,7 +967,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a meta element.
         /// </summary>
-        public void meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected void meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("meta");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -978,7 +978,7 @@ namespace Eighty.Twenty
         /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder style(
+        protected TagBuilder style(
             string id = null,
             string @class = null,
             string style = null,
@@ -1031,7 +1031,7 @@ namespace Eighty.Twenty
         /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder style(params Attr[] attrs)
+        protected TagBuilder style(params Attr[] attrs)
         {
             StartTag("style");
             Attrs(attrs);
@@ -1043,7 +1043,7 @@ namespace Eighty.Twenty
         /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder style(IEnumerable<Attr> attrs)
+        protected TagBuilder style(IEnumerable<Attr> attrs)
         {
             StartTag("style");
             Attrs(attrs);
@@ -1055,7 +1055,7 @@ namespace Eighty.Twenty
         /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder style(Attr attr1)
+        protected TagBuilder style(Attr attr1)
         {
             StartTag("style");
             Attrs(attr1);
@@ -1067,7 +1067,7 @@ namespace Eighty.Twenty
         /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder style(Attr attr1, Attr attr2)
+        protected TagBuilder style(Attr attr1, Attr attr2)
         {
             StartTag("style");
             Attrs(attr1, attr2);
@@ -1079,7 +1079,7 @@ namespace Eighty.Twenty
         /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder style(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder style(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("style");
             Attrs(attr1, attr2, attr3);
@@ -1091,7 +1091,7 @@ namespace Eighty.Twenty
         /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("style");
             Attrs(attr1, attr2, attr3, attr4);
@@ -1103,7 +1103,7 @@ namespace Eighty.Twenty
         /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("style");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -1115,7 +1115,7 @@ namespace Eighty.Twenty
         /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("style");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -1127,7 +1127,7 @@ namespace Eighty.Twenty
         /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("style");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -1139,7 +1139,7 @@ namespace Eighty.Twenty
         /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("style");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -1151,7 +1151,7 @@ namespace Eighty.Twenty
         /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder title(
+        protected TagBuilder title(
             string id = null,
             string @class = null,
             string style = null,
@@ -1194,7 +1194,7 @@ namespace Eighty.Twenty
         /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder title(params Attr[] attrs)
+        protected TagBuilder title(params Attr[] attrs)
         {
             StartTag("title");
             Attrs(attrs);
@@ -1206,7 +1206,7 @@ namespace Eighty.Twenty
         /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder title(IEnumerable<Attr> attrs)
+        protected TagBuilder title(IEnumerable<Attr> attrs)
         {
             StartTag("title");
             Attrs(attrs);
@@ -1218,7 +1218,7 @@ namespace Eighty.Twenty
         /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder title(Attr attr1)
+        protected TagBuilder title(Attr attr1)
         {
             StartTag("title");
             Attrs(attr1);
@@ -1230,7 +1230,7 @@ namespace Eighty.Twenty
         /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder title(Attr attr1, Attr attr2)
+        protected TagBuilder title(Attr attr1, Attr attr2)
         {
             StartTag("title");
             Attrs(attr1, attr2);
@@ -1242,7 +1242,7 @@ namespace Eighty.Twenty
         /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder title(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder title(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("title");
             Attrs(attr1, attr2, attr3);
@@ -1254,7 +1254,7 @@ namespace Eighty.Twenty
         /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("title");
             Attrs(attr1, attr2, attr3, attr4);
@@ -1266,7 +1266,7 @@ namespace Eighty.Twenty
         /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("title");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -1278,7 +1278,7 @@ namespace Eighty.Twenty
         /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("title");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -1290,7 +1290,7 @@ namespace Eighty.Twenty
         /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("title");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -1302,7 +1302,7 @@ namespace Eighty.Twenty
         /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("title");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -1314,7 +1314,7 @@ namespace Eighty.Twenty
         /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder script(
+        protected TagBuilder script(
             string id = null,
             string @class = null,
             string style = null,
@@ -1377,7 +1377,7 @@ namespace Eighty.Twenty
         /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder script(params Attr[] attrs)
+        protected TagBuilder script(params Attr[] attrs)
         {
             StartTag("script");
             Attrs(attrs);
@@ -1389,7 +1389,7 @@ namespace Eighty.Twenty
         /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder script(IEnumerable<Attr> attrs)
+        protected TagBuilder script(IEnumerable<Attr> attrs)
         {
             StartTag("script");
             Attrs(attrs);
@@ -1401,7 +1401,7 @@ namespace Eighty.Twenty
         /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder script(Attr attr1)
+        protected TagBuilder script(Attr attr1)
         {
             StartTag("script");
             Attrs(attr1);
@@ -1413,7 +1413,7 @@ namespace Eighty.Twenty
         /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder script(Attr attr1, Attr attr2)
+        protected TagBuilder script(Attr attr1, Attr attr2)
         {
             StartTag("script");
             Attrs(attr1, attr2);
@@ -1425,7 +1425,7 @@ namespace Eighty.Twenty
         /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder script(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder script(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("script");
             Attrs(attr1, attr2, attr3);
@@ -1437,7 +1437,7 @@ namespace Eighty.Twenty
         /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("script");
             Attrs(attr1, attr2, attr3, attr4);
@@ -1449,7 +1449,7 @@ namespace Eighty.Twenty
         /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("script");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -1461,7 +1461,7 @@ namespace Eighty.Twenty
         /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("script");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -1473,7 +1473,7 @@ namespace Eighty.Twenty
         /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("script");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -1485,7 +1485,7 @@ namespace Eighty.Twenty
         /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("script");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -1497,7 +1497,7 @@ namespace Eighty.Twenty
         /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder noscript(
+        protected TagBuilder noscript(
             string id = null,
             string @class = null,
             string style = null,
@@ -1540,7 +1540,7 @@ namespace Eighty.Twenty
         /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder noscript(params Attr[] attrs)
+        protected TagBuilder noscript(params Attr[] attrs)
         {
             StartTag("noscript");
             Attrs(attrs);
@@ -1552,7 +1552,7 @@ namespace Eighty.Twenty
         /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder noscript(IEnumerable<Attr> attrs)
+        protected TagBuilder noscript(IEnumerable<Attr> attrs)
         {
             StartTag("noscript");
             Attrs(attrs);
@@ -1564,7 +1564,7 @@ namespace Eighty.Twenty
         /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder noscript(Attr attr1)
+        protected TagBuilder noscript(Attr attr1)
         {
             StartTag("noscript");
             Attrs(attr1);
@@ -1576,7 +1576,7 @@ namespace Eighty.Twenty
         /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder noscript(Attr attr1, Attr attr2)
+        protected TagBuilder noscript(Attr attr1, Attr attr2)
         {
             StartTag("noscript");
             Attrs(attr1, attr2);
@@ -1588,7 +1588,7 @@ namespace Eighty.Twenty
         /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("noscript");
             Attrs(attr1, attr2, attr3);
@@ -1600,7 +1600,7 @@ namespace Eighty.Twenty
         /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("noscript");
             Attrs(attr1, attr2, attr3, attr4);
@@ -1612,7 +1612,7 @@ namespace Eighty.Twenty
         /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("noscript");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -1624,7 +1624,7 @@ namespace Eighty.Twenty
         /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("noscript");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -1636,7 +1636,7 @@ namespace Eighty.Twenty
         /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("noscript");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -1648,7 +1648,7 @@ namespace Eighty.Twenty
         /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("noscript");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -1660,7 +1660,7 @@ namespace Eighty.Twenty
         /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder main(
+        protected TagBuilder main(
             string id = null,
             string @class = null,
             string style = null,
@@ -1703,7 +1703,7 @@ namespace Eighty.Twenty
         /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder main(params Attr[] attrs)
+        protected TagBuilder main(params Attr[] attrs)
         {
             StartTag("main");
             Attrs(attrs);
@@ -1715,7 +1715,7 @@ namespace Eighty.Twenty
         /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder main(IEnumerable<Attr> attrs)
+        protected TagBuilder main(IEnumerable<Attr> attrs)
         {
             StartTag("main");
             Attrs(attrs);
@@ -1727,7 +1727,7 @@ namespace Eighty.Twenty
         /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder main(Attr attr1)
+        protected TagBuilder main(Attr attr1)
         {
             StartTag("main");
             Attrs(attr1);
@@ -1739,7 +1739,7 @@ namespace Eighty.Twenty
         /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder main(Attr attr1, Attr attr2)
+        protected TagBuilder main(Attr attr1, Attr attr2)
         {
             StartTag("main");
             Attrs(attr1, attr2);
@@ -1751,7 +1751,7 @@ namespace Eighty.Twenty
         /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder main(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder main(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("main");
             Attrs(attr1, attr2, attr3);
@@ -1763,7 +1763,7 @@ namespace Eighty.Twenty
         /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("main");
             Attrs(attr1, attr2, attr3, attr4);
@@ -1775,7 +1775,7 @@ namespace Eighty.Twenty
         /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("main");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -1787,7 +1787,7 @@ namespace Eighty.Twenty
         /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("main");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -1799,7 +1799,7 @@ namespace Eighty.Twenty
         /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("main");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -1811,7 +1811,7 @@ namespace Eighty.Twenty
         /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("main");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -1823,7 +1823,7 @@ namespace Eighty.Twenty
         /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder header(
+        protected TagBuilder header(
             string id = null,
             string @class = null,
             string style = null,
@@ -1866,7 +1866,7 @@ namespace Eighty.Twenty
         /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder header(params Attr[] attrs)
+        protected TagBuilder header(params Attr[] attrs)
         {
             StartTag("header");
             Attrs(attrs);
@@ -1878,7 +1878,7 @@ namespace Eighty.Twenty
         /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder header(IEnumerable<Attr> attrs)
+        protected TagBuilder header(IEnumerable<Attr> attrs)
         {
             StartTag("header");
             Attrs(attrs);
@@ -1890,7 +1890,7 @@ namespace Eighty.Twenty
         /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder header(Attr attr1)
+        protected TagBuilder header(Attr attr1)
         {
             StartTag("header");
             Attrs(attr1);
@@ -1902,7 +1902,7 @@ namespace Eighty.Twenty
         /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder header(Attr attr1, Attr attr2)
+        protected TagBuilder header(Attr attr1, Attr attr2)
         {
             StartTag("header");
             Attrs(attr1, attr2);
@@ -1914,7 +1914,7 @@ namespace Eighty.Twenty
         /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder header(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder header(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("header");
             Attrs(attr1, attr2, attr3);
@@ -1926,7 +1926,7 @@ namespace Eighty.Twenty
         /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("header");
             Attrs(attr1, attr2, attr3, attr4);
@@ -1938,7 +1938,7 @@ namespace Eighty.Twenty
         /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("header");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -1950,7 +1950,7 @@ namespace Eighty.Twenty
         /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("header");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -1962,7 +1962,7 @@ namespace Eighty.Twenty
         /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("header");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -1974,7 +1974,7 @@ namespace Eighty.Twenty
         /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("header");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -1986,7 +1986,7 @@ namespace Eighty.Twenty
         /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder article(
+        protected TagBuilder article(
             string id = null,
             string @class = null,
             string style = null,
@@ -2029,7 +2029,7 @@ namespace Eighty.Twenty
         /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder article(params Attr[] attrs)
+        protected TagBuilder article(params Attr[] attrs)
         {
             StartTag("article");
             Attrs(attrs);
@@ -2041,7 +2041,7 @@ namespace Eighty.Twenty
         /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder article(IEnumerable<Attr> attrs)
+        protected TagBuilder article(IEnumerable<Attr> attrs)
         {
             StartTag("article");
             Attrs(attrs);
@@ -2053,7 +2053,7 @@ namespace Eighty.Twenty
         /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder article(Attr attr1)
+        protected TagBuilder article(Attr attr1)
         {
             StartTag("article");
             Attrs(attr1);
@@ -2065,7 +2065,7 @@ namespace Eighty.Twenty
         /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder article(Attr attr1, Attr attr2)
+        protected TagBuilder article(Attr attr1, Attr attr2)
         {
             StartTag("article");
             Attrs(attr1, attr2);
@@ -2077,7 +2077,7 @@ namespace Eighty.Twenty
         /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder article(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder article(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("article");
             Attrs(attr1, attr2, attr3);
@@ -2089,7 +2089,7 @@ namespace Eighty.Twenty
         /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("article");
             Attrs(attr1, attr2, attr3, attr4);
@@ -2101,7 +2101,7 @@ namespace Eighty.Twenty
         /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("article");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -2113,7 +2113,7 @@ namespace Eighty.Twenty
         /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("article");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -2125,7 +2125,7 @@ namespace Eighty.Twenty
         /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("article");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -2137,7 +2137,7 @@ namespace Eighty.Twenty
         /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("article");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -2149,7 +2149,7 @@ namespace Eighty.Twenty
         /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder section(
+        protected TagBuilder section(
             string id = null,
             string @class = null,
             string style = null,
@@ -2192,7 +2192,7 @@ namespace Eighty.Twenty
         /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder section(params Attr[] attrs)
+        protected TagBuilder section(params Attr[] attrs)
         {
             StartTag("section");
             Attrs(attrs);
@@ -2204,7 +2204,7 @@ namespace Eighty.Twenty
         /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder section(IEnumerable<Attr> attrs)
+        protected TagBuilder section(IEnumerable<Attr> attrs)
         {
             StartTag("section");
             Attrs(attrs);
@@ -2216,7 +2216,7 @@ namespace Eighty.Twenty
         /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder section(Attr attr1)
+        protected TagBuilder section(Attr attr1)
         {
             StartTag("section");
             Attrs(attr1);
@@ -2228,7 +2228,7 @@ namespace Eighty.Twenty
         /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder section(Attr attr1, Attr attr2)
+        protected TagBuilder section(Attr attr1, Attr attr2)
         {
             StartTag("section");
             Attrs(attr1, attr2);
@@ -2240,7 +2240,7 @@ namespace Eighty.Twenty
         /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder section(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder section(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("section");
             Attrs(attr1, attr2, attr3);
@@ -2252,7 +2252,7 @@ namespace Eighty.Twenty
         /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("section");
             Attrs(attr1, attr2, attr3, attr4);
@@ -2264,7 +2264,7 @@ namespace Eighty.Twenty
         /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("section");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -2276,7 +2276,7 @@ namespace Eighty.Twenty
         /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("section");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -2288,7 +2288,7 @@ namespace Eighty.Twenty
         /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("section");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -2300,7 +2300,7 @@ namespace Eighty.Twenty
         /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("section");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -2312,7 +2312,7 @@ namespace Eighty.Twenty
         /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder footer(
+        protected TagBuilder footer(
             string id = null,
             string @class = null,
             string style = null,
@@ -2355,7 +2355,7 @@ namespace Eighty.Twenty
         /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder footer(params Attr[] attrs)
+        protected TagBuilder footer(params Attr[] attrs)
         {
             StartTag("footer");
             Attrs(attrs);
@@ -2367,7 +2367,7 @@ namespace Eighty.Twenty
         /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder footer(IEnumerable<Attr> attrs)
+        protected TagBuilder footer(IEnumerable<Attr> attrs)
         {
             StartTag("footer");
             Attrs(attrs);
@@ -2379,7 +2379,7 @@ namespace Eighty.Twenty
         /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder footer(Attr attr1)
+        protected TagBuilder footer(Attr attr1)
         {
             StartTag("footer");
             Attrs(attr1);
@@ -2391,7 +2391,7 @@ namespace Eighty.Twenty
         /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder footer(Attr attr1, Attr attr2)
+        protected TagBuilder footer(Attr attr1, Attr attr2)
         {
             StartTag("footer");
             Attrs(attr1, attr2);
@@ -2403,7 +2403,7 @@ namespace Eighty.Twenty
         /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder footer(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder footer(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("footer");
             Attrs(attr1, attr2, attr3);
@@ -2415,7 +2415,7 @@ namespace Eighty.Twenty
         /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("footer");
             Attrs(attr1, attr2, attr3, attr4);
@@ -2427,7 +2427,7 @@ namespace Eighty.Twenty
         /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("footer");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -2439,7 +2439,7 @@ namespace Eighty.Twenty
         /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("footer");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -2451,7 +2451,7 @@ namespace Eighty.Twenty
         /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("footer");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -2463,7 +2463,7 @@ namespace Eighty.Twenty
         /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("footer");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -2475,7 +2475,7 @@ namespace Eighty.Twenty
         /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h1(
+        protected TagBuilder h1(
             string id = null,
             string @class = null,
             string style = null,
@@ -2518,7 +2518,7 @@ namespace Eighty.Twenty
         /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h1(params Attr[] attrs)
+        protected TagBuilder h1(params Attr[] attrs)
         {
             StartTag("h1");
             Attrs(attrs);
@@ -2530,7 +2530,7 @@ namespace Eighty.Twenty
         /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h1(IEnumerable<Attr> attrs)
+        protected TagBuilder h1(IEnumerable<Attr> attrs)
         {
             StartTag("h1");
             Attrs(attrs);
@@ -2542,7 +2542,7 @@ namespace Eighty.Twenty
         /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h1(Attr attr1)
+        protected TagBuilder h1(Attr attr1)
         {
             StartTag("h1");
             Attrs(attr1);
@@ -2554,7 +2554,7 @@ namespace Eighty.Twenty
         /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h1(Attr attr1, Attr attr2)
+        protected TagBuilder h1(Attr attr1, Attr attr2)
         {
             StartTag("h1");
             Attrs(attr1, attr2);
@@ -2566,7 +2566,7 @@ namespace Eighty.Twenty
         /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h1(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder h1(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("h1");
             Attrs(attr1, attr2, attr3);
@@ -2578,7 +2578,7 @@ namespace Eighty.Twenty
         /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("h1");
             Attrs(attr1, attr2, attr3, attr4);
@@ -2590,7 +2590,7 @@ namespace Eighty.Twenty
         /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("h1");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -2602,7 +2602,7 @@ namespace Eighty.Twenty
         /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("h1");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -2614,7 +2614,7 @@ namespace Eighty.Twenty
         /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("h1");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -2626,7 +2626,7 @@ namespace Eighty.Twenty
         /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("h1");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -2638,7 +2638,7 @@ namespace Eighty.Twenty
         /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h2(
+        protected TagBuilder h2(
             string id = null,
             string @class = null,
             string style = null,
@@ -2681,7 +2681,7 @@ namespace Eighty.Twenty
         /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h2(params Attr[] attrs)
+        protected TagBuilder h2(params Attr[] attrs)
         {
             StartTag("h2");
             Attrs(attrs);
@@ -2693,7 +2693,7 @@ namespace Eighty.Twenty
         /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h2(IEnumerable<Attr> attrs)
+        protected TagBuilder h2(IEnumerable<Attr> attrs)
         {
             StartTag("h2");
             Attrs(attrs);
@@ -2705,7 +2705,7 @@ namespace Eighty.Twenty
         /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h2(Attr attr1)
+        protected TagBuilder h2(Attr attr1)
         {
             StartTag("h2");
             Attrs(attr1);
@@ -2717,7 +2717,7 @@ namespace Eighty.Twenty
         /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h2(Attr attr1, Attr attr2)
+        protected TagBuilder h2(Attr attr1, Attr attr2)
         {
             StartTag("h2");
             Attrs(attr1, attr2);
@@ -2729,7 +2729,7 @@ namespace Eighty.Twenty
         /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h2(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder h2(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("h2");
             Attrs(attr1, attr2, attr3);
@@ -2741,7 +2741,7 @@ namespace Eighty.Twenty
         /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("h2");
             Attrs(attr1, attr2, attr3, attr4);
@@ -2753,7 +2753,7 @@ namespace Eighty.Twenty
         /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("h2");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -2765,7 +2765,7 @@ namespace Eighty.Twenty
         /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("h2");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -2777,7 +2777,7 @@ namespace Eighty.Twenty
         /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("h2");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -2789,7 +2789,7 @@ namespace Eighty.Twenty
         /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("h2");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -2801,7 +2801,7 @@ namespace Eighty.Twenty
         /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h3(
+        protected TagBuilder h3(
             string id = null,
             string @class = null,
             string style = null,
@@ -2844,7 +2844,7 @@ namespace Eighty.Twenty
         /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h3(params Attr[] attrs)
+        protected TagBuilder h3(params Attr[] attrs)
         {
             StartTag("h3");
             Attrs(attrs);
@@ -2856,7 +2856,7 @@ namespace Eighty.Twenty
         /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h3(IEnumerable<Attr> attrs)
+        protected TagBuilder h3(IEnumerable<Attr> attrs)
         {
             StartTag("h3");
             Attrs(attrs);
@@ -2868,7 +2868,7 @@ namespace Eighty.Twenty
         /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h3(Attr attr1)
+        protected TagBuilder h3(Attr attr1)
         {
             StartTag("h3");
             Attrs(attr1);
@@ -2880,7 +2880,7 @@ namespace Eighty.Twenty
         /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h3(Attr attr1, Attr attr2)
+        protected TagBuilder h3(Attr attr1, Attr attr2)
         {
             StartTag("h3");
             Attrs(attr1, attr2);
@@ -2892,7 +2892,7 @@ namespace Eighty.Twenty
         /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h3(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder h3(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("h3");
             Attrs(attr1, attr2, attr3);
@@ -2904,7 +2904,7 @@ namespace Eighty.Twenty
         /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("h3");
             Attrs(attr1, attr2, attr3, attr4);
@@ -2916,7 +2916,7 @@ namespace Eighty.Twenty
         /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("h3");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -2928,7 +2928,7 @@ namespace Eighty.Twenty
         /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("h3");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -2940,7 +2940,7 @@ namespace Eighty.Twenty
         /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("h3");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -2952,7 +2952,7 @@ namespace Eighty.Twenty
         /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("h3");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -2964,7 +2964,7 @@ namespace Eighty.Twenty
         /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h4(
+        protected TagBuilder h4(
             string id = null,
             string @class = null,
             string style = null,
@@ -3007,7 +3007,7 @@ namespace Eighty.Twenty
         /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h4(params Attr[] attrs)
+        protected TagBuilder h4(params Attr[] attrs)
         {
             StartTag("h4");
             Attrs(attrs);
@@ -3019,7 +3019,7 @@ namespace Eighty.Twenty
         /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h4(IEnumerable<Attr> attrs)
+        protected TagBuilder h4(IEnumerable<Attr> attrs)
         {
             StartTag("h4");
             Attrs(attrs);
@@ -3031,7 +3031,7 @@ namespace Eighty.Twenty
         /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h4(Attr attr1)
+        protected TagBuilder h4(Attr attr1)
         {
             StartTag("h4");
             Attrs(attr1);
@@ -3043,7 +3043,7 @@ namespace Eighty.Twenty
         /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h4(Attr attr1, Attr attr2)
+        protected TagBuilder h4(Attr attr1, Attr attr2)
         {
             StartTag("h4");
             Attrs(attr1, attr2);
@@ -3055,7 +3055,7 @@ namespace Eighty.Twenty
         /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h4(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder h4(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("h4");
             Attrs(attr1, attr2, attr3);
@@ -3067,7 +3067,7 @@ namespace Eighty.Twenty
         /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("h4");
             Attrs(attr1, attr2, attr3, attr4);
@@ -3079,7 +3079,7 @@ namespace Eighty.Twenty
         /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("h4");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -3091,7 +3091,7 @@ namespace Eighty.Twenty
         /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("h4");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -3103,7 +3103,7 @@ namespace Eighty.Twenty
         /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("h4");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -3115,7 +3115,7 @@ namespace Eighty.Twenty
         /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("h4");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -3127,7 +3127,7 @@ namespace Eighty.Twenty
         /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h5(
+        protected TagBuilder h5(
             string id = null,
             string @class = null,
             string style = null,
@@ -3170,7 +3170,7 @@ namespace Eighty.Twenty
         /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h5(params Attr[] attrs)
+        protected TagBuilder h5(params Attr[] attrs)
         {
             StartTag("h5");
             Attrs(attrs);
@@ -3182,7 +3182,7 @@ namespace Eighty.Twenty
         /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h5(IEnumerable<Attr> attrs)
+        protected TagBuilder h5(IEnumerable<Attr> attrs)
         {
             StartTag("h5");
             Attrs(attrs);
@@ -3194,7 +3194,7 @@ namespace Eighty.Twenty
         /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h5(Attr attr1)
+        protected TagBuilder h5(Attr attr1)
         {
             StartTag("h5");
             Attrs(attr1);
@@ -3206,7 +3206,7 @@ namespace Eighty.Twenty
         /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h5(Attr attr1, Attr attr2)
+        protected TagBuilder h5(Attr attr1, Attr attr2)
         {
             StartTag("h5");
             Attrs(attr1, attr2);
@@ -3218,7 +3218,7 @@ namespace Eighty.Twenty
         /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h5(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder h5(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("h5");
             Attrs(attr1, attr2, attr3);
@@ -3230,7 +3230,7 @@ namespace Eighty.Twenty
         /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("h5");
             Attrs(attr1, attr2, attr3, attr4);
@@ -3242,7 +3242,7 @@ namespace Eighty.Twenty
         /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("h5");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -3254,7 +3254,7 @@ namespace Eighty.Twenty
         /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("h5");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -3266,7 +3266,7 @@ namespace Eighty.Twenty
         /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("h5");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -3278,7 +3278,7 @@ namespace Eighty.Twenty
         /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("h5");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -3290,7 +3290,7 @@ namespace Eighty.Twenty
         /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h6(
+        protected TagBuilder h6(
             string id = null,
             string @class = null,
             string style = null,
@@ -3333,7 +3333,7 @@ namespace Eighty.Twenty
         /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h6(params Attr[] attrs)
+        protected TagBuilder h6(params Attr[] attrs)
         {
             StartTag("h6");
             Attrs(attrs);
@@ -3345,7 +3345,7 @@ namespace Eighty.Twenty
         /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h6(IEnumerable<Attr> attrs)
+        protected TagBuilder h6(IEnumerable<Attr> attrs)
         {
             StartTag("h6");
             Attrs(attrs);
@@ -3357,7 +3357,7 @@ namespace Eighty.Twenty
         /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h6(Attr attr1)
+        protected TagBuilder h6(Attr attr1)
         {
             StartTag("h6");
             Attrs(attr1);
@@ -3369,7 +3369,7 @@ namespace Eighty.Twenty
         /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h6(Attr attr1, Attr attr2)
+        protected TagBuilder h6(Attr attr1, Attr attr2)
         {
             StartTag("h6");
             Attrs(attr1, attr2);
@@ -3381,7 +3381,7 @@ namespace Eighty.Twenty
         /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h6(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder h6(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("h6");
             Attrs(attr1, attr2, attr3);
@@ -3393,7 +3393,7 @@ namespace Eighty.Twenty
         /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("h6");
             Attrs(attr1, attr2, attr3, attr4);
@@ -3405,7 +3405,7 @@ namespace Eighty.Twenty
         /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("h6");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -3417,7 +3417,7 @@ namespace Eighty.Twenty
         /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("h6");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -3429,7 +3429,7 @@ namespace Eighty.Twenty
         /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("h6");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -3441,7 +3441,7 @@ namespace Eighty.Twenty
         /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("h6");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -3453,7 +3453,7 @@ namespace Eighty.Twenty
         /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder hgroup(
+        protected TagBuilder hgroup(
             string id = null,
             string @class = null,
             string style = null,
@@ -3496,7 +3496,7 @@ namespace Eighty.Twenty
         /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder hgroup(params Attr[] attrs)
+        protected TagBuilder hgroup(params Attr[] attrs)
         {
             StartTag("hgroup");
             Attrs(attrs);
@@ -3508,7 +3508,7 @@ namespace Eighty.Twenty
         /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder hgroup(IEnumerable<Attr> attrs)
+        protected TagBuilder hgroup(IEnumerable<Attr> attrs)
         {
             StartTag("hgroup");
             Attrs(attrs);
@@ -3520,7 +3520,7 @@ namespace Eighty.Twenty
         /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder hgroup(Attr attr1)
+        protected TagBuilder hgroup(Attr attr1)
         {
             StartTag("hgroup");
             Attrs(attr1);
@@ -3532,7 +3532,7 @@ namespace Eighty.Twenty
         /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder hgroup(Attr attr1, Attr attr2)
+        protected TagBuilder hgroup(Attr attr1, Attr attr2)
         {
             StartTag("hgroup");
             Attrs(attr1, attr2);
@@ -3544,7 +3544,7 @@ namespace Eighty.Twenty
         /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("hgroup");
             Attrs(attr1, attr2, attr3);
@@ -3556,7 +3556,7 @@ namespace Eighty.Twenty
         /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("hgroup");
             Attrs(attr1, attr2, attr3, attr4);
@@ -3568,7 +3568,7 @@ namespace Eighty.Twenty
         /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("hgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -3580,7 +3580,7 @@ namespace Eighty.Twenty
         /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("hgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -3592,7 +3592,7 @@ namespace Eighty.Twenty
         /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("hgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -3604,7 +3604,7 @@ namespace Eighty.Twenty
         /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("hgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -3616,7 +3616,7 @@ namespace Eighty.Twenty
         /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder div(
+        protected TagBuilder div(
             string id = null,
             string @class = null,
             string style = null,
@@ -3659,7 +3659,7 @@ namespace Eighty.Twenty
         /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder div(params Attr[] attrs)
+        protected TagBuilder div(params Attr[] attrs)
         {
             StartTag("div");
             Attrs(attrs);
@@ -3671,7 +3671,7 @@ namespace Eighty.Twenty
         /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder div(IEnumerable<Attr> attrs)
+        protected TagBuilder div(IEnumerable<Attr> attrs)
         {
             StartTag("div");
             Attrs(attrs);
@@ -3683,7 +3683,7 @@ namespace Eighty.Twenty
         /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder div(Attr attr1)
+        protected TagBuilder div(Attr attr1)
         {
             StartTag("div");
             Attrs(attr1);
@@ -3695,7 +3695,7 @@ namespace Eighty.Twenty
         /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder div(Attr attr1, Attr attr2)
+        protected TagBuilder div(Attr attr1, Attr attr2)
         {
             StartTag("div");
             Attrs(attr1, attr2);
@@ -3707,7 +3707,7 @@ namespace Eighty.Twenty
         /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder div(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder div(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("div");
             Attrs(attr1, attr2, attr3);
@@ -3719,7 +3719,7 @@ namespace Eighty.Twenty
         /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("div");
             Attrs(attr1, attr2, attr3, attr4);
@@ -3731,7 +3731,7 @@ namespace Eighty.Twenty
         /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("div");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -3743,7 +3743,7 @@ namespace Eighty.Twenty
         /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("div");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -3755,7 +3755,7 @@ namespace Eighty.Twenty
         /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("div");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -3767,7 +3767,7 @@ namespace Eighty.Twenty
         /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("div");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -3779,7 +3779,7 @@ namespace Eighty.Twenty
         /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder p(
+        protected TagBuilder p(
             string id = null,
             string @class = null,
             string style = null,
@@ -3822,7 +3822,7 @@ namespace Eighty.Twenty
         /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder p(params Attr[] attrs)
+        protected TagBuilder p(params Attr[] attrs)
         {
             StartTag("p");
             Attrs(attrs);
@@ -3834,7 +3834,7 @@ namespace Eighty.Twenty
         /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder p(IEnumerable<Attr> attrs)
+        protected TagBuilder p(IEnumerable<Attr> attrs)
         {
             StartTag("p");
             Attrs(attrs);
@@ -3846,7 +3846,7 @@ namespace Eighty.Twenty
         /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder p(Attr attr1)
+        protected TagBuilder p(Attr attr1)
         {
             StartTag("p");
             Attrs(attr1);
@@ -3858,7 +3858,7 @@ namespace Eighty.Twenty
         /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder p(Attr attr1, Attr attr2)
+        protected TagBuilder p(Attr attr1, Attr attr2)
         {
             StartTag("p");
             Attrs(attr1, attr2);
@@ -3870,7 +3870,7 @@ namespace Eighty.Twenty
         /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder p(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder p(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("p");
             Attrs(attr1, attr2, attr3);
@@ -3882,7 +3882,7 @@ namespace Eighty.Twenty
         /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("p");
             Attrs(attr1, attr2, attr3, attr4);
@@ -3894,7 +3894,7 @@ namespace Eighty.Twenty
         /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("p");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -3906,7 +3906,7 @@ namespace Eighty.Twenty
         /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("p");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -3918,7 +3918,7 @@ namespace Eighty.Twenty
         /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("p");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -3930,7 +3930,7 @@ namespace Eighty.Twenty
         /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("p");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -3942,7 +3942,7 @@ namespace Eighty.Twenty
         /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder pre(
+        protected TagBuilder pre(
             string id = null,
             string @class = null,
             string style = null,
@@ -3985,7 +3985,7 @@ namespace Eighty.Twenty
         /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder pre(params Attr[] attrs)
+        protected TagBuilder pre(params Attr[] attrs)
         {
             StartTag("pre");
             Attrs(attrs);
@@ -3997,7 +3997,7 @@ namespace Eighty.Twenty
         /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder pre(IEnumerable<Attr> attrs)
+        protected TagBuilder pre(IEnumerable<Attr> attrs)
         {
             StartTag("pre");
             Attrs(attrs);
@@ -4009,7 +4009,7 @@ namespace Eighty.Twenty
         /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder pre(Attr attr1)
+        protected TagBuilder pre(Attr attr1)
         {
             StartTag("pre");
             Attrs(attr1);
@@ -4021,7 +4021,7 @@ namespace Eighty.Twenty
         /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder pre(Attr attr1, Attr attr2)
+        protected TagBuilder pre(Attr attr1, Attr attr2)
         {
             StartTag("pre");
             Attrs(attr1, attr2);
@@ -4033,7 +4033,7 @@ namespace Eighty.Twenty
         /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder pre(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder pre(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("pre");
             Attrs(attr1, attr2, attr3);
@@ -4045,7 +4045,7 @@ namespace Eighty.Twenty
         /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("pre");
             Attrs(attr1, attr2, attr3, attr4);
@@ -4057,7 +4057,7 @@ namespace Eighty.Twenty
         /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("pre");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -4069,7 +4069,7 @@ namespace Eighty.Twenty
         /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("pre");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -4081,7 +4081,7 @@ namespace Eighty.Twenty
         /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("pre");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -4093,7 +4093,7 @@ namespace Eighty.Twenty
         /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("pre");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -4105,7 +4105,7 @@ namespace Eighty.Twenty
         /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder blockquote(
+        protected TagBuilder blockquote(
             string id = null,
             string @class = null,
             string style = null,
@@ -4148,7 +4148,7 @@ namespace Eighty.Twenty
         /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder blockquote(params Attr[] attrs)
+        protected TagBuilder blockquote(params Attr[] attrs)
         {
             StartTag("blockquote");
             Attrs(attrs);
@@ -4160,7 +4160,7 @@ namespace Eighty.Twenty
         /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder blockquote(IEnumerable<Attr> attrs)
+        protected TagBuilder blockquote(IEnumerable<Attr> attrs)
         {
             StartTag("blockquote");
             Attrs(attrs);
@@ -4172,7 +4172,7 @@ namespace Eighty.Twenty
         /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder blockquote(Attr attr1)
+        protected TagBuilder blockquote(Attr attr1)
         {
             StartTag("blockquote");
             Attrs(attr1);
@@ -4184,7 +4184,7 @@ namespace Eighty.Twenty
         /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder blockquote(Attr attr1, Attr attr2)
+        protected TagBuilder blockquote(Attr attr1, Attr attr2)
         {
             StartTag("blockquote");
             Attrs(attr1, attr2);
@@ -4196,7 +4196,7 @@ namespace Eighty.Twenty
         /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("blockquote");
             Attrs(attr1, attr2, attr3);
@@ -4208,7 +4208,7 @@ namespace Eighty.Twenty
         /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("blockquote");
             Attrs(attr1, attr2, attr3, attr4);
@@ -4220,7 +4220,7 @@ namespace Eighty.Twenty
         /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("blockquote");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -4232,7 +4232,7 @@ namespace Eighty.Twenty
         /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("blockquote");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -4244,7 +4244,7 @@ namespace Eighty.Twenty
         /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("blockquote");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -4256,7 +4256,7 @@ namespace Eighty.Twenty
         /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("blockquote");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -4268,7 +4268,7 @@ namespace Eighty.Twenty
         /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder figure(
+        protected TagBuilder figure(
             string id = null,
             string @class = null,
             string style = null,
@@ -4311,7 +4311,7 @@ namespace Eighty.Twenty
         /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder figure(params Attr[] attrs)
+        protected TagBuilder figure(params Attr[] attrs)
         {
             StartTag("figure");
             Attrs(attrs);
@@ -4323,7 +4323,7 @@ namespace Eighty.Twenty
         /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder figure(IEnumerable<Attr> attrs)
+        protected TagBuilder figure(IEnumerable<Attr> attrs)
         {
             StartTag("figure");
             Attrs(attrs);
@@ -4335,7 +4335,7 @@ namespace Eighty.Twenty
         /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder figure(Attr attr1)
+        protected TagBuilder figure(Attr attr1)
         {
             StartTag("figure");
             Attrs(attr1);
@@ -4347,7 +4347,7 @@ namespace Eighty.Twenty
         /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder figure(Attr attr1, Attr attr2)
+        protected TagBuilder figure(Attr attr1, Attr attr2)
         {
             StartTag("figure");
             Attrs(attr1, attr2);
@@ -4359,7 +4359,7 @@ namespace Eighty.Twenty
         /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder figure(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder figure(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("figure");
             Attrs(attr1, attr2, attr3);
@@ -4371,7 +4371,7 @@ namespace Eighty.Twenty
         /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("figure");
             Attrs(attr1, attr2, attr3, attr4);
@@ -4383,7 +4383,7 @@ namespace Eighty.Twenty
         /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("figure");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -4395,7 +4395,7 @@ namespace Eighty.Twenty
         /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("figure");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -4407,7 +4407,7 @@ namespace Eighty.Twenty
         /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("figure");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -4419,7 +4419,7 @@ namespace Eighty.Twenty
         /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("figure");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -4431,7 +4431,7 @@ namespace Eighty.Twenty
         /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder figcaption(
+        protected TagBuilder figcaption(
             string id = null,
             string @class = null,
             string style = null,
@@ -4474,7 +4474,7 @@ namespace Eighty.Twenty
         /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder figcaption(params Attr[] attrs)
+        protected TagBuilder figcaption(params Attr[] attrs)
         {
             StartTag("figcaption");
             Attrs(attrs);
@@ -4486,7 +4486,7 @@ namespace Eighty.Twenty
         /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder figcaption(IEnumerable<Attr> attrs)
+        protected TagBuilder figcaption(IEnumerable<Attr> attrs)
         {
             StartTag("figcaption");
             Attrs(attrs);
@@ -4498,7 +4498,7 @@ namespace Eighty.Twenty
         /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder figcaption(Attr attr1)
+        protected TagBuilder figcaption(Attr attr1)
         {
             StartTag("figcaption");
             Attrs(attr1);
@@ -4510,7 +4510,7 @@ namespace Eighty.Twenty
         /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder figcaption(Attr attr1, Attr attr2)
+        protected TagBuilder figcaption(Attr attr1, Attr attr2)
         {
             StartTag("figcaption");
             Attrs(attr1, attr2);
@@ -4522,7 +4522,7 @@ namespace Eighty.Twenty
         /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("figcaption");
             Attrs(attr1, attr2, attr3);
@@ -4534,7 +4534,7 @@ namespace Eighty.Twenty
         /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("figcaption");
             Attrs(attr1, attr2, attr3, attr4);
@@ -4546,7 +4546,7 @@ namespace Eighty.Twenty
         /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("figcaption");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -4558,7 +4558,7 @@ namespace Eighty.Twenty
         /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("figcaption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -4570,7 +4570,7 @@ namespace Eighty.Twenty
         /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("figcaption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -4582,7 +4582,7 @@ namespace Eighty.Twenty
         /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("figcaption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -4594,7 +4594,7 @@ namespace Eighty.Twenty
         /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder aside(
+        protected TagBuilder aside(
             string id = null,
             string @class = null,
             string style = null,
@@ -4637,7 +4637,7 @@ namespace Eighty.Twenty
         /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder aside(params Attr[] attrs)
+        protected TagBuilder aside(params Attr[] attrs)
         {
             StartTag("aside");
             Attrs(attrs);
@@ -4649,7 +4649,7 @@ namespace Eighty.Twenty
         /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder aside(IEnumerable<Attr> attrs)
+        protected TagBuilder aside(IEnumerable<Attr> attrs)
         {
             StartTag("aside");
             Attrs(attrs);
@@ -4661,7 +4661,7 @@ namespace Eighty.Twenty
         /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder aside(Attr attr1)
+        protected TagBuilder aside(Attr attr1)
         {
             StartTag("aside");
             Attrs(attr1);
@@ -4673,7 +4673,7 @@ namespace Eighty.Twenty
         /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder aside(Attr attr1, Attr attr2)
+        protected TagBuilder aside(Attr attr1, Attr attr2)
         {
             StartTag("aside");
             Attrs(attr1, attr2);
@@ -4685,7 +4685,7 @@ namespace Eighty.Twenty
         /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder aside(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder aside(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("aside");
             Attrs(attr1, attr2, attr3);
@@ -4697,7 +4697,7 @@ namespace Eighty.Twenty
         /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("aside");
             Attrs(attr1, attr2, attr3, attr4);
@@ -4709,7 +4709,7 @@ namespace Eighty.Twenty
         /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("aside");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -4721,7 +4721,7 @@ namespace Eighty.Twenty
         /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("aside");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -4733,7 +4733,7 @@ namespace Eighty.Twenty
         /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("aside");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -4745,7 +4745,7 @@ namespace Eighty.Twenty
         /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("aside");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -4757,7 +4757,7 @@ namespace Eighty.Twenty
         /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder nav(
+        protected TagBuilder nav(
             string id = null,
             string @class = null,
             string style = null,
@@ -4800,7 +4800,7 @@ namespace Eighty.Twenty
         /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder nav(params Attr[] attrs)
+        protected TagBuilder nav(params Attr[] attrs)
         {
             StartTag("nav");
             Attrs(attrs);
@@ -4812,7 +4812,7 @@ namespace Eighty.Twenty
         /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder nav(IEnumerable<Attr> attrs)
+        protected TagBuilder nav(IEnumerable<Attr> attrs)
         {
             StartTag("nav");
             Attrs(attrs);
@@ -4824,7 +4824,7 @@ namespace Eighty.Twenty
         /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder nav(Attr attr1)
+        protected TagBuilder nav(Attr attr1)
         {
             StartTag("nav");
             Attrs(attr1);
@@ -4836,7 +4836,7 @@ namespace Eighty.Twenty
         /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder nav(Attr attr1, Attr attr2)
+        protected TagBuilder nav(Attr attr1, Attr attr2)
         {
             StartTag("nav");
             Attrs(attr1, attr2);
@@ -4848,7 +4848,7 @@ namespace Eighty.Twenty
         /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder nav(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder nav(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("nav");
             Attrs(attr1, attr2, attr3);
@@ -4860,7 +4860,7 @@ namespace Eighty.Twenty
         /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("nav");
             Attrs(attr1, attr2, attr3, attr4);
@@ -4872,7 +4872,7 @@ namespace Eighty.Twenty
         /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("nav");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -4884,7 +4884,7 @@ namespace Eighty.Twenty
         /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("nav");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -4896,7 +4896,7 @@ namespace Eighty.Twenty
         /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("nav");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -4908,7 +4908,7 @@ namespace Eighty.Twenty
         /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("nav");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -4920,7 +4920,7 @@ namespace Eighty.Twenty
         /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder address(
+        protected TagBuilder address(
             string id = null,
             string @class = null,
             string style = null,
@@ -4963,7 +4963,7 @@ namespace Eighty.Twenty
         /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder address(params Attr[] attrs)
+        protected TagBuilder address(params Attr[] attrs)
         {
             StartTag("address");
             Attrs(attrs);
@@ -4975,7 +4975,7 @@ namespace Eighty.Twenty
         /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder address(IEnumerable<Attr> attrs)
+        protected TagBuilder address(IEnumerable<Attr> attrs)
         {
             StartTag("address");
             Attrs(attrs);
@@ -4987,7 +4987,7 @@ namespace Eighty.Twenty
         /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder address(Attr attr1)
+        protected TagBuilder address(Attr attr1)
         {
             StartTag("address");
             Attrs(attr1);
@@ -4999,7 +4999,7 @@ namespace Eighty.Twenty
         /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder address(Attr attr1, Attr attr2)
+        protected TagBuilder address(Attr attr1, Attr attr2)
         {
             StartTag("address");
             Attrs(attr1, attr2);
@@ -5011,7 +5011,7 @@ namespace Eighty.Twenty
         /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder address(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder address(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("address");
             Attrs(attr1, attr2, attr3);
@@ -5023,7 +5023,7 @@ namespace Eighty.Twenty
         /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("address");
             Attrs(attr1, attr2, attr3, attr4);
@@ -5035,7 +5035,7 @@ namespace Eighty.Twenty
         /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("address");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -5047,7 +5047,7 @@ namespace Eighty.Twenty
         /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("address");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -5059,7 +5059,7 @@ namespace Eighty.Twenty
         /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("address");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -5071,7 +5071,7 @@ namespace Eighty.Twenty
         /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("address");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -5083,7 +5083,7 @@ namespace Eighty.Twenty
         /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder a(
+        protected TagBuilder a(
             string id = null,
             string @class = null,
             string style = null,
@@ -5151,7 +5151,7 @@ namespace Eighty.Twenty
         /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder a(params Attr[] attrs)
+        protected TagBuilder a(params Attr[] attrs)
         {
             StartTag("a");
             Attrs(attrs);
@@ -5163,7 +5163,7 @@ namespace Eighty.Twenty
         /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder a(IEnumerable<Attr> attrs)
+        protected TagBuilder a(IEnumerable<Attr> attrs)
         {
             StartTag("a");
             Attrs(attrs);
@@ -5175,7 +5175,7 @@ namespace Eighty.Twenty
         /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder a(Attr attr1)
+        protected TagBuilder a(Attr attr1)
         {
             StartTag("a");
             Attrs(attr1);
@@ -5187,7 +5187,7 @@ namespace Eighty.Twenty
         /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder a(Attr attr1, Attr attr2)
+        protected TagBuilder a(Attr attr1, Attr attr2)
         {
             StartTag("a");
             Attrs(attr1, attr2);
@@ -5199,7 +5199,7 @@ namespace Eighty.Twenty
         /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder a(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder a(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("a");
             Attrs(attr1, attr2, attr3);
@@ -5211,7 +5211,7 @@ namespace Eighty.Twenty
         /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("a");
             Attrs(attr1, attr2, attr3, attr4);
@@ -5223,7 +5223,7 @@ namespace Eighty.Twenty
         /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("a");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -5235,7 +5235,7 @@ namespace Eighty.Twenty
         /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("a");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -5247,7 +5247,7 @@ namespace Eighty.Twenty
         /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("a");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -5259,7 +5259,7 @@ namespace Eighty.Twenty
         /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("a");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -5271,7 +5271,7 @@ namespace Eighty.Twenty
         /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder b(
+        protected TagBuilder b(
             string id = null,
             string @class = null,
             string style = null,
@@ -5314,7 +5314,7 @@ namespace Eighty.Twenty
         /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder b(params Attr[] attrs)
+        protected TagBuilder b(params Attr[] attrs)
         {
             StartTag("b");
             Attrs(attrs);
@@ -5326,7 +5326,7 @@ namespace Eighty.Twenty
         /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder b(IEnumerable<Attr> attrs)
+        protected TagBuilder b(IEnumerable<Attr> attrs)
         {
             StartTag("b");
             Attrs(attrs);
@@ -5338,7 +5338,7 @@ namespace Eighty.Twenty
         /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder b(Attr attr1)
+        protected TagBuilder b(Attr attr1)
         {
             StartTag("b");
             Attrs(attr1);
@@ -5350,7 +5350,7 @@ namespace Eighty.Twenty
         /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder b(Attr attr1, Attr attr2)
+        protected TagBuilder b(Attr attr1, Attr attr2)
         {
             StartTag("b");
             Attrs(attr1, attr2);
@@ -5362,7 +5362,7 @@ namespace Eighty.Twenty
         /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder b(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder b(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("b");
             Attrs(attr1, attr2, attr3);
@@ -5374,7 +5374,7 @@ namespace Eighty.Twenty
         /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("b");
             Attrs(attr1, attr2, attr3, attr4);
@@ -5386,7 +5386,7 @@ namespace Eighty.Twenty
         /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("b");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -5398,7 +5398,7 @@ namespace Eighty.Twenty
         /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("b");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -5410,7 +5410,7 @@ namespace Eighty.Twenty
         /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("b");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -5422,7 +5422,7 @@ namespace Eighty.Twenty
         /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("b");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -5434,7 +5434,7 @@ namespace Eighty.Twenty
         /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder em(
+        protected TagBuilder em(
             string id = null,
             string @class = null,
             string style = null,
@@ -5477,7 +5477,7 @@ namespace Eighty.Twenty
         /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder em(params Attr[] attrs)
+        protected TagBuilder em(params Attr[] attrs)
         {
             StartTag("em");
             Attrs(attrs);
@@ -5489,7 +5489,7 @@ namespace Eighty.Twenty
         /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder em(IEnumerable<Attr> attrs)
+        protected TagBuilder em(IEnumerable<Attr> attrs)
         {
             StartTag("em");
             Attrs(attrs);
@@ -5501,7 +5501,7 @@ namespace Eighty.Twenty
         /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder em(Attr attr1)
+        protected TagBuilder em(Attr attr1)
         {
             StartTag("em");
             Attrs(attr1);
@@ -5513,7 +5513,7 @@ namespace Eighty.Twenty
         /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder em(Attr attr1, Attr attr2)
+        protected TagBuilder em(Attr attr1, Attr attr2)
         {
             StartTag("em");
             Attrs(attr1, attr2);
@@ -5525,7 +5525,7 @@ namespace Eighty.Twenty
         /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder em(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder em(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("em");
             Attrs(attr1, attr2, attr3);
@@ -5537,7 +5537,7 @@ namespace Eighty.Twenty
         /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("em");
             Attrs(attr1, attr2, attr3, attr4);
@@ -5549,7 +5549,7 @@ namespace Eighty.Twenty
         /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("em");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -5561,7 +5561,7 @@ namespace Eighty.Twenty
         /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("em");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -5573,7 +5573,7 @@ namespace Eighty.Twenty
         /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("em");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -5585,7 +5585,7 @@ namespace Eighty.Twenty
         /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("em");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -5597,7 +5597,7 @@ namespace Eighty.Twenty
         /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder i(
+        protected TagBuilder i(
             string id = null,
             string @class = null,
             string style = null,
@@ -5640,7 +5640,7 @@ namespace Eighty.Twenty
         /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder i(params Attr[] attrs)
+        protected TagBuilder i(params Attr[] attrs)
         {
             StartTag("i");
             Attrs(attrs);
@@ -5652,7 +5652,7 @@ namespace Eighty.Twenty
         /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder i(IEnumerable<Attr> attrs)
+        protected TagBuilder i(IEnumerable<Attr> attrs)
         {
             StartTag("i");
             Attrs(attrs);
@@ -5664,7 +5664,7 @@ namespace Eighty.Twenty
         /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder i(Attr attr1)
+        protected TagBuilder i(Attr attr1)
         {
             StartTag("i");
             Attrs(attr1);
@@ -5676,7 +5676,7 @@ namespace Eighty.Twenty
         /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder i(Attr attr1, Attr attr2)
+        protected TagBuilder i(Attr attr1, Attr attr2)
         {
             StartTag("i");
             Attrs(attr1, attr2);
@@ -5688,7 +5688,7 @@ namespace Eighty.Twenty
         /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder i(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder i(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("i");
             Attrs(attr1, attr2, attr3);
@@ -5700,7 +5700,7 @@ namespace Eighty.Twenty
         /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("i");
             Attrs(attr1, attr2, attr3, attr4);
@@ -5712,7 +5712,7 @@ namespace Eighty.Twenty
         /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("i");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -5724,7 +5724,7 @@ namespace Eighty.Twenty
         /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("i");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -5736,7 +5736,7 @@ namespace Eighty.Twenty
         /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("i");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -5748,7 +5748,7 @@ namespace Eighty.Twenty
         /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("i");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -5760,7 +5760,7 @@ namespace Eighty.Twenty
         /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder mark(
+        protected TagBuilder mark(
             string id = null,
             string @class = null,
             string style = null,
@@ -5803,7 +5803,7 @@ namespace Eighty.Twenty
         /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder mark(params Attr[] attrs)
+        protected TagBuilder mark(params Attr[] attrs)
         {
             StartTag("mark");
             Attrs(attrs);
@@ -5815,7 +5815,7 @@ namespace Eighty.Twenty
         /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder mark(IEnumerable<Attr> attrs)
+        protected TagBuilder mark(IEnumerable<Attr> attrs)
         {
             StartTag("mark");
             Attrs(attrs);
@@ -5827,7 +5827,7 @@ namespace Eighty.Twenty
         /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder mark(Attr attr1)
+        protected TagBuilder mark(Attr attr1)
         {
             StartTag("mark");
             Attrs(attr1);
@@ -5839,7 +5839,7 @@ namespace Eighty.Twenty
         /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder mark(Attr attr1, Attr attr2)
+        protected TagBuilder mark(Attr attr1, Attr attr2)
         {
             StartTag("mark");
             Attrs(attr1, attr2);
@@ -5851,7 +5851,7 @@ namespace Eighty.Twenty
         /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder mark(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder mark(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("mark");
             Attrs(attr1, attr2, attr3);
@@ -5863,7 +5863,7 @@ namespace Eighty.Twenty
         /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("mark");
             Attrs(attr1, attr2, attr3, attr4);
@@ -5875,7 +5875,7 @@ namespace Eighty.Twenty
         /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("mark");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -5887,7 +5887,7 @@ namespace Eighty.Twenty
         /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("mark");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -5899,7 +5899,7 @@ namespace Eighty.Twenty
         /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("mark");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -5911,7 +5911,7 @@ namespace Eighty.Twenty
         /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("mark");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -5923,7 +5923,7 @@ namespace Eighty.Twenty
         /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder q(
+        protected TagBuilder q(
             string id = null,
             string @class = null,
             string style = null,
@@ -5971,7 +5971,7 @@ namespace Eighty.Twenty
         /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder q(params Attr[] attrs)
+        protected TagBuilder q(params Attr[] attrs)
         {
             StartTag("q");
             Attrs(attrs);
@@ -5983,7 +5983,7 @@ namespace Eighty.Twenty
         /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder q(IEnumerable<Attr> attrs)
+        protected TagBuilder q(IEnumerable<Attr> attrs)
         {
             StartTag("q");
             Attrs(attrs);
@@ -5995,7 +5995,7 @@ namespace Eighty.Twenty
         /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder q(Attr attr1)
+        protected TagBuilder q(Attr attr1)
         {
             StartTag("q");
             Attrs(attr1);
@@ -6007,7 +6007,7 @@ namespace Eighty.Twenty
         /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder q(Attr attr1, Attr attr2)
+        protected TagBuilder q(Attr attr1, Attr attr2)
         {
             StartTag("q");
             Attrs(attr1, attr2);
@@ -6019,7 +6019,7 @@ namespace Eighty.Twenty
         /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder q(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder q(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("q");
             Attrs(attr1, attr2, attr3);
@@ -6031,7 +6031,7 @@ namespace Eighty.Twenty
         /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("q");
             Attrs(attr1, attr2, attr3, attr4);
@@ -6043,7 +6043,7 @@ namespace Eighty.Twenty
         /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("q");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -6055,7 +6055,7 @@ namespace Eighty.Twenty
         /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("q");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -6067,7 +6067,7 @@ namespace Eighty.Twenty
         /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("q");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -6079,7 +6079,7 @@ namespace Eighty.Twenty
         /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("q");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -6091,7 +6091,7 @@ namespace Eighty.Twenty
         /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder s(
+        protected TagBuilder s(
             string id = null,
             string @class = null,
             string style = null,
@@ -6134,7 +6134,7 @@ namespace Eighty.Twenty
         /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder s(params Attr[] attrs)
+        protected TagBuilder s(params Attr[] attrs)
         {
             StartTag("s");
             Attrs(attrs);
@@ -6146,7 +6146,7 @@ namespace Eighty.Twenty
         /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder s(IEnumerable<Attr> attrs)
+        protected TagBuilder s(IEnumerable<Attr> attrs)
         {
             StartTag("s");
             Attrs(attrs);
@@ -6158,7 +6158,7 @@ namespace Eighty.Twenty
         /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder s(Attr attr1)
+        protected TagBuilder s(Attr attr1)
         {
             StartTag("s");
             Attrs(attr1);
@@ -6170,7 +6170,7 @@ namespace Eighty.Twenty
         /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder s(Attr attr1, Attr attr2)
+        protected TagBuilder s(Attr attr1, Attr attr2)
         {
             StartTag("s");
             Attrs(attr1, attr2);
@@ -6182,7 +6182,7 @@ namespace Eighty.Twenty
         /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder s(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder s(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("s");
             Attrs(attr1, attr2, attr3);
@@ -6194,7 +6194,7 @@ namespace Eighty.Twenty
         /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("s");
             Attrs(attr1, attr2, attr3, attr4);
@@ -6206,7 +6206,7 @@ namespace Eighty.Twenty
         /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("s");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -6218,7 +6218,7 @@ namespace Eighty.Twenty
         /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("s");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -6230,7 +6230,7 @@ namespace Eighty.Twenty
         /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("s");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -6242,7 +6242,7 @@ namespace Eighty.Twenty
         /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("s");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -6254,7 +6254,7 @@ namespace Eighty.Twenty
         /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder small(
+        protected TagBuilder small(
             string id = null,
             string @class = null,
             string style = null,
@@ -6297,7 +6297,7 @@ namespace Eighty.Twenty
         /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder small(params Attr[] attrs)
+        protected TagBuilder small(params Attr[] attrs)
         {
             StartTag("small");
             Attrs(attrs);
@@ -6309,7 +6309,7 @@ namespace Eighty.Twenty
         /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder small(IEnumerable<Attr> attrs)
+        protected TagBuilder small(IEnumerable<Attr> attrs)
         {
             StartTag("small");
             Attrs(attrs);
@@ -6321,7 +6321,7 @@ namespace Eighty.Twenty
         /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder small(Attr attr1)
+        protected TagBuilder small(Attr attr1)
         {
             StartTag("small");
             Attrs(attr1);
@@ -6333,7 +6333,7 @@ namespace Eighty.Twenty
         /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder small(Attr attr1, Attr attr2)
+        protected TagBuilder small(Attr attr1, Attr attr2)
         {
             StartTag("small");
             Attrs(attr1, attr2);
@@ -6345,7 +6345,7 @@ namespace Eighty.Twenty
         /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder small(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder small(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("small");
             Attrs(attr1, attr2, attr3);
@@ -6357,7 +6357,7 @@ namespace Eighty.Twenty
         /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("small");
             Attrs(attr1, attr2, attr3, attr4);
@@ -6369,7 +6369,7 @@ namespace Eighty.Twenty
         /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("small");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -6381,7 +6381,7 @@ namespace Eighty.Twenty
         /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("small");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -6393,7 +6393,7 @@ namespace Eighty.Twenty
         /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("small");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -6405,7 +6405,7 @@ namespace Eighty.Twenty
         /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("small");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -6417,7 +6417,7 @@ namespace Eighty.Twenty
         /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder span(
+        protected TagBuilder span(
             string id = null,
             string @class = null,
             string style = null,
@@ -6460,7 +6460,7 @@ namespace Eighty.Twenty
         /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder span(params Attr[] attrs)
+        protected TagBuilder span(params Attr[] attrs)
         {
             StartTag("span");
             Attrs(attrs);
@@ -6472,7 +6472,7 @@ namespace Eighty.Twenty
         /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder span(IEnumerable<Attr> attrs)
+        protected TagBuilder span(IEnumerable<Attr> attrs)
         {
             StartTag("span");
             Attrs(attrs);
@@ -6484,7 +6484,7 @@ namespace Eighty.Twenty
         /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder span(Attr attr1)
+        protected TagBuilder span(Attr attr1)
         {
             StartTag("span");
             Attrs(attr1);
@@ -6496,7 +6496,7 @@ namespace Eighty.Twenty
         /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder span(Attr attr1, Attr attr2)
+        protected TagBuilder span(Attr attr1, Attr attr2)
         {
             StartTag("span");
             Attrs(attr1, attr2);
@@ -6508,7 +6508,7 @@ namespace Eighty.Twenty
         /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder span(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder span(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("span");
             Attrs(attr1, attr2, attr3);
@@ -6520,7 +6520,7 @@ namespace Eighty.Twenty
         /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("span");
             Attrs(attr1, attr2, attr3, attr4);
@@ -6532,7 +6532,7 @@ namespace Eighty.Twenty
         /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("span");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -6544,7 +6544,7 @@ namespace Eighty.Twenty
         /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("span");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -6556,7 +6556,7 @@ namespace Eighty.Twenty
         /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("span");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -6568,7 +6568,7 @@ namespace Eighty.Twenty
         /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("span");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -6580,7 +6580,7 @@ namespace Eighty.Twenty
         /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder strong(
+        protected TagBuilder strong(
             string id = null,
             string @class = null,
             string style = null,
@@ -6623,7 +6623,7 @@ namespace Eighty.Twenty
         /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder strong(params Attr[] attrs)
+        protected TagBuilder strong(params Attr[] attrs)
         {
             StartTag("strong");
             Attrs(attrs);
@@ -6635,7 +6635,7 @@ namespace Eighty.Twenty
         /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder strong(IEnumerable<Attr> attrs)
+        protected TagBuilder strong(IEnumerable<Attr> attrs)
         {
             StartTag("strong");
             Attrs(attrs);
@@ -6647,7 +6647,7 @@ namespace Eighty.Twenty
         /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder strong(Attr attr1)
+        protected TagBuilder strong(Attr attr1)
         {
             StartTag("strong");
             Attrs(attr1);
@@ -6659,7 +6659,7 @@ namespace Eighty.Twenty
         /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder strong(Attr attr1, Attr attr2)
+        protected TagBuilder strong(Attr attr1, Attr attr2)
         {
             StartTag("strong");
             Attrs(attr1, attr2);
@@ -6671,7 +6671,7 @@ namespace Eighty.Twenty
         /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder strong(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder strong(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("strong");
             Attrs(attr1, attr2, attr3);
@@ -6683,7 +6683,7 @@ namespace Eighty.Twenty
         /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("strong");
             Attrs(attr1, attr2, attr3, attr4);
@@ -6695,7 +6695,7 @@ namespace Eighty.Twenty
         /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("strong");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -6707,7 +6707,7 @@ namespace Eighty.Twenty
         /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("strong");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -6719,7 +6719,7 @@ namespace Eighty.Twenty
         /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("strong");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -6731,7 +6731,7 @@ namespace Eighty.Twenty
         /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("strong");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -6743,7 +6743,7 @@ namespace Eighty.Twenty
         /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder sub(
+        protected TagBuilder sub(
             string id = null,
             string @class = null,
             string style = null,
@@ -6786,7 +6786,7 @@ namespace Eighty.Twenty
         /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder sub(params Attr[] attrs)
+        protected TagBuilder sub(params Attr[] attrs)
         {
             StartTag("sub");
             Attrs(attrs);
@@ -6798,7 +6798,7 @@ namespace Eighty.Twenty
         /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder sub(IEnumerable<Attr> attrs)
+        protected TagBuilder sub(IEnumerable<Attr> attrs)
         {
             StartTag("sub");
             Attrs(attrs);
@@ -6810,7 +6810,7 @@ namespace Eighty.Twenty
         /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder sub(Attr attr1)
+        protected TagBuilder sub(Attr attr1)
         {
             StartTag("sub");
             Attrs(attr1);
@@ -6822,7 +6822,7 @@ namespace Eighty.Twenty
         /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder sub(Attr attr1, Attr attr2)
+        protected TagBuilder sub(Attr attr1, Attr attr2)
         {
             StartTag("sub");
             Attrs(attr1, attr2);
@@ -6834,7 +6834,7 @@ namespace Eighty.Twenty
         /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder sub(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder sub(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("sub");
             Attrs(attr1, attr2, attr3);
@@ -6846,7 +6846,7 @@ namespace Eighty.Twenty
         /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("sub");
             Attrs(attr1, attr2, attr3, attr4);
@@ -6858,7 +6858,7 @@ namespace Eighty.Twenty
         /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("sub");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -6870,7 +6870,7 @@ namespace Eighty.Twenty
         /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("sub");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -6882,7 +6882,7 @@ namespace Eighty.Twenty
         /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("sub");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -6894,7 +6894,7 @@ namespace Eighty.Twenty
         /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("sub");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -6906,7 +6906,7 @@ namespace Eighty.Twenty
         /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder sup(
+        protected TagBuilder sup(
             string id = null,
             string @class = null,
             string style = null,
@@ -6949,7 +6949,7 @@ namespace Eighty.Twenty
         /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder sup(params Attr[] attrs)
+        protected TagBuilder sup(params Attr[] attrs)
         {
             StartTag("sup");
             Attrs(attrs);
@@ -6961,7 +6961,7 @@ namespace Eighty.Twenty
         /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder sup(IEnumerable<Attr> attrs)
+        protected TagBuilder sup(IEnumerable<Attr> attrs)
         {
             StartTag("sup");
             Attrs(attrs);
@@ -6973,7 +6973,7 @@ namespace Eighty.Twenty
         /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder sup(Attr attr1)
+        protected TagBuilder sup(Attr attr1)
         {
             StartTag("sup");
             Attrs(attr1);
@@ -6985,7 +6985,7 @@ namespace Eighty.Twenty
         /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder sup(Attr attr1, Attr attr2)
+        protected TagBuilder sup(Attr attr1, Attr attr2)
         {
             StartTag("sup");
             Attrs(attr1, attr2);
@@ -6997,7 +6997,7 @@ namespace Eighty.Twenty
         /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder sup(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder sup(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("sup");
             Attrs(attr1, attr2, attr3);
@@ -7009,7 +7009,7 @@ namespace Eighty.Twenty
         /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("sup");
             Attrs(attr1, attr2, attr3, attr4);
@@ -7021,7 +7021,7 @@ namespace Eighty.Twenty
         /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("sup");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -7033,7 +7033,7 @@ namespace Eighty.Twenty
         /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("sup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -7045,7 +7045,7 @@ namespace Eighty.Twenty
         /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("sup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -7057,7 +7057,7 @@ namespace Eighty.Twenty
         /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("sup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -7069,7 +7069,7 @@ namespace Eighty.Twenty
         /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder u(
+        protected TagBuilder u(
             string id = null,
             string @class = null,
             string style = null,
@@ -7112,7 +7112,7 @@ namespace Eighty.Twenty
         /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder u(params Attr[] attrs)
+        protected TagBuilder u(params Attr[] attrs)
         {
             StartTag("u");
             Attrs(attrs);
@@ -7124,7 +7124,7 @@ namespace Eighty.Twenty
         /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder u(IEnumerable<Attr> attrs)
+        protected TagBuilder u(IEnumerable<Attr> attrs)
         {
             StartTag("u");
             Attrs(attrs);
@@ -7136,7 +7136,7 @@ namespace Eighty.Twenty
         /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder u(Attr attr1)
+        protected TagBuilder u(Attr attr1)
         {
             StartTag("u");
             Attrs(attr1);
@@ -7148,7 +7148,7 @@ namespace Eighty.Twenty
         /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder u(Attr attr1, Attr attr2)
+        protected TagBuilder u(Attr attr1, Attr attr2)
         {
             StartTag("u");
             Attrs(attr1, attr2);
@@ -7160,7 +7160,7 @@ namespace Eighty.Twenty
         /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder u(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder u(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("u");
             Attrs(attr1, attr2, attr3);
@@ -7172,7 +7172,7 @@ namespace Eighty.Twenty
         /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("u");
             Attrs(attr1, attr2, attr3, attr4);
@@ -7184,7 +7184,7 @@ namespace Eighty.Twenty
         /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("u");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -7196,7 +7196,7 @@ namespace Eighty.Twenty
         /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("u");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -7208,7 +7208,7 @@ namespace Eighty.Twenty
         /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("u");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -7220,7 +7220,7 @@ namespace Eighty.Twenty
         /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("u");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -7231,7 +7231,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a br element.
         /// </summary>
-        public void br(
+        protected void br(
             string id = null,
             string @class = null,
             string style = null,
@@ -7272,7 +7272,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a br element.
         /// </summary>
-        public void br(params Attr[] attrs)
+        protected void br(params Attr[] attrs)
         {
             StartTag("br");
             Attrs(attrs);
@@ -7282,7 +7282,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a br element.
         /// </summary>
-        public void br(IEnumerable<Attr> attrs)
+        protected void br(IEnumerable<Attr> attrs)
         {
             StartTag("br");
             Attrs(attrs);
@@ -7292,7 +7292,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a br element.
         /// </summary>
-        public void br(Attr attr1)
+        protected void br(Attr attr1)
         {
             StartTag("br");
             Attrs(attr1);
@@ -7302,7 +7302,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a br element.
         /// </summary>
-        public void br(Attr attr1, Attr attr2)
+        protected void br(Attr attr1, Attr attr2)
         {
             StartTag("br");
             Attrs(attr1, attr2);
@@ -7312,7 +7312,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a br element.
         /// </summary>
-        public void br(Attr attr1, Attr attr2, Attr attr3)
+        protected void br(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("br");
             Attrs(attr1, attr2, attr3);
@@ -7322,7 +7322,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a br element.
         /// </summary>
-        public void br(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected void br(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("br");
             Attrs(attr1, attr2, attr3, attr4);
@@ -7332,7 +7332,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a br element.
         /// </summary>
-        public void br(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected void br(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("br");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -7342,7 +7342,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a br element.
         /// </summary>
-        public void br(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected void br(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("br");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -7352,7 +7352,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a br element.
         /// </summary>
-        public void br(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected void br(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("br");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -7362,7 +7362,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a br element.
         /// </summary>
-        public void br(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected void br(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("br");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -7372,7 +7372,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a wbr element.
         /// </summary>
-        public void wbr(
+        protected void wbr(
             string id = null,
             string @class = null,
             string style = null,
@@ -7413,7 +7413,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a wbr element.
         /// </summary>
-        public void wbr(params Attr[] attrs)
+        protected void wbr(params Attr[] attrs)
         {
             StartTag("wbr");
             Attrs(attrs);
@@ -7423,7 +7423,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a wbr element.
         /// </summary>
-        public void wbr(IEnumerable<Attr> attrs)
+        protected void wbr(IEnumerable<Attr> attrs)
         {
             StartTag("wbr");
             Attrs(attrs);
@@ -7433,7 +7433,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a wbr element.
         /// </summary>
-        public void wbr(Attr attr1)
+        protected void wbr(Attr attr1)
         {
             StartTag("wbr");
             Attrs(attr1);
@@ -7443,7 +7443,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a wbr element.
         /// </summary>
-        public void wbr(Attr attr1, Attr attr2)
+        protected void wbr(Attr attr1, Attr attr2)
         {
             StartTag("wbr");
             Attrs(attr1, attr2);
@@ -7453,7 +7453,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a wbr element.
         /// </summary>
-        public void wbr(Attr attr1, Attr attr2, Attr attr3)
+        protected void wbr(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("wbr");
             Attrs(attr1, attr2, attr3);
@@ -7463,7 +7463,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a wbr element.
         /// </summary>
-        public void wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected void wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("wbr");
             Attrs(attr1, attr2, attr3, attr4);
@@ -7473,7 +7473,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a wbr element.
         /// </summary>
-        public void wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected void wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("wbr");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -7483,7 +7483,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a wbr element.
         /// </summary>
-        public void wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected void wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("wbr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -7493,7 +7493,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a wbr element.
         /// </summary>
-        public void wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected void wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("wbr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -7503,7 +7503,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a wbr element.
         /// </summary>
-        public void wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected void wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("wbr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -7513,7 +7513,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an hr element.
         /// </summary>
-        public void hr(
+        protected void hr(
             string id = null,
             string @class = null,
             string style = null,
@@ -7554,7 +7554,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an hr element.
         /// </summary>
-        public void hr(params Attr[] attrs)
+        protected void hr(params Attr[] attrs)
         {
             StartTag("hr");
             Attrs(attrs);
@@ -7564,7 +7564,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an hr element.
         /// </summary>
-        public void hr(IEnumerable<Attr> attrs)
+        protected void hr(IEnumerable<Attr> attrs)
         {
             StartTag("hr");
             Attrs(attrs);
@@ -7574,7 +7574,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an hr element.
         /// </summary>
-        public void hr(Attr attr1)
+        protected void hr(Attr attr1)
         {
             StartTag("hr");
             Attrs(attr1);
@@ -7584,7 +7584,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an hr element.
         /// </summary>
-        public void hr(Attr attr1, Attr attr2)
+        protected void hr(Attr attr1, Attr attr2)
         {
             StartTag("hr");
             Attrs(attr1, attr2);
@@ -7594,7 +7594,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an hr element.
         /// </summary>
-        public void hr(Attr attr1, Attr attr2, Attr attr3)
+        protected void hr(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("hr");
             Attrs(attr1, attr2, attr3);
@@ -7604,7 +7604,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an hr element.
         /// </summary>
-        public void hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected void hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("hr");
             Attrs(attr1, attr2, attr3, attr4);
@@ -7614,7 +7614,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an hr element.
         /// </summary>
-        public void hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected void hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("hr");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -7624,7 +7624,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an hr element.
         /// </summary>
-        public void hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected void hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("hr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -7634,7 +7634,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an hr element.
         /// </summary>
-        public void hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected void hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("hr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -7644,7 +7644,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an hr element.
         /// </summary>
-        public void hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected void hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("hr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -7655,7 +7655,7 @@ namespace Eighty.Twenty
         /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder abbr(
+        protected TagBuilder abbr(
             string id = null,
             string @class = null,
             string style = null,
@@ -7698,7 +7698,7 @@ namespace Eighty.Twenty
         /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder abbr(params Attr[] attrs)
+        protected TagBuilder abbr(params Attr[] attrs)
         {
             StartTag("abbr");
             Attrs(attrs);
@@ -7710,7 +7710,7 @@ namespace Eighty.Twenty
         /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder abbr(IEnumerable<Attr> attrs)
+        protected TagBuilder abbr(IEnumerable<Attr> attrs)
         {
             StartTag("abbr");
             Attrs(attrs);
@@ -7722,7 +7722,7 @@ namespace Eighty.Twenty
         /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder abbr(Attr attr1)
+        protected TagBuilder abbr(Attr attr1)
         {
             StartTag("abbr");
             Attrs(attr1);
@@ -7734,7 +7734,7 @@ namespace Eighty.Twenty
         /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder abbr(Attr attr1, Attr attr2)
+        protected TagBuilder abbr(Attr attr1, Attr attr2)
         {
             StartTag("abbr");
             Attrs(attr1, attr2);
@@ -7746,7 +7746,7 @@ namespace Eighty.Twenty
         /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("abbr");
             Attrs(attr1, attr2, attr3);
@@ -7758,7 +7758,7 @@ namespace Eighty.Twenty
         /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("abbr");
             Attrs(attr1, attr2, attr3, attr4);
@@ -7770,7 +7770,7 @@ namespace Eighty.Twenty
         /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("abbr");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -7782,7 +7782,7 @@ namespace Eighty.Twenty
         /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("abbr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -7794,7 +7794,7 @@ namespace Eighty.Twenty
         /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("abbr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -7806,7 +7806,7 @@ namespace Eighty.Twenty
         /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("abbr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -7818,7 +7818,7 @@ namespace Eighty.Twenty
         /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder cite(
+        protected TagBuilder cite(
             string id = null,
             string @class = null,
             string style = null,
@@ -7861,7 +7861,7 @@ namespace Eighty.Twenty
         /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder cite(params Attr[] attrs)
+        protected TagBuilder cite(params Attr[] attrs)
         {
             StartTag("cite");
             Attrs(attrs);
@@ -7873,7 +7873,7 @@ namespace Eighty.Twenty
         /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder cite(IEnumerable<Attr> attrs)
+        protected TagBuilder cite(IEnumerable<Attr> attrs)
         {
             StartTag("cite");
             Attrs(attrs);
@@ -7885,7 +7885,7 @@ namespace Eighty.Twenty
         /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder cite(Attr attr1)
+        protected TagBuilder cite(Attr attr1)
         {
             StartTag("cite");
             Attrs(attr1);
@@ -7897,7 +7897,7 @@ namespace Eighty.Twenty
         /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder cite(Attr attr1, Attr attr2)
+        protected TagBuilder cite(Attr attr1, Attr attr2)
         {
             StartTag("cite");
             Attrs(attr1, attr2);
@@ -7909,7 +7909,7 @@ namespace Eighty.Twenty
         /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder cite(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder cite(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("cite");
             Attrs(attr1, attr2, attr3);
@@ -7921,7 +7921,7 @@ namespace Eighty.Twenty
         /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("cite");
             Attrs(attr1, attr2, attr3, attr4);
@@ -7933,7 +7933,7 @@ namespace Eighty.Twenty
         /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("cite");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -7945,7 +7945,7 @@ namespace Eighty.Twenty
         /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("cite");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -7957,7 +7957,7 @@ namespace Eighty.Twenty
         /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("cite");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -7969,7 +7969,7 @@ namespace Eighty.Twenty
         /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("cite");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -7981,7 +7981,7 @@ namespace Eighty.Twenty
         /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder code(
+        protected TagBuilder code(
             string id = null,
             string @class = null,
             string style = null,
@@ -8024,7 +8024,7 @@ namespace Eighty.Twenty
         /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder code(params Attr[] attrs)
+        protected TagBuilder code(params Attr[] attrs)
         {
             StartTag("code");
             Attrs(attrs);
@@ -8036,7 +8036,7 @@ namespace Eighty.Twenty
         /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder code(IEnumerable<Attr> attrs)
+        protected TagBuilder code(IEnumerable<Attr> attrs)
         {
             StartTag("code");
             Attrs(attrs);
@@ -8048,7 +8048,7 @@ namespace Eighty.Twenty
         /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder code(Attr attr1)
+        protected TagBuilder code(Attr attr1)
         {
             StartTag("code");
             Attrs(attr1);
@@ -8060,7 +8060,7 @@ namespace Eighty.Twenty
         /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder code(Attr attr1, Attr attr2)
+        protected TagBuilder code(Attr attr1, Attr attr2)
         {
             StartTag("code");
             Attrs(attr1, attr2);
@@ -8072,7 +8072,7 @@ namespace Eighty.Twenty
         /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder code(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder code(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("code");
             Attrs(attr1, attr2, attr3);
@@ -8084,7 +8084,7 @@ namespace Eighty.Twenty
         /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("code");
             Attrs(attr1, attr2, attr3, attr4);
@@ -8096,7 +8096,7 @@ namespace Eighty.Twenty
         /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("code");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -8108,7 +8108,7 @@ namespace Eighty.Twenty
         /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("code");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -8120,7 +8120,7 @@ namespace Eighty.Twenty
         /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("code");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -8132,7 +8132,7 @@ namespace Eighty.Twenty
         /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("code");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -8144,7 +8144,7 @@ namespace Eighty.Twenty
         /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder data(
+        protected TagBuilder data(
             string id = null,
             string @class = null,
             string style = null,
@@ -8192,7 +8192,7 @@ namespace Eighty.Twenty
         /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder data(params Attr[] attrs)
+        protected TagBuilder data(params Attr[] attrs)
         {
             StartTag("data");
             Attrs(attrs);
@@ -8204,7 +8204,7 @@ namespace Eighty.Twenty
         /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder data(IEnumerable<Attr> attrs)
+        protected TagBuilder data(IEnumerable<Attr> attrs)
         {
             StartTag("data");
             Attrs(attrs);
@@ -8216,7 +8216,7 @@ namespace Eighty.Twenty
         /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder data(Attr attr1)
+        protected TagBuilder data(Attr attr1)
         {
             StartTag("data");
             Attrs(attr1);
@@ -8228,7 +8228,7 @@ namespace Eighty.Twenty
         /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder data(Attr attr1, Attr attr2)
+        protected TagBuilder data(Attr attr1, Attr attr2)
         {
             StartTag("data");
             Attrs(attr1, attr2);
@@ -8240,7 +8240,7 @@ namespace Eighty.Twenty
         /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder data(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder data(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("data");
             Attrs(attr1, attr2, attr3);
@@ -8252,7 +8252,7 @@ namespace Eighty.Twenty
         /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("data");
             Attrs(attr1, attr2, attr3, attr4);
@@ -8264,7 +8264,7 @@ namespace Eighty.Twenty
         /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("data");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -8276,7 +8276,7 @@ namespace Eighty.Twenty
         /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("data");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -8288,7 +8288,7 @@ namespace Eighty.Twenty
         /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("data");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -8300,7 +8300,7 @@ namespace Eighty.Twenty
         /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("data");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -8312,7 +8312,7 @@ namespace Eighty.Twenty
         /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dfn(
+        protected TagBuilder dfn(
             string id = null,
             string @class = null,
             string style = null,
@@ -8355,7 +8355,7 @@ namespace Eighty.Twenty
         /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dfn(params Attr[] attrs)
+        protected TagBuilder dfn(params Attr[] attrs)
         {
             StartTag("dfn");
             Attrs(attrs);
@@ -8367,7 +8367,7 @@ namespace Eighty.Twenty
         /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dfn(IEnumerable<Attr> attrs)
+        protected TagBuilder dfn(IEnumerable<Attr> attrs)
         {
             StartTag("dfn");
             Attrs(attrs);
@@ -8379,7 +8379,7 @@ namespace Eighty.Twenty
         /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dfn(Attr attr1)
+        protected TagBuilder dfn(Attr attr1)
         {
             StartTag("dfn");
             Attrs(attr1);
@@ -8391,7 +8391,7 @@ namespace Eighty.Twenty
         /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dfn(Attr attr1, Attr attr2)
+        protected TagBuilder dfn(Attr attr1, Attr attr2)
         {
             StartTag("dfn");
             Attrs(attr1, attr2);
@@ -8403,7 +8403,7 @@ namespace Eighty.Twenty
         /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("dfn");
             Attrs(attr1, attr2, attr3);
@@ -8415,7 +8415,7 @@ namespace Eighty.Twenty
         /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("dfn");
             Attrs(attr1, attr2, attr3, attr4);
@@ -8427,7 +8427,7 @@ namespace Eighty.Twenty
         /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("dfn");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -8439,7 +8439,7 @@ namespace Eighty.Twenty
         /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("dfn");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -8451,7 +8451,7 @@ namespace Eighty.Twenty
         /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("dfn");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -8463,7 +8463,7 @@ namespace Eighty.Twenty
         /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("dfn");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -8475,7 +8475,7 @@ namespace Eighty.Twenty
         /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder kbd(
+        protected TagBuilder kbd(
             string id = null,
             string @class = null,
             string style = null,
@@ -8518,7 +8518,7 @@ namespace Eighty.Twenty
         /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder kbd(params Attr[] attrs)
+        protected TagBuilder kbd(params Attr[] attrs)
         {
             StartTag("kbd");
             Attrs(attrs);
@@ -8530,7 +8530,7 @@ namespace Eighty.Twenty
         /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder kbd(IEnumerable<Attr> attrs)
+        protected TagBuilder kbd(IEnumerable<Attr> attrs)
         {
             StartTag("kbd");
             Attrs(attrs);
@@ -8542,7 +8542,7 @@ namespace Eighty.Twenty
         /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder kbd(Attr attr1)
+        protected TagBuilder kbd(Attr attr1)
         {
             StartTag("kbd");
             Attrs(attr1);
@@ -8554,7 +8554,7 @@ namespace Eighty.Twenty
         /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder kbd(Attr attr1, Attr attr2)
+        protected TagBuilder kbd(Attr attr1, Attr attr2)
         {
             StartTag("kbd");
             Attrs(attr1, attr2);
@@ -8566,7 +8566,7 @@ namespace Eighty.Twenty
         /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("kbd");
             Attrs(attr1, attr2, attr3);
@@ -8578,7 +8578,7 @@ namespace Eighty.Twenty
         /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("kbd");
             Attrs(attr1, attr2, attr3, attr4);
@@ -8590,7 +8590,7 @@ namespace Eighty.Twenty
         /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("kbd");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -8602,7 +8602,7 @@ namespace Eighty.Twenty
         /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("kbd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -8614,7 +8614,7 @@ namespace Eighty.Twenty
         /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("kbd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -8626,7 +8626,7 @@ namespace Eighty.Twenty
         /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("kbd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -8638,7 +8638,7 @@ namespace Eighty.Twenty
         /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder samp(
+        protected TagBuilder samp(
             string id = null,
             string @class = null,
             string style = null,
@@ -8681,7 +8681,7 @@ namespace Eighty.Twenty
         /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder samp(params Attr[] attrs)
+        protected TagBuilder samp(params Attr[] attrs)
         {
             StartTag("samp");
             Attrs(attrs);
@@ -8693,7 +8693,7 @@ namespace Eighty.Twenty
         /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder samp(IEnumerable<Attr> attrs)
+        protected TagBuilder samp(IEnumerable<Attr> attrs)
         {
             StartTag("samp");
             Attrs(attrs);
@@ -8705,7 +8705,7 @@ namespace Eighty.Twenty
         /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder samp(Attr attr1)
+        protected TagBuilder samp(Attr attr1)
         {
             StartTag("samp");
             Attrs(attr1);
@@ -8717,7 +8717,7 @@ namespace Eighty.Twenty
         /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder samp(Attr attr1, Attr attr2)
+        protected TagBuilder samp(Attr attr1, Attr attr2)
         {
             StartTag("samp");
             Attrs(attr1, attr2);
@@ -8729,7 +8729,7 @@ namespace Eighty.Twenty
         /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder samp(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder samp(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("samp");
             Attrs(attr1, attr2, attr3);
@@ -8741,7 +8741,7 @@ namespace Eighty.Twenty
         /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("samp");
             Attrs(attr1, attr2, attr3, attr4);
@@ -8753,7 +8753,7 @@ namespace Eighty.Twenty
         /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("samp");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -8765,7 +8765,7 @@ namespace Eighty.Twenty
         /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("samp");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -8777,7 +8777,7 @@ namespace Eighty.Twenty
         /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("samp");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -8789,7 +8789,7 @@ namespace Eighty.Twenty
         /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("samp");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -8801,7 +8801,7 @@ namespace Eighty.Twenty
         /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder time(
+        protected TagBuilder time(
             string id = null,
             string @class = null,
             string style = null,
@@ -8849,7 +8849,7 @@ namespace Eighty.Twenty
         /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder time(params Attr[] attrs)
+        protected TagBuilder time(params Attr[] attrs)
         {
             StartTag("time");
             Attrs(attrs);
@@ -8861,7 +8861,7 @@ namespace Eighty.Twenty
         /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder time(IEnumerable<Attr> attrs)
+        protected TagBuilder time(IEnumerable<Attr> attrs)
         {
             StartTag("time");
             Attrs(attrs);
@@ -8873,7 +8873,7 @@ namespace Eighty.Twenty
         /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder time(Attr attr1)
+        protected TagBuilder time(Attr attr1)
         {
             StartTag("time");
             Attrs(attr1);
@@ -8885,7 +8885,7 @@ namespace Eighty.Twenty
         /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder time(Attr attr1, Attr attr2)
+        protected TagBuilder time(Attr attr1, Attr attr2)
         {
             StartTag("time");
             Attrs(attr1, attr2);
@@ -8897,7 +8897,7 @@ namespace Eighty.Twenty
         /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder time(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder time(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("time");
             Attrs(attr1, attr2, attr3);
@@ -8909,7 +8909,7 @@ namespace Eighty.Twenty
         /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("time");
             Attrs(attr1, attr2, attr3, attr4);
@@ -8921,7 +8921,7 @@ namespace Eighty.Twenty
         /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("time");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -8933,7 +8933,7 @@ namespace Eighty.Twenty
         /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("time");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -8945,7 +8945,7 @@ namespace Eighty.Twenty
         /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("time");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -8957,7 +8957,7 @@ namespace Eighty.Twenty
         /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("time");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -8969,7 +8969,7 @@ namespace Eighty.Twenty
         /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder ol(
+        protected TagBuilder ol(
             string id = null,
             string @class = null,
             string style = null,
@@ -9027,7 +9027,7 @@ namespace Eighty.Twenty
         /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder ol(params Attr[] attrs)
+        protected TagBuilder ol(params Attr[] attrs)
         {
             StartTag("ol");
             Attrs(attrs);
@@ -9039,7 +9039,7 @@ namespace Eighty.Twenty
         /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder ol(IEnumerable<Attr> attrs)
+        protected TagBuilder ol(IEnumerable<Attr> attrs)
         {
             StartTag("ol");
             Attrs(attrs);
@@ -9051,7 +9051,7 @@ namespace Eighty.Twenty
         /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder ol(Attr attr1)
+        protected TagBuilder ol(Attr attr1)
         {
             StartTag("ol");
             Attrs(attr1);
@@ -9063,7 +9063,7 @@ namespace Eighty.Twenty
         /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder ol(Attr attr1, Attr attr2)
+        protected TagBuilder ol(Attr attr1, Attr attr2)
         {
             StartTag("ol");
             Attrs(attr1, attr2);
@@ -9075,7 +9075,7 @@ namespace Eighty.Twenty
         /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder ol(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder ol(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("ol");
             Attrs(attr1, attr2, attr3);
@@ -9087,7 +9087,7 @@ namespace Eighty.Twenty
         /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("ol");
             Attrs(attr1, attr2, attr3, attr4);
@@ -9099,7 +9099,7 @@ namespace Eighty.Twenty
         /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("ol");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -9111,7 +9111,7 @@ namespace Eighty.Twenty
         /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("ol");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -9123,7 +9123,7 @@ namespace Eighty.Twenty
         /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("ol");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -9135,7 +9135,7 @@ namespace Eighty.Twenty
         /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("ol");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -9147,7 +9147,7 @@ namespace Eighty.Twenty
         /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder ul(
+        protected TagBuilder ul(
             string id = null,
             string @class = null,
             string style = null,
@@ -9205,7 +9205,7 @@ namespace Eighty.Twenty
         /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder ul(params Attr[] attrs)
+        protected TagBuilder ul(params Attr[] attrs)
         {
             StartTag("ul");
             Attrs(attrs);
@@ -9217,7 +9217,7 @@ namespace Eighty.Twenty
         /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder ul(IEnumerable<Attr> attrs)
+        protected TagBuilder ul(IEnumerable<Attr> attrs)
         {
             StartTag("ul");
             Attrs(attrs);
@@ -9229,7 +9229,7 @@ namespace Eighty.Twenty
         /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder ul(Attr attr1)
+        protected TagBuilder ul(Attr attr1)
         {
             StartTag("ul");
             Attrs(attr1);
@@ -9241,7 +9241,7 @@ namespace Eighty.Twenty
         /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder ul(Attr attr1, Attr attr2)
+        protected TagBuilder ul(Attr attr1, Attr attr2)
         {
             StartTag("ul");
             Attrs(attr1, attr2);
@@ -9253,7 +9253,7 @@ namespace Eighty.Twenty
         /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder ul(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder ul(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("ul");
             Attrs(attr1, attr2, attr3);
@@ -9265,7 +9265,7 @@ namespace Eighty.Twenty
         /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("ul");
             Attrs(attr1, attr2, attr3, attr4);
@@ -9277,7 +9277,7 @@ namespace Eighty.Twenty
         /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("ul");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -9289,7 +9289,7 @@ namespace Eighty.Twenty
         /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("ul");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -9301,7 +9301,7 @@ namespace Eighty.Twenty
         /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("ul");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -9313,7 +9313,7 @@ namespace Eighty.Twenty
         /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("ul");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -9325,7 +9325,7 @@ namespace Eighty.Twenty
         /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder li(
+        protected TagBuilder li(
             string id = null,
             string @class = null,
             string style = null,
@@ -9373,7 +9373,7 @@ namespace Eighty.Twenty
         /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder li(params Attr[] attrs)
+        protected TagBuilder li(params Attr[] attrs)
         {
             StartTag("li");
             Attrs(attrs);
@@ -9385,7 +9385,7 @@ namespace Eighty.Twenty
         /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder li(IEnumerable<Attr> attrs)
+        protected TagBuilder li(IEnumerable<Attr> attrs)
         {
             StartTag("li");
             Attrs(attrs);
@@ -9397,7 +9397,7 @@ namespace Eighty.Twenty
         /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder li(Attr attr1)
+        protected TagBuilder li(Attr attr1)
         {
             StartTag("li");
             Attrs(attr1);
@@ -9409,7 +9409,7 @@ namespace Eighty.Twenty
         /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder li(Attr attr1, Attr attr2)
+        protected TagBuilder li(Attr attr1, Attr attr2)
         {
             StartTag("li");
             Attrs(attr1, attr2);
@@ -9421,7 +9421,7 @@ namespace Eighty.Twenty
         /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder li(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder li(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("li");
             Attrs(attr1, attr2, attr3);
@@ -9433,7 +9433,7 @@ namespace Eighty.Twenty
         /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("li");
             Attrs(attr1, attr2, attr3, attr4);
@@ -9445,7 +9445,7 @@ namespace Eighty.Twenty
         /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("li");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -9457,7 +9457,7 @@ namespace Eighty.Twenty
         /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("li");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -9469,7 +9469,7 @@ namespace Eighty.Twenty
         /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("li");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -9481,7 +9481,7 @@ namespace Eighty.Twenty
         /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("li");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -9493,7 +9493,7 @@ namespace Eighty.Twenty
         /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dl(
+        protected TagBuilder dl(
             string id = null,
             string @class = null,
             string style = null,
@@ -9536,7 +9536,7 @@ namespace Eighty.Twenty
         /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dl(params Attr[] attrs)
+        protected TagBuilder dl(params Attr[] attrs)
         {
             StartTag("dl");
             Attrs(attrs);
@@ -9548,7 +9548,7 @@ namespace Eighty.Twenty
         /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dl(IEnumerable<Attr> attrs)
+        protected TagBuilder dl(IEnumerable<Attr> attrs)
         {
             StartTag("dl");
             Attrs(attrs);
@@ -9560,7 +9560,7 @@ namespace Eighty.Twenty
         /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dl(Attr attr1)
+        protected TagBuilder dl(Attr attr1)
         {
             StartTag("dl");
             Attrs(attr1);
@@ -9572,7 +9572,7 @@ namespace Eighty.Twenty
         /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dl(Attr attr1, Attr attr2)
+        protected TagBuilder dl(Attr attr1, Attr attr2)
         {
             StartTag("dl");
             Attrs(attr1, attr2);
@@ -9584,7 +9584,7 @@ namespace Eighty.Twenty
         /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dl(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder dl(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("dl");
             Attrs(attr1, attr2, attr3);
@@ -9596,7 +9596,7 @@ namespace Eighty.Twenty
         /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("dl");
             Attrs(attr1, attr2, attr3, attr4);
@@ -9608,7 +9608,7 @@ namespace Eighty.Twenty
         /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("dl");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -9620,7 +9620,7 @@ namespace Eighty.Twenty
         /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("dl");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -9632,7 +9632,7 @@ namespace Eighty.Twenty
         /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("dl");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -9644,7 +9644,7 @@ namespace Eighty.Twenty
         /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("dl");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -9656,7 +9656,7 @@ namespace Eighty.Twenty
         /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dt(
+        protected TagBuilder dt(
             string id = null,
             string @class = null,
             string style = null,
@@ -9699,7 +9699,7 @@ namespace Eighty.Twenty
         /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dt(params Attr[] attrs)
+        protected TagBuilder dt(params Attr[] attrs)
         {
             StartTag("dt");
             Attrs(attrs);
@@ -9711,7 +9711,7 @@ namespace Eighty.Twenty
         /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dt(IEnumerable<Attr> attrs)
+        protected TagBuilder dt(IEnumerable<Attr> attrs)
         {
             StartTag("dt");
             Attrs(attrs);
@@ -9723,7 +9723,7 @@ namespace Eighty.Twenty
         /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dt(Attr attr1)
+        protected TagBuilder dt(Attr attr1)
         {
             StartTag("dt");
             Attrs(attr1);
@@ -9735,7 +9735,7 @@ namespace Eighty.Twenty
         /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dt(Attr attr1, Attr attr2)
+        protected TagBuilder dt(Attr attr1, Attr attr2)
         {
             StartTag("dt");
             Attrs(attr1, attr2);
@@ -9747,7 +9747,7 @@ namespace Eighty.Twenty
         /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dt(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder dt(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("dt");
             Attrs(attr1, attr2, attr3);
@@ -9759,7 +9759,7 @@ namespace Eighty.Twenty
         /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("dt");
             Attrs(attr1, attr2, attr3, attr4);
@@ -9771,7 +9771,7 @@ namespace Eighty.Twenty
         /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("dt");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -9783,7 +9783,7 @@ namespace Eighty.Twenty
         /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("dt");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -9795,7 +9795,7 @@ namespace Eighty.Twenty
         /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("dt");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -9807,7 +9807,7 @@ namespace Eighty.Twenty
         /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("dt");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -9819,7 +9819,7 @@ namespace Eighty.Twenty
         /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dd(
+        protected TagBuilder dd(
             string id = null,
             string @class = null,
             string style = null,
@@ -9862,7 +9862,7 @@ namespace Eighty.Twenty
         /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dd(params Attr[] attrs)
+        protected TagBuilder dd(params Attr[] attrs)
         {
             StartTag("dd");
             Attrs(attrs);
@@ -9874,7 +9874,7 @@ namespace Eighty.Twenty
         /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dd(IEnumerable<Attr> attrs)
+        protected TagBuilder dd(IEnumerable<Attr> attrs)
         {
             StartTag("dd");
             Attrs(attrs);
@@ -9886,7 +9886,7 @@ namespace Eighty.Twenty
         /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dd(Attr attr1)
+        protected TagBuilder dd(Attr attr1)
         {
             StartTag("dd");
             Attrs(attr1);
@@ -9898,7 +9898,7 @@ namespace Eighty.Twenty
         /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dd(Attr attr1, Attr attr2)
+        protected TagBuilder dd(Attr attr1, Attr attr2)
         {
             StartTag("dd");
             Attrs(attr1, attr2);
@@ -9910,7 +9910,7 @@ namespace Eighty.Twenty
         /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dd(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder dd(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("dd");
             Attrs(attr1, attr2, attr3);
@@ -9922,7 +9922,7 @@ namespace Eighty.Twenty
         /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("dd");
             Attrs(attr1, attr2, attr3, attr4);
@@ -9934,7 +9934,7 @@ namespace Eighty.Twenty
         /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("dd");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -9946,7 +9946,7 @@ namespace Eighty.Twenty
         /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("dd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -9958,7 +9958,7 @@ namespace Eighty.Twenty
         /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("dd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -9970,7 +9970,7 @@ namespace Eighty.Twenty
         /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("dd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -9982,7 +9982,7 @@ namespace Eighty.Twenty
         /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder table(
+        protected TagBuilder table(
             string id = null,
             string @class = null,
             string style = null,
@@ -10025,7 +10025,7 @@ namespace Eighty.Twenty
         /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder table(params Attr[] attrs)
+        protected TagBuilder table(params Attr[] attrs)
         {
             StartTag("table");
             Attrs(attrs);
@@ -10037,7 +10037,7 @@ namespace Eighty.Twenty
         /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder table(IEnumerable<Attr> attrs)
+        protected TagBuilder table(IEnumerable<Attr> attrs)
         {
             StartTag("table");
             Attrs(attrs);
@@ -10049,7 +10049,7 @@ namespace Eighty.Twenty
         /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder table(Attr attr1)
+        protected TagBuilder table(Attr attr1)
         {
             StartTag("table");
             Attrs(attr1);
@@ -10061,7 +10061,7 @@ namespace Eighty.Twenty
         /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder table(Attr attr1, Attr attr2)
+        protected TagBuilder table(Attr attr1, Attr attr2)
         {
             StartTag("table");
             Attrs(attr1, attr2);
@@ -10073,7 +10073,7 @@ namespace Eighty.Twenty
         /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder table(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder table(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("table");
             Attrs(attr1, attr2, attr3);
@@ -10085,7 +10085,7 @@ namespace Eighty.Twenty
         /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("table");
             Attrs(attr1, attr2, attr3, attr4);
@@ -10097,7 +10097,7 @@ namespace Eighty.Twenty
         /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("table");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -10109,7 +10109,7 @@ namespace Eighty.Twenty
         /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("table");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -10121,7 +10121,7 @@ namespace Eighty.Twenty
         /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("table");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -10133,7 +10133,7 @@ namespace Eighty.Twenty
         /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("table");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -10145,7 +10145,7 @@ namespace Eighty.Twenty
         /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder caption(
+        protected TagBuilder caption(
             string id = null,
             string @class = null,
             string style = null,
@@ -10188,7 +10188,7 @@ namespace Eighty.Twenty
         /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder caption(params Attr[] attrs)
+        protected TagBuilder caption(params Attr[] attrs)
         {
             StartTag("caption");
             Attrs(attrs);
@@ -10200,7 +10200,7 @@ namespace Eighty.Twenty
         /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder caption(IEnumerable<Attr> attrs)
+        protected TagBuilder caption(IEnumerable<Attr> attrs)
         {
             StartTag("caption");
             Attrs(attrs);
@@ -10212,7 +10212,7 @@ namespace Eighty.Twenty
         /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder caption(Attr attr1)
+        protected TagBuilder caption(Attr attr1)
         {
             StartTag("caption");
             Attrs(attr1);
@@ -10224,7 +10224,7 @@ namespace Eighty.Twenty
         /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder caption(Attr attr1, Attr attr2)
+        protected TagBuilder caption(Attr attr1, Attr attr2)
         {
             StartTag("caption");
             Attrs(attr1, attr2);
@@ -10236,7 +10236,7 @@ namespace Eighty.Twenty
         /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder caption(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder caption(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("caption");
             Attrs(attr1, attr2, attr3);
@@ -10248,7 +10248,7 @@ namespace Eighty.Twenty
         /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("caption");
             Attrs(attr1, attr2, attr3, attr4);
@@ -10260,7 +10260,7 @@ namespace Eighty.Twenty
         /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("caption");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -10272,7 +10272,7 @@ namespace Eighty.Twenty
         /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("caption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -10284,7 +10284,7 @@ namespace Eighty.Twenty
         /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("caption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -10296,7 +10296,7 @@ namespace Eighty.Twenty
         /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("caption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -10308,7 +10308,7 @@ namespace Eighty.Twenty
         /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder thead(
+        protected TagBuilder thead(
             string id = null,
             string @class = null,
             string style = null,
@@ -10351,7 +10351,7 @@ namespace Eighty.Twenty
         /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder thead(params Attr[] attrs)
+        protected TagBuilder thead(params Attr[] attrs)
         {
             StartTag("thead");
             Attrs(attrs);
@@ -10363,7 +10363,7 @@ namespace Eighty.Twenty
         /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder thead(IEnumerable<Attr> attrs)
+        protected TagBuilder thead(IEnumerable<Attr> attrs)
         {
             StartTag("thead");
             Attrs(attrs);
@@ -10375,7 +10375,7 @@ namespace Eighty.Twenty
         /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder thead(Attr attr1)
+        protected TagBuilder thead(Attr attr1)
         {
             StartTag("thead");
             Attrs(attr1);
@@ -10387,7 +10387,7 @@ namespace Eighty.Twenty
         /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder thead(Attr attr1, Attr attr2)
+        protected TagBuilder thead(Attr attr1, Attr attr2)
         {
             StartTag("thead");
             Attrs(attr1, attr2);
@@ -10399,7 +10399,7 @@ namespace Eighty.Twenty
         /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder thead(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder thead(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("thead");
             Attrs(attr1, attr2, attr3);
@@ -10411,7 +10411,7 @@ namespace Eighty.Twenty
         /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("thead");
             Attrs(attr1, attr2, attr3, attr4);
@@ -10423,7 +10423,7 @@ namespace Eighty.Twenty
         /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("thead");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -10435,7 +10435,7 @@ namespace Eighty.Twenty
         /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("thead");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -10447,7 +10447,7 @@ namespace Eighty.Twenty
         /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("thead");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -10459,7 +10459,7 @@ namespace Eighty.Twenty
         /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("thead");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -10471,7 +10471,7 @@ namespace Eighty.Twenty
         /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder colgroup(
+        protected TagBuilder colgroup(
             string id = null,
             string @class = null,
             string style = null,
@@ -10519,7 +10519,7 @@ namespace Eighty.Twenty
         /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder colgroup(params Attr[] attrs)
+        protected TagBuilder colgroup(params Attr[] attrs)
         {
             StartTag("colgroup");
             Attrs(attrs);
@@ -10531,7 +10531,7 @@ namespace Eighty.Twenty
         /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder colgroup(IEnumerable<Attr> attrs)
+        protected TagBuilder colgroup(IEnumerable<Attr> attrs)
         {
             StartTag("colgroup");
             Attrs(attrs);
@@ -10543,7 +10543,7 @@ namespace Eighty.Twenty
         /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder colgroup(Attr attr1)
+        protected TagBuilder colgroup(Attr attr1)
         {
             StartTag("colgroup");
             Attrs(attr1);
@@ -10555,7 +10555,7 @@ namespace Eighty.Twenty
         /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder colgroup(Attr attr1, Attr attr2)
+        protected TagBuilder colgroup(Attr attr1, Attr attr2)
         {
             StartTag("colgroup");
             Attrs(attr1, attr2);
@@ -10567,7 +10567,7 @@ namespace Eighty.Twenty
         /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("colgroup");
             Attrs(attr1, attr2, attr3);
@@ -10579,7 +10579,7 @@ namespace Eighty.Twenty
         /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("colgroup");
             Attrs(attr1, attr2, attr3, attr4);
@@ -10591,7 +10591,7 @@ namespace Eighty.Twenty
         /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("colgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -10603,7 +10603,7 @@ namespace Eighty.Twenty
         /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("colgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -10615,7 +10615,7 @@ namespace Eighty.Twenty
         /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("colgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -10627,7 +10627,7 @@ namespace Eighty.Twenty
         /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("colgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -10639,7 +10639,7 @@ namespace Eighty.Twenty
         /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder col(
+        protected TagBuilder col(
             string id = null,
             string @class = null,
             string style = null,
@@ -10687,7 +10687,7 @@ namespace Eighty.Twenty
         /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder col(params Attr[] attrs)
+        protected TagBuilder col(params Attr[] attrs)
         {
             StartTag("col");
             Attrs(attrs);
@@ -10699,7 +10699,7 @@ namespace Eighty.Twenty
         /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder col(IEnumerable<Attr> attrs)
+        protected TagBuilder col(IEnumerable<Attr> attrs)
         {
             StartTag("col");
             Attrs(attrs);
@@ -10711,7 +10711,7 @@ namespace Eighty.Twenty
         /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder col(Attr attr1)
+        protected TagBuilder col(Attr attr1)
         {
             StartTag("col");
             Attrs(attr1);
@@ -10723,7 +10723,7 @@ namespace Eighty.Twenty
         /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder col(Attr attr1, Attr attr2)
+        protected TagBuilder col(Attr attr1, Attr attr2)
         {
             StartTag("col");
             Attrs(attr1, attr2);
@@ -10735,7 +10735,7 @@ namespace Eighty.Twenty
         /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder col(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder col(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("col");
             Attrs(attr1, attr2, attr3);
@@ -10747,7 +10747,7 @@ namespace Eighty.Twenty
         /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("col");
             Attrs(attr1, attr2, attr3, attr4);
@@ -10759,7 +10759,7 @@ namespace Eighty.Twenty
         /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("col");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -10771,7 +10771,7 @@ namespace Eighty.Twenty
         /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("col");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -10783,7 +10783,7 @@ namespace Eighty.Twenty
         /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("col");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -10795,7 +10795,7 @@ namespace Eighty.Twenty
         /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("col");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -10807,7 +10807,7 @@ namespace Eighty.Twenty
         /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tbody(
+        protected TagBuilder tbody(
             string id = null,
             string @class = null,
             string style = null,
@@ -10850,7 +10850,7 @@ namespace Eighty.Twenty
         /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tbody(params Attr[] attrs)
+        protected TagBuilder tbody(params Attr[] attrs)
         {
             StartTag("tbody");
             Attrs(attrs);
@@ -10862,7 +10862,7 @@ namespace Eighty.Twenty
         /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tbody(IEnumerable<Attr> attrs)
+        protected TagBuilder tbody(IEnumerable<Attr> attrs)
         {
             StartTag("tbody");
             Attrs(attrs);
@@ -10874,7 +10874,7 @@ namespace Eighty.Twenty
         /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tbody(Attr attr1)
+        protected TagBuilder tbody(Attr attr1)
         {
             StartTag("tbody");
             Attrs(attr1);
@@ -10886,7 +10886,7 @@ namespace Eighty.Twenty
         /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tbody(Attr attr1, Attr attr2)
+        protected TagBuilder tbody(Attr attr1, Attr attr2)
         {
             StartTag("tbody");
             Attrs(attr1, attr2);
@@ -10898,7 +10898,7 @@ namespace Eighty.Twenty
         /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("tbody");
             Attrs(attr1, attr2, attr3);
@@ -10910,7 +10910,7 @@ namespace Eighty.Twenty
         /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("tbody");
             Attrs(attr1, attr2, attr3, attr4);
@@ -10922,7 +10922,7 @@ namespace Eighty.Twenty
         /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("tbody");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -10934,7 +10934,7 @@ namespace Eighty.Twenty
         /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("tbody");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -10946,7 +10946,7 @@ namespace Eighty.Twenty
         /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("tbody");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -10958,7 +10958,7 @@ namespace Eighty.Twenty
         /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("tbody");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -10970,7 +10970,7 @@ namespace Eighty.Twenty
         /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tr(
+        protected TagBuilder tr(
             string id = null,
             string @class = null,
             string style = null,
@@ -11013,7 +11013,7 @@ namespace Eighty.Twenty
         /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tr(params Attr[] attrs)
+        protected TagBuilder tr(params Attr[] attrs)
         {
             StartTag("tr");
             Attrs(attrs);
@@ -11025,7 +11025,7 @@ namespace Eighty.Twenty
         /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tr(IEnumerable<Attr> attrs)
+        protected TagBuilder tr(IEnumerable<Attr> attrs)
         {
             StartTag("tr");
             Attrs(attrs);
@@ -11037,7 +11037,7 @@ namespace Eighty.Twenty
         /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tr(Attr attr1)
+        protected TagBuilder tr(Attr attr1)
         {
             StartTag("tr");
             Attrs(attr1);
@@ -11049,7 +11049,7 @@ namespace Eighty.Twenty
         /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tr(Attr attr1, Attr attr2)
+        protected TagBuilder tr(Attr attr1, Attr attr2)
         {
             StartTag("tr");
             Attrs(attr1, attr2);
@@ -11061,7 +11061,7 @@ namespace Eighty.Twenty
         /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tr(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder tr(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("tr");
             Attrs(attr1, attr2, attr3);
@@ -11073,7 +11073,7 @@ namespace Eighty.Twenty
         /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("tr");
             Attrs(attr1, attr2, attr3, attr4);
@@ -11085,7 +11085,7 @@ namespace Eighty.Twenty
         /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("tr");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -11097,7 +11097,7 @@ namespace Eighty.Twenty
         /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("tr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -11109,7 +11109,7 @@ namespace Eighty.Twenty
         /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("tr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -11121,7 +11121,7 @@ namespace Eighty.Twenty
         /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("tr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -11133,7 +11133,7 @@ namespace Eighty.Twenty
         /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder th(
+        protected TagBuilder th(
             string id = null,
             string @class = null,
             string style = null,
@@ -11196,7 +11196,7 @@ namespace Eighty.Twenty
         /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder th(params Attr[] attrs)
+        protected TagBuilder th(params Attr[] attrs)
         {
             StartTag("th");
             Attrs(attrs);
@@ -11208,7 +11208,7 @@ namespace Eighty.Twenty
         /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder th(IEnumerable<Attr> attrs)
+        protected TagBuilder th(IEnumerable<Attr> attrs)
         {
             StartTag("th");
             Attrs(attrs);
@@ -11220,7 +11220,7 @@ namespace Eighty.Twenty
         /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder th(Attr attr1)
+        protected TagBuilder th(Attr attr1)
         {
             StartTag("th");
             Attrs(attr1);
@@ -11232,7 +11232,7 @@ namespace Eighty.Twenty
         /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder th(Attr attr1, Attr attr2)
+        protected TagBuilder th(Attr attr1, Attr attr2)
         {
             StartTag("th");
             Attrs(attr1, attr2);
@@ -11244,7 +11244,7 @@ namespace Eighty.Twenty
         /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder th(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder th(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("th");
             Attrs(attr1, attr2, attr3);
@@ -11256,7 +11256,7 @@ namespace Eighty.Twenty
         /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("th");
             Attrs(attr1, attr2, attr3, attr4);
@@ -11268,7 +11268,7 @@ namespace Eighty.Twenty
         /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("th");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -11280,7 +11280,7 @@ namespace Eighty.Twenty
         /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("th");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -11292,7 +11292,7 @@ namespace Eighty.Twenty
         /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("th");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -11304,7 +11304,7 @@ namespace Eighty.Twenty
         /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("th");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -11316,7 +11316,7 @@ namespace Eighty.Twenty
         /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder td(
+        protected TagBuilder td(
             string id = null,
             string @class = null,
             string style = null,
@@ -11374,7 +11374,7 @@ namespace Eighty.Twenty
         /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder td(params Attr[] attrs)
+        protected TagBuilder td(params Attr[] attrs)
         {
             StartTag("td");
             Attrs(attrs);
@@ -11386,7 +11386,7 @@ namespace Eighty.Twenty
         /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder td(IEnumerable<Attr> attrs)
+        protected TagBuilder td(IEnumerable<Attr> attrs)
         {
             StartTag("td");
             Attrs(attrs);
@@ -11398,7 +11398,7 @@ namespace Eighty.Twenty
         /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder td(Attr attr1)
+        protected TagBuilder td(Attr attr1)
         {
             StartTag("td");
             Attrs(attr1);
@@ -11410,7 +11410,7 @@ namespace Eighty.Twenty
         /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder td(Attr attr1, Attr attr2)
+        protected TagBuilder td(Attr attr1, Attr attr2)
         {
             StartTag("td");
             Attrs(attr1, attr2);
@@ -11422,7 +11422,7 @@ namespace Eighty.Twenty
         /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder td(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder td(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("td");
             Attrs(attr1, attr2, attr3);
@@ -11434,7 +11434,7 @@ namespace Eighty.Twenty
         /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("td");
             Attrs(attr1, attr2, attr3, attr4);
@@ -11446,7 +11446,7 @@ namespace Eighty.Twenty
         /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("td");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -11458,7 +11458,7 @@ namespace Eighty.Twenty
         /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("td");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -11470,7 +11470,7 @@ namespace Eighty.Twenty
         /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("td");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -11482,7 +11482,7 @@ namespace Eighty.Twenty
         /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("td");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -11494,7 +11494,7 @@ namespace Eighty.Twenty
         /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tfoot(
+        protected TagBuilder tfoot(
             string id = null,
             string @class = null,
             string style = null,
@@ -11537,7 +11537,7 @@ namespace Eighty.Twenty
         /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tfoot(params Attr[] attrs)
+        protected TagBuilder tfoot(params Attr[] attrs)
         {
             StartTag("tfoot");
             Attrs(attrs);
@@ -11549,7 +11549,7 @@ namespace Eighty.Twenty
         /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tfoot(IEnumerable<Attr> attrs)
+        protected TagBuilder tfoot(IEnumerable<Attr> attrs)
         {
             StartTag("tfoot");
             Attrs(attrs);
@@ -11561,7 +11561,7 @@ namespace Eighty.Twenty
         /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tfoot(Attr attr1)
+        protected TagBuilder tfoot(Attr attr1)
         {
             StartTag("tfoot");
             Attrs(attr1);
@@ -11573,7 +11573,7 @@ namespace Eighty.Twenty
         /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tfoot(Attr attr1, Attr attr2)
+        protected TagBuilder tfoot(Attr attr1, Attr attr2)
         {
             StartTag("tfoot");
             Attrs(attr1, attr2);
@@ -11585,7 +11585,7 @@ namespace Eighty.Twenty
         /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("tfoot");
             Attrs(attr1, attr2, attr3);
@@ -11597,7 +11597,7 @@ namespace Eighty.Twenty
         /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("tfoot");
             Attrs(attr1, attr2, attr3, attr4);
@@ -11609,7 +11609,7 @@ namespace Eighty.Twenty
         /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("tfoot");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -11621,7 +11621,7 @@ namespace Eighty.Twenty
         /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("tfoot");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -11633,7 +11633,7 @@ namespace Eighty.Twenty
         /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("tfoot");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -11645,7 +11645,7 @@ namespace Eighty.Twenty
         /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("tfoot");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -11657,7 +11657,7 @@ namespace Eighty.Twenty
         /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder form(
+        protected TagBuilder form(
             string id = null,
             string @class = null,
             string style = null,
@@ -11735,7 +11735,7 @@ namespace Eighty.Twenty
         /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder form(params Attr[] attrs)
+        protected TagBuilder form(params Attr[] attrs)
         {
             StartTag("form");
             Attrs(attrs);
@@ -11747,7 +11747,7 @@ namespace Eighty.Twenty
         /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder form(IEnumerable<Attr> attrs)
+        protected TagBuilder form(IEnumerable<Attr> attrs)
         {
             StartTag("form");
             Attrs(attrs);
@@ -11759,7 +11759,7 @@ namespace Eighty.Twenty
         /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder form(Attr attr1)
+        protected TagBuilder form(Attr attr1)
         {
             StartTag("form");
             Attrs(attr1);
@@ -11771,7 +11771,7 @@ namespace Eighty.Twenty
         /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder form(Attr attr1, Attr attr2)
+        protected TagBuilder form(Attr attr1, Attr attr2)
         {
             StartTag("form");
             Attrs(attr1, attr2);
@@ -11783,7 +11783,7 @@ namespace Eighty.Twenty
         /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder form(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder form(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("form");
             Attrs(attr1, attr2, attr3);
@@ -11795,7 +11795,7 @@ namespace Eighty.Twenty
         /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("form");
             Attrs(attr1, attr2, attr3, attr4);
@@ -11807,7 +11807,7 @@ namespace Eighty.Twenty
         /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("form");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -11819,7 +11819,7 @@ namespace Eighty.Twenty
         /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("form");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -11831,7 +11831,7 @@ namespace Eighty.Twenty
         /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("form");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -11843,7 +11843,7 @@ namespace Eighty.Twenty
         /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("form");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -11855,7 +11855,7 @@ namespace Eighty.Twenty
         /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder fieldset(
+        protected TagBuilder fieldset(
             string id = null,
             string @class = null,
             string style = null,
@@ -11913,7 +11913,7 @@ namespace Eighty.Twenty
         /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder fieldset(params Attr[] attrs)
+        protected TagBuilder fieldset(params Attr[] attrs)
         {
             StartTag("fieldset");
             Attrs(attrs);
@@ -11925,7 +11925,7 @@ namespace Eighty.Twenty
         /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder fieldset(IEnumerable<Attr> attrs)
+        protected TagBuilder fieldset(IEnumerable<Attr> attrs)
         {
             StartTag("fieldset");
             Attrs(attrs);
@@ -11937,7 +11937,7 @@ namespace Eighty.Twenty
         /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder fieldset(Attr attr1)
+        protected TagBuilder fieldset(Attr attr1)
         {
             StartTag("fieldset");
             Attrs(attr1);
@@ -11949,7 +11949,7 @@ namespace Eighty.Twenty
         /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder fieldset(Attr attr1, Attr attr2)
+        protected TagBuilder fieldset(Attr attr1, Attr attr2)
         {
             StartTag("fieldset");
             Attrs(attr1, attr2);
@@ -11961,7 +11961,7 @@ namespace Eighty.Twenty
         /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("fieldset");
             Attrs(attr1, attr2, attr3);
@@ -11973,7 +11973,7 @@ namespace Eighty.Twenty
         /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("fieldset");
             Attrs(attr1, attr2, attr3, attr4);
@@ -11985,7 +11985,7 @@ namespace Eighty.Twenty
         /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("fieldset");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -11997,7 +11997,7 @@ namespace Eighty.Twenty
         /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("fieldset");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -12009,7 +12009,7 @@ namespace Eighty.Twenty
         /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("fieldset");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -12021,7 +12021,7 @@ namespace Eighty.Twenty
         /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("fieldset");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -12033,7 +12033,7 @@ namespace Eighty.Twenty
         /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder label(
+        protected TagBuilder label(
             string id = null,
             string @class = null,
             string style = null,
@@ -12081,7 +12081,7 @@ namespace Eighty.Twenty
         /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder label(params Attr[] attrs)
+        protected TagBuilder label(params Attr[] attrs)
         {
             StartTag("label");
             Attrs(attrs);
@@ -12093,7 +12093,7 @@ namespace Eighty.Twenty
         /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder label(IEnumerable<Attr> attrs)
+        protected TagBuilder label(IEnumerable<Attr> attrs)
         {
             StartTag("label");
             Attrs(attrs);
@@ -12105,7 +12105,7 @@ namespace Eighty.Twenty
         /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder label(Attr attr1)
+        protected TagBuilder label(Attr attr1)
         {
             StartTag("label");
             Attrs(attr1);
@@ -12117,7 +12117,7 @@ namespace Eighty.Twenty
         /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder label(Attr attr1, Attr attr2)
+        protected TagBuilder label(Attr attr1, Attr attr2)
         {
             StartTag("label");
             Attrs(attr1, attr2);
@@ -12129,7 +12129,7 @@ namespace Eighty.Twenty
         /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder label(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder label(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("label");
             Attrs(attr1, attr2, attr3);
@@ -12141,7 +12141,7 @@ namespace Eighty.Twenty
         /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("label");
             Attrs(attr1, attr2, attr3, attr4);
@@ -12153,7 +12153,7 @@ namespace Eighty.Twenty
         /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("label");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -12165,7 +12165,7 @@ namespace Eighty.Twenty
         /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("label");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -12177,7 +12177,7 @@ namespace Eighty.Twenty
         /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("label");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -12189,7 +12189,7 @@ namespace Eighty.Twenty
         /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("label");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -12201,7 +12201,7 @@ namespace Eighty.Twenty
         /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder input(
+        protected TagBuilder input(
             string id = null,
             string @class = null,
             string style = null,
@@ -12384,7 +12384,7 @@ namespace Eighty.Twenty
         /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder input(params Attr[] attrs)
+        protected TagBuilder input(params Attr[] attrs)
         {
             StartTag("input");
             Attrs(attrs);
@@ -12396,7 +12396,7 @@ namespace Eighty.Twenty
         /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder input(IEnumerable<Attr> attrs)
+        protected TagBuilder input(IEnumerable<Attr> attrs)
         {
             StartTag("input");
             Attrs(attrs);
@@ -12408,7 +12408,7 @@ namespace Eighty.Twenty
         /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder input(Attr attr1)
+        protected TagBuilder input(Attr attr1)
         {
             StartTag("input");
             Attrs(attr1);
@@ -12420,7 +12420,7 @@ namespace Eighty.Twenty
         /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder input(Attr attr1, Attr attr2)
+        protected TagBuilder input(Attr attr1, Attr attr2)
         {
             StartTag("input");
             Attrs(attr1, attr2);
@@ -12432,7 +12432,7 @@ namespace Eighty.Twenty
         /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder input(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder input(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("input");
             Attrs(attr1, attr2, attr3);
@@ -12444,7 +12444,7 @@ namespace Eighty.Twenty
         /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("input");
             Attrs(attr1, attr2, attr3, attr4);
@@ -12456,7 +12456,7 @@ namespace Eighty.Twenty
         /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("input");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -12468,7 +12468,7 @@ namespace Eighty.Twenty
         /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("input");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -12480,7 +12480,7 @@ namespace Eighty.Twenty
         /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("input");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -12492,7 +12492,7 @@ namespace Eighty.Twenty
         /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("input");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -12504,7 +12504,7 @@ namespace Eighty.Twenty
         /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder button(
+        protected TagBuilder button(
             string id = null,
             string @class = null,
             string style = null,
@@ -12617,7 +12617,7 @@ namespace Eighty.Twenty
         /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder button(params Attr[] attrs)
+        protected TagBuilder button(params Attr[] attrs)
         {
             StartTag("button");
             Attrs(attrs);
@@ -12629,7 +12629,7 @@ namespace Eighty.Twenty
         /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder button(IEnumerable<Attr> attrs)
+        protected TagBuilder button(IEnumerable<Attr> attrs)
         {
             StartTag("button");
             Attrs(attrs);
@@ -12641,7 +12641,7 @@ namespace Eighty.Twenty
         /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder button(Attr attr1)
+        protected TagBuilder button(Attr attr1)
         {
             StartTag("button");
             Attrs(attr1);
@@ -12653,7 +12653,7 @@ namespace Eighty.Twenty
         /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder button(Attr attr1, Attr attr2)
+        protected TagBuilder button(Attr attr1, Attr attr2)
         {
             StartTag("button");
             Attrs(attr1, attr2);
@@ -12665,7 +12665,7 @@ namespace Eighty.Twenty
         /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder button(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder button(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("button");
             Attrs(attr1, attr2, attr3);
@@ -12677,7 +12677,7 @@ namespace Eighty.Twenty
         /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("button");
             Attrs(attr1, attr2, attr3, attr4);
@@ -12689,7 +12689,7 @@ namespace Eighty.Twenty
         /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("button");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -12701,7 +12701,7 @@ namespace Eighty.Twenty
         /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("button");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -12713,7 +12713,7 @@ namespace Eighty.Twenty
         /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("button");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -12725,7 +12725,7 @@ namespace Eighty.Twenty
         /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("button");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -12737,7 +12737,7 @@ namespace Eighty.Twenty
         /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder textarea(
+        protected TagBuilder textarea(
             string id = null,
             string @class = null,
             string style = null,
@@ -12850,7 +12850,7 @@ namespace Eighty.Twenty
         /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder textarea(params Attr[] attrs)
+        protected TagBuilder textarea(params Attr[] attrs)
         {
             StartTag("textarea");
             Attrs(attrs);
@@ -12862,7 +12862,7 @@ namespace Eighty.Twenty
         /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder textarea(IEnumerable<Attr> attrs)
+        protected TagBuilder textarea(IEnumerable<Attr> attrs)
         {
             StartTag("textarea");
             Attrs(attrs);
@@ -12874,7 +12874,7 @@ namespace Eighty.Twenty
         /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder textarea(Attr attr1)
+        protected TagBuilder textarea(Attr attr1)
         {
             StartTag("textarea");
             Attrs(attr1);
@@ -12886,7 +12886,7 @@ namespace Eighty.Twenty
         /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder textarea(Attr attr1, Attr attr2)
+        protected TagBuilder textarea(Attr attr1, Attr attr2)
         {
             StartTag("textarea");
             Attrs(attr1, attr2);
@@ -12898,7 +12898,7 @@ namespace Eighty.Twenty
         /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("textarea");
             Attrs(attr1, attr2, attr3);
@@ -12910,7 +12910,7 @@ namespace Eighty.Twenty
         /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("textarea");
             Attrs(attr1, attr2, attr3, attr4);
@@ -12922,7 +12922,7 @@ namespace Eighty.Twenty
         /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("textarea");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -12934,7 +12934,7 @@ namespace Eighty.Twenty
         /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("textarea");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -12946,7 +12946,7 @@ namespace Eighty.Twenty
         /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("textarea");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -12958,7 +12958,7 @@ namespace Eighty.Twenty
         /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("textarea");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -12970,7 +12970,7 @@ namespace Eighty.Twenty
         /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder datalist(
+        protected TagBuilder datalist(
             string id = null,
             string @class = null,
             string style = null,
@@ -13013,7 +13013,7 @@ namespace Eighty.Twenty
         /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder datalist(params Attr[] attrs)
+        protected TagBuilder datalist(params Attr[] attrs)
         {
             StartTag("datalist");
             Attrs(attrs);
@@ -13025,7 +13025,7 @@ namespace Eighty.Twenty
         /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder datalist(IEnumerable<Attr> attrs)
+        protected TagBuilder datalist(IEnumerable<Attr> attrs)
         {
             StartTag("datalist");
             Attrs(attrs);
@@ -13037,7 +13037,7 @@ namespace Eighty.Twenty
         /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder datalist(Attr attr1)
+        protected TagBuilder datalist(Attr attr1)
         {
             StartTag("datalist");
             Attrs(attr1);
@@ -13049,7 +13049,7 @@ namespace Eighty.Twenty
         /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder datalist(Attr attr1, Attr attr2)
+        protected TagBuilder datalist(Attr attr1, Attr attr2)
         {
             StartTag("datalist");
             Attrs(attr1, attr2);
@@ -13061,7 +13061,7 @@ namespace Eighty.Twenty
         /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("datalist");
             Attrs(attr1, attr2, attr3);
@@ -13073,7 +13073,7 @@ namespace Eighty.Twenty
         /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("datalist");
             Attrs(attr1, attr2, attr3, attr4);
@@ -13085,7 +13085,7 @@ namespace Eighty.Twenty
         /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("datalist");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -13097,7 +13097,7 @@ namespace Eighty.Twenty
         /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("datalist");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -13109,7 +13109,7 @@ namespace Eighty.Twenty
         /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("datalist");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -13121,7 +13121,7 @@ namespace Eighty.Twenty
         /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("datalist");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -13133,7 +13133,7 @@ namespace Eighty.Twenty
         /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder optgroup(
+        protected TagBuilder optgroup(
             string id = null,
             string @class = null,
             string style = null,
@@ -13186,7 +13186,7 @@ namespace Eighty.Twenty
         /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder optgroup(params Attr[] attrs)
+        protected TagBuilder optgroup(params Attr[] attrs)
         {
             StartTag("optgroup");
             Attrs(attrs);
@@ -13198,7 +13198,7 @@ namespace Eighty.Twenty
         /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder optgroup(IEnumerable<Attr> attrs)
+        protected TagBuilder optgroup(IEnumerable<Attr> attrs)
         {
             StartTag("optgroup");
             Attrs(attrs);
@@ -13210,7 +13210,7 @@ namespace Eighty.Twenty
         /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder optgroup(Attr attr1)
+        protected TagBuilder optgroup(Attr attr1)
         {
             StartTag("optgroup");
             Attrs(attr1);
@@ -13222,7 +13222,7 @@ namespace Eighty.Twenty
         /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder optgroup(Attr attr1, Attr attr2)
+        protected TagBuilder optgroup(Attr attr1, Attr attr2)
         {
             StartTag("optgroup");
             Attrs(attr1, attr2);
@@ -13234,7 +13234,7 @@ namespace Eighty.Twenty
         /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("optgroup");
             Attrs(attr1, attr2, attr3);
@@ -13246,7 +13246,7 @@ namespace Eighty.Twenty
         /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("optgroup");
             Attrs(attr1, attr2, attr3, attr4);
@@ -13258,7 +13258,7 @@ namespace Eighty.Twenty
         /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("optgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -13270,7 +13270,7 @@ namespace Eighty.Twenty
         /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("optgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -13282,7 +13282,7 @@ namespace Eighty.Twenty
         /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("optgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -13294,7 +13294,7 @@ namespace Eighty.Twenty
         /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("optgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -13306,7 +13306,7 @@ namespace Eighty.Twenty
         /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder select(
+        protected TagBuilder select(
             string id = null,
             string @class = null,
             string style = null,
@@ -13384,7 +13384,7 @@ namespace Eighty.Twenty
         /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder select(params Attr[] attrs)
+        protected TagBuilder select(params Attr[] attrs)
         {
             StartTag("select");
             Attrs(attrs);
@@ -13396,7 +13396,7 @@ namespace Eighty.Twenty
         /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder select(IEnumerable<Attr> attrs)
+        protected TagBuilder select(IEnumerable<Attr> attrs)
         {
             StartTag("select");
             Attrs(attrs);
@@ -13408,7 +13408,7 @@ namespace Eighty.Twenty
         /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder select(Attr attr1)
+        protected TagBuilder select(Attr attr1)
         {
             StartTag("select");
             Attrs(attr1);
@@ -13420,7 +13420,7 @@ namespace Eighty.Twenty
         /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder select(Attr attr1, Attr attr2)
+        protected TagBuilder select(Attr attr1, Attr attr2)
         {
             StartTag("select");
             Attrs(attr1, attr2);
@@ -13432,7 +13432,7 @@ namespace Eighty.Twenty
         /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder select(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder select(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("select");
             Attrs(attr1, attr2, attr3);
@@ -13444,7 +13444,7 @@ namespace Eighty.Twenty
         /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("select");
             Attrs(attr1, attr2, attr3, attr4);
@@ -13456,7 +13456,7 @@ namespace Eighty.Twenty
         /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("select");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -13468,7 +13468,7 @@ namespace Eighty.Twenty
         /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("select");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -13480,7 +13480,7 @@ namespace Eighty.Twenty
         /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("select");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -13492,7 +13492,7 @@ namespace Eighty.Twenty
         /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("select");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -13504,7 +13504,7 @@ namespace Eighty.Twenty
         /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder option(
+        protected TagBuilder option(
             string id = null,
             string @class = null,
             string style = null,
@@ -13567,7 +13567,7 @@ namespace Eighty.Twenty
         /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder option(params Attr[] attrs)
+        protected TagBuilder option(params Attr[] attrs)
         {
             StartTag("option");
             Attrs(attrs);
@@ -13579,7 +13579,7 @@ namespace Eighty.Twenty
         /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder option(IEnumerable<Attr> attrs)
+        protected TagBuilder option(IEnumerable<Attr> attrs)
         {
             StartTag("option");
             Attrs(attrs);
@@ -13591,7 +13591,7 @@ namespace Eighty.Twenty
         /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder option(Attr attr1)
+        protected TagBuilder option(Attr attr1)
         {
             StartTag("option");
             Attrs(attr1);
@@ -13603,7 +13603,7 @@ namespace Eighty.Twenty
         /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder option(Attr attr1, Attr attr2)
+        protected TagBuilder option(Attr attr1, Attr attr2)
         {
             StartTag("option");
             Attrs(attr1, attr2);
@@ -13615,7 +13615,7 @@ namespace Eighty.Twenty
         /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder option(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder option(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("option");
             Attrs(attr1, attr2, attr3);
@@ -13627,7 +13627,7 @@ namespace Eighty.Twenty
         /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("option");
             Attrs(attr1, attr2, attr3, attr4);
@@ -13639,7 +13639,7 @@ namespace Eighty.Twenty
         /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("option");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -13651,7 +13651,7 @@ namespace Eighty.Twenty
         /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("option");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -13663,7 +13663,7 @@ namespace Eighty.Twenty
         /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("option");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -13675,7 +13675,7 @@ namespace Eighty.Twenty
         /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("option");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -13687,7 +13687,7 @@ namespace Eighty.Twenty
         /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder legend(
+        protected TagBuilder legend(
             string id = null,
             string @class = null,
             string style = null,
@@ -13730,7 +13730,7 @@ namespace Eighty.Twenty
         /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder legend(params Attr[] attrs)
+        protected TagBuilder legend(params Attr[] attrs)
         {
             StartTag("legend");
             Attrs(attrs);
@@ -13742,7 +13742,7 @@ namespace Eighty.Twenty
         /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder legend(IEnumerable<Attr> attrs)
+        protected TagBuilder legend(IEnumerable<Attr> attrs)
         {
             StartTag("legend");
             Attrs(attrs);
@@ -13754,7 +13754,7 @@ namespace Eighty.Twenty
         /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder legend(Attr attr1)
+        protected TagBuilder legend(Attr attr1)
         {
             StartTag("legend");
             Attrs(attr1);
@@ -13766,7 +13766,7 @@ namespace Eighty.Twenty
         /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder legend(Attr attr1, Attr attr2)
+        protected TagBuilder legend(Attr attr1, Attr attr2)
         {
             StartTag("legend");
             Attrs(attr1, attr2);
@@ -13778,7 +13778,7 @@ namespace Eighty.Twenty
         /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder legend(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder legend(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("legend");
             Attrs(attr1, attr2, attr3);
@@ -13790,7 +13790,7 @@ namespace Eighty.Twenty
         /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("legend");
             Attrs(attr1, attr2, attr3, attr4);
@@ -13802,7 +13802,7 @@ namespace Eighty.Twenty
         /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("legend");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -13814,7 +13814,7 @@ namespace Eighty.Twenty
         /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("legend");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -13826,7 +13826,7 @@ namespace Eighty.Twenty
         /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("legend");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -13838,7 +13838,7 @@ namespace Eighty.Twenty
         /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("legend");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -13850,7 +13850,7 @@ namespace Eighty.Twenty
         /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder meter(
+        protected TagBuilder meter(
             string id = null,
             string @class = null,
             string style = null,
@@ -13928,7 +13928,7 @@ namespace Eighty.Twenty
         /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder meter(params Attr[] attrs)
+        protected TagBuilder meter(params Attr[] attrs)
         {
             StartTag("meter");
             Attrs(attrs);
@@ -13940,7 +13940,7 @@ namespace Eighty.Twenty
         /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder meter(IEnumerable<Attr> attrs)
+        protected TagBuilder meter(IEnumerable<Attr> attrs)
         {
             StartTag("meter");
             Attrs(attrs);
@@ -13952,7 +13952,7 @@ namespace Eighty.Twenty
         /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder meter(Attr attr1)
+        protected TagBuilder meter(Attr attr1)
         {
             StartTag("meter");
             Attrs(attr1);
@@ -13964,7 +13964,7 @@ namespace Eighty.Twenty
         /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder meter(Attr attr1, Attr attr2)
+        protected TagBuilder meter(Attr attr1, Attr attr2)
         {
             StartTag("meter");
             Attrs(attr1, attr2);
@@ -13976,7 +13976,7 @@ namespace Eighty.Twenty
         /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder meter(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder meter(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("meter");
             Attrs(attr1, attr2, attr3);
@@ -13988,7 +13988,7 @@ namespace Eighty.Twenty
         /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("meter");
             Attrs(attr1, attr2, attr3, attr4);
@@ -14000,7 +14000,7 @@ namespace Eighty.Twenty
         /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("meter");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -14012,7 +14012,7 @@ namespace Eighty.Twenty
         /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("meter");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -14024,7 +14024,7 @@ namespace Eighty.Twenty
         /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("meter");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -14036,7 +14036,7 @@ namespace Eighty.Twenty
         /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("meter");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -14048,7 +14048,7 @@ namespace Eighty.Twenty
         /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder output(
+        protected TagBuilder output(
             string id = null,
             string @class = null,
             string style = null,
@@ -14106,7 +14106,7 @@ namespace Eighty.Twenty
         /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder output(params Attr[] attrs)
+        protected TagBuilder output(params Attr[] attrs)
         {
             StartTag("output");
             Attrs(attrs);
@@ -14118,7 +14118,7 @@ namespace Eighty.Twenty
         /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder output(IEnumerable<Attr> attrs)
+        protected TagBuilder output(IEnumerable<Attr> attrs)
         {
             StartTag("output");
             Attrs(attrs);
@@ -14130,7 +14130,7 @@ namespace Eighty.Twenty
         /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder output(Attr attr1)
+        protected TagBuilder output(Attr attr1)
         {
             StartTag("output");
             Attrs(attr1);
@@ -14142,7 +14142,7 @@ namespace Eighty.Twenty
         /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder output(Attr attr1, Attr attr2)
+        protected TagBuilder output(Attr attr1, Attr attr2)
         {
             StartTag("output");
             Attrs(attr1, attr2);
@@ -14154,7 +14154,7 @@ namespace Eighty.Twenty
         /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder output(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder output(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("output");
             Attrs(attr1, attr2, attr3);
@@ -14166,7 +14166,7 @@ namespace Eighty.Twenty
         /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("output");
             Attrs(attr1, attr2, attr3, attr4);
@@ -14178,7 +14178,7 @@ namespace Eighty.Twenty
         /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("output");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -14190,7 +14190,7 @@ namespace Eighty.Twenty
         /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("output");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -14202,7 +14202,7 @@ namespace Eighty.Twenty
         /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("output");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -14214,7 +14214,7 @@ namespace Eighty.Twenty
         /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("output");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -14226,7 +14226,7 @@ namespace Eighty.Twenty
         /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder progress(
+        protected TagBuilder progress(
             string id = null,
             string @class = null,
             string style = null,
@@ -14279,7 +14279,7 @@ namespace Eighty.Twenty
         /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder progress(params Attr[] attrs)
+        protected TagBuilder progress(params Attr[] attrs)
         {
             StartTag("progress");
             Attrs(attrs);
@@ -14291,7 +14291,7 @@ namespace Eighty.Twenty
         /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder progress(IEnumerable<Attr> attrs)
+        protected TagBuilder progress(IEnumerable<Attr> attrs)
         {
             StartTag("progress");
             Attrs(attrs);
@@ -14303,7 +14303,7 @@ namespace Eighty.Twenty
         /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder progress(Attr attr1)
+        protected TagBuilder progress(Attr attr1)
         {
             StartTag("progress");
             Attrs(attr1);
@@ -14315,7 +14315,7 @@ namespace Eighty.Twenty
         /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder progress(Attr attr1, Attr attr2)
+        protected TagBuilder progress(Attr attr1, Attr attr2)
         {
             StartTag("progress");
             Attrs(attr1, attr2);
@@ -14327,7 +14327,7 @@ namespace Eighty.Twenty
         /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder progress(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder progress(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("progress");
             Attrs(attr1, attr2, attr3);
@@ -14339,7 +14339,7 @@ namespace Eighty.Twenty
         /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("progress");
             Attrs(attr1, attr2, attr3, attr4);
@@ -14351,7 +14351,7 @@ namespace Eighty.Twenty
         /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("progress");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -14363,7 +14363,7 @@ namespace Eighty.Twenty
         /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("progress");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -14375,7 +14375,7 @@ namespace Eighty.Twenty
         /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("progress");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -14387,7 +14387,7 @@ namespace Eighty.Twenty
         /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("progress");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -14399,7 +14399,7 @@ namespace Eighty.Twenty
         /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder menu(
+        protected TagBuilder menu(
             string id = null,
             string @class = null,
             string style = null,
@@ -14452,7 +14452,7 @@ namespace Eighty.Twenty
         /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder menu(params Attr[] attrs)
+        protected TagBuilder menu(params Attr[] attrs)
         {
             StartTag("menu");
             Attrs(attrs);
@@ -14464,7 +14464,7 @@ namespace Eighty.Twenty
         /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder menu(IEnumerable<Attr> attrs)
+        protected TagBuilder menu(IEnumerable<Attr> attrs)
         {
             StartTag("menu");
             Attrs(attrs);
@@ -14476,7 +14476,7 @@ namespace Eighty.Twenty
         /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder menu(Attr attr1)
+        protected TagBuilder menu(Attr attr1)
         {
             StartTag("menu");
             Attrs(attr1);
@@ -14488,7 +14488,7 @@ namespace Eighty.Twenty
         /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder menu(Attr attr1, Attr attr2)
+        protected TagBuilder menu(Attr attr1, Attr attr2)
         {
             StartTag("menu");
             Attrs(attr1, attr2);
@@ -14500,7 +14500,7 @@ namespace Eighty.Twenty
         /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder menu(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder menu(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("menu");
             Attrs(attr1, attr2, attr3);
@@ -14512,7 +14512,7 @@ namespace Eighty.Twenty
         /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("menu");
             Attrs(attr1, attr2, attr3, attr4);
@@ -14524,7 +14524,7 @@ namespace Eighty.Twenty
         /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("menu");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -14536,7 +14536,7 @@ namespace Eighty.Twenty
         /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("menu");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -14548,7 +14548,7 @@ namespace Eighty.Twenty
         /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("menu");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -14560,7 +14560,7 @@ namespace Eighty.Twenty
         /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("menu");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -14572,7 +14572,7 @@ namespace Eighty.Twenty
         /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder menuitem(
+        protected TagBuilder menuitem(
             string id = null,
             string @class = null,
             string style = null,
@@ -14655,7 +14655,7 @@ namespace Eighty.Twenty
         /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder menuitem(params Attr[] attrs)
+        protected TagBuilder menuitem(params Attr[] attrs)
         {
             StartTag("menuitem");
             Attrs(attrs);
@@ -14667,7 +14667,7 @@ namespace Eighty.Twenty
         /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder menuitem(IEnumerable<Attr> attrs)
+        protected TagBuilder menuitem(IEnumerable<Attr> attrs)
         {
             StartTag("menuitem");
             Attrs(attrs);
@@ -14679,7 +14679,7 @@ namespace Eighty.Twenty
         /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder menuitem(Attr attr1)
+        protected TagBuilder menuitem(Attr attr1)
         {
             StartTag("menuitem");
             Attrs(attr1);
@@ -14691,7 +14691,7 @@ namespace Eighty.Twenty
         /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder menuitem(Attr attr1, Attr attr2)
+        protected TagBuilder menuitem(Attr attr1, Attr attr2)
         {
             StartTag("menuitem");
             Attrs(attr1, attr2);
@@ -14703,7 +14703,7 @@ namespace Eighty.Twenty
         /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("menuitem");
             Attrs(attr1, attr2, attr3);
@@ -14715,7 +14715,7 @@ namespace Eighty.Twenty
         /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("menuitem");
             Attrs(attr1, attr2, attr3, attr4);
@@ -14727,7 +14727,7 @@ namespace Eighty.Twenty
         /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("menuitem");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -14739,7 +14739,7 @@ namespace Eighty.Twenty
         /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("menuitem");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -14751,7 +14751,7 @@ namespace Eighty.Twenty
         /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("menuitem");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -14763,7 +14763,7 @@ namespace Eighty.Twenty
         /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("menuitem");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -14775,7 +14775,7 @@ namespace Eighty.Twenty
         /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dialog(
+        protected TagBuilder dialog(
             string id = null,
             string @class = null,
             string style = null,
@@ -14823,7 +14823,7 @@ namespace Eighty.Twenty
         /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dialog(params Attr[] attrs)
+        protected TagBuilder dialog(params Attr[] attrs)
         {
             StartTag("dialog");
             Attrs(attrs);
@@ -14835,7 +14835,7 @@ namespace Eighty.Twenty
         /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dialog(IEnumerable<Attr> attrs)
+        protected TagBuilder dialog(IEnumerable<Attr> attrs)
         {
             StartTag("dialog");
             Attrs(attrs);
@@ -14847,7 +14847,7 @@ namespace Eighty.Twenty
         /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dialog(Attr attr1)
+        protected TagBuilder dialog(Attr attr1)
         {
             StartTag("dialog");
             Attrs(attr1);
@@ -14859,7 +14859,7 @@ namespace Eighty.Twenty
         /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dialog(Attr attr1, Attr attr2)
+        protected TagBuilder dialog(Attr attr1, Attr attr2)
         {
             StartTag("dialog");
             Attrs(attr1, attr2);
@@ -14871,7 +14871,7 @@ namespace Eighty.Twenty
         /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("dialog");
             Attrs(attr1, attr2, attr3);
@@ -14883,7 +14883,7 @@ namespace Eighty.Twenty
         /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("dialog");
             Attrs(attr1, attr2, attr3, attr4);
@@ -14895,7 +14895,7 @@ namespace Eighty.Twenty
         /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("dialog");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -14907,7 +14907,7 @@ namespace Eighty.Twenty
         /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("dialog");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -14919,7 +14919,7 @@ namespace Eighty.Twenty
         /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("dialog");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -14931,7 +14931,7 @@ namespace Eighty.Twenty
         /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("dialog");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -14943,7 +14943,7 @@ namespace Eighty.Twenty
         /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder details(
+        protected TagBuilder details(
             string id = null,
             string @class = null,
             string style = null,
@@ -14991,7 +14991,7 @@ namespace Eighty.Twenty
         /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder details(params Attr[] attrs)
+        protected TagBuilder details(params Attr[] attrs)
         {
             StartTag("details");
             Attrs(attrs);
@@ -15003,7 +15003,7 @@ namespace Eighty.Twenty
         /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder details(IEnumerable<Attr> attrs)
+        protected TagBuilder details(IEnumerable<Attr> attrs)
         {
             StartTag("details");
             Attrs(attrs);
@@ -15015,7 +15015,7 @@ namespace Eighty.Twenty
         /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder details(Attr attr1)
+        protected TagBuilder details(Attr attr1)
         {
             StartTag("details");
             Attrs(attr1);
@@ -15027,7 +15027,7 @@ namespace Eighty.Twenty
         /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder details(Attr attr1, Attr attr2)
+        protected TagBuilder details(Attr attr1, Attr attr2)
         {
             StartTag("details");
             Attrs(attr1, attr2);
@@ -15039,7 +15039,7 @@ namespace Eighty.Twenty
         /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder details(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder details(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("details");
             Attrs(attr1, attr2, attr3);
@@ -15051,7 +15051,7 @@ namespace Eighty.Twenty
         /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("details");
             Attrs(attr1, attr2, attr3, attr4);
@@ -15063,7 +15063,7 @@ namespace Eighty.Twenty
         /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("details");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -15075,7 +15075,7 @@ namespace Eighty.Twenty
         /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("details");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -15087,7 +15087,7 @@ namespace Eighty.Twenty
         /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("details");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -15099,7 +15099,7 @@ namespace Eighty.Twenty
         /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("details");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -15111,7 +15111,7 @@ namespace Eighty.Twenty
         /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder summary(
+        protected TagBuilder summary(
             string id = null,
             string @class = null,
             string style = null,
@@ -15154,7 +15154,7 @@ namespace Eighty.Twenty
         /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder summary(params Attr[] attrs)
+        protected TagBuilder summary(params Attr[] attrs)
         {
             StartTag("summary");
             Attrs(attrs);
@@ -15166,7 +15166,7 @@ namespace Eighty.Twenty
         /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder summary(IEnumerable<Attr> attrs)
+        protected TagBuilder summary(IEnumerable<Attr> attrs)
         {
             StartTag("summary");
             Attrs(attrs);
@@ -15178,7 +15178,7 @@ namespace Eighty.Twenty
         /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder summary(Attr attr1)
+        protected TagBuilder summary(Attr attr1)
         {
             StartTag("summary");
             Attrs(attr1);
@@ -15190,7 +15190,7 @@ namespace Eighty.Twenty
         /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder summary(Attr attr1, Attr attr2)
+        protected TagBuilder summary(Attr attr1, Attr attr2)
         {
             StartTag("summary");
             Attrs(attr1, attr2);
@@ -15202,7 +15202,7 @@ namespace Eighty.Twenty
         /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder summary(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder summary(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("summary");
             Attrs(attr1, attr2, attr3);
@@ -15214,7 +15214,7 @@ namespace Eighty.Twenty
         /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("summary");
             Attrs(attr1, attr2, attr3, attr4);
@@ -15226,7 +15226,7 @@ namespace Eighty.Twenty
         /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("summary");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -15238,7 +15238,7 @@ namespace Eighty.Twenty
         /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("summary");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -15250,7 +15250,7 @@ namespace Eighty.Twenty
         /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("summary");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -15262,7 +15262,7 @@ namespace Eighty.Twenty
         /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("summary");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -15273,7 +15273,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an img element.
         /// </summary>
-        public void img(
+        protected void img(
             string id = null,
             string @class = null,
             string style = null,
@@ -15349,7 +15349,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an img element.
         /// </summary>
-        public void img(params Attr[] attrs)
+        protected void img(params Attr[] attrs)
         {
             StartTag("img");
             Attrs(attrs);
@@ -15359,7 +15359,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an img element.
         /// </summary>
-        public void img(IEnumerable<Attr> attrs)
+        protected void img(IEnumerable<Attr> attrs)
         {
             StartTag("img");
             Attrs(attrs);
@@ -15369,7 +15369,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an img element.
         /// </summary>
-        public void img(Attr attr1)
+        protected void img(Attr attr1)
         {
             StartTag("img");
             Attrs(attr1);
@@ -15379,7 +15379,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an img element.
         /// </summary>
-        public void img(Attr attr1, Attr attr2)
+        protected void img(Attr attr1, Attr attr2)
         {
             StartTag("img");
             Attrs(attr1, attr2);
@@ -15389,7 +15389,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an img element.
         /// </summary>
-        public void img(Attr attr1, Attr attr2, Attr attr3)
+        protected void img(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("img");
             Attrs(attr1, attr2, attr3);
@@ -15399,7 +15399,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an img element.
         /// </summary>
-        public void img(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected void img(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("img");
             Attrs(attr1, attr2, attr3, attr4);
@@ -15409,7 +15409,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an img element.
         /// </summary>
-        public void img(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected void img(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("img");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -15419,7 +15419,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an img element.
         /// </summary>
-        public void img(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected void img(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("img");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -15429,7 +15429,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an img element.
         /// </summary>
-        public void img(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected void img(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("img");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -15439,7 +15439,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an img element.
         /// </summary>
-        public void img(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected void img(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("img");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -15450,7 +15450,7 @@ namespace Eighty.Twenty
         /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder audio(
+        protected TagBuilder audio(
             string id = null,
             string @class = null,
             string style = null,
@@ -15528,7 +15528,7 @@ namespace Eighty.Twenty
         /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder audio(params Attr[] attrs)
+        protected TagBuilder audio(params Attr[] attrs)
         {
             StartTag("audio");
             Attrs(attrs);
@@ -15540,7 +15540,7 @@ namespace Eighty.Twenty
         /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder audio(IEnumerable<Attr> attrs)
+        protected TagBuilder audio(IEnumerable<Attr> attrs)
         {
             StartTag("audio");
             Attrs(attrs);
@@ -15552,7 +15552,7 @@ namespace Eighty.Twenty
         /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder audio(Attr attr1)
+        protected TagBuilder audio(Attr attr1)
         {
             StartTag("audio");
             Attrs(attr1);
@@ -15564,7 +15564,7 @@ namespace Eighty.Twenty
         /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder audio(Attr attr1, Attr attr2)
+        protected TagBuilder audio(Attr attr1, Attr attr2)
         {
             StartTag("audio");
             Attrs(attr1, attr2);
@@ -15576,7 +15576,7 @@ namespace Eighty.Twenty
         /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder audio(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder audio(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("audio");
             Attrs(attr1, attr2, attr3);
@@ -15588,7 +15588,7 @@ namespace Eighty.Twenty
         /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("audio");
             Attrs(attr1, attr2, attr3, attr4);
@@ -15600,7 +15600,7 @@ namespace Eighty.Twenty
         /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("audio");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -15612,7 +15612,7 @@ namespace Eighty.Twenty
         /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("audio");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -15624,7 +15624,7 @@ namespace Eighty.Twenty
         /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("audio");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -15636,7 +15636,7 @@ namespace Eighty.Twenty
         /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("audio");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -15648,7 +15648,7 @@ namespace Eighty.Twenty
         /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder video(
+        protected TagBuilder video(
             string id = null,
             string @class = null,
             string style = null,
@@ -15741,7 +15741,7 @@ namespace Eighty.Twenty
         /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder video(params Attr[] attrs)
+        protected TagBuilder video(params Attr[] attrs)
         {
             StartTag("video");
             Attrs(attrs);
@@ -15753,7 +15753,7 @@ namespace Eighty.Twenty
         /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder video(IEnumerable<Attr> attrs)
+        protected TagBuilder video(IEnumerable<Attr> attrs)
         {
             StartTag("video");
             Attrs(attrs);
@@ -15765,7 +15765,7 @@ namespace Eighty.Twenty
         /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder video(Attr attr1)
+        protected TagBuilder video(Attr attr1)
         {
             StartTag("video");
             Attrs(attr1);
@@ -15777,7 +15777,7 @@ namespace Eighty.Twenty
         /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder video(Attr attr1, Attr attr2)
+        protected TagBuilder video(Attr attr1, Attr attr2)
         {
             StartTag("video");
             Attrs(attr1, attr2);
@@ -15789,7 +15789,7 @@ namespace Eighty.Twenty
         /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder video(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder video(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("video");
             Attrs(attr1, attr2, attr3);
@@ -15801,7 +15801,7 @@ namespace Eighty.Twenty
         /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("video");
             Attrs(attr1, attr2, attr3, attr4);
@@ -15813,7 +15813,7 @@ namespace Eighty.Twenty
         /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("video");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -15825,7 +15825,7 @@ namespace Eighty.Twenty
         /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("video");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -15837,7 +15837,7 @@ namespace Eighty.Twenty
         /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("video");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -15849,7 +15849,7 @@ namespace Eighty.Twenty
         /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("video");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -15860,7 +15860,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a track element.
         /// </summary>
-        public void track(
+        protected void track(
             string id = null,
             string @class = null,
             string style = null,
@@ -15921,7 +15921,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a track element.
         /// </summary>
-        public void track(params Attr[] attrs)
+        protected void track(params Attr[] attrs)
         {
             StartTag("track");
             Attrs(attrs);
@@ -15931,7 +15931,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a track element.
         /// </summary>
-        public void track(IEnumerable<Attr> attrs)
+        protected void track(IEnumerable<Attr> attrs)
         {
             StartTag("track");
             Attrs(attrs);
@@ -15941,7 +15941,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a track element.
         /// </summary>
-        public void track(Attr attr1)
+        protected void track(Attr attr1)
         {
             StartTag("track");
             Attrs(attr1);
@@ -15951,7 +15951,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a track element.
         /// </summary>
-        public void track(Attr attr1, Attr attr2)
+        protected void track(Attr attr1, Attr attr2)
         {
             StartTag("track");
             Attrs(attr1, attr2);
@@ -15961,7 +15961,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a track element.
         /// </summary>
-        public void track(Attr attr1, Attr attr2, Attr attr3)
+        protected void track(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("track");
             Attrs(attr1, attr2, attr3);
@@ -15971,7 +15971,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a track element.
         /// </summary>
-        public void track(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected void track(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("track");
             Attrs(attr1, attr2, attr3, attr4);
@@ -15981,7 +15981,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a track element.
         /// </summary>
-        public void track(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected void track(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("track");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -15991,7 +15991,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a track element.
         /// </summary>
-        public void track(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected void track(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("track");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -16001,7 +16001,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a track element.
         /// </summary>
-        public void track(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected void track(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("track");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -16011,7 +16011,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a track element.
         /// </summary>
-        public void track(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected void track(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("track");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -16021,7 +16021,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an embed element.
         /// </summary>
-        public void embed(
+        protected void embed(
             string id = null,
             string @class = null,
             string style = null,
@@ -16082,7 +16082,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an embed element.
         /// </summary>
-        public void embed(params Attr[] attrs)
+        protected void embed(params Attr[] attrs)
         {
             StartTag("embed");
             Attrs(attrs);
@@ -16092,7 +16092,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an embed element.
         /// </summary>
-        public void embed(IEnumerable<Attr> attrs)
+        protected void embed(IEnumerable<Attr> attrs)
         {
             StartTag("embed");
             Attrs(attrs);
@@ -16102,7 +16102,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an embed element.
         /// </summary>
-        public void embed(Attr attr1)
+        protected void embed(Attr attr1)
         {
             StartTag("embed");
             Attrs(attr1);
@@ -16112,7 +16112,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an embed element.
         /// </summary>
-        public void embed(Attr attr1, Attr attr2)
+        protected void embed(Attr attr1, Attr attr2)
         {
             StartTag("embed");
             Attrs(attr1, attr2);
@@ -16122,7 +16122,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an embed element.
         /// </summary>
-        public void embed(Attr attr1, Attr attr2, Attr attr3)
+        protected void embed(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("embed");
             Attrs(attr1, attr2, attr3);
@@ -16132,7 +16132,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an embed element.
         /// </summary>
-        public void embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected void embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("embed");
             Attrs(attr1, attr2, attr3, attr4);
@@ -16142,7 +16142,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an embed element.
         /// </summary>
-        public void embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected void embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("embed");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -16152,7 +16152,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an embed element.
         /// </summary>
-        public void embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected void embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("embed");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -16162,7 +16162,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an embed element.
         /// </summary>
-        public void embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected void embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("embed");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -16172,7 +16172,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an embed element.
         /// </summary>
-        public void embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected void embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("embed");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -16183,7 +16183,7 @@ namespace Eighty.Twenty
         /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder @object(
+        protected TagBuilder @object(
             string id = null,
             string @class = null,
             string style = null,
@@ -16251,7 +16251,7 @@ namespace Eighty.Twenty
         /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder @object(params Attr[] attrs)
+        protected TagBuilder @object(params Attr[] attrs)
         {
             StartTag("object");
             Attrs(attrs);
@@ -16263,7 +16263,7 @@ namespace Eighty.Twenty
         /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder @object(IEnumerable<Attr> attrs)
+        protected TagBuilder @object(IEnumerable<Attr> attrs)
         {
             StartTag("object");
             Attrs(attrs);
@@ -16275,7 +16275,7 @@ namespace Eighty.Twenty
         /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder @object(Attr attr1)
+        protected TagBuilder @object(Attr attr1)
         {
             StartTag("object");
             Attrs(attr1);
@@ -16287,7 +16287,7 @@ namespace Eighty.Twenty
         /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder @object(Attr attr1, Attr attr2)
+        protected TagBuilder @object(Attr attr1, Attr attr2)
         {
             StartTag("object");
             Attrs(attr1, attr2);
@@ -16299,7 +16299,7 @@ namespace Eighty.Twenty
         /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder @object(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder @object(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("object");
             Attrs(attr1, attr2, attr3);
@@ -16311,7 +16311,7 @@ namespace Eighty.Twenty
         /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("object");
             Attrs(attr1, attr2, attr3, attr4);
@@ -16323,7 +16323,7 @@ namespace Eighty.Twenty
         /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("object");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -16335,7 +16335,7 @@ namespace Eighty.Twenty
         /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("object");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -16347,7 +16347,7 @@ namespace Eighty.Twenty
         /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("object");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -16359,7 +16359,7 @@ namespace Eighty.Twenty
         /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("object");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -16370,7 +16370,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a param element.
         /// </summary>
-        public void param(
+        protected void param(
             string id = null,
             string @class = null,
             string style = null,
@@ -16421,7 +16421,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a param element.
         /// </summary>
-        public void param(params Attr[] attrs)
+        protected void param(params Attr[] attrs)
         {
             StartTag("param");
             Attrs(attrs);
@@ -16431,7 +16431,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a param element.
         /// </summary>
-        public void param(IEnumerable<Attr> attrs)
+        protected void param(IEnumerable<Attr> attrs)
         {
             StartTag("param");
             Attrs(attrs);
@@ -16441,7 +16441,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a param element.
         /// </summary>
-        public void param(Attr attr1)
+        protected void param(Attr attr1)
         {
             StartTag("param");
             Attrs(attr1);
@@ -16451,7 +16451,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a param element.
         /// </summary>
-        public void param(Attr attr1, Attr attr2)
+        protected void param(Attr attr1, Attr attr2)
         {
             StartTag("param");
             Attrs(attr1, attr2);
@@ -16461,7 +16461,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a param element.
         /// </summary>
-        public void param(Attr attr1, Attr attr2, Attr attr3)
+        protected void param(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("param");
             Attrs(attr1, attr2, attr3);
@@ -16471,7 +16471,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a param element.
         /// </summary>
-        public void param(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected void param(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("param");
             Attrs(attr1, attr2, attr3, attr4);
@@ -16481,7 +16481,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a param element.
         /// </summary>
-        public void param(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected void param(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("param");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -16491,7 +16491,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a param element.
         /// </summary>
-        public void param(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected void param(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("param");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -16501,7 +16501,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a param element.
         /// </summary>
-        public void param(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected void param(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("param");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -16511,7 +16511,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a param element.
         /// </summary>
-        public void param(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected void param(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("param");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -16522,7 +16522,7 @@ namespace Eighty.Twenty
         /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder picture(
+        protected TagBuilder picture(
             string id = null,
             string @class = null,
             string style = null,
@@ -16565,7 +16565,7 @@ namespace Eighty.Twenty
         /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder picture(params Attr[] attrs)
+        protected TagBuilder picture(params Attr[] attrs)
         {
             StartTag("picture");
             Attrs(attrs);
@@ -16577,7 +16577,7 @@ namespace Eighty.Twenty
         /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder picture(IEnumerable<Attr> attrs)
+        protected TagBuilder picture(IEnumerable<Attr> attrs)
         {
             StartTag("picture");
             Attrs(attrs);
@@ -16589,7 +16589,7 @@ namespace Eighty.Twenty
         /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder picture(Attr attr1)
+        protected TagBuilder picture(Attr attr1)
         {
             StartTag("picture");
             Attrs(attr1);
@@ -16601,7 +16601,7 @@ namespace Eighty.Twenty
         /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder picture(Attr attr1, Attr attr2)
+        protected TagBuilder picture(Attr attr1, Attr attr2)
         {
             StartTag("picture");
             Attrs(attr1, attr2);
@@ -16613,7 +16613,7 @@ namespace Eighty.Twenty
         /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder picture(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder picture(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("picture");
             Attrs(attr1, attr2, attr3);
@@ -16625,7 +16625,7 @@ namespace Eighty.Twenty
         /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("picture");
             Attrs(attr1, attr2, attr3, attr4);
@@ -16637,7 +16637,7 @@ namespace Eighty.Twenty
         /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("picture");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -16649,7 +16649,7 @@ namespace Eighty.Twenty
         /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("picture");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -16661,7 +16661,7 @@ namespace Eighty.Twenty
         /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("picture");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -16673,7 +16673,7 @@ namespace Eighty.Twenty
         /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("picture");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -16684,7 +16684,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a source element.
         /// </summary>
-        public void source(
+        protected void source(
             string id = null,
             string @class = null,
             string style = null,
@@ -16735,7 +16735,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a source element.
         /// </summary>
-        public void source(params Attr[] attrs)
+        protected void source(params Attr[] attrs)
         {
             StartTag("source");
             Attrs(attrs);
@@ -16745,7 +16745,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a source element.
         /// </summary>
-        public void source(IEnumerable<Attr> attrs)
+        protected void source(IEnumerable<Attr> attrs)
         {
             StartTag("source");
             Attrs(attrs);
@@ -16755,7 +16755,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a source element.
         /// </summary>
-        public void source(Attr attr1)
+        protected void source(Attr attr1)
         {
             StartTag("source");
             Attrs(attr1);
@@ -16765,7 +16765,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a source element.
         /// </summary>
-        public void source(Attr attr1, Attr attr2)
+        protected void source(Attr attr1, Attr attr2)
         {
             StartTag("source");
             Attrs(attr1, attr2);
@@ -16775,7 +16775,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a source element.
         /// </summary>
-        public void source(Attr attr1, Attr attr2, Attr attr3)
+        protected void source(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("source");
             Attrs(attr1, attr2, attr3);
@@ -16785,7 +16785,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a source element.
         /// </summary>
-        public void source(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected void source(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("source");
             Attrs(attr1, attr2, attr3, attr4);
@@ -16795,7 +16795,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a source element.
         /// </summary>
-        public void source(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected void source(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("source");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -16805,7 +16805,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a source element.
         /// </summary>
-        public void source(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected void source(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("source");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -16815,7 +16815,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a source element.
         /// </summary>
-        public void source(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected void source(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("source");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -16825,7 +16825,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a source element.
         /// </summary>
-        public void source(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected void source(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("source");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -16836,7 +16836,7 @@ namespace Eighty.Twenty
         /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder canvas(
+        protected TagBuilder canvas(
             string id = null,
             string @class = null,
             string style = null,
@@ -16889,7 +16889,7 @@ namespace Eighty.Twenty
         /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder canvas(params Attr[] attrs)
+        protected TagBuilder canvas(params Attr[] attrs)
         {
             StartTag("canvas");
             Attrs(attrs);
@@ -16901,7 +16901,7 @@ namespace Eighty.Twenty
         /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder canvas(IEnumerable<Attr> attrs)
+        protected TagBuilder canvas(IEnumerable<Attr> attrs)
         {
             StartTag("canvas");
             Attrs(attrs);
@@ -16913,7 +16913,7 @@ namespace Eighty.Twenty
         /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder canvas(Attr attr1)
+        protected TagBuilder canvas(Attr attr1)
         {
             StartTag("canvas");
             Attrs(attr1);
@@ -16925,7 +16925,7 @@ namespace Eighty.Twenty
         /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder canvas(Attr attr1, Attr attr2)
+        protected TagBuilder canvas(Attr attr1, Attr attr2)
         {
             StartTag("canvas");
             Attrs(attr1, attr2);
@@ -16937,7 +16937,7 @@ namespace Eighty.Twenty
         /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("canvas");
             Attrs(attr1, attr2, attr3);
@@ -16949,7 +16949,7 @@ namespace Eighty.Twenty
         /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("canvas");
             Attrs(attr1, attr2, attr3, attr4);
@@ -16961,7 +16961,7 @@ namespace Eighty.Twenty
         /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("canvas");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -16973,7 +16973,7 @@ namespace Eighty.Twenty
         /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("canvas");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -16985,7 +16985,7 @@ namespace Eighty.Twenty
         /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("canvas");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -16997,7 +16997,7 @@ namespace Eighty.Twenty
         /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("canvas");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -17009,7 +17009,7 @@ namespace Eighty.Twenty
         /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder bdi(
+        protected TagBuilder bdi(
             string id = null,
             string @class = null,
             string style = null,
@@ -17057,7 +17057,7 @@ namespace Eighty.Twenty
         /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder bdi(params Attr[] attrs)
+        protected TagBuilder bdi(params Attr[] attrs)
         {
             StartTag("bdi");
             Attrs(attrs);
@@ -17069,7 +17069,7 @@ namespace Eighty.Twenty
         /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder bdi(IEnumerable<Attr> attrs)
+        protected TagBuilder bdi(IEnumerable<Attr> attrs)
         {
             StartTag("bdi");
             Attrs(attrs);
@@ -17081,7 +17081,7 @@ namespace Eighty.Twenty
         /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder bdi(Attr attr1)
+        protected TagBuilder bdi(Attr attr1)
         {
             StartTag("bdi");
             Attrs(attr1);
@@ -17093,7 +17093,7 @@ namespace Eighty.Twenty
         /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder bdi(Attr attr1, Attr attr2)
+        protected TagBuilder bdi(Attr attr1, Attr attr2)
         {
             StartTag("bdi");
             Attrs(attr1, attr2);
@@ -17105,7 +17105,7 @@ namespace Eighty.Twenty
         /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("bdi");
             Attrs(attr1, attr2, attr3);
@@ -17117,7 +17117,7 @@ namespace Eighty.Twenty
         /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("bdi");
             Attrs(attr1, attr2, attr3, attr4);
@@ -17129,7 +17129,7 @@ namespace Eighty.Twenty
         /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("bdi");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -17141,7 +17141,7 @@ namespace Eighty.Twenty
         /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("bdi");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -17153,7 +17153,7 @@ namespace Eighty.Twenty
         /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("bdi");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -17165,7 +17165,7 @@ namespace Eighty.Twenty
         /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("bdi");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -17177,7 +17177,7 @@ namespace Eighty.Twenty
         /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder bdo(
+        protected TagBuilder bdo(
             string id = null,
             string @class = null,
             string style = null,
@@ -17225,7 +17225,7 @@ namespace Eighty.Twenty
         /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder bdo(params Attr[] attrs)
+        protected TagBuilder bdo(params Attr[] attrs)
         {
             StartTag("bdo");
             Attrs(attrs);
@@ -17237,7 +17237,7 @@ namespace Eighty.Twenty
         /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder bdo(IEnumerable<Attr> attrs)
+        protected TagBuilder bdo(IEnumerable<Attr> attrs)
         {
             StartTag("bdo");
             Attrs(attrs);
@@ -17249,7 +17249,7 @@ namespace Eighty.Twenty
         /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder bdo(Attr attr1)
+        protected TagBuilder bdo(Attr attr1)
         {
             StartTag("bdo");
             Attrs(attr1);
@@ -17261,7 +17261,7 @@ namespace Eighty.Twenty
         /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder bdo(Attr attr1, Attr attr2)
+        protected TagBuilder bdo(Attr attr1, Attr attr2)
         {
             StartTag("bdo");
             Attrs(attr1, attr2);
@@ -17273,7 +17273,7 @@ namespace Eighty.Twenty
         /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3)
+        protected TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag("bdo");
             Attrs(attr1, attr2, attr3);
@@ -17285,7 +17285,7 @@ namespace Eighty.Twenty
         /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag("bdo");
             Attrs(attr1, attr2, attr3, attr4);
@@ -17297,7 +17297,7 @@ namespace Eighty.Twenty
         /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag("bdo");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -17309,7 +17309,7 @@ namespace Eighty.Twenty
         /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag("bdo");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -17321,7 +17321,7 @@ namespace Eighty.Twenty
         /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag("bdo");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -17333,7 +17333,7 @@ namespace Eighty.Twenty
         /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        public TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag("bdo");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
