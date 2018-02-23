@@ -1,7 +1,6 @@
 using System;
 using System.IO;
 using System.Net;
-using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 
 namespace Eighty
@@ -82,50 +81,50 @@ namespace Eighty
             _shouldEncode = false;
         }
 
-        internal void Write(TextWriter writer)
+        internal void Write(ref HtmlEncodingTextWriter writer)
         {
             if (_shouldEncode)
-            {
-                HtmlEncoder.Default.Encode(writer, _name);
-                if (_value != null)
-                {
-                    writer.Write("=\"");
-                    HtmlEncoder.Default.Encode(writer, _value);
-                    writer.Write('"');
-                }
-            }
-            else
             {
                 writer.Write(_name);
                 if (_value != null)
                 {
-                    writer.Write("=\"");
+                    writer.WriteRaw("=\"");
                     writer.Write(_value);
-                    writer.Write('"');
+                    writer.WriteRaw('"');
                 }
-            }
-        }
-        internal async Task WriteAsync(TextWriter writer)
-        {
-            string name;
-            string value;
-            if (_shouldEncode)
-            {
-                // there's no async overload of Encode(TextWriter, string)
-                name = HtmlEncoder.Default.Encode(_name);
-                value = _value != null ? HtmlEncoder.Default.Encode(_value) : null;
             }
             else
             {
-                name = _name;
-                value = _value;
+                writer.WriteRaw(_name);
+                if (_value != null)
+                {
+                    writer.WriteRaw("=\"");
+                    writer.WriteRaw(_value);
+                    writer.WriteRaw('"');
+                }
             }
-            await writer.WriteAsync(name).ConfigureAwait(false);
-            if (value != null)
+        }
+        internal async Task WriteAsync(AsyncHtmlEncodingTextWriter writer)
+        {
+            if (_shouldEncode)
             {
-                await writer.WriteAsync("=\"").ConfigureAwait(false);
-                await writer.WriteAsync(value).ConfigureAwait(false);
-                await writer.WriteAsync('"').ConfigureAwait(false);
+                await writer.Write(_name).ConfigureAwait(false);
+                if (_value != null)
+                {
+                    await writer.WriteRaw("=\"").ConfigureAwait(false);
+                    await writer.Write(_value).ConfigureAwait(false);
+                    await writer.WriteRaw('"').ConfigureAwait(false);
+                }
+            }
+            else
+            {
+                await writer.WriteRaw(_name).ConfigureAwait(false);
+                if (_value != null)
+                {
+                    await writer.WriteRaw("=\"").ConfigureAwait(false);
+                    await writer.WriteRaw(_value).ConfigureAwait(false);
+                    await writer.WriteRaw('"').ConfigureAwait(false);
+                }
             }
         }
 

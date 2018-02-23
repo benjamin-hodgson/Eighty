@@ -21,7 +21,7 @@ namespace Eighty.Twenty
             string xmlns = null
         )
         {
-            StartTag("html");
+            StartTagRaw("html");
             
             if (id != null)
             {
@@ -51,8 +51,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("xmlns", xmlns));
             }
-            _writer.Write('>');
-            return new TagBuilder("html", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("html", this, false);
         }
 
         /// <summary>
@@ -61,10 +61,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder html(params Attr[] attrs)
         {
-            StartTag("html");
+            StartTagRaw("html");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("html", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("html", this, false);
         }
 
         /// <summary>
@@ -73,10 +73,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder html(IEnumerable<Attr> attrs)
         {
-            StartTag("html");
+            StartTagRaw("html");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("html", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("html", this, false);
         }
         
         /// <summary>
@@ -85,10 +85,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder html(Attr attr1)
         {
-            StartTag("html");
+            StartTagRaw("html");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("html", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("html", this, false);
         }
 
         /// <summary>
@@ -97,10 +97,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder html(Attr attr1, Attr attr2)
         {
-            StartTag("html");
+            StartTagRaw("html");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("html", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("html", this, false);
         }
 
         /// <summary>
@@ -109,10 +109,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder html(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("html");
+            StartTagRaw("html");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("html", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("html", this, false);
         }
 
         /// <summary>
@@ -121,10 +121,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("html");
+            StartTagRaw("html");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("html", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("html", this, false);
         }
 
         /// <summary>
@@ -133,10 +133,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("html");
+            StartTagRaw("html");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("html", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("html", this, false);
         }
 
         /// <summary>
@@ -145,10 +145,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("html");
+            StartTagRaw("html");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("html", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("html", this, false);
         }
 
         /// <summary>
@@ -157,10 +157,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("html");
+            StartTagRaw("html");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("html", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("html", this, false);
         }
 
         /// <summary>
@@ -169,10 +169,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("html");
+            StartTagRaw("html");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("html", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("html", this, false);
         }
 
         /// <summary>
@@ -188,7 +188,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("head");
+            StartTagRaw("head");
             
             if (id != null)
             {
@@ -214,8 +214,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("head", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("head", this, false);
         }
 
         /// <summary>
@@ -224,10 +224,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder head(params Attr[] attrs)
         {
-            StartTag("head");
+            StartTagRaw("head");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("head", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("head", this, false);
         }
 
         /// <summary>
@@ -236,10 +236,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder head(IEnumerable<Attr> attrs)
         {
-            StartTag("head");
+            StartTagRaw("head");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("head", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("head", this, false);
         }
         
         /// <summary>
@@ -248,10 +248,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder head(Attr attr1)
         {
-            StartTag("head");
+            StartTagRaw("head");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("head", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("head", this, false);
         }
 
         /// <summary>
@@ -260,10 +260,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder head(Attr attr1, Attr attr2)
         {
-            StartTag("head");
+            StartTagRaw("head");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("head", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("head", this, false);
         }
 
         /// <summary>
@@ -272,10 +272,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder head(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("head");
+            StartTagRaw("head");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("head", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("head", this, false);
         }
 
         /// <summary>
@@ -284,10 +284,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("head");
+            StartTagRaw("head");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("head", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("head", this, false);
         }
 
         /// <summary>
@@ -296,10 +296,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("head");
+            StartTagRaw("head");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("head", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("head", this, false);
         }
 
         /// <summary>
@@ -308,10 +308,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("head");
+            StartTagRaw("head");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("head", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("head", this, false);
         }
 
         /// <summary>
@@ -320,10 +320,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("head");
+            StartTagRaw("head");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("head", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("head", this, false);
         }
 
         /// <summary>
@@ -332,10 +332,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("head");
+            StartTagRaw("head");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("head", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("head", this, false);
         }
 
         /// <summary>
@@ -351,7 +351,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("body");
+            StartTagRaw("body");
             
             if (id != null)
             {
@@ -377,8 +377,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("body", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("body", this, false);
         }
 
         /// <summary>
@@ -387,10 +387,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder body(params Attr[] attrs)
         {
-            StartTag("body");
+            StartTagRaw("body");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("body", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("body", this, false);
         }
 
         /// <summary>
@@ -399,10 +399,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder body(IEnumerable<Attr> attrs)
         {
-            StartTag("body");
+            StartTagRaw("body");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("body", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("body", this, false);
         }
         
         /// <summary>
@@ -411,10 +411,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder body(Attr attr1)
         {
-            StartTag("body");
+            StartTagRaw("body");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("body", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("body", this, false);
         }
 
         /// <summary>
@@ -423,10 +423,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder body(Attr attr1, Attr attr2)
         {
-            StartTag("body");
+            StartTagRaw("body");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("body", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("body", this, false);
         }
 
         /// <summary>
@@ -435,10 +435,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder body(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("body");
+            StartTagRaw("body");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("body", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("body", this, false);
         }
 
         /// <summary>
@@ -447,10 +447,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("body");
+            StartTagRaw("body");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("body", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("body", this, false);
         }
 
         /// <summary>
@@ -459,10 +459,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("body");
+            StartTagRaw("body");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("body", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("body", this, false);
         }
 
         /// <summary>
@@ -471,10 +471,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("body");
+            StartTagRaw("body");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("body", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("body", this, false);
         }
 
         /// <summary>
@@ -483,10 +483,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("body");
+            StartTagRaw("body");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("body", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("body", this, false);
         }
 
         /// <summary>
@@ -495,10 +495,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("body");
+            StartTagRaw("body");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("body", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("body", this, false);
         }
 
         /// <summary>
@@ -519,7 +519,7 @@ namespace Eighty.Twenty
             string sizes = null
         )
         {
-            StartTag("link");
+            StartTagRaw("link");
             
             if (id != null)
             {
@@ -569,7 +569,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("sizes", sizes));
             }
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -577,9 +577,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void link(params Attr[] attrs)
         {
-            StartTag("link");
+            StartTagRaw("link");
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -587,9 +587,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void link(IEnumerable<Attr> attrs)
         {
-            StartTag("link");
+            StartTagRaw("link");
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -597,9 +597,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void link(Attr attr1)
         {
-            StartTag("link");
+            StartTagRaw("link");
             Attrs(attr1);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -607,9 +607,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void link(Attr attr1, Attr attr2)
         {
-            StartTag("link");
+            StartTagRaw("link");
             Attrs(attr1, attr2);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -617,9 +617,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void link(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("link");
+            StartTagRaw("link");
             Attrs(attr1, attr2, attr3);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -627,9 +627,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void link(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("link");
+            StartTagRaw("link");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -637,9 +637,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void link(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("link");
+            StartTagRaw("link");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -647,9 +647,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void link(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("link");
+            StartTagRaw("link");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -657,9 +657,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void link(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("link");
+            StartTagRaw("link");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -667,9 +667,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void link(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("link");
+            StartTagRaw("link");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -686,7 +686,7 @@ namespace Eighty.Twenty
             string target = null
         )
         {
-            StartTag("base");
+            StartTagRaw("base");
             
             if (id != null)
             {
@@ -720,7 +720,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("target", target));
             }
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -728,9 +728,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void @base(params Attr[] attrs)
         {
-            StartTag("base");
+            StartTagRaw("base");
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -738,9 +738,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void @base(IEnumerable<Attr> attrs)
         {
-            StartTag("base");
+            StartTagRaw("base");
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -748,9 +748,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void @base(Attr attr1)
         {
-            StartTag("base");
+            StartTagRaw("base");
             Attrs(attr1);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -758,9 +758,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void @base(Attr attr1, Attr attr2)
         {
-            StartTag("base");
+            StartTagRaw("base");
             Attrs(attr1, attr2);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -768,9 +768,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void @base(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("base");
+            StartTagRaw("base");
             Attrs(attr1, attr2, attr3);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -778,9 +778,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("base");
+            StartTagRaw("base");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -788,9 +788,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("base");
+            StartTagRaw("base");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -798,9 +798,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("base");
+            StartTagRaw("base");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -808,9 +808,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("base");
+            StartTagRaw("base");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -818,9 +818,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("base");
+            StartTagRaw("base");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -837,7 +837,7 @@ namespace Eighty.Twenty
             string target = null
         )
         {
-            StartTag("meta");
+            StartTagRaw("meta");
             
             if (id != null)
             {
@@ -871,7 +871,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("target", target));
             }
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -879,9 +879,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void meta(params Attr[] attrs)
         {
-            StartTag("meta");
+            StartTagRaw("meta");
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -889,9 +889,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void meta(IEnumerable<Attr> attrs)
         {
-            StartTag("meta");
+            StartTagRaw("meta");
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -899,9 +899,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void meta(Attr attr1)
         {
-            StartTag("meta");
+            StartTagRaw("meta");
             Attrs(attr1);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -909,9 +909,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void meta(Attr attr1, Attr attr2)
         {
-            StartTag("meta");
+            StartTagRaw("meta");
             Attrs(attr1, attr2);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -919,9 +919,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void meta(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("meta");
+            StartTagRaw("meta");
             Attrs(attr1, attr2, attr3);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -929,9 +929,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("meta");
+            StartTagRaw("meta");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -939,9 +939,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("meta");
+            StartTagRaw("meta");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -949,9 +949,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("meta");
+            StartTagRaw("meta");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -959,9 +959,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("meta");
+            StartTagRaw("meta");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -969,9 +969,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("meta");
+            StartTagRaw("meta");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -989,7 +989,7 @@ namespace Eighty.Twenty
             string media = null
         )
         {
-            StartTag("style");
+            StartTagRaw("style");
             
             if (id != null)
             {
@@ -1023,8 +1023,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("media", media));
             }
-            _writer.Write('>');
-            return new TagBuilder("style", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("style", this, false);
         }
 
         /// <summary>
@@ -1033,10 +1033,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder style(params Attr[] attrs)
         {
-            StartTag("style");
+            StartTagRaw("style");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("style", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("style", this, false);
         }
 
         /// <summary>
@@ -1045,10 +1045,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder style(IEnumerable<Attr> attrs)
         {
-            StartTag("style");
+            StartTagRaw("style");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("style", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("style", this, false);
         }
         
         /// <summary>
@@ -1057,10 +1057,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder style(Attr attr1)
         {
-            StartTag("style");
+            StartTagRaw("style");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("style", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("style", this, false);
         }
 
         /// <summary>
@@ -1069,10 +1069,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder style(Attr attr1, Attr attr2)
         {
-            StartTag("style");
+            StartTagRaw("style");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("style", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("style", this, false);
         }
 
         /// <summary>
@@ -1081,10 +1081,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder style(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("style");
+            StartTagRaw("style");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("style", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("style", this, false);
         }
 
         /// <summary>
@@ -1093,10 +1093,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("style");
+            StartTagRaw("style");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("style", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("style", this, false);
         }
 
         /// <summary>
@@ -1105,10 +1105,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("style");
+            StartTagRaw("style");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("style", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("style", this, false);
         }
 
         /// <summary>
@@ -1117,10 +1117,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("style");
+            StartTagRaw("style");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("style", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("style", this, false);
         }
 
         /// <summary>
@@ -1129,10 +1129,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("style");
+            StartTagRaw("style");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("style", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("style", this, false);
         }
 
         /// <summary>
@@ -1141,10 +1141,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("style");
+            StartTagRaw("style");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("style", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("style", this, false);
         }
 
         /// <summary>
@@ -1160,7 +1160,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("title");
+            StartTagRaw("title");
             
             if (id != null)
             {
@@ -1186,8 +1186,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("title", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("title", this, false);
         }
 
         /// <summary>
@@ -1196,10 +1196,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder title(params Attr[] attrs)
         {
-            StartTag("title");
+            StartTagRaw("title");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("title", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("title", this, false);
         }
 
         /// <summary>
@@ -1208,10 +1208,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder title(IEnumerable<Attr> attrs)
         {
-            StartTag("title");
+            StartTagRaw("title");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("title", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("title", this, false);
         }
         
         /// <summary>
@@ -1220,10 +1220,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder title(Attr attr1)
         {
-            StartTag("title");
+            StartTagRaw("title");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("title", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("title", this, false);
         }
 
         /// <summary>
@@ -1232,10 +1232,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder title(Attr attr1, Attr attr2)
         {
-            StartTag("title");
+            StartTagRaw("title");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("title", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("title", this, false);
         }
 
         /// <summary>
@@ -1244,10 +1244,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder title(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("title");
+            StartTagRaw("title");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("title", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("title", this, false);
         }
 
         /// <summary>
@@ -1256,10 +1256,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("title");
+            StartTagRaw("title");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("title", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("title", this, false);
         }
 
         /// <summary>
@@ -1268,10 +1268,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("title");
+            StartTagRaw("title");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("title", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("title", this, false);
         }
 
         /// <summary>
@@ -1280,10 +1280,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("title");
+            StartTagRaw("title");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("title", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("title", this, false);
         }
 
         /// <summary>
@@ -1292,10 +1292,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("title");
+            StartTagRaw("title");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("title", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("title", this, false);
         }
 
         /// <summary>
@@ -1304,10 +1304,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("title");
+            StartTagRaw("title");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("title", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("title", this, false);
         }
 
         /// <summary>
@@ -1327,7 +1327,7 @@ namespace Eighty.Twenty
             bool async = false
         )
         {
-            StartTag("script");
+            StartTagRaw("script");
             
             if (id != null)
             {
@@ -1367,10 +1367,10 @@ namespace Eighty.Twenty
             }
             if (async)
             {
-                Attr(new Eighty.Attr("async"));
+                Attr(Eighty.Attr.Raw("async"));
             }
-            _writer.Write('>');
-            return new TagBuilder("script", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("script", this, false);
         }
 
         /// <summary>
@@ -1379,10 +1379,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder script(params Attr[] attrs)
         {
-            StartTag("script");
+            StartTagRaw("script");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("script", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("script", this, false);
         }
 
         /// <summary>
@@ -1391,10 +1391,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder script(IEnumerable<Attr> attrs)
         {
-            StartTag("script");
+            StartTagRaw("script");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("script", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("script", this, false);
         }
         
         /// <summary>
@@ -1403,10 +1403,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder script(Attr attr1)
         {
-            StartTag("script");
+            StartTagRaw("script");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("script", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("script", this, false);
         }
 
         /// <summary>
@@ -1415,10 +1415,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder script(Attr attr1, Attr attr2)
         {
-            StartTag("script");
+            StartTagRaw("script");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("script", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("script", this, false);
         }
 
         /// <summary>
@@ -1427,10 +1427,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder script(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("script");
+            StartTagRaw("script");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("script", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("script", this, false);
         }
 
         /// <summary>
@@ -1439,10 +1439,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("script");
+            StartTagRaw("script");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("script", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("script", this, false);
         }
 
         /// <summary>
@@ -1451,10 +1451,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("script");
+            StartTagRaw("script");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("script", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("script", this, false);
         }
 
         /// <summary>
@@ -1463,10 +1463,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("script");
+            StartTagRaw("script");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("script", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("script", this, false);
         }
 
         /// <summary>
@@ -1475,10 +1475,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("script");
+            StartTagRaw("script");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("script", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("script", this, false);
         }
 
         /// <summary>
@@ -1487,10 +1487,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("script");
+            StartTagRaw("script");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("script", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("script", this, false);
         }
 
         /// <summary>
@@ -1506,7 +1506,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("noscript");
+            StartTagRaw("noscript");
             
             if (id != null)
             {
@@ -1532,8 +1532,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("noscript", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("noscript", this, false);
         }
 
         /// <summary>
@@ -1542,10 +1542,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder noscript(params Attr[] attrs)
         {
-            StartTag("noscript");
+            StartTagRaw("noscript");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("noscript", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("noscript", this, false);
         }
 
         /// <summary>
@@ -1554,10 +1554,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder noscript(IEnumerable<Attr> attrs)
         {
-            StartTag("noscript");
+            StartTagRaw("noscript");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("noscript", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("noscript", this, false);
         }
         
         /// <summary>
@@ -1566,10 +1566,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder noscript(Attr attr1)
         {
-            StartTag("noscript");
+            StartTagRaw("noscript");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("noscript", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("noscript", this, false);
         }
 
         /// <summary>
@@ -1578,10 +1578,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder noscript(Attr attr1, Attr attr2)
         {
-            StartTag("noscript");
+            StartTagRaw("noscript");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("noscript", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("noscript", this, false);
         }
 
         /// <summary>
@@ -1590,10 +1590,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("noscript");
+            StartTagRaw("noscript");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("noscript", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("noscript", this, false);
         }
 
         /// <summary>
@@ -1602,10 +1602,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("noscript");
+            StartTagRaw("noscript");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("noscript", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("noscript", this, false);
         }
 
         /// <summary>
@@ -1614,10 +1614,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("noscript");
+            StartTagRaw("noscript");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("noscript", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("noscript", this, false);
         }
 
         /// <summary>
@@ -1626,10 +1626,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("noscript");
+            StartTagRaw("noscript");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("noscript", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("noscript", this, false);
         }
 
         /// <summary>
@@ -1638,10 +1638,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("noscript");
+            StartTagRaw("noscript");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("noscript", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("noscript", this, false);
         }
 
         /// <summary>
@@ -1650,10 +1650,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("noscript");
+            StartTagRaw("noscript");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("noscript", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("noscript", this, false);
         }
 
         /// <summary>
@@ -1669,7 +1669,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("main");
+            StartTagRaw("main");
             
             if (id != null)
             {
@@ -1695,8 +1695,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("main", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("main", this, false);
         }
 
         /// <summary>
@@ -1705,10 +1705,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder main(params Attr[] attrs)
         {
-            StartTag("main");
+            StartTagRaw("main");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("main", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("main", this, false);
         }
 
         /// <summary>
@@ -1717,10 +1717,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder main(IEnumerable<Attr> attrs)
         {
-            StartTag("main");
+            StartTagRaw("main");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("main", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("main", this, false);
         }
         
         /// <summary>
@@ -1729,10 +1729,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder main(Attr attr1)
         {
-            StartTag("main");
+            StartTagRaw("main");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("main", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("main", this, false);
         }
 
         /// <summary>
@@ -1741,10 +1741,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder main(Attr attr1, Attr attr2)
         {
-            StartTag("main");
+            StartTagRaw("main");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("main", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("main", this, false);
         }
 
         /// <summary>
@@ -1753,10 +1753,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder main(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("main");
+            StartTagRaw("main");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("main", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("main", this, false);
         }
 
         /// <summary>
@@ -1765,10 +1765,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("main");
+            StartTagRaw("main");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("main", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("main", this, false);
         }
 
         /// <summary>
@@ -1777,10 +1777,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("main");
+            StartTagRaw("main");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("main", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("main", this, false);
         }
 
         /// <summary>
@@ -1789,10 +1789,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("main");
+            StartTagRaw("main");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("main", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("main", this, false);
         }
 
         /// <summary>
@@ -1801,10 +1801,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("main");
+            StartTagRaw("main");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("main", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("main", this, false);
         }
 
         /// <summary>
@@ -1813,10 +1813,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("main");
+            StartTagRaw("main");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("main", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("main", this, false);
         }
 
         /// <summary>
@@ -1832,7 +1832,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("header");
+            StartTagRaw("header");
             
             if (id != null)
             {
@@ -1858,8 +1858,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("header", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("header", this, false);
         }
 
         /// <summary>
@@ -1868,10 +1868,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder header(params Attr[] attrs)
         {
-            StartTag("header");
+            StartTagRaw("header");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("header", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("header", this, false);
         }
 
         /// <summary>
@@ -1880,10 +1880,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder header(IEnumerable<Attr> attrs)
         {
-            StartTag("header");
+            StartTagRaw("header");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("header", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("header", this, false);
         }
         
         /// <summary>
@@ -1892,10 +1892,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder header(Attr attr1)
         {
-            StartTag("header");
+            StartTagRaw("header");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("header", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("header", this, false);
         }
 
         /// <summary>
@@ -1904,10 +1904,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder header(Attr attr1, Attr attr2)
         {
-            StartTag("header");
+            StartTagRaw("header");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("header", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("header", this, false);
         }
 
         /// <summary>
@@ -1916,10 +1916,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder header(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("header");
+            StartTagRaw("header");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("header", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("header", this, false);
         }
 
         /// <summary>
@@ -1928,10 +1928,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("header");
+            StartTagRaw("header");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("header", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("header", this, false);
         }
 
         /// <summary>
@@ -1940,10 +1940,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("header");
+            StartTagRaw("header");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("header", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("header", this, false);
         }
 
         /// <summary>
@@ -1952,10 +1952,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("header");
+            StartTagRaw("header");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("header", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("header", this, false);
         }
 
         /// <summary>
@@ -1964,10 +1964,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("header");
+            StartTagRaw("header");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("header", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("header", this, false);
         }
 
         /// <summary>
@@ -1976,10 +1976,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("header");
+            StartTagRaw("header");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("header", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("header", this, false);
         }
 
         /// <summary>
@@ -1995,7 +1995,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("article");
+            StartTagRaw("article");
             
             if (id != null)
             {
@@ -2021,8 +2021,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("article", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("article", this, false);
         }
 
         /// <summary>
@@ -2031,10 +2031,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder article(params Attr[] attrs)
         {
-            StartTag("article");
+            StartTagRaw("article");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("article", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("article", this, false);
         }
 
         /// <summary>
@@ -2043,10 +2043,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder article(IEnumerable<Attr> attrs)
         {
-            StartTag("article");
+            StartTagRaw("article");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("article", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("article", this, false);
         }
         
         /// <summary>
@@ -2055,10 +2055,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder article(Attr attr1)
         {
-            StartTag("article");
+            StartTagRaw("article");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("article", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("article", this, false);
         }
 
         /// <summary>
@@ -2067,10 +2067,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder article(Attr attr1, Attr attr2)
         {
-            StartTag("article");
+            StartTagRaw("article");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("article", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("article", this, false);
         }
 
         /// <summary>
@@ -2079,10 +2079,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder article(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("article");
+            StartTagRaw("article");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("article", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("article", this, false);
         }
 
         /// <summary>
@@ -2091,10 +2091,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("article");
+            StartTagRaw("article");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("article", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("article", this, false);
         }
 
         /// <summary>
@@ -2103,10 +2103,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("article");
+            StartTagRaw("article");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("article", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("article", this, false);
         }
 
         /// <summary>
@@ -2115,10 +2115,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("article");
+            StartTagRaw("article");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("article", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("article", this, false);
         }
 
         /// <summary>
@@ -2127,10 +2127,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("article");
+            StartTagRaw("article");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("article", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("article", this, false);
         }
 
         /// <summary>
@@ -2139,10 +2139,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("article");
+            StartTagRaw("article");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("article", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("article", this, false);
         }
 
         /// <summary>
@@ -2158,7 +2158,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("section");
+            StartTagRaw("section");
             
             if (id != null)
             {
@@ -2184,8 +2184,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("section", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("section", this, false);
         }
 
         /// <summary>
@@ -2194,10 +2194,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder section(params Attr[] attrs)
         {
-            StartTag("section");
+            StartTagRaw("section");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("section", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("section", this, false);
         }
 
         /// <summary>
@@ -2206,10 +2206,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder section(IEnumerable<Attr> attrs)
         {
-            StartTag("section");
+            StartTagRaw("section");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("section", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("section", this, false);
         }
         
         /// <summary>
@@ -2218,10 +2218,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder section(Attr attr1)
         {
-            StartTag("section");
+            StartTagRaw("section");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("section", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("section", this, false);
         }
 
         /// <summary>
@@ -2230,10 +2230,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder section(Attr attr1, Attr attr2)
         {
-            StartTag("section");
+            StartTagRaw("section");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("section", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("section", this, false);
         }
 
         /// <summary>
@@ -2242,10 +2242,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder section(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("section");
+            StartTagRaw("section");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("section", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("section", this, false);
         }
 
         /// <summary>
@@ -2254,10 +2254,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("section");
+            StartTagRaw("section");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("section", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("section", this, false);
         }
 
         /// <summary>
@@ -2266,10 +2266,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("section");
+            StartTagRaw("section");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("section", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("section", this, false);
         }
 
         /// <summary>
@@ -2278,10 +2278,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("section");
+            StartTagRaw("section");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("section", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("section", this, false);
         }
 
         /// <summary>
@@ -2290,10 +2290,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("section");
+            StartTagRaw("section");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("section", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("section", this, false);
         }
 
         /// <summary>
@@ -2302,10 +2302,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("section");
+            StartTagRaw("section");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("section", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("section", this, false);
         }
 
         /// <summary>
@@ -2321,7 +2321,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("footer");
+            StartTagRaw("footer");
             
             if (id != null)
             {
@@ -2347,8 +2347,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("footer", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("footer", this, false);
         }
 
         /// <summary>
@@ -2357,10 +2357,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder footer(params Attr[] attrs)
         {
-            StartTag("footer");
+            StartTagRaw("footer");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("footer", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("footer", this, false);
         }
 
         /// <summary>
@@ -2369,10 +2369,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder footer(IEnumerable<Attr> attrs)
         {
-            StartTag("footer");
+            StartTagRaw("footer");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("footer", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("footer", this, false);
         }
         
         /// <summary>
@@ -2381,10 +2381,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder footer(Attr attr1)
         {
-            StartTag("footer");
+            StartTagRaw("footer");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("footer", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("footer", this, false);
         }
 
         /// <summary>
@@ -2393,10 +2393,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder footer(Attr attr1, Attr attr2)
         {
-            StartTag("footer");
+            StartTagRaw("footer");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("footer", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("footer", this, false);
         }
 
         /// <summary>
@@ -2405,10 +2405,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder footer(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("footer");
+            StartTagRaw("footer");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("footer", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("footer", this, false);
         }
 
         /// <summary>
@@ -2417,10 +2417,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("footer");
+            StartTagRaw("footer");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("footer", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("footer", this, false);
         }
 
         /// <summary>
@@ -2429,10 +2429,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("footer");
+            StartTagRaw("footer");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("footer", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("footer", this, false);
         }
 
         /// <summary>
@@ -2441,10 +2441,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("footer");
+            StartTagRaw("footer");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("footer", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("footer", this, false);
         }
 
         /// <summary>
@@ -2453,10 +2453,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("footer");
+            StartTagRaw("footer");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("footer", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("footer", this, false);
         }
 
         /// <summary>
@@ -2465,10 +2465,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("footer");
+            StartTagRaw("footer");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("footer", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("footer", this, false);
         }
 
         /// <summary>
@@ -2484,7 +2484,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("h1");
+            StartTagRaw("h1");
             
             if (id != null)
             {
@@ -2510,8 +2510,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("h1", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h1", this, false);
         }
 
         /// <summary>
@@ -2520,10 +2520,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h1(params Attr[] attrs)
         {
-            StartTag("h1");
+            StartTagRaw("h1");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("h1", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h1", this, false);
         }
 
         /// <summary>
@@ -2532,10 +2532,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h1(IEnumerable<Attr> attrs)
         {
-            StartTag("h1");
+            StartTagRaw("h1");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("h1", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h1", this, false);
         }
         
         /// <summary>
@@ -2544,10 +2544,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h1(Attr attr1)
         {
-            StartTag("h1");
+            StartTagRaw("h1");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("h1", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h1", this, false);
         }
 
         /// <summary>
@@ -2556,10 +2556,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h1(Attr attr1, Attr attr2)
         {
-            StartTag("h1");
+            StartTagRaw("h1");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("h1", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h1", this, false);
         }
 
         /// <summary>
@@ -2568,10 +2568,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h1(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("h1");
+            StartTagRaw("h1");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("h1", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h1", this, false);
         }
 
         /// <summary>
@@ -2580,10 +2580,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("h1");
+            StartTagRaw("h1");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("h1", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h1", this, false);
         }
 
         /// <summary>
@@ -2592,10 +2592,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("h1");
+            StartTagRaw("h1");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("h1", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h1", this, false);
         }
 
         /// <summary>
@@ -2604,10 +2604,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("h1");
+            StartTagRaw("h1");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("h1", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h1", this, false);
         }
 
         /// <summary>
@@ -2616,10 +2616,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("h1");
+            StartTagRaw("h1");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("h1", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h1", this, false);
         }
 
         /// <summary>
@@ -2628,10 +2628,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("h1");
+            StartTagRaw("h1");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("h1", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h1", this, false);
         }
 
         /// <summary>
@@ -2647,7 +2647,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("h2");
+            StartTagRaw("h2");
             
             if (id != null)
             {
@@ -2673,8 +2673,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("h2", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h2", this, false);
         }
 
         /// <summary>
@@ -2683,10 +2683,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h2(params Attr[] attrs)
         {
-            StartTag("h2");
+            StartTagRaw("h2");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("h2", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h2", this, false);
         }
 
         /// <summary>
@@ -2695,10 +2695,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h2(IEnumerable<Attr> attrs)
         {
-            StartTag("h2");
+            StartTagRaw("h2");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("h2", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h2", this, false);
         }
         
         /// <summary>
@@ -2707,10 +2707,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h2(Attr attr1)
         {
-            StartTag("h2");
+            StartTagRaw("h2");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("h2", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h2", this, false);
         }
 
         /// <summary>
@@ -2719,10 +2719,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h2(Attr attr1, Attr attr2)
         {
-            StartTag("h2");
+            StartTagRaw("h2");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("h2", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h2", this, false);
         }
 
         /// <summary>
@@ -2731,10 +2731,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h2(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("h2");
+            StartTagRaw("h2");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("h2", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h2", this, false);
         }
 
         /// <summary>
@@ -2743,10 +2743,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("h2");
+            StartTagRaw("h2");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("h2", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h2", this, false);
         }
 
         /// <summary>
@@ -2755,10 +2755,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("h2");
+            StartTagRaw("h2");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("h2", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h2", this, false);
         }
 
         /// <summary>
@@ -2767,10 +2767,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("h2");
+            StartTagRaw("h2");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("h2", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h2", this, false);
         }
 
         /// <summary>
@@ -2779,10 +2779,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("h2");
+            StartTagRaw("h2");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("h2", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h2", this, false);
         }
 
         /// <summary>
@@ -2791,10 +2791,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("h2");
+            StartTagRaw("h2");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("h2", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h2", this, false);
         }
 
         /// <summary>
@@ -2810,7 +2810,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("h3");
+            StartTagRaw("h3");
             
             if (id != null)
             {
@@ -2836,8 +2836,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("h3", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h3", this, false);
         }
 
         /// <summary>
@@ -2846,10 +2846,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h3(params Attr[] attrs)
         {
-            StartTag("h3");
+            StartTagRaw("h3");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("h3", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h3", this, false);
         }
 
         /// <summary>
@@ -2858,10 +2858,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h3(IEnumerable<Attr> attrs)
         {
-            StartTag("h3");
+            StartTagRaw("h3");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("h3", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h3", this, false);
         }
         
         /// <summary>
@@ -2870,10 +2870,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h3(Attr attr1)
         {
-            StartTag("h3");
+            StartTagRaw("h3");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("h3", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h3", this, false);
         }
 
         /// <summary>
@@ -2882,10 +2882,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h3(Attr attr1, Attr attr2)
         {
-            StartTag("h3");
+            StartTagRaw("h3");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("h3", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h3", this, false);
         }
 
         /// <summary>
@@ -2894,10 +2894,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h3(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("h3");
+            StartTagRaw("h3");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("h3", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h3", this, false);
         }
 
         /// <summary>
@@ -2906,10 +2906,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("h3");
+            StartTagRaw("h3");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("h3", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h3", this, false);
         }
 
         /// <summary>
@@ -2918,10 +2918,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("h3");
+            StartTagRaw("h3");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("h3", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h3", this, false);
         }
 
         /// <summary>
@@ -2930,10 +2930,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("h3");
+            StartTagRaw("h3");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("h3", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h3", this, false);
         }
 
         /// <summary>
@@ -2942,10 +2942,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("h3");
+            StartTagRaw("h3");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("h3", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h3", this, false);
         }
 
         /// <summary>
@@ -2954,10 +2954,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("h3");
+            StartTagRaw("h3");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("h3", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h3", this, false);
         }
 
         /// <summary>
@@ -2973,7 +2973,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("h4");
+            StartTagRaw("h4");
             
             if (id != null)
             {
@@ -2999,8 +2999,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("h4", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h4", this, false);
         }
 
         /// <summary>
@@ -3009,10 +3009,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h4(params Attr[] attrs)
         {
-            StartTag("h4");
+            StartTagRaw("h4");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("h4", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h4", this, false);
         }
 
         /// <summary>
@@ -3021,10 +3021,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h4(IEnumerable<Attr> attrs)
         {
-            StartTag("h4");
+            StartTagRaw("h4");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("h4", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h4", this, false);
         }
         
         /// <summary>
@@ -3033,10 +3033,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h4(Attr attr1)
         {
-            StartTag("h4");
+            StartTagRaw("h4");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("h4", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h4", this, false);
         }
 
         /// <summary>
@@ -3045,10 +3045,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h4(Attr attr1, Attr attr2)
         {
-            StartTag("h4");
+            StartTagRaw("h4");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("h4", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h4", this, false);
         }
 
         /// <summary>
@@ -3057,10 +3057,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h4(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("h4");
+            StartTagRaw("h4");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("h4", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h4", this, false);
         }
 
         /// <summary>
@@ -3069,10 +3069,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("h4");
+            StartTagRaw("h4");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("h4", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h4", this, false);
         }
 
         /// <summary>
@@ -3081,10 +3081,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("h4");
+            StartTagRaw("h4");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("h4", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h4", this, false);
         }
 
         /// <summary>
@@ -3093,10 +3093,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("h4");
+            StartTagRaw("h4");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("h4", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h4", this, false);
         }
 
         /// <summary>
@@ -3105,10 +3105,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("h4");
+            StartTagRaw("h4");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("h4", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h4", this, false);
         }
 
         /// <summary>
@@ -3117,10 +3117,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("h4");
+            StartTagRaw("h4");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("h4", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h4", this, false);
         }
 
         /// <summary>
@@ -3136,7 +3136,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("h5");
+            StartTagRaw("h5");
             
             if (id != null)
             {
@@ -3162,8 +3162,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("h5", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h5", this, false);
         }
 
         /// <summary>
@@ -3172,10 +3172,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h5(params Attr[] attrs)
         {
-            StartTag("h5");
+            StartTagRaw("h5");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("h5", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h5", this, false);
         }
 
         /// <summary>
@@ -3184,10 +3184,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h5(IEnumerable<Attr> attrs)
         {
-            StartTag("h5");
+            StartTagRaw("h5");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("h5", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h5", this, false);
         }
         
         /// <summary>
@@ -3196,10 +3196,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h5(Attr attr1)
         {
-            StartTag("h5");
+            StartTagRaw("h5");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("h5", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h5", this, false);
         }
 
         /// <summary>
@@ -3208,10 +3208,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h5(Attr attr1, Attr attr2)
         {
-            StartTag("h5");
+            StartTagRaw("h5");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("h5", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h5", this, false);
         }
 
         /// <summary>
@@ -3220,10 +3220,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h5(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("h5");
+            StartTagRaw("h5");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("h5", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h5", this, false);
         }
 
         /// <summary>
@@ -3232,10 +3232,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("h5");
+            StartTagRaw("h5");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("h5", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h5", this, false);
         }
 
         /// <summary>
@@ -3244,10 +3244,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("h5");
+            StartTagRaw("h5");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("h5", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h5", this, false);
         }
 
         /// <summary>
@@ -3256,10 +3256,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("h5");
+            StartTagRaw("h5");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("h5", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h5", this, false);
         }
 
         /// <summary>
@@ -3268,10 +3268,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("h5");
+            StartTagRaw("h5");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("h5", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h5", this, false);
         }
 
         /// <summary>
@@ -3280,10 +3280,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("h5");
+            StartTagRaw("h5");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("h5", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h5", this, false);
         }
 
         /// <summary>
@@ -3299,7 +3299,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("h6");
+            StartTagRaw("h6");
             
             if (id != null)
             {
@@ -3325,8 +3325,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("h6", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h6", this, false);
         }
 
         /// <summary>
@@ -3335,10 +3335,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h6(params Attr[] attrs)
         {
-            StartTag("h6");
+            StartTagRaw("h6");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("h6", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h6", this, false);
         }
 
         /// <summary>
@@ -3347,10 +3347,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h6(IEnumerable<Attr> attrs)
         {
-            StartTag("h6");
+            StartTagRaw("h6");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("h6", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h6", this, false);
         }
         
         /// <summary>
@@ -3359,10 +3359,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h6(Attr attr1)
         {
-            StartTag("h6");
+            StartTagRaw("h6");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("h6", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h6", this, false);
         }
 
         /// <summary>
@@ -3371,10 +3371,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h6(Attr attr1, Attr attr2)
         {
-            StartTag("h6");
+            StartTagRaw("h6");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("h6", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h6", this, false);
         }
 
         /// <summary>
@@ -3383,10 +3383,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h6(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("h6");
+            StartTagRaw("h6");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("h6", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h6", this, false);
         }
 
         /// <summary>
@@ -3395,10 +3395,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("h6");
+            StartTagRaw("h6");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("h6", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h6", this, false);
         }
 
         /// <summary>
@@ -3407,10 +3407,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("h6");
+            StartTagRaw("h6");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("h6", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h6", this, false);
         }
 
         /// <summary>
@@ -3419,10 +3419,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("h6");
+            StartTagRaw("h6");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("h6", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h6", this, false);
         }
 
         /// <summary>
@@ -3431,10 +3431,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("h6");
+            StartTagRaw("h6");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("h6", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h6", this, false);
         }
 
         /// <summary>
@@ -3443,10 +3443,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("h6");
+            StartTagRaw("h6");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("h6", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("h6", this, false);
         }
 
         /// <summary>
@@ -3462,7 +3462,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("hgroup");
+            StartTagRaw("hgroup");
             
             if (id != null)
             {
@@ -3488,8 +3488,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("hgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("hgroup", this, false);
         }
 
         /// <summary>
@@ -3498,10 +3498,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder hgroup(params Attr[] attrs)
         {
-            StartTag("hgroup");
+            StartTagRaw("hgroup");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("hgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("hgroup", this, false);
         }
 
         /// <summary>
@@ -3510,10 +3510,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder hgroup(IEnumerable<Attr> attrs)
         {
-            StartTag("hgroup");
+            StartTagRaw("hgroup");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("hgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("hgroup", this, false);
         }
         
         /// <summary>
@@ -3522,10 +3522,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder hgroup(Attr attr1)
         {
-            StartTag("hgroup");
+            StartTagRaw("hgroup");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("hgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("hgroup", this, false);
         }
 
         /// <summary>
@@ -3534,10 +3534,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder hgroup(Attr attr1, Attr attr2)
         {
-            StartTag("hgroup");
+            StartTagRaw("hgroup");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("hgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("hgroup", this, false);
         }
 
         /// <summary>
@@ -3546,10 +3546,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("hgroup");
+            StartTagRaw("hgroup");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("hgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("hgroup", this, false);
         }
 
         /// <summary>
@@ -3558,10 +3558,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("hgroup");
+            StartTagRaw("hgroup");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("hgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("hgroup", this, false);
         }
 
         /// <summary>
@@ -3570,10 +3570,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("hgroup");
+            StartTagRaw("hgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("hgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("hgroup", this, false);
         }
 
         /// <summary>
@@ -3582,10 +3582,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("hgroup");
+            StartTagRaw("hgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("hgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("hgroup", this, false);
         }
 
         /// <summary>
@@ -3594,10 +3594,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("hgroup");
+            StartTagRaw("hgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("hgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("hgroup", this, false);
         }
 
         /// <summary>
@@ -3606,10 +3606,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("hgroup");
+            StartTagRaw("hgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("hgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("hgroup", this, false);
         }
 
         /// <summary>
@@ -3625,7 +3625,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("div");
+            StartTagRaw("div");
             
             if (id != null)
             {
@@ -3651,8 +3651,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("div", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("div", this, false);
         }
 
         /// <summary>
@@ -3661,10 +3661,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder div(params Attr[] attrs)
         {
-            StartTag("div");
+            StartTagRaw("div");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("div", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("div", this, false);
         }
 
         /// <summary>
@@ -3673,10 +3673,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder div(IEnumerable<Attr> attrs)
         {
-            StartTag("div");
+            StartTagRaw("div");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("div", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("div", this, false);
         }
         
         /// <summary>
@@ -3685,10 +3685,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder div(Attr attr1)
         {
-            StartTag("div");
+            StartTagRaw("div");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("div", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("div", this, false);
         }
 
         /// <summary>
@@ -3697,10 +3697,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder div(Attr attr1, Attr attr2)
         {
-            StartTag("div");
+            StartTagRaw("div");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("div", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("div", this, false);
         }
 
         /// <summary>
@@ -3709,10 +3709,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder div(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("div");
+            StartTagRaw("div");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("div", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("div", this, false);
         }
 
         /// <summary>
@@ -3721,10 +3721,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("div");
+            StartTagRaw("div");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("div", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("div", this, false);
         }
 
         /// <summary>
@@ -3733,10 +3733,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("div");
+            StartTagRaw("div");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("div", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("div", this, false);
         }
 
         /// <summary>
@@ -3745,10 +3745,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("div");
+            StartTagRaw("div");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("div", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("div", this, false);
         }
 
         /// <summary>
@@ -3757,10 +3757,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("div");
+            StartTagRaw("div");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("div", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("div", this, false);
         }
 
         /// <summary>
@@ -3769,10 +3769,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("div");
+            StartTagRaw("div");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("div", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("div", this, false);
         }
 
         /// <summary>
@@ -3788,7 +3788,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("p");
+            StartTagRaw("p");
             
             if (id != null)
             {
@@ -3814,8 +3814,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("p", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("p", this, false);
         }
 
         /// <summary>
@@ -3824,10 +3824,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder p(params Attr[] attrs)
         {
-            StartTag("p");
+            StartTagRaw("p");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("p", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("p", this, false);
         }
 
         /// <summary>
@@ -3836,10 +3836,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder p(IEnumerable<Attr> attrs)
         {
-            StartTag("p");
+            StartTagRaw("p");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("p", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("p", this, false);
         }
         
         /// <summary>
@@ -3848,10 +3848,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder p(Attr attr1)
         {
-            StartTag("p");
+            StartTagRaw("p");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("p", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("p", this, false);
         }
 
         /// <summary>
@@ -3860,10 +3860,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder p(Attr attr1, Attr attr2)
         {
-            StartTag("p");
+            StartTagRaw("p");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("p", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("p", this, false);
         }
 
         /// <summary>
@@ -3872,10 +3872,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder p(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("p");
+            StartTagRaw("p");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("p", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("p", this, false);
         }
 
         /// <summary>
@@ -3884,10 +3884,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("p");
+            StartTagRaw("p");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("p", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("p", this, false);
         }
 
         /// <summary>
@@ -3896,10 +3896,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("p");
+            StartTagRaw("p");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("p", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("p", this, false);
         }
 
         /// <summary>
@@ -3908,10 +3908,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("p");
+            StartTagRaw("p");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("p", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("p", this, false);
         }
 
         /// <summary>
@@ -3920,10 +3920,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("p");
+            StartTagRaw("p");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("p", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("p", this, false);
         }
 
         /// <summary>
@@ -3932,10 +3932,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("p");
+            StartTagRaw("p");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("p", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("p", this, false);
         }
 
         /// <summary>
@@ -3951,7 +3951,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("pre");
+            StartTagRaw("pre");
             
             if (id != null)
             {
@@ -3977,8 +3977,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("pre", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("pre", this, false);
         }
 
         /// <summary>
@@ -3987,10 +3987,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder pre(params Attr[] attrs)
         {
-            StartTag("pre");
+            StartTagRaw("pre");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("pre", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("pre", this, false);
         }
 
         /// <summary>
@@ -3999,10 +3999,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder pre(IEnumerable<Attr> attrs)
         {
-            StartTag("pre");
+            StartTagRaw("pre");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("pre", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("pre", this, false);
         }
         
         /// <summary>
@@ -4011,10 +4011,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder pre(Attr attr1)
         {
-            StartTag("pre");
+            StartTagRaw("pre");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("pre", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("pre", this, false);
         }
 
         /// <summary>
@@ -4023,10 +4023,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder pre(Attr attr1, Attr attr2)
         {
-            StartTag("pre");
+            StartTagRaw("pre");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("pre", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("pre", this, false);
         }
 
         /// <summary>
@@ -4035,10 +4035,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder pre(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("pre");
+            StartTagRaw("pre");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("pre", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("pre", this, false);
         }
 
         /// <summary>
@@ -4047,10 +4047,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("pre");
+            StartTagRaw("pre");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("pre", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("pre", this, false);
         }
 
         /// <summary>
@@ -4059,10 +4059,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("pre");
+            StartTagRaw("pre");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("pre", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("pre", this, false);
         }
 
         /// <summary>
@@ -4071,10 +4071,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("pre");
+            StartTagRaw("pre");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("pre", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("pre", this, false);
         }
 
         /// <summary>
@@ -4083,10 +4083,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("pre");
+            StartTagRaw("pre");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("pre", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("pre", this, false);
         }
 
         /// <summary>
@@ -4095,10 +4095,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("pre");
+            StartTagRaw("pre");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("pre", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("pre", this, false);
         }
 
         /// <summary>
@@ -4114,7 +4114,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("blockquote");
+            StartTagRaw("blockquote");
             
             if (id != null)
             {
@@ -4140,8 +4140,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("blockquote", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("blockquote", this, false);
         }
 
         /// <summary>
@@ -4150,10 +4150,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder blockquote(params Attr[] attrs)
         {
-            StartTag("blockquote");
+            StartTagRaw("blockquote");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("blockquote", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("blockquote", this, false);
         }
 
         /// <summary>
@@ -4162,10 +4162,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder blockquote(IEnumerable<Attr> attrs)
         {
-            StartTag("blockquote");
+            StartTagRaw("blockquote");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("blockquote", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("blockquote", this, false);
         }
         
         /// <summary>
@@ -4174,10 +4174,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder blockquote(Attr attr1)
         {
-            StartTag("blockquote");
+            StartTagRaw("blockquote");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("blockquote", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("blockquote", this, false);
         }
 
         /// <summary>
@@ -4186,10 +4186,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder blockquote(Attr attr1, Attr attr2)
         {
-            StartTag("blockquote");
+            StartTagRaw("blockquote");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("blockquote", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("blockquote", this, false);
         }
 
         /// <summary>
@@ -4198,10 +4198,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("blockquote");
+            StartTagRaw("blockquote");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("blockquote", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("blockquote", this, false);
         }
 
         /// <summary>
@@ -4210,10 +4210,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("blockquote");
+            StartTagRaw("blockquote");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("blockquote", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("blockquote", this, false);
         }
 
         /// <summary>
@@ -4222,10 +4222,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("blockquote");
+            StartTagRaw("blockquote");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("blockquote", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("blockquote", this, false);
         }
 
         /// <summary>
@@ -4234,10 +4234,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("blockquote");
+            StartTagRaw("blockquote");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("blockquote", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("blockquote", this, false);
         }
 
         /// <summary>
@@ -4246,10 +4246,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("blockquote");
+            StartTagRaw("blockquote");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("blockquote", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("blockquote", this, false);
         }
 
         /// <summary>
@@ -4258,10 +4258,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("blockquote");
+            StartTagRaw("blockquote");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("blockquote", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("blockquote", this, false);
         }
 
         /// <summary>
@@ -4277,7 +4277,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("figure");
+            StartTagRaw("figure");
             
             if (id != null)
             {
@@ -4303,8 +4303,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("figure", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("figure", this, false);
         }
 
         /// <summary>
@@ -4313,10 +4313,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder figure(params Attr[] attrs)
         {
-            StartTag("figure");
+            StartTagRaw("figure");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("figure", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("figure", this, false);
         }
 
         /// <summary>
@@ -4325,10 +4325,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder figure(IEnumerable<Attr> attrs)
         {
-            StartTag("figure");
+            StartTagRaw("figure");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("figure", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("figure", this, false);
         }
         
         /// <summary>
@@ -4337,10 +4337,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder figure(Attr attr1)
         {
-            StartTag("figure");
+            StartTagRaw("figure");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("figure", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("figure", this, false);
         }
 
         /// <summary>
@@ -4349,10 +4349,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder figure(Attr attr1, Attr attr2)
         {
-            StartTag("figure");
+            StartTagRaw("figure");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("figure", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("figure", this, false);
         }
 
         /// <summary>
@@ -4361,10 +4361,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder figure(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("figure");
+            StartTagRaw("figure");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("figure", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("figure", this, false);
         }
 
         /// <summary>
@@ -4373,10 +4373,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("figure");
+            StartTagRaw("figure");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("figure", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("figure", this, false);
         }
 
         /// <summary>
@@ -4385,10 +4385,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("figure");
+            StartTagRaw("figure");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("figure", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("figure", this, false);
         }
 
         /// <summary>
@@ -4397,10 +4397,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("figure");
+            StartTagRaw("figure");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("figure", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("figure", this, false);
         }
 
         /// <summary>
@@ -4409,10 +4409,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("figure");
+            StartTagRaw("figure");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("figure", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("figure", this, false);
         }
 
         /// <summary>
@@ -4421,10 +4421,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("figure");
+            StartTagRaw("figure");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("figure", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("figure", this, false);
         }
 
         /// <summary>
@@ -4440,7 +4440,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("figcaption");
+            StartTagRaw("figcaption");
             
             if (id != null)
             {
@@ -4466,8 +4466,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("figcaption", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("figcaption", this, false);
         }
 
         /// <summary>
@@ -4476,10 +4476,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder figcaption(params Attr[] attrs)
         {
-            StartTag("figcaption");
+            StartTagRaw("figcaption");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("figcaption", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("figcaption", this, false);
         }
 
         /// <summary>
@@ -4488,10 +4488,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder figcaption(IEnumerable<Attr> attrs)
         {
-            StartTag("figcaption");
+            StartTagRaw("figcaption");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("figcaption", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("figcaption", this, false);
         }
         
         /// <summary>
@@ -4500,10 +4500,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder figcaption(Attr attr1)
         {
-            StartTag("figcaption");
+            StartTagRaw("figcaption");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("figcaption", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("figcaption", this, false);
         }
 
         /// <summary>
@@ -4512,10 +4512,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder figcaption(Attr attr1, Attr attr2)
         {
-            StartTag("figcaption");
+            StartTagRaw("figcaption");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("figcaption", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("figcaption", this, false);
         }
 
         /// <summary>
@@ -4524,10 +4524,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("figcaption");
+            StartTagRaw("figcaption");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("figcaption", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("figcaption", this, false);
         }
 
         /// <summary>
@@ -4536,10 +4536,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("figcaption");
+            StartTagRaw("figcaption");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("figcaption", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("figcaption", this, false);
         }
 
         /// <summary>
@@ -4548,10 +4548,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("figcaption");
+            StartTagRaw("figcaption");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("figcaption", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("figcaption", this, false);
         }
 
         /// <summary>
@@ -4560,10 +4560,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("figcaption");
+            StartTagRaw("figcaption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("figcaption", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("figcaption", this, false);
         }
 
         /// <summary>
@@ -4572,10 +4572,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("figcaption");
+            StartTagRaw("figcaption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("figcaption", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("figcaption", this, false);
         }
 
         /// <summary>
@@ -4584,10 +4584,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("figcaption");
+            StartTagRaw("figcaption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("figcaption", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("figcaption", this, false);
         }
 
         /// <summary>
@@ -4603,7 +4603,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("aside");
+            StartTagRaw("aside");
             
             if (id != null)
             {
@@ -4629,8 +4629,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("aside", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("aside", this, false);
         }
 
         /// <summary>
@@ -4639,10 +4639,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder aside(params Attr[] attrs)
         {
-            StartTag("aside");
+            StartTagRaw("aside");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("aside", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("aside", this, false);
         }
 
         /// <summary>
@@ -4651,10 +4651,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder aside(IEnumerable<Attr> attrs)
         {
-            StartTag("aside");
+            StartTagRaw("aside");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("aside", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("aside", this, false);
         }
         
         /// <summary>
@@ -4663,10 +4663,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder aside(Attr attr1)
         {
-            StartTag("aside");
+            StartTagRaw("aside");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("aside", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("aside", this, false);
         }
 
         /// <summary>
@@ -4675,10 +4675,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder aside(Attr attr1, Attr attr2)
         {
-            StartTag("aside");
+            StartTagRaw("aside");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("aside", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("aside", this, false);
         }
 
         /// <summary>
@@ -4687,10 +4687,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder aside(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("aside");
+            StartTagRaw("aside");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("aside", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("aside", this, false);
         }
 
         /// <summary>
@@ -4699,10 +4699,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("aside");
+            StartTagRaw("aside");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("aside", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("aside", this, false);
         }
 
         /// <summary>
@@ -4711,10 +4711,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("aside");
+            StartTagRaw("aside");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("aside", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("aside", this, false);
         }
 
         /// <summary>
@@ -4723,10 +4723,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("aside");
+            StartTagRaw("aside");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("aside", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("aside", this, false);
         }
 
         /// <summary>
@@ -4735,10 +4735,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("aside");
+            StartTagRaw("aside");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("aside", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("aside", this, false);
         }
 
         /// <summary>
@@ -4747,10 +4747,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("aside");
+            StartTagRaw("aside");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("aside", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("aside", this, false);
         }
 
         /// <summary>
@@ -4766,7 +4766,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("nav");
+            StartTagRaw("nav");
             
             if (id != null)
             {
@@ -4792,8 +4792,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("nav", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("nav", this, false);
         }
 
         /// <summary>
@@ -4802,10 +4802,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder nav(params Attr[] attrs)
         {
-            StartTag("nav");
+            StartTagRaw("nav");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("nav", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("nav", this, false);
         }
 
         /// <summary>
@@ -4814,10 +4814,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder nav(IEnumerable<Attr> attrs)
         {
-            StartTag("nav");
+            StartTagRaw("nav");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("nav", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("nav", this, false);
         }
         
         /// <summary>
@@ -4826,10 +4826,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder nav(Attr attr1)
         {
-            StartTag("nav");
+            StartTagRaw("nav");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("nav", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("nav", this, false);
         }
 
         /// <summary>
@@ -4838,10 +4838,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder nav(Attr attr1, Attr attr2)
         {
-            StartTag("nav");
+            StartTagRaw("nav");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("nav", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("nav", this, false);
         }
 
         /// <summary>
@@ -4850,10 +4850,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder nav(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("nav");
+            StartTagRaw("nav");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("nav", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("nav", this, false);
         }
 
         /// <summary>
@@ -4862,10 +4862,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("nav");
+            StartTagRaw("nav");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("nav", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("nav", this, false);
         }
 
         /// <summary>
@@ -4874,10 +4874,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("nav");
+            StartTagRaw("nav");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("nav", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("nav", this, false);
         }
 
         /// <summary>
@@ -4886,10 +4886,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("nav");
+            StartTagRaw("nav");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("nav", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("nav", this, false);
         }
 
         /// <summary>
@@ -4898,10 +4898,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("nav");
+            StartTagRaw("nav");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("nav", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("nav", this, false);
         }
 
         /// <summary>
@@ -4910,10 +4910,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("nav");
+            StartTagRaw("nav");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("nav", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("nav", this, false);
         }
 
         /// <summary>
@@ -4929,7 +4929,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("address");
+            StartTagRaw("address");
             
             if (id != null)
             {
@@ -4955,8 +4955,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("address", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("address", this, false);
         }
 
         /// <summary>
@@ -4965,10 +4965,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder address(params Attr[] attrs)
         {
-            StartTag("address");
+            StartTagRaw("address");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("address", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("address", this, false);
         }
 
         /// <summary>
@@ -4977,10 +4977,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder address(IEnumerable<Attr> attrs)
         {
-            StartTag("address");
+            StartTagRaw("address");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("address", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("address", this, false);
         }
         
         /// <summary>
@@ -4989,10 +4989,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder address(Attr attr1)
         {
-            StartTag("address");
+            StartTagRaw("address");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("address", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("address", this, false);
         }
 
         /// <summary>
@@ -5001,10 +5001,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder address(Attr attr1, Attr attr2)
         {
-            StartTag("address");
+            StartTagRaw("address");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("address", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("address", this, false);
         }
 
         /// <summary>
@@ -5013,10 +5013,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder address(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("address");
+            StartTagRaw("address");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("address", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("address", this, false);
         }
 
         /// <summary>
@@ -5025,10 +5025,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("address");
+            StartTagRaw("address");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("address", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("address", this, false);
         }
 
         /// <summary>
@@ -5037,10 +5037,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("address");
+            StartTagRaw("address");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("address", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("address", this, false);
         }
 
         /// <summary>
@@ -5049,10 +5049,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("address");
+            StartTagRaw("address");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("address", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("address", this, false);
         }
 
         /// <summary>
@@ -5061,10 +5061,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("address");
+            StartTagRaw("address");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("address", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("address", this, false);
         }
 
         /// <summary>
@@ -5073,10 +5073,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("address");
+            StartTagRaw("address");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("address", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("address", this, false);
         }
 
         /// <summary>
@@ -5097,7 +5097,7 @@ namespace Eighty.Twenty
             string download = null
         )
         {
-            StartTag("a");
+            StartTagRaw("a");
             
             if (id != null)
             {
@@ -5143,8 +5143,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("download", download));
             }
-            _writer.Write('>');
-            return new TagBuilder("a", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("a", this, false);
         }
 
         /// <summary>
@@ -5153,10 +5153,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder a(params Attr[] attrs)
         {
-            StartTag("a");
+            StartTagRaw("a");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("a", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("a", this, false);
         }
 
         /// <summary>
@@ -5165,10 +5165,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder a(IEnumerable<Attr> attrs)
         {
-            StartTag("a");
+            StartTagRaw("a");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("a", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("a", this, false);
         }
         
         /// <summary>
@@ -5177,10 +5177,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder a(Attr attr1)
         {
-            StartTag("a");
+            StartTagRaw("a");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("a", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("a", this, false);
         }
 
         /// <summary>
@@ -5189,10 +5189,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder a(Attr attr1, Attr attr2)
         {
-            StartTag("a");
+            StartTagRaw("a");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("a", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("a", this, false);
         }
 
         /// <summary>
@@ -5201,10 +5201,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder a(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("a");
+            StartTagRaw("a");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("a", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("a", this, false);
         }
 
         /// <summary>
@@ -5213,10 +5213,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("a");
+            StartTagRaw("a");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("a", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("a", this, false);
         }
 
         /// <summary>
@@ -5225,10 +5225,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("a");
+            StartTagRaw("a");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("a", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("a", this, false);
         }
 
         /// <summary>
@@ -5237,10 +5237,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("a");
+            StartTagRaw("a");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("a", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("a", this, false);
         }
 
         /// <summary>
@@ -5249,10 +5249,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("a");
+            StartTagRaw("a");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("a", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("a", this, false);
         }
 
         /// <summary>
@@ -5261,10 +5261,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("a");
+            StartTagRaw("a");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("a", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("a", this, false);
         }
 
         /// <summary>
@@ -5280,7 +5280,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("b");
+            StartTagRaw("b");
             
             if (id != null)
             {
@@ -5306,8 +5306,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("b", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("b", this, false);
         }
 
         /// <summary>
@@ -5316,10 +5316,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder b(params Attr[] attrs)
         {
-            StartTag("b");
+            StartTagRaw("b");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("b", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("b", this, false);
         }
 
         /// <summary>
@@ -5328,10 +5328,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder b(IEnumerable<Attr> attrs)
         {
-            StartTag("b");
+            StartTagRaw("b");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("b", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("b", this, false);
         }
         
         /// <summary>
@@ -5340,10 +5340,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder b(Attr attr1)
         {
-            StartTag("b");
+            StartTagRaw("b");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("b", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("b", this, false);
         }
 
         /// <summary>
@@ -5352,10 +5352,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder b(Attr attr1, Attr attr2)
         {
-            StartTag("b");
+            StartTagRaw("b");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("b", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("b", this, false);
         }
 
         /// <summary>
@@ -5364,10 +5364,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder b(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("b");
+            StartTagRaw("b");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("b", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("b", this, false);
         }
 
         /// <summary>
@@ -5376,10 +5376,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("b");
+            StartTagRaw("b");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("b", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("b", this, false);
         }
 
         /// <summary>
@@ -5388,10 +5388,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("b");
+            StartTagRaw("b");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("b", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("b", this, false);
         }
 
         /// <summary>
@@ -5400,10 +5400,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("b");
+            StartTagRaw("b");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("b", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("b", this, false);
         }
 
         /// <summary>
@@ -5412,10 +5412,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("b");
+            StartTagRaw("b");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("b", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("b", this, false);
         }
 
         /// <summary>
@@ -5424,10 +5424,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("b");
+            StartTagRaw("b");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("b", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("b", this, false);
         }
 
         /// <summary>
@@ -5443,7 +5443,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("em");
+            StartTagRaw("em");
             
             if (id != null)
             {
@@ -5469,8 +5469,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("em", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("em", this, false);
         }
 
         /// <summary>
@@ -5479,10 +5479,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder em(params Attr[] attrs)
         {
-            StartTag("em");
+            StartTagRaw("em");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("em", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("em", this, false);
         }
 
         /// <summary>
@@ -5491,10 +5491,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder em(IEnumerable<Attr> attrs)
         {
-            StartTag("em");
+            StartTagRaw("em");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("em", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("em", this, false);
         }
         
         /// <summary>
@@ -5503,10 +5503,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder em(Attr attr1)
         {
-            StartTag("em");
+            StartTagRaw("em");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("em", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("em", this, false);
         }
 
         /// <summary>
@@ -5515,10 +5515,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder em(Attr attr1, Attr attr2)
         {
-            StartTag("em");
+            StartTagRaw("em");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("em", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("em", this, false);
         }
 
         /// <summary>
@@ -5527,10 +5527,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder em(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("em");
+            StartTagRaw("em");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("em", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("em", this, false);
         }
 
         /// <summary>
@@ -5539,10 +5539,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("em");
+            StartTagRaw("em");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("em", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("em", this, false);
         }
 
         /// <summary>
@@ -5551,10 +5551,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("em");
+            StartTagRaw("em");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("em", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("em", this, false);
         }
 
         /// <summary>
@@ -5563,10 +5563,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("em");
+            StartTagRaw("em");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("em", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("em", this, false);
         }
 
         /// <summary>
@@ -5575,10 +5575,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("em");
+            StartTagRaw("em");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("em", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("em", this, false);
         }
 
         /// <summary>
@@ -5587,10 +5587,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("em");
+            StartTagRaw("em");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("em", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("em", this, false);
         }
 
         /// <summary>
@@ -5606,7 +5606,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("i");
+            StartTagRaw("i");
             
             if (id != null)
             {
@@ -5632,8 +5632,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("i", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("i", this, false);
         }
 
         /// <summary>
@@ -5642,10 +5642,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder i(params Attr[] attrs)
         {
-            StartTag("i");
+            StartTagRaw("i");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("i", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("i", this, false);
         }
 
         /// <summary>
@@ -5654,10 +5654,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder i(IEnumerable<Attr> attrs)
         {
-            StartTag("i");
+            StartTagRaw("i");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("i", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("i", this, false);
         }
         
         /// <summary>
@@ -5666,10 +5666,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder i(Attr attr1)
         {
-            StartTag("i");
+            StartTagRaw("i");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("i", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("i", this, false);
         }
 
         /// <summary>
@@ -5678,10 +5678,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder i(Attr attr1, Attr attr2)
         {
-            StartTag("i");
+            StartTagRaw("i");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("i", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("i", this, false);
         }
 
         /// <summary>
@@ -5690,10 +5690,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder i(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("i");
+            StartTagRaw("i");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("i", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("i", this, false);
         }
 
         /// <summary>
@@ -5702,10 +5702,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("i");
+            StartTagRaw("i");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("i", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("i", this, false);
         }
 
         /// <summary>
@@ -5714,10 +5714,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("i");
+            StartTagRaw("i");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("i", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("i", this, false);
         }
 
         /// <summary>
@@ -5726,10 +5726,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("i");
+            StartTagRaw("i");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("i", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("i", this, false);
         }
 
         /// <summary>
@@ -5738,10 +5738,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("i");
+            StartTagRaw("i");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("i", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("i", this, false);
         }
 
         /// <summary>
@@ -5750,10 +5750,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("i");
+            StartTagRaw("i");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("i", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("i", this, false);
         }
 
         /// <summary>
@@ -5769,7 +5769,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("mark");
+            StartTagRaw("mark");
             
             if (id != null)
             {
@@ -5795,8 +5795,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("mark", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("mark", this, false);
         }
 
         /// <summary>
@@ -5805,10 +5805,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder mark(params Attr[] attrs)
         {
-            StartTag("mark");
+            StartTagRaw("mark");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("mark", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("mark", this, false);
         }
 
         /// <summary>
@@ -5817,10 +5817,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder mark(IEnumerable<Attr> attrs)
         {
-            StartTag("mark");
+            StartTagRaw("mark");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("mark", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("mark", this, false);
         }
         
         /// <summary>
@@ -5829,10 +5829,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder mark(Attr attr1)
         {
-            StartTag("mark");
+            StartTagRaw("mark");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("mark", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("mark", this, false);
         }
 
         /// <summary>
@@ -5841,10 +5841,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder mark(Attr attr1, Attr attr2)
         {
-            StartTag("mark");
+            StartTagRaw("mark");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("mark", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("mark", this, false);
         }
 
         /// <summary>
@@ -5853,10 +5853,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder mark(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("mark");
+            StartTagRaw("mark");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("mark", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("mark", this, false);
         }
 
         /// <summary>
@@ -5865,10 +5865,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("mark");
+            StartTagRaw("mark");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("mark", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("mark", this, false);
         }
 
         /// <summary>
@@ -5877,10 +5877,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("mark");
+            StartTagRaw("mark");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("mark", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("mark", this, false);
         }
 
         /// <summary>
@@ -5889,10 +5889,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("mark");
+            StartTagRaw("mark");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("mark", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("mark", this, false);
         }
 
         /// <summary>
@@ -5901,10 +5901,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("mark");
+            StartTagRaw("mark");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("mark", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("mark", this, false);
         }
 
         /// <summary>
@@ -5913,10 +5913,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("mark");
+            StartTagRaw("mark");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("mark", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("mark", this, false);
         }
 
         /// <summary>
@@ -5933,7 +5933,7 @@ namespace Eighty.Twenty
             string cite = null
         )
         {
-            StartTag("q");
+            StartTagRaw("q");
             
             if (id != null)
             {
@@ -5963,8 +5963,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("cite", cite));
             }
-            _writer.Write('>');
-            return new TagBuilder("q", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("q", this, false);
         }
 
         /// <summary>
@@ -5973,10 +5973,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder q(params Attr[] attrs)
         {
-            StartTag("q");
+            StartTagRaw("q");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("q", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("q", this, false);
         }
 
         /// <summary>
@@ -5985,10 +5985,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder q(IEnumerable<Attr> attrs)
         {
-            StartTag("q");
+            StartTagRaw("q");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("q", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("q", this, false);
         }
         
         /// <summary>
@@ -5997,10 +5997,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder q(Attr attr1)
         {
-            StartTag("q");
+            StartTagRaw("q");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("q", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("q", this, false);
         }
 
         /// <summary>
@@ -6009,10 +6009,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder q(Attr attr1, Attr attr2)
         {
-            StartTag("q");
+            StartTagRaw("q");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("q", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("q", this, false);
         }
 
         /// <summary>
@@ -6021,10 +6021,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder q(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("q");
+            StartTagRaw("q");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("q", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("q", this, false);
         }
 
         /// <summary>
@@ -6033,10 +6033,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("q");
+            StartTagRaw("q");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("q", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("q", this, false);
         }
 
         /// <summary>
@@ -6045,10 +6045,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("q");
+            StartTagRaw("q");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("q", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("q", this, false);
         }
 
         /// <summary>
@@ -6057,10 +6057,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("q");
+            StartTagRaw("q");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("q", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("q", this, false);
         }
 
         /// <summary>
@@ -6069,10 +6069,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("q");
+            StartTagRaw("q");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("q", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("q", this, false);
         }
 
         /// <summary>
@@ -6081,10 +6081,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("q");
+            StartTagRaw("q");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("q", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("q", this, false);
         }
 
         /// <summary>
@@ -6100,7 +6100,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("s");
+            StartTagRaw("s");
             
             if (id != null)
             {
@@ -6126,8 +6126,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("s", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("s", this, false);
         }
 
         /// <summary>
@@ -6136,10 +6136,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder s(params Attr[] attrs)
         {
-            StartTag("s");
+            StartTagRaw("s");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("s", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("s", this, false);
         }
 
         /// <summary>
@@ -6148,10 +6148,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder s(IEnumerable<Attr> attrs)
         {
-            StartTag("s");
+            StartTagRaw("s");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("s", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("s", this, false);
         }
         
         /// <summary>
@@ -6160,10 +6160,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder s(Attr attr1)
         {
-            StartTag("s");
+            StartTagRaw("s");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("s", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("s", this, false);
         }
 
         /// <summary>
@@ -6172,10 +6172,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder s(Attr attr1, Attr attr2)
         {
-            StartTag("s");
+            StartTagRaw("s");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("s", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("s", this, false);
         }
 
         /// <summary>
@@ -6184,10 +6184,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder s(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("s");
+            StartTagRaw("s");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("s", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("s", this, false);
         }
 
         /// <summary>
@@ -6196,10 +6196,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("s");
+            StartTagRaw("s");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("s", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("s", this, false);
         }
 
         /// <summary>
@@ -6208,10 +6208,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("s");
+            StartTagRaw("s");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("s", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("s", this, false);
         }
 
         /// <summary>
@@ -6220,10 +6220,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("s");
+            StartTagRaw("s");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("s", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("s", this, false);
         }
 
         /// <summary>
@@ -6232,10 +6232,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("s");
+            StartTagRaw("s");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("s", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("s", this, false);
         }
 
         /// <summary>
@@ -6244,10 +6244,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("s");
+            StartTagRaw("s");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("s", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("s", this, false);
         }
 
         /// <summary>
@@ -6263,7 +6263,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("small");
+            StartTagRaw("small");
             
             if (id != null)
             {
@@ -6289,8 +6289,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("small", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("small", this, false);
         }
 
         /// <summary>
@@ -6299,10 +6299,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder small(params Attr[] attrs)
         {
-            StartTag("small");
+            StartTagRaw("small");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("small", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("small", this, false);
         }
 
         /// <summary>
@@ -6311,10 +6311,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder small(IEnumerable<Attr> attrs)
         {
-            StartTag("small");
+            StartTagRaw("small");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("small", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("small", this, false);
         }
         
         /// <summary>
@@ -6323,10 +6323,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder small(Attr attr1)
         {
-            StartTag("small");
+            StartTagRaw("small");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("small", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("small", this, false);
         }
 
         /// <summary>
@@ -6335,10 +6335,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder small(Attr attr1, Attr attr2)
         {
-            StartTag("small");
+            StartTagRaw("small");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("small", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("small", this, false);
         }
 
         /// <summary>
@@ -6347,10 +6347,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder small(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("small");
+            StartTagRaw("small");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("small", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("small", this, false);
         }
 
         /// <summary>
@@ -6359,10 +6359,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("small");
+            StartTagRaw("small");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("small", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("small", this, false);
         }
 
         /// <summary>
@@ -6371,10 +6371,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("small");
+            StartTagRaw("small");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("small", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("small", this, false);
         }
 
         /// <summary>
@@ -6383,10 +6383,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("small");
+            StartTagRaw("small");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("small", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("small", this, false);
         }
 
         /// <summary>
@@ -6395,10 +6395,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("small");
+            StartTagRaw("small");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("small", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("small", this, false);
         }
 
         /// <summary>
@@ -6407,10 +6407,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("small");
+            StartTagRaw("small");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("small", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("small", this, false);
         }
 
         /// <summary>
@@ -6426,7 +6426,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("span");
+            StartTagRaw("span");
             
             if (id != null)
             {
@@ -6452,8 +6452,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("span", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("span", this, false);
         }
 
         /// <summary>
@@ -6462,10 +6462,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder span(params Attr[] attrs)
         {
-            StartTag("span");
+            StartTagRaw("span");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("span", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("span", this, false);
         }
 
         /// <summary>
@@ -6474,10 +6474,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder span(IEnumerable<Attr> attrs)
         {
-            StartTag("span");
+            StartTagRaw("span");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("span", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("span", this, false);
         }
         
         /// <summary>
@@ -6486,10 +6486,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder span(Attr attr1)
         {
-            StartTag("span");
+            StartTagRaw("span");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("span", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("span", this, false);
         }
 
         /// <summary>
@@ -6498,10 +6498,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder span(Attr attr1, Attr attr2)
         {
-            StartTag("span");
+            StartTagRaw("span");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("span", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("span", this, false);
         }
 
         /// <summary>
@@ -6510,10 +6510,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder span(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("span");
+            StartTagRaw("span");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("span", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("span", this, false);
         }
 
         /// <summary>
@@ -6522,10 +6522,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("span");
+            StartTagRaw("span");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("span", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("span", this, false);
         }
 
         /// <summary>
@@ -6534,10 +6534,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("span");
+            StartTagRaw("span");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("span", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("span", this, false);
         }
 
         /// <summary>
@@ -6546,10 +6546,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("span");
+            StartTagRaw("span");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("span", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("span", this, false);
         }
 
         /// <summary>
@@ -6558,10 +6558,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("span");
+            StartTagRaw("span");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("span", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("span", this, false);
         }
 
         /// <summary>
@@ -6570,10 +6570,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("span");
+            StartTagRaw("span");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("span", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("span", this, false);
         }
 
         /// <summary>
@@ -6589,7 +6589,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("strong");
+            StartTagRaw("strong");
             
             if (id != null)
             {
@@ -6615,8 +6615,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("strong", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("strong", this, false);
         }
 
         /// <summary>
@@ -6625,10 +6625,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder strong(params Attr[] attrs)
         {
-            StartTag("strong");
+            StartTagRaw("strong");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("strong", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("strong", this, false);
         }
 
         /// <summary>
@@ -6637,10 +6637,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder strong(IEnumerable<Attr> attrs)
         {
-            StartTag("strong");
+            StartTagRaw("strong");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("strong", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("strong", this, false);
         }
         
         /// <summary>
@@ -6649,10 +6649,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder strong(Attr attr1)
         {
-            StartTag("strong");
+            StartTagRaw("strong");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("strong", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("strong", this, false);
         }
 
         /// <summary>
@@ -6661,10 +6661,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder strong(Attr attr1, Attr attr2)
         {
-            StartTag("strong");
+            StartTagRaw("strong");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("strong", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("strong", this, false);
         }
 
         /// <summary>
@@ -6673,10 +6673,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder strong(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("strong");
+            StartTagRaw("strong");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("strong", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("strong", this, false);
         }
 
         /// <summary>
@@ -6685,10 +6685,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("strong");
+            StartTagRaw("strong");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("strong", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("strong", this, false);
         }
 
         /// <summary>
@@ -6697,10 +6697,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("strong");
+            StartTagRaw("strong");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("strong", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("strong", this, false);
         }
 
         /// <summary>
@@ -6709,10 +6709,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("strong");
+            StartTagRaw("strong");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("strong", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("strong", this, false);
         }
 
         /// <summary>
@@ -6721,10 +6721,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("strong");
+            StartTagRaw("strong");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("strong", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("strong", this, false);
         }
 
         /// <summary>
@@ -6733,10 +6733,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("strong");
+            StartTagRaw("strong");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("strong", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("strong", this, false);
         }
 
         /// <summary>
@@ -6752,7 +6752,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("sub");
+            StartTagRaw("sub");
             
             if (id != null)
             {
@@ -6778,8 +6778,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("sub", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("sub", this, false);
         }
 
         /// <summary>
@@ -6788,10 +6788,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder sub(params Attr[] attrs)
         {
-            StartTag("sub");
+            StartTagRaw("sub");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("sub", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("sub", this, false);
         }
 
         /// <summary>
@@ -6800,10 +6800,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder sub(IEnumerable<Attr> attrs)
         {
-            StartTag("sub");
+            StartTagRaw("sub");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("sub", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("sub", this, false);
         }
         
         /// <summary>
@@ -6812,10 +6812,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder sub(Attr attr1)
         {
-            StartTag("sub");
+            StartTagRaw("sub");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("sub", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("sub", this, false);
         }
 
         /// <summary>
@@ -6824,10 +6824,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder sub(Attr attr1, Attr attr2)
         {
-            StartTag("sub");
+            StartTagRaw("sub");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("sub", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("sub", this, false);
         }
 
         /// <summary>
@@ -6836,10 +6836,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder sub(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("sub");
+            StartTagRaw("sub");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("sub", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("sub", this, false);
         }
 
         /// <summary>
@@ -6848,10 +6848,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("sub");
+            StartTagRaw("sub");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("sub", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("sub", this, false);
         }
 
         /// <summary>
@@ -6860,10 +6860,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("sub");
+            StartTagRaw("sub");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("sub", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("sub", this, false);
         }
 
         /// <summary>
@@ -6872,10 +6872,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("sub");
+            StartTagRaw("sub");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("sub", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("sub", this, false);
         }
 
         /// <summary>
@@ -6884,10 +6884,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("sub");
+            StartTagRaw("sub");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("sub", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("sub", this, false);
         }
 
         /// <summary>
@@ -6896,10 +6896,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("sub");
+            StartTagRaw("sub");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("sub", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("sub", this, false);
         }
 
         /// <summary>
@@ -6915,7 +6915,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("sup");
+            StartTagRaw("sup");
             
             if (id != null)
             {
@@ -6941,8 +6941,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("sup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("sup", this, false);
         }
 
         /// <summary>
@@ -6951,10 +6951,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder sup(params Attr[] attrs)
         {
-            StartTag("sup");
+            StartTagRaw("sup");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("sup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("sup", this, false);
         }
 
         /// <summary>
@@ -6963,10 +6963,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder sup(IEnumerable<Attr> attrs)
         {
-            StartTag("sup");
+            StartTagRaw("sup");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("sup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("sup", this, false);
         }
         
         /// <summary>
@@ -6975,10 +6975,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder sup(Attr attr1)
         {
-            StartTag("sup");
+            StartTagRaw("sup");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("sup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("sup", this, false);
         }
 
         /// <summary>
@@ -6987,10 +6987,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder sup(Attr attr1, Attr attr2)
         {
-            StartTag("sup");
+            StartTagRaw("sup");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("sup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("sup", this, false);
         }
 
         /// <summary>
@@ -6999,10 +6999,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder sup(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("sup");
+            StartTagRaw("sup");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("sup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("sup", this, false);
         }
 
         /// <summary>
@@ -7011,10 +7011,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("sup");
+            StartTagRaw("sup");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("sup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("sup", this, false);
         }
 
         /// <summary>
@@ -7023,10 +7023,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("sup");
+            StartTagRaw("sup");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("sup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("sup", this, false);
         }
 
         /// <summary>
@@ -7035,10 +7035,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("sup");
+            StartTagRaw("sup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("sup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("sup", this, false);
         }
 
         /// <summary>
@@ -7047,10 +7047,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("sup");
+            StartTagRaw("sup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("sup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("sup", this, false);
         }
 
         /// <summary>
@@ -7059,10 +7059,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("sup");
+            StartTagRaw("sup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("sup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("sup", this, false);
         }
 
         /// <summary>
@@ -7078,7 +7078,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("u");
+            StartTagRaw("u");
             
             if (id != null)
             {
@@ -7104,8 +7104,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("u", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("u", this, false);
         }
 
         /// <summary>
@@ -7114,10 +7114,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder u(params Attr[] attrs)
         {
-            StartTag("u");
+            StartTagRaw("u");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("u", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("u", this, false);
         }
 
         /// <summary>
@@ -7126,10 +7126,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder u(IEnumerable<Attr> attrs)
         {
-            StartTag("u");
+            StartTagRaw("u");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("u", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("u", this, false);
         }
         
         /// <summary>
@@ -7138,10 +7138,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder u(Attr attr1)
         {
-            StartTag("u");
+            StartTagRaw("u");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("u", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("u", this, false);
         }
 
         /// <summary>
@@ -7150,10 +7150,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder u(Attr attr1, Attr attr2)
         {
-            StartTag("u");
+            StartTagRaw("u");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("u", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("u", this, false);
         }
 
         /// <summary>
@@ -7162,10 +7162,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder u(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("u");
+            StartTagRaw("u");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("u", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("u", this, false);
         }
 
         /// <summary>
@@ -7174,10 +7174,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("u");
+            StartTagRaw("u");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("u", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("u", this, false);
         }
 
         /// <summary>
@@ -7186,10 +7186,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("u");
+            StartTagRaw("u");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("u", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("u", this, false);
         }
 
         /// <summary>
@@ -7198,10 +7198,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("u");
+            StartTagRaw("u");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("u", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("u", this, false);
         }
 
         /// <summary>
@@ -7210,10 +7210,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("u");
+            StartTagRaw("u");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("u", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("u", this, false);
         }
 
         /// <summary>
@@ -7222,10 +7222,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("u");
+            StartTagRaw("u");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("u", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("u", this, false);
         }
 
         /// <summary>
@@ -7240,7 +7240,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("br");
+            StartTagRaw("br");
             
             if (id != null)
             {
@@ -7266,7 +7266,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -7274,9 +7274,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void br(params Attr[] attrs)
         {
-            StartTag("br");
+            StartTagRaw("br");
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -7284,9 +7284,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void br(IEnumerable<Attr> attrs)
         {
-            StartTag("br");
+            StartTagRaw("br");
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -7294,9 +7294,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void br(Attr attr1)
         {
-            StartTag("br");
+            StartTagRaw("br");
             Attrs(attr1);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7304,9 +7304,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void br(Attr attr1, Attr attr2)
         {
-            StartTag("br");
+            StartTagRaw("br");
             Attrs(attr1, attr2);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7314,9 +7314,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void br(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("br");
+            StartTagRaw("br");
             Attrs(attr1, attr2, attr3);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7324,9 +7324,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void br(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("br");
+            StartTagRaw("br");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7334,9 +7334,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void br(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("br");
+            StartTagRaw("br");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7344,9 +7344,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void br(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("br");
+            StartTagRaw("br");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7354,9 +7354,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void br(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("br");
+            StartTagRaw("br");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7364,9 +7364,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void br(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("br");
+            StartTagRaw("br");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7381,7 +7381,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("wbr");
+            StartTagRaw("wbr");
             
             if (id != null)
             {
@@ -7407,7 +7407,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -7415,9 +7415,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void wbr(params Attr[] attrs)
         {
-            StartTag("wbr");
+            StartTagRaw("wbr");
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -7425,9 +7425,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void wbr(IEnumerable<Attr> attrs)
         {
-            StartTag("wbr");
+            StartTagRaw("wbr");
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -7435,9 +7435,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void wbr(Attr attr1)
         {
-            StartTag("wbr");
+            StartTagRaw("wbr");
             Attrs(attr1);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7445,9 +7445,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void wbr(Attr attr1, Attr attr2)
         {
-            StartTag("wbr");
+            StartTagRaw("wbr");
             Attrs(attr1, attr2);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7455,9 +7455,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void wbr(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("wbr");
+            StartTagRaw("wbr");
             Attrs(attr1, attr2, attr3);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7465,9 +7465,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("wbr");
+            StartTagRaw("wbr");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7475,9 +7475,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("wbr");
+            StartTagRaw("wbr");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7485,9 +7485,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("wbr");
+            StartTagRaw("wbr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7495,9 +7495,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("wbr");
+            StartTagRaw("wbr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7505,9 +7505,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("wbr");
+            StartTagRaw("wbr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7522,7 +7522,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("hr");
+            StartTagRaw("hr");
             
             if (id != null)
             {
@@ -7548,7 +7548,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -7556,9 +7556,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void hr(params Attr[] attrs)
         {
-            StartTag("hr");
+            StartTagRaw("hr");
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -7566,9 +7566,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void hr(IEnumerable<Attr> attrs)
         {
-            StartTag("hr");
+            StartTagRaw("hr");
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -7576,9 +7576,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void hr(Attr attr1)
         {
-            StartTag("hr");
+            StartTagRaw("hr");
             Attrs(attr1);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7586,9 +7586,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void hr(Attr attr1, Attr attr2)
         {
-            StartTag("hr");
+            StartTagRaw("hr");
             Attrs(attr1, attr2);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7596,9 +7596,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void hr(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("hr");
+            StartTagRaw("hr");
             Attrs(attr1, attr2, attr3);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7606,9 +7606,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("hr");
+            StartTagRaw("hr");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7616,9 +7616,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("hr");
+            StartTagRaw("hr");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7626,9 +7626,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("hr");
+            StartTagRaw("hr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7636,9 +7636,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("hr");
+            StartTagRaw("hr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7646,9 +7646,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("hr");
+            StartTagRaw("hr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -7664,7 +7664,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("abbr");
+            StartTagRaw("abbr");
             
             if (id != null)
             {
@@ -7690,8 +7690,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("abbr", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("abbr", this, false);
         }
 
         /// <summary>
@@ -7700,10 +7700,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder abbr(params Attr[] attrs)
         {
-            StartTag("abbr");
+            StartTagRaw("abbr");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("abbr", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("abbr", this, false);
         }
 
         /// <summary>
@@ -7712,10 +7712,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder abbr(IEnumerable<Attr> attrs)
         {
-            StartTag("abbr");
+            StartTagRaw("abbr");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("abbr", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("abbr", this, false);
         }
         
         /// <summary>
@@ -7724,10 +7724,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder abbr(Attr attr1)
         {
-            StartTag("abbr");
+            StartTagRaw("abbr");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("abbr", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("abbr", this, false);
         }
 
         /// <summary>
@@ -7736,10 +7736,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder abbr(Attr attr1, Attr attr2)
         {
-            StartTag("abbr");
+            StartTagRaw("abbr");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("abbr", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("abbr", this, false);
         }
 
         /// <summary>
@@ -7748,10 +7748,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("abbr");
+            StartTagRaw("abbr");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("abbr", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("abbr", this, false);
         }
 
         /// <summary>
@@ -7760,10 +7760,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("abbr");
+            StartTagRaw("abbr");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("abbr", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("abbr", this, false);
         }
 
         /// <summary>
@@ -7772,10 +7772,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("abbr");
+            StartTagRaw("abbr");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("abbr", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("abbr", this, false);
         }
 
         /// <summary>
@@ -7784,10 +7784,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("abbr");
+            StartTagRaw("abbr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("abbr", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("abbr", this, false);
         }
 
         /// <summary>
@@ -7796,10 +7796,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("abbr");
+            StartTagRaw("abbr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("abbr", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("abbr", this, false);
         }
 
         /// <summary>
@@ -7808,10 +7808,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("abbr");
+            StartTagRaw("abbr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("abbr", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("abbr", this, false);
         }
 
         /// <summary>
@@ -7827,7 +7827,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("cite");
+            StartTagRaw("cite");
             
             if (id != null)
             {
@@ -7853,8 +7853,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("cite", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("cite", this, false);
         }
 
         /// <summary>
@@ -7863,10 +7863,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder cite(params Attr[] attrs)
         {
-            StartTag("cite");
+            StartTagRaw("cite");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("cite", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("cite", this, false);
         }
 
         /// <summary>
@@ -7875,10 +7875,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder cite(IEnumerable<Attr> attrs)
         {
-            StartTag("cite");
+            StartTagRaw("cite");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("cite", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("cite", this, false);
         }
         
         /// <summary>
@@ -7887,10 +7887,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder cite(Attr attr1)
         {
-            StartTag("cite");
+            StartTagRaw("cite");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("cite", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("cite", this, false);
         }
 
         /// <summary>
@@ -7899,10 +7899,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder cite(Attr attr1, Attr attr2)
         {
-            StartTag("cite");
+            StartTagRaw("cite");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("cite", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("cite", this, false);
         }
 
         /// <summary>
@@ -7911,10 +7911,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder cite(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("cite");
+            StartTagRaw("cite");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("cite", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("cite", this, false);
         }
 
         /// <summary>
@@ -7923,10 +7923,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("cite");
+            StartTagRaw("cite");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("cite", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("cite", this, false);
         }
 
         /// <summary>
@@ -7935,10 +7935,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("cite");
+            StartTagRaw("cite");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("cite", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("cite", this, false);
         }
 
         /// <summary>
@@ -7947,10 +7947,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("cite");
+            StartTagRaw("cite");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("cite", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("cite", this, false);
         }
 
         /// <summary>
@@ -7959,10 +7959,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("cite");
+            StartTagRaw("cite");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("cite", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("cite", this, false);
         }
 
         /// <summary>
@@ -7971,10 +7971,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("cite");
+            StartTagRaw("cite");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("cite", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("cite", this, false);
         }
 
         /// <summary>
@@ -7990,7 +7990,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("code");
+            StartTagRaw("code");
             
             if (id != null)
             {
@@ -8016,8 +8016,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("code", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("code", this, false);
         }
 
         /// <summary>
@@ -8026,10 +8026,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder code(params Attr[] attrs)
         {
-            StartTag("code");
+            StartTagRaw("code");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("code", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("code", this, false);
         }
 
         /// <summary>
@@ -8038,10 +8038,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder code(IEnumerable<Attr> attrs)
         {
-            StartTag("code");
+            StartTagRaw("code");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("code", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("code", this, false);
         }
         
         /// <summary>
@@ -8050,10 +8050,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder code(Attr attr1)
         {
-            StartTag("code");
+            StartTagRaw("code");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("code", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("code", this, false);
         }
 
         /// <summary>
@@ -8062,10 +8062,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder code(Attr attr1, Attr attr2)
         {
-            StartTag("code");
+            StartTagRaw("code");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("code", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("code", this, false);
         }
 
         /// <summary>
@@ -8074,10 +8074,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder code(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("code");
+            StartTagRaw("code");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("code", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("code", this, false);
         }
 
         /// <summary>
@@ -8086,10 +8086,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("code");
+            StartTagRaw("code");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("code", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("code", this, false);
         }
 
         /// <summary>
@@ -8098,10 +8098,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("code");
+            StartTagRaw("code");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("code", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("code", this, false);
         }
 
         /// <summary>
@@ -8110,10 +8110,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("code");
+            StartTagRaw("code");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("code", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("code", this, false);
         }
 
         /// <summary>
@@ -8122,10 +8122,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("code");
+            StartTagRaw("code");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("code", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("code", this, false);
         }
 
         /// <summary>
@@ -8134,10 +8134,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("code");
+            StartTagRaw("code");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("code", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("code", this, false);
         }
 
         /// <summary>
@@ -8154,7 +8154,7 @@ namespace Eighty.Twenty
             string value = null
         )
         {
-            StartTag("data");
+            StartTagRaw("data");
             
             if (id != null)
             {
@@ -8184,8 +8184,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("value", value));
             }
-            _writer.Write('>');
-            return new TagBuilder("data", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("data", this, false);
         }
 
         /// <summary>
@@ -8194,10 +8194,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder data(params Attr[] attrs)
         {
-            StartTag("data");
+            StartTagRaw("data");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("data", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("data", this, false);
         }
 
         /// <summary>
@@ -8206,10 +8206,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder data(IEnumerable<Attr> attrs)
         {
-            StartTag("data");
+            StartTagRaw("data");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("data", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("data", this, false);
         }
         
         /// <summary>
@@ -8218,10 +8218,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder data(Attr attr1)
         {
-            StartTag("data");
+            StartTagRaw("data");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("data", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("data", this, false);
         }
 
         /// <summary>
@@ -8230,10 +8230,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder data(Attr attr1, Attr attr2)
         {
-            StartTag("data");
+            StartTagRaw("data");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("data", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("data", this, false);
         }
 
         /// <summary>
@@ -8242,10 +8242,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder data(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("data");
+            StartTagRaw("data");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("data", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("data", this, false);
         }
 
         /// <summary>
@@ -8254,10 +8254,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("data");
+            StartTagRaw("data");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("data", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("data", this, false);
         }
 
         /// <summary>
@@ -8266,10 +8266,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("data");
+            StartTagRaw("data");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("data", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("data", this, false);
         }
 
         /// <summary>
@@ -8278,10 +8278,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("data");
+            StartTagRaw("data");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("data", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("data", this, false);
         }
 
         /// <summary>
@@ -8290,10 +8290,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("data");
+            StartTagRaw("data");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("data", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("data", this, false);
         }
 
         /// <summary>
@@ -8302,10 +8302,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("data");
+            StartTagRaw("data");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("data", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("data", this, false);
         }
 
         /// <summary>
@@ -8321,7 +8321,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("dfn");
+            StartTagRaw("dfn");
             
             if (id != null)
             {
@@ -8347,8 +8347,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("dfn", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dfn", this, false);
         }
 
         /// <summary>
@@ -8357,10 +8357,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dfn(params Attr[] attrs)
         {
-            StartTag("dfn");
+            StartTagRaw("dfn");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("dfn", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dfn", this, false);
         }
 
         /// <summary>
@@ -8369,10 +8369,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dfn(IEnumerable<Attr> attrs)
         {
-            StartTag("dfn");
+            StartTagRaw("dfn");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("dfn", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dfn", this, false);
         }
         
         /// <summary>
@@ -8381,10 +8381,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dfn(Attr attr1)
         {
-            StartTag("dfn");
+            StartTagRaw("dfn");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("dfn", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dfn", this, false);
         }
 
         /// <summary>
@@ -8393,10 +8393,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dfn(Attr attr1, Attr attr2)
         {
-            StartTag("dfn");
+            StartTagRaw("dfn");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("dfn", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dfn", this, false);
         }
 
         /// <summary>
@@ -8405,10 +8405,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("dfn");
+            StartTagRaw("dfn");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("dfn", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dfn", this, false);
         }
 
         /// <summary>
@@ -8417,10 +8417,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("dfn");
+            StartTagRaw("dfn");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("dfn", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dfn", this, false);
         }
 
         /// <summary>
@@ -8429,10 +8429,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("dfn");
+            StartTagRaw("dfn");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("dfn", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dfn", this, false);
         }
 
         /// <summary>
@@ -8441,10 +8441,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("dfn");
+            StartTagRaw("dfn");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("dfn", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dfn", this, false);
         }
 
         /// <summary>
@@ -8453,10 +8453,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("dfn");
+            StartTagRaw("dfn");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("dfn", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dfn", this, false);
         }
 
         /// <summary>
@@ -8465,10 +8465,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("dfn");
+            StartTagRaw("dfn");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("dfn", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dfn", this, false);
         }
 
         /// <summary>
@@ -8484,7 +8484,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("kbd");
+            StartTagRaw("kbd");
             
             if (id != null)
             {
@@ -8510,8 +8510,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("kbd", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("kbd", this, false);
         }
 
         /// <summary>
@@ -8520,10 +8520,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder kbd(params Attr[] attrs)
         {
-            StartTag("kbd");
+            StartTagRaw("kbd");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("kbd", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("kbd", this, false);
         }
 
         /// <summary>
@@ -8532,10 +8532,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder kbd(IEnumerable<Attr> attrs)
         {
-            StartTag("kbd");
+            StartTagRaw("kbd");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("kbd", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("kbd", this, false);
         }
         
         /// <summary>
@@ -8544,10 +8544,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder kbd(Attr attr1)
         {
-            StartTag("kbd");
+            StartTagRaw("kbd");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("kbd", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("kbd", this, false);
         }
 
         /// <summary>
@@ -8556,10 +8556,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder kbd(Attr attr1, Attr attr2)
         {
-            StartTag("kbd");
+            StartTagRaw("kbd");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("kbd", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("kbd", this, false);
         }
 
         /// <summary>
@@ -8568,10 +8568,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("kbd");
+            StartTagRaw("kbd");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("kbd", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("kbd", this, false);
         }
 
         /// <summary>
@@ -8580,10 +8580,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("kbd");
+            StartTagRaw("kbd");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("kbd", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("kbd", this, false);
         }
 
         /// <summary>
@@ -8592,10 +8592,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("kbd");
+            StartTagRaw("kbd");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("kbd", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("kbd", this, false);
         }
 
         /// <summary>
@@ -8604,10 +8604,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("kbd");
+            StartTagRaw("kbd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("kbd", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("kbd", this, false);
         }
 
         /// <summary>
@@ -8616,10 +8616,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("kbd");
+            StartTagRaw("kbd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("kbd", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("kbd", this, false);
         }
 
         /// <summary>
@@ -8628,10 +8628,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("kbd");
+            StartTagRaw("kbd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("kbd", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("kbd", this, false);
         }
 
         /// <summary>
@@ -8647,7 +8647,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("samp");
+            StartTagRaw("samp");
             
             if (id != null)
             {
@@ -8673,8 +8673,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("samp", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("samp", this, false);
         }
 
         /// <summary>
@@ -8683,10 +8683,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder samp(params Attr[] attrs)
         {
-            StartTag("samp");
+            StartTagRaw("samp");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("samp", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("samp", this, false);
         }
 
         /// <summary>
@@ -8695,10 +8695,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder samp(IEnumerable<Attr> attrs)
         {
-            StartTag("samp");
+            StartTagRaw("samp");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("samp", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("samp", this, false);
         }
         
         /// <summary>
@@ -8707,10 +8707,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder samp(Attr attr1)
         {
-            StartTag("samp");
+            StartTagRaw("samp");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("samp", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("samp", this, false);
         }
 
         /// <summary>
@@ -8719,10 +8719,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder samp(Attr attr1, Attr attr2)
         {
-            StartTag("samp");
+            StartTagRaw("samp");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("samp", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("samp", this, false);
         }
 
         /// <summary>
@@ -8731,10 +8731,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder samp(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("samp");
+            StartTagRaw("samp");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("samp", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("samp", this, false);
         }
 
         /// <summary>
@@ -8743,10 +8743,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("samp");
+            StartTagRaw("samp");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("samp", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("samp", this, false);
         }
 
         /// <summary>
@@ -8755,10 +8755,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("samp");
+            StartTagRaw("samp");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("samp", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("samp", this, false);
         }
 
         /// <summary>
@@ -8767,10 +8767,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("samp");
+            StartTagRaw("samp");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("samp", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("samp", this, false);
         }
 
         /// <summary>
@@ -8779,10 +8779,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("samp");
+            StartTagRaw("samp");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("samp", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("samp", this, false);
         }
 
         /// <summary>
@@ -8791,10 +8791,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("samp");
+            StartTagRaw("samp");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("samp", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("samp", this, false);
         }
 
         /// <summary>
@@ -8811,7 +8811,7 @@ namespace Eighty.Twenty
             string datetime = null
         )
         {
-            StartTag("time");
+            StartTagRaw("time");
             
             if (id != null)
             {
@@ -8841,8 +8841,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("datetime", datetime));
             }
-            _writer.Write('>');
-            return new TagBuilder("time", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("time", this, false);
         }
 
         /// <summary>
@@ -8851,10 +8851,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder time(params Attr[] attrs)
         {
-            StartTag("time");
+            StartTagRaw("time");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("time", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("time", this, false);
         }
 
         /// <summary>
@@ -8863,10 +8863,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder time(IEnumerable<Attr> attrs)
         {
-            StartTag("time");
+            StartTagRaw("time");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("time", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("time", this, false);
         }
         
         /// <summary>
@@ -8875,10 +8875,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder time(Attr attr1)
         {
-            StartTag("time");
+            StartTagRaw("time");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("time", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("time", this, false);
         }
 
         /// <summary>
@@ -8887,10 +8887,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder time(Attr attr1, Attr attr2)
         {
-            StartTag("time");
+            StartTagRaw("time");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("time", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("time", this, false);
         }
 
         /// <summary>
@@ -8899,10 +8899,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder time(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("time");
+            StartTagRaw("time");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("time", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("time", this, false);
         }
 
         /// <summary>
@@ -8911,10 +8911,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("time");
+            StartTagRaw("time");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("time", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("time", this, false);
         }
 
         /// <summary>
@@ -8923,10 +8923,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("time");
+            StartTagRaw("time");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("time", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("time", this, false);
         }
 
         /// <summary>
@@ -8935,10 +8935,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("time");
+            StartTagRaw("time");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("time", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("time", this, false);
         }
 
         /// <summary>
@@ -8947,10 +8947,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("time");
+            StartTagRaw("time");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("time", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("time", this, false);
         }
 
         /// <summary>
@@ -8959,10 +8959,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("time");
+            StartTagRaw("time");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("time", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("time", this, false);
         }
 
         /// <summary>
@@ -8981,7 +8981,7 @@ namespace Eighty.Twenty
             string start = null
         )
         {
-            StartTag("ol");
+            StartTagRaw("ol");
             
             if (id != null)
             {
@@ -9013,14 +9013,14 @@ namespace Eighty.Twenty
             }
             if (reversed)
             {
-                Attr(new Eighty.Attr("reversed"));
+                Attr(Eighty.Attr.Raw("reversed"));
             }
             if (start != null)
             {
                 Attr(new Eighty.Attr("start", start));
             }
-            _writer.Write('>');
-            return new TagBuilder("ol", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("ol", this, false);
         }
 
         /// <summary>
@@ -9029,10 +9029,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder ol(params Attr[] attrs)
         {
-            StartTag("ol");
+            StartTagRaw("ol");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("ol", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("ol", this, false);
         }
 
         /// <summary>
@@ -9041,10 +9041,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder ol(IEnumerable<Attr> attrs)
         {
-            StartTag("ol");
+            StartTagRaw("ol");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("ol", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("ol", this, false);
         }
         
         /// <summary>
@@ -9053,10 +9053,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder ol(Attr attr1)
         {
-            StartTag("ol");
+            StartTagRaw("ol");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("ol", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("ol", this, false);
         }
 
         /// <summary>
@@ -9065,10 +9065,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder ol(Attr attr1, Attr attr2)
         {
-            StartTag("ol");
+            StartTagRaw("ol");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("ol", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("ol", this, false);
         }
 
         /// <summary>
@@ -9077,10 +9077,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder ol(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("ol");
+            StartTagRaw("ol");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("ol", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("ol", this, false);
         }
 
         /// <summary>
@@ -9089,10 +9089,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("ol");
+            StartTagRaw("ol");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("ol", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("ol", this, false);
         }
 
         /// <summary>
@@ -9101,10 +9101,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("ol");
+            StartTagRaw("ol");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("ol", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("ol", this, false);
         }
 
         /// <summary>
@@ -9113,10 +9113,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("ol");
+            StartTagRaw("ol");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("ol", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("ol", this, false);
         }
 
         /// <summary>
@@ -9125,10 +9125,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("ol");
+            StartTagRaw("ol");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("ol", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("ol", this, false);
         }
 
         /// <summary>
@@ -9137,10 +9137,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("ol");
+            StartTagRaw("ol");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("ol", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("ol", this, false);
         }
 
         /// <summary>
@@ -9159,7 +9159,7 @@ namespace Eighty.Twenty
             string start = null
         )
         {
-            StartTag("ul");
+            StartTagRaw("ul");
             
             if (id != null)
             {
@@ -9191,14 +9191,14 @@ namespace Eighty.Twenty
             }
             if (reversed)
             {
-                Attr(new Eighty.Attr("reversed"));
+                Attr(Eighty.Attr.Raw("reversed"));
             }
             if (start != null)
             {
                 Attr(new Eighty.Attr("start", start));
             }
-            _writer.Write('>');
-            return new TagBuilder("ul", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("ul", this, false);
         }
 
         /// <summary>
@@ -9207,10 +9207,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder ul(params Attr[] attrs)
         {
-            StartTag("ul");
+            StartTagRaw("ul");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("ul", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("ul", this, false);
         }
 
         /// <summary>
@@ -9219,10 +9219,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder ul(IEnumerable<Attr> attrs)
         {
-            StartTag("ul");
+            StartTagRaw("ul");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("ul", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("ul", this, false);
         }
         
         /// <summary>
@@ -9231,10 +9231,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder ul(Attr attr1)
         {
-            StartTag("ul");
+            StartTagRaw("ul");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("ul", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("ul", this, false);
         }
 
         /// <summary>
@@ -9243,10 +9243,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder ul(Attr attr1, Attr attr2)
         {
-            StartTag("ul");
+            StartTagRaw("ul");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("ul", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("ul", this, false);
         }
 
         /// <summary>
@@ -9255,10 +9255,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder ul(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("ul");
+            StartTagRaw("ul");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("ul", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("ul", this, false);
         }
 
         /// <summary>
@@ -9267,10 +9267,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("ul");
+            StartTagRaw("ul");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("ul", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("ul", this, false);
         }
 
         /// <summary>
@@ -9279,10 +9279,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("ul");
+            StartTagRaw("ul");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("ul", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("ul", this, false);
         }
 
         /// <summary>
@@ -9291,10 +9291,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("ul");
+            StartTagRaw("ul");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("ul", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("ul", this, false);
         }
 
         /// <summary>
@@ -9303,10 +9303,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("ul");
+            StartTagRaw("ul");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("ul", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("ul", this, false);
         }
 
         /// <summary>
@@ -9315,10 +9315,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("ul");
+            StartTagRaw("ul");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("ul", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("ul", this, false);
         }
 
         /// <summary>
@@ -9335,7 +9335,7 @@ namespace Eighty.Twenty
             string value = null
         )
         {
-            StartTag("li");
+            StartTagRaw("li");
             
             if (id != null)
             {
@@ -9365,8 +9365,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("value", value));
             }
-            _writer.Write('>');
-            return new TagBuilder("li", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("li", this, false);
         }
 
         /// <summary>
@@ -9375,10 +9375,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder li(params Attr[] attrs)
         {
-            StartTag("li");
+            StartTagRaw("li");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("li", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("li", this, false);
         }
 
         /// <summary>
@@ -9387,10 +9387,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder li(IEnumerable<Attr> attrs)
         {
-            StartTag("li");
+            StartTagRaw("li");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("li", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("li", this, false);
         }
         
         /// <summary>
@@ -9399,10 +9399,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder li(Attr attr1)
         {
-            StartTag("li");
+            StartTagRaw("li");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("li", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("li", this, false);
         }
 
         /// <summary>
@@ -9411,10 +9411,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder li(Attr attr1, Attr attr2)
         {
-            StartTag("li");
+            StartTagRaw("li");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("li", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("li", this, false);
         }
 
         /// <summary>
@@ -9423,10 +9423,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder li(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("li");
+            StartTagRaw("li");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("li", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("li", this, false);
         }
 
         /// <summary>
@@ -9435,10 +9435,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("li");
+            StartTagRaw("li");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("li", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("li", this, false);
         }
 
         /// <summary>
@@ -9447,10 +9447,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("li");
+            StartTagRaw("li");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("li", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("li", this, false);
         }
 
         /// <summary>
@@ -9459,10 +9459,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("li");
+            StartTagRaw("li");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("li", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("li", this, false);
         }
 
         /// <summary>
@@ -9471,10 +9471,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("li");
+            StartTagRaw("li");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("li", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("li", this, false);
         }
 
         /// <summary>
@@ -9483,10 +9483,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("li");
+            StartTagRaw("li");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("li", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("li", this, false);
         }
 
         /// <summary>
@@ -9502,7 +9502,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("dl");
+            StartTagRaw("dl");
             
             if (id != null)
             {
@@ -9528,8 +9528,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("dl", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dl", this, false);
         }
 
         /// <summary>
@@ -9538,10 +9538,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dl(params Attr[] attrs)
         {
-            StartTag("dl");
+            StartTagRaw("dl");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("dl", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dl", this, false);
         }
 
         /// <summary>
@@ -9550,10 +9550,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dl(IEnumerable<Attr> attrs)
         {
-            StartTag("dl");
+            StartTagRaw("dl");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("dl", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dl", this, false);
         }
         
         /// <summary>
@@ -9562,10 +9562,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dl(Attr attr1)
         {
-            StartTag("dl");
+            StartTagRaw("dl");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("dl", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dl", this, false);
         }
 
         /// <summary>
@@ -9574,10 +9574,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dl(Attr attr1, Attr attr2)
         {
-            StartTag("dl");
+            StartTagRaw("dl");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("dl", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dl", this, false);
         }
 
         /// <summary>
@@ -9586,10 +9586,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dl(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("dl");
+            StartTagRaw("dl");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("dl", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dl", this, false);
         }
 
         /// <summary>
@@ -9598,10 +9598,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("dl");
+            StartTagRaw("dl");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("dl", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dl", this, false);
         }
 
         /// <summary>
@@ -9610,10 +9610,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("dl");
+            StartTagRaw("dl");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("dl", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dl", this, false);
         }
 
         /// <summary>
@@ -9622,10 +9622,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("dl");
+            StartTagRaw("dl");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("dl", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dl", this, false);
         }
 
         /// <summary>
@@ -9634,10 +9634,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("dl");
+            StartTagRaw("dl");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("dl", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dl", this, false);
         }
 
         /// <summary>
@@ -9646,10 +9646,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("dl");
+            StartTagRaw("dl");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("dl", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dl", this, false);
         }
 
         /// <summary>
@@ -9665,7 +9665,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("dt");
+            StartTagRaw("dt");
             
             if (id != null)
             {
@@ -9691,8 +9691,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("dt", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dt", this, false);
         }
 
         /// <summary>
@@ -9701,10 +9701,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dt(params Attr[] attrs)
         {
-            StartTag("dt");
+            StartTagRaw("dt");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("dt", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dt", this, false);
         }
 
         /// <summary>
@@ -9713,10 +9713,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dt(IEnumerable<Attr> attrs)
         {
-            StartTag("dt");
+            StartTagRaw("dt");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("dt", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dt", this, false);
         }
         
         /// <summary>
@@ -9725,10 +9725,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dt(Attr attr1)
         {
-            StartTag("dt");
+            StartTagRaw("dt");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("dt", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dt", this, false);
         }
 
         /// <summary>
@@ -9737,10 +9737,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dt(Attr attr1, Attr attr2)
         {
-            StartTag("dt");
+            StartTagRaw("dt");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("dt", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dt", this, false);
         }
 
         /// <summary>
@@ -9749,10 +9749,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dt(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("dt");
+            StartTagRaw("dt");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("dt", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dt", this, false);
         }
 
         /// <summary>
@@ -9761,10 +9761,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("dt");
+            StartTagRaw("dt");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("dt", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dt", this, false);
         }
 
         /// <summary>
@@ -9773,10 +9773,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("dt");
+            StartTagRaw("dt");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("dt", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dt", this, false);
         }
 
         /// <summary>
@@ -9785,10 +9785,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("dt");
+            StartTagRaw("dt");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("dt", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dt", this, false);
         }
 
         /// <summary>
@@ -9797,10 +9797,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("dt");
+            StartTagRaw("dt");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("dt", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dt", this, false);
         }
 
         /// <summary>
@@ -9809,10 +9809,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("dt");
+            StartTagRaw("dt");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("dt", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dt", this, false);
         }
 
         /// <summary>
@@ -9828,7 +9828,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("dd");
+            StartTagRaw("dd");
             
             if (id != null)
             {
@@ -9854,8 +9854,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("dd", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dd", this, false);
         }
 
         /// <summary>
@@ -9864,10 +9864,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dd(params Attr[] attrs)
         {
-            StartTag("dd");
+            StartTagRaw("dd");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("dd", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dd", this, false);
         }
 
         /// <summary>
@@ -9876,10 +9876,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dd(IEnumerable<Attr> attrs)
         {
-            StartTag("dd");
+            StartTagRaw("dd");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("dd", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dd", this, false);
         }
         
         /// <summary>
@@ -9888,10 +9888,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dd(Attr attr1)
         {
-            StartTag("dd");
+            StartTagRaw("dd");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("dd", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dd", this, false);
         }
 
         /// <summary>
@@ -9900,10 +9900,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dd(Attr attr1, Attr attr2)
         {
-            StartTag("dd");
+            StartTagRaw("dd");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("dd", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dd", this, false);
         }
 
         /// <summary>
@@ -9912,10 +9912,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dd(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("dd");
+            StartTagRaw("dd");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("dd", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dd", this, false);
         }
 
         /// <summary>
@@ -9924,10 +9924,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("dd");
+            StartTagRaw("dd");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("dd", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dd", this, false);
         }
 
         /// <summary>
@@ -9936,10 +9936,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("dd");
+            StartTagRaw("dd");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("dd", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dd", this, false);
         }
 
         /// <summary>
@@ -9948,10 +9948,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("dd");
+            StartTagRaw("dd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("dd", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dd", this, false);
         }
 
         /// <summary>
@@ -9960,10 +9960,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("dd");
+            StartTagRaw("dd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("dd", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dd", this, false);
         }
 
         /// <summary>
@@ -9972,10 +9972,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("dd");
+            StartTagRaw("dd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("dd", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dd", this, false);
         }
 
         /// <summary>
@@ -9991,7 +9991,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("table");
+            StartTagRaw("table");
             
             if (id != null)
             {
@@ -10017,8 +10017,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("table", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("table", this, false);
         }
 
         /// <summary>
@@ -10027,10 +10027,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder table(params Attr[] attrs)
         {
-            StartTag("table");
+            StartTagRaw("table");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("table", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("table", this, false);
         }
 
         /// <summary>
@@ -10039,10 +10039,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder table(IEnumerable<Attr> attrs)
         {
-            StartTag("table");
+            StartTagRaw("table");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("table", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("table", this, false);
         }
         
         /// <summary>
@@ -10051,10 +10051,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder table(Attr attr1)
         {
-            StartTag("table");
+            StartTagRaw("table");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("table", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("table", this, false);
         }
 
         /// <summary>
@@ -10063,10 +10063,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder table(Attr attr1, Attr attr2)
         {
-            StartTag("table");
+            StartTagRaw("table");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("table", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("table", this, false);
         }
 
         /// <summary>
@@ -10075,10 +10075,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder table(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("table");
+            StartTagRaw("table");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("table", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("table", this, false);
         }
 
         /// <summary>
@@ -10087,10 +10087,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("table");
+            StartTagRaw("table");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("table", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("table", this, false);
         }
 
         /// <summary>
@@ -10099,10 +10099,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("table");
+            StartTagRaw("table");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("table", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("table", this, false);
         }
 
         /// <summary>
@@ -10111,10 +10111,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("table");
+            StartTagRaw("table");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("table", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("table", this, false);
         }
 
         /// <summary>
@@ -10123,10 +10123,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("table");
+            StartTagRaw("table");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("table", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("table", this, false);
         }
 
         /// <summary>
@@ -10135,10 +10135,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("table");
+            StartTagRaw("table");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("table", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("table", this, false);
         }
 
         /// <summary>
@@ -10154,7 +10154,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("caption");
+            StartTagRaw("caption");
             
             if (id != null)
             {
@@ -10180,8 +10180,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("caption", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("caption", this, false);
         }
 
         /// <summary>
@@ -10190,10 +10190,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder caption(params Attr[] attrs)
         {
-            StartTag("caption");
+            StartTagRaw("caption");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("caption", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("caption", this, false);
         }
 
         /// <summary>
@@ -10202,10 +10202,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder caption(IEnumerable<Attr> attrs)
         {
-            StartTag("caption");
+            StartTagRaw("caption");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("caption", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("caption", this, false);
         }
         
         /// <summary>
@@ -10214,10 +10214,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder caption(Attr attr1)
         {
-            StartTag("caption");
+            StartTagRaw("caption");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("caption", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("caption", this, false);
         }
 
         /// <summary>
@@ -10226,10 +10226,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder caption(Attr attr1, Attr attr2)
         {
-            StartTag("caption");
+            StartTagRaw("caption");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("caption", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("caption", this, false);
         }
 
         /// <summary>
@@ -10238,10 +10238,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder caption(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("caption");
+            StartTagRaw("caption");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("caption", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("caption", this, false);
         }
 
         /// <summary>
@@ -10250,10 +10250,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("caption");
+            StartTagRaw("caption");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("caption", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("caption", this, false);
         }
 
         /// <summary>
@@ -10262,10 +10262,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("caption");
+            StartTagRaw("caption");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("caption", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("caption", this, false);
         }
 
         /// <summary>
@@ -10274,10 +10274,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("caption");
+            StartTagRaw("caption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("caption", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("caption", this, false);
         }
 
         /// <summary>
@@ -10286,10 +10286,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("caption");
+            StartTagRaw("caption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("caption", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("caption", this, false);
         }
 
         /// <summary>
@@ -10298,10 +10298,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("caption");
+            StartTagRaw("caption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("caption", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("caption", this, false);
         }
 
         /// <summary>
@@ -10317,7 +10317,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("thead");
+            StartTagRaw("thead");
             
             if (id != null)
             {
@@ -10343,8 +10343,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("thead", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("thead", this, false);
         }
 
         /// <summary>
@@ -10353,10 +10353,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder thead(params Attr[] attrs)
         {
-            StartTag("thead");
+            StartTagRaw("thead");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("thead", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("thead", this, false);
         }
 
         /// <summary>
@@ -10365,10 +10365,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder thead(IEnumerable<Attr> attrs)
         {
-            StartTag("thead");
+            StartTagRaw("thead");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("thead", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("thead", this, false);
         }
         
         /// <summary>
@@ -10377,10 +10377,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder thead(Attr attr1)
         {
-            StartTag("thead");
+            StartTagRaw("thead");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("thead", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("thead", this, false);
         }
 
         /// <summary>
@@ -10389,10 +10389,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder thead(Attr attr1, Attr attr2)
         {
-            StartTag("thead");
+            StartTagRaw("thead");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("thead", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("thead", this, false);
         }
 
         /// <summary>
@@ -10401,10 +10401,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder thead(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("thead");
+            StartTagRaw("thead");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("thead", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("thead", this, false);
         }
 
         /// <summary>
@@ -10413,10 +10413,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("thead");
+            StartTagRaw("thead");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("thead", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("thead", this, false);
         }
 
         /// <summary>
@@ -10425,10 +10425,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("thead");
+            StartTagRaw("thead");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("thead", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("thead", this, false);
         }
 
         /// <summary>
@@ -10437,10 +10437,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("thead");
+            StartTagRaw("thead");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("thead", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("thead", this, false);
         }
 
         /// <summary>
@@ -10449,10 +10449,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("thead");
+            StartTagRaw("thead");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("thead", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("thead", this, false);
         }
 
         /// <summary>
@@ -10461,10 +10461,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("thead");
+            StartTagRaw("thead");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("thead", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("thead", this, false);
         }
 
         /// <summary>
@@ -10481,7 +10481,7 @@ namespace Eighty.Twenty
             string span = null
         )
         {
-            StartTag("colgroup");
+            StartTagRaw("colgroup");
             
             if (id != null)
             {
@@ -10511,8 +10511,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("span", span));
             }
-            _writer.Write('>');
-            return new TagBuilder("colgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("colgroup", this, false);
         }
 
         /// <summary>
@@ -10521,10 +10521,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder colgroup(params Attr[] attrs)
         {
-            StartTag("colgroup");
+            StartTagRaw("colgroup");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("colgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("colgroup", this, false);
         }
 
         /// <summary>
@@ -10533,10 +10533,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder colgroup(IEnumerable<Attr> attrs)
         {
-            StartTag("colgroup");
+            StartTagRaw("colgroup");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("colgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("colgroup", this, false);
         }
         
         /// <summary>
@@ -10545,10 +10545,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder colgroup(Attr attr1)
         {
-            StartTag("colgroup");
+            StartTagRaw("colgroup");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("colgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("colgroup", this, false);
         }
 
         /// <summary>
@@ -10557,10 +10557,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder colgroup(Attr attr1, Attr attr2)
         {
-            StartTag("colgroup");
+            StartTagRaw("colgroup");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("colgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("colgroup", this, false);
         }
 
         /// <summary>
@@ -10569,10 +10569,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("colgroup");
+            StartTagRaw("colgroup");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("colgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("colgroup", this, false);
         }
 
         /// <summary>
@@ -10581,10 +10581,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("colgroup");
+            StartTagRaw("colgroup");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("colgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("colgroup", this, false);
         }
 
         /// <summary>
@@ -10593,10 +10593,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("colgroup");
+            StartTagRaw("colgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("colgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("colgroup", this, false);
         }
 
         /// <summary>
@@ -10605,10 +10605,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("colgroup");
+            StartTagRaw("colgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("colgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("colgroup", this, false);
         }
 
         /// <summary>
@@ -10617,10 +10617,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("colgroup");
+            StartTagRaw("colgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("colgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("colgroup", this, false);
         }
 
         /// <summary>
@@ -10629,10 +10629,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("colgroup");
+            StartTagRaw("colgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("colgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("colgroup", this, false);
         }
 
         /// <summary>
@@ -10649,7 +10649,7 @@ namespace Eighty.Twenty
             string span = null
         )
         {
-            StartTag("col");
+            StartTagRaw("col");
             
             if (id != null)
             {
@@ -10679,8 +10679,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("span", span));
             }
-            _writer.Write('>');
-            return new TagBuilder("col", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("col", this, false);
         }
 
         /// <summary>
@@ -10689,10 +10689,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder col(params Attr[] attrs)
         {
-            StartTag("col");
+            StartTagRaw("col");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("col", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("col", this, false);
         }
 
         /// <summary>
@@ -10701,10 +10701,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder col(IEnumerable<Attr> attrs)
         {
-            StartTag("col");
+            StartTagRaw("col");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("col", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("col", this, false);
         }
         
         /// <summary>
@@ -10713,10 +10713,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder col(Attr attr1)
         {
-            StartTag("col");
+            StartTagRaw("col");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("col", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("col", this, false);
         }
 
         /// <summary>
@@ -10725,10 +10725,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder col(Attr attr1, Attr attr2)
         {
-            StartTag("col");
+            StartTagRaw("col");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("col", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("col", this, false);
         }
 
         /// <summary>
@@ -10737,10 +10737,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder col(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("col");
+            StartTagRaw("col");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("col", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("col", this, false);
         }
 
         /// <summary>
@@ -10749,10 +10749,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("col");
+            StartTagRaw("col");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("col", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("col", this, false);
         }
 
         /// <summary>
@@ -10761,10 +10761,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("col");
+            StartTagRaw("col");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("col", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("col", this, false);
         }
 
         /// <summary>
@@ -10773,10 +10773,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("col");
+            StartTagRaw("col");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("col", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("col", this, false);
         }
 
         /// <summary>
@@ -10785,10 +10785,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("col");
+            StartTagRaw("col");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("col", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("col", this, false);
         }
 
         /// <summary>
@@ -10797,10 +10797,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("col");
+            StartTagRaw("col");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("col", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("col", this, false);
         }
 
         /// <summary>
@@ -10816,7 +10816,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("tbody");
+            StartTagRaw("tbody");
             
             if (id != null)
             {
@@ -10842,8 +10842,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("tbody", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tbody", this, false);
         }
 
         /// <summary>
@@ -10852,10 +10852,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tbody(params Attr[] attrs)
         {
-            StartTag("tbody");
+            StartTagRaw("tbody");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("tbody", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tbody", this, false);
         }
 
         /// <summary>
@@ -10864,10 +10864,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tbody(IEnumerable<Attr> attrs)
         {
-            StartTag("tbody");
+            StartTagRaw("tbody");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("tbody", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tbody", this, false);
         }
         
         /// <summary>
@@ -10876,10 +10876,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tbody(Attr attr1)
         {
-            StartTag("tbody");
+            StartTagRaw("tbody");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("tbody", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tbody", this, false);
         }
 
         /// <summary>
@@ -10888,10 +10888,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tbody(Attr attr1, Attr attr2)
         {
-            StartTag("tbody");
+            StartTagRaw("tbody");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("tbody", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tbody", this, false);
         }
 
         /// <summary>
@@ -10900,10 +10900,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("tbody");
+            StartTagRaw("tbody");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("tbody", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tbody", this, false);
         }
 
         /// <summary>
@@ -10912,10 +10912,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("tbody");
+            StartTagRaw("tbody");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("tbody", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tbody", this, false);
         }
 
         /// <summary>
@@ -10924,10 +10924,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("tbody");
+            StartTagRaw("tbody");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("tbody", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tbody", this, false);
         }
 
         /// <summary>
@@ -10936,10 +10936,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("tbody");
+            StartTagRaw("tbody");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("tbody", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tbody", this, false);
         }
 
         /// <summary>
@@ -10948,10 +10948,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("tbody");
+            StartTagRaw("tbody");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("tbody", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tbody", this, false);
         }
 
         /// <summary>
@@ -10960,10 +10960,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("tbody");
+            StartTagRaw("tbody");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("tbody", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tbody", this, false);
         }
 
         /// <summary>
@@ -10979,7 +10979,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("tr");
+            StartTagRaw("tr");
             
             if (id != null)
             {
@@ -11005,8 +11005,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("tr", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tr", this, false);
         }
 
         /// <summary>
@@ -11015,10 +11015,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tr(params Attr[] attrs)
         {
-            StartTag("tr");
+            StartTagRaw("tr");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("tr", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tr", this, false);
         }
 
         /// <summary>
@@ -11027,10 +11027,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tr(IEnumerable<Attr> attrs)
         {
-            StartTag("tr");
+            StartTagRaw("tr");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("tr", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tr", this, false);
         }
         
         /// <summary>
@@ -11039,10 +11039,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tr(Attr attr1)
         {
-            StartTag("tr");
+            StartTagRaw("tr");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("tr", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tr", this, false);
         }
 
         /// <summary>
@@ -11051,10 +11051,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tr(Attr attr1, Attr attr2)
         {
-            StartTag("tr");
+            StartTagRaw("tr");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("tr", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tr", this, false);
         }
 
         /// <summary>
@@ -11063,10 +11063,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tr(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("tr");
+            StartTagRaw("tr");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("tr", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tr", this, false);
         }
 
         /// <summary>
@@ -11075,10 +11075,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("tr");
+            StartTagRaw("tr");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("tr", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tr", this, false);
         }
 
         /// <summary>
@@ -11087,10 +11087,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("tr");
+            StartTagRaw("tr");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("tr", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tr", this, false);
         }
 
         /// <summary>
@@ -11099,10 +11099,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("tr");
+            StartTagRaw("tr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("tr", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tr", this, false);
         }
 
         /// <summary>
@@ -11111,10 +11111,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("tr");
+            StartTagRaw("tr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("tr", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tr", this, false);
         }
 
         /// <summary>
@@ -11123,10 +11123,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("tr");
+            StartTagRaw("tr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("tr", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tr", this, false);
         }
 
         /// <summary>
@@ -11146,7 +11146,7 @@ namespace Eighty.Twenty
             string scope = null
         )
         {
-            StartTag("th");
+            StartTagRaw("th");
             
             if (id != null)
             {
@@ -11188,8 +11188,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("scope", scope));
             }
-            _writer.Write('>');
-            return new TagBuilder("th", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("th", this, false);
         }
 
         /// <summary>
@@ -11198,10 +11198,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder th(params Attr[] attrs)
         {
-            StartTag("th");
+            StartTagRaw("th");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("th", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("th", this, false);
         }
 
         /// <summary>
@@ -11210,10 +11210,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder th(IEnumerable<Attr> attrs)
         {
-            StartTag("th");
+            StartTagRaw("th");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("th", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("th", this, false);
         }
         
         /// <summary>
@@ -11222,10 +11222,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder th(Attr attr1)
         {
-            StartTag("th");
+            StartTagRaw("th");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("th", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("th", this, false);
         }
 
         /// <summary>
@@ -11234,10 +11234,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder th(Attr attr1, Attr attr2)
         {
-            StartTag("th");
+            StartTagRaw("th");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("th", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("th", this, false);
         }
 
         /// <summary>
@@ -11246,10 +11246,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder th(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("th");
+            StartTagRaw("th");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("th", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("th", this, false);
         }
 
         /// <summary>
@@ -11258,10 +11258,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("th");
+            StartTagRaw("th");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("th", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("th", this, false);
         }
 
         /// <summary>
@@ -11270,10 +11270,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("th");
+            StartTagRaw("th");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("th", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("th", this, false);
         }
 
         /// <summary>
@@ -11282,10 +11282,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("th");
+            StartTagRaw("th");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("th", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("th", this, false);
         }
 
         /// <summary>
@@ -11294,10 +11294,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("th");
+            StartTagRaw("th");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("th", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("th", this, false);
         }
 
         /// <summary>
@@ -11306,10 +11306,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("th");
+            StartTagRaw("th");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("th", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("th", this, false);
         }
 
         /// <summary>
@@ -11328,7 +11328,7 @@ namespace Eighty.Twenty
             string headers = null
         )
         {
-            StartTag("td");
+            StartTagRaw("td");
             
             if (id != null)
             {
@@ -11366,8 +11366,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("headers", headers));
             }
-            _writer.Write('>');
-            return new TagBuilder("td", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("td", this, false);
         }
 
         /// <summary>
@@ -11376,10 +11376,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder td(params Attr[] attrs)
         {
-            StartTag("td");
+            StartTagRaw("td");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("td", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("td", this, false);
         }
 
         /// <summary>
@@ -11388,10 +11388,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder td(IEnumerable<Attr> attrs)
         {
-            StartTag("td");
+            StartTagRaw("td");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("td", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("td", this, false);
         }
         
         /// <summary>
@@ -11400,10 +11400,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder td(Attr attr1)
         {
-            StartTag("td");
+            StartTagRaw("td");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("td", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("td", this, false);
         }
 
         /// <summary>
@@ -11412,10 +11412,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder td(Attr attr1, Attr attr2)
         {
-            StartTag("td");
+            StartTagRaw("td");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("td", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("td", this, false);
         }
 
         /// <summary>
@@ -11424,10 +11424,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder td(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("td");
+            StartTagRaw("td");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("td", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("td", this, false);
         }
 
         /// <summary>
@@ -11436,10 +11436,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("td");
+            StartTagRaw("td");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("td", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("td", this, false);
         }
 
         /// <summary>
@@ -11448,10 +11448,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("td");
+            StartTagRaw("td");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("td", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("td", this, false);
         }
 
         /// <summary>
@@ -11460,10 +11460,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("td");
+            StartTagRaw("td");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("td", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("td", this, false);
         }
 
         /// <summary>
@@ -11472,10 +11472,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("td");
+            StartTagRaw("td");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("td", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("td", this, false);
         }
 
         /// <summary>
@@ -11484,10 +11484,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("td");
+            StartTagRaw("td");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("td", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("td", this, false);
         }
 
         /// <summary>
@@ -11503,7 +11503,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("tfoot");
+            StartTagRaw("tfoot");
             
             if (id != null)
             {
@@ -11529,8 +11529,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("tfoot", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tfoot", this, false);
         }
 
         /// <summary>
@@ -11539,10 +11539,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tfoot(params Attr[] attrs)
         {
-            StartTag("tfoot");
+            StartTagRaw("tfoot");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("tfoot", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tfoot", this, false);
         }
 
         /// <summary>
@@ -11551,10 +11551,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tfoot(IEnumerable<Attr> attrs)
         {
-            StartTag("tfoot");
+            StartTagRaw("tfoot");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("tfoot", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tfoot", this, false);
         }
         
         /// <summary>
@@ -11563,10 +11563,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tfoot(Attr attr1)
         {
-            StartTag("tfoot");
+            StartTagRaw("tfoot");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("tfoot", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tfoot", this, false);
         }
 
         /// <summary>
@@ -11575,10 +11575,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tfoot(Attr attr1, Attr attr2)
         {
-            StartTag("tfoot");
+            StartTagRaw("tfoot");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("tfoot", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tfoot", this, false);
         }
 
         /// <summary>
@@ -11587,10 +11587,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("tfoot");
+            StartTagRaw("tfoot");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("tfoot", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tfoot", this, false);
         }
 
         /// <summary>
@@ -11599,10 +11599,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("tfoot");
+            StartTagRaw("tfoot");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("tfoot", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tfoot", this, false);
         }
 
         /// <summary>
@@ -11611,10 +11611,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("tfoot");
+            StartTagRaw("tfoot");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("tfoot", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tfoot", this, false);
         }
 
         /// <summary>
@@ -11623,10 +11623,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("tfoot");
+            StartTagRaw("tfoot");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("tfoot", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tfoot", this, false);
         }
 
         /// <summary>
@@ -11635,10 +11635,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("tfoot");
+            StartTagRaw("tfoot");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("tfoot", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tfoot", this, false);
         }
 
         /// <summary>
@@ -11647,10 +11647,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("tfoot");
+            StartTagRaw("tfoot");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("tfoot", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("tfoot", this, false);
         }
 
         /// <summary>
@@ -11673,7 +11673,7 @@ namespace Eighty.Twenty
             bool novalidate = false
         )
         {
-            StartTag("form");
+            StartTagRaw("form");
             
             if (id != null)
             {
@@ -11725,10 +11725,10 @@ namespace Eighty.Twenty
             }
             if (novalidate)
             {
-                Attr(new Eighty.Attr("novalidate"));
+                Attr(Eighty.Attr.Raw("novalidate"));
             }
-            _writer.Write('>');
-            return new TagBuilder("form", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("form", this, false);
         }
 
         /// <summary>
@@ -11737,10 +11737,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder form(params Attr[] attrs)
         {
-            StartTag("form");
+            StartTagRaw("form");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("form", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("form", this, false);
         }
 
         /// <summary>
@@ -11749,10 +11749,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder form(IEnumerable<Attr> attrs)
         {
-            StartTag("form");
+            StartTagRaw("form");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("form", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("form", this, false);
         }
         
         /// <summary>
@@ -11761,10 +11761,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder form(Attr attr1)
         {
-            StartTag("form");
+            StartTagRaw("form");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("form", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("form", this, false);
         }
 
         /// <summary>
@@ -11773,10 +11773,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder form(Attr attr1, Attr attr2)
         {
-            StartTag("form");
+            StartTagRaw("form");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("form", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("form", this, false);
         }
 
         /// <summary>
@@ -11785,10 +11785,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder form(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("form");
+            StartTagRaw("form");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("form", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("form", this, false);
         }
 
         /// <summary>
@@ -11797,10 +11797,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("form");
+            StartTagRaw("form");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("form", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("form", this, false);
         }
 
         /// <summary>
@@ -11809,10 +11809,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("form");
+            StartTagRaw("form");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("form", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("form", this, false);
         }
 
         /// <summary>
@@ -11821,10 +11821,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("form");
+            StartTagRaw("form");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("form", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("form", this, false);
         }
 
         /// <summary>
@@ -11833,10 +11833,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("form");
+            StartTagRaw("form");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("form", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("form", this, false);
         }
 
         /// <summary>
@@ -11845,10 +11845,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("form");
+            StartTagRaw("form");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("form", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("form", this, false);
         }
 
         /// <summary>
@@ -11867,7 +11867,7 @@ namespace Eighty.Twenty
             string form = null
         )
         {
-            StartTag("fieldset");
+            StartTagRaw("fieldset");
             
             if (id != null)
             {
@@ -11899,14 +11899,14 @@ namespace Eighty.Twenty
             }
             if (disabled)
             {
-                Attr(new Eighty.Attr("disabled"));
+                Attr(Eighty.Attr.Raw("disabled"));
             }
             if (form != null)
             {
                 Attr(new Eighty.Attr("form", form));
             }
-            _writer.Write('>');
-            return new TagBuilder("fieldset", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("fieldset", this, false);
         }
 
         /// <summary>
@@ -11915,10 +11915,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder fieldset(params Attr[] attrs)
         {
-            StartTag("fieldset");
+            StartTagRaw("fieldset");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("fieldset", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("fieldset", this, false);
         }
 
         /// <summary>
@@ -11927,10 +11927,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder fieldset(IEnumerable<Attr> attrs)
         {
-            StartTag("fieldset");
+            StartTagRaw("fieldset");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("fieldset", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("fieldset", this, false);
         }
         
         /// <summary>
@@ -11939,10 +11939,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder fieldset(Attr attr1)
         {
-            StartTag("fieldset");
+            StartTagRaw("fieldset");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("fieldset", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("fieldset", this, false);
         }
 
         /// <summary>
@@ -11951,10 +11951,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder fieldset(Attr attr1, Attr attr2)
         {
-            StartTag("fieldset");
+            StartTagRaw("fieldset");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("fieldset", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("fieldset", this, false);
         }
 
         /// <summary>
@@ -11963,10 +11963,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("fieldset");
+            StartTagRaw("fieldset");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("fieldset", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("fieldset", this, false);
         }
 
         /// <summary>
@@ -11975,10 +11975,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("fieldset");
+            StartTagRaw("fieldset");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("fieldset", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("fieldset", this, false);
         }
 
         /// <summary>
@@ -11987,10 +11987,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("fieldset");
+            StartTagRaw("fieldset");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("fieldset", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("fieldset", this, false);
         }
 
         /// <summary>
@@ -11999,10 +11999,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("fieldset");
+            StartTagRaw("fieldset");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("fieldset", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("fieldset", this, false);
         }
 
         /// <summary>
@@ -12011,10 +12011,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("fieldset");
+            StartTagRaw("fieldset");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("fieldset", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("fieldset", this, false);
         }
 
         /// <summary>
@@ -12023,10 +12023,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("fieldset");
+            StartTagRaw("fieldset");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("fieldset", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("fieldset", this, false);
         }
 
         /// <summary>
@@ -12043,7 +12043,7 @@ namespace Eighty.Twenty
             string @for = null
         )
         {
-            StartTag("label");
+            StartTagRaw("label");
             
             if (id != null)
             {
@@ -12073,8 +12073,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("for", @for));
             }
-            _writer.Write('>');
-            return new TagBuilder("label", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("label", this, false);
         }
 
         /// <summary>
@@ -12083,10 +12083,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder label(params Attr[] attrs)
         {
-            StartTag("label");
+            StartTagRaw("label");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("label", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("label", this, false);
         }
 
         /// <summary>
@@ -12095,10 +12095,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder label(IEnumerable<Attr> attrs)
         {
-            StartTag("label");
+            StartTagRaw("label");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("label", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("label", this, false);
         }
         
         /// <summary>
@@ -12107,10 +12107,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder label(Attr attr1)
         {
-            StartTag("label");
+            StartTagRaw("label");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("label", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("label", this, false);
         }
 
         /// <summary>
@@ -12119,10 +12119,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder label(Attr attr1, Attr attr2)
         {
-            StartTag("label");
+            StartTagRaw("label");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("label", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("label", this, false);
         }
 
         /// <summary>
@@ -12131,10 +12131,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder label(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("label");
+            StartTagRaw("label");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("label", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("label", this, false);
         }
 
         /// <summary>
@@ -12143,10 +12143,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("label");
+            StartTagRaw("label");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("label", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("label", this, false);
         }
 
         /// <summary>
@@ -12155,10 +12155,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("label");
+            StartTagRaw("label");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("label", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("label", this, false);
         }
 
         /// <summary>
@@ -12167,10 +12167,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("label");
+            StartTagRaw("label");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("label", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("label", this, false);
         }
 
         /// <summary>
@@ -12179,10 +12179,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("label");
+            StartTagRaw("label");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("label", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("label", this, false);
         }
 
         /// <summary>
@@ -12191,10 +12191,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("label");
+            StartTagRaw("label");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("label", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("label", this, false);
         }
 
         /// <summary>
@@ -12238,7 +12238,7 @@ namespace Eighty.Twenty
             bool formnovalidate = false
         )
         {
-            StartTag("input");
+            StartTagRaw("input");
             
             if (id != null)
             {
@@ -12298,23 +12298,23 @@ namespace Eighty.Twenty
             }
             if (autofocus)
             {
-                Attr(new Eighty.Attr("autofocus"));
+                Attr(Eighty.Attr.Raw("autofocus"));
             }
             if (@checked)
             {
-                Attr(new Eighty.Attr("checked"));
+                Attr(Eighty.Attr.Raw("checked"));
             }
             if (disabled)
             {
-                Attr(new Eighty.Attr("disabled"));
+                Attr(Eighty.Attr.Raw("disabled"));
             }
             if (@readonly)
             {
-                Attr(new Eighty.Attr("readonly"));
+                Attr(Eighty.Attr.Raw("readonly"));
             }
             if (required)
             {
-                Attr(new Eighty.Attr("required"));
+                Attr(Eighty.Attr.Raw("required"));
             }
             if (src != null)
             {
@@ -12374,10 +12374,10 @@ namespace Eighty.Twenty
             }
             if (formnovalidate)
             {
-                Attr(new Eighty.Attr("formnovalidate"));
+                Attr(Eighty.Attr.Raw("formnovalidate"));
             }
-            _writer.Write('>');
-            return new TagBuilder("input", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("input", this, false);
         }
 
         /// <summary>
@@ -12386,10 +12386,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder input(params Attr[] attrs)
         {
-            StartTag("input");
+            StartTagRaw("input");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("input", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("input", this, false);
         }
 
         /// <summary>
@@ -12398,10 +12398,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder input(IEnumerable<Attr> attrs)
         {
-            StartTag("input");
+            StartTagRaw("input");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("input", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("input", this, false);
         }
         
         /// <summary>
@@ -12410,10 +12410,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder input(Attr attr1)
         {
-            StartTag("input");
+            StartTagRaw("input");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("input", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("input", this, false);
         }
 
         /// <summary>
@@ -12422,10 +12422,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder input(Attr attr1, Attr attr2)
         {
-            StartTag("input");
+            StartTagRaw("input");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("input", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("input", this, false);
         }
 
         /// <summary>
@@ -12434,10 +12434,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder input(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("input");
+            StartTagRaw("input");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("input", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("input", this, false);
         }
 
         /// <summary>
@@ -12446,10 +12446,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("input");
+            StartTagRaw("input");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("input", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("input", this, false);
         }
 
         /// <summary>
@@ -12458,10 +12458,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("input");
+            StartTagRaw("input");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("input", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("input", this, false);
         }
 
         /// <summary>
@@ -12470,10 +12470,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("input");
+            StartTagRaw("input");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("input", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("input", this, false);
         }
 
         /// <summary>
@@ -12482,10 +12482,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("input");
+            StartTagRaw("input");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("input", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("input", this, false);
         }
 
         /// <summary>
@@ -12494,10 +12494,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("input");
+            StartTagRaw("input");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("input", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("input", this, false);
         }
 
         /// <summary>
@@ -12527,7 +12527,7 @@ namespace Eighty.Twenty
             bool formnovalidate = false
         )
         {
-            StartTag("button");
+            StartTagRaw("button");
             
             if (id != null)
             {
@@ -12567,11 +12567,11 @@ namespace Eighty.Twenty
             }
             if (autofocus)
             {
-                Attr(new Eighty.Attr("autofocus"));
+                Attr(Eighty.Attr.Raw("autofocus"));
             }
             if (disabled)
             {
-                Attr(new Eighty.Attr("disabled"));
+                Attr(Eighty.Attr.Raw("disabled"));
             }
             if (src != null)
             {
@@ -12607,10 +12607,10 @@ namespace Eighty.Twenty
             }
             if (formnovalidate)
             {
-                Attr(new Eighty.Attr("formnovalidate"));
+                Attr(Eighty.Attr.Raw("formnovalidate"));
             }
-            _writer.Write('>');
-            return new TagBuilder("button", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("button", this, false);
         }
 
         /// <summary>
@@ -12619,10 +12619,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder button(params Attr[] attrs)
         {
-            StartTag("button");
+            StartTagRaw("button");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("button", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("button", this, false);
         }
 
         /// <summary>
@@ -12631,10 +12631,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder button(IEnumerable<Attr> attrs)
         {
-            StartTag("button");
+            StartTagRaw("button");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("button", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("button", this, false);
         }
         
         /// <summary>
@@ -12643,10 +12643,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder button(Attr attr1)
         {
-            StartTag("button");
+            StartTagRaw("button");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("button", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("button", this, false);
         }
 
         /// <summary>
@@ -12655,10 +12655,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder button(Attr attr1, Attr attr2)
         {
-            StartTag("button");
+            StartTagRaw("button");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("button", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("button", this, false);
         }
 
         /// <summary>
@@ -12667,10 +12667,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder button(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("button");
+            StartTagRaw("button");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("button", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("button", this, false);
         }
 
         /// <summary>
@@ -12679,10 +12679,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("button");
+            StartTagRaw("button");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("button", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("button", this, false);
         }
 
         /// <summary>
@@ -12691,10 +12691,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("button");
+            StartTagRaw("button");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("button", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("button", this, false);
         }
 
         /// <summary>
@@ -12703,10 +12703,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("button");
+            StartTagRaw("button");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("button", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("button", this, false);
         }
 
         /// <summary>
@@ -12715,10 +12715,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("button");
+            StartTagRaw("button");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("button", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("button", this, false);
         }
 
         /// <summary>
@@ -12727,10 +12727,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("button");
+            StartTagRaw("button");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("button", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("button", this, false);
         }
 
         /// <summary>
@@ -12760,7 +12760,7 @@ namespace Eighty.Twenty
             string form = null
         )
         {
-            StartTag("textarea");
+            StartTagRaw("textarea");
             
             if (id != null)
             {
@@ -12812,19 +12812,19 @@ namespace Eighty.Twenty
             }
             if (autofocus)
             {
-                Attr(new Eighty.Attr("autofocus"));
+                Attr(Eighty.Attr.Raw("autofocus"));
             }
             if (disabled)
             {
-                Attr(new Eighty.Attr("disabled"));
+                Attr(Eighty.Attr.Raw("disabled"));
             }
             if (@readonly)
             {
-                Attr(new Eighty.Attr("readonly"));
+                Attr(Eighty.Attr.Raw("readonly"));
             }
             if (required)
             {
-                Attr(new Eighty.Attr("required"));
+                Attr(Eighty.Attr.Raw("required"));
             }
             if (src != null)
             {
@@ -12842,8 +12842,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("form", form));
             }
-            _writer.Write('>');
-            return new TagBuilder("textarea", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("textarea", this, false);
         }
 
         /// <summary>
@@ -12852,10 +12852,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder textarea(params Attr[] attrs)
         {
-            StartTag("textarea");
+            StartTagRaw("textarea");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("textarea", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("textarea", this, false);
         }
 
         /// <summary>
@@ -12864,10 +12864,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder textarea(IEnumerable<Attr> attrs)
         {
-            StartTag("textarea");
+            StartTagRaw("textarea");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("textarea", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("textarea", this, false);
         }
         
         /// <summary>
@@ -12876,10 +12876,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder textarea(Attr attr1)
         {
-            StartTag("textarea");
+            StartTagRaw("textarea");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("textarea", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("textarea", this, false);
         }
 
         /// <summary>
@@ -12888,10 +12888,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder textarea(Attr attr1, Attr attr2)
         {
-            StartTag("textarea");
+            StartTagRaw("textarea");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("textarea", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("textarea", this, false);
         }
 
         /// <summary>
@@ -12900,10 +12900,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("textarea");
+            StartTagRaw("textarea");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("textarea", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("textarea", this, false);
         }
 
         /// <summary>
@@ -12912,10 +12912,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("textarea");
+            StartTagRaw("textarea");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("textarea", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("textarea", this, false);
         }
 
         /// <summary>
@@ -12924,10 +12924,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("textarea");
+            StartTagRaw("textarea");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("textarea", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("textarea", this, false);
         }
 
         /// <summary>
@@ -12936,10 +12936,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("textarea");
+            StartTagRaw("textarea");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("textarea", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("textarea", this, false);
         }
 
         /// <summary>
@@ -12948,10 +12948,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("textarea");
+            StartTagRaw("textarea");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("textarea", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("textarea", this, false);
         }
 
         /// <summary>
@@ -12960,10 +12960,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("textarea");
+            StartTagRaw("textarea");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("textarea", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("textarea", this, false);
         }
 
         /// <summary>
@@ -12979,7 +12979,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("datalist");
+            StartTagRaw("datalist");
             
             if (id != null)
             {
@@ -13005,8 +13005,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("datalist", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("datalist", this, false);
         }
 
         /// <summary>
@@ -13015,10 +13015,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder datalist(params Attr[] attrs)
         {
-            StartTag("datalist");
+            StartTagRaw("datalist");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("datalist", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("datalist", this, false);
         }
 
         /// <summary>
@@ -13027,10 +13027,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder datalist(IEnumerable<Attr> attrs)
         {
-            StartTag("datalist");
+            StartTagRaw("datalist");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("datalist", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("datalist", this, false);
         }
         
         /// <summary>
@@ -13039,10 +13039,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder datalist(Attr attr1)
         {
-            StartTag("datalist");
+            StartTagRaw("datalist");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("datalist", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("datalist", this, false);
         }
 
         /// <summary>
@@ -13051,10 +13051,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder datalist(Attr attr1, Attr attr2)
         {
-            StartTag("datalist");
+            StartTagRaw("datalist");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("datalist", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("datalist", this, false);
         }
 
         /// <summary>
@@ -13063,10 +13063,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("datalist");
+            StartTagRaw("datalist");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("datalist", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("datalist", this, false);
         }
 
         /// <summary>
@@ -13075,10 +13075,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("datalist");
+            StartTagRaw("datalist");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("datalist", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("datalist", this, false);
         }
 
         /// <summary>
@@ -13087,10 +13087,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("datalist");
+            StartTagRaw("datalist");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("datalist", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("datalist", this, false);
         }
 
         /// <summary>
@@ -13099,10 +13099,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("datalist");
+            StartTagRaw("datalist");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("datalist", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("datalist", this, false);
         }
 
         /// <summary>
@@ -13111,10 +13111,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("datalist");
+            StartTagRaw("datalist");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("datalist", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("datalist", this, false);
         }
 
         /// <summary>
@@ -13123,10 +13123,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("datalist");
+            StartTagRaw("datalist");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("datalist", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("datalist", this, false);
         }
 
         /// <summary>
@@ -13144,7 +13144,7 @@ namespace Eighty.Twenty
             bool disabled = false
         )
         {
-            StartTag("optgroup");
+            StartTagRaw("optgroup");
             
             if (id != null)
             {
@@ -13176,10 +13176,10 @@ namespace Eighty.Twenty
             }
             if (disabled)
             {
-                Attr(new Eighty.Attr("disabled"));
+                Attr(Eighty.Attr.Raw("disabled"));
             }
-            _writer.Write('>');
-            return new TagBuilder("optgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("optgroup", this, false);
         }
 
         /// <summary>
@@ -13188,10 +13188,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder optgroup(params Attr[] attrs)
         {
-            StartTag("optgroup");
+            StartTagRaw("optgroup");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("optgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("optgroup", this, false);
         }
 
         /// <summary>
@@ -13200,10 +13200,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder optgroup(IEnumerable<Attr> attrs)
         {
-            StartTag("optgroup");
+            StartTagRaw("optgroup");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("optgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("optgroup", this, false);
         }
         
         /// <summary>
@@ -13212,10 +13212,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder optgroup(Attr attr1)
         {
-            StartTag("optgroup");
+            StartTagRaw("optgroup");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("optgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("optgroup", this, false);
         }
 
         /// <summary>
@@ -13224,10 +13224,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder optgroup(Attr attr1, Attr attr2)
         {
-            StartTag("optgroup");
+            StartTagRaw("optgroup");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("optgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("optgroup", this, false);
         }
 
         /// <summary>
@@ -13236,10 +13236,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("optgroup");
+            StartTagRaw("optgroup");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("optgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("optgroup", this, false);
         }
 
         /// <summary>
@@ -13248,10 +13248,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("optgroup");
+            StartTagRaw("optgroup");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("optgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("optgroup", this, false);
         }
 
         /// <summary>
@@ -13260,10 +13260,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("optgroup");
+            StartTagRaw("optgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("optgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("optgroup", this, false);
         }
 
         /// <summary>
@@ -13272,10 +13272,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("optgroup");
+            StartTagRaw("optgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("optgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("optgroup", this, false);
         }
 
         /// <summary>
@@ -13284,10 +13284,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("optgroup");
+            StartTagRaw("optgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("optgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("optgroup", this, false);
         }
 
         /// <summary>
@@ -13296,10 +13296,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("optgroup");
+            StartTagRaw("optgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("optgroup", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("optgroup", this, false);
         }
 
         /// <summary>
@@ -13322,7 +13322,7 @@ namespace Eighty.Twenty
             string form = null
         )
         {
-            StartTag("select");
+            StartTagRaw("select");
             
             if (id != null)
             {
@@ -13362,22 +13362,22 @@ namespace Eighty.Twenty
             }
             if (autofocus)
             {
-                Attr(new Eighty.Attr("autofocus"));
+                Attr(Eighty.Attr.Raw("autofocus"));
             }
             if (disabled)
             {
-                Attr(new Eighty.Attr("disabled"));
+                Attr(Eighty.Attr.Raw("disabled"));
             }
             if (required)
             {
-                Attr(new Eighty.Attr("required"));
+                Attr(Eighty.Attr.Raw("required"));
             }
             if (form != null)
             {
                 Attr(new Eighty.Attr("form", form));
             }
-            _writer.Write('>');
-            return new TagBuilder("select", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("select", this, false);
         }
 
         /// <summary>
@@ -13386,10 +13386,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder select(params Attr[] attrs)
         {
-            StartTag("select");
+            StartTagRaw("select");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("select", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("select", this, false);
         }
 
         /// <summary>
@@ -13398,10 +13398,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder select(IEnumerable<Attr> attrs)
         {
-            StartTag("select");
+            StartTagRaw("select");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("select", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("select", this, false);
         }
         
         /// <summary>
@@ -13410,10 +13410,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder select(Attr attr1)
         {
-            StartTag("select");
+            StartTagRaw("select");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("select", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("select", this, false);
         }
 
         /// <summary>
@@ -13422,10 +13422,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder select(Attr attr1, Attr attr2)
         {
-            StartTag("select");
+            StartTagRaw("select");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("select", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("select", this, false);
         }
 
         /// <summary>
@@ -13434,10 +13434,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder select(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("select");
+            StartTagRaw("select");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("select", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("select", this, false);
         }
 
         /// <summary>
@@ -13446,10 +13446,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("select");
+            StartTagRaw("select");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("select", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("select", this, false);
         }
 
         /// <summary>
@@ -13458,10 +13458,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("select");
+            StartTagRaw("select");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("select", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("select", this, false);
         }
 
         /// <summary>
@@ -13470,10 +13470,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("select");
+            StartTagRaw("select");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("select", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("select", this, false);
         }
 
         /// <summary>
@@ -13482,10 +13482,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("select");
+            StartTagRaw("select");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("select", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("select", this, false);
         }
 
         /// <summary>
@@ -13494,10 +13494,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("select");
+            StartTagRaw("select");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("select", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("select", this, false);
         }
 
         /// <summary>
@@ -13517,7 +13517,7 @@ namespace Eighty.Twenty
             bool selected = false
         )
         {
-            StartTag("option");
+            StartTagRaw("option");
             
             if (id != null)
             {
@@ -13553,14 +13553,14 @@ namespace Eighty.Twenty
             }
             if (disabled)
             {
-                Attr(new Eighty.Attr("disabled"));
+                Attr(Eighty.Attr.Raw("disabled"));
             }
             if (selected)
             {
-                Attr(new Eighty.Attr("selected"));
+                Attr(Eighty.Attr.Raw("selected"));
             }
-            _writer.Write('>');
-            return new TagBuilder("option", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("option", this, false);
         }
 
         /// <summary>
@@ -13569,10 +13569,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder option(params Attr[] attrs)
         {
-            StartTag("option");
+            StartTagRaw("option");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("option", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("option", this, false);
         }
 
         /// <summary>
@@ -13581,10 +13581,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder option(IEnumerable<Attr> attrs)
         {
-            StartTag("option");
+            StartTagRaw("option");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("option", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("option", this, false);
         }
         
         /// <summary>
@@ -13593,10 +13593,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder option(Attr attr1)
         {
-            StartTag("option");
+            StartTagRaw("option");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("option", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("option", this, false);
         }
 
         /// <summary>
@@ -13605,10 +13605,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder option(Attr attr1, Attr attr2)
         {
-            StartTag("option");
+            StartTagRaw("option");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("option", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("option", this, false);
         }
 
         /// <summary>
@@ -13617,10 +13617,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder option(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("option");
+            StartTagRaw("option");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("option", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("option", this, false);
         }
 
         /// <summary>
@@ -13629,10 +13629,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("option");
+            StartTagRaw("option");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("option", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("option", this, false);
         }
 
         /// <summary>
@@ -13641,10 +13641,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("option");
+            StartTagRaw("option");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("option", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("option", this, false);
         }
 
         /// <summary>
@@ -13653,10 +13653,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("option");
+            StartTagRaw("option");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("option", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("option", this, false);
         }
 
         /// <summary>
@@ -13665,10 +13665,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("option");
+            StartTagRaw("option");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("option", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("option", this, false);
         }
 
         /// <summary>
@@ -13677,10 +13677,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("option");
+            StartTagRaw("option");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("option", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("option", this, false);
         }
 
         /// <summary>
@@ -13696,7 +13696,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("legend");
+            StartTagRaw("legend");
             
             if (id != null)
             {
@@ -13722,8 +13722,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("legend", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("legend", this, false);
         }
 
         /// <summary>
@@ -13732,10 +13732,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder legend(params Attr[] attrs)
         {
-            StartTag("legend");
+            StartTagRaw("legend");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("legend", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("legend", this, false);
         }
 
         /// <summary>
@@ -13744,10 +13744,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder legend(IEnumerable<Attr> attrs)
         {
-            StartTag("legend");
+            StartTagRaw("legend");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("legend", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("legend", this, false);
         }
         
         /// <summary>
@@ -13756,10 +13756,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder legend(Attr attr1)
         {
-            StartTag("legend");
+            StartTagRaw("legend");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("legend", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("legend", this, false);
         }
 
         /// <summary>
@@ -13768,10 +13768,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder legend(Attr attr1, Attr attr2)
         {
-            StartTag("legend");
+            StartTagRaw("legend");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("legend", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("legend", this, false);
         }
 
         /// <summary>
@@ -13780,10 +13780,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder legend(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("legend");
+            StartTagRaw("legend");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("legend", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("legend", this, false);
         }
 
         /// <summary>
@@ -13792,10 +13792,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("legend");
+            StartTagRaw("legend");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("legend", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("legend", this, false);
         }
 
         /// <summary>
@@ -13804,10 +13804,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("legend");
+            StartTagRaw("legend");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("legend", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("legend", this, false);
         }
 
         /// <summary>
@@ -13816,10 +13816,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("legend");
+            StartTagRaw("legend");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("legend", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("legend", this, false);
         }
 
         /// <summary>
@@ -13828,10 +13828,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("legend");
+            StartTagRaw("legend");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("legend", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("legend", this, false);
         }
 
         /// <summary>
@@ -13840,10 +13840,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("legend");
+            StartTagRaw("legend");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("legend", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("legend", this, false);
         }
 
         /// <summary>
@@ -13866,7 +13866,7 @@ namespace Eighty.Twenty
             string optimum = null
         )
         {
-            StartTag("meter");
+            StartTagRaw("meter");
             
             if (id != null)
             {
@@ -13920,8 +13920,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("optimum", optimum));
             }
-            _writer.Write('>');
-            return new TagBuilder("meter", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("meter", this, false);
         }
 
         /// <summary>
@@ -13930,10 +13930,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder meter(params Attr[] attrs)
         {
-            StartTag("meter");
+            StartTagRaw("meter");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("meter", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("meter", this, false);
         }
 
         /// <summary>
@@ -13942,10 +13942,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder meter(IEnumerable<Attr> attrs)
         {
-            StartTag("meter");
+            StartTagRaw("meter");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("meter", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("meter", this, false);
         }
         
         /// <summary>
@@ -13954,10 +13954,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder meter(Attr attr1)
         {
-            StartTag("meter");
+            StartTagRaw("meter");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("meter", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("meter", this, false);
         }
 
         /// <summary>
@@ -13966,10 +13966,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder meter(Attr attr1, Attr attr2)
         {
-            StartTag("meter");
+            StartTagRaw("meter");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("meter", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("meter", this, false);
         }
 
         /// <summary>
@@ -13978,10 +13978,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder meter(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("meter");
+            StartTagRaw("meter");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("meter", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("meter", this, false);
         }
 
         /// <summary>
@@ -13990,10 +13990,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("meter");
+            StartTagRaw("meter");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("meter", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("meter", this, false);
         }
 
         /// <summary>
@@ -14002,10 +14002,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("meter");
+            StartTagRaw("meter");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("meter", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("meter", this, false);
         }
 
         /// <summary>
@@ -14014,10 +14014,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("meter");
+            StartTagRaw("meter");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("meter", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("meter", this, false);
         }
 
         /// <summary>
@@ -14026,10 +14026,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("meter");
+            StartTagRaw("meter");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("meter", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("meter", this, false);
         }
 
         /// <summary>
@@ -14038,10 +14038,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("meter");
+            StartTagRaw("meter");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("meter", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("meter", this, false);
         }
 
         /// <summary>
@@ -14060,7 +14060,7 @@ namespace Eighty.Twenty
             string form = null
         )
         {
-            StartTag("output");
+            StartTagRaw("output");
             
             if (id != null)
             {
@@ -14098,8 +14098,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("form", form));
             }
-            _writer.Write('>');
-            return new TagBuilder("output", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("output", this, false);
         }
 
         /// <summary>
@@ -14108,10 +14108,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder output(params Attr[] attrs)
         {
-            StartTag("output");
+            StartTagRaw("output");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("output", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("output", this, false);
         }
 
         /// <summary>
@@ -14120,10 +14120,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder output(IEnumerable<Attr> attrs)
         {
-            StartTag("output");
+            StartTagRaw("output");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("output", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("output", this, false);
         }
         
         /// <summary>
@@ -14132,10 +14132,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder output(Attr attr1)
         {
-            StartTag("output");
+            StartTagRaw("output");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("output", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("output", this, false);
         }
 
         /// <summary>
@@ -14144,10 +14144,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder output(Attr attr1, Attr attr2)
         {
-            StartTag("output");
+            StartTagRaw("output");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("output", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("output", this, false);
         }
 
         /// <summary>
@@ -14156,10 +14156,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder output(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("output");
+            StartTagRaw("output");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("output", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("output", this, false);
         }
 
         /// <summary>
@@ -14168,10 +14168,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("output");
+            StartTagRaw("output");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("output", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("output", this, false);
         }
 
         /// <summary>
@@ -14180,10 +14180,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("output");
+            StartTagRaw("output");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("output", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("output", this, false);
         }
 
         /// <summary>
@@ -14192,10 +14192,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("output");
+            StartTagRaw("output");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("output", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("output", this, false);
         }
 
         /// <summary>
@@ -14204,10 +14204,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("output");
+            StartTagRaw("output");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("output", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("output", this, false);
         }
 
         /// <summary>
@@ -14216,10 +14216,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("output");
+            StartTagRaw("output");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("output", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("output", this, false);
         }
 
         /// <summary>
@@ -14237,7 +14237,7 @@ namespace Eighty.Twenty
             string max = null
         )
         {
-            StartTag("progress");
+            StartTagRaw("progress");
             
             if (id != null)
             {
@@ -14271,8 +14271,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("max", max));
             }
-            _writer.Write('>');
-            return new TagBuilder("progress", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("progress", this, false);
         }
 
         /// <summary>
@@ -14281,10 +14281,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder progress(params Attr[] attrs)
         {
-            StartTag("progress");
+            StartTagRaw("progress");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("progress", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("progress", this, false);
         }
 
         /// <summary>
@@ -14293,10 +14293,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder progress(IEnumerable<Attr> attrs)
         {
-            StartTag("progress");
+            StartTagRaw("progress");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("progress", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("progress", this, false);
         }
         
         /// <summary>
@@ -14305,10 +14305,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder progress(Attr attr1)
         {
-            StartTag("progress");
+            StartTagRaw("progress");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("progress", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("progress", this, false);
         }
 
         /// <summary>
@@ -14317,10 +14317,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder progress(Attr attr1, Attr attr2)
         {
-            StartTag("progress");
+            StartTagRaw("progress");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("progress", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("progress", this, false);
         }
 
         /// <summary>
@@ -14329,10 +14329,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder progress(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("progress");
+            StartTagRaw("progress");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("progress", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("progress", this, false);
         }
 
         /// <summary>
@@ -14341,10 +14341,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("progress");
+            StartTagRaw("progress");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("progress", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("progress", this, false);
         }
 
         /// <summary>
@@ -14353,10 +14353,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("progress");
+            StartTagRaw("progress");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("progress", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("progress", this, false);
         }
 
         /// <summary>
@@ -14365,10 +14365,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("progress");
+            StartTagRaw("progress");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("progress", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("progress", this, false);
         }
 
         /// <summary>
@@ -14377,10 +14377,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("progress");
+            StartTagRaw("progress");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("progress", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("progress", this, false);
         }
 
         /// <summary>
@@ -14389,10 +14389,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("progress");
+            StartTagRaw("progress");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("progress", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("progress", this, false);
         }
 
         /// <summary>
@@ -14410,7 +14410,7 @@ namespace Eighty.Twenty
             string label = null
         )
         {
-            StartTag("menu");
+            StartTagRaw("menu");
             
             if (id != null)
             {
@@ -14444,8 +14444,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("label", label));
             }
-            _writer.Write('>');
-            return new TagBuilder("menu", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("menu", this, false);
         }
 
         /// <summary>
@@ -14454,10 +14454,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder menu(params Attr[] attrs)
         {
-            StartTag("menu");
+            StartTagRaw("menu");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("menu", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("menu", this, false);
         }
 
         /// <summary>
@@ -14466,10 +14466,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder menu(IEnumerable<Attr> attrs)
         {
-            StartTag("menu");
+            StartTagRaw("menu");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("menu", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("menu", this, false);
         }
         
         /// <summary>
@@ -14478,10 +14478,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder menu(Attr attr1)
         {
-            StartTag("menu");
+            StartTagRaw("menu");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("menu", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("menu", this, false);
         }
 
         /// <summary>
@@ -14490,10 +14490,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder menu(Attr attr1, Attr attr2)
         {
-            StartTag("menu");
+            StartTagRaw("menu");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("menu", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("menu", this, false);
         }
 
         /// <summary>
@@ -14502,10 +14502,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder menu(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("menu");
+            StartTagRaw("menu");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("menu", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("menu", this, false);
         }
 
         /// <summary>
@@ -14514,10 +14514,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("menu");
+            StartTagRaw("menu");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("menu", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("menu", this, false);
         }
 
         /// <summary>
@@ -14526,10 +14526,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("menu");
+            StartTagRaw("menu");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("menu", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("menu", this, false);
         }
 
         /// <summary>
@@ -14538,10 +14538,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("menu");
+            StartTagRaw("menu");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("menu", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("menu", this, false);
         }
 
         /// <summary>
@@ -14550,10 +14550,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("menu");
+            StartTagRaw("menu");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("menu", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("menu", this, false);
         }
 
         /// <summary>
@@ -14562,10 +14562,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("menu");
+            StartTagRaw("menu");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("menu", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("menu", this, false);
         }
 
         /// <summary>
@@ -14589,7 +14589,7 @@ namespace Eighty.Twenty
             bool @checked = false
         )
         {
-            StartTag("menuitem");
+            StartTagRaw("menuitem");
             
             if (id != null)
             {
@@ -14637,18 +14637,18 @@ namespace Eighty.Twenty
             }
             if (disabled)
             {
-                Attr(new Eighty.Attr("disabled"));
+                Attr(Eighty.Attr.Raw("disabled"));
             }
             if (@default)
             {
-                Attr(new Eighty.Attr("default"));
+                Attr(Eighty.Attr.Raw("default"));
             }
             if (@checked)
             {
-                Attr(new Eighty.Attr("checked"));
+                Attr(Eighty.Attr.Raw("checked"));
             }
-            _writer.Write('>');
-            return new TagBuilder("menuitem", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("menuitem", this, false);
         }
 
         /// <summary>
@@ -14657,10 +14657,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder menuitem(params Attr[] attrs)
         {
-            StartTag("menuitem");
+            StartTagRaw("menuitem");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("menuitem", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("menuitem", this, false);
         }
 
         /// <summary>
@@ -14669,10 +14669,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder menuitem(IEnumerable<Attr> attrs)
         {
-            StartTag("menuitem");
+            StartTagRaw("menuitem");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("menuitem", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("menuitem", this, false);
         }
         
         /// <summary>
@@ -14681,10 +14681,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder menuitem(Attr attr1)
         {
-            StartTag("menuitem");
+            StartTagRaw("menuitem");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("menuitem", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("menuitem", this, false);
         }
 
         /// <summary>
@@ -14693,10 +14693,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder menuitem(Attr attr1, Attr attr2)
         {
-            StartTag("menuitem");
+            StartTagRaw("menuitem");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("menuitem", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("menuitem", this, false);
         }
 
         /// <summary>
@@ -14705,10 +14705,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("menuitem");
+            StartTagRaw("menuitem");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("menuitem", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("menuitem", this, false);
         }
 
         /// <summary>
@@ -14717,10 +14717,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("menuitem");
+            StartTagRaw("menuitem");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("menuitem", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("menuitem", this, false);
         }
 
         /// <summary>
@@ -14729,10 +14729,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("menuitem");
+            StartTagRaw("menuitem");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("menuitem", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("menuitem", this, false);
         }
 
         /// <summary>
@@ -14741,10 +14741,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("menuitem");
+            StartTagRaw("menuitem");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("menuitem", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("menuitem", this, false);
         }
 
         /// <summary>
@@ -14753,10 +14753,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("menuitem");
+            StartTagRaw("menuitem");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("menuitem", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("menuitem", this, false);
         }
 
         /// <summary>
@@ -14765,10 +14765,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("menuitem");
+            StartTagRaw("menuitem");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("menuitem", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("menuitem", this, false);
         }
 
         /// <summary>
@@ -14785,7 +14785,7 @@ namespace Eighty.Twenty
             bool open = false
         )
         {
-            StartTag("dialog");
+            StartTagRaw("dialog");
             
             if (id != null)
             {
@@ -14813,10 +14813,10 @@ namespace Eighty.Twenty
             }
             if (open)
             {
-                Attr(new Eighty.Attr("open"));
+                Attr(Eighty.Attr.Raw("open"));
             }
-            _writer.Write('>');
-            return new TagBuilder("dialog", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dialog", this, false);
         }
 
         /// <summary>
@@ -14825,10 +14825,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dialog(params Attr[] attrs)
         {
-            StartTag("dialog");
+            StartTagRaw("dialog");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("dialog", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dialog", this, false);
         }
 
         /// <summary>
@@ -14837,10 +14837,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dialog(IEnumerable<Attr> attrs)
         {
-            StartTag("dialog");
+            StartTagRaw("dialog");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("dialog", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dialog", this, false);
         }
         
         /// <summary>
@@ -14849,10 +14849,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dialog(Attr attr1)
         {
-            StartTag("dialog");
+            StartTagRaw("dialog");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("dialog", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dialog", this, false);
         }
 
         /// <summary>
@@ -14861,10 +14861,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dialog(Attr attr1, Attr attr2)
         {
-            StartTag("dialog");
+            StartTagRaw("dialog");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("dialog", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dialog", this, false);
         }
 
         /// <summary>
@@ -14873,10 +14873,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("dialog");
+            StartTagRaw("dialog");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("dialog", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dialog", this, false);
         }
 
         /// <summary>
@@ -14885,10 +14885,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("dialog");
+            StartTagRaw("dialog");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("dialog", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dialog", this, false);
         }
 
         /// <summary>
@@ -14897,10 +14897,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("dialog");
+            StartTagRaw("dialog");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("dialog", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dialog", this, false);
         }
 
         /// <summary>
@@ -14909,10 +14909,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("dialog");
+            StartTagRaw("dialog");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("dialog", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dialog", this, false);
         }
 
         /// <summary>
@@ -14921,10 +14921,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("dialog");
+            StartTagRaw("dialog");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("dialog", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dialog", this, false);
         }
 
         /// <summary>
@@ -14933,10 +14933,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("dialog");
+            StartTagRaw("dialog");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("dialog", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("dialog", this, false);
         }
 
         /// <summary>
@@ -14953,7 +14953,7 @@ namespace Eighty.Twenty
             bool open = false
         )
         {
-            StartTag("details");
+            StartTagRaw("details");
             
             if (id != null)
             {
@@ -14981,10 +14981,10 @@ namespace Eighty.Twenty
             }
             if (open)
             {
-                Attr(new Eighty.Attr("open"));
+                Attr(Eighty.Attr.Raw("open"));
             }
-            _writer.Write('>');
-            return new TagBuilder("details", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("details", this, false);
         }
 
         /// <summary>
@@ -14993,10 +14993,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder details(params Attr[] attrs)
         {
-            StartTag("details");
+            StartTagRaw("details");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("details", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("details", this, false);
         }
 
         /// <summary>
@@ -15005,10 +15005,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder details(IEnumerable<Attr> attrs)
         {
-            StartTag("details");
+            StartTagRaw("details");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("details", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("details", this, false);
         }
         
         /// <summary>
@@ -15017,10 +15017,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder details(Attr attr1)
         {
-            StartTag("details");
+            StartTagRaw("details");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("details", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("details", this, false);
         }
 
         /// <summary>
@@ -15029,10 +15029,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder details(Attr attr1, Attr attr2)
         {
-            StartTag("details");
+            StartTagRaw("details");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("details", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("details", this, false);
         }
 
         /// <summary>
@@ -15041,10 +15041,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder details(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("details");
+            StartTagRaw("details");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("details", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("details", this, false);
         }
 
         /// <summary>
@@ -15053,10 +15053,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("details");
+            StartTagRaw("details");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("details", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("details", this, false);
         }
 
         /// <summary>
@@ -15065,10 +15065,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("details");
+            StartTagRaw("details");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("details", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("details", this, false);
         }
 
         /// <summary>
@@ -15077,10 +15077,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("details");
+            StartTagRaw("details");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("details", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("details", this, false);
         }
 
         /// <summary>
@@ -15089,10 +15089,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("details");
+            StartTagRaw("details");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("details", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("details", this, false);
         }
 
         /// <summary>
@@ -15101,10 +15101,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("details");
+            StartTagRaw("details");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("details", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("details", this, false);
         }
 
         /// <summary>
@@ -15120,7 +15120,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("summary");
+            StartTagRaw("summary");
             
             if (id != null)
             {
@@ -15146,8 +15146,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("summary", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("summary", this, false);
         }
 
         /// <summary>
@@ -15156,10 +15156,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder summary(params Attr[] attrs)
         {
-            StartTag("summary");
+            StartTagRaw("summary");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("summary", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("summary", this, false);
         }
 
         /// <summary>
@@ -15168,10 +15168,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder summary(IEnumerable<Attr> attrs)
         {
-            StartTag("summary");
+            StartTagRaw("summary");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("summary", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("summary", this, false);
         }
         
         /// <summary>
@@ -15180,10 +15180,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder summary(Attr attr1)
         {
-            StartTag("summary");
+            StartTagRaw("summary");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("summary", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("summary", this, false);
         }
 
         /// <summary>
@@ -15192,10 +15192,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder summary(Attr attr1, Attr attr2)
         {
-            StartTag("summary");
+            StartTagRaw("summary");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("summary", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("summary", this, false);
         }
 
         /// <summary>
@@ -15204,10 +15204,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder summary(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("summary");
+            StartTagRaw("summary");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("summary", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("summary", this, false);
         }
 
         /// <summary>
@@ -15216,10 +15216,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("summary");
+            StartTagRaw("summary");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("summary", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("summary", this, false);
         }
 
         /// <summary>
@@ -15228,10 +15228,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("summary");
+            StartTagRaw("summary");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("summary", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("summary", this, false);
         }
 
         /// <summary>
@@ -15240,10 +15240,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("summary");
+            StartTagRaw("summary");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("summary", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("summary", this, false);
         }
 
         /// <summary>
@@ -15252,10 +15252,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("summary");
+            StartTagRaw("summary");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("summary", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("summary", this, false);
         }
 
         /// <summary>
@@ -15264,10 +15264,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("summary");
+            StartTagRaw("summary");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("summary", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("summary", this, false);
         }
 
         /// <summary>
@@ -15289,7 +15289,7 @@ namespace Eighty.Twenty
             string crossorigin = null
         )
         {
-            StartTag("img");
+            StartTagRaw("img");
             
             if (id != null)
             {
@@ -15343,7 +15343,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("crossorigin", crossorigin));
             }
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -15351,9 +15351,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void img(params Attr[] attrs)
         {
-            StartTag("img");
+            StartTagRaw("img");
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -15361,9 +15361,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void img(IEnumerable<Attr> attrs)
         {
-            StartTag("img");
+            StartTagRaw("img");
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -15371,9 +15371,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void img(Attr attr1)
         {
-            StartTag("img");
+            StartTagRaw("img");
             Attrs(attr1);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -15381,9 +15381,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void img(Attr attr1, Attr attr2)
         {
-            StartTag("img");
+            StartTagRaw("img");
             Attrs(attr1, attr2);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -15391,9 +15391,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void img(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("img");
+            StartTagRaw("img");
             Attrs(attr1, attr2, attr3);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -15401,9 +15401,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void img(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("img");
+            StartTagRaw("img");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -15411,9 +15411,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void img(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("img");
+            StartTagRaw("img");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -15421,9 +15421,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void img(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("img");
+            StartTagRaw("img");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -15431,9 +15431,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void img(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("img");
+            StartTagRaw("img");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -15441,9 +15441,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void img(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("img");
+            StartTagRaw("img");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -15466,7 +15466,7 @@ namespace Eighty.Twenty
             bool controls = false
         )
         {
-            StartTag("audio");
+            StartTagRaw("audio");
             
             if (id != null)
             {
@@ -15506,22 +15506,22 @@ namespace Eighty.Twenty
             }
             if (autoplay)
             {
-                Attr(new Eighty.Attr("autoplay"));
+                Attr(Eighty.Attr.Raw("autoplay"));
             }
             if (loop)
             {
-                Attr(new Eighty.Attr("loop"));
+                Attr(Eighty.Attr.Raw("loop"));
             }
             if (muted)
             {
-                Attr(new Eighty.Attr("muted"));
+                Attr(Eighty.Attr.Raw("muted"));
             }
             if (controls)
             {
-                Attr(new Eighty.Attr("controls"));
+                Attr(Eighty.Attr.Raw("controls"));
             }
-            _writer.Write('>');
-            return new TagBuilder("audio", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("audio", this, false);
         }
 
         /// <summary>
@@ -15530,10 +15530,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder audio(params Attr[] attrs)
         {
-            StartTag("audio");
+            StartTagRaw("audio");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("audio", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("audio", this, false);
         }
 
         /// <summary>
@@ -15542,10 +15542,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder audio(IEnumerable<Attr> attrs)
         {
-            StartTag("audio");
+            StartTagRaw("audio");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("audio", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("audio", this, false);
         }
         
         /// <summary>
@@ -15554,10 +15554,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder audio(Attr attr1)
         {
-            StartTag("audio");
+            StartTagRaw("audio");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("audio", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("audio", this, false);
         }
 
         /// <summary>
@@ -15566,10 +15566,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder audio(Attr attr1, Attr attr2)
         {
-            StartTag("audio");
+            StartTagRaw("audio");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("audio", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("audio", this, false);
         }
 
         /// <summary>
@@ -15578,10 +15578,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder audio(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("audio");
+            StartTagRaw("audio");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("audio", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("audio", this, false);
         }
 
         /// <summary>
@@ -15590,10 +15590,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("audio");
+            StartTagRaw("audio");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("audio", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("audio", this, false);
         }
 
         /// <summary>
@@ -15602,10 +15602,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("audio");
+            StartTagRaw("audio");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("audio", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("audio", this, false);
         }
 
         /// <summary>
@@ -15614,10 +15614,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("audio");
+            StartTagRaw("audio");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("audio", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("audio", this, false);
         }
 
         /// <summary>
@@ -15626,10 +15626,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("audio");
+            StartTagRaw("audio");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("audio", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("audio", this, false);
         }
 
         /// <summary>
@@ -15638,10 +15638,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("audio");
+            StartTagRaw("audio");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("audio", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("audio", this, false);
         }
 
         /// <summary>
@@ -15667,7 +15667,7 @@ namespace Eighty.Twenty
             string crossorigin = null
         )
         {
-            StartTag("video");
+            StartTagRaw("video");
             
             if (id != null)
             {
@@ -15715,26 +15715,26 @@ namespace Eighty.Twenty
             }
             if (autoplay)
             {
-                Attr(new Eighty.Attr("autoplay"));
+                Attr(Eighty.Attr.Raw("autoplay"));
             }
             if (loop)
             {
-                Attr(new Eighty.Attr("loop"));
+                Attr(Eighty.Attr.Raw("loop"));
             }
             if (muted)
             {
-                Attr(new Eighty.Attr("muted"));
+                Attr(Eighty.Attr.Raw("muted"));
             }
             if (controls)
             {
-                Attr(new Eighty.Attr("controls"));
+                Attr(Eighty.Attr.Raw("controls"));
             }
             if (crossorigin != null)
             {
                 Attr(new Eighty.Attr("crossorigin", crossorigin));
             }
-            _writer.Write('>');
-            return new TagBuilder("video", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("video", this, false);
         }
 
         /// <summary>
@@ -15743,10 +15743,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder video(params Attr[] attrs)
         {
-            StartTag("video");
+            StartTagRaw("video");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("video", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("video", this, false);
         }
 
         /// <summary>
@@ -15755,10 +15755,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder video(IEnumerable<Attr> attrs)
         {
-            StartTag("video");
+            StartTagRaw("video");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("video", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("video", this, false);
         }
         
         /// <summary>
@@ -15767,10 +15767,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder video(Attr attr1)
         {
-            StartTag("video");
+            StartTagRaw("video");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("video", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("video", this, false);
         }
 
         /// <summary>
@@ -15779,10 +15779,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder video(Attr attr1, Attr attr2)
         {
-            StartTag("video");
+            StartTagRaw("video");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("video", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("video", this, false);
         }
 
         /// <summary>
@@ -15791,10 +15791,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder video(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("video");
+            StartTagRaw("video");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("video", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("video", this, false);
         }
 
         /// <summary>
@@ -15803,10 +15803,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("video");
+            StartTagRaw("video");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("video", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("video", this, false);
         }
 
         /// <summary>
@@ -15815,10 +15815,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("video");
+            StartTagRaw("video");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("video", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("video", this, false);
         }
 
         /// <summary>
@@ -15827,10 +15827,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("video");
+            StartTagRaw("video");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("video", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("video", this, false);
         }
 
         /// <summary>
@@ -15839,10 +15839,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("video");
+            StartTagRaw("video");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("video", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("video", this, false);
         }
 
         /// <summary>
@@ -15851,10 +15851,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("video");
+            StartTagRaw("video");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("video", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("video", this, false);
         }
 
         /// <summary>
@@ -15873,7 +15873,7 @@ namespace Eighty.Twenty
             bool @default = false
         )
         {
-            StartTag("track");
+            StartTagRaw("track");
             
             if (id != null)
             {
@@ -15913,9 +15913,9 @@ namespace Eighty.Twenty
             }
             if (@default)
             {
-                Attr(new Eighty.Attr("default"));
+                Attr(Eighty.Attr.Raw("default"));
             }
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -15923,9 +15923,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void track(params Attr[] attrs)
         {
-            StartTag("track");
+            StartTagRaw("track");
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -15933,9 +15933,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void track(IEnumerable<Attr> attrs)
         {
-            StartTag("track");
+            StartTagRaw("track");
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -15943,9 +15943,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void track(Attr attr1)
         {
-            StartTag("track");
+            StartTagRaw("track");
             Attrs(attr1);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -15953,9 +15953,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void track(Attr attr1, Attr attr2)
         {
-            StartTag("track");
+            StartTagRaw("track");
             Attrs(attr1, attr2);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -15963,9 +15963,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void track(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("track");
+            StartTagRaw("track");
             Attrs(attr1, attr2, attr3);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -15973,9 +15973,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void track(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("track");
+            StartTagRaw("track");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -15983,9 +15983,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void track(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("track");
+            StartTagRaw("track");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -15993,9 +15993,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void track(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("track");
+            StartTagRaw("track");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16003,9 +16003,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void track(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("track");
+            StartTagRaw("track");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16013,9 +16013,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void track(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("track");
+            StartTagRaw("track");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16034,7 +16034,7 @@ namespace Eighty.Twenty
             string width = null
         )
         {
-            StartTag("embed");
+            StartTagRaw("embed");
             
             if (id != null)
             {
@@ -16076,7 +16076,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("width", width));
             }
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -16084,9 +16084,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void embed(params Attr[] attrs)
         {
-            StartTag("embed");
+            StartTagRaw("embed");
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -16094,9 +16094,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void embed(IEnumerable<Attr> attrs)
         {
-            StartTag("embed");
+            StartTagRaw("embed");
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -16104,9 +16104,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void embed(Attr attr1)
         {
-            StartTag("embed");
+            StartTagRaw("embed");
             Attrs(attr1);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16114,9 +16114,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void embed(Attr attr1, Attr attr2)
         {
-            StartTag("embed");
+            StartTagRaw("embed");
             Attrs(attr1, attr2);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16124,9 +16124,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void embed(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("embed");
+            StartTagRaw("embed");
             Attrs(attr1, attr2, attr3);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16134,9 +16134,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("embed");
+            StartTagRaw("embed");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16144,9 +16144,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("embed");
+            StartTagRaw("embed");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16154,9 +16154,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("embed");
+            StartTagRaw("embed");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16164,9 +16164,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("embed");
+            StartTagRaw("embed");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16174,9 +16174,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("embed");
+            StartTagRaw("embed");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16197,7 +16197,7 @@ namespace Eighty.Twenty
             string name = null
         )
         {
-            StartTag("object");
+            StartTagRaw("object");
             
             if (id != null)
             {
@@ -16243,8 +16243,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("name", name));
             }
-            _writer.Write('>');
-            return new TagBuilder("object", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("object", this, false);
         }
 
         /// <summary>
@@ -16253,10 +16253,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder @object(params Attr[] attrs)
         {
-            StartTag("object");
+            StartTagRaw("object");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("object", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("object", this, false);
         }
 
         /// <summary>
@@ -16265,10 +16265,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder @object(IEnumerable<Attr> attrs)
         {
-            StartTag("object");
+            StartTagRaw("object");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("object", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("object", this, false);
         }
         
         /// <summary>
@@ -16277,10 +16277,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder @object(Attr attr1)
         {
-            StartTag("object");
+            StartTagRaw("object");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("object", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("object", this, false);
         }
 
         /// <summary>
@@ -16289,10 +16289,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder @object(Attr attr1, Attr attr2)
         {
-            StartTag("object");
+            StartTagRaw("object");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("object", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("object", this, false);
         }
 
         /// <summary>
@@ -16301,10 +16301,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder @object(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("object");
+            StartTagRaw("object");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("object", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("object", this, false);
         }
 
         /// <summary>
@@ -16313,10 +16313,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("object");
+            StartTagRaw("object");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("object", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("object", this, false);
         }
 
         /// <summary>
@@ -16325,10 +16325,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("object");
+            StartTagRaw("object");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("object", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("object", this, false);
         }
 
         /// <summary>
@@ -16337,10 +16337,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("object");
+            StartTagRaw("object");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("object", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("object", this, false);
         }
 
         /// <summary>
@@ -16349,10 +16349,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("object");
+            StartTagRaw("object");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("object", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("object", this, false);
         }
 
         /// <summary>
@@ -16361,10 +16361,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("object");
+            StartTagRaw("object");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("object", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("object", this, false);
         }
 
         /// <summary>
@@ -16381,7 +16381,7 @@ namespace Eighty.Twenty
             string value = null
         )
         {
-            StartTag("param");
+            StartTagRaw("param");
             
             if (id != null)
             {
@@ -16415,7 +16415,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("value", value));
             }
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -16423,9 +16423,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void param(params Attr[] attrs)
         {
-            StartTag("param");
+            StartTagRaw("param");
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -16433,9 +16433,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void param(IEnumerable<Attr> attrs)
         {
-            StartTag("param");
+            StartTagRaw("param");
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -16443,9 +16443,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void param(Attr attr1)
         {
-            StartTag("param");
+            StartTagRaw("param");
             Attrs(attr1);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16453,9 +16453,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void param(Attr attr1, Attr attr2)
         {
-            StartTag("param");
+            StartTagRaw("param");
             Attrs(attr1, attr2);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16463,9 +16463,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void param(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("param");
+            StartTagRaw("param");
             Attrs(attr1, attr2, attr3);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16473,9 +16473,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void param(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("param");
+            StartTagRaw("param");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16483,9 +16483,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void param(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("param");
+            StartTagRaw("param");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16493,9 +16493,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void param(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("param");
+            StartTagRaw("param");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16503,9 +16503,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void param(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("param");
+            StartTagRaw("param");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16513,9 +16513,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void param(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("param");
+            StartTagRaw("param");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16531,7 +16531,7 @@ namespace Eighty.Twenty
             string contenteditable = null
         )
         {
-            StartTag("picture");
+            StartTagRaw("picture");
             
             if (id != null)
             {
@@ -16557,8 +16557,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            _writer.Write('>');
-            return new TagBuilder("picture", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("picture", this, false);
         }
 
         /// <summary>
@@ -16567,10 +16567,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder picture(params Attr[] attrs)
         {
-            StartTag("picture");
+            StartTagRaw("picture");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("picture", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("picture", this, false);
         }
 
         /// <summary>
@@ -16579,10 +16579,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder picture(IEnumerable<Attr> attrs)
         {
-            StartTag("picture");
+            StartTagRaw("picture");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("picture", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("picture", this, false);
         }
         
         /// <summary>
@@ -16591,10 +16591,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder picture(Attr attr1)
         {
-            StartTag("picture");
+            StartTagRaw("picture");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("picture", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("picture", this, false);
         }
 
         /// <summary>
@@ -16603,10 +16603,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder picture(Attr attr1, Attr attr2)
         {
-            StartTag("picture");
+            StartTagRaw("picture");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("picture", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("picture", this, false);
         }
 
         /// <summary>
@@ -16615,10 +16615,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder picture(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("picture");
+            StartTagRaw("picture");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("picture", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("picture", this, false);
         }
 
         /// <summary>
@@ -16627,10 +16627,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("picture");
+            StartTagRaw("picture");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("picture", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("picture", this, false);
         }
 
         /// <summary>
@@ -16639,10 +16639,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("picture");
+            StartTagRaw("picture");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("picture", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("picture", this, false);
         }
 
         /// <summary>
@@ -16651,10 +16651,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("picture");
+            StartTagRaw("picture");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("picture", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("picture", this, false);
         }
 
         /// <summary>
@@ -16663,10 +16663,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("picture");
+            StartTagRaw("picture");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("picture", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("picture", this, false);
         }
 
         /// <summary>
@@ -16675,10 +16675,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("picture");
+            StartTagRaw("picture");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("picture", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("picture", this, false);
         }
 
         /// <summary>
@@ -16695,7 +16695,7 @@ namespace Eighty.Twenty
             string src = null
         )
         {
-            StartTag("source");
+            StartTagRaw("source");
             
             if (id != null)
             {
@@ -16729,7 +16729,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("src", src));
             }
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -16737,9 +16737,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void source(params Attr[] attrs)
         {
-            StartTag("source");
+            StartTagRaw("source");
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -16747,9 +16747,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void source(IEnumerable<Attr> attrs)
         {
-            StartTag("source");
+            StartTagRaw("source");
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         
         /// <summary>
@@ -16757,9 +16757,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void source(Attr attr1)
         {
-            StartTag("source");
+            StartTagRaw("source");
             Attrs(attr1);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16767,9 +16767,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void source(Attr attr1, Attr attr2)
         {
-            StartTag("source");
+            StartTagRaw("source");
             Attrs(attr1, attr2);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16777,9 +16777,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void source(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("source");
+            StartTagRaw("source");
             Attrs(attr1, attr2, attr3);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16787,9 +16787,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void source(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("source");
+            StartTagRaw("source");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16797,9 +16797,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void source(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("source");
+            StartTagRaw("source");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16807,9 +16807,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void source(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("source");
+            StartTagRaw("source");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16817,9 +16817,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void source(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("source");
+            StartTagRaw("source");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16827,9 +16827,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void source(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("source");
+            StartTagRaw("source");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -16847,7 +16847,7 @@ namespace Eighty.Twenty
             string width = null
         )
         {
-            StartTag("canvas");
+            StartTagRaw("canvas");
             
             if (id != null)
             {
@@ -16881,8 +16881,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("width", width));
             }
-            _writer.Write('>');
-            return new TagBuilder("canvas", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("canvas", this, false);
         }
 
         /// <summary>
@@ -16891,10 +16891,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder canvas(params Attr[] attrs)
         {
-            StartTag("canvas");
+            StartTagRaw("canvas");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("canvas", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("canvas", this, false);
         }
 
         /// <summary>
@@ -16903,10 +16903,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder canvas(IEnumerable<Attr> attrs)
         {
-            StartTag("canvas");
+            StartTagRaw("canvas");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("canvas", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("canvas", this, false);
         }
         
         /// <summary>
@@ -16915,10 +16915,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder canvas(Attr attr1)
         {
-            StartTag("canvas");
+            StartTagRaw("canvas");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("canvas", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("canvas", this, false);
         }
 
         /// <summary>
@@ -16927,10 +16927,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder canvas(Attr attr1, Attr attr2)
         {
-            StartTag("canvas");
+            StartTagRaw("canvas");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("canvas", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("canvas", this, false);
         }
 
         /// <summary>
@@ -16939,10 +16939,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("canvas");
+            StartTagRaw("canvas");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("canvas", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("canvas", this, false);
         }
 
         /// <summary>
@@ -16951,10 +16951,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("canvas");
+            StartTagRaw("canvas");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("canvas", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("canvas", this, false);
         }
 
         /// <summary>
@@ -16963,10 +16963,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("canvas");
+            StartTagRaw("canvas");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("canvas", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("canvas", this, false);
         }
 
         /// <summary>
@@ -16975,10 +16975,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("canvas");
+            StartTagRaw("canvas");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("canvas", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("canvas", this, false);
         }
 
         /// <summary>
@@ -16987,10 +16987,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("canvas");
+            StartTagRaw("canvas");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("canvas", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("canvas", this, false);
         }
 
         /// <summary>
@@ -16999,10 +16999,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("canvas");
+            StartTagRaw("canvas");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("canvas", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("canvas", this, false);
         }
 
         /// <summary>
@@ -17019,7 +17019,7 @@ namespace Eighty.Twenty
             string dir = null
         )
         {
-            StartTag("bdi");
+            StartTagRaw("bdi");
             
             if (id != null)
             {
@@ -17049,8 +17049,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("dir", dir));
             }
-            _writer.Write('>');
-            return new TagBuilder("bdi", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("bdi", this, false);
         }
 
         /// <summary>
@@ -17059,10 +17059,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder bdi(params Attr[] attrs)
         {
-            StartTag("bdi");
+            StartTagRaw("bdi");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("bdi", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("bdi", this, false);
         }
 
         /// <summary>
@@ -17071,10 +17071,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder bdi(IEnumerable<Attr> attrs)
         {
-            StartTag("bdi");
+            StartTagRaw("bdi");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("bdi", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("bdi", this, false);
         }
         
         /// <summary>
@@ -17083,10 +17083,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder bdi(Attr attr1)
         {
-            StartTag("bdi");
+            StartTagRaw("bdi");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("bdi", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("bdi", this, false);
         }
 
         /// <summary>
@@ -17095,10 +17095,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder bdi(Attr attr1, Attr attr2)
         {
-            StartTag("bdi");
+            StartTagRaw("bdi");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("bdi", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("bdi", this, false);
         }
 
         /// <summary>
@@ -17107,10 +17107,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("bdi");
+            StartTagRaw("bdi");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("bdi", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("bdi", this, false);
         }
 
         /// <summary>
@@ -17119,10 +17119,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("bdi");
+            StartTagRaw("bdi");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("bdi", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("bdi", this, false);
         }
 
         /// <summary>
@@ -17131,10 +17131,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("bdi");
+            StartTagRaw("bdi");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("bdi", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("bdi", this, false);
         }
 
         /// <summary>
@@ -17143,10 +17143,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("bdi");
+            StartTagRaw("bdi");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("bdi", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("bdi", this, false);
         }
 
         /// <summary>
@@ -17155,10 +17155,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("bdi");
+            StartTagRaw("bdi");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("bdi", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("bdi", this, false);
         }
 
         /// <summary>
@@ -17167,10 +17167,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("bdi");
+            StartTagRaw("bdi");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("bdi", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("bdi", this, false);
         }
 
         /// <summary>
@@ -17187,7 +17187,7 @@ namespace Eighty.Twenty
             string dir = null
         )
         {
-            StartTag("bdo");
+            StartTagRaw("bdo");
             
             if (id != null)
             {
@@ -17217,8 +17217,8 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("dir", dir));
             }
-            _writer.Write('>');
-            return new TagBuilder("bdo", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("bdo", this, false);
         }
 
         /// <summary>
@@ -17227,10 +17227,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder bdo(params Attr[] attrs)
         {
-            StartTag("bdo");
+            StartTagRaw("bdo");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("bdo", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("bdo", this, false);
         }
 
         /// <summary>
@@ -17239,10 +17239,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder bdo(IEnumerable<Attr> attrs)
         {
-            StartTag("bdo");
+            StartTagRaw("bdo");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder("bdo", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("bdo", this, false);
         }
         
         /// <summary>
@@ -17251,10 +17251,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder bdo(Attr attr1)
         {
-            StartTag("bdo");
+            StartTagRaw("bdo");
             Attrs(attr1);
-            _writer.Write('>');
-            return new TagBuilder("bdo", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("bdo", this, false);
         }
 
         /// <summary>
@@ -17263,10 +17263,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder bdo(Attr attr1, Attr attr2)
         {
-            StartTag("bdo");
+            StartTagRaw("bdo");
             Attrs(attr1, attr2);
-            _writer.Write('>');
-            return new TagBuilder("bdo", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("bdo", this, false);
         }
 
         /// <summary>
@@ -17275,10 +17275,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3)
         {
-            StartTag("bdo");
+            StartTagRaw("bdo");
             Attrs(attr1, attr2, attr3);
-            _writer.Write('>');
-            return new TagBuilder("bdo", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("bdo", this, false);
         }
 
         /// <summary>
@@ -17287,10 +17287,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            StartTag("bdo");
+            StartTagRaw("bdo");
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.Write('>');
-            return new TagBuilder("bdo", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("bdo", this, false);
         }
 
         /// <summary>
@@ -17299,10 +17299,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            StartTag("bdo");
+            StartTagRaw("bdo");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.Write('>');
-            return new TagBuilder("bdo", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("bdo", this, false);
         }
 
         /// <summary>
@@ -17311,10 +17311,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            StartTag("bdo");
+            StartTagRaw("bdo");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.Write('>');
-            return new TagBuilder("bdo", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("bdo", this, false);
         }
 
         /// <summary>
@@ -17323,10 +17323,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            StartTag("bdo");
+            StartTagRaw("bdo");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.Write('>');
-            return new TagBuilder("bdo", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("bdo", this, false);
         }
 
         /// <summary>
@@ -17335,10 +17335,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            StartTag("bdo");
+            StartTagRaw("bdo");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.Write('>');
-            return new TagBuilder("bdo", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder("bdo", this, false);
         }
     }
 }

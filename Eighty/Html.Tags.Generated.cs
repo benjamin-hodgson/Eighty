@@ -92,7 +92,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("html", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("html", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -114,7 +114,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("html", attrs.ToImmutableArray());
+            return new TagBuilder("html", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -123,7 +123,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder html(Attr attr1)
         {
-            return new TagBuilder("html", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("html", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -132,7 +132,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder html(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("html", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("html", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -141,7 +141,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder html(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("html", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("html", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -150,7 +150,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("html", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("html", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -159,7 +159,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("html", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("html", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -168,7 +168,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("html", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("html", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -177,7 +177,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("html", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("html", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -186,7 +186,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("html", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("html", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -242,7 +242,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("html", ImmutableArray.Create<Attr>(), children);
+            return new Tag("html", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -256,7 +256,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("html", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("html", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -274,7 +274,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("html", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("html", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -296,7 +296,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("html", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("html", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -322,7 +322,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("html", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("html", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -352,7 +352,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("html", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("html", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -386,7 +386,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("html", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("html", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -424,7 +424,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("html", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("html", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -466,7 +466,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("html", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("html", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -543,7 +543,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("head", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("head", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -565,7 +565,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("head", attrs.ToImmutableArray());
+            return new TagBuilder("head", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -574,7 +574,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder head(Attr attr1)
         {
-            return new TagBuilder("head", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("head", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -583,7 +583,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder head(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("head", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("head", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -592,7 +592,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder head(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("head", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("head", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -601,7 +601,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("head", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("head", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -610,7 +610,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("head", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("head", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -619,7 +619,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("head", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("head", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -628,7 +628,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("head", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("head", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -637,7 +637,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("head", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("head", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -693,7 +693,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("head", ImmutableArray.Create<Attr>(), children);
+            return new Tag("head", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -707,7 +707,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("head", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("head", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -725,7 +725,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("head", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("head", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -747,7 +747,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("head", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("head", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -773,7 +773,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("head", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("head", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -803,7 +803,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("head", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("head", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -837,7 +837,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("head", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("head", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -875,7 +875,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("head", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("head", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -917,7 +917,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("head", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("head", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -994,7 +994,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("body", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("body", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -1016,7 +1016,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("body", attrs.ToImmutableArray());
+            return new TagBuilder("body", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -1025,7 +1025,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder body(Attr attr1)
         {
-            return new TagBuilder("body", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("body", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -1034,7 +1034,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder body(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("body", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("body", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -1043,7 +1043,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder body(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("body", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("body", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -1052,7 +1052,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("body", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("body", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -1061,7 +1061,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("body", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("body", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -1070,7 +1070,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("body", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("body", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -1079,7 +1079,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("body", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("body", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -1088,7 +1088,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("body", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("body", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -1144,7 +1144,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("body", ImmutableArray.Create<Attr>(), children);
+            return new Tag("body", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -1158,7 +1158,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("body", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("body", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -1176,7 +1176,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("body", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("body", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -1198,7 +1198,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("body", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("body", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -1224,7 +1224,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("body", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("body", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -1254,7 +1254,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("body", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("body", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -1288,7 +1288,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("body", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("body", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -1326,7 +1326,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("body", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("body", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -1368,7 +1368,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("body", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("body", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -1505,7 +1505,7 @@ namespace Eighty
                 i++;
             }
 
-            return new SelfClosingTag("link", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new SelfClosingTag("link", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -1525,7 +1525,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new SelfClosingTag("link", attrs.ToImmutableArray());
+            return new SelfClosingTag("link", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -1534,7 +1534,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html link(Attr attr1)
         {
-            return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1));
+            return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -1543,7 +1543,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html link(Attr attr1, Attr attr2)
         {
-            return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1, attr2));
+            return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -1552,7 +1552,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html link(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -1561,7 +1561,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html link(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -1570,7 +1570,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html link(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -1579,7 +1579,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html link(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -1588,7 +1588,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html link(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -1597,7 +1597,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html link(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -1694,7 +1694,7 @@ namespace Eighty
                 i++;
             }
 
-            return new SelfClosingTag("base", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new SelfClosingTag("base", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -1714,7 +1714,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new SelfClosingTag("base", attrs.ToImmutableArray());
+            return new SelfClosingTag("base", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -1723,7 +1723,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html @base(Attr attr1)
         {
-            return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1));
+            return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -1732,7 +1732,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html @base(Attr attr1, Attr attr2)
         {
-            return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1, attr2));
+            return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -1741,7 +1741,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html @base(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -1750,7 +1750,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -1759,7 +1759,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -1768,7 +1768,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -1777,7 +1777,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -1786,7 +1786,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -1883,7 +1883,7 @@ namespace Eighty
                 i++;
             }
 
-            return new SelfClosingTag("meta", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new SelfClosingTag("meta", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -1903,7 +1903,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new SelfClosingTag("meta", attrs.ToImmutableArray());
+            return new SelfClosingTag("meta", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -1912,7 +1912,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html meta(Attr attr1)
         {
-            return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1));
+            return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -1921,7 +1921,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html meta(Attr attr1, Attr attr2)
         {
-            return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1, attr2));
+            return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -1930,7 +1930,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html meta(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -1939,7 +1939,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -1948,7 +1948,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -1957,7 +1957,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -1966,7 +1966,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -1975,7 +1975,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -2072,7 +2072,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("style", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("style", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -2094,7 +2094,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("style", attrs.ToImmutableArray());
+            return new TagBuilder("style", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -2103,7 +2103,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder style(Attr attr1)
         {
-            return new TagBuilder("style", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("style", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -2112,7 +2112,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder style(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("style", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("style", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -2121,7 +2121,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder style(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("style", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("style", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -2130,7 +2130,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("style", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("style", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -2139,7 +2139,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("style", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("style", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -2148,7 +2148,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("style", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("style", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -2157,7 +2157,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("style", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("style", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -2166,7 +2166,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("style", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("style", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -2222,7 +2222,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("style", ImmutableArray.Create<Attr>(), children);
+            return new Tag("style", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -2236,7 +2236,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("style", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("style", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -2254,7 +2254,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("style", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("style", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -2276,7 +2276,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("style", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("style", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -2302,7 +2302,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("style", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("style", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -2332,7 +2332,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("style", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("style", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -2366,7 +2366,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("style", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("style", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -2404,7 +2404,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("style", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("style", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -2446,7 +2446,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("style", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("style", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -2523,7 +2523,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("title", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("title", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -2545,7 +2545,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("title", attrs.ToImmutableArray());
+            return new TagBuilder("title", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -2554,7 +2554,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder title(Attr attr1)
         {
-            return new TagBuilder("title", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("title", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -2563,7 +2563,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder title(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("title", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("title", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -2572,7 +2572,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder title(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("title", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("title", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -2581,7 +2581,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("title", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("title", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -2590,7 +2590,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("title", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("title", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -2599,7 +2599,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("title", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("title", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -2608,7 +2608,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("title", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("title", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -2617,7 +2617,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("title", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("title", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -2673,7 +2673,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("title", ImmutableArray.Create<Attr>(), children);
+            return new Tag("title", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -2687,7 +2687,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("title", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("title", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -2705,7 +2705,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("title", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("title", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -2727,7 +2727,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("title", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("title", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -2753,7 +2753,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("title", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("title", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -2783,7 +2783,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("title", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("title", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -2817,7 +2817,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("title", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("title", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -2855,7 +2855,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("title", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("title", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -2897,7 +2897,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("title", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("title", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -3010,11 +3010,11 @@ namespace Eighty
             }
             if (async)
             {
-                array[i] = new Attr("async");
+                array[i] = Attr.Raw("async");
                 i++;
             }
 
-            return new TagBuilder("script", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("script", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -3036,7 +3036,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("script", attrs.ToImmutableArray());
+            return new TagBuilder("script", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -3045,7 +3045,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder script(Attr attr1)
         {
-            return new TagBuilder("script", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("script", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -3054,7 +3054,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder script(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("script", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("script", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -3063,7 +3063,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder script(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("script", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("script", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -3072,7 +3072,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("script", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("script", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -3081,7 +3081,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("script", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("script", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -3090,7 +3090,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("script", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("script", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -3099,7 +3099,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("script", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("script", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -3108,7 +3108,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("script", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("script", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -3164,7 +3164,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("script", ImmutableArray.Create<Attr>(), children);
+            return new Tag("script", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -3178,7 +3178,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("script", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("script", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -3196,7 +3196,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("script", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("script", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -3218,7 +3218,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("script", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("script", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -3244,7 +3244,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("script", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("script", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -3274,7 +3274,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("script", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("script", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -3308,7 +3308,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("script", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("script", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -3346,7 +3346,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("script", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("script", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -3388,7 +3388,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("script", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("script", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -3465,7 +3465,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("noscript", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("noscript", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -3487,7 +3487,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("noscript", attrs.ToImmutableArray());
+            return new TagBuilder("noscript", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -3496,7 +3496,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder noscript(Attr attr1)
         {
-            return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -3505,7 +3505,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder noscript(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -3514,7 +3514,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -3523,7 +3523,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -3532,7 +3532,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -3541,7 +3541,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -3550,7 +3550,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -3559,7 +3559,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -3615,7 +3615,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("noscript", ImmutableArray.Create<Attr>(), children);
+            return new Tag("noscript", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -3629,7 +3629,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("noscript", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("noscript", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -3647,7 +3647,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("noscript", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("noscript", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -3669,7 +3669,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("noscript", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("noscript", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -3695,7 +3695,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("noscript", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("noscript", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -3725,7 +3725,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("noscript", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("noscript", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -3759,7 +3759,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("noscript", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("noscript", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -3797,7 +3797,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("noscript", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("noscript", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -3839,7 +3839,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("noscript", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("noscript", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -3916,7 +3916,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("main", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("main", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -3938,7 +3938,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("main", attrs.ToImmutableArray());
+            return new TagBuilder("main", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -3947,7 +3947,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder main(Attr attr1)
         {
-            return new TagBuilder("main", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("main", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -3956,7 +3956,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder main(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("main", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("main", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -3965,7 +3965,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder main(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("main", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("main", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -3974,7 +3974,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("main", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("main", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -3983,7 +3983,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("main", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("main", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -3992,7 +3992,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("main", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("main", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -4001,7 +4001,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("main", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("main", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -4010,7 +4010,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("main", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("main", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -4066,7 +4066,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("main", ImmutableArray.Create<Attr>(), children);
+            return new Tag("main", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -4080,7 +4080,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("main", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("main", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -4098,7 +4098,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("main", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("main", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -4120,7 +4120,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("main", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("main", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -4146,7 +4146,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("main", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("main", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -4176,7 +4176,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("main", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("main", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -4210,7 +4210,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("main", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("main", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -4248,7 +4248,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("main", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("main", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -4290,7 +4290,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("main", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("main", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -4367,7 +4367,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("header", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("header", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -4389,7 +4389,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("header", attrs.ToImmutableArray());
+            return new TagBuilder("header", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -4398,7 +4398,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder header(Attr attr1)
         {
-            return new TagBuilder("header", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("header", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -4407,7 +4407,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder header(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("header", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("header", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -4416,7 +4416,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder header(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("header", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("header", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -4425,7 +4425,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("header", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("header", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -4434,7 +4434,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("header", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("header", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -4443,7 +4443,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("header", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("header", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -4452,7 +4452,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("header", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("header", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -4461,7 +4461,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("header", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("header", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -4517,7 +4517,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("header", ImmutableArray.Create<Attr>(), children);
+            return new Tag("header", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -4531,7 +4531,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("header", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("header", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -4549,7 +4549,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("header", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("header", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -4571,7 +4571,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("header", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("header", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -4597,7 +4597,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("header", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("header", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -4627,7 +4627,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("header", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("header", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -4661,7 +4661,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("header", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("header", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -4699,7 +4699,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("header", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("header", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -4741,7 +4741,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("header", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("header", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -4818,7 +4818,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("article", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("article", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -4840,7 +4840,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("article", attrs.ToImmutableArray());
+            return new TagBuilder("article", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -4849,7 +4849,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder article(Attr attr1)
         {
-            return new TagBuilder("article", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("article", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -4858,7 +4858,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder article(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("article", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("article", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -4867,7 +4867,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder article(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("article", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("article", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -4876,7 +4876,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("article", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("article", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -4885,7 +4885,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("article", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("article", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -4894,7 +4894,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("article", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("article", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -4903,7 +4903,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("article", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("article", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -4912,7 +4912,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("article", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("article", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -4968,7 +4968,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("article", ImmutableArray.Create<Attr>(), children);
+            return new Tag("article", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -4982,7 +4982,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("article", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("article", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -5000,7 +5000,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("article", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("article", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -5022,7 +5022,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("article", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("article", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -5048,7 +5048,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("article", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("article", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -5078,7 +5078,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("article", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("article", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -5112,7 +5112,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("article", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("article", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -5150,7 +5150,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("article", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("article", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -5192,7 +5192,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("article", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("article", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -5269,7 +5269,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("section", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("section", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -5291,7 +5291,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("section", attrs.ToImmutableArray());
+            return new TagBuilder("section", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -5300,7 +5300,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder section(Attr attr1)
         {
-            return new TagBuilder("section", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("section", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -5309,7 +5309,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder section(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("section", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("section", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -5318,7 +5318,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder section(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("section", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("section", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -5327,7 +5327,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("section", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("section", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -5336,7 +5336,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("section", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("section", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -5345,7 +5345,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("section", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("section", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -5354,7 +5354,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("section", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("section", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -5363,7 +5363,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("section", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("section", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -5419,7 +5419,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("section", ImmutableArray.Create<Attr>(), children);
+            return new Tag("section", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -5433,7 +5433,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("section", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("section", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -5451,7 +5451,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("section", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("section", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -5473,7 +5473,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("section", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("section", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -5499,7 +5499,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("section", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("section", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -5529,7 +5529,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("section", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("section", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -5563,7 +5563,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("section", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("section", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -5601,7 +5601,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("section", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("section", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -5643,7 +5643,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("section", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("section", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -5720,7 +5720,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("footer", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("footer", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -5742,7 +5742,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("footer", attrs.ToImmutableArray());
+            return new TagBuilder("footer", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -5751,7 +5751,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder footer(Attr attr1)
         {
-            return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -5760,7 +5760,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder footer(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -5769,7 +5769,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder footer(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -5778,7 +5778,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -5787,7 +5787,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -5796,7 +5796,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -5805,7 +5805,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -5814,7 +5814,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -5870,7 +5870,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("footer", ImmutableArray.Create<Attr>(), children);
+            return new Tag("footer", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -5884,7 +5884,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("footer", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("footer", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -5902,7 +5902,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("footer", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("footer", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -5924,7 +5924,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("footer", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("footer", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -5950,7 +5950,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("footer", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("footer", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -5980,7 +5980,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("footer", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("footer", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -6014,7 +6014,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("footer", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("footer", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -6052,7 +6052,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("footer", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("footer", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -6094,7 +6094,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("footer", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("footer", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -6171,7 +6171,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("h1", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("h1", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -6193,7 +6193,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("h1", attrs.ToImmutableArray());
+            return new TagBuilder("h1", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -6202,7 +6202,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h1(Attr attr1)
         {
-            return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -6211,7 +6211,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h1(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -6220,7 +6220,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h1(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -6229,7 +6229,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -6238,7 +6238,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -6247,7 +6247,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -6256,7 +6256,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -6265,7 +6265,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -6321,7 +6321,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("h1", ImmutableArray.Create<Attr>(), children);
+            return new Tag("h1", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -6335,7 +6335,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("h1", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("h1", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -6353,7 +6353,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("h1", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("h1", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -6375,7 +6375,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("h1", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("h1", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -6401,7 +6401,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("h1", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("h1", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -6431,7 +6431,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("h1", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("h1", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -6465,7 +6465,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("h1", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("h1", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -6503,7 +6503,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("h1", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("h1", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -6545,7 +6545,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("h1", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("h1", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -6622,7 +6622,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("h2", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("h2", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -6644,7 +6644,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("h2", attrs.ToImmutableArray());
+            return new TagBuilder("h2", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -6653,7 +6653,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h2(Attr attr1)
         {
-            return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -6662,7 +6662,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h2(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -6671,7 +6671,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h2(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -6680,7 +6680,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -6689,7 +6689,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -6698,7 +6698,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -6707,7 +6707,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -6716,7 +6716,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -6772,7 +6772,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("h2", ImmutableArray.Create<Attr>(), children);
+            return new Tag("h2", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -6786,7 +6786,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("h2", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("h2", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -6804,7 +6804,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("h2", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("h2", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -6826,7 +6826,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("h2", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("h2", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -6852,7 +6852,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("h2", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("h2", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -6882,7 +6882,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("h2", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("h2", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -6916,7 +6916,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("h2", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("h2", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -6954,7 +6954,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("h2", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("h2", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -6996,7 +6996,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("h2", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("h2", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -7073,7 +7073,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("h3", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("h3", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -7095,7 +7095,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("h3", attrs.ToImmutableArray());
+            return new TagBuilder("h3", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -7104,7 +7104,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h3(Attr attr1)
         {
-            return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -7113,7 +7113,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h3(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -7122,7 +7122,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h3(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -7131,7 +7131,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -7140,7 +7140,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -7149,7 +7149,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -7158,7 +7158,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -7167,7 +7167,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -7223,7 +7223,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("h3", ImmutableArray.Create<Attr>(), children);
+            return new Tag("h3", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -7237,7 +7237,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("h3", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("h3", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -7255,7 +7255,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("h3", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("h3", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -7277,7 +7277,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("h3", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("h3", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -7303,7 +7303,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("h3", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("h3", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -7333,7 +7333,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("h3", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("h3", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -7367,7 +7367,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("h3", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("h3", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -7405,7 +7405,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("h3", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("h3", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -7447,7 +7447,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("h3", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("h3", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -7524,7 +7524,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("h4", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("h4", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -7546,7 +7546,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("h4", attrs.ToImmutableArray());
+            return new TagBuilder("h4", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -7555,7 +7555,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h4(Attr attr1)
         {
-            return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -7564,7 +7564,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h4(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -7573,7 +7573,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h4(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -7582,7 +7582,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -7591,7 +7591,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -7600,7 +7600,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -7609,7 +7609,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -7618,7 +7618,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -7674,7 +7674,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("h4", ImmutableArray.Create<Attr>(), children);
+            return new Tag("h4", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -7688,7 +7688,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("h4", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("h4", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -7706,7 +7706,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("h4", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("h4", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -7728,7 +7728,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("h4", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("h4", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -7754,7 +7754,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("h4", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("h4", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -7784,7 +7784,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("h4", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("h4", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -7818,7 +7818,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("h4", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("h4", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -7856,7 +7856,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("h4", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("h4", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -7898,7 +7898,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("h4", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("h4", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -7975,7 +7975,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("h5", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("h5", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -7997,7 +7997,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("h5", attrs.ToImmutableArray());
+            return new TagBuilder("h5", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -8006,7 +8006,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h5(Attr attr1)
         {
-            return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -8015,7 +8015,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h5(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -8024,7 +8024,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h5(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -8033,7 +8033,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -8042,7 +8042,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -8051,7 +8051,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -8060,7 +8060,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -8069,7 +8069,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -8125,7 +8125,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("h5", ImmutableArray.Create<Attr>(), children);
+            return new Tag("h5", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -8139,7 +8139,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("h5", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("h5", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -8157,7 +8157,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("h5", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("h5", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -8179,7 +8179,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("h5", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("h5", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -8205,7 +8205,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("h5", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("h5", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -8235,7 +8235,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("h5", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("h5", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -8269,7 +8269,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("h5", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("h5", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -8307,7 +8307,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("h5", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("h5", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -8349,7 +8349,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("h5", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("h5", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -8426,7 +8426,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("h6", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("h6", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -8448,7 +8448,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("h6", attrs.ToImmutableArray());
+            return new TagBuilder("h6", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -8457,7 +8457,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h6(Attr attr1)
         {
-            return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -8466,7 +8466,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h6(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -8475,7 +8475,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h6(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -8484,7 +8484,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -8493,7 +8493,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -8502,7 +8502,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -8511,7 +8511,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -8520,7 +8520,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -8576,7 +8576,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("h6", ImmutableArray.Create<Attr>(), children);
+            return new Tag("h6", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -8590,7 +8590,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("h6", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("h6", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -8608,7 +8608,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("h6", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("h6", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -8630,7 +8630,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("h6", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("h6", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -8656,7 +8656,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("h6", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("h6", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -8686,7 +8686,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("h6", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("h6", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -8720,7 +8720,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("h6", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("h6", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -8758,7 +8758,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("h6", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("h6", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -8800,7 +8800,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("h6", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("h6", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -8877,7 +8877,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("hgroup", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("hgroup", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -8899,7 +8899,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("hgroup", attrs.ToImmutableArray());
+            return new TagBuilder("hgroup", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -8908,7 +8908,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder hgroup(Attr attr1)
         {
-            return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -8917,7 +8917,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder hgroup(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -8926,7 +8926,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -8935,7 +8935,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -8944,7 +8944,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -8953,7 +8953,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -8962,7 +8962,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -8971,7 +8971,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -9027,7 +9027,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("hgroup", ImmutableArray.Create<Attr>(), children);
+            return new Tag("hgroup", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -9041,7 +9041,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("hgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("hgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -9059,7 +9059,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("hgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("hgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -9081,7 +9081,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("hgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("hgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -9107,7 +9107,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("hgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("hgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -9137,7 +9137,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("hgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("hgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -9171,7 +9171,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("hgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("hgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -9209,7 +9209,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("hgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("hgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -9251,7 +9251,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("hgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("hgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -9328,7 +9328,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("div", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("div", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -9350,7 +9350,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("div", attrs.ToImmutableArray());
+            return new TagBuilder("div", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -9359,7 +9359,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder div(Attr attr1)
         {
-            return new TagBuilder("div", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("div", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -9368,7 +9368,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder div(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("div", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("div", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -9377,7 +9377,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder div(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("div", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("div", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -9386,7 +9386,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("div", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("div", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -9395,7 +9395,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("div", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("div", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -9404,7 +9404,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("div", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("div", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -9413,7 +9413,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("div", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("div", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -9422,7 +9422,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("div", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("div", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -9478,7 +9478,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("div", ImmutableArray.Create<Attr>(), children);
+            return new Tag("div", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -9492,7 +9492,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("div", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("div", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -9510,7 +9510,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("div", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("div", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -9532,7 +9532,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("div", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("div", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -9558,7 +9558,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("div", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("div", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -9588,7 +9588,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("div", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("div", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -9622,7 +9622,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("div", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("div", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -9660,7 +9660,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("div", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("div", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -9702,7 +9702,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("div", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("div", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -9779,7 +9779,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("p", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("p", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -9801,7 +9801,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("p", attrs.ToImmutableArray());
+            return new TagBuilder("p", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -9810,7 +9810,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder p(Attr attr1)
         {
-            return new TagBuilder("p", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("p", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -9819,7 +9819,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder p(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("p", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("p", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -9828,7 +9828,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder p(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("p", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("p", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -9837,7 +9837,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("p", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("p", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -9846,7 +9846,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("p", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("p", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -9855,7 +9855,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("p", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("p", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -9864,7 +9864,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("p", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("p", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -9873,7 +9873,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("p", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("p", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -9929,7 +9929,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("p", ImmutableArray.Create<Attr>(), children);
+            return new Tag("p", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -9943,7 +9943,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("p", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("p", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -9961,7 +9961,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("p", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("p", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -9983,7 +9983,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("p", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("p", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -10009,7 +10009,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("p", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("p", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -10039,7 +10039,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("p", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("p", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -10073,7 +10073,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("p", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("p", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -10111,7 +10111,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("p", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("p", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -10153,7 +10153,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("p", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("p", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -10230,7 +10230,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("pre", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("pre", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -10252,7 +10252,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("pre", attrs.ToImmutableArray());
+            return new TagBuilder("pre", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -10261,7 +10261,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder pre(Attr attr1)
         {
-            return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -10270,7 +10270,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder pre(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -10279,7 +10279,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder pre(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -10288,7 +10288,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -10297,7 +10297,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -10306,7 +10306,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -10315,7 +10315,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -10324,7 +10324,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -10380,7 +10380,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("pre", ImmutableArray.Create<Attr>(), children);
+            return new Tag("pre", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -10394,7 +10394,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("pre", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("pre", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -10412,7 +10412,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("pre", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("pre", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -10434,7 +10434,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("pre", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("pre", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -10460,7 +10460,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("pre", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("pre", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -10490,7 +10490,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("pre", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("pre", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -10524,7 +10524,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("pre", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("pre", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -10562,7 +10562,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("pre", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("pre", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -10604,7 +10604,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("pre", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("pre", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -10681,7 +10681,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("blockquote", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("blockquote", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -10703,7 +10703,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("blockquote", attrs.ToImmutableArray());
+            return new TagBuilder("blockquote", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -10712,7 +10712,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder blockquote(Attr attr1)
         {
-            return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -10721,7 +10721,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder blockquote(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -10730,7 +10730,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -10739,7 +10739,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -10748,7 +10748,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -10757,7 +10757,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -10766,7 +10766,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -10775,7 +10775,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -10831,7 +10831,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("blockquote", ImmutableArray.Create<Attr>(), children);
+            return new Tag("blockquote", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -10845,7 +10845,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("blockquote", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("blockquote", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -10863,7 +10863,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("blockquote", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("blockquote", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -10885,7 +10885,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("blockquote", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("blockquote", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -10911,7 +10911,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("blockquote", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("blockquote", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -10941,7 +10941,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("blockquote", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("blockquote", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -10975,7 +10975,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("blockquote", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("blockquote", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -11013,7 +11013,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("blockquote", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("blockquote", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -11055,7 +11055,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("blockquote", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("blockquote", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -11132,7 +11132,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("figure", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("figure", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -11154,7 +11154,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("figure", attrs.ToImmutableArray());
+            return new TagBuilder("figure", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -11163,7 +11163,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder figure(Attr attr1)
         {
-            return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -11172,7 +11172,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder figure(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -11181,7 +11181,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder figure(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -11190,7 +11190,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -11199,7 +11199,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -11208,7 +11208,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -11217,7 +11217,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -11226,7 +11226,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -11282,7 +11282,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("figure", ImmutableArray.Create<Attr>(), children);
+            return new Tag("figure", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -11296,7 +11296,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("figure", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("figure", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -11314,7 +11314,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("figure", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("figure", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -11336,7 +11336,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("figure", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("figure", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -11362,7 +11362,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("figure", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("figure", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -11392,7 +11392,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("figure", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("figure", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -11426,7 +11426,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("figure", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("figure", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -11464,7 +11464,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("figure", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("figure", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -11506,7 +11506,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("figure", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("figure", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -11583,7 +11583,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("figcaption", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("figcaption", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -11605,7 +11605,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("figcaption", attrs.ToImmutableArray());
+            return new TagBuilder("figcaption", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -11614,7 +11614,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder figcaption(Attr attr1)
         {
-            return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -11623,7 +11623,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder figcaption(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -11632,7 +11632,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -11641,7 +11641,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -11650,7 +11650,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -11659,7 +11659,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -11668,7 +11668,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -11677,7 +11677,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -11733,7 +11733,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("figcaption", ImmutableArray.Create<Attr>(), children);
+            return new Tag("figcaption", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -11747,7 +11747,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("figcaption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("figcaption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -11765,7 +11765,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("figcaption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("figcaption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -11787,7 +11787,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("figcaption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("figcaption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -11813,7 +11813,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("figcaption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("figcaption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -11843,7 +11843,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("figcaption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("figcaption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -11877,7 +11877,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("figcaption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("figcaption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -11915,7 +11915,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("figcaption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("figcaption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -11957,7 +11957,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("figcaption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("figcaption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -12034,7 +12034,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("aside", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("aside", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -12056,7 +12056,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("aside", attrs.ToImmutableArray());
+            return new TagBuilder("aside", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -12065,7 +12065,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder aside(Attr attr1)
         {
-            return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -12074,7 +12074,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder aside(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -12083,7 +12083,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder aside(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -12092,7 +12092,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -12101,7 +12101,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -12110,7 +12110,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -12119,7 +12119,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -12128,7 +12128,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -12184,7 +12184,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("aside", ImmutableArray.Create<Attr>(), children);
+            return new Tag("aside", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -12198,7 +12198,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("aside", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("aside", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -12216,7 +12216,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("aside", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("aside", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -12238,7 +12238,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("aside", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("aside", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -12264,7 +12264,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("aside", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("aside", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -12294,7 +12294,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("aside", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("aside", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -12328,7 +12328,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("aside", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("aside", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -12366,7 +12366,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("aside", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("aside", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -12408,7 +12408,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("aside", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("aside", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -12485,7 +12485,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("nav", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("nav", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -12507,7 +12507,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("nav", attrs.ToImmutableArray());
+            return new TagBuilder("nav", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -12516,7 +12516,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder nav(Attr attr1)
         {
-            return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -12525,7 +12525,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder nav(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -12534,7 +12534,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder nav(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -12543,7 +12543,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -12552,7 +12552,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -12561,7 +12561,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -12570,7 +12570,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -12579,7 +12579,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -12635,7 +12635,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("nav", ImmutableArray.Create<Attr>(), children);
+            return new Tag("nav", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -12649,7 +12649,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("nav", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("nav", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -12667,7 +12667,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("nav", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("nav", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -12689,7 +12689,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("nav", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("nav", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -12715,7 +12715,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("nav", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("nav", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -12745,7 +12745,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("nav", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("nav", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -12779,7 +12779,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("nav", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("nav", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -12817,7 +12817,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("nav", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("nav", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -12859,7 +12859,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("nav", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("nav", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -12936,7 +12936,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("address", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("address", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -12958,7 +12958,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("address", attrs.ToImmutableArray());
+            return new TagBuilder("address", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -12967,7 +12967,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder address(Attr attr1)
         {
-            return new TagBuilder("address", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("address", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -12976,7 +12976,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder address(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("address", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("address", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -12985,7 +12985,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder address(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("address", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("address", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -12994,7 +12994,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("address", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("address", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -13003,7 +13003,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("address", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("address", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -13012,7 +13012,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("address", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("address", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -13021,7 +13021,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("address", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("address", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -13030,7 +13030,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("address", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("address", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -13086,7 +13086,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("address", ImmutableArray.Create<Attr>(), children);
+            return new Tag("address", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -13100,7 +13100,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("address", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("address", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -13118,7 +13118,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("address", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("address", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -13140,7 +13140,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("address", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("address", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -13166,7 +13166,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("address", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("address", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -13196,7 +13196,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("address", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("address", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -13230,7 +13230,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("address", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("address", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -13268,7 +13268,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("address", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("address", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -13310,7 +13310,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("address", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("address", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -13437,7 +13437,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("a", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("a", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -13459,7 +13459,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("a", attrs.ToImmutableArray());
+            return new TagBuilder("a", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -13468,7 +13468,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder a(Attr attr1)
         {
-            return new TagBuilder("a", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("a", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -13477,7 +13477,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder a(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("a", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("a", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -13486,7 +13486,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder a(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("a", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("a", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -13495,7 +13495,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("a", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("a", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -13504,7 +13504,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("a", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("a", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -13513,7 +13513,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("a", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("a", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -13522,7 +13522,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("a", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("a", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -13531,7 +13531,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("a", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("a", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -13587,7 +13587,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("a", ImmutableArray.Create<Attr>(), children);
+            return new Tag("a", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -13601,7 +13601,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("a", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("a", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -13619,7 +13619,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("a", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("a", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -13641,7 +13641,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("a", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("a", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -13667,7 +13667,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("a", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("a", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -13697,7 +13697,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("a", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("a", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -13731,7 +13731,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("a", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("a", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -13769,7 +13769,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("a", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("a", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -13811,7 +13811,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("a", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("a", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -13888,7 +13888,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("b", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("b", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -13910,7 +13910,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("b", attrs.ToImmutableArray());
+            return new TagBuilder("b", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -13919,7 +13919,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder b(Attr attr1)
         {
-            return new TagBuilder("b", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("b", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -13928,7 +13928,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder b(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("b", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("b", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -13937,7 +13937,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder b(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("b", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("b", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -13946,7 +13946,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("b", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("b", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -13955,7 +13955,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("b", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("b", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -13964,7 +13964,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("b", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("b", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -13973,7 +13973,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("b", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("b", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -13982,7 +13982,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("b", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("b", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -14038,7 +14038,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("b", ImmutableArray.Create<Attr>(), children);
+            return new Tag("b", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -14052,7 +14052,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("b", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("b", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -14070,7 +14070,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("b", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("b", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -14092,7 +14092,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("b", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("b", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -14118,7 +14118,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("b", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("b", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -14148,7 +14148,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("b", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("b", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -14182,7 +14182,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("b", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("b", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -14220,7 +14220,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("b", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("b", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -14262,7 +14262,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("b", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("b", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -14339,7 +14339,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("em", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("em", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -14361,7 +14361,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("em", attrs.ToImmutableArray());
+            return new TagBuilder("em", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -14370,7 +14370,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder em(Attr attr1)
         {
-            return new TagBuilder("em", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("em", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -14379,7 +14379,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder em(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("em", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("em", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -14388,7 +14388,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder em(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("em", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("em", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -14397,7 +14397,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("em", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("em", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -14406,7 +14406,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("em", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("em", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -14415,7 +14415,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("em", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("em", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -14424,7 +14424,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("em", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("em", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -14433,7 +14433,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("em", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("em", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -14489,7 +14489,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("em", ImmutableArray.Create<Attr>(), children);
+            return new Tag("em", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -14503,7 +14503,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("em", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("em", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -14521,7 +14521,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("em", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("em", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -14543,7 +14543,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("em", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("em", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -14569,7 +14569,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("em", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("em", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -14599,7 +14599,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("em", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("em", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -14633,7 +14633,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("em", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("em", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -14671,7 +14671,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("em", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("em", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -14713,7 +14713,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("em", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("em", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -14790,7 +14790,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("i", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("i", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -14812,7 +14812,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("i", attrs.ToImmutableArray());
+            return new TagBuilder("i", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -14821,7 +14821,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder i(Attr attr1)
         {
-            return new TagBuilder("i", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("i", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -14830,7 +14830,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder i(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("i", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("i", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -14839,7 +14839,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder i(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("i", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("i", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -14848,7 +14848,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("i", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("i", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -14857,7 +14857,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("i", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("i", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -14866,7 +14866,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("i", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("i", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -14875,7 +14875,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("i", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("i", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -14884,7 +14884,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("i", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("i", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -14940,7 +14940,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("i", ImmutableArray.Create<Attr>(), children);
+            return new Tag("i", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -14954,7 +14954,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("i", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("i", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -14972,7 +14972,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("i", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("i", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -14994,7 +14994,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("i", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("i", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -15020,7 +15020,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("i", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("i", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -15050,7 +15050,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("i", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("i", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -15084,7 +15084,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("i", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("i", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -15122,7 +15122,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("i", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("i", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -15164,7 +15164,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("i", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("i", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -15241,7 +15241,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("mark", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("mark", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -15263,7 +15263,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("mark", attrs.ToImmutableArray());
+            return new TagBuilder("mark", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -15272,7 +15272,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder mark(Attr attr1)
         {
-            return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -15281,7 +15281,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder mark(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -15290,7 +15290,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder mark(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -15299,7 +15299,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -15308,7 +15308,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -15317,7 +15317,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -15326,7 +15326,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -15335,7 +15335,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -15391,7 +15391,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("mark", ImmutableArray.Create<Attr>(), children);
+            return new Tag("mark", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -15405,7 +15405,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("mark", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("mark", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -15423,7 +15423,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("mark", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("mark", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -15445,7 +15445,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("mark", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("mark", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -15471,7 +15471,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("mark", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("mark", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -15501,7 +15501,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("mark", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("mark", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -15535,7 +15535,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("mark", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("mark", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -15573,7 +15573,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("mark", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("mark", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -15615,7 +15615,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("mark", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("mark", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -15702,7 +15702,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("q", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("q", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -15724,7 +15724,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("q", attrs.ToImmutableArray());
+            return new TagBuilder("q", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -15733,7 +15733,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder q(Attr attr1)
         {
-            return new TagBuilder("q", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("q", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -15742,7 +15742,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder q(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("q", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("q", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -15751,7 +15751,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder q(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("q", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("q", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -15760,7 +15760,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("q", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("q", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -15769,7 +15769,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("q", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("q", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -15778,7 +15778,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("q", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("q", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -15787,7 +15787,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("q", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("q", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -15796,7 +15796,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("q", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("q", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -15852,7 +15852,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("q", ImmutableArray.Create<Attr>(), children);
+            return new Tag("q", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -15866,7 +15866,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("q", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("q", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -15884,7 +15884,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("q", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("q", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -15906,7 +15906,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("q", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("q", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -15932,7 +15932,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("q", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("q", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -15962,7 +15962,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("q", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("q", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -15996,7 +15996,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("q", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("q", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -16034,7 +16034,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("q", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("q", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -16076,7 +16076,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("q", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("q", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -16153,7 +16153,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("s", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("s", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -16175,7 +16175,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("s", attrs.ToImmutableArray());
+            return new TagBuilder("s", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -16184,7 +16184,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder s(Attr attr1)
         {
-            return new TagBuilder("s", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("s", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -16193,7 +16193,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder s(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("s", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("s", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -16202,7 +16202,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder s(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("s", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("s", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -16211,7 +16211,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("s", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("s", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -16220,7 +16220,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("s", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("s", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -16229,7 +16229,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("s", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("s", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -16238,7 +16238,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("s", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("s", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -16247,7 +16247,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("s", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("s", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -16303,7 +16303,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("s", ImmutableArray.Create<Attr>(), children);
+            return new Tag("s", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -16317,7 +16317,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("s", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("s", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -16335,7 +16335,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("s", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("s", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -16357,7 +16357,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("s", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("s", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -16383,7 +16383,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("s", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("s", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -16413,7 +16413,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("s", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("s", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -16447,7 +16447,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("s", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("s", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -16485,7 +16485,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("s", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("s", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -16527,7 +16527,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("s", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("s", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -16604,7 +16604,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("small", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("small", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -16626,7 +16626,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("small", attrs.ToImmutableArray());
+            return new TagBuilder("small", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -16635,7 +16635,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder small(Attr attr1)
         {
-            return new TagBuilder("small", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("small", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -16644,7 +16644,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder small(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("small", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("small", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -16653,7 +16653,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder small(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("small", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("small", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -16662,7 +16662,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("small", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("small", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -16671,7 +16671,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("small", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("small", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -16680,7 +16680,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("small", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("small", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -16689,7 +16689,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("small", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("small", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -16698,7 +16698,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("small", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("small", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -16754,7 +16754,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("small", ImmutableArray.Create<Attr>(), children);
+            return new Tag("small", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -16768,7 +16768,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("small", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("small", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -16786,7 +16786,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("small", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("small", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -16808,7 +16808,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("small", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("small", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -16834,7 +16834,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("small", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("small", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -16864,7 +16864,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("small", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("small", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -16898,7 +16898,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("small", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("small", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -16936,7 +16936,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("small", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("small", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -16978,7 +16978,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("small", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("small", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -17055,7 +17055,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("span", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("span", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -17077,7 +17077,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("span", attrs.ToImmutableArray());
+            return new TagBuilder("span", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -17086,7 +17086,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder span(Attr attr1)
         {
-            return new TagBuilder("span", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("span", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -17095,7 +17095,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder span(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("span", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("span", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -17104,7 +17104,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder span(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("span", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("span", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -17113,7 +17113,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("span", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("span", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -17122,7 +17122,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("span", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("span", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -17131,7 +17131,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("span", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("span", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -17140,7 +17140,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("span", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("span", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -17149,7 +17149,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("span", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("span", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -17205,7 +17205,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("span", ImmutableArray.Create<Attr>(), children);
+            return new Tag("span", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -17219,7 +17219,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("span", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("span", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -17237,7 +17237,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("span", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("span", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -17259,7 +17259,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("span", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("span", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -17285,7 +17285,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("span", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("span", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -17315,7 +17315,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("span", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("span", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -17349,7 +17349,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("span", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("span", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -17387,7 +17387,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("span", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("span", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -17429,7 +17429,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("span", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("span", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -17506,7 +17506,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("strong", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("strong", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -17528,7 +17528,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("strong", attrs.ToImmutableArray());
+            return new TagBuilder("strong", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -17537,7 +17537,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder strong(Attr attr1)
         {
-            return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -17546,7 +17546,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder strong(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -17555,7 +17555,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder strong(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -17564,7 +17564,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -17573,7 +17573,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -17582,7 +17582,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -17591,7 +17591,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -17600,7 +17600,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -17656,7 +17656,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("strong", ImmutableArray.Create<Attr>(), children);
+            return new Tag("strong", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -17670,7 +17670,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("strong", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("strong", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -17688,7 +17688,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("strong", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("strong", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -17710,7 +17710,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("strong", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("strong", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -17736,7 +17736,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("strong", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("strong", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -17766,7 +17766,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("strong", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("strong", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -17800,7 +17800,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("strong", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("strong", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -17838,7 +17838,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("strong", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("strong", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -17880,7 +17880,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("strong", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("strong", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -17957,7 +17957,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("sub", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("sub", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -17979,7 +17979,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("sub", attrs.ToImmutableArray());
+            return new TagBuilder("sub", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -17988,7 +17988,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder sub(Attr attr1)
         {
-            return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -17997,7 +17997,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder sub(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -18006,7 +18006,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder sub(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -18015,7 +18015,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -18024,7 +18024,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -18033,7 +18033,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -18042,7 +18042,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -18051,7 +18051,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -18107,7 +18107,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("sub", ImmutableArray.Create<Attr>(), children);
+            return new Tag("sub", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -18121,7 +18121,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("sub", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("sub", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -18139,7 +18139,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("sub", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("sub", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -18161,7 +18161,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("sub", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("sub", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -18187,7 +18187,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("sub", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("sub", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -18217,7 +18217,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("sub", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("sub", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -18251,7 +18251,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("sub", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("sub", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -18289,7 +18289,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("sub", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("sub", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -18331,7 +18331,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("sub", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("sub", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -18408,7 +18408,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("sup", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("sup", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -18430,7 +18430,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("sup", attrs.ToImmutableArray());
+            return new TagBuilder("sup", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -18439,7 +18439,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder sup(Attr attr1)
         {
-            return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -18448,7 +18448,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder sup(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -18457,7 +18457,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder sup(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -18466,7 +18466,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -18475,7 +18475,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -18484,7 +18484,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -18493,7 +18493,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -18502,7 +18502,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -18558,7 +18558,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("sup", ImmutableArray.Create<Attr>(), children);
+            return new Tag("sup", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -18572,7 +18572,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("sup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("sup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -18590,7 +18590,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("sup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("sup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -18612,7 +18612,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("sup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("sup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -18638,7 +18638,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("sup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("sup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -18668,7 +18668,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("sup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("sup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -18702,7 +18702,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("sup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("sup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -18740,7 +18740,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("sup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("sup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -18782,7 +18782,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("sup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("sup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -18859,7 +18859,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("u", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("u", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -18881,7 +18881,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("u", attrs.ToImmutableArray());
+            return new TagBuilder("u", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -18890,7 +18890,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder u(Attr attr1)
         {
-            return new TagBuilder("u", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("u", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -18899,7 +18899,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder u(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("u", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("u", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -18908,7 +18908,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder u(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("u", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("u", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -18917,7 +18917,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("u", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("u", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -18926,7 +18926,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("u", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("u", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -18935,7 +18935,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("u", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("u", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -18944,7 +18944,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("u", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("u", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -18953,7 +18953,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("u", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("u", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -19009,7 +19009,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("u", ImmutableArray.Create<Attr>(), children);
+            return new Tag("u", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -19023,7 +19023,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("u", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("u", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -19041,7 +19041,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("u", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("u", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -19063,7 +19063,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("u", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("u", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -19089,7 +19089,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("u", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("u", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -19119,7 +19119,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("u", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("u", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -19153,7 +19153,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("u", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("u", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -19191,7 +19191,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("u", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("u", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -19233,7 +19233,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("u", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("u", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -19310,7 +19310,7 @@ namespace Eighty
                 i++;
             }
 
-            return new SelfClosingTag("br", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new SelfClosingTag("br", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -19330,7 +19330,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new SelfClosingTag("br", attrs.ToImmutableArray());
+            return new SelfClosingTag("br", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -19339,7 +19339,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html br(Attr attr1)
         {
-            return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1));
+            return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -19348,7 +19348,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html br(Attr attr1, Attr attr2)
         {
-            return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1, attr2));
+            return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -19357,7 +19357,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html br(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -19366,7 +19366,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html br(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -19375,7 +19375,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html br(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -19384,7 +19384,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html br(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -19393,7 +19393,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html br(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -19402,7 +19402,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html br(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -19479,7 +19479,7 @@ namespace Eighty
                 i++;
             }
 
-            return new SelfClosingTag("wbr", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new SelfClosingTag("wbr", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -19499,7 +19499,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new SelfClosingTag("wbr", attrs.ToImmutableArray());
+            return new SelfClosingTag("wbr", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -19508,7 +19508,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html wbr(Attr attr1)
         {
-            return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1));
+            return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -19517,7 +19517,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html wbr(Attr attr1, Attr attr2)
         {
-            return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1, attr2));
+            return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -19526,7 +19526,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html wbr(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -19535,7 +19535,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -19544,7 +19544,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -19553,7 +19553,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -19562,7 +19562,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -19571,7 +19571,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -19648,7 +19648,7 @@ namespace Eighty
                 i++;
             }
 
-            return new SelfClosingTag("hr", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new SelfClosingTag("hr", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -19668,7 +19668,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new SelfClosingTag("hr", attrs.ToImmutableArray());
+            return new SelfClosingTag("hr", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -19677,7 +19677,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html hr(Attr attr1)
         {
-            return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1));
+            return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -19686,7 +19686,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html hr(Attr attr1, Attr attr2)
         {
-            return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1, attr2));
+            return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -19695,7 +19695,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html hr(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -19704,7 +19704,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -19713,7 +19713,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -19722,7 +19722,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -19731,7 +19731,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -19740,7 +19740,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -19817,7 +19817,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("abbr", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("abbr", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -19839,7 +19839,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("abbr", attrs.ToImmutableArray());
+            return new TagBuilder("abbr", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -19848,7 +19848,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder abbr(Attr attr1)
         {
-            return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -19857,7 +19857,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder abbr(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -19866,7 +19866,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -19875,7 +19875,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -19884,7 +19884,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -19893,7 +19893,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -19902,7 +19902,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -19911,7 +19911,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -19967,7 +19967,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("abbr", ImmutableArray.Create<Attr>(), children);
+            return new Tag("abbr", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -19981,7 +19981,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("abbr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("abbr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -19999,7 +19999,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("abbr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("abbr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -20021,7 +20021,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("abbr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("abbr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -20047,7 +20047,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("abbr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("abbr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -20077,7 +20077,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("abbr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("abbr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -20111,7 +20111,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("abbr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("abbr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -20149,7 +20149,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("abbr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("abbr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -20191,7 +20191,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("abbr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("abbr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -20268,7 +20268,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("cite", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("cite", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -20290,7 +20290,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("cite", attrs.ToImmutableArray());
+            return new TagBuilder("cite", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -20299,7 +20299,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder cite(Attr attr1)
         {
-            return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -20308,7 +20308,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder cite(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -20317,7 +20317,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder cite(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -20326,7 +20326,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -20335,7 +20335,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -20344,7 +20344,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -20353,7 +20353,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -20362,7 +20362,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -20418,7 +20418,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("cite", ImmutableArray.Create<Attr>(), children);
+            return new Tag("cite", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -20432,7 +20432,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("cite", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("cite", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -20450,7 +20450,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("cite", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("cite", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -20472,7 +20472,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("cite", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("cite", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -20498,7 +20498,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("cite", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("cite", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -20528,7 +20528,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("cite", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("cite", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -20562,7 +20562,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("cite", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("cite", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -20600,7 +20600,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("cite", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("cite", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -20642,7 +20642,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("cite", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("cite", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -20719,7 +20719,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("code", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("code", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -20741,7 +20741,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("code", attrs.ToImmutableArray());
+            return new TagBuilder("code", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -20750,7 +20750,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder code(Attr attr1)
         {
-            return new TagBuilder("code", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("code", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -20759,7 +20759,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder code(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("code", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("code", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -20768,7 +20768,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder code(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("code", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("code", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -20777,7 +20777,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("code", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("code", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -20786,7 +20786,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("code", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("code", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -20795,7 +20795,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("code", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("code", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -20804,7 +20804,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("code", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("code", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -20813,7 +20813,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("code", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("code", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -20869,7 +20869,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("code", ImmutableArray.Create<Attr>(), children);
+            return new Tag("code", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -20883,7 +20883,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("code", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("code", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -20901,7 +20901,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("code", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("code", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -20923,7 +20923,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("code", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("code", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -20949,7 +20949,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("code", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("code", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -20979,7 +20979,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("code", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("code", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -21013,7 +21013,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("code", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("code", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -21051,7 +21051,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("code", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("code", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -21093,7 +21093,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("code", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("code", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -21180,7 +21180,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("data", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("data", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -21202,7 +21202,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("data", attrs.ToImmutableArray());
+            return new TagBuilder("data", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -21211,7 +21211,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder data(Attr attr1)
         {
-            return new TagBuilder("data", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("data", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -21220,7 +21220,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder data(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("data", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("data", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -21229,7 +21229,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder data(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("data", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("data", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -21238,7 +21238,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("data", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("data", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -21247,7 +21247,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("data", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("data", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -21256,7 +21256,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("data", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("data", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -21265,7 +21265,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("data", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("data", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -21274,7 +21274,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("data", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("data", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -21330,7 +21330,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("data", ImmutableArray.Create<Attr>(), children);
+            return new Tag("data", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -21344,7 +21344,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("data", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("data", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -21362,7 +21362,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("data", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("data", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -21384,7 +21384,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("data", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("data", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -21410,7 +21410,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("data", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("data", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -21440,7 +21440,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("data", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("data", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -21474,7 +21474,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("data", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("data", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -21512,7 +21512,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("data", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("data", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -21554,7 +21554,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("data", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("data", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -21631,7 +21631,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("dfn", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("dfn", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -21653,7 +21653,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("dfn", attrs.ToImmutableArray());
+            return new TagBuilder("dfn", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -21662,7 +21662,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dfn(Attr attr1)
         {
-            return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -21671,7 +21671,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dfn(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -21680,7 +21680,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -21689,7 +21689,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -21698,7 +21698,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -21707,7 +21707,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -21716,7 +21716,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -21725,7 +21725,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -21781,7 +21781,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("dfn", ImmutableArray.Create<Attr>(), children);
+            return new Tag("dfn", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -21795,7 +21795,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("dfn", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("dfn", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -21813,7 +21813,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("dfn", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("dfn", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -21835,7 +21835,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("dfn", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("dfn", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -21861,7 +21861,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("dfn", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("dfn", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -21891,7 +21891,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("dfn", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("dfn", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -21925,7 +21925,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("dfn", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("dfn", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -21963,7 +21963,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("dfn", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("dfn", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -22005,7 +22005,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("dfn", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("dfn", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -22082,7 +22082,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("kbd", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("kbd", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -22104,7 +22104,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("kbd", attrs.ToImmutableArray());
+            return new TagBuilder("kbd", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -22113,7 +22113,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder kbd(Attr attr1)
         {
-            return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -22122,7 +22122,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder kbd(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -22131,7 +22131,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -22140,7 +22140,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -22149,7 +22149,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -22158,7 +22158,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -22167,7 +22167,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -22176,7 +22176,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -22232,7 +22232,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("kbd", ImmutableArray.Create<Attr>(), children);
+            return new Tag("kbd", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -22246,7 +22246,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("kbd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("kbd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -22264,7 +22264,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("kbd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("kbd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -22286,7 +22286,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("kbd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("kbd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -22312,7 +22312,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("kbd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("kbd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -22342,7 +22342,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("kbd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("kbd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -22376,7 +22376,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("kbd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("kbd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -22414,7 +22414,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("kbd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("kbd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -22456,7 +22456,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("kbd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("kbd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -22533,7 +22533,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("samp", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("samp", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -22555,7 +22555,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("samp", attrs.ToImmutableArray());
+            return new TagBuilder("samp", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -22564,7 +22564,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder samp(Attr attr1)
         {
-            return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -22573,7 +22573,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder samp(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -22582,7 +22582,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder samp(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -22591,7 +22591,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -22600,7 +22600,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -22609,7 +22609,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -22618,7 +22618,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -22627,7 +22627,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -22683,7 +22683,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("samp", ImmutableArray.Create<Attr>(), children);
+            return new Tag("samp", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -22697,7 +22697,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("samp", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("samp", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -22715,7 +22715,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("samp", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("samp", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -22737,7 +22737,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("samp", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("samp", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -22763,7 +22763,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("samp", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("samp", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -22793,7 +22793,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("samp", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("samp", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -22827,7 +22827,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("samp", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("samp", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -22865,7 +22865,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("samp", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("samp", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -22907,7 +22907,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("samp", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("samp", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -22994,7 +22994,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("time", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("time", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -23016,7 +23016,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("time", attrs.ToImmutableArray());
+            return new TagBuilder("time", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -23025,7 +23025,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder time(Attr attr1)
         {
-            return new TagBuilder("time", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("time", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -23034,7 +23034,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder time(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("time", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("time", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -23043,7 +23043,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder time(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("time", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("time", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -23052,7 +23052,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("time", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("time", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -23061,7 +23061,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("time", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("time", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -23070,7 +23070,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("time", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("time", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -23079,7 +23079,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("time", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("time", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -23088,7 +23088,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("time", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("time", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -23144,7 +23144,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("time", ImmutableArray.Create<Attr>(), children);
+            return new Tag("time", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -23158,7 +23158,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("time", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("time", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -23176,7 +23176,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("time", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("time", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -23198,7 +23198,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("time", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("time", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -23224,7 +23224,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("time", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("time", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -23254,7 +23254,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("time", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("time", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -23288,7 +23288,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("time", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("time", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -23326,7 +23326,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("time", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("time", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -23368,7 +23368,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("time", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("time", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -23466,7 +23466,7 @@ namespace Eighty
             }
             if (reversed)
             {
-                array[i] = new Attr("reversed");
+                array[i] = Attr.Raw("reversed");
                 i++;
             }
             if (start != null)
@@ -23475,7 +23475,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("ol", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("ol", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -23497,7 +23497,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("ol", attrs.ToImmutableArray());
+            return new TagBuilder("ol", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -23506,7 +23506,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder ol(Attr attr1)
         {
-            return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -23515,7 +23515,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder ol(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -23524,7 +23524,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder ol(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -23533,7 +23533,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -23542,7 +23542,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -23551,7 +23551,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -23560,7 +23560,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -23569,7 +23569,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -23625,7 +23625,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("ol", ImmutableArray.Create<Attr>(), children);
+            return new Tag("ol", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -23639,7 +23639,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("ol", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("ol", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -23657,7 +23657,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("ol", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("ol", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -23679,7 +23679,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("ol", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("ol", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -23705,7 +23705,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("ol", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("ol", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -23735,7 +23735,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("ol", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("ol", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -23769,7 +23769,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("ol", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("ol", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -23807,7 +23807,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("ol", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("ol", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -23849,7 +23849,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("ol", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("ol", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -23947,7 +23947,7 @@ namespace Eighty
             }
             if (reversed)
             {
-                array[i] = new Attr("reversed");
+                array[i] = Attr.Raw("reversed");
                 i++;
             }
             if (start != null)
@@ -23956,7 +23956,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("ul", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("ul", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -23978,7 +23978,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("ul", attrs.ToImmutableArray());
+            return new TagBuilder("ul", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -23987,7 +23987,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder ul(Attr attr1)
         {
-            return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -23996,7 +23996,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder ul(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -24005,7 +24005,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder ul(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -24014,7 +24014,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -24023,7 +24023,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -24032,7 +24032,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -24041,7 +24041,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -24050,7 +24050,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -24106,7 +24106,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("ul", ImmutableArray.Create<Attr>(), children);
+            return new Tag("ul", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -24120,7 +24120,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("ul", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("ul", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -24138,7 +24138,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("ul", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("ul", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -24160,7 +24160,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("ul", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("ul", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -24186,7 +24186,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("ul", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("ul", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -24216,7 +24216,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("ul", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("ul", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -24250,7 +24250,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("ul", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("ul", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -24288,7 +24288,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("ul", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("ul", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -24330,7 +24330,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("ul", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("ul", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -24417,7 +24417,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("li", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("li", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -24439,7 +24439,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("li", attrs.ToImmutableArray());
+            return new TagBuilder("li", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -24448,7 +24448,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder li(Attr attr1)
         {
-            return new TagBuilder("li", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("li", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -24457,7 +24457,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder li(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("li", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("li", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -24466,7 +24466,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder li(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("li", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("li", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -24475,7 +24475,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("li", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("li", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -24484,7 +24484,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("li", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("li", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -24493,7 +24493,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("li", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("li", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -24502,7 +24502,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("li", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("li", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -24511,7 +24511,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("li", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("li", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -24567,7 +24567,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("li", ImmutableArray.Create<Attr>(), children);
+            return new Tag("li", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -24581,7 +24581,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("li", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("li", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -24599,7 +24599,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("li", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("li", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -24621,7 +24621,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("li", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("li", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -24647,7 +24647,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("li", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("li", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -24677,7 +24677,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("li", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("li", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -24711,7 +24711,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("li", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("li", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -24749,7 +24749,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("li", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("li", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -24791,7 +24791,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("li", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("li", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -24868,7 +24868,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("dl", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("dl", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -24890,7 +24890,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("dl", attrs.ToImmutableArray());
+            return new TagBuilder("dl", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -24899,7 +24899,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dl(Attr attr1)
         {
-            return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -24908,7 +24908,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dl(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -24917,7 +24917,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dl(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -24926,7 +24926,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -24935,7 +24935,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -24944,7 +24944,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -24953,7 +24953,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -24962,7 +24962,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -25018,7 +25018,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("dl", ImmutableArray.Create<Attr>(), children);
+            return new Tag("dl", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -25032,7 +25032,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("dl", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("dl", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -25050,7 +25050,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("dl", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("dl", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -25072,7 +25072,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("dl", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("dl", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -25098,7 +25098,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("dl", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("dl", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -25128,7 +25128,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("dl", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("dl", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -25162,7 +25162,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("dl", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("dl", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -25200,7 +25200,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("dl", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("dl", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -25242,7 +25242,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("dl", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("dl", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -25319,7 +25319,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("dt", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("dt", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -25341,7 +25341,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("dt", attrs.ToImmutableArray());
+            return new TagBuilder("dt", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -25350,7 +25350,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dt(Attr attr1)
         {
-            return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -25359,7 +25359,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dt(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -25368,7 +25368,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dt(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -25377,7 +25377,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -25386,7 +25386,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -25395,7 +25395,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -25404,7 +25404,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -25413,7 +25413,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -25469,7 +25469,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("dt", ImmutableArray.Create<Attr>(), children);
+            return new Tag("dt", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -25483,7 +25483,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("dt", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("dt", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -25501,7 +25501,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("dt", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("dt", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -25523,7 +25523,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("dt", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("dt", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -25549,7 +25549,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("dt", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("dt", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -25579,7 +25579,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("dt", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("dt", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -25613,7 +25613,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("dt", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("dt", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -25651,7 +25651,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("dt", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("dt", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -25693,7 +25693,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("dt", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("dt", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -25770,7 +25770,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("dd", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("dd", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -25792,7 +25792,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("dd", attrs.ToImmutableArray());
+            return new TagBuilder("dd", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -25801,7 +25801,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dd(Attr attr1)
         {
-            return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -25810,7 +25810,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dd(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -25819,7 +25819,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dd(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -25828,7 +25828,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -25837,7 +25837,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -25846,7 +25846,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -25855,7 +25855,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -25864,7 +25864,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -25920,7 +25920,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("dd", ImmutableArray.Create<Attr>(), children);
+            return new Tag("dd", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -25934,7 +25934,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("dd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("dd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -25952,7 +25952,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("dd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("dd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -25974,7 +25974,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("dd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("dd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -26000,7 +26000,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("dd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("dd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -26030,7 +26030,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("dd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("dd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -26064,7 +26064,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("dd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("dd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -26102,7 +26102,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("dd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("dd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -26144,7 +26144,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("dd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("dd", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -26221,7 +26221,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("table", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("table", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -26243,7 +26243,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("table", attrs.ToImmutableArray());
+            return new TagBuilder("table", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -26252,7 +26252,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder table(Attr attr1)
         {
-            return new TagBuilder("table", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("table", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -26261,7 +26261,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder table(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("table", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("table", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -26270,7 +26270,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder table(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("table", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("table", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -26279,7 +26279,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("table", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("table", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -26288,7 +26288,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("table", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("table", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -26297,7 +26297,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("table", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("table", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -26306,7 +26306,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("table", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("table", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -26315,7 +26315,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("table", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("table", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -26371,7 +26371,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("table", ImmutableArray.Create<Attr>(), children);
+            return new Tag("table", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -26385,7 +26385,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("table", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("table", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -26403,7 +26403,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("table", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("table", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -26425,7 +26425,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("table", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("table", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -26451,7 +26451,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("table", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("table", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -26481,7 +26481,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("table", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("table", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -26515,7 +26515,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("table", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("table", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -26553,7 +26553,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("table", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("table", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -26595,7 +26595,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("table", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("table", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -26672,7 +26672,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("caption", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("caption", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -26694,7 +26694,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("caption", attrs.ToImmutableArray());
+            return new TagBuilder("caption", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -26703,7 +26703,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder caption(Attr attr1)
         {
-            return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -26712,7 +26712,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder caption(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -26721,7 +26721,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder caption(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -26730,7 +26730,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -26739,7 +26739,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -26748,7 +26748,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -26757,7 +26757,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -26766,7 +26766,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -26822,7 +26822,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("caption", ImmutableArray.Create<Attr>(), children);
+            return new Tag("caption", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -26836,7 +26836,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("caption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("caption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -26854,7 +26854,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("caption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("caption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -26876,7 +26876,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("caption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("caption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -26902,7 +26902,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("caption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("caption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -26932,7 +26932,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("caption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("caption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -26966,7 +26966,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("caption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("caption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -27004,7 +27004,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("caption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("caption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -27046,7 +27046,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("caption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("caption", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -27123,7 +27123,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("thead", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("thead", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -27145,7 +27145,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("thead", attrs.ToImmutableArray());
+            return new TagBuilder("thead", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -27154,7 +27154,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder thead(Attr attr1)
         {
-            return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -27163,7 +27163,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder thead(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -27172,7 +27172,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder thead(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -27181,7 +27181,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -27190,7 +27190,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -27199,7 +27199,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -27208,7 +27208,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -27217,7 +27217,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -27273,7 +27273,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("thead", ImmutableArray.Create<Attr>(), children);
+            return new Tag("thead", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -27287,7 +27287,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("thead", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("thead", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -27305,7 +27305,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("thead", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("thead", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -27327,7 +27327,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("thead", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("thead", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -27353,7 +27353,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("thead", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("thead", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -27383,7 +27383,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("thead", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("thead", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -27417,7 +27417,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("thead", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("thead", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -27455,7 +27455,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("thead", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("thead", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -27497,7 +27497,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("thead", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("thead", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -27584,7 +27584,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("colgroup", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("colgroup", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -27606,7 +27606,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("colgroup", attrs.ToImmutableArray());
+            return new TagBuilder("colgroup", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -27615,7 +27615,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder colgroup(Attr attr1)
         {
-            return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -27624,7 +27624,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder colgroup(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -27633,7 +27633,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -27642,7 +27642,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -27651,7 +27651,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -27660,7 +27660,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -27669,7 +27669,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -27678,7 +27678,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -27734,7 +27734,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("colgroup", ImmutableArray.Create<Attr>(), children);
+            return new Tag("colgroup", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -27748,7 +27748,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("colgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("colgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -27766,7 +27766,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("colgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("colgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -27788,7 +27788,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("colgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("colgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -27814,7 +27814,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("colgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("colgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -27844,7 +27844,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("colgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("colgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -27878,7 +27878,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("colgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("colgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -27916,7 +27916,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("colgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("colgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -27958,7 +27958,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("colgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("colgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -28045,7 +28045,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("col", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("col", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -28067,7 +28067,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("col", attrs.ToImmutableArray());
+            return new TagBuilder("col", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -28076,7 +28076,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder col(Attr attr1)
         {
-            return new TagBuilder("col", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("col", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -28085,7 +28085,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder col(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("col", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("col", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -28094,7 +28094,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder col(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("col", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("col", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -28103,7 +28103,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("col", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("col", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -28112,7 +28112,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("col", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("col", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -28121,7 +28121,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("col", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("col", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -28130,7 +28130,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("col", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("col", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -28139,7 +28139,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("col", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("col", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -28195,7 +28195,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("col", ImmutableArray.Create<Attr>(), children);
+            return new Tag("col", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -28209,7 +28209,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("col", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("col", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -28227,7 +28227,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("col", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("col", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -28249,7 +28249,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("col", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("col", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -28275,7 +28275,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("col", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("col", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -28305,7 +28305,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("col", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("col", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -28339,7 +28339,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("col", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("col", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -28377,7 +28377,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("col", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("col", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -28419,7 +28419,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("col", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("col", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -28496,7 +28496,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("tbody", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("tbody", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -28518,7 +28518,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("tbody", attrs.ToImmutableArray());
+            return new TagBuilder("tbody", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -28527,7 +28527,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tbody(Attr attr1)
         {
-            return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -28536,7 +28536,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tbody(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -28545,7 +28545,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -28554,7 +28554,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -28563,7 +28563,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -28572,7 +28572,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -28581,7 +28581,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -28590,7 +28590,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -28646,7 +28646,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("tbody", ImmutableArray.Create<Attr>(), children);
+            return new Tag("tbody", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -28660,7 +28660,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("tbody", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("tbody", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -28678,7 +28678,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("tbody", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("tbody", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -28700,7 +28700,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("tbody", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("tbody", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -28726,7 +28726,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("tbody", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("tbody", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -28756,7 +28756,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("tbody", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("tbody", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -28790,7 +28790,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("tbody", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("tbody", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -28828,7 +28828,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("tbody", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("tbody", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -28870,7 +28870,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("tbody", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("tbody", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -28947,7 +28947,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("tr", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("tr", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -28969,7 +28969,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("tr", attrs.ToImmutableArray());
+            return new TagBuilder("tr", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -28978,7 +28978,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tr(Attr attr1)
         {
-            return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -28987,7 +28987,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tr(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -28996,7 +28996,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tr(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -29005,7 +29005,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -29014,7 +29014,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -29023,7 +29023,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -29032,7 +29032,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -29041,7 +29041,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -29097,7 +29097,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("tr", ImmutableArray.Create<Attr>(), children);
+            return new Tag("tr", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -29111,7 +29111,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("tr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("tr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -29129,7 +29129,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("tr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("tr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -29151,7 +29151,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("tr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("tr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -29177,7 +29177,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("tr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("tr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -29207,7 +29207,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("tr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("tr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -29241,7 +29241,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("tr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("tr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -29279,7 +29279,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("tr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("tr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -29321,7 +29321,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("tr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("tr", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -29438,7 +29438,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("th", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("th", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -29460,7 +29460,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("th", attrs.ToImmutableArray());
+            return new TagBuilder("th", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -29469,7 +29469,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder th(Attr attr1)
         {
-            return new TagBuilder("th", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("th", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -29478,7 +29478,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder th(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("th", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("th", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -29487,7 +29487,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder th(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("th", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("th", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -29496,7 +29496,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("th", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("th", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -29505,7 +29505,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("th", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("th", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -29514,7 +29514,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("th", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("th", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -29523,7 +29523,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("th", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("th", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -29532,7 +29532,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("th", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("th", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -29588,7 +29588,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("th", ImmutableArray.Create<Attr>(), children);
+            return new Tag("th", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -29602,7 +29602,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("th", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("th", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -29620,7 +29620,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("th", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("th", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -29642,7 +29642,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("th", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("th", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -29668,7 +29668,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("th", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("th", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -29698,7 +29698,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("th", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("th", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -29732,7 +29732,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("th", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("th", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -29770,7 +29770,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("th", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("th", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -29812,7 +29812,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("th", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("th", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -29919,7 +29919,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("td", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("td", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -29941,7 +29941,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("td", attrs.ToImmutableArray());
+            return new TagBuilder("td", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -29950,7 +29950,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder td(Attr attr1)
         {
-            return new TagBuilder("td", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("td", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -29959,7 +29959,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder td(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("td", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("td", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -29968,7 +29968,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder td(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("td", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("td", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -29977,7 +29977,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("td", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("td", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -29986,7 +29986,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("td", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("td", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -29995,7 +29995,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("td", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("td", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -30004,7 +30004,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("td", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("td", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -30013,7 +30013,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("td", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("td", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -30069,7 +30069,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("td", ImmutableArray.Create<Attr>(), children);
+            return new Tag("td", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -30083,7 +30083,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("td", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("td", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -30101,7 +30101,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("td", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("td", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -30123,7 +30123,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("td", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("td", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -30149,7 +30149,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("td", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("td", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -30179,7 +30179,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("td", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("td", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -30213,7 +30213,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("td", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("td", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -30251,7 +30251,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("td", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("td", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -30293,7 +30293,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("td", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("td", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -30370,7 +30370,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("tfoot", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("tfoot", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -30392,7 +30392,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("tfoot", attrs.ToImmutableArray());
+            return new TagBuilder("tfoot", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -30401,7 +30401,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tfoot(Attr attr1)
         {
-            return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -30410,7 +30410,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tfoot(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -30419,7 +30419,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -30428,7 +30428,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -30437,7 +30437,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -30446,7 +30446,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -30455,7 +30455,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -30464,7 +30464,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -30520,7 +30520,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("tfoot", ImmutableArray.Create<Attr>(), children);
+            return new Tag("tfoot", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -30534,7 +30534,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("tfoot", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("tfoot", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -30552,7 +30552,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("tfoot", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("tfoot", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -30574,7 +30574,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("tfoot", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("tfoot", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -30600,7 +30600,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("tfoot", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("tfoot", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -30630,7 +30630,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("tfoot", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("tfoot", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -30664,7 +30664,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("tfoot", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("tfoot", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -30702,7 +30702,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("tfoot", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("tfoot", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -30744,7 +30744,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("tfoot", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("tfoot", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -30887,11 +30887,11 @@ namespace Eighty
             }
             if (novalidate)
             {
-                array[i] = new Attr("novalidate");
+                array[i] = Attr.Raw("novalidate");
                 i++;
             }
 
-            return new TagBuilder("form", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("form", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -30913,7 +30913,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("form", attrs.ToImmutableArray());
+            return new TagBuilder("form", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -30922,7 +30922,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder form(Attr attr1)
         {
-            return new TagBuilder("form", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("form", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -30931,7 +30931,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder form(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("form", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("form", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -30940,7 +30940,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder form(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("form", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("form", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -30949,7 +30949,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("form", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("form", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -30958,7 +30958,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("form", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("form", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -30967,7 +30967,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("form", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("form", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -30976,7 +30976,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("form", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("form", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -30985,7 +30985,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("form", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("form", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -31041,7 +31041,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("form", ImmutableArray.Create<Attr>(), children);
+            return new Tag("form", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -31055,7 +31055,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("form", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("form", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -31073,7 +31073,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("form", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("form", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -31095,7 +31095,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("form", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("form", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -31121,7 +31121,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("form", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("form", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -31151,7 +31151,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("form", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("form", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -31185,7 +31185,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("form", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("form", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -31223,7 +31223,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("form", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("form", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -31265,7 +31265,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("form", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("form", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -31363,7 +31363,7 @@ namespace Eighty
             }
             if (disabled)
             {
-                array[i] = new Attr("disabled");
+                array[i] = Attr.Raw("disabled");
                 i++;
             }
             if (form != null)
@@ -31372,7 +31372,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("fieldset", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("fieldset", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -31394,7 +31394,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("fieldset", attrs.ToImmutableArray());
+            return new TagBuilder("fieldset", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -31403,7 +31403,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder fieldset(Attr attr1)
         {
-            return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -31412,7 +31412,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder fieldset(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -31421,7 +31421,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -31430,7 +31430,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -31439,7 +31439,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -31448,7 +31448,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -31457,7 +31457,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -31466,7 +31466,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -31522,7 +31522,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("fieldset", ImmutableArray.Create<Attr>(), children);
+            return new Tag("fieldset", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -31536,7 +31536,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("fieldset", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("fieldset", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -31554,7 +31554,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("fieldset", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("fieldset", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -31576,7 +31576,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("fieldset", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("fieldset", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -31602,7 +31602,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("fieldset", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("fieldset", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -31632,7 +31632,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("fieldset", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("fieldset", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -31666,7 +31666,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("fieldset", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("fieldset", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -31704,7 +31704,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("fieldset", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("fieldset", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -31746,7 +31746,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("fieldset", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("fieldset", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -31833,7 +31833,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("label", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("label", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -31855,7 +31855,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("label", attrs.ToImmutableArray());
+            return new TagBuilder("label", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -31864,7 +31864,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder label(Attr attr1)
         {
-            return new TagBuilder("label", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("label", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -31873,7 +31873,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder label(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("label", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("label", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -31882,7 +31882,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder label(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("label", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("label", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -31891,7 +31891,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("label", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("label", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -31900,7 +31900,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("label", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("label", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -31909,7 +31909,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("label", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("label", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -31918,7 +31918,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("label", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("label", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -31927,7 +31927,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("label", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("label", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -31983,7 +31983,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("label", ImmutableArray.Create<Attr>(), children);
+            return new Tag("label", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -31997,7 +31997,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("label", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("label", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -32015,7 +32015,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("label", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("label", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -32037,7 +32037,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("label", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("label", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -32063,7 +32063,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("label", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("label", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -32093,7 +32093,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("label", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("label", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -32127,7 +32127,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("label", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("label", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -32165,7 +32165,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("label", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("label", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -32207,7 +32207,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("label", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("label", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -32465,27 +32465,27 @@ namespace Eighty
             }
             if (autofocus)
             {
-                array[i] = new Attr("autofocus");
+                array[i] = Attr.Raw("autofocus");
                 i++;
             }
             if (@checked)
             {
-                array[i] = new Attr("checked");
+                array[i] = Attr.Raw("checked");
                 i++;
             }
             if (disabled)
             {
-                array[i] = new Attr("disabled");
+                array[i] = Attr.Raw("disabled");
                 i++;
             }
             if (@readonly)
             {
-                array[i] = new Attr("readonly");
+                array[i] = Attr.Raw("readonly");
                 i++;
             }
             if (required)
             {
-                array[i] = new Attr("required");
+                array[i] = Attr.Raw("required");
                 i++;
             }
             if (src != null)
@@ -32560,11 +32560,11 @@ namespace Eighty
             }
             if (formnovalidate)
             {
-                array[i] = new Attr("formnovalidate");
+                array[i] = Attr.Raw("formnovalidate");
                 i++;
             }
 
-            return new TagBuilder("input", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("input", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -32586,7 +32586,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("input", attrs.ToImmutableArray());
+            return new TagBuilder("input", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -32595,7 +32595,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder input(Attr attr1)
         {
-            return new TagBuilder("input", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("input", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -32604,7 +32604,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder input(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("input", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("input", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -32613,7 +32613,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder input(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("input", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("input", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -32622,7 +32622,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("input", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("input", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -32631,7 +32631,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("input", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("input", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -32640,7 +32640,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("input", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("input", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -32649,7 +32649,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("input", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("input", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -32658,7 +32658,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("input", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("input", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -32714,7 +32714,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("input", ImmutableArray.Create<Attr>(), children);
+            return new Tag("input", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -32728,7 +32728,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("input", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("input", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -32746,7 +32746,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("input", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("input", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -32768,7 +32768,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("input", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("input", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -32794,7 +32794,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("input", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("input", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -32824,7 +32824,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("input", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("input", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -32858,7 +32858,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("input", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("input", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -32896,7 +32896,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("input", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("input", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -32938,7 +32938,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("input", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("input", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -33101,12 +33101,12 @@ namespace Eighty
             }
             if (autofocus)
             {
-                array[i] = new Attr("autofocus");
+                array[i] = Attr.Raw("autofocus");
                 i++;
             }
             if (disabled)
             {
-                array[i] = new Attr("disabled");
+                array[i] = Attr.Raw("disabled");
                 i++;
             }
             if (src != null)
@@ -33151,11 +33151,11 @@ namespace Eighty
             }
             if (formnovalidate)
             {
-                array[i] = new Attr("formnovalidate");
+                array[i] = Attr.Raw("formnovalidate");
                 i++;
             }
 
-            return new TagBuilder("button", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("button", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -33177,7 +33177,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("button", attrs.ToImmutableArray());
+            return new TagBuilder("button", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -33186,7 +33186,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder button(Attr attr1)
         {
-            return new TagBuilder("button", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("button", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -33195,7 +33195,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder button(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("button", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("button", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -33204,7 +33204,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder button(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("button", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("button", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -33213,7 +33213,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("button", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("button", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -33222,7 +33222,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("button", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("button", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -33231,7 +33231,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("button", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("button", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -33240,7 +33240,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("button", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("button", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -33249,7 +33249,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("button", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("button", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -33305,7 +33305,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("button", ImmutableArray.Create<Attr>(), children);
+            return new Tag("button", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -33319,7 +33319,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("button", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("button", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -33337,7 +33337,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("button", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("button", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -33359,7 +33359,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("button", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("button", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -33385,7 +33385,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("button", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("button", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -33415,7 +33415,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("button", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("button", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -33449,7 +33449,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("button", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("button", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -33487,7 +33487,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("button", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("button", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -33529,7 +33529,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("button", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("button", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -33707,22 +33707,22 @@ namespace Eighty
             }
             if (autofocus)
             {
-                array[i] = new Attr("autofocus");
+                array[i] = Attr.Raw("autofocus");
                 i++;
             }
             if (disabled)
             {
-                array[i] = new Attr("disabled");
+                array[i] = Attr.Raw("disabled");
                 i++;
             }
             if (@readonly)
             {
-                array[i] = new Attr("readonly");
+                array[i] = Attr.Raw("readonly");
                 i++;
             }
             if (required)
             {
-                array[i] = new Attr("required");
+                array[i] = Attr.Raw("required");
                 i++;
             }
             if (src != null)
@@ -33746,7 +33746,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("textarea", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("textarea", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -33768,7 +33768,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("textarea", attrs.ToImmutableArray());
+            return new TagBuilder("textarea", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -33777,7 +33777,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder textarea(Attr attr1)
         {
-            return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -33786,7 +33786,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder textarea(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -33795,7 +33795,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -33804,7 +33804,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -33813,7 +33813,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -33822,7 +33822,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -33831,7 +33831,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -33840,7 +33840,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -33896,7 +33896,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("textarea", ImmutableArray.Create<Attr>(), children);
+            return new Tag("textarea", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -33910,7 +33910,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("textarea", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("textarea", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -33928,7 +33928,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("textarea", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("textarea", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -33950,7 +33950,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("textarea", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("textarea", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -33976,7 +33976,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("textarea", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("textarea", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -34006,7 +34006,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("textarea", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("textarea", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -34040,7 +34040,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("textarea", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("textarea", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -34078,7 +34078,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("textarea", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("textarea", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -34120,7 +34120,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("textarea", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("textarea", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -34197,7 +34197,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("datalist", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("datalist", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -34219,7 +34219,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("datalist", attrs.ToImmutableArray());
+            return new TagBuilder("datalist", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -34228,7 +34228,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder datalist(Attr attr1)
         {
-            return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -34237,7 +34237,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder datalist(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -34246,7 +34246,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -34255,7 +34255,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -34264,7 +34264,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -34273,7 +34273,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -34282,7 +34282,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -34291,7 +34291,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -34347,7 +34347,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("datalist", ImmutableArray.Create<Attr>(), children);
+            return new Tag("datalist", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -34361,7 +34361,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("datalist", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("datalist", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -34379,7 +34379,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("datalist", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("datalist", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -34401,7 +34401,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("datalist", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("datalist", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -34427,7 +34427,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("datalist", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("datalist", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -34457,7 +34457,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("datalist", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("datalist", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -34491,7 +34491,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("datalist", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("datalist", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -34529,7 +34529,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("datalist", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("datalist", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -34571,7 +34571,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("datalist", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("datalist", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -34664,11 +34664,11 @@ namespace Eighty
             }
             if (disabled)
             {
-                array[i] = new Attr("disabled");
+                array[i] = Attr.Raw("disabled");
                 i++;
             }
 
-            return new TagBuilder("optgroup", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("optgroup", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -34690,7 +34690,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("optgroup", attrs.ToImmutableArray());
+            return new TagBuilder("optgroup", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -34699,7 +34699,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder optgroup(Attr attr1)
         {
-            return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -34708,7 +34708,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder optgroup(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -34717,7 +34717,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -34726,7 +34726,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -34735,7 +34735,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -34744,7 +34744,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -34753,7 +34753,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -34762,7 +34762,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -34818,7 +34818,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("optgroup", ImmutableArray.Create<Attr>(), children);
+            return new Tag("optgroup", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -34832,7 +34832,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("optgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("optgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -34850,7 +34850,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("optgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("optgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -34872,7 +34872,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("optgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("optgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -34898,7 +34898,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("optgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("optgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -34928,7 +34928,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("optgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("optgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -34962,7 +34962,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("optgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("optgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -35000,7 +35000,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("optgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("optgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -35042,7 +35042,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("optgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("optgroup", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -35170,17 +35170,17 @@ namespace Eighty
             }
             if (autofocus)
             {
-                array[i] = new Attr("autofocus");
+                array[i] = Attr.Raw("autofocus");
                 i++;
             }
             if (disabled)
             {
-                array[i] = new Attr("disabled");
+                array[i] = Attr.Raw("disabled");
                 i++;
             }
             if (required)
             {
-                array[i] = new Attr("required");
+                array[i] = Attr.Raw("required");
                 i++;
             }
             if (form != null)
@@ -35189,7 +35189,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("select", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("select", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -35211,7 +35211,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("select", attrs.ToImmutableArray());
+            return new TagBuilder("select", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -35220,7 +35220,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder select(Attr attr1)
         {
-            return new TagBuilder("select", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("select", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -35229,7 +35229,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder select(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("select", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("select", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -35238,7 +35238,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder select(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("select", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("select", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -35247,7 +35247,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("select", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("select", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -35256,7 +35256,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("select", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("select", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -35265,7 +35265,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("select", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("select", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -35274,7 +35274,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("select", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("select", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -35283,7 +35283,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("select", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("select", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -35339,7 +35339,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("select", ImmutableArray.Create<Attr>(), children);
+            return new Tag("select", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -35353,7 +35353,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("select", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("select", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -35371,7 +35371,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("select", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("select", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -35393,7 +35393,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("select", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("select", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -35419,7 +35419,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("select", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("select", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -35449,7 +35449,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("select", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("select", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -35483,7 +35483,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("select", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("select", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -35521,7 +35521,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("select", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("select", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -35563,7 +35563,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("select", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("select", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -35671,16 +35671,16 @@ namespace Eighty
             }
             if (disabled)
             {
-                array[i] = new Attr("disabled");
+                array[i] = Attr.Raw("disabled");
                 i++;
             }
             if (selected)
             {
-                array[i] = new Attr("selected");
+                array[i] = Attr.Raw("selected");
                 i++;
             }
 
-            return new TagBuilder("option", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("option", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -35702,7 +35702,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("option", attrs.ToImmutableArray());
+            return new TagBuilder("option", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -35711,7 +35711,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder option(Attr attr1)
         {
-            return new TagBuilder("option", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("option", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -35720,7 +35720,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder option(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("option", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("option", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -35729,7 +35729,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder option(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("option", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("option", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -35738,7 +35738,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("option", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("option", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -35747,7 +35747,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("option", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("option", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -35756,7 +35756,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("option", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("option", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -35765,7 +35765,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("option", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("option", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -35774,7 +35774,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("option", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("option", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -35830,7 +35830,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("option", ImmutableArray.Create<Attr>(), children);
+            return new Tag("option", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -35844,7 +35844,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("option", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("option", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -35862,7 +35862,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("option", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("option", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -35884,7 +35884,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("option", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("option", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -35910,7 +35910,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("option", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("option", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -35940,7 +35940,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("option", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("option", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -35974,7 +35974,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("option", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("option", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -36012,7 +36012,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("option", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("option", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -36054,7 +36054,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("option", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("option", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -36131,7 +36131,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("legend", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("legend", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -36153,7 +36153,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("legend", attrs.ToImmutableArray());
+            return new TagBuilder("legend", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -36162,7 +36162,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder legend(Attr attr1)
         {
-            return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -36171,7 +36171,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder legend(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -36180,7 +36180,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder legend(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -36189,7 +36189,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -36198,7 +36198,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -36207,7 +36207,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -36216,7 +36216,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -36225,7 +36225,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -36281,7 +36281,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("legend", ImmutableArray.Create<Attr>(), children);
+            return new Tag("legend", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -36295,7 +36295,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("legend", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("legend", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -36313,7 +36313,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("legend", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("legend", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -36335,7 +36335,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("legend", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("legend", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -36361,7 +36361,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("legend", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("legend", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -36391,7 +36391,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("legend", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("legend", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -36425,7 +36425,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("legend", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("legend", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -36463,7 +36463,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("legend", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("legend", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -36505,7 +36505,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("legend", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("legend", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -36652,7 +36652,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("meter", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("meter", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -36674,7 +36674,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("meter", attrs.ToImmutableArray());
+            return new TagBuilder("meter", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -36683,7 +36683,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder meter(Attr attr1)
         {
-            return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -36692,7 +36692,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder meter(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -36701,7 +36701,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder meter(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -36710,7 +36710,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -36719,7 +36719,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -36728,7 +36728,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -36737,7 +36737,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -36746,7 +36746,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -36802,7 +36802,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("meter", ImmutableArray.Create<Attr>(), children);
+            return new Tag("meter", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -36816,7 +36816,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("meter", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("meter", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -36834,7 +36834,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("meter", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("meter", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -36856,7 +36856,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("meter", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("meter", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -36882,7 +36882,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("meter", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("meter", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -36912,7 +36912,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("meter", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("meter", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -36946,7 +36946,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("meter", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("meter", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -36984,7 +36984,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("meter", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("meter", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -37026,7 +37026,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("meter", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("meter", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -37133,7 +37133,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("output", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("output", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -37155,7 +37155,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("output", attrs.ToImmutableArray());
+            return new TagBuilder("output", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -37164,7 +37164,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder output(Attr attr1)
         {
-            return new TagBuilder("output", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("output", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -37173,7 +37173,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder output(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("output", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("output", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -37182,7 +37182,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder output(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("output", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("output", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -37191,7 +37191,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("output", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("output", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -37200,7 +37200,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("output", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("output", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -37209,7 +37209,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("output", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("output", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -37218,7 +37218,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("output", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("output", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -37227,7 +37227,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("output", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("output", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -37283,7 +37283,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("output", ImmutableArray.Create<Attr>(), children);
+            return new Tag("output", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -37297,7 +37297,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("output", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("output", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -37315,7 +37315,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("output", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("output", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -37337,7 +37337,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("output", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("output", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -37363,7 +37363,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("output", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("output", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -37393,7 +37393,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("output", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("output", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -37427,7 +37427,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("output", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("output", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -37465,7 +37465,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("output", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("output", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -37507,7 +37507,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("output", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("output", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -37604,7 +37604,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("progress", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("progress", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -37626,7 +37626,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("progress", attrs.ToImmutableArray());
+            return new TagBuilder("progress", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -37635,7 +37635,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder progress(Attr attr1)
         {
-            return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -37644,7 +37644,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder progress(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -37653,7 +37653,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder progress(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -37662,7 +37662,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -37671,7 +37671,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -37680,7 +37680,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -37689,7 +37689,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -37698,7 +37698,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -37754,7 +37754,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("progress", ImmutableArray.Create<Attr>(), children);
+            return new Tag("progress", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -37768,7 +37768,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("progress", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("progress", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -37786,7 +37786,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("progress", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("progress", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -37808,7 +37808,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("progress", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("progress", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -37834,7 +37834,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("progress", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("progress", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -37864,7 +37864,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("progress", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("progress", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -37898,7 +37898,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("progress", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("progress", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -37936,7 +37936,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("progress", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("progress", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -37978,7 +37978,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("progress", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("progress", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -38075,7 +38075,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("menu", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("menu", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -38097,7 +38097,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("menu", attrs.ToImmutableArray());
+            return new TagBuilder("menu", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -38106,7 +38106,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder menu(Attr attr1)
         {
-            return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -38115,7 +38115,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder menu(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -38124,7 +38124,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder menu(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -38133,7 +38133,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -38142,7 +38142,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -38151,7 +38151,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -38160,7 +38160,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -38169,7 +38169,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -38225,7 +38225,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("menu", ImmutableArray.Create<Attr>(), children);
+            return new Tag("menu", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -38239,7 +38239,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("menu", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("menu", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -38257,7 +38257,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("menu", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("menu", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -38279,7 +38279,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("menu", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("menu", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -38305,7 +38305,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("menu", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("menu", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -38335,7 +38335,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("menu", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("menu", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -38369,7 +38369,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("menu", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("menu", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -38407,7 +38407,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("menu", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("menu", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -38449,7 +38449,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("menu", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("menu", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -38592,21 +38592,21 @@ namespace Eighty
             }
             if (disabled)
             {
-                array[i] = new Attr("disabled");
+                array[i] = Attr.Raw("disabled");
                 i++;
             }
             if (@default)
             {
-                array[i] = new Attr("default");
+                array[i] = Attr.Raw("default");
                 i++;
             }
             if (@checked)
             {
-                array[i] = new Attr("checked");
+                array[i] = Attr.Raw("checked");
                 i++;
             }
 
-            return new TagBuilder("menuitem", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("menuitem", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -38628,7 +38628,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("menuitem", attrs.ToImmutableArray());
+            return new TagBuilder("menuitem", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -38637,7 +38637,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder menuitem(Attr attr1)
         {
-            return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -38646,7 +38646,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder menuitem(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -38655,7 +38655,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -38664,7 +38664,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -38673,7 +38673,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -38682,7 +38682,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -38691,7 +38691,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -38700,7 +38700,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -38756,7 +38756,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("menuitem", ImmutableArray.Create<Attr>(), children);
+            return new Tag("menuitem", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -38770,7 +38770,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("menuitem", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("menuitem", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -38788,7 +38788,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("menuitem", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("menuitem", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -38810,7 +38810,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("menuitem", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("menuitem", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -38836,7 +38836,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("menuitem", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("menuitem", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -38866,7 +38866,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("menuitem", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("menuitem", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -38900,7 +38900,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("menuitem", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("menuitem", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -38938,7 +38938,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("menuitem", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("menuitem", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -38980,7 +38980,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("menuitem", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("menuitem", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -39063,11 +39063,11 @@ namespace Eighty
             }
             if (open)
             {
-                array[i] = new Attr("open");
+                array[i] = Attr.Raw("open");
                 i++;
             }
 
-            return new TagBuilder("dialog", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("dialog", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -39089,7 +39089,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("dialog", attrs.ToImmutableArray());
+            return new TagBuilder("dialog", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -39098,7 +39098,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dialog(Attr attr1)
         {
-            return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -39107,7 +39107,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dialog(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -39116,7 +39116,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -39125,7 +39125,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -39134,7 +39134,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -39143,7 +39143,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -39152,7 +39152,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -39161,7 +39161,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -39217,7 +39217,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("dialog", ImmutableArray.Create<Attr>(), children);
+            return new Tag("dialog", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -39231,7 +39231,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("dialog", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("dialog", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -39249,7 +39249,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("dialog", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("dialog", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -39271,7 +39271,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("dialog", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("dialog", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -39297,7 +39297,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("dialog", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("dialog", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -39327,7 +39327,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("dialog", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("dialog", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -39361,7 +39361,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("dialog", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("dialog", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -39399,7 +39399,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("dialog", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("dialog", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -39441,7 +39441,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("dialog", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("dialog", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -39524,11 +39524,11 @@ namespace Eighty
             }
             if (open)
             {
-                array[i] = new Attr("open");
+                array[i] = Attr.Raw("open");
                 i++;
             }
 
-            return new TagBuilder("details", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("details", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -39550,7 +39550,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("details", attrs.ToImmutableArray());
+            return new TagBuilder("details", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -39559,7 +39559,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder details(Attr attr1)
         {
-            return new TagBuilder("details", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("details", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -39568,7 +39568,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder details(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("details", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("details", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -39577,7 +39577,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder details(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("details", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("details", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -39586,7 +39586,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("details", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("details", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -39595,7 +39595,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("details", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("details", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -39604,7 +39604,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("details", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("details", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -39613,7 +39613,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("details", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("details", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -39622,7 +39622,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("details", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("details", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -39678,7 +39678,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("details", ImmutableArray.Create<Attr>(), children);
+            return new Tag("details", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -39692,7 +39692,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("details", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("details", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -39710,7 +39710,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("details", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("details", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -39732,7 +39732,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("details", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("details", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -39758,7 +39758,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("details", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("details", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -39788,7 +39788,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("details", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("details", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -39822,7 +39822,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("details", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("details", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -39860,7 +39860,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("details", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("details", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -39902,7 +39902,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("details", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("details", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -39979,7 +39979,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("summary", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("summary", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -40001,7 +40001,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("summary", attrs.ToImmutableArray());
+            return new TagBuilder("summary", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -40010,7 +40010,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder summary(Attr attr1)
         {
-            return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -40019,7 +40019,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder summary(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -40028,7 +40028,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder summary(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -40037,7 +40037,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -40046,7 +40046,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -40055,7 +40055,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -40064,7 +40064,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -40073,7 +40073,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -40129,7 +40129,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("summary", ImmutableArray.Create<Attr>(), children);
+            return new Tag("summary", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -40143,7 +40143,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("summary", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("summary", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -40161,7 +40161,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("summary", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("summary", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -40183,7 +40183,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("summary", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("summary", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -40209,7 +40209,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("summary", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("summary", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -40239,7 +40239,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("summary", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("summary", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -40273,7 +40273,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("summary", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("summary", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -40311,7 +40311,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("summary", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("summary", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -40353,7 +40353,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("summary", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("summary", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -40500,7 +40500,7 @@ namespace Eighty
                 i++;
             }
 
-            return new SelfClosingTag("img", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new SelfClosingTag("img", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -40520,7 +40520,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new SelfClosingTag("img", attrs.ToImmutableArray());
+            return new SelfClosingTag("img", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -40529,7 +40529,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html img(Attr attr1)
         {
-            return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1));
+            return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -40538,7 +40538,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html img(Attr attr1, Attr attr2)
         {
-            return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1, attr2));
+            return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -40547,7 +40547,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html img(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -40556,7 +40556,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html img(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -40565,7 +40565,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html img(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -40574,7 +40574,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html img(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -40583,7 +40583,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html img(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -40592,7 +40592,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html img(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -40720,26 +40720,26 @@ namespace Eighty
             }
             if (autoplay)
             {
-                array[i] = new Attr("autoplay");
+                array[i] = Attr.Raw("autoplay");
                 i++;
             }
             if (loop)
             {
-                array[i] = new Attr("loop");
+                array[i] = Attr.Raw("loop");
                 i++;
             }
             if (muted)
             {
-                array[i] = new Attr("muted");
+                array[i] = Attr.Raw("muted");
                 i++;
             }
             if (controls)
             {
-                array[i] = new Attr("controls");
+                array[i] = Attr.Raw("controls");
                 i++;
             }
 
-            return new TagBuilder("audio", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("audio", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -40761,7 +40761,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("audio", attrs.ToImmutableArray());
+            return new TagBuilder("audio", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -40770,7 +40770,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder audio(Attr attr1)
         {
-            return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -40779,7 +40779,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder audio(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -40788,7 +40788,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder audio(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -40797,7 +40797,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -40806,7 +40806,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -40815,7 +40815,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -40824,7 +40824,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -40833,7 +40833,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -40889,7 +40889,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("audio", ImmutableArray.Create<Attr>(), children);
+            return new Tag("audio", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -40903,7 +40903,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("audio", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("audio", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -40921,7 +40921,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("audio", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("audio", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -40943,7 +40943,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("audio", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("audio", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -40969,7 +40969,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("audio", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("audio", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -40999,7 +40999,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("audio", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("audio", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -41033,7 +41033,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("audio", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("audio", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -41071,7 +41071,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("audio", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("audio", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -41113,7 +41113,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("audio", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("audio", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -41266,22 +41266,22 @@ namespace Eighty
             }
             if (autoplay)
             {
-                array[i] = new Attr("autoplay");
+                array[i] = Attr.Raw("autoplay");
                 i++;
             }
             if (loop)
             {
-                array[i] = new Attr("loop");
+                array[i] = Attr.Raw("loop");
                 i++;
             }
             if (muted)
             {
-                array[i] = new Attr("muted");
+                array[i] = Attr.Raw("muted");
                 i++;
             }
             if (controls)
             {
-                array[i] = new Attr("controls");
+                array[i] = Attr.Raw("controls");
                 i++;
             }
             if (crossorigin != null)
@@ -41290,7 +41290,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("video", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("video", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -41312,7 +41312,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("video", attrs.ToImmutableArray());
+            return new TagBuilder("video", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -41321,7 +41321,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder video(Attr attr1)
         {
-            return new TagBuilder("video", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("video", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -41330,7 +41330,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder video(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("video", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("video", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -41339,7 +41339,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder video(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("video", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("video", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -41348,7 +41348,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("video", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("video", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -41357,7 +41357,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("video", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("video", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -41366,7 +41366,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("video", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("video", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -41375,7 +41375,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("video", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("video", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -41384,7 +41384,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("video", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("video", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -41440,7 +41440,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("video", ImmutableArray.Create<Attr>(), children);
+            return new Tag("video", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -41454,7 +41454,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("video", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("video", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -41472,7 +41472,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("video", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("video", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -41494,7 +41494,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("video", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("video", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -41520,7 +41520,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("video", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("video", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -41550,7 +41550,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("video", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("video", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -41584,7 +41584,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("video", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("video", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -41622,7 +41622,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("video", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("video", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -41664,7 +41664,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("video", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("video", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -41777,11 +41777,11 @@ namespace Eighty
             }
             if (@default)
             {
-                array[i] = new Attr("default");
+                array[i] = Attr.Raw("default");
                 i++;
             }
 
-            return new SelfClosingTag("track", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new SelfClosingTag("track", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -41801,7 +41801,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new SelfClosingTag("track", attrs.ToImmutableArray());
+            return new SelfClosingTag("track", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -41810,7 +41810,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html track(Attr attr1)
         {
-            return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1));
+            return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -41819,7 +41819,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html track(Attr attr1, Attr attr2)
         {
-            return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1, attr2));
+            return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -41828,7 +41828,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html track(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -41837,7 +41837,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html track(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -41846,7 +41846,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html track(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -41855,7 +41855,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html track(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -41864,7 +41864,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html track(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -41873,7 +41873,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html track(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -41990,7 +41990,7 @@ namespace Eighty
                 i++;
             }
 
-            return new SelfClosingTag("embed", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new SelfClosingTag("embed", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -42010,7 +42010,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new SelfClosingTag("embed", attrs.ToImmutableArray());
+            return new SelfClosingTag("embed", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -42019,7 +42019,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html embed(Attr attr1)
         {
-            return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1));
+            return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -42028,7 +42028,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html embed(Attr attr1, Attr attr2)
         {
-            return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1, attr2));
+            return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -42037,7 +42037,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html embed(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -42046,7 +42046,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -42055,7 +42055,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -42064,7 +42064,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -42073,7 +42073,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -42082,7 +42082,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -42209,7 +42209,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("object", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("object", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -42231,7 +42231,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("object", attrs.ToImmutableArray());
+            return new TagBuilder("object", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -42240,7 +42240,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder @object(Attr attr1)
         {
-            return new TagBuilder("object", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("object", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -42249,7 +42249,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder @object(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("object", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("object", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -42258,7 +42258,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder @object(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("object", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("object", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -42267,7 +42267,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("object", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("object", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -42276,7 +42276,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("object", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("object", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -42285,7 +42285,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("object", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("object", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -42294,7 +42294,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("object", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("object", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -42303,7 +42303,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("object", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("object", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -42359,7 +42359,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("object", ImmutableArray.Create<Attr>(), children);
+            return new Tag("object", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -42373,7 +42373,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("object", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("object", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -42391,7 +42391,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("object", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("object", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -42413,7 +42413,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("object", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("object", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -42439,7 +42439,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("object", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("object", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -42469,7 +42469,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("object", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("object", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -42503,7 +42503,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("object", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("object", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -42541,7 +42541,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("object", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("object", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -42583,7 +42583,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("object", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("object", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -42680,7 +42680,7 @@ namespace Eighty
                 i++;
             }
 
-            return new SelfClosingTag("param", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new SelfClosingTag("param", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -42700,7 +42700,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new SelfClosingTag("param", attrs.ToImmutableArray());
+            return new SelfClosingTag("param", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -42709,7 +42709,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html param(Attr attr1)
         {
-            return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1));
+            return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -42718,7 +42718,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html param(Attr attr1, Attr attr2)
         {
-            return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1, attr2));
+            return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -42727,7 +42727,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html param(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -42736,7 +42736,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html param(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -42745,7 +42745,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html param(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -42754,7 +42754,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html param(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -42763,7 +42763,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html param(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -42772,7 +42772,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html param(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -42849,7 +42849,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("picture", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("picture", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -42871,7 +42871,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("picture", attrs.ToImmutableArray());
+            return new TagBuilder("picture", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -42880,7 +42880,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder picture(Attr attr1)
         {
-            return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -42889,7 +42889,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder picture(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -42898,7 +42898,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder picture(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -42907,7 +42907,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -42916,7 +42916,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -42925,7 +42925,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -42934,7 +42934,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -42943,7 +42943,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -42999,7 +42999,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("picture", ImmutableArray.Create<Attr>(), children);
+            return new Tag("picture", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -43013,7 +43013,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("picture", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("picture", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -43031,7 +43031,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("picture", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("picture", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -43053,7 +43053,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("picture", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("picture", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -43079,7 +43079,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("picture", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("picture", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -43109,7 +43109,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("picture", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("picture", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -43143,7 +43143,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("picture", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("picture", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -43181,7 +43181,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("picture", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("picture", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -43223,7 +43223,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("picture", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("picture", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -43320,7 +43320,7 @@ namespace Eighty
                 i++;
             }
 
-            return new SelfClosingTag("source", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new SelfClosingTag("source", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -43340,7 +43340,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new SelfClosingTag("source", attrs.ToImmutableArray());
+            return new SelfClosingTag("source", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -43349,7 +43349,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html source(Attr attr1)
         {
-            return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1));
+            return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -43358,7 +43358,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html source(Attr attr1, Attr attr2)
         {
-            return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1, attr2));
+            return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -43367,7 +43367,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html source(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -43376,7 +43376,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html source(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -43385,7 +43385,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html source(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -43394,7 +43394,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html source(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -43403,7 +43403,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html source(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -43412,7 +43412,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html source(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -43509,7 +43509,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("canvas", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("canvas", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -43531,7 +43531,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("canvas", attrs.ToImmutableArray());
+            return new TagBuilder("canvas", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -43540,7 +43540,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder canvas(Attr attr1)
         {
-            return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -43549,7 +43549,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder canvas(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -43558,7 +43558,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -43567,7 +43567,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -43576,7 +43576,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -43585,7 +43585,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -43594,7 +43594,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -43603,7 +43603,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -43659,7 +43659,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("canvas", ImmutableArray.Create<Attr>(), children);
+            return new Tag("canvas", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -43673,7 +43673,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("canvas", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("canvas", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -43691,7 +43691,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("canvas", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("canvas", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -43713,7 +43713,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("canvas", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("canvas", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -43739,7 +43739,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("canvas", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("canvas", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -43769,7 +43769,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("canvas", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("canvas", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -43803,7 +43803,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("canvas", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("canvas", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -43841,7 +43841,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("canvas", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("canvas", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -43883,7 +43883,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("canvas", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("canvas", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -43970,7 +43970,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("bdi", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("bdi", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -43992,7 +43992,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("bdi", attrs.ToImmutableArray());
+            return new TagBuilder("bdi", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -44001,7 +44001,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder bdi(Attr attr1)
         {
-            return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -44010,7 +44010,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder bdi(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -44019,7 +44019,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -44028,7 +44028,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -44037,7 +44037,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -44046,7 +44046,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -44055,7 +44055,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -44064,7 +44064,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -44120,7 +44120,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("bdi", ImmutableArray.Create<Attr>(), children);
+            return new Tag("bdi", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -44134,7 +44134,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("bdi", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("bdi", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -44152,7 +44152,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("bdi", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("bdi", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -44174,7 +44174,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("bdi", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("bdi", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -44200,7 +44200,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("bdi", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("bdi", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -44230,7 +44230,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("bdi", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("bdi", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -44264,7 +44264,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("bdi", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("bdi", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -44302,7 +44302,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("bdi", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("bdi", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -44344,7 +44344,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("bdi", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("bdi", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
 
         /// <summary>
@@ -44431,7 +44431,7 @@ namespace Eighty
                 i++;
             }
 
-            return new TagBuilder("bdo", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder("bdo", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }
 
         /// <summary>
@@ -44453,7 +44453,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder("bdo", attrs.ToImmutableArray());
+            return new TagBuilder("bdo", attrs.ToImmutableArray(), false);
         }
         
         /// <summary>
@@ -44462,7 +44462,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder bdo(Attr attr1)
         {
-            return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1));
+            return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1), false);
         }
 
         /// <summary>
@@ -44471,7 +44471,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder bdo(Attr attr1, Attr attr2)
         {
-            return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1, attr2));
+            return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1, attr2), false);
         }
 
         /// <summary>
@@ -44480,7 +44480,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3)
         {
-            return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1, attr2, attr3));
+            return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
         }
 
         /// <summary>
@@ -44489,7 +44489,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
-            return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4));
+            return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
         }
 
         /// <summary>
@@ -44498,7 +44498,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
-            return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5));
+            return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
         }
 
         /// <summary>
@@ -44507,7 +44507,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
-            return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6));
+            return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
         }
 
         /// <summary>
@@ -44516,7 +44516,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
-            return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7));
+            return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
         }
 
         /// <summary>
@@ -44525,7 +44525,7 @@ namespace Eighty
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
         public static TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
-            return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8));
+            return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
         }
 
         /// <summary>
@@ -44581,7 +44581,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag("bdo", ImmutableArray.Create<Attr>(), children);
+            return new Tag("bdo", ImmutableArray.Create<Attr>(), children, false);
         }
         
         /// <summary>
@@ -44595,7 +44595,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag("bdo", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1));
+            return new Tag("bdo", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1), false);
         }
 
         /// <summary>
@@ -44613,7 +44613,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag("bdo", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2));
+            return new Tag("bdo", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2), false);
         }
 
         /// <summary>
@@ -44635,7 +44635,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag("bdo", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag("bdo", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3), false);
         }
 
         /// <summary>
@@ -44661,7 +44661,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag("bdo", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag("bdo", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4), false);
         }
 
         /// <summary>
@@ -44691,7 +44691,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag("bdo", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag("bdo", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), false);
         }
 
         /// <summary>
@@ -44725,7 +44725,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag("bdo", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag("bdo", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), false);
         }
 
         /// <summary>
@@ -44763,7 +44763,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag("bdo", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag("bdo", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), false);
         }
 
         /// <summary>
@@ -44805,7 +44805,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag("bdo", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag("bdo", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), false);
         }
     }
 }

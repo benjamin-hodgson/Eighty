@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text.Encodings.Web;
 
 namespace Eighty.Twenty
 {
@@ -10,7 +9,7 @@ namespace Eighty.Twenty
     /// </summary>
     public abstract partial class HtmlBuilder
     {
-        private TextWriter _writer;
+        private HtmlEncodingTextWriter _writer = default;
 
         /// <summary>
         /// Render the HTML into a <see cref="TextWriter"/>
@@ -23,20 +22,21 @@ namespace Eighty.Twenty
                 throw new ArgumentNullException(nameof(writer));
             }
 
-            if (_writer != null)
+            if (!_writer.IsDefault())
             {
                 throw new InvalidOperationException("Write is not re-entrant");
             }
 
-            _writer = writer;
+            _writer = new HtmlEncodingTextWriter(writer);
             
             try
             {
                 Build();
+                _writer.Flush();
             }
             finally
             {
-                _writer = null;
+                _writer = default;
             }
         }
 
@@ -59,11 +59,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
         protected TagBuilder Tag(string name, params Attr[] attrs)
         {
-            var safeName = HtmlEncoder.Default.Encode(name);
-            StartTag(safeName);
+            StartTag(name);
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder(safeName, _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder(name, this, true);
         }
         /// <summary>
         /// Write a tag which takes children.
@@ -71,11 +70,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
         protected TagBuilder Tag(string name, IEnumerable<Attr> attrs)
         {
-            var safeName = HtmlEncoder.Default.Encode(name);
-            StartTag(safeName);
+            StartTag(name);
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder(safeName, _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder(name, this, true);
         }
 
         /// <summary>
@@ -83,45 +81,52 @@ namespace Eighty.Twenty
         /// </summary>
         protected void SelfClosingTag(string name, params Attr[] attrs)
         {
-            StartTag(HtmlEncoder.Default.Encode(name));
+            StartTag(name);
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
         /// <summary>
         /// Write a tag which does not take children.
         /// </summary>
         protected void SelfClosingTag(string name, IEnumerable<Attr> attrs)
         {
-            StartTag(HtmlEncoder.Default.Encode(name));
+            StartTag(name);
             Attrs(attrs);
-            _writer.Write("/>");
+            _writer.WriteRaw("/>");
         }
 
         /// <summary>
         /// Write HTML-encoded text.
         /// </summary>
         /// <param name="text">The text to HTML-encode</param>
-        protected void Text(string text)
+        protected internal void Text(string text)
         {
-            _writer.Write(HtmlEncoder.Default.Encode(text));
+            _writer.Write(text);
         }
 
         /// <summary>
         /// Render a string without HTML-encoding it first.
         /// </summary>
         /// <param name="rawHtml">The pre-encoded string</param>
-        protected void Raw(string rawHtml)
+        protected internal void Raw(string rawHtml)
         {
-            _writer.Write(rawHtml);
+            _writer.WriteRaw(rawHtml);
         }
 
         /// <summary>
         /// Write HTML.
         /// </summary>
         /// <param name="html">The HTML to write.</param>
-        protected void Write(Html html)
+        [Obsolete("This method has been renamed to Html()")]
+        protected void Write(Html html) => Html(html);
+
+        /// <summary>
+        /// Write HTML.
+        /// </summary>
+        /// <param name="html">The HTML to write.</param>
+        protected void Html(Html html)
         {
-            html.Write(_writer);
+            html.WriteImpl(ref _writer);
         }
 
         /// <summary>
@@ -132,10 +137,15 @@ namespace Eighty.Twenty
 
 
 
-        private void StartTag(string safeName)
+        private void StartTag(string name)
         {
-            _writer.Write('<');
-            _writer.Write(safeName);
+            _writer.WriteRaw('<');
+            _writer.Write(name);
+        }
+        private void StartTagRaw(string name)
+        {
+            _writer.WriteRaw('<');
+            _writer.WriteRaw(name);
         }
         private void Attrs(params Attr[] attrs)
         {
@@ -213,8 +223,8 @@ namespace Eighty.Twenty
         }
         private void Attr(Attr attr)
         {
-            _writer.Write(' ');
-            attr.Write(_writer);
+            _writer.WriteRaw(' ');
+            attr.Write(ref _writer);
         }
     }
 }

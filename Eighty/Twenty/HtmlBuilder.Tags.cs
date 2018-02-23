@@ -17,7 +17,7 @@ namespace Eighty.Twenty
         protected TagBuilder doctypeHtml()
         {
             doctype();
-            return Tag("html");
+            return html();
         }
     }
 }

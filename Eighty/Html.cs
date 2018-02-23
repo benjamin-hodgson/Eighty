@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
-using System.Text.Encodings.Web;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -16,8 +15,8 @@ namespace Eighty
     {
         private protected Html() { }
 
-        internal abstract void WriteImpl(TextWriter writer);
-        internal abstract Task WriteAsyncImpl(TextWriter writer);
+        internal abstract void WriteImpl(ref HtmlEncodingTextWriter writer);
+        internal abstract Task WriteAsyncImpl(AsyncHtmlEncodingTextWriter writer);
 
         /// <summary>
         /// Write the HTML to a <see cref="TextWriter"/>
@@ -29,20 +28,26 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(writer));
             }
-            WriteImpl(writer);
+
+            var htmlEncodingTextWriter = new HtmlEncodingTextWriter(writer);
+            WriteImpl(ref htmlEncodingTextWriter);
+            htmlEncodingTextWriter.FlushAndClear();
         }
 
         /// <summary>
         /// Write the HTML to a <see cref="TextWriter"/>
         /// </summary>
         /// <param name="writer">The writer</param>
-        public Task WriteAsync(TextWriter writer)
+        public async Task WriteAsync(TextWriter writer)
         {
             if (writer == null)
             {
                 throw new ArgumentNullException(nameof(writer));
             }
-            return WriteAsyncImpl(writer);
+
+            var htmlEncodingTextWriter = new AsyncHtmlEncodingTextWriter(writer);
+            await WriteAsyncImpl(htmlEncodingTextWriter).ConfigureAwait(false);
+            await htmlEncodingTextWriter.FlushAndClear().ConfigureAwait(false);
         }
 
         /// <summary>
@@ -71,7 +76,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new TagBuilder(HtmlEncoder.Default.Encode(name), attrs.ToImmutableArray());
+            return new TagBuilder(name, attrs.ToImmutableArray(), true);
         }
 
 
@@ -117,7 +122,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag(HtmlEncoder.Default.Encode(name), ImmutableArray.Create<Attr>(), children);
+            return new Tag(name, ImmutableArray.Create<Attr>(), children, true);
         }
 
         
@@ -136,7 +141,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(attrs));
             }
-            return new SelfClosingTag(HtmlEncoder.Default.Encode(name), attrs.ToImmutableArray());
+            return new SelfClosingTag(name, attrs.ToImmutableArray(), true);
         }
 
 
@@ -151,7 +156,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(text));
             }
-            return Raw(HtmlEncoder.Default.Encode(text));
+            return new Text(text);
         }
 
         /// <summary>

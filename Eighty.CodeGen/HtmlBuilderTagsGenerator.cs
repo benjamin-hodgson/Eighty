@@ -35,10 +35,10 @@ namespace Eighty.Twenty
         protected TagBuilder {CsId(name)}({Params(attrs)}
         )
         {{
-            StartTag(""{name}"");
+            StartTagRaw(""{name}"");
             {WriteAttrs(attrs)}
-            _writer.Write('>');
-            return new TagBuilder(""{name}"", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder(""{name}"", this, false);
         }}
 
         /// <summary>
@@ -47,10 +47,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref=""TagBuilder""/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder {CsId(name)}(params Attr[] attrs)
         {{
-            StartTag(""{name}"");
+            StartTagRaw(""{name}"");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder(""{name}"", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder(""{name}"", this, false);
         }}
 
         /// <summary>
@@ -59,10 +59,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref=""TagBuilder""/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder {CsId(name)}(IEnumerable<Attr> attrs)
         {{
-            StartTag(""{name}"");
+            StartTagRaw(""{name}"");
             Attrs(attrs);
-            _writer.Write('>');
-            return new TagBuilder(""{name}"", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder(""{name}"", this, false);
         }}
         {TagAttrs(name)}
 ";
@@ -74,9 +74,9 @@ namespace Eighty.Twenty
         protected void {CsId(name)}({Params(attrs)}
         )
         {{
-            StartTag(""{name}"");
+            StartTagRaw(""{name}"");
             {WriteAttrs(attrs)}
-            _writer.Write(""/>"");
+            _writer.WriteRaw(""/>"");
         }}
         
         /// <summary>
@@ -84,9 +84,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void {CsId(name)}(params Attr[] attrs)
         {{
-            StartTag(""{name}"");
+            StartTagRaw(""{name}"");
             Attrs(attrs);
-            _writer.Write(""/>"");
+            _writer.WriteRaw(""/>"");
         }}
         
         /// <summary>
@@ -94,9 +94,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void {CsId(name)}(IEnumerable<Attr> attrs)
         {{
-            StartTag(""{name}"");
+            StartTagRaw(""{name}"");
             Attrs(attrs);
-            _writer.Write(""/>"");
+            _writer.WriteRaw(""/>"");
         }}
         {SelfClosingTagAttrs(name)}
 ";
@@ -107,7 +107,7 @@ namespace Eighty.Twenty
                     ? $@"
             if ({CsId(a)})
             {{
-                Attr(new Eighty.Attr(""{a.Substring(1)}""));
+                Attr(Eighty.Attr.Raw(""{a.Substring(1)}""));
             }}"
                     : $@"
             if ({CsId(a)} != null)
@@ -123,10 +123,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref=""TagBuilder""/> which MUST be disposed exactly once, immediately after the children have been written</returns>
         protected TagBuilder {CsId(name)}({AttrParams(n)})
         {{
-            StartTag(""{name}"");
+            StartTagRaw(""{name}"");
             Attrs({AttrArgs(n)});
-            _writer.Write('>');
-            return new TagBuilder(""{name}"", _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder(""{name}"", this, false);
         }}"));
 
         private string SelfClosingTagAttrs(string name)
@@ -136,9 +136,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void {CsId(name)}({AttrParams(n)})
         {{
-            StartTag(""{name}"");
+            StartTagRaw(""{name}"");
             Attrs({AttrArgs(n)});
-            _writer.Write(""/>"");
+            _writer.WriteRaw(""/>"");
         }}"));
     }
 }

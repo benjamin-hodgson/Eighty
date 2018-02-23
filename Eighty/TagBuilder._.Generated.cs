@@ -17,7 +17,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child1));
             }
-            return new Tag(_name, _attrs, ImmutableArrayFactory.Create(child1));
+            return new Tag(_name, _attrs, ImmutableArrayFactory.Create(child1), _shouldEncodeName);
         }
 
         /// <summary>
@@ -34,7 +34,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child2));
             }
-            return new Tag(_name, _attrs, ImmutableArrayFactory.Create(child1, child2));
+            return new Tag(_name, _attrs, ImmutableArrayFactory.Create(child1, child2), _shouldEncodeName);
         }
 
         /// <summary>
@@ -55,7 +55,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child3));
             }
-            return new Tag(_name, _attrs, ImmutableArrayFactory.Create(child1, child2, child3));
+            return new Tag(_name, _attrs, ImmutableArrayFactory.Create(child1, child2, child3), _shouldEncodeName);
         }
 
         /// <summary>
@@ -80,7 +80,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child4));
             }
-            return new Tag(_name, _attrs, ImmutableArrayFactory.Create(child1, child2, child3, child4));
+            return new Tag(_name, _attrs, ImmutableArrayFactory.Create(child1, child2, child3, child4), _shouldEncodeName);
         }
 
         /// <summary>
@@ -109,7 +109,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child5));
             }
-            return new Tag(_name, _attrs, ImmutableArrayFactory.Create(child1, child2, child3, child4, child5));
+            return new Tag(_name, _attrs, ImmutableArrayFactory.Create(child1, child2, child3, child4, child5), _shouldEncodeName);
         }
 
         /// <summary>
@@ -142,7 +142,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child6));
             }
-            return new Tag(_name, _attrs, ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6));
+            return new Tag(_name, _attrs, ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6), _shouldEncodeName);
         }
 
         /// <summary>
@@ -179,7 +179,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child7));
             }
-            return new Tag(_name, _attrs, ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7));
+            return new Tag(_name, _attrs, ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7), _shouldEncodeName);
         }
 
         /// <summary>
@@ -220,7 +220,7 @@ namespace Eighty
             {
                 throw new ArgumentNullException(nameof(child8));
             }
-            return new Tag(_name, _attrs, ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8));
+            return new Tag(_name, _attrs, ImmutableArrayFactory.Create(child1, child2, child3, child4, child5, child6, child7, child8), _shouldEncodeName);
         }
     }
 }

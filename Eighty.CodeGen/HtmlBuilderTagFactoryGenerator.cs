@@ -11,7 +11,6 @@ namespace Eighty.CodeGen
 
             return $@"#region GeneratedCode
 using System;
-using System.Text.Encodings.Web;
 
 namespace Eighty.Twenty
 {{
@@ -31,11 +30,10 @@ namespace Eighty.Twenty
         /// <returns>A <see cref=""TagBuilder""/> which MUST be disposed after setting the tag's children.</returns>
         protected TagBuilder Tag(string name, {AttrParams(number)})
         {{
-            var safeName = HtmlEncoder.Default.Encode(name);
-            StartTag(safeName);
+            StartTag(name);
             Attrs({AttrArgs(number)});
-            _writer.Write('>');
-            return new TagBuilder(safeName, _writer);
+            _writer.WriteRaw('>');
+            return new TagBuilder(name, this, true);
         }}
 ";
         private string SelfClosingTagMethod(int number)
@@ -45,9 +43,9 @@ namespace Eighty.Twenty
         /// </summary>
         protected void SelfClosingTag(string name, {AttrParams(number)})
         {{
-            StartTag(HtmlEncoder.Default.Encode(name));
+            StartTag(name);
             Attrs({AttrArgs(number)});
-            _writer.Write(""/>"");
+            _writer.WriteRaw(""/>"");
         }}
 ";
     }

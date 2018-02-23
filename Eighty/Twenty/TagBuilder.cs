@@ -10,12 +10,14 @@ namespace Eighty.Twenty
     public readonly struct TagBuilder : IDisposable
     {
         private readonly string _tagName;
-        private readonly TextWriter _writer;
+        private readonly HtmlBuilder _builder;
+        private readonly bool _shouldEncode;
 
-        internal TagBuilder(string tagName, TextWriter writer)
+        internal TagBuilder(string tagName, HtmlBuilder builder, bool shouldEncode)
         {
             _tagName = tagName;
-            _writer = writer;
+            _builder = builder;
+            _shouldEncode = shouldEncode;
         }
 
         /// <summary>
@@ -23,9 +25,16 @@ namespace Eighty.Twenty
         /// </summary>
         public void Dispose()
         {
-            _writer.Write("</");
-            _writer.Write(_tagName);
-            _writer.Write(">");
+            _builder.Raw("</");
+            if (_shouldEncode)
+            {
+                _builder.Text(_tagName);
+            }
+            else
+            {
+                _builder.Raw(_tagName);
+            }
+            _builder.Raw(">");
         }
     }
 }

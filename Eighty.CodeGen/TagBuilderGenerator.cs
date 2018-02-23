@@ -31,7 +31,7 @@ namespace Eighty
         /// <returns>An instance of <see cref=""Html""/></returns>
         public Html _({ChildParams(number)})
         {{{CheckChildNulls(number)}
-            return new Tag(_name, _attrs, ImmutableArrayFactory.Create({ChildArgs(number)}));
+            return new Tag(_name, _attrs, ImmutableArrayFactory.Create({ChildArgs(number)}), _shouldEncodeName);
         }}
 ";
     }

@@ -3,21 +3,21 @@ using System.Threading.Tasks;
 
 namespace Eighty
 {
-    internal class Raw : Html
+    internal class Text : Html
     {
-        private string _rawHtml;
+        private readonly string _text;
 
-        public Raw(string rawHtml)
+        public Text(string text)
         {
-            _rawHtml = rawHtml;
+            _text = text;
         }
 
         internal override void WriteImpl(ref HtmlEncodingTextWriter writer)
         {
-            writer.WriteRaw(_rawHtml);
+            writer.Write(_text);
         }
 
         internal override Task WriteAsyncImpl(AsyncHtmlEncodingTextWriter writer)
-            => writer.WriteRaw(_rawHtml);
+            => writer.Write(_text);
     }
 }

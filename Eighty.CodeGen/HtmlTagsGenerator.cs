@@ -44,7 +44,7 @@ namespace Eighty
             var i = 0;
             {PackArray(attrs)}
 
-            return new TagBuilder(""{name}"", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new TagBuilder(""{name}"", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }}
 
         /// <summary>
@@ -66,7 +66,7 @@ namespace Eighty
             {{
                 throw new ArgumentNullException(nameof(attrs));
             }}
-            return new TagBuilder(""{name}"", attrs.ToImmutableArray());
+            return new TagBuilder(""{name}"", attrs.ToImmutableArray(), false);
         }}
         {TagAttrs(name)}
 
@@ -123,7 +123,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }}
             }}
-            return new Tag(""{name}"", ImmutableArray.Create<Attr>(), children);
+            return new Tag(""{name}"", ImmutableArray.Create<Attr>(), children, false);
         }}
         {TagChildren(name)}
 ";
@@ -144,7 +144,7 @@ namespace Eighty
             var i = 0;
             {PackArray(attrs)}
 
-            return new SelfClosingTag(""{name}"", ImmutableArrayFactory.UnsafeFreeze(array));
+            return new SelfClosingTag(""{name}"", ImmutableArrayFactory.UnsafeFreeze(array), false);
         }}
 
         /// <summary>
@@ -164,7 +164,7 @@ namespace Eighty
             {{
                 throw new ArgumentNullException(nameof(attrs));
             }}
-            return new SelfClosingTag(""{name}"", attrs.ToImmutableArray());
+            return new SelfClosingTag(""{name}"", attrs.ToImmutableArray(), false);
         }}
         {SelfClosingTagAttrs(name)}
 ";
@@ -177,7 +177,7 @@ namespace Eighty
         /// <returns>A <see cref=""TagBuilder""/> waiting for the element's children</returns>
         public static TagBuilder {CsId(name)}({AttrParams(n)})
         {{
-            return new TagBuilder(""{name}"", ImmutableArrayFactory.Create({AttrArgs(n)}));
+            return new TagBuilder(""{name}"", ImmutableArrayFactory.Create({AttrArgs(n)}), false);
         }}"));
 
         private string SelfClosingTagAttrs(string name)
@@ -188,7 +188,7 @@ namespace Eighty
         /// <returns>The element</returns>
         public static Html {CsId(name)}({AttrParams(n)})
         {{
-            return new SelfClosingTag(""{name}"", ImmutableArrayFactory.Create({AttrArgs(n)}));
+            return new SelfClosingTag(""{name}"", ImmutableArrayFactory.Create({AttrArgs(n)}), false);
         }}"));
 
         private string TagChildren(string name)
@@ -200,7 +200,7 @@ namespace Eighty
         public static Html {CsId(name)}_({ChildParams(n)})
         {{
             {CheckChildNulls(n)}
-            return new Tag(""{name}"", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create({ChildArgs(n)}));
+            return new Tag(""{name}"", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create({ChildArgs(n)}), false);
         }}"));
 
 
@@ -224,7 +224,7 @@ namespace Eighty
                     ? $@"
             if ({CsId(a)})
             {{
-                array[i] = new Attr(""{a.Substring(1)}"");
+                array[i] = Attr.Raw(""{a.Substring(1)}"");
                 i++;
             }}"
                     : $@"

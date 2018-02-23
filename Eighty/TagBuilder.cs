@@ -13,11 +13,13 @@ namespace Eighty
     {
         private readonly string _name;
         private readonly ImmutableArray<Attr> _attrs;
+        private readonly bool _shouldEncodeName;
 
-        internal TagBuilder(string name, ImmutableArray<Attr> attributes)
+        internal TagBuilder(string name, ImmutableArray<Attr> attributes, bool shouldEncodeName)
         {
             _name = name;
             _attrs = attributes;
+            _shouldEncodeName = shouldEncodeName;
         }
 
         /// <summary>
@@ -67,7 +69,7 @@ namespace Eighty
                     throw new ArgumentNullException(nameof(children));
                 }
             }
-            return new Tag(_name, _attrs, children);
+            return new Tag(_name, _attrs, children, _shouldEncodeName);
         }
     }
 }

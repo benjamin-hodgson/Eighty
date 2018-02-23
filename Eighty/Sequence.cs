@@ -13,19 +13,19 @@ namespace Eighty
             _children = children;
         }
 
-        internal override void WriteImpl(TextWriter writer)
+        internal override void WriteImpl(ref HtmlEncodingTextWriter writer)
         {
             foreach (var child in _children)
             {
-                child.Write(writer);
+                child.WriteImpl(ref writer);
             }
         }
 
-        internal override async Task WriteAsyncImpl(TextWriter writer)
+        internal override async Task WriteAsyncImpl(AsyncHtmlEncodingTextWriter writer)
         {
             foreach (var child in _children)
             {
-                await child.WriteAsync(writer).ConfigureAwait(false);
+                await child.WriteAsyncImpl(writer).ConfigureAwait(false);
             }
         }
     }
