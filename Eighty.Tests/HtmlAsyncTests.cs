@@ -16,6 +16,13 @@ namespace Eighty.Tests
             Assert.Equal("hello", await GetStringAsync(html));
         }
         [Fact]
+        public async Task Text_HighAscii()
+        {
+            var expected = ((char)232).ToString();  // "è"
+            Html html = expected;
+            Assert.Equal(expected, await GetStringAsync(html));
+        }
+        [Fact]
         public async Task LongText()
         {
             var expected = new string('a', 5000);
@@ -27,12 +34,6 @@ namespace Eighty.Tests
         {
             Html html = "<>\"&'";
             Assert.Equal("&lt;&gt;&quot;&amp;&#39;", await GetStringAsync(html));
-        }
-        [Fact]
-        public async Task TextEscaping_HighAscii()
-        {
-            Html html = ((char)210).ToString();
-            Assert.Equal("&#210;", await GetStringAsync(html));
         }
         [Fact]
         public async Task TextEscaping_Unicode()

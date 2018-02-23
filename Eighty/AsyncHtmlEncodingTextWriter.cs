@@ -82,11 +82,6 @@ namespace Eighty
                         await WriteRaw("&#39;").ConfigureAwait(false);
                         continue;
                 }
-                if (c >= 160 && c < 256)
-                {
-                    await WriteNumericEntity((int)c).ConfigureAwait(false);
-                    continue;
-                }
                 if (char.IsSurrogate(c))
                 {
                     if (position >= s.Length)  // there's no low surrogate

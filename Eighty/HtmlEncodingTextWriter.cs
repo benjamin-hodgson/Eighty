@@ -82,11 +82,6 @@ namespace Eighty
                         WriteRaw("&#39;");
                         continue;
                 }
-                if (c >= 160 && c < 256)
-                {
-                    WriteNumericEntity((int)c);
-                    continue;
-                }
                 if (char.IsSurrogate(c))
                 {
                     if (position >= s.Length)  // there's no low surrogate
