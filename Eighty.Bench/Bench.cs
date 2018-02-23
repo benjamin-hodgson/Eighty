@@ -22,7 +22,7 @@ namespace Eighty.Bench
         [GlobalSetup]
         public void Setup()
         {
-            _flatPsEighty = _(Enumerable.Repeat(p(@class: "para")._(), 1000));
+            _flatPsEighty = _(Enumerable.Repeat(p(@class: "para<>")._(), 1000));
             _deepPsEighty = DeepPs(1000);
             _flatPsTwenty = new FlatPs();
             _deepPsTwenty = new DeepPs();
