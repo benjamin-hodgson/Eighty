@@ -9,7 +9,7 @@ namespace Eighty.Twenty
     /// </summary>
     public abstract partial class HtmlBuilder
     {
-        private HtmlEncodingTextWriter _writer = default;
+        private HtmlEncodingTextWriter _writer = default;  // mutable struct, must not be readonly
 
         /// <summary>
         /// Render the HTML into a <see cref="TextWriter"/>

@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 namespace Eighty
 {
     /// <summary>
+    /// This has to be a class because its mutating methods are async and would operate on a copy of the struct if this were a struct
+    /// 
     /// NB. Any changes to this file need to be paralleled in HtmlEncodingTextWriter
     /// 
     /// See also https://github.com/dotnet/corefx/blob/3de3cd74ce3d81d13f75928eae728fb7945b6048/src/System.Runtime.Extensions/src/System/Net/WebUtility.cs
@@ -24,9 +26,6 @@ namespace Eighty
             _buffer = ArrayPool<char>.Shared.Rent(2048);
             _bufLen = 0;
         }
-
-        public bool IsDefault()
-            => _buffer == null;
 
         public async Task FlushAndClear()
         {
