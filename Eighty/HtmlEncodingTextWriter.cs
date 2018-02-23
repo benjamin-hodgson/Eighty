@@ -103,14 +103,13 @@ namespace Eighty
 
         private void WriteRawImpl(string s, int start, int count)
         {
-            var restSize = count;
-            while (restSize > 0)
+            while (count > 0)
             {
                 var chunkSize = Math.Min(count, _buffer.Length - _bufLen);
 
                 s.CopyTo(start, _buffer, _bufLen, chunkSize);
 
-                restSize -= chunkSize;
+                count -= chunkSize;
                 _bufLen += chunkSize;
 
                 FlushIfNecessary();
