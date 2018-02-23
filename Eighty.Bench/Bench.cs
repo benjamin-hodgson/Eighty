@@ -28,6 +28,12 @@ namespace Eighty.Bench
             _deepPsTwenty = new DeepPs();
         }
 
+        [GlobalCleanup]
+        public void Cleanup()
+        {
+            File.Delete("output.html");
+        }
+
         [Benchmark]
         public void Flat_Eighty_BuildAndRender()
         {
@@ -37,7 +43,8 @@ namespace Eighty.Bench
             {
                 builder.Add(html);
             }
-            using (var writer = TextWriter.Null)
+            using (var stream = File.OpenWrite("output.html"))
+            using (var writer = new StreamWriter(stream))
             {
                 _(builder.MoveToImmutable()).Write(writer);
             }
@@ -51,7 +58,8 @@ namespace Eighty.Bench
             {
                 builder.Add(p(@class: "para<>")._());
             }
-            using (var writer = TextWriter.Null)
+            using (var stream = File.OpenWrite("output.html"))
+            using (var writer = new StreamWriter(stream))
             {
                 _(builder.MoveToImmutable()).Write(writer);
             }
@@ -60,7 +68,8 @@ namespace Eighty.Bench
         [Benchmark]
         public void Flat_Eighty_Render()
         {
-            using (var writer = TextWriter.Null)
+            using (var stream = File.OpenWrite("output.html"))
+            using (var writer = new StreamWriter(stream))
             {
                 _flatPsEighty.Write(writer);
             }
@@ -69,7 +78,8 @@ namespace Eighty.Bench
         [Benchmark]
         public void Flat_Twenty()
         {
-            using (var writer = TextWriter.Null)
+            using (var stream = File.OpenWrite("output.html"))
+            using (var writer = new StreamWriter(stream))
             {
                 _flatPsTwenty.Write(writer);
                 writer.ToString();
@@ -79,7 +89,8 @@ namespace Eighty.Bench
         [Benchmark]
         public void Deep_Eighty_BuildAndRender()
         {
-            using (var writer = TextWriter.Null)
+            using (var stream = File.OpenWrite("output.html"))
+            using (var writer = new StreamWriter(stream))
             {
                 DeepPs(1000).Write(writer);
             }
@@ -88,7 +99,8 @@ namespace Eighty.Bench
         [Benchmark]
         public void Deep_Eighty_Render()
         {
-            using (var writer = TextWriter.Null)
+            using (var stream = File.OpenWrite("output.html"))
+            using (var writer = new StreamWriter(stream))
             {
                 _deepPsEighty.Write(writer);
             }
@@ -97,7 +109,8 @@ namespace Eighty.Bench
         [Benchmark]
         public void Deep_Twenty()
         {
-            using (var writer = TextWriter.Null)
+            using (var stream = File.OpenWrite("output.html"))
+            using (var writer = new StreamWriter(stream))
             {
                 _deepPsTwenty.Write(writer);
                 writer.ToString();
