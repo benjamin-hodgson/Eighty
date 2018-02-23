@@ -8,7 +8,9 @@ namespace Eighty
     /// <summary>
     /// A mutable struct, be careful.
     /// 
-    /// NB. Any changes to this file need to be paralleled in AsyncHtmlEncodingTextWriter
+    /// NB. Any changes to this file need to be paralleled in AsyncHtmlEncodingTextWriter.
+    /// 
+    /// See also https://github.com/dotnet/corefx/blob/3de3cd74ce3d81d13f75928eae728fb7945b6048/src/System.Runtime.Extensions/src/System/Net/WebUtility.cs
     /// </summary>
     internal struct HtmlEncodingTextWriter
     {
@@ -34,59 +36,84 @@ namespace Eighty
             _bufLen = 0;
         }
 
-        public void Write(char c)
-        {
-            if (c <= '>')
-            {
-                switch (c)
-                {
-                    case '<':
-                        WriteRaw("&lt;");
-                        return;
-                    case '>':
-                        WriteRaw("&gt;");
-                        return;
-                    case '&':
-                        WriteRaw("&amp;");
-                        return;
-                    case '"':
-                        WriteRaw("&quot;");
-                        return;
-                    case '\'':
-                        WriteRaw("&#39;");
-                        return;
-                }
-            }
-            if (c >= 160 && c < 256)
-            {
-                WriteNumericEntity((int)c);
-                return;
-            }
-            if (Char.IsSurrogate(c))
-            {
-                // todo
-                return;
-            }
-            WriteRaw(c);
-        }
-
         public void Write(string s)
         {
             var position = 0;
             while (position < s.Length)
             {
-                var chunkLength = HtmlEncodingHelpers.SafePrefixLength(s, position);
+                var safeChunkLength = HtmlEncodingHelpers.SafePrefixLength(s, position);
 
-                WriteRawImpl(s, position, chunkLength);
-                position += chunkLength;
+                WriteRawImpl(s, position, safeChunkLength);
+                position += safeChunkLength;
 
                 if (position < s.Length)
                 {
                     // we're now looking at an HTML-encoding character
-                    Write(s[position]);
-                    position++;
+                    position = WriteEncodingChars(s, position);
                 }
             }
+        }
+
+        /// <summary>
+        /// Consume a run of HTML-encoding characters from the string
+        /// </summary>
+        /// <returns>The new position</returns>
+        private int WriteEncodingChars(string s, int position)
+        {
+            while (position < s.Length && HtmlEncodingHelpers.ShouldEncode(s[position]))
+            {
+                var c = s[position];
+                position++;
+                switch (c)
+                {
+                    case '<':
+                        WriteRaw("&lt;");
+                        continue;
+                    case '>':
+                        WriteRaw("&gt;");
+                        continue;
+                    case '&':
+                        WriteRaw("&amp;");
+                        continue;
+                    case '"':
+                        WriteRaw("&quot;");
+                        continue;
+                    case '\'':
+                        WriteRaw("&#39;");
+                        continue;
+                }
+                if (c >= 160 && c < 256)
+                {
+                    WriteNumericEntity((int)c);
+                    continue;
+                }
+                if (char.IsSurrogate(c))
+                {
+                    if (position >= s.Length)  // there's no low surrogate
+                    {
+                        WriteUnicodeReplacementChar();
+                        continue;
+                    }
+
+                    var highSurrogate = c;
+                    var lowSurrogate = s[position];
+                    // don't increment position until we're sure we're going to consume lowSurrogate
+
+                    if (!char.IsSurrogatePair(highSurrogate, lowSurrogate))
+                    {
+                        WriteUnicodeReplacementChar();
+                        continue;
+                    }
+
+                    position++;
+                    WriteNumericEntity(char.ConvertToUtf32(highSurrogate, lowSurrogate));
+                    continue;
+                }
+
+                // shouldn't be reachable, because we checked ShouldEncode at the start of the while loop
+                WriteRaw(c);
+            }
+            return position;
         }
 
         public void WriteRaw(char c)
@@ -114,6 +141,11 @@ namespace Eighty
 
                 FlushIfNecessary();
             }
+        }
+
+        private void WriteUnicodeReplacementChar()
+        {
+            WriteRaw(HtmlEncodingHelpers.UNICODE_REPLACEMENT_CHAR);
         }
 
         private void WriteNumericEntity(int number)

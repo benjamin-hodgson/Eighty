@@ -9,6 +9,8 @@ namespace Eighty
 {
     /// <summary>
     /// NB. Any changes to this file need to be paralleled in HtmlEncodingTextWriter
+    /// 
+    /// See also https://github.com/dotnet/corefx/blob/3de3cd74ce3d81d13f75928eae728fb7945b6048/src/System.Runtime.Extensions/src/System/Net/WebUtility.cs
     /// </summary>
     internal class AsyncHtmlEncodingTextWriter
     {
@@ -34,53 +36,84 @@ namespace Eighty
             _bufLen = 0;
         }
 
-        public Task Write(char c)
-        {
-            if (c <= '>')
-            {
-                switch (c)
-                {
-                    case '<':
-                        return WriteRaw("&lt;");
-                    case '>':
-                        return WriteRaw("&gt;");
-                    case '&':
-                        return WriteRaw("&amp;");
-                    case '"':
-                        return WriteRaw("&quot;");
-                    case '\'':
-                        return WriteRaw("&#39;");
-                }
-            }
-            if (c >= 160 && c < 256)
-            {
-                return WriteNumericEntity((int)c);
-            }
-            if (Char.IsSurrogate(c))
-            {
-                // todo
-                return Task.CompletedTask;
-            }
-            return WriteRaw(c);
-        }
-
         public async Task Write(string s)
         {
             var position = 0;
             while (position < s.Length)
             {
-                var chunkLength = HtmlEncodingHelpers.SafePrefixLength(s, position);
+                var safeChunkLength = HtmlEncodingHelpers.SafePrefixLength(s, position);
 
-                await WriteRawImpl(s, position, chunkLength).ConfigureAwait(false);
-                position += chunkLength;
+                await WriteRawImpl(s, position, safeChunkLength).ConfigureAwait(false);
+                position += safeChunkLength;
 
                 if (position < s.Length)
                 {
                     // we're now looking at an HTML-encoding character
-                    await Write(s[position]).ConfigureAwait(false);
-                    position++;
+                    position = await WriteEncodingChars(s, position).ConfigureAwait(false);
                 }
             }
+        }
+
+        /// <summary>
+        /// Consume a run of HTML-encoding characters from the string
+        /// </summary>
+        /// <returns>The new position</returns>
+        private async Task<int> WriteEncodingChars(string s, int position)  // todo: ValueTask?
+        {
+            while (position < s.Length && HtmlEncodingHelpers.ShouldEncode(s[position]))
+            {
+                var c = s[position];
+                position++;
+                switch (c)
+                {
+                    case '<':
+                        await WriteRaw("&lt;").ConfigureAwait(false);
+                        continue;
+                    case '>':
+                        await WriteRaw("&gt;").ConfigureAwait(false);
+                        continue;
+                    case '&':
+                        await WriteRaw("&amp;").ConfigureAwait(false);
+                        continue;
+                    case '"':
+                        await WriteRaw("&quot;").ConfigureAwait(false);
+                        continue;
+                    case '\'':
+                        await WriteRaw("&#39;").ConfigureAwait(false);
+                        continue;
+                }
+                if (c >= 160 && c < 256)
+                {
+                    await WriteNumericEntity((int)c).ConfigureAwait(false);
+                    continue;
+                }
+                if (char.IsSurrogate(c))
+                {
+                    if (position >= s.Length)  // there's no low surrogate
+                    {
+                        await WriteUnicodeReplacementChar().ConfigureAwait(false);
+                        continue;
+                    }
+
+                    var highSurrogate = c;
+                    var lowSurrogate = s[position];
+                    // don't increment position until we're sure we're going to consume lowSurrogate
+
+                    if (!char.IsSurrogatePair(highSurrogate, lowSurrogate))
+                    {
+                        await WriteUnicodeReplacementChar().ConfigureAwait(false);
+                        continue;
+                    }
+
+                    position++;
+                    await WriteNumericEntity(char.ConvertToUtf32(highSurrogate, lowSurrogate)).ConfigureAwait(false);
+                    continue;
+                }
+
+                // shouldn't be reachable, because we checked ShouldEncode at the start of the while loop
+                await WriteRaw(c).ConfigureAwait(false);
+            }
+            return position;
         }
 
         public async Task WriteRaw(char c)
@@ -108,6 +141,11 @@ namespace Eighty
 
                 await FlushIfNecessary().ConfigureAwait(false);
             }
+        }
+
+        private Task WriteUnicodeReplacementChar()
+        {
+            return WriteRaw(HtmlEncodingHelpers.UNICODE_REPLACEMENT_CHAR);
         }
 
         private async Task WriteNumericEntity(int number)

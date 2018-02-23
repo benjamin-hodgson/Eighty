@@ -2,6 +2,7 @@ namespace Eighty
 {
     internal static class HtmlEncodingHelpers
     {
+        public const char UNICODE_REPLACEMENT_CHAR = '\uFFFD';
         public static int SafePrefixLength(string s, int start)
         {
             int i;
@@ -14,9 +15,10 @@ namespace Eighty
             }
             return i - start;
         }
-        private static bool ShouldEncode(char c)
+
+        public static bool ShouldEncode(char c)
             => (c <= '>' && (c == '<' || c == '>' || c == '&' || c == '"' || c == '\''))
-            || c >= 160
+            || c >= 160 && c < 256
             || char.IsSurrogate(c);
     }
 }
