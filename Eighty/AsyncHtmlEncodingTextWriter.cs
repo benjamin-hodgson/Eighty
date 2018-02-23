@@ -58,7 +58,7 @@ namespace Eighty
         /// Consume a run of HTML-encoding characters from the string
         /// </summary>
         /// <returns>The new position</returns>
-        private async Task<int> WriteEncodingChars(string s, int position)  // todo: ValueTask?
+        private async ValueTask<int> WriteEncodingChars(string s, int position)
         {
             while (position < s.Length && HtmlEncodingHelpers.ShouldEncode(s[position]))
             {
