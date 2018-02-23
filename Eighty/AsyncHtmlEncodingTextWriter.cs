@@ -16,15 +16,15 @@ namespace Eighty
     /// </summary>
     internal class AsyncHtmlEncodingTextWriter
     {
-        private TextWriter _underlyingWriter;
+        private readonly TextWriter _underlyingWriter;
         private char[] _buffer;
-        public int _bufLen;
+        private int _bufPos;
 
         public AsyncHtmlEncodingTextWriter(TextWriter underlyingWriter)
         {
             _underlyingWriter = underlyingWriter;
             _buffer = ArrayPool<char>.Shared.Rent(2048);
-            _bufLen = 0;
+            _bufPos = 0;
         }
 
         public async Task FlushAndClear()
@@ -32,7 +32,7 @@ namespace Eighty
             await Flush().ConfigureAwait(false);
             ArrayPool<char>.Shared.Return(_buffer);
             _buffer = null;
-            _bufLen = 0;
+            _bufPos = 0;
         }
 
         public async Task Write(string s)
@@ -121,8 +121,8 @@ namespace Eighty
         public async Task WriteRaw(char c)
         {
             await FlushIfNecessary().ConfigureAwait(false);
-            _buffer[_bufLen] = c;
-            _bufLen++;
+            _buffer[_bufPos] = c;
+            _bufPos++;
         }
 
         public Task WriteRaw(string s)
@@ -134,12 +134,12 @@ namespace Eighty
         {
             while (count > 0)
             {
-                var chunkSize = Math.Min(count, _buffer.Length - _bufLen);
+                var chunkSize = Math.Min(count, _buffer.Length - _bufPos);
 
-                s.CopyTo(start, _buffer, _bufLen, chunkSize);
+                s.CopyTo(start, _buffer, _bufPos, chunkSize);
 
                 count -= chunkSize;
-                _bufLen += chunkSize;
+                _bufPos += chunkSize;
 
                 await FlushIfNecessary().ConfigureAwait(false);
             }
@@ -161,7 +161,7 @@ namespace Eighty
 
         private Task FlushIfNecessary()
         {
-            if (_bufLen == _buffer.Length)
+            if (_bufPos == _buffer.Length)
             {
                 return Flush();
             }
@@ -170,8 +170,8 @@ namespace Eighty
 
         private Task Flush()
         {
-            var len = _bufLen;
-            _bufLen = 0;
+            var len = _bufPos;
+            _bufPos = 0;
             return _underlyingWriter.WriteAsync(_buffer, 0, len);
         }
     }

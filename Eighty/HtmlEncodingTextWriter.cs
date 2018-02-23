@@ -14,15 +14,15 @@ namespace Eighty
     /// </summary>
     internal struct HtmlEncodingTextWriter
     {
-        private TextWriter _underlyingWriter;
+        private readonly TextWriter _underlyingWriter;
         private char[] _buffer;
-        public int _bufLen;
+        private int _bufPos;
 
         public HtmlEncodingTextWriter(TextWriter underlyingWriter)
         {
             _underlyingWriter = underlyingWriter;
             _buffer = ArrayPool<char>.Shared.Rent(2048);
-            _bufLen = 0;
+            _bufPos = 0;
         }
 
         public bool IsDefault()
@@ -33,7 +33,7 @@ namespace Eighty
             Flush();
             ArrayPool<char>.Shared.Return(_buffer);
             _buffer = null;
-            _bufLen = 0;
+            _bufPos = 0;
         }
 
         public void Write(string s)
@@ -122,8 +122,8 @@ namespace Eighty
         public void WriteRaw(char c)
         {
             FlushIfNecessary();
-            _buffer[_bufLen] = c;
-            _bufLen++;
+            _buffer[_bufPos] = c;
+            _bufPos++;
         }
 
         public void WriteRaw(string s)
@@ -135,12 +135,12 @@ namespace Eighty
         {
             while (count > 0)
             {
-                var chunkSize = Math.Min(count, _buffer.Length - _bufLen);
+                var chunkSize = Math.Min(count, _buffer.Length - _bufPos);
 
-                s.CopyTo(start, _buffer, _bufLen, chunkSize);
+                s.CopyTo(start, _buffer, _bufPos, chunkSize);
 
                 count -= chunkSize;
-                _bufLen += chunkSize;
+                _bufPos += chunkSize;
 
                 FlushIfNecessary();
             }
@@ -162,7 +162,7 @@ namespace Eighty
 
         private void FlushIfNecessary()
         {
-            if (_bufLen == _buffer.Length)
+            if (_bufPos == _buffer.Length)
             {
                 Flush();
             }
@@ -170,8 +170,8 @@ namespace Eighty
 
         private void Flush()
         {
-            var len = _bufLen;
-            _bufLen = 0;
+            var len = _bufPos;
+            _bufPos = 0;
             _underlyingWriter.Write(_buffer, 0, len);
         }
     }
