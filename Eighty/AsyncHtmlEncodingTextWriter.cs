@@ -69,7 +69,7 @@ namespace Eighty
             var position = 0;
             while (position < s.Length)
             {
-                var chunkLength = SafePrefixLength(s, position);
+                var chunkLength = HtmlEncodingHelpers.SafePrefixLength(s, position);
 
                 await WriteRawImpl(s, position, chunkLength).ConfigureAwait(false);
                 position += chunkLength;
@@ -128,30 +128,11 @@ namespace Eighty
             return Task.CompletedTask;
         }
 
-        public Task Flush()
+        private Task Flush()
         {
             var len = _bufLen;
             _bufLen = 0;
             return _underlyingWriter.WriteAsync(_buffer, 0, len);
         }
-
-
-
-        private static int SafePrefixLength(string s, int start)
-        {
-            int i;
-            for (i = start; i < s.Length; i++)
-            {
-                if (ShouldEncode(s[i]))
-                {
-                    break;
-                }
-            }
-            return i - start;
-        }
-        private static bool ShouldEncode(char c)
-            => (c <= '>' && (c == '<' || c == '>' || c == '&' || c == '"' || c == '\''))
-            || c >= 160
-            || char.IsSurrogate(c);
     }
 }
