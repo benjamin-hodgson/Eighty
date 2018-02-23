@@ -32,7 +32,7 @@ namespace Eighty.Twenty
             try
             {
                 Build();
-                _writer.Flush();
+                _writer.FlushAndClear();
             }
             finally
             {
