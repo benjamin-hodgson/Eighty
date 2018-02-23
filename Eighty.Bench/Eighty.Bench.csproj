@@ -13,10 +13,22 @@
 
   <ItemGroup>
     <PackageReference Include="BenchmarkDotNet" Version="0.10.12" />
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="2.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Eighty\Eighty.csproj" />
+    <ProjectReference Include="..\Eighty.Bench.WebApp\Eighty.Bench.WebApp.csproj" />
   </ItemGroup>
-
+  
+  <!--
+    Work around https://github.com/NuGet/Home/issues/4412. MVC uses DependencyContext.Load() which looks next to a .dll
+    for a .deps.json. Information isn't available elsewhere. Need the .deps.json file for all web site applications.
+  -->
+  <Target Name="CopyDepsFiles" AfterTargets="Build" Condition="'$(TargetFramework)'!=''">
+    <ItemGroup>
+      <DepsFilePaths Include="$([System.IO.Path]::ChangeExtension('%(_ResolvedProjectReferencePaths.FullPath)', '.deps.json'))" />
+    </ItemGroup>
+    <Copy SourceFiles="%(DepsFilePaths.FullPath)" DestinationFolder="$(OutputPath)" Condition="Exists('%(DepsFilePaths.FullPath)')" />
+  </Target>
 </Project>

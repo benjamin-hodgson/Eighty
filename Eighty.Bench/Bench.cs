@@ -12,7 +12,7 @@ using static Eighty.Html;
 namespace Eighty.Bench
 {
     [MemoryDiagnoser]
-    public class Bench
+    public class SimpleBench
     {
         private Html _flatPsEighty;
         private Html _deepPsEighty;

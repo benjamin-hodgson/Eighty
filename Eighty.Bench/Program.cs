@@ -9,7 +9,8 @@ namespace Eighty.Bench
     {
         static void Main(string[] args)
         {
-            BenchmarkRunner.Run<Bench>();
+            BenchmarkRunner.Run<SimpleBench>();
+            BenchmarkRunner.Run<WebAppBench>();
         }
     }
 }
