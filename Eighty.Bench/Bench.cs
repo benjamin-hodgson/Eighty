@@ -76,6 +76,16 @@ namespace Eighty.Bench
         }
         
         [Benchmark]
+        public async Task Flat_Eighty_RenderAsync()
+        {
+            using (var stream = File.OpenWrite("output.html"))
+            using (var writer = new StreamWriter(stream))
+            {
+                await _flatPsEighty.WriteAsync(writer);
+            }
+        }
+        
+        [Benchmark]
         public void Flat_Twenty()
         {
             using (var stream = File.OpenWrite("output.html"))
@@ -103,6 +113,16 @@ namespace Eighty.Bench
             using (var writer = new StreamWriter(stream))
             {
                 _deepPsEighty.Write(writer);
+            }
+        }
+        
+        [Benchmark]
+        public async Task Deep_Eighty_RenderAsync()
+        {
+            using (var stream = File.OpenWrite("output.html"))
+            using (var writer = new StreamWriter(stream))
+            {
+                await _deepPsEighty.WriteAsync(writer);
             }
         }
         
