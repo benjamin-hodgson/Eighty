@@ -14,10 +14,29 @@ namespace Eighty.Tests
             Assert.Equal("hello", html.ToString());
         }
         [Fact]
+        public void LongText()
+        {
+            var expected = new string('a', 5000);
+            Html html = expected;
+            Assert.Equal(expected, html.ToString());
+        }
+        [Fact]
         public void TextEscaping()
         {
-            Html html = "<>\"";
-            Assert.Equal("&lt;&gt;&quot;", html.ToString());
+            Html html = "<>\"&'";
+            Assert.Equal("&lt;&gt;&quot;&amp;&#39;", html.ToString());
+        }
+        [Fact]
+        public void TextEscaping_HighAscii()
+        {
+            Html html = ((char)210).ToString();
+            Assert.Equal("&#210;", html.ToString());
+        }
+        [Fact]
+        public void TextEscaping_Unicode()
+        {
+            Html html = ((char)210).ToString();
+            Assert.Equal("&#210;", html.ToString());
         }
         [Fact]
         public void RawText()
