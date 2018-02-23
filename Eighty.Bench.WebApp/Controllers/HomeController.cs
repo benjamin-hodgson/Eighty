@@ -16,6 +16,11 @@ namespace Eighty.Bench.WebApp.Controllers
     {
         private static readonly Model _model = new Model(1000, "foo<>");
 
+        public IActionResult Empty()
+        {
+            return NoContent();
+        }
+
         public IActionResult Razor()
         {
             return View(_model);
