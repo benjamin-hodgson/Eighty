@@ -35,8 +35,8 @@ namespace Eighty.Tests
         [Fact]
         public void TextEscaping_Unicode()
         {
-            Html html = ((char)210).ToString();
-            Assert.Equal("&#210;", html.ToString());
+            Html html = "\U0001F01C";
+            Assert.Equal("&#127004;", html.ToString());
         }
         [Fact]
         public void RawText()

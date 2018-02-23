@@ -35,6 +35,12 @@ namespace Eighty.Tests
             Assert.Equal("&#210;", await GetStringAsync(html));
         }
         [Fact]
+        public async Task TextEscaping_Unicode()
+        {
+            Html html = "\U0001F01C";
+            Assert.Equal("&#127004;", await GetStringAsync(html));
+        }
+        [Fact]
         public async Task RawText()
         {
             var html = Raw("<>\"");
