@@ -101,7 +101,15 @@ namespace Eighty
                     }
 
                     position++;
-                    await WriteNumericEntity(char.ConvertToUtf32(highSurrogate, lowSurrogate)).ConfigureAwait(false);
+
+                    var codePoint = char.ConvertToUtf32(highSurrogate, lowSurrogate);
+                    if (HtmlEncodingHelpers.IsBasicMultilingualPlane(codePoint))
+                    {
+                        await WriteRaw(highSurrogate).ConfigureAwait(false);
+                        await WriteRaw(lowSurrogate).ConfigureAwait(false);
+                        continue;
+                    }
+                    await WriteNumericEntity(codePoint).ConfigureAwait(false);
                     continue;
                 }
 

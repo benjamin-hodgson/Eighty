@@ -101,7 +101,15 @@ namespace Eighty
                     }
 
                     position++;
-                    WriteNumericEntity(char.ConvertToUtf32(highSurrogate, lowSurrogate));
+
+                    var codePoint = char.ConvertToUtf32(highSurrogate, lowSurrogate);
+                    if (HtmlEncodingHelpers.IsBasicMultilingualPlane(codePoint))
+                    {
+                        WriteRaw(highSurrogate);
+                        WriteRaw(lowSurrogate);
+                        continue;
+                    }
+                    WriteNumericEntity(codePoint);
                     continue;
                 }
 

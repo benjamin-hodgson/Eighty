@@ -2,7 +2,10 @@ namespace Eighty
 {
     internal static class HtmlEncodingHelpers
     {
-        public const char UNICODE_REPLACEMENT_CHAR = '\uFFFD';
+        public const string UNICODE_REPLACEMENT_CHAR = "\uFFFD";
+
+        public static bool IsBasicMultilingualPlane(int codePoint)
+            => codePoint <= 0x00FFFF;
 
         public static int SafePrefixLength(string s, int start)
         {
