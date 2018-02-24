@@ -45,11 +45,8 @@ namespace Eighty
                 await WriteRawImpl(s, position, safeChunkLength).ConfigureAwait(false);
                 position += safeChunkLength;
 
-                if (position < s.Length)
-                {
-                    // we're now looking at an HTML-encoding character
-                    position = await WriteEncodingChars(s, position).ConfigureAwait(false);
-                }
+                // we're now looking at an HTML-encoding character
+                position = await WriteEncodingChars(s, position).ConfigureAwait(false);
             }
         }
 

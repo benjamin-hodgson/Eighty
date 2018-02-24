@@ -46,11 +46,8 @@ namespace Eighty
                 WriteRawImpl(s, position, safeChunkLength);
                 position += safeChunkLength;
 
-                if (position < s.Length)
-                {
-                    // we're now looking at an HTML-encoding character
-                    position = WriteEncodingChars(s, position);
-                }
+                // we're now looking at an HTML-encoding character
+                position = WriteEncodingChars(s, position);
             }
         }
 
