@@ -5,13 +5,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Attributes.Jobs;
+using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Engines;
 using Eighty.Twenty;
 using static Eighty.Html;
 
 namespace Eighty.Bench
 {
-    [MemoryDiagnoser]
+    [MemoryDiagnoser, GroupBenchmarksBy(BenchmarkLogicalGroupRule.ByCategory)]
     public class SimpleBench
     {
         private Html _flatPsEighty;
@@ -34,7 +35,7 @@ namespace Eighty.Bench
             File.Delete("output.html");
         }
 
-        [Benchmark]
+        [BenchmarkCategory("Flat"), Benchmark]
         public void Flat_Eighty_BuildAndRender()
         {
             var html = p(@class: "para<>")._();
@@ -50,7 +51,7 @@ namespace Eighty.Bench
             }
         }
 
-        [Benchmark]
+        [BenchmarkCategory("Flat"), Benchmark(Baseline = true)]
         public void Flat_Eighty_BuildAndRender_NoSharing()
         {
             var builder = ImmutableArray.CreateBuilder<Html>(1000);
@@ -65,7 +66,7 @@ namespace Eighty.Bench
             }
         }
         
-        [Benchmark]
+        [BenchmarkCategory("Flat"), Benchmark]
         public void Flat_Eighty_Render()
         {
             using (var stream = File.OpenWrite("output.html"))
@@ -75,7 +76,7 @@ namespace Eighty.Bench
             }
         }
         
-        [Benchmark]
+        [BenchmarkCategory("Flat"), Benchmark]
         public async Task Flat_Eighty_RenderAsync()
         {
             using (var stream = File.OpenWrite("output.html"))
@@ -85,7 +86,7 @@ namespace Eighty.Bench
             }
         }
         
-        [Benchmark]
+        [BenchmarkCategory("Flat"), Benchmark]
         public void Flat_Twenty()
         {
             using (var stream = File.OpenWrite("output.html"))
@@ -96,7 +97,7 @@ namespace Eighty.Bench
             }
         }
 
-        [Benchmark]
+        [BenchmarkCategory("Deep"), Benchmark(Baseline = true)]
         public void Deep_Eighty_BuildAndRender()
         {
             using (var stream = File.OpenWrite("output.html"))
@@ -106,7 +107,7 @@ namespace Eighty.Bench
             }
         }
         
-        [Benchmark]
+        [BenchmarkCategory("Deep"), Benchmark]
         public void Deep_Eighty_Render()
         {
             using (var stream = File.OpenWrite("output.html"))
@@ -116,7 +117,7 @@ namespace Eighty.Bench
             }
         }
         
-        [Benchmark]
+        [BenchmarkCategory("Deep"), Benchmark]
         public async Task Deep_Eighty_RenderAsync()
         {
             using (var stream = File.OpenWrite("output.html"))
@@ -126,7 +127,7 @@ namespace Eighty.Bench
             }
         }
         
-        [Benchmark]
+        [BenchmarkCategory("Deep"), Benchmark]
         public void Deep_Twenty()
         {
             using (var stream = File.OpenWrite("output.html"))
