@@ -59,5 +59,36 @@ namespace Eighty.Tests
                 Assert.Equal(expected, writer.ToString());
             }
         }
+
+
+        class TestPartial_HtmlBuilder1 : HtmlBuilder
+        {
+            protected override void Build()
+            {
+                using (p())
+                {
+                    Partial(new TestPartial_HtmlBuilder2());
+                }
+            }
+        }
+        class TestPartial_HtmlBuilder2 : HtmlBuilder
+        {
+            protected override void Build()
+            {
+                using (a())
+                {
+                    Text("in partial");
+                }
+            }
+        }
+        [Fact]
+        public void TestPartial()
+        {
+            using (var writer = new StringWriter())
+            {
+                new TestPartial_HtmlBuilder1().Write(writer);
+                Assert.Equal("<p><a>in partial</a></p>", writer.ToString());
+            }
+        }
     }
 }

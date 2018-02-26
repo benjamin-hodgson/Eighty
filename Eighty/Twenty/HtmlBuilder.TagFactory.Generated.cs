@@ -13,7 +13,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attr1);
-            _writer.WriteRaw('>');
+            Writer.WriteRaw('>');
             return new TagBuilder(name, this, true);
         }
 
@@ -25,7 +25,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attr1, attr2);
-            _writer.WriteRaw('>');
+            Writer.WriteRaw('>');
             return new TagBuilder(name, this, true);
         }
 
@@ -37,7 +37,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attr1, attr2, attr3);
-            _writer.WriteRaw('>');
+            Writer.WriteRaw('>');
             return new TagBuilder(name, this, true);
         }
 
@@ -49,7 +49,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.WriteRaw('>');
+            Writer.WriteRaw('>');
             return new TagBuilder(name, this, true);
         }
 
@@ -61,7 +61,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.WriteRaw('>');
+            Writer.WriteRaw('>');
             return new TagBuilder(name, this, true);
         }
 
@@ -73,7 +73,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.WriteRaw('>');
+            Writer.WriteRaw('>');
             return new TagBuilder(name, this, true);
         }
 
@@ -85,7 +85,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.WriteRaw('>');
+            Writer.WriteRaw('>');
             return new TagBuilder(name, this, true);
         }
 
@@ -97,7 +97,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.WriteRaw('>');
+            Writer.WriteRaw('>');
             return new TagBuilder(name, this, true);
         }
 
@@ -108,7 +108,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attr1);
-            _writer.WriteRaw("/>");
+            Writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -118,7 +118,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attr1, attr2);
-            _writer.WriteRaw("/>");
+            Writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -128,7 +128,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attr1, attr2, attr3);
-            _writer.WriteRaw("/>");
+            Writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -138,7 +138,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attr1, attr2, attr3, attr4);
-            _writer.WriteRaw("/>");
+            Writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -148,7 +148,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            _writer.WriteRaw("/>");
+            Writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -158,7 +158,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            _writer.WriteRaw("/>");
+            Writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -168,7 +168,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            _writer.WriteRaw("/>");
+            Writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -178,7 +178,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            _writer.WriteRaw("/>");
+            Writer.WriteRaw("/>");
         }
     }
 }

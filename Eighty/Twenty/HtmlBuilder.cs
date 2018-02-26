@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.IO;
+using System.Linq;
 
 namespace Eighty.Twenty
 {
@@ -9,7 +11,26 @@ namespace Eighty.Twenty
     /// </summary>
     public abstract partial class HtmlBuilder
     {
-        private HtmlEncodingTextWriter _writer = default;  // mutable struct, must not be readonly
+        private HtmlEncodingTextWriter _writer;  // mutable struct, must not be readonly
+        private HtmlBuilder _parent;
+
+        private ref HtmlEncodingTextWriter Writer
+        {
+            get
+            {
+                if (_parent != null)
+                {
+                    return ref _parent.Writer;
+                }
+                return ref _writer;
+            }
+        }
+
+        /// <summary>
+        /// An <see cref="HtmlBuilder"/> which generates an empty HTML document
+        /// </summary>
+        /// <returns>An <see cref="HtmlBuilder"/> which generates an empty HTML document</returns>
+        public static HtmlBuilder Null { get; } = NullHtmlBuilder.Instance;
 
         /// <summary>
         /// Render the HTML into a <see cref="TextWriter"/>
@@ -22,7 +43,7 @@ namespace Eighty.Twenty
                 throw new ArgumentNullException(nameof(writer));
             }
 
-            if (!_writer.IsDefault())
+            if (!_writer.IsDefault() || _parent != null)
             {
                 throw new InvalidOperationException("Write is not re-entrant");
             }
@@ -54,6 +75,39 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
+        /// Write <paramref name="partial"/>'s HTML into this <see cref="HtmlBuilder"/>'s output stream.
+        /// </summary>
+        /// <param name="partial">The child <see cref="HtmlBuilder"/></param>
+        protected void Partial(HtmlBuilder partial)
+        {
+            if (partial == null)
+            {
+                throw new ArgumentNullException(nameof(partial));
+            }
+            
+            partial.RenderAsPartial(this);
+        }
+
+        private void RenderAsPartial(HtmlBuilder parent)
+        {
+            if (!_writer.IsDefault() || _parent != null)
+            {
+                throw new InvalidOperationException("Write is not re-entrant");
+            }
+
+            _parent = parent;
+
+            try
+            {
+                Build();
+            }
+            finally
+            {
+                _parent = null;
+            }
+        }
+
+        /// <summary>
         /// Write a tag which takes children.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
@@ -61,7 +115,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attrs);
-            _writer.WriteRaw('>');
+            Writer.WriteRaw('>');
             return new TagBuilder(name, this, true);
         }
         /// <summary>
@@ -72,7 +126,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attrs);
-            _writer.WriteRaw('>');
+            Writer.WriteRaw('>');
             return new TagBuilder(name, this, true);
         }
 
@@ -83,7 +137,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attrs);
-            _writer.WriteRaw("/>");
+            Writer.WriteRaw("/>");
         }
         /// <summary>
         /// Write a tag which does not take children.
@@ -92,7 +146,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attrs);
-            _writer.WriteRaw("/>");
+            Writer.WriteRaw("/>");
         }
 
         /// <summary>
@@ -101,7 +155,7 @@ namespace Eighty.Twenty
         /// <param name="text">The text to HTML-encode</param>
         protected internal void Text(string text)
         {
-            _writer.Write(text);
+            Writer.Write(text);
         }
 
         /// <summary>
@@ -110,7 +164,7 @@ namespace Eighty.Twenty
         /// <param name="rawHtml">The pre-encoded string</param>
         protected internal void Raw(string rawHtml)
         {
-            _writer.WriteRaw(rawHtml);
+            Writer.WriteRaw(rawHtml);
         }
 
         /// <summary>
@@ -126,7 +180,7 @@ namespace Eighty.Twenty
         /// <param name="html">The HTML to write.</param>
         protected void Html(Html html)
         {
-            html.WriteImpl(ref _writer);
+            html.WriteImpl(ref Writer);
         }
 
         /// <summary>
@@ -139,13 +193,13 @@ namespace Eighty.Twenty
 
         private void StartTag(string name)
         {
-            _writer.WriteRaw('<');
-            _writer.Write(name);
+            Writer.WriteRaw('<');
+            Writer.Write(name);
         }
         private void StartTagRaw(string name)
         {
-            _writer.WriteRaw('<');
-            _writer.WriteRaw(name);
+            Writer.WriteRaw('<');
+            Writer.WriteRaw(name);
         }
         private void Attrs(params Attr[] attrs)
         {
@@ -223,8 +277,8 @@ namespace Eighty.Twenty
         }
         private void Attr(Attr attr)
         {
-            _writer.WriteRaw(' ');
-            attr.Write(ref _writer);
+            Writer.WriteRaw(' ');
+            attr.Write(ref Writer);
         }
     }
 }

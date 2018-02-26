@@ -37,7 +37,7 @@ namespace Eighty.Twenty
         {{
             StartTagRaw(""{name}"");
             {WriteAttrs(attrs)}
-            _writer.WriteRaw('>');
+            Writer.WriteRaw('>');
             return new TagBuilder(""{name}"", this, false);
         }}
 
@@ -49,7 +49,7 @@ namespace Eighty.Twenty
         {{
             StartTagRaw(""{name}"");
             Attrs(attrs);
-            _writer.WriteRaw('>');
+            Writer.WriteRaw('>');
             return new TagBuilder(""{name}"", this, false);
         }}
 
@@ -61,7 +61,7 @@ namespace Eighty.Twenty
         {{
             StartTagRaw(""{name}"");
             Attrs(attrs);
-            _writer.WriteRaw('>');
+            Writer.WriteRaw('>');
             return new TagBuilder(""{name}"", this, false);
         }}
         {TagAttrs(name)}
@@ -76,7 +76,7 @@ namespace Eighty.Twenty
         {{
             StartTagRaw(""{name}"");
             {WriteAttrs(attrs)}
-            _writer.WriteRaw(""/>"");
+            Writer.WriteRaw(""/>"");
         }}
         
         /// <summary>
@@ -86,7 +86,7 @@ namespace Eighty.Twenty
         {{
             StartTagRaw(""{name}"");
             Attrs(attrs);
-            _writer.WriteRaw(""/>"");
+            Writer.WriteRaw(""/>"");
         }}
         
         /// <summary>
@@ -96,7 +96,7 @@ namespace Eighty.Twenty
         {{
             StartTagRaw(""{name}"");
             Attrs(attrs);
-            _writer.WriteRaw(""/>"");
+            Writer.WriteRaw(""/>"");
         }}
         {SelfClosingTagAttrs(name)}
 ";
@@ -125,7 +125,7 @@ namespace Eighty.Twenty
         {{
             StartTagRaw(""{name}"");
             Attrs({AttrArgs(n)});
-            _writer.WriteRaw('>');
+            Writer.WriteRaw('>');
             return new TagBuilder(""{name}"", this, false);
         }}"));
 
@@ -138,7 +138,7 @@ namespace Eighty.Twenty
         {{
             StartTagRaw(""{name}"");
             Attrs({AttrArgs(n)});
-            _writer.WriteRaw(""/>"");
+            Writer.WriteRaw(""/>"");
         }}"));
     }
 }
