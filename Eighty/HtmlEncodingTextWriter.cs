@@ -130,6 +130,17 @@ namespace Eighty
 
         private void WriteRawImpl(string s, int start, int count)
         {
+            if (count <= _buffer.Length - _bufPos)
+            {
+                // the whole string fits in the buffer, no need to flush
+                s.CopyTo(start, _buffer, _bufPos, count);
+                _bufPos += count;
+                return;
+            }
+            WriteInChunks(s, start, count);
+        }
+        private void WriteInChunks(string s, int start, int count)
+        {
             while (count > 0)
             {
                 var chunkSize = Math.Min(count, _buffer.Length - _bufPos);

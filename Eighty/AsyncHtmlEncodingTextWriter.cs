@@ -127,7 +127,18 @@ namespace Eighty
             return WriteRawImpl(s, 0, s.Length);
         }
 
-        private async Task WriteRawImpl(string s, int start, int count)
+        private Task WriteRawImpl(string s, int start, int count)
+        {
+            if (count <= _buffer.Length - _bufPos)
+            {
+                // the whole string fits in the buffer, no need to flush
+                s.CopyTo(start, _buffer, _bufPos, count);
+                _bufPos += count;
+                return Task.CompletedTask;
+            }
+            return WriteInChunks(s, start, count);
+        }
+        private async Task WriteInChunks(string s, int start, int count)
         {
             while (count > 0)
             {
