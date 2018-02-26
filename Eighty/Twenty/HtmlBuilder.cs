@@ -171,13 +171,6 @@ namespace Eighty.Twenty
         /// Write HTML.
         /// </summary>
         /// <param name="html">The HTML to write.</param>
-        [Obsolete("This method has been renamed to Html()")]
-        protected void Write(Html html) => Html(html);
-
-        /// <summary>
-        /// Write HTML.
-        /// </summary>
-        /// <param name="html">The HTML to write.</param>
         protected void Html(Html html)
         {
             html.WriteImpl(ref Writer);
