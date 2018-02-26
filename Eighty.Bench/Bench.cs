@@ -44,8 +44,7 @@ namespace Eighty.Bench
             {
                 builder.Add(html);
             }
-            using (var stream = File.OpenWrite("output.html"))
-            using (var writer = new StreamWriter(stream))
+            using (var writer = new StreamWriter("output.html"))
             {
                 _(builder.MoveToImmutable()).Write(writer);
             }
@@ -59,8 +58,7 @@ namespace Eighty.Bench
             {
                 builder.Add(p(@class: "para<>")._());
             }
-            using (var stream = File.OpenWrite("output.html"))
-            using (var writer = new StreamWriter(stream))
+            using (var writer = new StreamWriter("output.html"))
             {
                 _(builder.MoveToImmutable()).Write(writer);
             }
@@ -69,8 +67,7 @@ namespace Eighty.Bench
         [BenchmarkCategory("Flat"), Benchmark]
         public void Flat_Eighty_Render()
         {
-            using (var stream = File.OpenWrite("output.html"))
-            using (var writer = new StreamWriter(stream))
+            using (var writer = new StreamWriter("output.html"))
             {
                 _flatPsEighty.Write(writer);
             }
@@ -79,8 +76,7 @@ namespace Eighty.Bench
         [BenchmarkCategory("Flat"), Benchmark]
         public async Task Flat_Eighty_RenderAsync()
         {
-            using (var stream = File.OpenWrite("output.html"))
-            using (var writer = new StreamWriter(stream))
+            using (var writer = new StreamWriter("output.html"))
             {
                 await _flatPsEighty.WriteAsync(writer);
             }
@@ -89,19 +85,16 @@ namespace Eighty.Bench
         [BenchmarkCategory("Flat"), Benchmark]
         public void Flat_Twenty()
         {
-            using (var stream = File.OpenWrite("output.html"))
-            using (var writer = new StreamWriter(stream))
+            using (var writer = new StreamWriter("output.html"))
             {
                 _flatPsTwenty.Write(writer);
-                writer.ToString();
             }
         }
 
         [BenchmarkCategory("Deep"), Benchmark(Baseline = true)]
         public void Deep_Eighty_BuildAndRender()
         {
-            using (var stream = File.OpenWrite("output.html"))
-            using (var writer = new StreamWriter(stream))
+            using (var writer = new StreamWriter("output.html"))
             {
                 DeepPs(1000).Write(writer);
             }
@@ -110,8 +103,7 @@ namespace Eighty.Bench
         [BenchmarkCategory("Deep"), Benchmark]
         public void Deep_Eighty_Render()
         {
-            using (var stream = File.OpenWrite("output.html"))
-            using (var writer = new StreamWriter(stream))
+            using (var writer = new StreamWriter("output.html"))
             {
                 _deepPsEighty.Write(writer);
             }
@@ -120,8 +112,7 @@ namespace Eighty.Bench
         [BenchmarkCategory("Deep"), Benchmark]
         public async Task Deep_Eighty_RenderAsync()
         {
-            using (var stream = File.OpenWrite("output.html"))
-            using (var writer = new StreamWriter(stream))
+            using (var writer = new StreamWriter("output.html"))
             {
                 await _deepPsEighty.WriteAsync(writer);
             }
@@ -130,11 +121,9 @@ namespace Eighty.Bench
         [BenchmarkCategory("Deep"), Benchmark]
         public void Deep_Twenty()
         {
-            using (var stream = File.OpenWrite("output.html"))
-            using (var writer = new StreamWriter(stream))
+            using (var writer = new StreamWriter("output.html"))
             {
                 _deepPsTwenty.Write(writer);
-                writer.ToString();
             }
         }
 
