@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Xunit;
 using H = Eighty.Html;
 using static Eighty.Html;
@@ -23,9 +24,16 @@ namespace Eighty.Tests
         [Fact]
         public void LongText()
         {
-            var expected = new string('a', 5000);
-            Html html = expected;
-            Assert.Equal(expected, html.ToString());
+            {
+                var expected = new string('a', 5000);
+                Html html = expected;
+                Assert.Equal(expected, html.ToString());
+            }
+            {
+                var expected = string.Concat(Enumerable.Repeat("abcdefghijkl", 1000));
+                Html html = expected;
+                Assert.Equal(expected, html.ToString());
+            }
         }
         [Fact]
         public void TextEscaping()

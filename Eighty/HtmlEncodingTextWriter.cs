@@ -137,6 +137,7 @@ namespace Eighty
                 s.CopyTo(start, _buffer, _bufPos, chunkSize);
 
                 count -= chunkSize;
+                start += chunkSize;
                 _bufPos += chunkSize;
 
                 FlushIfNecessary();

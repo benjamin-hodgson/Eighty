@@ -4,6 +4,7 @@ using H = Eighty.Html;
 using static Eighty.Html;
 using System.Threading.Tasks;
 using System.IO;
+using System.Linq;
 
 namespace Eighty.Tests
 {
@@ -25,9 +26,16 @@ namespace Eighty.Tests
         [Fact]
         public async Task LongText()
         {
-            var expected = new string('a', 5000);
-            Html html = expected;
-            Assert.Equal(expected, await GetStringAsync(html));
+            {
+                var expected = new string('a', 5000);
+                Html html = expected;
+                Assert.Equal(expected, await GetStringAsync(html));
+            }
+            {
+                var expected = string.Concat(Enumerable.Repeat("abcdefghijkl", 1000));
+                Html html = expected;
+                Assert.Equal(expected, await GetStringAsync(html));
+            }
         }
         [Fact]
         public async Task TextEscaping()
