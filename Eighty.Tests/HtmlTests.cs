@@ -17,9 +17,8 @@ namespace Eighty.Tests
         [Fact]
         public void Text_HighAscii()
         {
-            var expected = ((char)232).ToString();  // "è"
-            Html html = expected;
-            Assert.Equal(expected, html.ToString());
+            Html html = ((char)232).ToString();  // "è"
+            Assert.Equal("&#xE8;", html.ToString());
         }
         [Fact]
         public void LongText()
@@ -39,13 +38,13 @@ namespace Eighty.Tests
         public void TextEscaping()
         {
             Html html = "<>\"&'";
-            Assert.Equal("&lt;&gt;&quot;&amp;&#39;", html.ToString());
+            Assert.Equal("&lt;&gt;&quot;&amp;&#x27;", html.ToString());
         }
         [Fact]
         public void TextEscaping_Unicode()
         {
             Html html = "\U0001F01C";
-            Assert.Equal("&#127004;", html.ToString());
+            Assert.Equal("&#x1F01C;", html.ToString());
         }
         [Fact]
         public void RawText()

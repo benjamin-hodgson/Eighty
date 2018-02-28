@@ -1,3 +1,5 @@
+using System.Text.Encodings.Web;
+
 namespace Eighty
 {
     internal static class HtmlEncodingHelpers
@@ -7,17 +9,12 @@ namespace Eighty
         public static bool IsBasicMultilingualPlane(int codePoint)
             => codePoint <= 0x00FFFF;
 
-        public static int SafePrefixLength(string s, int start)
+        public static unsafe int FindFirstCharacterToEncode(this HtmlEncoder htmlEncoder, string s, int start)
         {
-            int i;
-            for (i = start; i < s.Length; i++)
+            fixed (char* t = s)
             {
-                if (ShouldEncode(s[i]))
-                {
-                    break;
-                }
+                return htmlEncoder.FindFirstCharacterToEncode(t + start, s.Length - start);
             }
-            return i - start;
         }
 
         public static bool ShouldEncode(char c)

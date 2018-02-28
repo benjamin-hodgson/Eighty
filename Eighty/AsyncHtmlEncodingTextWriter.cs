@@ -2,6 +2,7 @@ using System;
 using System.Buffers;
 using System.Globalization;
 using System.IO;
+using System.Text.Encodings.Web;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -17,13 +18,17 @@ namespace Eighty
     internal class AsyncHtmlEncodingTextWriter
     {
         private readonly TextWriter _underlyingWriter;
+        private readonly HtmlEncoder _htmlEncoder;
         private char[] _buffer;
+        private char[] _scratchpad;
         private int _bufPos;
 
-        public AsyncHtmlEncodingTextWriter(TextWriter underlyingWriter)
+        public AsyncHtmlEncodingTextWriter(TextWriter underlyingWriter, HtmlEncoder htmlEncoder)
         {
             _underlyingWriter = underlyingWriter;
+            _htmlEncoder = htmlEncoder;
             _buffer = ArrayPool<char>.Shared.Rent(2048);
+            _scratchpad = ArrayPool<char>.Shared.Rent(_htmlEncoder.MaxOutputCharactersPerInputCharacter);
             _bufPos = 0;
         }
 
@@ -32,6 +37,8 @@ namespace Eighty
             await Flush().ConfigureAwait(false);
             ArrayPool<char>.Shared.Return(_buffer);
             _buffer = null;
+            ArrayPool<char>.Shared.Return(_scratchpad);
+            _scratchpad = null;
             _bufPos = 0;
         }
 
@@ -40,13 +47,20 @@ namespace Eighty
             var position = 0;
             while (position < s.Length)
             {
-                var safeChunkLength = HtmlEncodingHelpers.SafePrefixLength(s, position);
+                var safeChunkLength = _htmlEncoder.FindFirstCharacterToEncode(s, position);
+                if (safeChunkLength == -1)  // no encoding chars in the input, write the whole string without encoding
+                {
+                    safeChunkLength = s.Length - position;
+                }
 
                 await WriteRawImpl(s, position, safeChunkLength).ConfigureAwait(false);
                 position += safeChunkLength;
 
-                // we're now looking at an HTML-encoding character
-                position = await WriteEncodingChars(s, position).ConfigureAwait(false);
+                if (position < s.Length)
+                {
+                    // we're now looking at an HTML-encoding character
+                    position = await WriteEncodingChars(s, position).ConfigureAwait(false);
+                }
             }
         }
 
@@ -56,63 +70,68 @@ namespace Eighty
         /// <returns>The new position</returns>
         private async ValueTask<int> WriteEncodingChars(string s, int position)
         {
-            while (position < s.Length && HtmlEncodingHelpers.ShouldEncode(s[position]))
+            while (position < s.Length)
             {
-                var c = s[position];
-                position++;
-                switch (c)
+                var isSurrogatePair = char.IsSurrogatePair(s, position);
+                if (char.IsSurrogate(s, position) && !isSurrogatePair)
                 {
-                    case '<':
-                        await WriteRaw("&lt;").ConfigureAwait(false);
-                        continue;
-                    case '>':
-                        await WriteRaw("&gt;").ConfigureAwait(false);
-                        continue;
-                    case '&':
-                        await WriteRaw("&amp;").ConfigureAwait(false);
-                        continue;
-                    case '"':
-                        await WriteRaw("&quot;").ConfigureAwait(false);
-                        continue;
-                    case '\'':
-                        await WriteRaw("&#39;").ConfigureAwait(false);
-                        continue;
-                }
-                if (char.IsSurrogate(c))
-                {
-                    if (position >= s.Length)  // there's no low surrogate
-                    {
-                        await WriteUnicodeReplacementChar().ConfigureAwait(false);
-                        continue;
-                    }
-
-                    var highSurrogate = c;
-                    var lowSurrogate = s[position];
-                    // don't increment position until we're sure we're going to consume lowSurrogate
-
-                    if (!char.IsSurrogatePair(highSurrogate, lowSurrogate))
-                    {
-                        await WriteUnicodeReplacementChar().ConfigureAwait(false);
-                        continue;
-                    }
-
+                    await WriteUnicodeReplacementChar().ConfigureAwait(false);
                     position++;
-
-                    var codePoint = char.ConvertToUtf32(highSurrogate, lowSurrogate);
-                    if (HtmlEncodingHelpers.IsBasicMultilingualPlane(codePoint))
-                    {
-                        await WriteRaw(highSurrogate).ConfigureAwait(false);
-                        await WriteRaw(lowSurrogate).ConfigureAwait(false);
-                        continue;
-                    }
-                    await WriteNumericEntity(codePoint).ConfigureAwait(false);
                     continue;
                 }
 
-                // shouldn't be reachable, because we checked ShouldEncode at the start of the while loop
-                await WriteRaw(c).ConfigureAwait(false);
+                var codePoint = char.ConvertToUtf32(s, position);  // won't fail because we checked the precondition
+                if (!_htmlEncoder.WillEncode(codePoint))
+                {
+                    break;
+                }
+                position += isSurrogatePair ? 2 : 1;
+
+                if (_bufPos + _htmlEncoder.MaxOutputCharactersPerInputCharacter < _buffer.Length)
+                {
+                    // there's definitely enough space in the buffer, write the encoded html directly
+                    EncodeIntoBuffer(codePoint);
+                }
+                else
+                {
+                    // write it to the scratchpad first, because it definitely has enough space, then copy over in chunks
+                    var numberOfCharactersWritten = EncodeIntoScratchpad(codePoint);
+                    await WriteRawImpl(_scratchpad, 0, numberOfCharactersWritten).ConfigureAwait(false);
+                }
             }
             return position;
+        }
+
+        private unsafe void EncodeIntoBuffer(int codePoint)
+        {
+            bool success;
+            int numberOfCharactersWritten;
+            fixed (char* b = _buffer)
+            {
+                success = _htmlEncoder.TryEncodeUnicodeScalar(codePoint, b + _bufPos, _buffer.Length - _bufPos, out numberOfCharactersWritten);
+            }
+            if (!success)
+            {
+                // should be unreachable
+                throw new InvalidOperationException("Buffer overflow when encoding HTML. Please report this as a bug in Eighty!");
+            }
+            _bufPos += numberOfCharactersWritten;
+        }
+
+        private unsafe int EncodeIntoScratchpad(int codePoint)
+        {
+            bool success;
+            int numberOfCharactersWritten;
+            fixed (char* b = _scratchpad)
+            {
+                success = _htmlEncoder.TryEncodeUnicodeScalar(codePoint, b, _scratchpad.Length, out numberOfCharactersWritten);
+            }
+            if (!success)
+            {
+                // should be unreachable
+                throw new InvalidOperationException("Buffer overflow when encoding HTML. Please report this as a bug in Eighty!");
+            }
+            return numberOfCharactersWritten;
         }
 
         public async Task WriteRaw(char c)
@@ -153,19 +172,36 @@ namespace Eighty
                 await FlushIfNecessary().ConfigureAwait(false);
             }
         }
+        private Task WriteRawImpl(char[] arr, int start, int count)
+        {
+            if (count <= _buffer.Length - _bufPos)
+            {
+                // the whole string fits in the buffer, no need to flush
+                Array.Copy(arr, start, _buffer, _bufPos, count);
+                _bufPos += count;
+                return Task.CompletedTask;
+            }
+            return WriteInChunks(arr, start, count);
+        }
+        private async Task WriteInChunks(char[] arr, int start, int count)
+        {
+            while (count > 0)
+            {
+                var chunkSize = Math.Min(count, _buffer.Length - _bufPos);
+
+                Array.Copy(arr, start, _buffer, _bufPos, chunkSize);
+
+                count -= chunkSize;
+                start += chunkSize;
+                _bufPos += chunkSize;
+
+                await FlushIfNecessary().ConfigureAwait(false);
+            }
+        }
 
         private Task WriteUnicodeReplacementChar()
         {
             return WriteRaw(HtmlEncodingHelpers.UNICODE_REPLACEMENT_CHAR);
-        }
-
-        private async Task WriteNumericEntity(int number)
-        {
-            await WriteRawImpl("&#", 0, 2).ConfigureAwait(false);
-            // TODO: this will typically allocate a (small) string.
-            // can do better by just appending the characters one by one
-            await WriteRaw(number.ToString(CultureInfo.InvariantCulture)).ConfigureAwait(false);
-            await WriteRaw(';').ConfigureAwait(false);
         }
 
         private Task FlushIfNecessary()

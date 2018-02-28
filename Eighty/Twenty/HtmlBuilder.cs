@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
+using System.Text.Encodings.Web;
 
 namespace Eighty.Twenty
 {
@@ -38,6 +39,16 @@ namespace Eighty.Twenty
         /// <param name="writer">The writer</param>
         public void Write(TextWriter writer)
         {
+            Write(writer, HtmlEncoder.Default);
+        }
+
+        /// <summary>
+        /// Render the HTML into a <see cref="TextWriter"/>, using an <see cref="HtmlEncoder"/> to encode input text
+        /// </summary>
+        /// <param name="writer">The writer</param>
+        /// <param name="htmlEncoder">The HTML encoder</param>
+        public void Write(TextWriter writer, HtmlEncoder htmlEncoder)
+        {
             if (writer == null)
             {
                 throw new ArgumentNullException(nameof(writer));
@@ -48,7 +59,7 @@ namespace Eighty.Twenty
                 throw new InvalidOperationException("Write is not re-entrant");
             }
 
-            _writer = new HtmlEncodingTextWriter(writer);
+            _writer = new HtmlEncodingTextWriter(writer, htmlEncoder);
             
             try
             {

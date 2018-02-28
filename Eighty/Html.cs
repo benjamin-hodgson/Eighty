@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
+using System.Text.Encodings.Web;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -24,12 +25,26 @@ namespace Eighty
         /// <param name="writer">The writer</param>
         public void Write(TextWriter writer)
         {
+            Write(writer, HtmlEncoder.Default);
+        }
+
+        /// <summary>
+        /// Write the HTML to a <see cref="TextWriter"/>, using an <see cref="HtmlEncoder"/> to encode input text
+        /// </summary>
+        /// <param name="writer">The writer</param>
+        /// <param name="htmlEncoder">The HTML encoder</param>
+        public void Write(TextWriter writer, HtmlEncoder htmlEncoder)
+        {
             if (writer == null)
             {
                 throw new ArgumentNullException(nameof(writer));
             }
+            if (htmlEncoder == null)
+            {
+                throw new ArgumentNullException(nameof(htmlEncoder));
+            }
 
-            var htmlEncodingTextWriter = new HtmlEncodingTextWriter(writer);
+            var htmlEncodingTextWriter = new HtmlEncodingTextWriter(writer, htmlEncoder);
             WriteImpl(ref htmlEncodingTextWriter);
             htmlEncodingTextWriter.FlushAndClear();
         }
@@ -38,14 +53,26 @@ namespace Eighty
         /// Write the HTML to a <see cref="TextWriter"/>
         /// </summary>
         /// <param name="writer">The writer</param>
-        public async Task WriteAsync(TextWriter writer)
+        public Task WriteAsync(TextWriter writer)
+            => WriteAsync(writer, HtmlEncoder.Default);
+
+        /// <summary>
+        /// Write the HTML to a <see cref="TextWriter"/>, using an <see cref="HtmlEncoder"/> to encode input text
+        /// </summary>
+        /// <param name="writer">The writer</param>
+        /// <param name="htmlEncoder">The HTML encoder</param>
+        public async Task WriteAsync(TextWriter writer, HtmlEncoder htmlEncoder)
         {
             if (writer == null)
             {
                 throw new ArgumentNullException(nameof(writer));
             }
+            if (htmlEncoder == null)
+            {
+                throw new ArgumentNullException(nameof(htmlEncoder));
+            }
 
-            var htmlEncodingTextWriter = new AsyncHtmlEncodingTextWriter(writer);
+            var htmlEncodingTextWriter = new AsyncHtmlEncodingTextWriter(writer, htmlEncoder);
             await WriteAsyncImpl(htmlEncodingTextWriter).ConfigureAwait(false);
             await htmlEncodingTextWriter.FlushAndClear().ConfigureAwait(false);
         }
