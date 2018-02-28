@@ -45,8 +45,28 @@ namespace Eighty.Tests
         [Fact]
         public async Task TextEscaping_Unicode()
         {
-            Html html = "\U0001F01C";
-            Assert.Equal("&#x1F01C;", await GetStringAsync(html));
+            {
+                Html html = "\U0001F01C";
+                Assert.Equal("&#x1F01C;", await GetStringAsync(html));
+            }
+            {
+                Html html = "\U0001F01C then some text";
+                Assert.Equal("&#x1F01C; then some text", await GetStringAsync(html));
+            }
+        }
+        [Fact]
+        public async Task Text_BadSurrogatePair()
+        {
+            {
+                // "\U0001F01C" is '\xd83c', '\xdc1c', so flipping them produces an invalid pair
+                Html html = new string(new[]{ '\xdc1c', '\xd83c' });
+                Assert.Equal("\uFFFD\uFFFD", await GetStringAsync(html));
+            }
+            {
+                // a single bad surrogate followed by a valid pair
+                Html html = new string(new[]{ '\xdc1c', '\xd83c', '\xdc1c' });
+                Assert.Equal("\uFFFD&#x1F01C;", await GetStringAsync(html));
+            }
         }
         [Fact]
         public async Task RawText()

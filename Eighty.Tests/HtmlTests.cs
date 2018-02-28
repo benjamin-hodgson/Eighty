@@ -43,8 +43,28 @@ namespace Eighty.Tests
         [Fact]
         public void TextEscaping_Unicode()
         {
-            Html html = "\U0001F01C";
-            Assert.Equal("&#x1F01C;", html.ToString());
+            {
+                Html html = "\U0001F01C";
+                Assert.Equal("&#x1F01C;", html.ToString());
+            }
+            {
+                Html html = "\U0001F01C then some text";
+                Assert.Equal("&#x1F01C; then some text", html.ToString());
+            }
+        }
+        [Fact]
+        public void Text_BadSurrogatePair()
+        {
+            {
+                // "\U0001F01C" is '\xd83c', '\xdc1c', so flipping them produces an invalid pair
+                Html html = new string(new[]{ '\xdc1c', '\xd83c' });
+                Assert.Equal("\uFFFD\uFFFD", html.ToString());
+            }
+            {
+                // a single bad surrogate followed by a valid pair
+                Html html = new string(new[]{ '\xdc1c', '\xd83c', '\xdc1c' });
+                Assert.Equal("\uFFFD&#x1F01C;", html.ToString());
+            }
         }
         [Fact]
         public void RawText()
