@@ -8,12 +8,20 @@ using Microsoft.Extensions.Logging;
 
 namespace Eighty.AspNetCore.Mvc.ResultExecutors
 {
+    /// <summary>
+    /// Executes a <see cref="HtmlResult"/>
+    /// </summary>
     public class HtmlResultExecutor
     {
         private const string DefaultContentType = "text/plain; charset=utf-8";
         private readonly ILogger _logger;
         private readonly IHttpResponseStreamWriterFactory _writerFactory;
 
+        /// <summary>
+        /// Creates an <see cref="HtmlResultExecutor"/>
+        /// </summary>
+        /// <param name="logger">The logger</param>
+        /// <param name="writerFactory">The writer factory</param>
         public HtmlResultExecutor(
             ILogger<HtmlResultExecutor> logger,
             IHttpResponseStreamWriterFactory writerFactory
@@ -31,6 +39,11 @@ namespace Eighty.AspNetCore.Mvc.ResultExecutors
             _writerFactory = writerFactory;
         }
 
+        /// <summary>
+        /// Execute the <see cref="HtmlResult"/>
+        /// </summary>
+        /// <param name="context">The action context</param>
+        /// <param name="result">The action result</param>
         public async Task ExecuteAsync(ActionContext context, HtmlResult result)
         {
             if (context == null)

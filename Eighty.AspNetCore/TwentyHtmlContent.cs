@@ -6,10 +6,17 @@ using Microsoft.AspNetCore.Html;
 
 namespace Eighty.AspNetCore
 {
+    /// <summary>
+    /// An implementation of <see cref="IHtmlContent"/> which wraps an <see cref="HtmlBuilder"/>
+    /// </summary>
     public class TwentyHtmlContent : IHtmlContent
     {
         private readonly HtmlBuilder _builder;
 
+        /// <summary>
+        /// Create a <see cref="TwentyHtmlContent"/>
+        /// </summary>
+        /// <param name="builder">The <see cref="HtmlBuilder"/></param>
         public TwentyHtmlContent(HtmlBuilder builder)
         {
             if (builder == null)
@@ -19,6 +26,7 @@ namespace Eighty.AspNetCore
             _builder = builder;
         }
 
+        /// <inheritdoc/>
         public void WriteTo(TextWriter writer, HtmlEncoder encoder)
         {
             if (writer == null)

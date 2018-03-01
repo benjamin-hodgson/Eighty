@@ -8,12 +8,20 @@ using Microsoft.Extensions.Logging;
 
 namespace Eighty.AspNetCore.Mvc.ResultExecutors
 {
+    /// <summary>
+    /// Executes a <see cref="TwentyViewResult{TModel}"/>
+    /// </summary>
     public class TwentyViewResultExecutor<TModel>
     {
         private const string DefaultContentType = "text/plain; charset=utf-8";
         private readonly ILogger _logger;
         private readonly IHttpResponseStreamWriterFactory _writerFactory;
 
+        /// <summary>
+        /// Creates a <see cref="TwentyViewResultExecutor{TModel}"/>
+        /// </summary>
+        /// <param name="loggerFactory">The logger factory</param>
+        /// <param name="writerFactory">The writer factory</param>
         public TwentyViewResultExecutor(
             ILoggerFactory loggerFactory,
             IHttpResponseStreamWriterFactory writerFactory
@@ -31,6 +39,11 @@ namespace Eighty.AspNetCore.Mvc.ResultExecutors
             _writerFactory = writerFactory;
         }
 
+        /// <summary>
+        /// Execute the <see cref="TwentyViewResult{TModel}"/>
+        /// </summary>
+        /// <param name="context">The action context</param>
+        /// <param name="result">The action result</param>
         public async Task ExecuteAsync(ActionContext context, TwentyViewResult<TModel> result)
         {
             if (context == null)

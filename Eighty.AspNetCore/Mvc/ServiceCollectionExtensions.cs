@@ -9,8 +9,16 @@ using Microsoft.Extensions.Options;
 
 namespace Eighty.AspNetCore.Mvc
 {
-    public static class ServiceCollectionExtensions
+    /// <summary>
+    /// Extension methods for <see cref="IMvcBuilder"/> for configuring Eighty
+    /// </summary>
+    public static class MvcBuilderExtensions
     {
+        /// <summary>
+        /// Configure all of Eighty's MVC features
+        /// </summary>
+        /// <param name="builder">The MVC builder</param>
+        /// <returns>The MVC builder</returns>
         public static IMvcBuilder AddEighty(this IMvcBuilder builder)
         {
             if (builder == null)

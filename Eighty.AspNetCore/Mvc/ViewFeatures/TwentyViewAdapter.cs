@@ -5,11 +5,21 @@ using Microsoft.AspNetCore.Mvc.ViewEngines;
 
 namespace Eighty.AspNetCore.Mvc.ViewFeatures
 {
+    /// <summary>
+    /// Wraps an <see cref="ITwentyView{TModel}"/> into an <see cref="IView"/>
+    /// </summary>
+    /// <typeparam name="TModel">The model type</typeparam>
     public class TwentyViewAdapter<TModel> : IView
     {
+        /// <inheritdoc/>
         public string Path { get; }
         private ITwentyView<TModel> _view;
 
+        /// <summary>
+        /// Creates a <see cref="TwentyViewAdapter{TModel}"/>
+        /// </summary>
+        /// <param name="path">The view path</param>
+        /// <param name="view">The view</param>
         public TwentyViewAdapter(string path, ITwentyView<TModel> view)
         {
             if (path == null)
@@ -24,6 +34,7 @@ namespace Eighty.AspNetCore.Mvc.ViewFeatures
             _view = view;
         }
 
+        /// <inheritdoc/>
         public Task RenderAsync(ViewContext context)
         {
             if (context == null)

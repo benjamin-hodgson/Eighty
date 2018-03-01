@@ -8,11 +8,19 @@ using Microsoft.Extensions.Options;
 
 namespace Eighty.AspNetCore.Mvc.ViewFeatures
 {
+    /// <summary>
+    /// An <see cref="IViewEngine"/> which can render <see cref="IEightyView{TModel}"/>s and <see cref="ITwentyView{TModel}"/>s
+    /// </summary>
     public class EightyViewEngine : IViewEngine
     {
         private readonly Dictionary<string, Func<IServiceProvider, IView>> _views;
         private readonly IServiceProvider _serviceProvider;
 
+        /// <summary>
+        /// Create an <see cref="EightyViewEngine"/>
+        /// </summary>
+        /// <param name="options">The view options</param>
+        /// <param name="serviceProvider">The service provider</param>
         public EightyViewEngine(EightyViewOptions options, IServiceProvider serviceProvider)
         {
             if (options == null)
@@ -27,6 +35,7 @@ namespace Eighty.AspNetCore.Mvc.ViewFeatures
             _serviceProvider = serviceProvider;
         }
 
+        /// <inheritdoc/>
         public ViewEngineResult FindView(ActionContext context, string viewName, bool isMainPage)
         {
             if (context == null)
@@ -46,6 +55,7 @@ namespace Eighty.AspNetCore.Mvc.ViewFeatures
             return ViewEngineResult.Found(path, value(_serviceProvider));
         }
 
+        /// <inheritdoc/>
         public ViewEngineResult GetView(string executingFilePath, string viewPath, bool isMainPage)
         {
             if (viewPath == null)
