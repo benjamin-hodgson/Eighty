@@ -12,6 +12,14 @@ namespace Eighty.AspNetCore.Mvc.ViewFeatures
 
         public EightyViewAdapter(string path, IEightyView<TModel> view)
         {
+            if (path == null)
+            {
+                throw new ArgumentNullException(nameof(path));
+            }
+            if (view == null)
+            {
+                throw new ArgumentNullException(nameof(view));
+            }
             Path = path;
             _view = view;
         }
