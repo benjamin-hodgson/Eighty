@@ -5,14 +5,14 @@ using System.Web.Mvc;
 namespace Eighty.AspNet.Mvc.ActionResults
 {
     /// <summary>
-    /// An <see cref="IActionResult"/> which renders some <see cref="Html"/>
+    /// An <see cref="ActionResult"/> which renders some <see cref="Eighty.Html"/>
     /// </summary>
     public class HtmlResult : ActionResult
     {
         /// <summary>
-        /// The <see cref="Html"/>
+        /// The <see cref="Eighty.Html"/>
         /// </summary>
-        /// <returns>The <see cref="Html"/></returns>
+        /// <returns>The <see cref="Eighty.Html"/></returns>
         public Html Html { get; }
         /// <summary>
         /// A custom status code
@@ -23,9 +23,8 @@ namespace Eighty.AspNet.Mvc.ActionResults
         /// <summary>
         /// Creates an <see cref="HtmlResult"/>
         /// </summary>
-        /// <param name="html">The <see cref="Html"/></param>
+        /// <param name="html">The <see cref="Eighty.Html"/></param>
         /// <param name="statusCode">A custom status code</param>
-        /// <param name="renderAsync">Render the HTML into the response asynchronously</param>
         public HtmlResult(Html html, HttpStatusCode? statusCode = null)
         {
             if (html == null)

@@ -23,6 +23,7 @@ namespace Eighty.AspNet.Mvc
             _html = html;
         }
 
+        /// <inheritdoc/>
         public string ToHtmlString() => _html.ToString();
     }
 }

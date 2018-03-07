@@ -1,23 +1,23 @@
 using System;
 using System.Net;
+using System.Web.Mvc;
 using Eighty.Twenty;
 
 namespace Eighty.AspNet.Mvc.ActionResults
 {
     /// <summary>
-    /// Methods for creating <see cref="IActionResult"/>s
+    /// Methods for creating <see cref="ActionResult"/>s
     /// </summary>
     public static class EightyActionResultFactory
     {
         /// <summary>
-        /// Creates an <see cref="IActionResult"/> from an <see cref="IHtmlRenderer{TModel}"/> and a <typeparamref name="TModel"/>
+        /// Creates an <see cref="ActionResult"/> from an <see cref="IHtmlRenderer{TModel}"/> and a <typeparamref name="TModel"/>
         /// </summary>
         /// <typeparam name="TModel">The model type</typeparam>
         /// <param name="view">The view</param>
         /// <param name="model">The model</param>
         /// <param name="statusCode">A custom status code</param>
-        /// <param name="renderAsync">Write the HTML to the response asynchronously</param>
-        /// <returns>An <see cref="IActionResult"/></returns>
+        /// <returns>An <see cref="ActionResult"/></returns>
         public static HtmlRendererResult<TModel> ToActionResult<TModel>(
             this IHtmlRenderer<TModel> view,
             TModel model,
@@ -25,14 +25,13 @@ namespace Eighty.AspNet.Mvc.ActionResults
         ) => Create(view, model, statusCode);
 
         /// <summary>
-        /// Creates an <see cref="IActionResult"/> from an <see cref="IHtmlRenderer{TModel}"/> and a <typeparamref name="TModel"/>
+        /// Creates an <see cref="ActionResult"/> from an <see cref="IHtmlRenderer{TModel}"/> and a <typeparamref name="TModel"/>
         /// </summary>
         /// <typeparam name="TModel">The model type</typeparam>
         /// <param name="view">The view</param>
         /// <param name="model">The model</param>
         /// <param name="statusCode">A custom status code</param>
-        /// <param name="renderAsync">Write the HTML to the response asynchronously</param>
-        /// <returns>An <see cref="IActionResult"/></returns>
+        /// <returns>An <see cref="ActionResult"/></returns>
         public static HtmlRendererResult<TModel> Create<TModel>(
             IHtmlRenderer<TModel> view,
             TModel model,
@@ -48,13 +47,13 @@ namespace Eighty.AspNet.Mvc.ActionResults
 
 
         /// <summary>
-        /// Creates an <see cref="IActionResult"/> from an <see cref="IHtmlBuilderRenderer{TModel}"/> and a <typeparamref name="TModel"/>
+        /// Creates an <see cref="ActionResult"/> from an <see cref="IHtmlBuilderRenderer{TModel}"/> and a <typeparamref name="TModel"/>
         /// </summary>
         /// <typeparam name="TModel">The model type</typeparam>
         /// <param name="view">The view</param>
         /// <param name="model">The model</param>
         /// <param name="statusCode">A custom status code</param>
-        /// <returns>An <see cref="IActionResult"/></returns>
+        /// <returns>An <see cref="ActionResult"/></returns>
         public static HtmlBuilderRendererResult<TModel> ToActionResult<TModel>(
             this IHtmlBuilderRenderer<TModel> view,
             TModel model,
@@ -62,13 +61,13 @@ namespace Eighty.AspNet.Mvc.ActionResults
         ) => Create(view, model, statusCode);
 
         /// <summary>
-        /// Creates an <see cref="IActionResult"/> from an <see cref="IHtmlBuilderRenderer{TModel}"/> and a <typeparamref name="TModel"/>
+        /// Creates an <see cref="ActionResult"/> from an <see cref="IHtmlBuilderRenderer{TModel}"/> and a <typeparamref name="TModel"/>
         /// </summary>
         /// <typeparam name="TModel">The model type</typeparam>
         /// <param name="view">The view</param>
         /// <param name="model">The model</param>
         /// <param name="statusCode">A custom status code</param>
-        /// <returns>An <see cref="IActionResult"/></returns>
+        /// <returns>An <see cref="ActionResult"/></returns>
         public static HtmlBuilderRendererResult<TModel> Create<TModel>(
             IHtmlBuilderRenderer<TModel> view,
             TModel model,
@@ -83,24 +82,22 @@ namespace Eighty.AspNet.Mvc.ActionResults
         }
 
         /// <summary>
-        /// Creates an <see cref="IActionResult"/> from some <see cref="Html"/>
+        /// Creates an <see cref="ActionResult"/> from some <see cref="Html"/>
         /// </summary>
         /// <param name="html">The HTML</param>
         /// <param name="statusCode">A custom status code</param>
-        /// <param name="renderAsync">Write the HTML to the response asynchronously</param>
-        /// <returns>An <see cref="IActionResult"/></returns>
+        /// <returns>An <see cref="ActionResult"/></returns>
         public static HtmlResult ToActionResult(
             this Html html,
             HttpStatusCode? statusCode = null
         ) => Create(html, statusCode);
 
         /// <summary>
-        /// Creates an <see cref="IActionResult"/> from some <see cref="Html"/>
+        /// Creates an <see cref="ActionResult"/> from some <see cref="Html"/>
         /// </summary>
         /// <param name="html">The HTML</param>
         /// <param name="statusCode">A custom status code</param>
-        /// <param name="renderAsync">Write the HTML to the response asynchronously</param>
-        /// <returns>An <see cref="IActionResult"/></returns>
+        /// <returns>An <see cref="ActionResult"/></returns>
         public static HtmlResult Create(
             Html html,
             HttpStatusCode? statusCode = null
@@ -114,22 +111,22 @@ namespace Eighty.AspNet.Mvc.ActionResults
         }
 
         /// <summary>
-        /// Creates an <see cref="IActionResult"/> from an <see cref="HtmlBuilder"/>
+        /// Creates an <see cref="ActionResult"/> from an <see cref="HtmlBuilder"/>
         /// </summary>
         /// <param name="htmlBuilder">The HTML builder</param>
         /// <param name="statusCode">A custom status code</param>
-        /// <returns>An <see cref="IActionResult"/></returns>
+        /// <returns>An <see cref="ActionResult"/></returns>
         public static HtmlBuilderResult ToActionResult(
             this HtmlBuilder htmlBuilder,
             HttpStatusCode? statusCode = null
         ) => Create(htmlBuilder, statusCode);
 
         /// <summary>
-        /// Creates an <see cref="IActionResult"/> from an <see cref="HtmlBuilder"/>
+        /// Creates an <see cref="ActionResult"/> from an <see cref="HtmlBuilder"/>
         /// </summary>
         /// <param name="htmlBuilder">The HTML builder</param>
         /// <param name="statusCode">A custom status code</param>
-        /// <returns>An <see cref="IActionResult"/></returns>
+        /// <returns>An <see cref="ActionResult"/></returns>
         public static HtmlBuilderResult Create(
             HtmlBuilder htmlBuilder,
             HttpStatusCode? statusCode = null

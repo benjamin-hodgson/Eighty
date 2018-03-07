@@ -5,7 +5,7 @@ using Eighty.Twenty;
 namespace Eighty.AspNet.Mvc
 {
     /// <summary>
-    /// An implementation of <see cref="IHtmlContent"/> which wraps an <see cref="HtmlBuilder"/>
+    /// An implementation of <see cref="IHtmlString"/> which wraps an <see cref="HtmlBuilder"/>
     /// </summary>
     public class TwentyHtmlString : IHtmlString
     {
@@ -24,6 +24,7 @@ namespace Eighty.AspNet.Mvc
             _builder = builder;
         }
 
+        /// <inheritdoc/>
         public string ToHtmlString() => _builder.ToString();
     }
 }

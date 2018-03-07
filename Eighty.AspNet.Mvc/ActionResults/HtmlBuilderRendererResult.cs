@@ -6,7 +6,7 @@ using Eighty.Twenty;
 namespace Eighty.AspNet.Mvc.ActionResults
 {
     /// <summary>
-    /// An <see cref="IActionResult"/> which renders an <see cref="IHtmlBuilderRenderer{TModel}"/> using a <typeparamref name="TModel"/>
+    /// An <see cref="ActionResult"/> which renders an <see cref="IHtmlBuilderRenderer{TModel}"/> using a <typeparamref name="TModel"/>
     /// </summary>
     /// <typeparam name="TModel">The model type</typeparam>
     public class HtmlBuilderRendererResult<TModel> : ActionResult

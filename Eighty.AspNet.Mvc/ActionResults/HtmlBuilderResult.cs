@@ -6,14 +6,14 @@ using Eighty.Twenty;
 namespace Eighty.AspNet.Mvc.ActionResults
 {
     /// <summary>
-    /// An <see cref="IActionResult"/> which renders an <see cref="HtmlBuilder"/>
+    /// An <see cref="ActionResult"/> which renders an <see cref="Twenty.HtmlBuilder"/>
     /// </summary>
     public class HtmlBuilderResult : ActionResult
     {
         /// <summary>
-        /// The <see cref="HtmlBuilder"/>
+        /// The <see cref="Twenty.HtmlBuilder"/>
         /// </summary>
-        /// <returns>The <see cref="HtmlBuilder"/></returns>
+        /// <returns>The <see cref="Twenty.HtmlBuilder"/></returns>
         public HtmlBuilder HtmlBuilder { get; }
         /// <summary>
         /// A custom status code
@@ -24,7 +24,7 @@ namespace Eighty.AspNet.Mvc.ActionResults
         /// <summary>
         /// Creates an <see cref="HtmlBuilderResult"/>
         /// </summary>
-        /// <param name="htmlBuilder">The <see cref="HtmlBuilder"/></param>
+        /// <param name="htmlBuilder">The <see cref="Twenty.HtmlBuilder"/></param>
         /// <param name="statusCode">A custom status code</param>
         public HtmlBuilderResult(HtmlBuilder htmlBuilder, HttpStatusCode? statusCode = null)
         {

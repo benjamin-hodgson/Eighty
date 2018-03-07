@@ -5,7 +5,7 @@ using System.Web.Mvc;
 namespace Eighty.AspNet.Mvc.ActionResults
 {
     /// <summary>
-    /// An <see cref="IActionResult"/> which renders an <see cref="IHtmlRenderer{TModel}"/> using a <typeparamref name="TModel"/>
+    /// An <see cref="ActionResult"/> which renders an <see cref="IHtmlRenderer{TModel}"/> using a <typeparamref name="TModel"/>
     /// </summary>
     /// <typeparam name="TModel">The model type</typeparam>
     public class HtmlRendererResult<TModel> : ActionResult
@@ -32,7 +32,6 @@ namespace Eighty.AspNet.Mvc.ActionResults
         /// <param name="view">The view</param>
         /// <param name="model">The model</param>
         /// <param name="statusCode">A custom status code</param>
-        /// <param name="renderAsync">Render the HTML into the response asynchronously</param>
         public HtmlRendererResult(IHtmlRenderer<TModel> view, TModel model, HttpStatusCode? statusCode = null)
         {
             if (view == null)
