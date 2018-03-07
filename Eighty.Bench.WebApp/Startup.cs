@@ -25,15 +25,14 @@ namespace Eighty.Bench.WebApp
         {
             services
                 .AddMvc()
-                .AddEighty();
-            services.Configure<EightyViewOptions>(
-                opts =>
-                {
-                    opts.ViewCollection.RegisterSingleton("Home", "Eighty", new Views.Home.Eighty());
-                    opts.ViewCollection.RegisterSingleton("Home", "EightyAsync", new Views.Home.Eighty());
-                    opts.ViewCollection.RegisterSingleton("Home", "Twenty", new Views.Home.Twenty());
-                }
-            );
+                .AddEighty(
+                    opts =>
+                    {
+                        opts.ViewCollection.RegisterSingleton("Home", "Eighty", new Views.Home.Eighty());
+                        opts.ViewCollection.RegisterSingleton("Home", "EightyAsync", new Views.Home.Eighty());
+                        opts.ViewCollection.RegisterSingleton("Home", "Twenty", new Views.Home.Twenty());
+                    }
+                );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
