@@ -3,7 +3,7 @@ namespace Eighty.AspNet.Mvc.ViewFeatures
     /// <summary>
     /// Options for the <see cref="EightyViewEngine"/>
     /// </summary>
-    public class EightyViewOptions
+    public class EightyViewConfiguration
     {
         /// <summary>
         /// The view collection

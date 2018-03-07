@@ -1,5 +1,3 @@
-using Microsoft.Extensions.Options;
-
 namespace Eighty.AspNetCore.Mvc.ViewFeatures
 {
     /// <summary>

@@ -15,10 +15,14 @@ namespace Eighty.AspNet.Mvc.ViewFeatures
         /// <summary>
         /// Create an <see cref="EightyViewEngine"/>
         /// </summary>
-        /// <param name="views">The views</param>
-        public EightyViewEngine(Dictionary<string, IView> views)
+        /// <param name="options">The view options</param>
+        public EightyViewEngine(EightyViewConfiguration options)
         {
-            _views = views;
+            if (options == null)
+            {
+                throw new ArgumentNullException(nameof(options));
+            }
+            _views = options.ViewCollection.Views;
         }
 
         /// <inheritdoc/>
