@@ -9,20 +9,20 @@ using Microsoft.Extensions.Logging;
 namespace Eighty.AspNetCore.Mvc.ResultExecutors
 {
     /// <summary>
-    /// Executes a <see cref="TwentyViewResult{TModel}"/>
+    /// Executes a <see cref="HtmlRendererResult{TModel}"/>
     /// </summary>
-    public class TwentyViewResultExecutor<TModel>
+    public class HtmlRendererResultExecutor<TModel>
     {
         private const string DefaultContentType = "text/plain; charset=utf-8";
         private readonly ILogger _logger;
         private readonly IHttpResponseStreamWriterFactory _writerFactory;
 
         /// <summary>
-        /// Creates a <see cref="TwentyViewResultExecutor{TModel}"/>
+        /// Creates an <see cref="HtmlRendererResultExecutor{TModel}"/>
         /// </summary>
         /// <param name="loggerFactory">The logger factory</param>
         /// <param name="writerFactory">The writer factory</param>
-        public TwentyViewResultExecutor(
+        public HtmlRendererResultExecutor(
             ILoggerFactory loggerFactory,
             IHttpResponseStreamWriterFactory writerFactory
         )
@@ -35,16 +35,16 @@ namespace Eighty.AspNetCore.Mvc.ResultExecutors
             {
                 throw new ArgumentNullException(nameof(writerFactory));
             }
-            _logger = loggerFactory.CreateLogger(typeof(EightyViewResultExecutor<>));
+            _logger = loggerFactory.CreateLogger(typeof(HtmlRendererResultExecutor<>));
             _writerFactory = writerFactory;
         }
 
         /// <summary>
-        /// Execute the <see cref="TwentyViewResult{TModel}"/>
+        /// Execute the <see cref="HtmlRendererResult{TModel}"/>
         /// </summary>
         /// <param name="context">The action context</param>
         /// <param name="result">The action result</param>
-        public async Task ExecuteAsync(ActionContext context, TwentyViewResult<TModel> result)
+        public async Task ExecuteAsync(ActionContext context, HtmlRendererResult<TModel> result)
         {
             if (context == null)
             {
@@ -65,11 +65,19 @@ namespace Eighty.AspNetCore.Mvc.ResultExecutors
             }
             response.ContentType = "text/html; charset=utf-8";
 
-            var htmlBuilder = result.View.GetHtmlBuilder(result.Model);
+            var html = result.View.Render(result.Model);
             using (var writer = _writerFactory.CreateWriter(response.Body, Encoding.UTF8))
             {
-                htmlBuilder.Write(writer);
-                await writer.FlushAsync();
+                if (result.RenderAsync)
+                {
+                    await html.WriteAsync(writer);
+                    await writer.FlushAsync();
+                }
+                else
+                {
+                    html.Write(writer);
+                    await writer.FlushAsync();
+                }
             }
         }
     }

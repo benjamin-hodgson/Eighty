@@ -1,9 +1,8 @@
 using System;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.AspNetCore.Mvc.ViewEngines;
+using System.IO;
+using System.Web.Mvc;
 
-namespace Eighty.AspNetCore.Mvc.ViewFeatures
+namespace Eighty.AspNet.Mvc.ViewFeatures
 {
     /// <summary>
     /// Wraps an <see cref="IHtmlRenderer{TModel}"/> into an <see cref="IView"/>
@@ -35,7 +34,7 @@ namespace Eighty.AspNetCore.Mvc.ViewFeatures
         }
 
         /// <inheritdoc/>
-        public async Task RenderAsync(ViewContext context)
+        public void Render(ViewContext context, TextWriter writer)
         {
             if (context == null)
             {
@@ -45,13 +44,7 @@ namespace Eighty.AspNetCore.Mvc.ViewFeatures
             if (context.ViewData.Model is TModel m)
             {
                 var html = _view.Render(m);
-
-                if (context.ViewData.TryGetValue("RenderAsync", out var renderAsync) && renderAsync is bool b && b)
-                {
-                    await html.WriteAsync(context.Writer);
-                    return;
-                }
-                html.Write(context.Writer);
+                html.Write(writer);
                 return;
             }
             throw new InvalidOperationException($"Expected a model of type {typeof(TModel).Name} but the actual model is of type {context.ViewData.Model.GetType().Name}");

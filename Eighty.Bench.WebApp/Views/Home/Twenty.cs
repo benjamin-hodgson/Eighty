@@ -1,12 +1,9 @@
-using System.Collections.Immutable;
-using Eighty.AspNetCore.Mvc;
 using Eighty.Bench.WebApp.Models;
 using Eighty.Twenty;
-using static Eighty.Html;
 
 namespace Eighty.Bench.WebApp.Views.Home
 {
-    public class Twenty : ITwentyView<Model>
+    public class Twenty : IHtmlBuilderRenderer<Model>
     {
         public HtmlBuilder GetHtmlBuilder(Model model)
             => new MyHtmlBuilder(model);

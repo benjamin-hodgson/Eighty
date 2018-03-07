@@ -1,16 +1,15 @@
-using System;
 using System.Collections.Generic;
+using System.Web.Mvc;
 using Eighty.Twenty;
-using Microsoft.AspNetCore.Mvc.ViewEngines;
 
-namespace Eighty.AspNetCore.Mvc.ViewFeatures
+namespace Eighty.AspNet.Mvc.ViewFeatures
 {
     /// <summary>
     /// A collection of views
     /// </summary>
     public class EightyViewCollection
     {
-        internal Dictionary<string, Func<IServiceProvider, IView>> Views { get; } = new Dictionary<string, Func<IServiceProvider, IView>>();
+        internal Dictionary<string, IView> Views { get; } = new Dictionary<string, IView>();
 
         /// <summary>
         /// Add an <see cref="IHtmlRenderer{TModel}"/> to the collection
@@ -30,7 +29,7 @@ namespace Eighty.AspNetCore.Mvc.ViewFeatures
         public void RegisterSingleton<TModel>(string path, IHtmlRenderer<TModel> view)
         {
             var adapter = new EightyViewAdapter<TModel>(path, view);
-            Views[path] = _ => adapter;
+            Views[path] = adapter;
         }
 
         /// <summary>
@@ -51,7 +50,7 @@ namespace Eighty.AspNetCore.Mvc.ViewFeatures
         public void RegisterSingleton<TModel>(string path, IHtmlBuilderRenderer<TModel> view)
         {
             var adapter = new TwentyViewAdapter<TModel>(path, view);
-            Views[path] = _ => adapter;
+            Views[path] = adapter;
         }
     }
 }

@@ -1,27 +1,24 @@
 using System;
 using System.Net;
-using System.Threading.Tasks;
-using Eighty.AspNetCore.Mvc.ResultExecutors;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.DependencyInjection;
+using System.Web.Mvc;
 
-namespace Eighty.AspNetCore.Mvc.ActionResults
+namespace Eighty.AspNet.Mvc.ActionResults
 {
     /// <summary>
-    /// An <see cref="IActionResult"/> which renders an <see cref="ITwentyView{TModel}"/> using a <typeparamref name="TModel"/>
+    /// An <see cref="IActionResult"/> which renders an <see cref="IHtmlRenderer{TModel}"/> using a <typeparamref name="TModel"/>
     /// </summary>
     /// <typeparam name="TModel">The model type</typeparam>
-    public class TwentyViewResult<TModel> : IActionResult
+    public class HtmlRendererResult<TModel> : ActionResult
     {
         /// <summary>
         /// The view
         /// </summary>
         /// <returns>The view</returns>
-        public ITwentyView<TModel> View { get; }
+        public IHtmlRenderer<TModel> View { get; }
         /// <summary>
-        /// The model
+        /// The mode
         /// </summary>
-        /// <returns>The model</returns>
+        /// <returns>The mode</returns>
         public TModel Model { get; }
         /// <summary>
         /// A custom status code
@@ -30,12 +27,13 @@ namespace Eighty.AspNetCore.Mvc.ActionResults
         public HttpStatusCode? StatusCode { get; }
 
         /// <summary>
-        /// Creates a <see cref="TwentyViewResult{TModel}"/>
+        /// Creates an <see cref="HtmlRendererResult{TModel}"/>
         /// </summary>
         /// <param name="view">The view</param>
         /// <param name="model">The model</param>
         /// <param name="statusCode">A custom status code</param>
-        public TwentyViewResult(ITwentyView<TModel> view, TModel model, HttpStatusCode? statusCode = null)
+        /// <param name="renderAsync">Render the HTML into the response asynchronously</param>
+        public HtmlRendererResult(IHtmlRenderer<TModel> view, TModel model, HttpStatusCode? statusCode = null)
         {
             if (view == null)
             {
@@ -47,15 +45,23 @@ namespace Eighty.AspNetCore.Mvc.ActionResults
         }
 
         /// <inheritdoc/>
-        public async Task ExecuteResultAsync(ActionContext context)
+        public override void ExecuteResult(ControllerContext context)
         {
             if (context == null)
             {
                 throw new ArgumentNullException(nameof(context));
             }
 
-            var executor = context.HttpContext.RequestServices.GetRequiredService<TwentyViewResultExecutor<TModel>>();
-            await executor.ExecuteAsync(context, this);
+            var response = context.HttpContext.Response;
+
+            if (StatusCode != null)
+            {
+                response.StatusCode = (int)StatusCode.Value;
+            }
+            response.ContentType = "text/html; charset=utf-8";
+
+            var html = View.Render(Model);
+            html.Write(response.Output);
         }
     }
 }

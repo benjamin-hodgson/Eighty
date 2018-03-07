@@ -1,9 +1,8 @@
 using System;
 using System.Net;
 using Eighty.Twenty;
-using Microsoft.AspNetCore.Mvc;
 
-namespace Eighty.AspNetCore.Mvc.ActionResults
+namespace Eighty.AspNet.Mvc.ActionResults
 {
     /// <summary>
     /// Methods for creating <see cref="IActionResult"/>s
@@ -22,9 +21,8 @@ namespace Eighty.AspNetCore.Mvc.ActionResults
         public static HtmlRendererResult<TModel> ToActionResult<TModel>(
             this IHtmlRenderer<TModel> view,
             TModel model,
-            HttpStatusCode? statusCode = null,
-            bool renderAsync = false
-        ) => Create(view, model, statusCode, renderAsync);
+            HttpStatusCode? statusCode = null
+        ) => Create(view, model, statusCode);
 
         /// <summary>
         /// Creates an <see cref="IActionResult"/> from an <see cref="IHtmlRenderer{TModel}"/> and a <typeparamref name="TModel"/>
@@ -38,15 +36,14 @@ namespace Eighty.AspNetCore.Mvc.ActionResults
         public static HtmlRendererResult<TModel> Create<TModel>(
             IHtmlRenderer<TModel> view,
             TModel model,
-            HttpStatusCode? statusCode = null,
-            bool renderAsync = false
+            HttpStatusCode? statusCode = null
         )
         {
             if (view == null)
             {
                 throw new ArgumentNullException(nameof(view));
             }
-            return new HtmlRendererResult<TModel>(view, model, statusCode, renderAsync);
+            return new HtmlRendererResult<TModel>(view, model, statusCode);
         }
 
 
@@ -94,9 +91,8 @@ namespace Eighty.AspNetCore.Mvc.ActionResults
         /// <returns>An <see cref="IActionResult"/></returns>
         public static HtmlResult ToActionResult(
             this Html html,
-            HttpStatusCode? statusCode = null,
-            bool renderAsync = false
-        ) => Create(html, statusCode, renderAsync);
+            HttpStatusCode? statusCode = null
+        ) => Create(html, statusCode);
 
         /// <summary>
         /// Creates an <see cref="IActionResult"/> from some <see cref="Html"/>
@@ -107,15 +103,14 @@ namespace Eighty.AspNetCore.Mvc.ActionResults
         /// <returns>An <see cref="IActionResult"/></returns>
         public static HtmlResult Create(
             Html html,
-            HttpStatusCode? statusCode = null,
-            bool renderAsync = false
+            HttpStatusCode? statusCode = null
         )
         {
             if (html == null)
             {
                 throw new ArgumentNullException(nameof(html));
             }
-            return new HtmlResult(html, statusCode, renderAsync);
+            return new HtmlResult(html, statusCode);
         }
 
         /// <summary>

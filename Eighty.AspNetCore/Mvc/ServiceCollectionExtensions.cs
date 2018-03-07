@@ -33,8 +33,8 @@ namespace Eighty.AspNetCore.Mvc
                 ServiceDescriptor.Transient<IConfigureOptions<MvcViewOptions>, EightyMvcViewOptionsSetup>()
             );
             builder.Services
-                .AddSingleton(typeof(EightyViewResultExecutor<>))
-                .AddSingleton(typeof(TwentyViewResultExecutor<>))
+                .AddSingleton(typeof(HtmlRendererResultExecutor<>))
+                .AddSingleton(typeof(HtmlBuilderRendererResultExecutor<>))
                 .AddSingleton(typeof(HtmlResultExecutor))
                 .AddSingleton(typeof(HtmlBuilderResultExecutor));
             return builder;

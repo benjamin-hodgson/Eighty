@@ -1,11 +1,10 @@
 using System.Collections.Immutable;
-using Eighty.AspNetCore.Mvc;
 using Eighty.Bench.WebApp.Models;
 using static Eighty.Html;
 
 namespace Eighty.Bench.WebApp.Views.Home
 {
-    public class Eighty : IEightyView<Model>
+    public class Eighty : IHtmlRenderer<Model>
     {
         public Html Render(Model model)
         {
