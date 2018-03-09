@@ -121,6 +121,7 @@ namespace Eighty
         /// Build an html element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder html(Attr attr1)
         {
             return new TagBuilder("html", ImmutableArrayFactory.Create(attr1), false);
@@ -130,6 +131,7 @@ namespace Eighty
         /// Build an html element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder html(Attr attr1, Attr attr2)
         {
             return new TagBuilder("html", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -139,6 +141,7 @@ namespace Eighty
         /// Build an html element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder html(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("html", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -148,6 +151,7 @@ namespace Eighty
         /// Build an html element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("html", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -157,6 +161,7 @@ namespace Eighty
         /// Build an html element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("html", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -166,6 +171,7 @@ namespace Eighty
         /// Build an html element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("html", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -175,6 +181,7 @@ namespace Eighty
         /// Build an html element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("html", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -184,6 +191,7 @@ namespace Eighty
         /// Build an html element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("html", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -202,6 +210,7 @@ namespace Eighty
         /// Build an html element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html html_(List<Html> children)
         {
             return html_(children.AsEnumerable());
@@ -211,6 +220,7 @@ namespace Eighty
         /// Build an html element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html html_(ImmutableList<Html> children)
         {
             return html_(children.AsEnumerable());
@@ -233,6 +243,7 @@ namespace Eighty
         /// Build an html element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html html_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -249,6 +260,7 @@ namespace Eighty
         /// Build an html element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html html_(Html child1)
         {
             
@@ -263,6 +275,7 @@ namespace Eighty
         /// Build an html element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html html_(Html child1, Html child2)
         {
             
@@ -281,6 +294,7 @@ namespace Eighty
         /// Build an html element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html html_(Html child1, Html child2, Html child3)
         {
             
@@ -303,6 +317,7 @@ namespace Eighty
         /// Build an html element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html html_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -329,6 +344,7 @@ namespace Eighty
         /// Build an html element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html html_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -359,6 +375,7 @@ namespace Eighty
         /// Build an html element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html html_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -393,6 +410,7 @@ namespace Eighty
         /// Build an html element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html html_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -431,6 +449,7 @@ namespace Eighty
         /// Build an html element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html html_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -572,6 +591,7 @@ namespace Eighty
         /// Build a head element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder head(Attr attr1)
         {
             return new TagBuilder("head", ImmutableArrayFactory.Create(attr1), false);
@@ -581,6 +601,7 @@ namespace Eighty
         /// Build a head element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder head(Attr attr1, Attr attr2)
         {
             return new TagBuilder("head", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -590,6 +611,7 @@ namespace Eighty
         /// Build a head element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder head(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("head", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -599,6 +621,7 @@ namespace Eighty
         /// Build a head element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("head", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -608,6 +631,7 @@ namespace Eighty
         /// Build a head element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("head", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -617,6 +641,7 @@ namespace Eighty
         /// Build a head element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("head", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -626,6 +651,7 @@ namespace Eighty
         /// Build a head element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("head", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -635,6 +661,7 @@ namespace Eighty
         /// Build a head element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("head", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -653,6 +680,7 @@ namespace Eighty
         /// Build a head element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html head_(List<Html> children)
         {
             return head_(children.AsEnumerable());
@@ -662,6 +690,7 @@ namespace Eighty
         /// Build a head element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html head_(ImmutableList<Html> children)
         {
             return head_(children.AsEnumerable());
@@ -684,6 +713,7 @@ namespace Eighty
         /// Build a head element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html head_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -700,6 +730,7 @@ namespace Eighty
         /// Build a head element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html head_(Html child1)
         {
             
@@ -714,6 +745,7 @@ namespace Eighty
         /// Build a head element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html head_(Html child1, Html child2)
         {
             
@@ -732,6 +764,7 @@ namespace Eighty
         /// Build a head element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html head_(Html child1, Html child2, Html child3)
         {
             
@@ -754,6 +787,7 @@ namespace Eighty
         /// Build a head element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html head_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -780,6 +814,7 @@ namespace Eighty
         /// Build a head element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html head_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -810,6 +845,7 @@ namespace Eighty
         /// Build a head element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html head_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -844,6 +880,7 @@ namespace Eighty
         /// Build a head element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html head_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -882,6 +919,7 @@ namespace Eighty
         /// Build a head element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html head_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -1023,6 +1061,7 @@ namespace Eighty
         /// Build a body element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder body(Attr attr1)
         {
             return new TagBuilder("body", ImmutableArrayFactory.Create(attr1), false);
@@ -1032,6 +1071,7 @@ namespace Eighty
         /// Build a body element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder body(Attr attr1, Attr attr2)
         {
             return new TagBuilder("body", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -1041,6 +1081,7 @@ namespace Eighty
         /// Build a body element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder body(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("body", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -1050,6 +1091,7 @@ namespace Eighty
         /// Build a body element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("body", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -1059,6 +1101,7 @@ namespace Eighty
         /// Build a body element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("body", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -1068,6 +1111,7 @@ namespace Eighty
         /// Build a body element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("body", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -1077,6 +1121,7 @@ namespace Eighty
         /// Build a body element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("body", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -1086,6 +1131,7 @@ namespace Eighty
         /// Build a body element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("body", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -1104,6 +1150,7 @@ namespace Eighty
         /// Build a body element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html body_(List<Html> children)
         {
             return body_(children.AsEnumerable());
@@ -1113,6 +1160,7 @@ namespace Eighty
         /// Build a body element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html body_(ImmutableList<Html> children)
         {
             return body_(children.AsEnumerable());
@@ -1135,6 +1183,7 @@ namespace Eighty
         /// Build a body element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html body_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -1151,6 +1200,7 @@ namespace Eighty
         /// Build a body element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html body_(Html child1)
         {
             
@@ -1165,6 +1215,7 @@ namespace Eighty
         /// Build a body element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html body_(Html child1, Html child2)
         {
             
@@ -1183,6 +1234,7 @@ namespace Eighty
         /// Build a body element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html body_(Html child1, Html child2, Html child3)
         {
             
@@ -1205,6 +1257,7 @@ namespace Eighty
         /// Build a body element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html body_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -1231,6 +1284,7 @@ namespace Eighty
         /// Build a body element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html body_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -1261,6 +1315,7 @@ namespace Eighty
         /// Build a body element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html body_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -1295,6 +1350,7 @@ namespace Eighty
         /// Build a body element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html body_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -1333,6 +1389,7 @@ namespace Eighty
         /// Build a body element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html body_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -1532,6 +1589,7 @@ namespace Eighty
         /// Build a link element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html link(Attr attr1)
         {
             return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1), false);
@@ -1541,6 +1599,7 @@ namespace Eighty
         /// Build a link element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html link(Attr attr1, Attr attr2)
         {
             return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -1550,6 +1609,7 @@ namespace Eighty
         /// Build a link element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html link(Attr attr1, Attr attr2, Attr attr3)
         {
             return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -1559,6 +1619,7 @@ namespace Eighty
         /// Build a link element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html link(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -1568,6 +1629,7 @@ namespace Eighty
         /// Build a link element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html link(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -1577,6 +1639,7 @@ namespace Eighty
         /// Build a link element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html link(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -1586,6 +1649,7 @@ namespace Eighty
         /// Build a link element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html link(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -1595,6 +1659,7 @@ namespace Eighty
         /// Build a link element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html link(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new SelfClosingTag("link", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -1721,6 +1786,7 @@ namespace Eighty
         /// Build a base element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html @base(Attr attr1)
         {
             return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1), false);
@@ -1730,6 +1796,7 @@ namespace Eighty
         /// Build a base element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html @base(Attr attr1, Attr attr2)
         {
             return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -1739,6 +1806,7 @@ namespace Eighty
         /// Build a base element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html @base(Attr attr1, Attr attr2, Attr attr3)
         {
             return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -1748,6 +1816,7 @@ namespace Eighty
         /// Build a base element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -1757,6 +1826,7 @@ namespace Eighty
         /// Build a base element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -1766,6 +1836,7 @@ namespace Eighty
         /// Build a base element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -1775,6 +1846,7 @@ namespace Eighty
         /// Build a base element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -1784,6 +1856,7 @@ namespace Eighty
         /// Build a base element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html @base(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new SelfClosingTag("base", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -1910,6 +1983,7 @@ namespace Eighty
         /// Build a meta element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html meta(Attr attr1)
         {
             return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1), false);
@@ -1919,6 +1993,7 @@ namespace Eighty
         /// Build a meta element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html meta(Attr attr1, Attr attr2)
         {
             return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -1928,6 +2003,7 @@ namespace Eighty
         /// Build a meta element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html meta(Attr attr1, Attr attr2, Attr attr3)
         {
             return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -1937,6 +2013,7 @@ namespace Eighty
         /// Build a meta element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -1946,6 +2023,7 @@ namespace Eighty
         /// Build a meta element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -1955,6 +2033,7 @@ namespace Eighty
         /// Build a meta element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -1964,6 +2043,7 @@ namespace Eighty
         /// Build a meta element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -1973,6 +2053,7 @@ namespace Eighty
         /// Build a meta element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html meta(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new SelfClosingTag("meta", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -2101,6 +2182,7 @@ namespace Eighty
         /// Build a style element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder style(Attr attr1)
         {
             return new TagBuilder("style", ImmutableArrayFactory.Create(attr1), false);
@@ -2110,6 +2192,7 @@ namespace Eighty
         /// Build a style element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder style(Attr attr1, Attr attr2)
         {
             return new TagBuilder("style", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -2119,6 +2202,7 @@ namespace Eighty
         /// Build a style element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder style(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("style", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -2128,6 +2212,7 @@ namespace Eighty
         /// Build a style element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("style", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -2137,6 +2222,7 @@ namespace Eighty
         /// Build a style element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("style", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -2146,6 +2232,7 @@ namespace Eighty
         /// Build a style element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("style", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -2155,6 +2242,7 @@ namespace Eighty
         /// Build a style element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("style", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -2164,6 +2252,7 @@ namespace Eighty
         /// Build a style element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("style", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -2182,6 +2271,7 @@ namespace Eighty
         /// Build a style element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html style_(List<Html> children)
         {
             return style_(children.AsEnumerable());
@@ -2191,6 +2281,7 @@ namespace Eighty
         /// Build a style element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html style_(ImmutableList<Html> children)
         {
             return style_(children.AsEnumerable());
@@ -2213,6 +2304,7 @@ namespace Eighty
         /// Build a style element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html style_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -2229,6 +2321,7 @@ namespace Eighty
         /// Build a style element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html style_(Html child1)
         {
             
@@ -2243,6 +2336,7 @@ namespace Eighty
         /// Build a style element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html style_(Html child1, Html child2)
         {
             
@@ -2261,6 +2355,7 @@ namespace Eighty
         /// Build a style element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html style_(Html child1, Html child2, Html child3)
         {
             
@@ -2283,6 +2378,7 @@ namespace Eighty
         /// Build a style element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html style_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -2309,6 +2405,7 @@ namespace Eighty
         /// Build a style element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html style_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -2339,6 +2436,7 @@ namespace Eighty
         /// Build a style element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html style_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -2373,6 +2471,7 @@ namespace Eighty
         /// Build a style element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html style_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -2411,6 +2510,7 @@ namespace Eighty
         /// Build a style element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html style_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -2552,6 +2652,7 @@ namespace Eighty
         /// Build a title element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder title(Attr attr1)
         {
             return new TagBuilder("title", ImmutableArrayFactory.Create(attr1), false);
@@ -2561,6 +2662,7 @@ namespace Eighty
         /// Build a title element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder title(Attr attr1, Attr attr2)
         {
             return new TagBuilder("title", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -2570,6 +2672,7 @@ namespace Eighty
         /// Build a title element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder title(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("title", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -2579,6 +2682,7 @@ namespace Eighty
         /// Build a title element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("title", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -2588,6 +2692,7 @@ namespace Eighty
         /// Build a title element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("title", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -2597,6 +2702,7 @@ namespace Eighty
         /// Build a title element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("title", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -2606,6 +2712,7 @@ namespace Eighty
         /// Build a title element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("title", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -2615,6 +2722,7 @@ namespace Eighty
         /// Build a title element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("title", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -2633,6 +2741,7 @@ namespace Eighty
         /// Build a title element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html title_(List<Html> children)
         {
             return title_(children.AsEnumerable());
@@ -2642,6 +2751,7 @@ namespace Eighty
         /// Build a title element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html title_(ImmutableList<Html> children)
         {
             return title_(children.AsEnumerable());
@@ -2664,6 +2774,7 @@ namespace Eighty
         /// Build a title element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html title_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -2680,6 +2791,7 @@ namespace Eighty
         /// Build a title element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html title_(Html child1)
         {
             
@@ -2694,6 +2806,7 @@ namespace Eighty
         /// Build a title element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html title_(Html child1, Html child2)
         {
             
@@ -2712,6 +2825,7 @@ namespace Eighty
         /// Build a title element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html title_(Html child1, Html child2, Html child3)
         {
             
@@ -2734,6 +2848,7 @@ namespace Eighty
         /// Build a title element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html title_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -2760,6 +2875,7 @@ namespace Eighty
         /// Build a title element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html title_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -2790,6 +2906,7 @@ namespace Eighty
         /// Build a title element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html title_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -2824,6 +2941,7 @@ namespace Eighty
         /// Build a title element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html title_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -2862,6 +2980,7 @@ namespace Eighty
         /// Build a title element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html title_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -3043,6 +3162,7 @@ namespace Eighty
         /// Build a script element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder script(Attr attr1)
         {
             return new TagBuilder("script", ImmutableArrayFactory.Create(attr1), false);
@@ -3052,6 +3172,7 @@ namespace Eighty
         /// Build a script element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder script(Attr attr1, Attr attr2)
         {
             return new TagBuilder("script", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -3061,6 +3182,7 @@ namespace Eighty
         /// Build a script element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder script(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("script", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -3070,6 +3192,7 @@ namespace Eighty
         /// Build a script element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("script", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -3079,6 +3202,7 @@ namespace Eighty
         /// Build a script element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("script", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -3088,6 +3212,7 @@ namespace Eighty
         /// Build a script element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("script", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -3097,6 +3222,7 @@ namespace Eighty
         /// Build a script element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("script", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -3106,6 +3232,7 @@ namespace Eighty
         /// Build a script element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("script", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -3124,6 +3251,7 @@ namespace Eighty
         /// Build a script element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html script_(List<Html> children)
         {
             return script_(children.AsEnumerable());
@@ -3133,6 +3261,7 @@ namespace Eighty
         /// Build a script element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html script_(ImmutableList<Html> children)
         {
             return script_(children.AsEnumerable());
@@ -3155,6 +3284,7 @@ namespace Eighty
         /// Build a script element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html script_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -3171,6 +3301,7 @@ namespace Eighty
         /// Build a script element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html script_(Html child1)
         {
             
@@ -3185,6 +3316,7 @@ namespace Eighty
         /// Build a script element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html script_(Html child1, Html child2)
         {
             
@@ -3203,6 +3335,7 @@ namespace Eighty
         /// Build a script element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html script_(Html child1, Html child2, Html child3)
         {
             
@@ -3225,6 +3358,7 @@ namespace Eighty
         /// Build a script element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html script_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -3251,6 +3385,7 @@ namespace Eighty
         /// Build a script element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html script_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -3281,6 +3416,7 @@ namespace Eighty
         /// Build a script element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html script_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -3315,6 +3451,7 @@ namespace Eighty
         /// Build a script element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html script_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -3353,6 +3490,7 @@ namespace Eighty
         /// Build a script element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html script_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -3494,6 +3632,7 @@ namespace Eighty
         /// Build a noscript element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder noscript(Attr attr1)
         {
             return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1), false);
@@ -3503,6 +3642,7 @@ namespace Eighty
         /// Build a noscript element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder noscript(Attr attr1, Attr attr2)
         {
             return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -3512,6 +3652,7 @@ namespace Eighty
         /// Build a noscript element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -3521,6 +3662,7 @@ namespace Eighty
         /// Build a noscript element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -3530,6 +3672,7 @@ namespace Eighty
         /// Build a noscript element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -3539,6 +3682,7 @@ namespace Eighty
         /// Build a noscript element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -3548,6 +3692,7 @@ namespace Eighty
         /// Build a noscript element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -3557,6 +3702,7 @@ namespace Eighty
         /// Build a noscript element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("noscript", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -3575,6 +3721,7 @@ namespace Eighty
         /// Build a noscript element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html noscript_(List<Html> children)
         {
             return noscript_(children.AsEnumerable());
@@ -3584,6 +3731,7 @@ namespace Eighty
         /// Build a noscript element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html noscript_(ImmutableList<Html> children)
         {
             return noscript_(children.AsEnumerable());
@@ -3606,6 +3754,7 @@ namespace Eighty
         /// Build a noscript element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html noscript_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -3622,6 +3771,7 @@ namespace Eighty
         /// Build a noscript element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html noscript_(Html child1)
         {
             
@@ -3636,6 +3786,7 @@ namespace Eighty
         /// Build a noscript element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html noscript_(Html child1, Html child2)
         {
             
@@ -3654,6 +3805,7 @@ namespace Eighty
         /// Build a noscript element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html noscript_(Html child1, Html child2, Html child3)
         {
             
@@ -3676,6 +3828,7 @@ namespace Eighty
         /// Build a noscript element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html noscript_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -3702,6 +3855,7 @@ namespace Eighty
         /// Build a noscript element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html noscript_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -3732,6 +3886,7 @@ namespace Eighty
         /// Build a noscript element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html noscript_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -3766,6 +3921,7 @@ namespace Eighty
         /// Build a noscript element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html noscript_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -3804,6 +3960,7 @@ namespace Eighty
         /// Build a noscript element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html noscript_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -3945,6 +4102,7 @@ namespace Eighty
         /// Build a main element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder main(Attr attr1)
         {
             return new TagBuilder("main", ImmutableArrayFactory.Create(attr1), false);
@@ -3954,6 +4112,7 @@ namespace Eighty
         /// Build a main element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder main(Attr attr1, Attr attr2)
         {
             return new TagBuilder("main", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -3963,6 +4122,7 @@ namespace Eighty
         /// Build a main element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder main(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("main", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -3972,6 +4132,7 @@ namespace Eighty
         /// Build a main element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("main", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -3981,6 +4142,7 @@ namespace Eighty
         /// Build a main element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("main", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -3990,6 +4152,7 @@ namespace Eighty
         /// Build a main element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("main", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -3999,6 +4162,7 @@ namespace Eighty
         /// Build a main element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("main", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -4008,6 +4172,7 @@ namespace Eighty
         /// Build a main element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("main", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -4026,6 +4191,7 @@ namespace Eighty
         /// Build a main element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html main_(List<Html> children)
         {
             return main_(children.AsEnumerable());
@@ -4035,6 +4201,7 @@ namespace Eighty
         /// Build a main element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html main_(ImmutableList<Html> children)
         {
             return main_(children.AsEnumerable());
@@ -4057,6 +4224,7 @@ namespace Eighty
         /// Build a main element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html main_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -4073,6 +4241,7 @@ namespace Eighty
         /// Build a main element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html main_(Html child1)
         {
             
@@ -4087,6 +4256,7 @@ namespace Eighty
         /// Build a main element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html main_(Html child1, Html child2)
         {
             
@@ -4105,6 +4275,7 @@ namespace Eighty
         /// Build a main element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html main_(Html child1, Html child2, Html child3)
         {
             
@@ -4127,6 +4298,7 @@ namespace Eighty
         /// Build a main element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html main_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -4153,6 +4325,7 @@ namespace Eighty
         /// Build a main element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html main_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -4183,6 +4356,7 @@ namespace Eighty
         /// Build a main element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html main_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -4217,6 +4391,7 @@ namespace Eighty
         /// Build a main element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html main_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -4255,6 +4430,7 @@ namespace Eighty
         /// Build a main element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html main_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -4396,6 +4572,7 @@ namespace Eighty
         /// Build a header element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder header(Attr attr1)
         {
             return new TagBuilder("header", ImmutableArrayFactory.Create(attr1), false);
@@ -4405,6 +4582,7 @@ namespace Eighty
         /// Build a header element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder header(Attr attr1, Attr attr2)
         {
             return new TagBuilder("header", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -4414,6 +4592,7 @@ namespace Eighty
         /// Build a header element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder header(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("header", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -4423,6 +4602,7 @@ namespace Eighty
         /// Build a header element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("header", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -4432,6 +4612,7 @@ namespace Eighty
         /// Build a header element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("header", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -4441,6 +4622,7 @@ namespace Eighty
         /// Build a header element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("header", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -4450,6 +4632,7 @@ namespace Eighty
         /// Build a header element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("header", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -4459,6 +4642,7 @@ namespace Eighty
         /// Build a header element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("header", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -4477,6 +4661,7 @@ namespace Eighty
         /// Build a header element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html header_(List<Html> children)
         {
             return header_(children.AsEnumerable());
@@ -4486,6 +4671,7 @@ namespace Eighty
         /// Build a header element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html header_(ImmutableList<Html> children)
         {
             return header_(children.AsEnumerable());
@@ -4508,6 +4694,7 @@ namespace Eighty
         /// Build a header element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html header_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -4524,6 +4711,7 @@ namespace Eighty
         /// Build a header element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html header_(Html child1)
         {
             
@@ -4538,6 +4726,7 @@ namespace Eighty
         /// Build a header element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html header_(Html child1, Html child2)
         {
             
@@ -4556,6 +4745,7 @@ namespace Eighty
         /// Build a header element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html header_(Html child1, Html child2, Html child3)
         {
             
@@ -4578,6 +4768,7 @@ namespace Eighty
         /// Build a header element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html header_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -4604,6 +4795,7 @@ namespace Eighty
         /// Build a header element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html header_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -4634,6 +4826,7 @@ namespace Eighty
         /// Build a header element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html header_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -4668,6 +4861,7 @@ namespace Eighty
         /// Build a header element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html header_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -4706,6 +4900,7 @@ namespace Eighty
         /// Build a header element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html header_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -4847,6 +5042,7 @@ namespace Eighty
         /// Build an article element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder article(Attr attr1)
         {
             return new TagBuilder("article", ImmutableArrayFactory.Create(attr1), false);
@@ -4856,6 +5052,7 @@ namespace Eighty
         /// Build an article element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder article(Attr attr1, Attr attr2)
         {
             return new TagBuilder("article", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -4865,6 +5062,7 @@ namespace Eighty
         /// Build an article element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder article(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("article", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -4874,6 +5072,7 @@ namespace Eighty
         /// Build an article element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("article", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -4883,6 +5082,7 @@ namespace Eighty
         /// Build an article element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("article", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -4892,6 +5092,7 @@ namespace Eighty
         /// Build an article element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("article", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -4901,6 +5102,7 @@ namespace Eighty
         /// Build an article element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("article", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -4910,6 +5112,7 @@ namespace Eighty
         /// Build an article element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("article", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -4928,6 +5131,7 @@ namespace Eighty
         /// Build an article element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html article_(List<Html> children)
         {
             return article_(children.AsEnumerable());
@@ -4937,6 +5141,7 @@ namespace Eighty
         /// Build an article element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html article_(ImmutableList<Html> children)
         {
             return article_(children.AsEnumerable());
@@ -4959,6 +5164,7 @@ namespace Eighty
         /// Build an article element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html article_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -4975,6 +5181,7 @@ namespace Eighty
         /// Build an article element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html article_(Html child1)
         {
             
@@ -4989,6 +5196,7 @@ namespace Eighty
         /// Build an article element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html article_(Html child1, Html child2)
         {
             
@@ -5007,6 +5215,7 @@ namespace Eighty
         /// Build an article element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html article_(Html child1, Html child2, Html child3)
         {
             
@@ -5029,6 +5238,7 @@ namespace Eighty
         /// Build an article element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html article_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -5055,6 +5265,7 @@ namespace Eighty
         /// Build an article element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html article_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -5085,6 +5296,7 @@ namespace Eighty
         /// Build an article element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html article_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -5119,6 +5331,7 @@ namespace Eighty
         /// Build an article element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html article_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -5157,6 +5370,7 @@ namespace Eighty
         /// Build an article element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html article_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -5298,6 +5512,7 @@ namespace Eighty
         /// Build a section element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder section(Attr attr1)
         {
             return new TagBuilder("section", ImmutableArrayFactory.Create(attr1), false);
@@ -5307,6 +5522,7 @@ namespace Eighty
         /// Build a section element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder section(Attr attr1, Attr attr2)
         {
             return new TagBuilder("section", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -5316,6 +5532,7 @@ namespace Eighty
         /// Build a section element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder section(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("section", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -5325,6 +5542,7 @@ namespace Eighty
         /// Build a section element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("section", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -5334,6 +5552,7 @@ namespace Eighty
         /// Build a section element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("section", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -5343,6 +5562,7 @@ namespace Eighty
         /// Build a section element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("section", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -5352,6 +5572,7 @@ namespace Eighty
         /// Build a section element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("section", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -5361,6 +5582,7 @@ namespace Eighty
         /// Build a section element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("section", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -5379,6 +5601,7 @@ namespace Eighty
         /// Build a section element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html section_(List<Html> children)
         {
             return section_(children.AsEnumerable());
@@ -5388,6 +5611,7 @@ namespace Eighty
         /// Build a section element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html section_(ImmutableList<Html> children)
         {
             return section_(children.AsEnumerable());
@@ -5410,6 +5634,7 @@ namespace Eighty
         /// Build a section element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html section_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -5426,6 +5651,7 @@ namespace Eighty
         /// Build a section element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html section_(Html child1)
         {
             
@@ -5440,6 +5666,7 @@ namespace Eighty
         /// Build a section element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html section_(Html child1, Html child2)
         {
             
@@ -5458,6 +5685,7 @@ namespace Eighty
         /// Build a section element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html section_(Html child1, Html child2, Html child3)
         {
             
@@ -5480,6 +5708,7 @@ namespace Eighty
         /// Build a section element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html section_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -5506,6 +5735,7 @@ namespace Eighty
         /// Build a section element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html section_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -5536,6 +5766,7 @@ namespace Eighty
         /// Build a section element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html section_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -5570,6 +5801,7 @@ namespace Eighty
         /// Build a section element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html section_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -5608,6 +5840,7 @@ namespace Eighty
         /// Build a section element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html section_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -5749,6 +5982,7 @@ namespace Eighty
         /// Build a footer element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder footer(Attr attr1)
         {
             return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1), false);
@@ -5758,6 +5992,7 @@ namespace Eighty
         /// Build a footer element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder footer(Attr attr1, Attr attr2)
         {
             return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -5767,6 +6002,7 @@ namespace Eighty
         /// Build a footer element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder footer(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -5776,6 +6012,7 @@ namespace Eighty
         /// Build a footer element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -5785,6 +6022,7 @@ namespace Eighty
         /// Build a footer element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -5794,6 +6032,7 @@ namespace Eighty
         /// Build a footer element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -5803,6 +6042,7 @@ namespace Eighty
         /// Build a footer element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -5812,6 +6052,7 @@ namespace Eighty
         /// Build a footer element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("footer", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -5830,6 +6071,7 @@ namespace Eighty
         /// Build a footer element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html footer_(List<Html> children)
         {
             return footer_(children.AsEnumerable());
@@ -5839,6 +6081,7 @@ namespace Eighty
         /// Build a footer element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html footer_(ImmutableList<Html> children)
         {
             return footer_(children.AsEnumerable());
@@ -5861,6 +6104,7 @@ namespace Eighty
         /// Build a footer element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html footer_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -5877,6 +6121,7 @@ namespace Eighty
         /// Build a footer element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html footer_(Html child1)
         {
             
@@ -5891,6 +6136,7 @@ namespace Eighty
         /// Build a footer element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html footer_(Html child1, Html child2)
         {
             
@@ -5909,6 +6155,7 @@ namespace Eighty
         /// Build a footer element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html footer_(Html child1, Html child2, Html child3)
         {
             
@@ -5931,6 +6178,7 @@ namespace Eighty
         /// Build a footer element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html footer_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -5957,6 +6205,7 @@ namespace Eighty
         /// Build a footer element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html footer_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -5987,6 +6236,7 @@ namespace Eighty
         /// Build a footer element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html footer_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -6021,6 +6271,7 @@ namespace Eighty
         /// Build a footer element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html footer_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -6059,6 +6310,7 @@ namespace Eighty
         /// Build a footer element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html footer_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -6200,6 +6452,7 @@ namespace Eighty
         /// Build an h1 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h1(Attr attr1)
         {
             return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1), false);
@@ -6209,6 +6462,7 @@ namespace Eighty
         /// Build an h1 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h1(Attr attr1, Attr attr2)
         {
             return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -6218,6 +6472,7 @@ namespace Eighty
         /// Build an h1 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h1(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -6227,6 +6482,7 @@ namespace Eighty
         /// Build an h1 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -6236,6 +6492,7 @@ namespace Eighty
         /// Build an h1 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -6245,6 +6502,7 @@ namespace Eighty
         /// Build an h1 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -6254,6 +6512,7 @@ namespace Eighty
         /// Build an h1 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -6263,6 +6522,7 @@ namespace Eighty
         /// Build an h1 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("h1", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -6281,6 +6541,7 @@ namespace Eighty
         /// Build an h1 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h1_(List<Html> children)
         {
             return h1_(children.AsEnumerable());
@@ -6290,6 +6551,7 @@ namespace Eighty
         /// Build an h1 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h1_(ImmutableList<Html> children)
         {
             return h1_(children.AsEnumerable());
@@ -6312,6 +6574,7 @@ namespace Eighty
         /// Build an h1 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h1_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -6328,6 +6591,7 @@ namespace Eighty
         /// Build an h1 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h1_(Html child1)
         {
             
@@ -6342,6 +6606,7 @@ namespace Eighty
         /// Build an h1 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h1_(Html child1, Html child2)
         {
             
@@ -6360,6 +6625,7 @@ namespace Eighty
         /// Build an h1 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h1_(Html child1, Html child2, Html child3)
         {
             
@@ -6382,6 +6648,7 @@ namespace Eighty
         /// Build an h1 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h1_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -6408,6 +6675,7 @@ namespace Eighty
         /// Build an h1 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h1_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -6438,6 +6706,7 @@ namespace Eighty
         /// Build an h1 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h1_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -6472,6 +6741,7 @@ namespace Eighty
         /// Build an h1 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h1_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -6510,6 +6780,7 @@ namespace Eighty
         /// Build an h1 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h1_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -6651,6 +6922,7 @@ namespace Eighty
         /// Build an h2 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h2(Attr attr1)
         {
             return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1), false);
@@ -6660,6 +6932,7 @@ namespace Eighty
         /// Build an h2 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h2(Attr attr1, Attr attr2)
         {
             return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -6669,6 +6942,7 @@ namespace Eighty
         /// Build an h2 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h2(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -6678,6 +6952,7 @@ namespace Eighty
         /// Build an h2 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -6687,6 +6962,7 @@ namespace Eighty
         /// Build an h2 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -6696,6 +6972,7 @@ namespace Eighty
         /// Build an h2 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -6705,6 +6982,7 @@ namespace Eighty
         /// Build an h2 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -6714,6 +6992,7 @@ namespace Eighty
         /// Build an h2 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("h2", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -6732,6 +7011,7 @@ namespace Eighty
         /// Build an h2 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h2_(List<Html> children)
         {
             return h2_(children.AsEnumerable());
@@ -6741,6 +7021,7 @@ namespace Eighty
         /// Build an h2 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h2_(ImmutableList<Html> children)
         {
             return h2_(children.AsEnumerable());
@@ -6763,6 +7044,7 @@ namespace Eighty
         /// Build an h2 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h2_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -6779,6 +7061,7 @@ namespace Eighty
         /// Build an h2 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h2_(Html child1)
         {
             
@@ -6793,6 +7076,7 @@ namespace Eighty
         /// Build an h2 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h2_(Html child1, Html child2)
         {
             
@@ -6811,6 +7095,7 @@ namespace Eighty
         /// Build an h2 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h2_(Html child1, Html child2, Html child3)
         {
             
@@ -6833,6 +7118,7 @@ namespace Eighty
         /// Build an h2 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h2_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -6859,6 +7145,7 @@ namespace Eighty
         /// Build an h2 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h2_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -6889,6 +7176,7 @@ namespace Eighty
         /// Build an h2 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h2_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -6923,6 +7211,7 @@ namespace Eighty
         /// Build an h2 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h2_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -6961,6 +7250,7 @@ namespace Eighty
         /// Build an h2 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h2_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -7102,6 +7392,7 @@ namespace Eighty
         /// Build an h3 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h3(Attr attr1)
         {
             return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1), false);
@@ -7111,6 +7402,7 @@ namespace Eighty
         /// Build an h3 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h3(Attr attr1, Attr attr2)
         {
             return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -7120,6 +7412,7 @@ namespace Eighty
         /// Build an h3 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h3(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -7129,6 +7422,7 @@ namespace Eighty
         /// Build an h3 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -7138,6 +7432,7 @@ namespace Eighty
         /// Build an h3 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -7147,6 +7442,7 @@ namespace Eighty
         /// Build an h3 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -7156,6 +7452,7 @@ namespace Eighty
         /// Build an h3 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -7165,6 +7462,7 @@ namespace Eighty
         /// Build an h3 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("h3", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -7183,6 +7481,7 @@ namespace Eighty
         /// Build an h3 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h3_(List<Html> children)
         {
             return h3_(children.AsEnumerable());
@@ -7192,6 +7491,7 @@ namespace Eighty
         /// Build an h3 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h3_(ImmutableList<Html> children)
         {
             return h3_(children.AsEnumerable());
@@ -7214,6 +7514,7 @@ namespace Eighty
         /// Build an h3 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h3_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -7230,6 +7531,7 @@ namespace Eighty
         /// Build an h3 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h3_(Html child1)
         {
             
@@ -7244,6 +7546,7 @@ namespace Eighty
         /// Build an h3 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h3_(Html child1, Html child2)
         {
             
@@ -7262,6 +7565,7 @@ namespace Eighty
         /// Build an h3 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h3_(Html child1, Html child2, Html child3)
         {
             
@@ -7284,6 +7588,7 @@ namespace Eighty
         /// Build an h3 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h3_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -7310,6 +7615,7 @@ namespace Eighty
         /// Build an h3 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h3_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -7340,6 +7646,7 @@ namespace Eighty
         /// Build an h3 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h3_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -7374,6 +7681,7 @@ namespace Eighty
         /// Build an h3 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h3_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -7412,6 +7720,7 @@ namespace Eighty
         /// Build an h3 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h3_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -7553,6 +7862,7 @@ namespace Eighty
         /// Build an h4 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h4(Attr attr1)
         {
             return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1), false);
@@ -7562,6 +7872,7 @@ namespace Eighty
         /// Build an h4 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h4(Attr attr1, Attr attr2)
         {
             return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -7571,6 +7882,7 @@ namespace Eighty
         /// Build an h4 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h4(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -7580,6 +7892,7 @@ namespace Eighty
         /// Build an h4 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -7589,6 +7902,7 @@ namespace Eighty
         /// Build an h4 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -7598,6 +7912,7 @@ namespace Eighty
         /// Build an h4 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -7607,6 +7922,7 @@ namespace Eighty
         /// Build an h4 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -7616,6 +7932,7 @@ namespace Eighty
         /// Build an h4 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("h4", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -7634,6 +7951,7 @@ namespace Eighty
         /// Build an h4 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h4_(List<Html> children)
         {
             return h4_(children.AsEnumerable());
@@ -7643,6 +7961,7 @@ namespace Eighty
         /// Build an h4 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h4_(ImmutableList<Html> children)
         {
             return h4_(children.AsEnumerable());
@@ -7665,6 +7984,7 @@ namespace Eighty
         /// Build an h4 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h4_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -7681,6 +8001,7 @@ namespace Eighty
         /// Build an h4 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h4_(Html child1)
         {
             
@@ -7695,6 +8016,7 @@ namespace Eighty
         /// Build an h4 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h4_(Html child1, Html child2)
         {
             
@@ -7713,6 +8035,7 @@ namespace Eighty
         /// Build an h4 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h4_(Html child1, Html child2, Html child3)
         {
             
@@ -7735,6 +8058,7 @@ namespace Eighty
         /// Build an h4 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h4_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -7761,6 +8085,7 @@ namespace Eighty
         /// Build an h4 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h4_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -7791,6 +8116,7 @@ namespace Eighty
         /// Build an h4 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h4_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -7825,6 +8151,7 @@ namespace Eighty
         /// Build an h4 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h4_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -7863,6 +8190,7 @@ namespace Eighty
         /// Build an h4 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h4_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -8004,6 +8332,7 @@ namespace Eighty
         /// Build an h5 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h5(Attr attr1)
         {
             return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1), false);
@@ -8013,6 +8342,7 @@ namespace Eighty
         /// Build an h5 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h5(Attr attr1, Attr attr2)
         {
             return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -8022,6 +8352,7 @@ namespace Eighty
         /// Build an h5 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h5(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -8031,6 +8362,7 @@ namespace Eighty
         /// Build an h5 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -8040,6 +8372,7 @@ namespace Eighty
         /// Build an h5 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -8049,6 +8382,7 @@ namespace Eighty
         /// Build an h5 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -8058,6 +8392,7 @@ namespace Eighty
         /// Build an h5 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -8067,6 +8402,7 @@ namespace Eighty
         /// Build an h5 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("h5", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -8085,6 +8421,7 @@ namespace Eighty
         /// Build an h5 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h5_(List<Html> children)
         {
             return h5_(children.AsEnumerable());
@@ -8094,6 +8431,7 @@ namespace Eighty
         /// Build an h5 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h5_(ImmutableList<Html> children)
         {
             return h5_(children.AsEnumerable());
@@ -8116,6 +8454,7 @@ namespace Eighty
         /// Build an h5 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h5_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -8132,6 +8471,7 @@ namespace Eighty
         /// Build an h5 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h5_(Html child1)
         {
             
@@ -8146,6 +8486,7 @@ namespace Eighty
         /// Build an h5 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h5_(Html child1, Html child2)
         {
             
@@ -8164,6 +8505,7 @@ namespace Eighty
         /// Build an h5 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h5_(Html child1, Html child2, Html child3)
         {
             
@@ -8186,6 +8528,7 @@ namespace Eighty
         /// Build an h5 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h5_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -8212,6 +8555,7 @@ namespace Eighty
         /// Build an h5 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h5_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -8242,6 +8586,7 @@ namespace Eighty
         /// Build an h5 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h5_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -8276,6 +8621,7 @@ namespace Eighty
         /// Build an h5 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h5_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -8314,6 +8660,7 @@ namespace Eighty
         /// Build an h5 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h5_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -8455,6 +8802,7 @@ namespace Eighty
         /// Build an h6 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h6(Attr attr1)
         {
             return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1), false);
@@ -8464,6 +8812,7 @@ namespace Eighty
         /// Build an h6 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h6(Attr attr1, Attr attr2)
         {
             return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -8473,6 +8822,7 @@ namespace Eighty
         /// Build an h6 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h6(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -8482,6 +8832,7 @@ namespace Eighty
         /// Build an h6 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -8491,6 +8842,7 @@ namespace Eighty
         /// Build an h6 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -8500,6 +8852,7 @@ namespace Eighty
         /// Build an h6 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -8509,6 +8862,7 @@ namespace Eighty
         /// Build an h6 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -8518,6 +8872,7 @@ namespace Eighty
         /// Build an h6 element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("h6", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -8536,6 +8891,7 @@ namespace Eighty
         /// Build an h6 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h6_(List<Html> children)
         {
             return h6_(children.AsEnumerable());
@@ -8545,6 +8901,7 @@ namespace Eighty
         /// Build an h6 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h6_(ImmutableList<Html> children)
         {
             return h6_(children.AsEnumerable());
@@ -8567,6 +8924,7 @@ namespace Eighty
         /// Build an h6 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h6_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -8583,6 +8941,7 @@ namespace Eighty
         /// Build an h6 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h6_(Html child1)
         {
             
@@ -8597,6 +8956,7 @@ namespace Eighty
         /// Build an h6 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h6_(Html child1, Html child2)
         {
             
@@ -8615,6 +8975,7 @@ namespace Eighty
         /// Build an h6 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h6_(Html child1, Html child2, Html child3)
         {
             
@@ -8637,6 +8998,7 @@ namespace Eighty
         /// Build an h6 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h6_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -8663,6 +9025,7 @@ namespace Eighty
         /// Build an h6 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h6_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -8693,6 +9056,7 @@ namespace Eighty
         /// Build an h6 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h6_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -8727,6 +9091,7 @@ namespace Eighty
         /// Build an h6 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h6_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -8765,6 +9130,7 @@ namespace Eighty
         /// Build an h6 element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html h6_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -8906,6 +9272,7 @@ namespace Eighty
         /// Build a hgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder hgroup(Attr attr1)
         {
             return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1), false);
@@ -8915,6 +9282,7 @@ namespace Eighty
         /// Build a hgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder hgroup(Attr attr1, Attr attr2)
         {
             return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -8924,6 +9292,7 @@ namespace Eighty
         /// Build a hgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -8933,6 +9302,7 @@ namespace Eighty
         /// Build a hgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -8942,6 +9312,7 @@ namespace Eighty
         /// Build a hgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -8951,6 +9322,7 @@ namespace Eighty
         /// Build a hgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -8960,6 +9332,7 @@ namespace Eighty
         /// Build a hgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -8969,6 +9342,7 @@ namespace Eighty
         /// Build a hgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("hgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -8987,6 +9361,7 @@ namespace Eighty
         /// Build a hgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html hgroup_(List<Html> children)
         {
             return hgroup_(children.AsEnumerable());
@@ -8996,6 +9371,7 @@ namespace Eighty
         /// Build a hgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html hgroup_(ImmutableList<Html> children)
         {
             return hgroup_(children.AsEnumerable());
@@ -9018,6 +9394,7 @@ namespace Eighty
         /// Build a hgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html hgroup_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -9034,6 +9411,7 @@ namespace Eighty
         /// Build a hgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html hgroup_(Html child1)
         {
             
@@ -9048,6 +9426,7 @@ namespace Eighty
         /// Build a hgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html hgroup_(Html child1, Html child2)
         {
             
@@ -9066,6 +9445,7 @@ namespace Eighty
         /// Build a hgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html hgroup_(Html child1, Html child2, Html child3)
         {
             
@@ -9088,6 +9468,7 @@ namespace Eighty
         /// Build a hgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html hgroup_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -9114,6 +9495,7 @@ namespace Eighty
         /// Build a hgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html hgroup_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -9144,6 +9526,7 @@ namespace Eighty
         /// Build a hgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html hgroup_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -9178,6 +9561,7 @@ namespace Eighty
         /// Build a hgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html hgroup_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -9216,6 +9600,7 @@ namespace Eighty
         /// Build a hgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html hgroup_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -9357,6 +9742,7 @@ namespace Eighty
         /// Build a div element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder div(Attr attr1)
         {
             return new TagBuilder("div", ImmutableArrayFactory.Create(attr1), false);
@@ -9366,6 +9752,7 @@ namespace Eighty
         /// Build a div element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder div(Attr attr1, Attr attr2)
         {
             return new TagBuilder("div", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -9375,6 +9762,7 @@ namespace Eighty
         /// Build a div element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder div(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("div", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -9384,6 +9772,7 @@ namespace Eighty
         /// Build a div element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("div", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -9393,6 +9782,7 @@ namespace Eighty
         /// Build a div element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("div", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -9402,6 +9792,7 @@ namespace Eighty
         /// Build a div element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("div", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -9411,6 +9802,7 @@ namespace Eighty
         /// Build a div element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("div", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -9420,6 +9812,7 @@ namespace Eighty
         /// Build a div element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("div", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -9438,6 +9831,7 @@ namespace Eighty
         /// Build a div element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html div_(List<Html> children)
         {
             return div_(children.AsEnumerable());
@@ -9447,6 +9841,7 @@ namespace Eighty
         /// Build a div element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html div_(ImmutableList<Html> children)
         {
             return div_(children.AsEnumerable());
@@ -9469,6 +9864,7 @@ namespace Eighty
         /// Build a div element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html div_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -9485,6 +9881,7 @@ namespace Eighty
         /// Build a div element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html div_(Html child1)
         {
             
@@ -9499,6 +9896,7 @@ namespace Eighty
         /// Build a div element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html div_(Html child1, Html child2)
         {
             
@@ -9517,6 +9915,7 @@ namespace Eighty
         /// Build a div element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html div_(Html child1, Html child2, Html child3)
         {
             
@@ -9539,6 +9938,7 @@ namespace Eighty
         /// Build a div element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html div_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -9565,6 +9965,7 @@ namespace Eighty
         /// Build a div element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html div_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -9595,6 +9996,7 @@ namespace Eighty
         /// Build a div element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html div_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -9629,6 +10031,7 @@ namespace Eighty
         /// Build a div element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html div_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -9667,6 +10070,7 @@ namespace Eighty
         /// Build a div element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html div_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -9808,6 +10212,7 @@ namespace Eighty
         /// Build a p element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder p(Attr attr1)
         {
             return new TagBuilder("p", ImmutableArrayFactory.Create(attr1), false);
@@ -9817,6 +10222,7 @@ namespace Eighty
         /// Build a p element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder p(Attr attr1, Attr attr2)
         {
             return new TagBuilder("p", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -9826,6 +10232,7 @@ namespace Eighty
         /// Build a p element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder p(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("p", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -9835,6 +10242,7 @@ namespace Eighty
         /// Build a p element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("p", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -9844,6 +10252,7 @@ namespace Eighty
         /// Build a p element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("p", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -9853,6 +10262,7 @@ namespace Eighty
         /// Build a p element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("p", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -9862,6 +10272,7 @@ namespace Eighty
         /// Build a p element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("p", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -9871,6 +10282,7 @@ namespace Eighty
         /// Build a p element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("p", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -9889,6 +10301,7 @@ namespace Eighty
         /// Build a p element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html p_(List<Html> children)
         {
             return p_(children.AsEnumerable());
@@ -9898,6 +10311,7 @@ namespace Eighty
         /// Build a p element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html p_(ImmutableList<Html> children)
         {
             return p_(children.AsEnumerable());
@@ -9920,6 +10334,7 @@ namespace Eighty
         /// Build a p element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html p_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -9936,6 +10351,7 @@ namespace Eighty
         /// Build a p element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html p_(Html child1)
         {
             
@@ -9950,6 +10366,7 @@ namespace Eighty
         /// Build a p element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html p_(Html child1, Html child2)
         {
             
@@ -9968,6 +10385,7 @@ namespace Eighty
         /// Build a p element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html p_(Html child1, Html child2, Html child3)
         {
             
@@ -9990,6 +10408,7 @@ namespace Eighty
         /// Build a p element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html p_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -10016,6 +10435,7 @@ namespace Eighty
         /// Build a p element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html p_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -10046,6 +10466,7 @@ namespace Eighty
         /// Build a p element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html p_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -10080,6 +10501,7 @@ namespace Eighty
         /// Build a p element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html p_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -10118,6 +10540,7 @@ namespace Eighty
         /// Build a p element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html p_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -10259,6 +10682,7 @@ namespace Eighty
         /// Build a pre element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder pre(Attr attr1)
         {
             return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1), false);
@@ -10268,6 +10692,7 @@ namespace Eighty
         /// Build a pre element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder pre(Attr attr1, Attr attr2)
         {
             return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -10277,6 +10702,7 @@ namespace Eighty
         /// Build a pre element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder pre(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -10286,6 +10712,7 @@ namespace Eighty
         /// Build a pre element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -10295,6 +10722,7 @@ namespace Eighty
         /// Build a pre element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -10304,6 +10732,7 @@ namespace Eighty
         /// Build a pre element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -10313,6 +10742,7 @@ namespace Eighty
         /// Build a pre element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -10322,6 +10752,7 @@ namespace Eighty
         /// Build a pre element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("pre", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -10340,6 +10771,7 @@ namespace Eighty
         /// Build a pre element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html pre_(List<Html> children)
         {
             return pre_(children.AsEnumerable());
@@ -10349,6 +10781,7 @@ namespace Eighty
         /// Build a pre element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html pre_(ImmutableList<Html> children)
         {
             return pre_(children.AsEnumerable());
@@ -10371,6 +10804,7 @@ namespace Eighty
         /// Build a pre element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html pre_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -10387,6 +10821,7 @@ namespace Eighty
         /// Build a pre element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html pre_(Html child1)
         {
             
@@ -10401,6 +10836,7 @@ namespace Eighty
         /// Build a pre element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html pre_(Html child1, Html child2)
         {
             
@@ -10419,6 +10855,7 @@ namespace Eighty
         /// Build a pre element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html pre_(Html child1, Html child2, Html child3)
         {
             
@@ -10441,6 +10878,7 @@ namespace Eighty
         /// Build a pre element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html pre_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -10467,6 +10905,7 @@ namespace Eighty
         /// Build a pre element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html pre_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -10497,6 +10936,7 @@ namespace Eighty
         /// Build a pre element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html pre_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -10531,6 +10971,7 @@ namespace Eighty
         /// Build a pre element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html pre_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -10569,6 +11010,7 @@ namespace Eighty
         /// Build a pre element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html pre_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -10710,6 +11152,7 @@ namespace Eighty
         /// Build a blockquote element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder blockquote(Attr attr1)
         {
             return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1), false);
@@ -10719,6 +11162,7 @@ namespace Eighty
         /// Build a blockquote element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder blockquote(Attr attr1, Attr attr2)
         {
             return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -10728,6 +11172,7 @@ namespace Eighty
         /// Build a blockquote element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -10737,6 +11182,7 @@ namespace Eighty
         /// Build a blockquote element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -10746,6 +11192,7 @@ namespace Eighty
         /// Build a blockquote element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -10755,6 +11202,7 @@ namespace Eighty
         /// Build a blockquote element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -10764,6 +11212,7 @@ namespace Eighty
         /// Build a blockquote element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -10773,6 +11222,7 @@ namespace Eighty
         /// Build a blockquote element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("blockquote", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -10791,6 +11241,7 @@ namespace Eighty
         /// Build a blockquote element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html blockquote_(List<Html> children)
         {
             return blockquote_(children.AsEnumerable());
@@ -10800,6 +11251,7 @@ namespace Eighty
         /// Build a blockquote element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html blockquote_(ImmutableList<Html> children)
         {
             return blockquote_(children.AsEnumerable());
@@ -10822,6 +11274,7 @@ namespace Eighty
         /// Build a blockquote element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html blockquote_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -10838,6 +11291,7 @@ namespace Eighty
         /// Build a blockquote element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html blockquote_(Html child1)
         {
             
@@ -10852,6 +11306,7 @@ namespace Eighty
         /// Build a blockquote element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html blockquote_(Html child1, Html child2)
         {
             
@@ -10870,6 +11325,7 @@ namespace Eighty
         /// Build a blockquote element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html blockquote_(Html child1, Html child2, Html child3)
         {
             
@@ -10892,6 +11348,7 @@ namespace Eighty
         /// Build a blockquote element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html blockquote_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -10918,6 +11375,7 @@ namespace Eighty
         /// Build a blockquote element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html blockquote_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -10948,6 +11406,7 @@ namespace Eighty
         /// Build a blockquote element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html blockquote_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -10982,6 +11441,7 @@ namespace Eighty
         /// Build a blockquote element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html blockquote_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -11020,6 +11480,7 @@ namespace Eighty
         /// Build a blockquote element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html blockquote_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -11161,6 +11622,7 @@ namespace Eighty
         /// Build a figure element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder figure(Attr attr1)
         {
             return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1), false);
@@ -11170,6 +11632,7 @@ namespace Eighty
         /// Build a figure element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder figure(Attr attr1, Attr attr2)
         {
             return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -11179,6 +11642,7 @@ namespace Eighty
         /// Build a figure element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder figure(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -11188,6 +11652,7 @@ namespace Eighty
         /// Build a figure element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -11197,6 +11662,7 @@ namespace Eighty
         /// Build a figure element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -11206,6 +11672,7 @@ namespace Eighty
         /// Build a figure element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -11215,6 +11682,7 @@ namespace Eighty
         /// Build a figure element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -11224,6 +11692,7 @@ namespace Eighty
         /// Build a figure element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("figure", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -11242,6 +11711,7 @@ namespace Eighty
         /// Build a figure element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html figure_(List<Html> children)
         {
             return figure_(children.AsEnumerable());
@@ -11251,6 +11721,7 @@ namespace Eighty
         /// Build a figure element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html figure_(ImmutableList<Html> children)
         {
             return figure_(children.AsEnumerable());
@@ -11273,6 +11744,7 @@ namespace Eighty
         /// Build a figure element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html figure_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -11289,6 +11761,7 @@ namespace Eighty
         /// Build a figure element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html figure_(Html child1)
         {
             
@@ -11303,6 +11776,7 @@ namespace Eighty
         /// Build a figure element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html figure_(Html child1, Html child2)
         {
             
@@ -11321,6 +11795,7 @@ namespace Eighty
         /// Build a figure element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html figure_(Html child1, Html child2, Html child3)
         {
             
@@ -11343,6 +11818,7 @@ namespace Eighty
         /// Build a figure element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html figure_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -11369,6 +11845,7 @@ namespace Eighty
         /// Build a figure element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html figure_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -11399,6 +11876,7 @@ namespace Eighty
         /// Build a figure element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html figure_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -11433,6 +11911,7 @@ namespace Eighty
         /// Build a figure element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html figure_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -11471,6 +11950,7 @@ namespace Eighty
         /// Build a figure element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html figure_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -11612,6 +12092,7 @@ namespace Eighty
         /// Build a figcaption element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder figcaption(Attr attr1)
         {
             return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1), false);
@@ -11621,6 +12102,7 @@ namespace Eighty
         /// Build a figcaption element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder figcaption(Attr attr1, Attr attr2)
         {
             return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -11630,6 +12112,7 @@ namespace Eighty
         /// Build a figcaption element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -11639,6 +12122,7 @@ namespace Eighty
         /// Build a figcaption element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -11648,6 +12132,7 @@ namespace Eighty
         /// Build a figcaption element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -11657,6 +12142,7 @@ namespace Eighty
         /// Build a figcaption element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -11666,6 +12152,7 @@ namespace Eighty
         /// Build a figcaption element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -11675,6 +12162,7 @@ namespace Eighty
         /// Build a figcaption element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("figcaption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -11693,6 +12181,7 @@ namespace Eighty
         /// Build a figcaption element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html figcaption_(List<Html> children)
         {
             return figcaption_(children.AsEnumerable());
@@ -11702,6 +12191,7 @@ namespace Eighty
         /// Build a figcaption element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html figcaption_(ImmutableList<Html> children)
         {
             return figcaption_(children.AsEnumerable());
@@ -11724,6 +12214,7 @@ namespace Eighty
         /// Build a figcaption element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html figcaption_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -11740,6 +12231,7 @@ namespace Eighty
         /// Build a figcaption element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html figcaption_(Html child1)
         {
             
@@ -11754,6 +12246,7 @@ namespace Eighty
         /// Build a figcaption element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html figcaption_(Html child1, Html child2)
         {
             
@@ -11772,6 +12265,7 @@ namespace Eighty
         /// Build a figcaption element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html figcaption_(Html child1, Html child2, Html child3)
         {
             
@@ -11794,6 +12288,7 @@ namespace Eighty
         /// Build a figcaption element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html figcaption_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -11820,6 +12315,7 @@ namespace Eighty
         /// Build a figcaption element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html figcaption_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -11850,6 +12346,7 @@ namespace Eighty
         /// Build a figcaption element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html figcaption_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -11884,6 +12381,7 @@ namespace Eighty
         /// Build a figcaption element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html figcaption_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -11922,6 +12420,7 @@ namespace Eighty
         /// Build a figcaption element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html figcaption_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -12063,6 +12562,7 @@ namespace Eighty
         /// Build an aside element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder aside(Attr attr1)
         {
             return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1), false);
@@ -12072,6 +12572,7 @@ namespace Eighty
         /// Build an aside element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder aside(Attr attr1, Attr attr2)
         {
             return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -12081,6 +12582,7 @@ namespace Eighty
         /// Build an aside element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder aside(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -12090,6 +12592,7 @@ namespace Eighty
         /// Build an aside element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -12099,6 +12602,7 @@ namespace Eighty
         /// Build an aside element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -12108,6 +12612,7 @@ namespace Eighty
         /// Build an aside element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -12117,6 +12622,7 @@ namespace Eighty
         /// Build an aside element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -12126,6 +12632,7 @@ namespace Eighty
         /// Build an aside element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("aside", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -12144,6 +12651,7 @@ namespace Eighty
         /// Build an aside element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html aside_(List<Html> children)
         {
             return aside_(children.AsEnumerable());
@@ -12153,6 +12661,7 @@ namespace Eighty
         /// Build an aside element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html aside_(ImmutableList<Html> children)
         {
             return aside_(children.AsEnumerable());
@@ -12175,6 +12684,7 @@ namespace Eighty
         /// Build an aside element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html aside_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -12191,6 +12701,7 @@ namespace Eighty
         /// Build an aside element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html aside_(Html child1)
         {
             
@@ -12205,6 +12716,7 @@ namespace Eighty
         /// Build an aside element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html aside_(Html child1, Html child2)
         {
             
@@ -12223,6 +12735,7 @@ namespace Eighty
         /// Build an aside element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html aside_(Html child1, Html child2, Html child3)
         {
             
@@ -12245,6 +12758,7 @@ namespace Eighty
         /// Build an aside element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html aside_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -12271,6 +12785,7 @@ namespace Eighty
         /// Build an aside element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html aside_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -12301,6 +12816,7 @@ namespace Eighty
         /// Build an aside element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html aside_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -12335,6 +12851,7 @@ namespace Eighty
         /// Build an aside element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html aside_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -12373,6 +12890,7 @@ namespace Eighty
         /// Build an aside element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html aside_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -12514,6 +13032,7 @@ namespace Eighty
         /// Build a nav element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder nav(Attr attr1)
         {
             return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1), false);
@@ -12523,6 +13042,7 @@ namespace Eighty
         /// Build a nav element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder nav(Attr attr1, Attr attr2)
         {
             return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -12532,6 +13052,7 @@ namespace Eighty
         /// Build a nav element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder nav(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -12541,6 +13062,7 @@ namespace Eighty
         /// Build a nav element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -12550,6 +13072,7 @@ namespace Eighty
         /// Build a nav element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -12559,6 +13082,7 @@ namespace Eighty
         /// Build a nav element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -12568,6 +13092,7 @@ namespace Eighty
         /// Build a nav element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -12577,6 +13102,7 @@ namespace Eighty
         /// Build a nav element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("nav", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -12595,6 +13121,7 @@ namespace Eighty
         /// Build a nav element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html nav_(List<Html> children)
         {
             return nav_(children.AsEnumerable());
@@ -12604,6 +13131,7 @@ namespace Eighty
         /// Build a nav element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html nav_(ImmutableList<Html> children)
         {
             return nav_(children.AsEnumerable());
@@ -12626,6 +13154,7 @@ namespace Eighty
         /// Build a nav element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html nav_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -12642,6 +13171,7 @@ namespace Eighty
         /// Build a nav element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html nav_(Html child1)
         {
             
@@ -12656,6 +13186,7 @@ namespace Eighty
         /// Build a nav element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html nav_(Html child1, Html child2)
         {
             
@@ -12674,6 +13205,7 @@ namespace Eighty
         /// Build a nav element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html nav_(Html child1, Html child2, Html child3)
         {
             
@@ -12696,6 +13228,7 @@ namespace Eighty
         /// Build a nav element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html nav_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -12722,6 +13255,7 @@ namespace Eighty
         /// Build a nav element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html nav_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -12752,6 +13286,7 @@ namespace Eighty
         /// Build a nav element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html nav_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -12786,6 +13321,7 @@ namespace Eighty
         /// Build a nav element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html nav_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -12824,6 +13360,7 @@ namespace Eighty
         /// Build a nav element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html nav_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -12965,6 +13502,7 @@ namespace Eighty
         /// Build an address element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder address(Attr attr1)
         {
             return new TagBuilder("address", ImmutableArrayFactory.Create(attr1), false);
@@ -12974,6 +13512,7 @@ namespace Eighty
         /// Build an address element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder address(Attr attr1, Attr attr2)
         {
             return new TagBuilder("address", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -12983,6 +13522,7 @@ namespace Eighty
         /// Build an address element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder address(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("address", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -12992,6 +13532,7 @@ namespace Eighty
         /// Build an address element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("address", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -13001,6 +13542,7 @@ namespace Eighty
         /// Build an address element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("address", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -13010,6 +13552,7 @@ namespace Eighty
         /// Build an address element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("address", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -13019,6 +13562,7 @@ namespace Eighty
         /// Build an address element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("address", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -13028,6 +13572,7 @@ namespace Eighty
         /// Build an address element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("address", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -13046,6 +13591,7 @@ namespace Eighty
         /// Build an address element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html address_(List<Html> children)
         {
             return address_(children.AsEnumerable());
@@ -13055,6 +13601,7 @@ namespace Eighty
         /// Build an address element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html address_(ImmutableList<Html> children)
         {
             return address_(children.AsEnumerable());
@@ -13077,6 +13624,7 @@ namespace Eighty
         /// Build an address element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html address_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -13093,6 +13641,7 @@ namespace Eighty
         /// Build an address element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html address_(Html child1)
         {
             
@@ -13107,6 +13656,7 @@ namespace Eighty
         /// Build an address element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html address_(Html child1, Html child2)
         {
             
@@ -13125,6 +13675,7 @@ namespace Eighty
         /// Build an address element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html address_(Html child1, Html child2, Html child3)
         {
             
@@ -13147,6 +13698,7 @@ namespace Eighty
         /// Build an address element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html address_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -13173,6 +13725,7 @@ namespace Eighty
         /// Build an address element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html address_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -13203,6 +13756,7 @@ namespace Eighty
         /// Build an address element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html address_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -13237,6 +13791,7 @@ namespace Eighty
         /// Build an address element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html address_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -13275,6 +13830,7 @@ namespace Eighty
         /// Build an address element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html address_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -13466,6 +14022,7 @@ namespace Eighty
         /// Build an a element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder a(Attr attr1)
         {
             return new TagBuilder("a", ImmutableArrayFactory.Create(attr1), false);
@@ -13475,6 +14032,7 @@ namespace Eighty
         /// Build an a element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder a(Attr attr1, Attr attr2)
         {
             return new TagBuilder("a", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -13484,6 +14042,7 @@ namespace Eighty
         /// Build an a element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder a(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("a", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -13493,6 +14052,7 @@ namespace Eighty
         /// Build an a element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("a", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -13502,6 +14062,7 @@ namespace Eighty
         /// Build an a element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("a", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -13511,6 +14072,7 @@ namespace Eighty
         /// Build an a element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("a", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -13520,6 +14082,7 @@ namespace Eighty
         /// Build an a element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("a", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -13529,6 +14092,7 @@ namespace Eighty
         /// Build an a element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("a", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -13547,6 +14111,7 @@ namespace Eighty
         /// Build an a element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html a_(List<Html> children)
         {
             return a_(children.AsEnumerable());
@@ -13556,6 +14121,7 @@ namespace Eighty
         /// Build an a element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html a_(ImmutableList<Html> children)
         {
             return a_(children.AsEnumerable());
@@ -13578,6 +14144,7 @@ namespace Eighty
         /// Build an a element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html a_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -13594,6 +14161,7 @@ namespace Eighty
         /// Build an a element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html a_(Html child1)
         {
             
@@ -13608,6 +14176,7 @@ namespace Eighty
         /// Build an a element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html a_(Html child1, Html child2)
         {
             
@@ -13626,6 +14195,7 @@ namespace Eighty
         /// Build an a element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html a_(Html child1, Html child2, Html child3)
         {
             
@@ -13648,6 +14218,7 @@ namespace Eighty
         /// Build an a element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html a_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -13674,6 +14245,7 @@ namespace Eighty
         /// Build an a element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html a_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -13704,6 +14276,7 @@ namespace Eighty
         /// Build an a element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html a_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -13738,6 +14311,7 @@ namespace Eighty
         /// Build an a element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html a_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -13776,6 +14350,7 @@ namespace Eighty
         /// Build an a element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html a_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -13917,6 +14492,7 @@ namespace Eighty
         /// Build a b element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder b(Attr attr1)
         {
             return new TagBuilder("b", ImmutableArrayFactory.Create(attr1), false);
@@ -13926,6 +14502,7 @@ namespace Eighty
         /// Build a b element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder b(Attr attr1, Attr attr2)
         {
             return new TagBuilder("b", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -13935,6 +14512,7 @@ namespace Eighty
         /// Build a b element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder b(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("b", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -13944,6 +14522,7 @@ namespace Eighty
         /// Build a b element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("b", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -13953,6 +14532,7 @@ namespace Eighty
         /// Build a b element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("b", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -13962,6 +14542,7 @@ namespace Eighty
         /// Build a b element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("b", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -13971,6 +14552,7 @@ namespace Eighty
         /// Build a b element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("b", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -13980,6 +14562,7 @@ namespace Eighty
         /// Build a b element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("b", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -13998,6 +14581,7 @@ namespace Eighty
         /// Build a b element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html b_(List<Html> children)
         {
             return b_(children.AsEnumerable());
@@ -14007,6 +14591,7 @@ namespace Eighty
         /// Build a b element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html b_(ImmutableList<Html> children)
         {
             return b_(children.AsEnumerable());
@@ -14029,6 +14614,7 @@ namespace Eighty
         /// Build a b element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html b_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -14045,6 +14631,7 @@ namespace Eighty
         /// Build a b element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html b_(Html child1)
         {
             
@@ -14059,6 +14646,7 @@ namespace Eighty
         /// Build a b element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html b_(Html child1, Html child2)
         {
             
@@ -14077,6 +14665,7 @@ namespace Eighty
         /// Build a b element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html b_(Html child1, Html child2, Html child3)
         {
             
@@ -14099,6 +14688,7 @@ namespace Eighty
         /// Build a b element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html b_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -14125,6 +14715,7 @@ namespace Eighty
         /// Build a b element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html b_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -14155,6 +14746,7 @@ namespace Eighty
         /// Build a b element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html b_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -14189,6 +14781,7 @@ namespace Eighty
         /// Build a b element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html b_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -14227,6 +14820,7 @@ namespace Eighty
         /// Build a b element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html b_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -14368,6 +14962,7 @@ namespace Eighty
         /// Build an em element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder em(Attr attr1)
         {
             return new TagBuilder("em", ImmutableArrayFactory.Create(attr1), false);
@@ -14377,6 +14972,7 @@ namespace Eighty
         /// Build an em element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder em(Attr attr1, Attr attr2)
         {
             return new TagBuilder("em", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -14386,6 +14982,7 @@ namespace Eighty
         /// Build an em element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder em(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("em", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -14395,6 +14992,7 @@ namespace Eighty
         /// Build an em element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("em", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -14404,6 +15002,7 @@ namespace Eighty
         /// Build an em element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("em", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -14413,6 +15012,7 @@ namespace Eighty
         /// Build an em element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("em", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -14422,6 +15022,7 @@ namespace Eighty
         /// Build an em element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("em", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -14431,6 +15032,7 @@ namespace Eighty
         /// Build an em element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("em", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -14449,6 +15051,7 @@ namespace Eighty
         /// Build an em element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html em_(List<Html> children)
         {
             return em_(children.AsEnumerable());
@@ -14458,6 +15061,7 @@ namespace Eighty
         /// Build an em element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html em_(ImmutableList<Html> children)
         {
             return em_(children.AsEnumerable());
@@ -14480,6 +15084,7 @@ namespace Eighty
         /// Build an em element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html em_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -14496,6 +15101,7 @@ namespace Eighty
         /// Build an em element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html em_(Html child1)
         {
             
@@ -14510,6 +15116,7 @@ namespace Eighty
         /// Build an em element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html em_(Html child1, Html child2)
         {
             
@@ -14528,6 +15135,7 @@ namespace Eighty
         /// Build an em element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html em_(Html child1, Html child2, Html child3)
         {
             
@@ -14550,6 +15158,7 @@ namespace Eighty
         /// Build an em element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html em_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -14576,6 +15185,7 @@ namespace Eighty
         /// Build an em element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html em_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -14606,6 +15216,7 @@ namespace Eighty
         /// Build an em element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html em_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -14640,6 +15251,7 @@ namespace Eighty
         /// Build an em element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html em_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -14678,6 +15290,7 @@ namespace Eighty
         /// Build an em element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html em_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -14819,6 +15432,7 @@ namespace Eighty
         /// Build an i element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder i(Attr attr1)
         {
             return new TagBuilder("i", ImmutableArrayFactory.Create(attr1), false);
@@ -14828,6 +15442,7 @@ namespace Eighty
         /// Build an i element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder i(Attr attr1, Attr attr2)
         {
             return new TagBuilder("i", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -14837,6 +15452,7 @@ namespace Eighty
         /// Build an i element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder i(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("i", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -14846,6 +15462,7 @@ namespace Eighty
         /// Build an i element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("i", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -14855,6 +15472,7 @@ namespace Eighty
         /// Build an i element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("i", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -14864,6 +15482,7 @@ namespace Eighty
         /// Build an i element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("i", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -14873,6 +15492,7 @@ namespace Eighty
         /// Build an i element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("i", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -14882,6 +15502,7 @@ namespace Eighty
         /// Build an i element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("i", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -14900,6 +15521,7 @@ namespace Eighty
         /// Build an i element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html i_(List<Html> children)
         {
             return i_(children.AsEnumerable());
@@ -14909,6 +15531,7 @@ namespace Eighty
         /// Build an i element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html i_(ImmutableList<Html> children)
         {
             return i_(children.AsEnumerable());
@@ -14931,6 +15554,7 @@ namespace Eighty
         /// Build an i element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html i_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -14947,6 +15571,7 @@ namespace Eighty
         /// Build an i element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html i_(Html child1)
         {
             
@@ -14961,6 +15586,7 @@ namespace Eighty
         /// Build an i element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html i_(Html child1, Html child2)
         {
             
@@ -14979,6 +15605,7 @@ namespace Eighty
         /// Build an i element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html i_(Html child1, Html child2, Html child3)
         {
             
@@ -15001,6 +15628,7 @@ namespace Eighty
         /// Build an i element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html i_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -15027,6 +15655,7 @@ namespace Eighty
         /// Build an i element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html i_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -15057,6 +15686,7 @@ namespace Eighty
         /// Build an i element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html i_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -15091,6 +15721,7 @@ namespace Eighty
         /// Build an i element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html i_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -15129,6 +15760,7 @@ namespace Eighty
         /// Build an i element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html i_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -15270,6 +15902,7 @@ namespace Eighty
         /// Build a mark element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder mark(Attr attr1)
         {
             return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1), false);
@@ -15279,6 +15912,7 @@ namespace Eighty
         /// Build a mark element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder mark(Attr attr1, Attr attr2)
         {
             return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -15288,6 +15922,7 @@ namespace Eighty
         /// Build a mark element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder mark(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -15297,6 +15932,7 @@ namespace Eighty
         /// Build a mark element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -15306,6 +15942,7 @@ namespace Eighty
         /// Build a mark element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -15315,6 +15952,7 @@ namespace Eighty
         /// Build a mark element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -15324,6 +15962,7 @@ namespace Eighty
         /// Build a mark element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -15333,6 +15972,7 @@ namespace Eighty
         /// Build a mark element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("mark", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -15351,6 +15991,7 @@ namespace Eighty
         /// Build a mark element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html mark_(List<Html> children)
         {
             return mark_(children.AsEnumerable());
@@ -15360,6 +16001,7 @@ namespace Eighty
         /// Build a mark element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html mark_(ImmutableList<Html> children)
         {
             return mark_(children.AsEnumerable());
@@ -15382,6 +16024,7 @@ namespace Eighty
         /// Build a mark element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html mark_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -15398,6 +16041,7 @@ namespace Eighty
         /// Build a mark element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html mark_(Html child1)
         {
             
@@ -15412,6 +16056,7 @@ namespace Eighty
         /// Build a mark element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html mark_(Html child1, Html child2)
         {
             
@@ -15430,6 +16075,7 @@ namespace Eighty
         /// Build a mark element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html mark_(Html child1, Html child2, Html child3)
         {
             
@@ -15452,6 +16098,7 @@ namespace Eighty
         /// Build a mark element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html mark_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -15478,6 +16125,7 @@ namespace Eighty
         /// Build a mark element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html mark_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -15508,6 +16156,7 @@ namespace Eighty
         /// Build a mark element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html mark_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -15542,6 +16191,7 @@ namespace Eighty
         /// Build a mark element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html mark_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -15580,6 +16230,7 @@ namespace Eighty
         /// Build a mark element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html mark_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -15731,6 +16382,7 @@ namespace Eighty
         /// Build a q element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder q(Attr attr1)
         {
             return new TagBuilder("q", ImmutableArrayFactory.Create(attr1), false);
@@ -15740,6 +16392,7 @@ namespace Eighty
         /// Build a q element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder q(Attr attr1, Attr attr2)
         {
             return new TagBuilder("q", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -15749,6 +16402,7 @@ namespace Eighty
         /// Build a q element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder q(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("q", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -15758,6 +16412,7 @@ namespace Eighty
         /// Build a q element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("q", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -15767,6 +16422,7 @@ namespace Eighty
         /// Build a q element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("q", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -15776,6 +16432,7 @@ namespace Eighty
         /// Build a q element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("q", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -15785,6 +16442,7 @@ namespace Eighty
         /// Build a q element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("q", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -15794,6 +16452,7 @@ namespace Eighty
         /// Build a q element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("q", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -15812,6 +16471,7 @@ namespace Eighty
         /// Build a q element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html q_(List<Html> children)
         {
             return q_(children.AsEnumerable());
@@ -15821,6 +16481,7 @@ namespace Eighty
         /// Build a q element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html q_(ImmutableList<Html> children)
         {
             return q_(children.AsEnumerable());
@@ -15843,6 +16504,7 @@ namespace Eighty
         /// Build a q element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html q_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -15859,6 +16521,7 @@ namespace Eighty
         /// Build a q element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html q_(Html child1)
         {
             
@@ -15873,6 +16536,7 @@ namespace Eighty
         /// Build a q element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html q_(Html child1, Html child2)
         {
             
@@ -15891,6 +16555,7 @@ namespace Eighty
         /// Build a q element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html q_(Html child1, Html child2, Html child3)
         {
             
@@ -15913,6 +16578,7 @@ namespace Eighty
         /// Build a q element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html q_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -15939,6 +16605,7 @@ namespace Eighty
         /// Build a q element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html q_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -15969,6 +16636,7 @@ namespace Eighty
         /// Build a q element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html q_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -16003,6 +16671,7 @@ namespace Eighty
         /// Build a q element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html q_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -16041,6 +16710,7 @@ namespace Eighty
         /// Build a q element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html q_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -16182,6 +16852,7 @@ namespace Eighty
         /// Build an s element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder s(Attr attr1)
         {
             return new TagBuilder("s", ImmutableArrayFactory.Create(attr1), false);
@@ -16191,6 +16862,7 @@ namespace Eighty
         /// Build an s element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder s(Attr attr1, Attr attr2)
         {
             return new TagBuilder("s", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -16200,6 +16872,7 @@ namespace Eighty
         /// Build an s element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder s(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("s", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -16209,6 +16882,7 @@ namespace Eighty
         /// Build an s element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("s", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -16218,6 +16892,7 @@ namespace Eighty
         /// Build an s element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("s", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -16227,6 +16902,7 @@ namespace Eighty
         /// Build an s element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("s", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -16236,6 +16912,7 @@ namespace Eighty
         /// Build an s element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("s", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -16245,6 +16922,7 @@ namespace Eighty
         /// Build an s element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("s", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -16263,6 +16941,7 @@ namespace Eighty
         /// Build an s element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html s_(List<Html> children)
         {
             return s_(children.AsEnumerable());
@@ -16272,6 +16951,7 @@ namespace Eighty
         /// Build an s element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html s_(ImmutableList<Html> children)
         {
             return s_(children.AsEnumerable());
@@ -16294,6 +16974,7 @@ namespace Eighty
         /// Build an s element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html s_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -16310,6 +16991,7 @@ namespace Eighty
         /// Build an s element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html s_(Html child1)
         {
             
@@ -16324,6 +17006,7 @@ namespace Eighty
         /// Build an s element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html s_(Html child1, Html child2)
         {
             
@@ -16342,6 +17025,7 @@ namespace Eighty
         /// Build an s element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html s_(Html child1, Html child2, Html child3)
         {
             
@@ -16364,6 +17048,7 @@ namespace Eighty
         /// Build an s element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html s_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -16390,6 +17075,7 @@ namespace Eighty
         /// Build an s element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html s_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -16420,6 +17106,7 @@ namespace Eighty
         /// Build an s element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html s_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -16454,6 +17141,7 @@ namespace Eighty
         /// Build an s element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html s_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -16492,6 +17180,7 @@ namespace Eighty
         /// Build an s element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html s_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -16633,6 +17322,7 @@ namespace Eighty
         /// Build a small element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder small(Attr attr1)
         {
             return new TagBuilder("small", ImmutableArrayFactory.Create(attr1), false);
@@ -16642,6 +17332,7 @@ namespace Eighty
         /// Build a small element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder small(Attr attr1, Attr attr2)
         {
             return new TagBuilder("small", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -16651,6 +17342,7 @@ namespace Eighty
         /// Build a small element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder small(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("small", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -16660,6 +17352,7 @@ namespace Eighty
         /// Build a small element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("small", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -16669,6 +17362,7 @@ namespace Eighty
         /// Build a small element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("small", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -16678,6 +17372,7 @@ namespace Eighty
         /// Build a small element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("small", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -16687,6 +17382,7 @@ namespace Eighty
         /// Build a small element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("small", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -16696,6 +17392,7 @@ namespace Eighty
         /// Build a small element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("small", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -16714,6 +17411,7 @@ namespace Eighty
         /// Build a small element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html small_(List<Html> children)
         {
             return small_(children.AsEnumerable());
@@ -16723,6 +17421,7 @@ namespace Eighty
         /// Build a small element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html small_(ImmutableList<Html> children)
         {
             return small_(children.AsEnumerable());
@@ -16745,6 +17444,7 @@ namespace Eighty
         /// Build a small element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html small_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -16761,6 +17461,7 @@ namespace Eighty
         /// Build a small element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html small_(Html child1)
         {
             
@@ -16775,6 +17476,7 @@ namespace Eighty
         /// Build a small element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html small_(Html child1, Html child2)
         {
             
@@ -16793,6 +17495,7 @@ namespace Eighty
         /// Build a small element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html small_(Html child1, Html child2, Html child3)
         {
             
@@ -16815,6 +17518,7 @@ namespace Eighty
         /// Build a small element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html small_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -16841,6 +17545,7 @@ namespace Eighty
         /// Build a small element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html small_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -16871,6 +17576,7 @@ namespace Eighty
         /// Build a small element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html small_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -16905,6 +17611,7 @@ namespace Eighty
         /// Build a small element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html small_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -16943,6 +17650,7 @@ namespace Eighty
         /// Build a small element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html small_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -17084,6 +17792,7 @@ namespace Eighty
         /// Build a span element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder span(Attr attr1)
         {
             return new TagBuilder("span", ImmutableArrayFactory.Create(attr1), false);
@@ -17093,6 +17802,7 @@ namespace Eighty
         /// Build a span element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder span(Attr attr1, Attr attr2)
         {
             return new TagBuilder("span", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -17102,6 +17812,7 @@ namespace Eighty
         /// Build a span element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder span(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("span", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -17111,6 +17822,7 @@ namespace Eighty
         /// Build a span element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("span", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -17120,6 +17832,7 @@ namespace Eighty
         /// Build a span element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("span", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -17129,6 +17842,7 @@ namespace Eighty
         /// Build a span element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("span", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -17138,6 +17852,7 @@ namespace Eighty
         /// Build a span element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("span", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -17147,6 +17862,7 @@ namespace Eighty
         /// Build a span element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("span", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -17165,6 +17881,7 @@ namespace Eighty
         /// Build a span element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html span_(List<Html> children)
         {
             return span_(children.AsEnumerable());
@@ -17174,6 +17891,7 @@ namespace Eighty
         /// Build a span element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html span_(ImmutableList<Html> children)
         {
             return span_(children.AsEnumerable());
@@ -17196,6 +17914,7 @@ namespace Eighty
         /// Build a span element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html span_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -17212,6 +17931,7 @@ namespace Eighty
         /// Build a span element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html span_(Html child1)
         {
             
@@ -17226,6 +17946,7 @@ namespace Eighty
         /// Build a span element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html span_(Html child1, Html child2)
         {
             
@@ -17244,6 +17965,7 @@ namespace Eighty
         /// Build a span element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html span_(Html child1, Html child2, Html child3)
         {
             
@@ -17266,6 +17988,7 @@ namespace Eighty
         /// Build a span element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html span_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -17292,6 +18015,7 @@ namespace Eighty
         /// Build a span element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html span_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -17322,6 +18046,7 @@ namespace Eighty
         /// Build a span element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html span_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -17356,6 +18081,7 @@ namespace Eighty
         /// Build a span element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html span_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -17394,6 +18120,7 @@ namespace Eighty
         /// Build a span element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html span_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -17535,6 +18262,7 @@ namespace Eighty
         /// Build a strong element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder strong(Attr attr1)
         {
             return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1), false);
@@ -17544,6 +18272,7 @@ namespace Eighty
         /// Build a strong element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder strong(Attr attr1, Attr attr2)
         {
             return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -17553,6 +18282,7 @@ namespace Eighty
         /// Build a strong element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder strong(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -17562,6 +18292,7 @@ namespace Eighty
         /// Build a strong element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -17571,6 +18302,7 @@ namespace Eighty
         /// Build a strong element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -17580,6 +18312,7 @@ namespace Eighty
         /// Build a strong element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -17589,6 +18322,7 @@ namespace Eighty
         /// Build a strong element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -17598,6 +18332,7 @@ namespace Eighty
         /// Build a strong element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("strong", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -17616,6 +18351,7 @@ namespace Eighty
         /// Build a strong element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html strong_(List<Html> children)
         {
             return strong_(children.AsEnumerable());
@@ -17625,6 +18361,7 @@ namespace Eighty
         /// Build a strong element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html strong_(ImmutableList<Html> children)
         {
             return strong_(children.AsEnumerable());
@@ -17647,6 +18384,7 @@ namespace Eighty
         /// Build a strong element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html strong_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -17663,6 +18401,7 @@ namespace Eighty
         /// Build a strong element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html strong_(Html child1)
         {
             
@@ -17677,6 +18416,7 @@ namespace Eighty
         /// Build a strong element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html strong_(Html child1, Html child2)
         {
             
@@ -17695,6 +18435,7 @@ namespace Eighty
         /// Build a strong element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html strong_(Html child1, Html child2, Html child3)
         {
             
@@ -17717,6 +18458,7 @@ namespace Eighty
         /// Build a strong element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html strong_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -17743,6 +18485,7 @@ namespace Eighty
         /// Build a strong element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html strong_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -17773,6 +18516,7 @@ namespace Eighty
         /// Build a strong element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html strong_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -17807,6 +18551,7 @@ namespace Eighty
         /// Build a strong element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html strong_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -17845,6 +18590,7 @@ namespace Eighty
         /// Build a strong element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html strong_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -17986,6 +18732,7 @@ namespace Eighty
         /// Build a sub element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder sub(Attr attr1)
         {
             return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1), false);
@@ -17995,6 +18742,7 @@ namespace Eighty
         /// Build a sub element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder sub(Attr attr1, Attr attr2)
         {
             return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -18004,6 +18752,7 @@ namespace Eighty
         /// Build a sub element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder sub(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -18013,6 +18762,7 @@ namespace Eighty
         /// Build a sub element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -18022,6 +18772,7 @@ namespace Eighty
         /// Build a sub element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -18031,6 +18782,7 @@ namespace Eighty
         /// Build a sub element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -18040,6 +18792,7 @@ namespace Eighty
         /// Build a sub element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -18049,6 +18802,7 @@ namespace Eighty
         /// Build a sub element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("sub", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -18067,6 +18821,7 @@ namespace Eighty
         /// Build a sub element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html sub_(List<Html> children)
         {
             return sub_(children.AsEnumerable());
@@ -18076,6 +18831,7 @@ namespace Eighty
         /// Build a sub element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html sub_(ImmutableList<Html> children)
         {
             return sub_(children.AsEnumerable());
@@ -18098,6 +18854,7 @@ namespace Eighty
         /// Build a sub element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html sub_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -18114,6 +18871,7 @@ namespace Eighty
         /// Build a sub element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html sub_(Html child1)
         {
             
@@ -18128,6 +18886,7 @@ namespace Eighty
         /// Build a sub element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html sub_(Html child1, Html child2)
         {
             
@@ -18146,6 +18905,7 @@ namespace Eighty
         /// Build a sub element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html sub_(Html child1, Html child2, Html child3)
         {
             
@@ -18168,6 +18928,7 @@ namespace Eighty
         /// Build a sub element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html sub_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -18194,6 +18955,7 @@ namespace Eighty
         /// Build a sub element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html sub_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -18224,6 +18986,7 @@ namespace Eighty
         /// Build a sub element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html sub_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -18258,6 +19021,7 @@ namespace Eighty
         /// Build a sub element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html sub_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -18296,6 +19060,7 @@ namespace Eighty
         /// Build a sub element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html sub_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -18437,6 +19202,7 @@ namespace Eighty
         /// Build a sup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder sup(Attr attr1)
         {
             return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1), false);
@@ -18446,6 +19212,7 @@ namespace Eighty
         /// Build a sup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder sup(Attr attr1, Attr attr2)
         {
             return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -18455,6 +19222,7 @@ namespace Eighty
         /// Build a sup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder sup(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -18464,6 +19232,7 @@ namespace Eighty
         /// Build a sup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -18473,6 +19242,7 @@ namespace Eighty
         /// Build a sup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -18482,6 +19252,7 @@ namespace Eighty
         /// Build a sup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -18491,6 +19262,7 @@ namespace Eighty
         /// Build a sup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -18500,6 +19272,7 @@ namespace Eighty
         /// Build a sup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("sup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -18518,6 +19291,7 @@ namespace Eighty
         /// Build a sup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html sup_(List<Html> children)
         {
             return sup_(children.AsEnumerable());
@@ -18527,6 +19301,7 @@ namespace Eighty
         /// Build a sup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html sup_(ImmutableList<Html> children)
         {
             return sup_(children.AsEnumerable());
@@ -18549,6 +19324,7 @@ namespace Eighty
         /// Build a sup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html sup_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -18565,6 +19341,7 @@ namespace Eighty
         /// Build a sup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html sup_(Html child1)
         {
             
@@ -18579,6 +19356,7 @@ namespace Eighty
         /// Build a sup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html sup_(Html child1, Html child2)
         {
             
@@ -18597,6 +19375,7 @@ namespace Eighty
         /// Build a sup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html sup_(Html child1, Html child2, Html child3)
         {
             
@@ -18619,6 +19398,7 @@ namespace Eighty
         /// Build a sup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html sup_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -18645,6 +19425,7 @@ namespace Eighty
         /// Build a sup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html sup_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -18675,6 +19456,7 @@ namespace Eighty
         /// Build a sup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html sup_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -18709,6 +19491,7 @@ namespace Eighty
         /// Build a sup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html sup_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -18747,6 +19530,7 @@ namespace Eighty
         /// Build a sup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html sup_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -18888,6 +19672,7 @@ namespace Eighty
         /// Build an u element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder u(Attr attr1)
         {
             return new TagBuilder("u", ImmutableArrayFactory.Create(attr1), false);
@@ -18897,6 +19682,7 @@ namespace Eighty
         /// Build an u element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder u(Attr attr1, Attr attr2)
         {
             return new TagBuilder("u", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -18906,6 +19692,7 @@ namespace Eighty
         /// Build an u element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder u(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("u", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -18915,6 +19702,7 @@ namespace Eighty
         /// Build an u element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("u", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -18924,6 +19712,7 @@ namespace Eighty
         /// Build an u element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("u", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -18933,6 +19722,7 @@ namespace Eighty
         /// Build an u element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("u", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -18942,6 +19732,7 @@ namespace Eighty
         /// Build an u element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("u", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -18951,6 +19742,7 @@ namespace Eighty
         /// Build an u element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("u", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -18969,6 +19761,7 @@ namespace Eighty
         /// Build an u element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html u_(List<Html> children)
         {
             return u_(children.AsEnumerable());
@@ -18978,6 +19771,7 @@ namespace Eighty
         /// Build an u element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html u_(ImmutableList<Html> children)
         {
             return u_(children.AsEnumerable());
@@ -19000,6 +19794,7 @@ namespace Eighty
         /// Build an u element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html u_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -19016,6 +19811,7 @@ namespace Eighty
         /// Build an u element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html u_(Html child1)
         {
             
@@ -19030,6 +19826,7 @@ namespace Eighty
         /// Build an u element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html u_(Html child1, Html child2)
         {
             
@@ -19048,6 +19845,7 @@ namespace Eighty
         /// Build an u element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html u_(Html child1, Html child2, Html child3)
         {
             
@@ -19070,6 +19868,7 @@ namespace Eighty
         /// Build an u element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html u_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -19096,6 +19895,7 @@ namespace Eighty
         /// Build an u element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html u_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -19126,6 +19926,7 @@ namespace Eighty
         /// Build an u element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html u_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -19160,6 +19961,7 @@ namespace Eighty
         /// Build an u element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html u_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -19198,6 +20000,7 @@ namespace Eighty
         /// Build an u element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html u_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -19337,6 +20140,7 @@ namespace Eighty
         /// Build a br element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html br(Attr attr1)
         {
             return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1), false);
@@ -19346,6 +20150,7 @@ namespace Eighty
         /// Build a br element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html br(Attr attr1, Attr attr2)
         {
             return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -19355,6 +20160,7 @@ namespace Eighty
         /// Build a br element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html br(Attr attr1, Attr attr2, Attr attr3)
         {
             return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -19364,6 +20170,7 @@ namespace Eighty
         /// Build a br element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html br(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -19373,6 +20180,7 @@ namespace Eighty
         /// Build a br element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html br(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -19382,6 +20190,7 @@ namespace Eighty
         /// Build a br element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html br(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -19391,6 +20200,7 @@ namespace Eighty
         /// Build a br element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html br(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -19400,6 +20210,7 @@ namespace Eighty
         /// Build a br element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html br(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new SelfClosingTag("br", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -19506,6 +20317,7 @@ namespace Eighty
         /// Build a wbr element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html wbr(Attr attr1)
         {
             return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1), false);
@@ -19515,6 +20327,7 @@ namespace Eighty
         /// Build a wbr element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html wbr(Attr attr1, Attr attr2)
         {
             return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -19524,6 +20337,7 @@ namespace Eighty
         /// Build a wbr element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html wbr(Attr attr1, Attr attr2, Attr attr3)
         {
             return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -19533,6 +20347,7 @@ namespace Eighty
         /// Build a wbr element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -19542,6 +20357,7 @@ namespace Eighty
         /// Build a wbr element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -19551,6 +20367,7 @@ namespace Eighty
         /// Build a wbr element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -19560,6 +20377,7 @@ namespace Eighty
         /// Build a wbr element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -19569,6 +20387,7 @@ namespace Eighty
         /// Build a wbr element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html wbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new SelfClosingTag("wbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -19675,6 +20494,7 @@ namespace Eighty
         /// Build an hr element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html hr(Attr attr1)
         {
             return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1), false);
@@ -19684,6 +20504,7 @@ namespace Eighty
         /// Build an hr element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html hr(Attr attr1, Attr attr2)
         {
             return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -19693,6 +20514,7 @@ namespace Eighty
         /// Build an hr element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html hr(Attr attr1, Attr attr2, Attr attr3)
         {
             return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -19702,6 +20524,7 @@ namespace Eighty
         /// Build an hr element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -19711,6 +20534,7 @@ namespace Eighty
         /// Build an hr element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -19720,6 +20544,7 @@ namespace Eighty
         /// Build an hr element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -19729,6 +20554,7 @@ namespace Eighty
         /// Build an hr element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -19738,6 +20564,7 @@ namespace Eighty
         /// Build an hr element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html hr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new SelfClosingTag("hr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -19846,6 +20673,7 @@ namespace Eighty
         /// Build an abbr element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder abbr(Attr attr1)
         {
             return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1), false);
@@ -19855,6 +20683,7 @@ namespace Eighty
         /// Build an abbr element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder abbr(Attr attr1, Attr attr2)
         {
             return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -19864,6 +20693,7 @@ namespace Eighty
         /// Build an abbr element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -19873,6 +20703,7 @@ namespace Eighty
         /// Build an abbr element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -19882,6 +20713,7 @@ namespace Eighty
         /// Build an abbr element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -19891,6 +20723,7 @@ namespace Eighty
         /// Build an abbr element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -19900,6 +20733,7 @@ namespace Eighty
         /// Build an abbr element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -19909,6 +20743,7 @@ namespace Eighty
         /// Build an abbr element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("abbr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -19927,6 +20762,7 @@ namespace Eighty
         /// Build an abbr element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html abbr_(List<Html> children)
         {
             return abbr_(children.AsEnumerable());
@@ -19936,6 +20772,7 @@ namespace Eighty
         /// Build an abbr element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html abbr_(ImmutableList<Html> children)
         {
             return abbr_(children.AsEnumerable());
@@ -19958,6 +20795,7 @@ namespace Eighty
         /// Build an abbr element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html abbr_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -19974,6 +20812,7 @@ namespace Eighty
         /// Build an abbr element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html abbr_(Html child1)
         {
             
@@ -19988,6 +20827,7 @@ namespace Eighty
         /// Build an abbr element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html abbr_(Html child1, Html child2)
         {
             
@@ -20006,6 +20846,7 @@ namespace Eighty
         /// Build an abbr element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html abbr_(Html child1, Html child2, Html child3)
         {
             
@@ -20028,6 +20869,7 @@ namespace Eighty
         /// Build an abbr element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html abbr_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -20054,6 +20896,7 @@ namespace Eighty
         /// Build an abbr element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html abbr_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -20084,6 +20927,7 @@ namespace Eighty
         /// Build an abbr element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html abbr_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -20118,6 +20962,7 @@ namespace Eighty
         /// Build an abbr element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html abbr_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -20156,6 +21001,7 @@ namespace Eighty
         /// Build an abbr element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html abbr_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -20297,6 +21143,7 @@ namespace Eighty
         /// Build a cite element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder cite(Attr attr1)
         {
             return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1), false);
@@ -20306,6 +21153,7 @@ namespace Eighty
         /// Build a cite element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder cite(Attr attr1, Attr attr2)
         {
             return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -20315,6 +21163,7 @@ namespace Eighty
         /// Build a cite element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder cite(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -20324,6 +21173,7 @@ namespace Eighty
         /// Build a cite element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -20333,6 +21183,7 @@ namespace Eighty
         /// Build a cite element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -20342,6 +21193,7 @@ namespace Eighty
         /// Build a cite element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -20351,6 +21203,7 @@ namespace Eighty
         /// Build a cite element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -20360,6 +21213,7 @@ namespace Eighty
         /// Build a cite element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("cite", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -20378,6 +21232,7 @@ namespace Eighty
         /// Build a cite element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html cite_(List<Html> children)
         {
             return cite_(children.AsEnumerable());
@@ -20387,6 +21242,7 @@ namespace Eighty
         /// Build a cite element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html cite_(ImmutableList<Html> children)
         {
             return cite_(children.AsEnumerable());
@@ -20409,6 +21265,7 @@ namespace Eighty
         /// Build a cite element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html cite_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -20425,6 +21282,7 @@ namespace Eighty
         /// Build a cite element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html cite_(Html child1)
         {
             
@@ -20439,6 +21297,7 @@ namespace Eighty
         /// Build a cite element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html cite_(Html child1, Html child2)
         {
             
@@ -20457,6 +21316,7 @@ namespace Eighty
         /// Build a cite element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html cite_(Html child1, Html child2, Html child3)
         {
             
@@ -20479,6 +21339,7 @@ namespace Eighty
         /// Build a cite element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html cite_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -20505,6 +21366,7 @@ namespace Eighty
         /// Build a cite element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html cite_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -20535,6 +21397,7 @@ namespace Eighty
         /// Build a cite element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html cite_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -20569,6 +21432,7 @@ namespace Eighty
         /// Build a cite element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html cite_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -20607,6 +21471,7 @@ namespace Eighty
         /// Build a cite element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html cite_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -20748,6 +21613,7 @@ namespace Eighty
         /// Build a code element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder code(Attr attr1)
         {
             return new TagBuilder("code", ImmutableArrayFactory.Create(attr1), false);
@@ -20757,6 +21623,7 @@ namespace Eighty
         /// Build a code element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder code(Attr attr1, Attr attr2)
         {
             return new TagBuilder("code", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -20766,6 +21633,7 @@ namespace Eighty
         /// Build a code element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder code(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("code", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -20775,6 +21643,7 @@ namespace Eighty
         /// Build a code element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("code", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -20784,6 +21653,7 @@ namespace Eighty
         /// Build a code element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("code", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -20793,6 +21663,7 @@ namespace Eighty
         /// Build a code element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("code", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -20802,6 +21673,7 @@ namespace Eighty
         /// Build a code element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("code", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -20811,6 +21683,7 @@ namespace Eighty
         /// Build a code element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("code", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -20829,6 +21702,7 @@ namespace Eighty
         /// Build a code element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html code_(List<Html> children)
         {
             return code_(children.AsEnumerable());
@@ -20838,6 +21712,7 @@ namespace Eighty
         /// Build a code element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html code_(ImmutableList<Html> children)
         {
             return code_(children.AsEnumerable());
@@ -20860,6 +21735,7 @@ namespace Eighty
         /// Build a code element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html code_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -20876,6 +21752,7 @@ namespace Eighty
         /// Build a code element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html code_(Html child1)
         {
             
@@ -20890,6 +21767,7 @@ namespace Eighty
         /// Build a code element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html code_(Html child1, Html child2)
         {
             
@@ -20908,6 +21786,7 @@ namespace Eighty
         /// Build a code element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html code_(Html child1, Html child2, Html child3)
         {
             
@@ -20930,6 +21809,7 @@ namespace Eighty
         /// Build a code element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html code_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -20956,6 +21836,7 @@ namespace Eighty
         /// Build a code element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html code_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -20986,6 +21867,7 @@ namespace Eighty
         /// Build a code element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html code_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -21020,6 +21902,7 @@ namespace Eighty
         /// Build a code element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html code_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -21058,6 +21941,7 @@ namespace Eighty
         /// Build a code element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html code_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -21209,6 +22093,7 @@ namespace Eighty
         /// Build a data element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder data(Attr attr1)
         {
             return new TagBuilder("data", ImmutableArrayFactory.Create(attr1), false);
@@ -21218,6 +22103,7 @@ namespace Eighty
         /// Build a data element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder data(Attr attr1, Attr attr2)
         {
             return new TagBuilder("data", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -21227,6 +22113,7 @@ namespace Eighty
         /// Build a data element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder data(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("data", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -21236,6 +22123,7 @@ namespace Eighty
         /// Build a data element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("data", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -21245,6 +22133,7 @@ namespace Eighty
         /// Build a data element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("data", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -21254,6 +22143,7 @@ namespace Eighty
         /// Build a data element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("data", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -21263,6 +22153,7 @@ namespace Eighty
         /// Build a data element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("data", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -21272,6 +22163,7 @@ namespace Eighty
         /// Build a data element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("data", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -21290,6 +22182,7 @@ namespace Eighty
         /// Build a data element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html data_(List<Html> children)
         {
             return data_(children.AsEnumerable());
@@ -21299,6 +22192,7 @@ namespace Eighty
         /// Build a data element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html data_(ImmutableList<Html> children)
         {
             return data_(children.AsEnumerable());
@@ -21321,6 +22215,7 @@ namespace Eighty
         /// Build a data element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html data_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -21337,6 +22232,7 @@ namespace Eighty
         /// Build a data element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html data_(Html child1)
         {
             
@@ -21351,6 +22247,7 @@ namespace Eighty
         /// Build a data element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html data_(Html child1, Html child2)
         {
             
@@ -21369,6 +22266,7 @@ namespace Eighty
         /// Build a data element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html data_(Html child1, Html child2, Html child3)
         {
             
@@ -21391,6 +22289,7 @@ namespace Eighty
         /// Build a data element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html data_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -21417,6 +22316,7 @@ namespace Eighty
         /// Build a data element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html data_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -21447,6 +22347,7 @@ namespace Eighty
         /// Build a data element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html data_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -21481,6 +22382,7 @@ namespace Eighty
         /// Build a data element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html data_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -21519,6 +22421,7 @@ namespace Eighty
         /// Build a data element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html data_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -21660,6 +22563,7 @@ namespace Eighty
         /// Build a dfn element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dfn(Attr attr1)
         {
             return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1), false);
@@ -21669,6 +22573,7 @@ namespace Eighty
         /// Build a dfn element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dfn(Attr attr1, Attr attr2)
         {
             return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -21678,6 +22583,7 @@ namespace Eighty
         /// Build a dfn element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -21687,6 +22593,7 @@ namespace Eighty
         /// Build a dfn element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -21696,6 +22603,7 @@ namespace Eighty
         /// Build a dfn element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -21705,6 +22613,7 @@ namespace Eighty
         /// Build a dfn element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -21714,6 +22623,7 @@ namespace Eighty
         /// Build a dfn element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -21723,6 +22633,7 @@ namespace Eighty
         /// Build a dfn element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("dfn", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -21741,6 +22652,7 @@ namespace Eighty
         /// Build a dfn element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dfn_(List<Html> children)
         {
             return dfn_(children.AsEnumerable());
@@ -21750,6 +22662,7 @@ namespace Eighty
         /// Build a dfn element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dfn_(ImmutableList<Html> children)
         {
             return dfn_(children.AsEnumerable());
@@ -21772,6 +22685,7 @@ namespace Eighty
         /// Build a dfn element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dfn_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -21788,6 +22702,7 @@ namespace Eighty
         /// Build a dfn element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dfn_(Html child1)
         {
             
@@ -21802,6 +22717,7 @@ namespace Eighty
         /// Build a dfn element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dfn_(Html child1, Html child2)
         {
             
@@ -21820,6 +22736,7 @@ namespace Eighty
         /// Build a dfn element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dfn_(Html child1, Html child2, Html child3)
         {
             
@@ -21842,6 +22759,7 @@ namespace Eighty
         /// Build a dfn element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dfn_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -21868,6 +22786,7 @@ namespace Eighty
         /// Build a dfn element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dfn_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -21898,6 +22817,7 @@ namespace Eighty
         /// Build a dfn element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dfn_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -21932,6 +22852,7 @@ namespace Eighty
         /// Build a dfn element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dfn_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -21970,6 +22891,7 @@ namespace Eighty
         /// Build a dfn element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dfn_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -22111,6 +23033,7 @@ namespace Eighty
         /// Build a kbd element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder kbd(Attr attr1)
         {
             return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1), false);
@@ -22120,6 +23043,7 @@ namespace Eighty
         /// Build a kbd element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder kbd(Attr attr1, Attr attr2)
         {
             return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -22129,6 +23053,7 @@ namespace Eighty
         /// Build a kbd element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -22138,6 +23063,7 @@ namespace Eighty
         /// Build a kbd element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -22147,6 +23073,7 @@ namespace Eighty
         /// Build a kbd element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -22156,6 +23083,7 @@ namespace Eighty
         /// Build a kbd element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -22165,6 +23093,7 @@ namespace Eighty
         /// Build a kbd element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -22174,6 +23103,7 @@ namespace Eighty
         /// Build a kbd element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("kbd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -22192,6 +23122,7 @@ namespace Eighty
         /// Build a kbd element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html kbd_(List<Html> children)
         {
             return kbd_(children.AsEnumerable());
@@ -22201,6 +23132,7 @@ namespace Eighty
         /// Build a kbd element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html kbd_(ImmutableList<Html> children)
         {
             return kbd_(children.AsEnumerable());
@@ -22223,6 +23155,7 @@ namespace Eighty
         /// Build a kbd element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html kbd_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -22239,6 +23172,7 @@ namespace Eighty
         /// Build a kbd element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html kbd_(Html child1)
         {
             
@@ -22253,6 +23187,7 @@ namespace Eighty
         /// Build a kbd element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html kbd_(Html child1, Html child2)
         {
             
@@ -22271,6 +23206,7 @@ namespace Eighty
         /// Build a kbd element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html kbd_(Html child1, Html child2, Html child3)
         {
             
@@ -22293,6 +23229,7 @@ namespace Eighty
         /// Build a kbd element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html kbd_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -22319,6 +23256,7 @@ namespace Eighty
         /// Build a kbd element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html kbd_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -22349,6 +23287,7 @@ namespace Eighty
         /// Build a kbd element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html kbd_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -22383,6 +23322,7 @@ namespace Eighty
         /// Build a kbd element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html kbd_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -22421,6 +23361,7 @@ namespace Eighty
         /// Build a kbd element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html kbd_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -22562,6 +23503,7 @@ namespace Eighty
         /// Build a samp element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder samp(Attr attr1)
         {
             return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1), false);
@@ -22571,6 +23513,7 @@ namespace Eighty
         /// Build a samp element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder samp(Attr attr1, Attr attr2)
         {
             return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -22580,6 +23523,7 @@ namespace Eighty
         /// Build a samp element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder samp(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -22589,6 +23533,7 @@ namespace Eighty
         /// Build a samp element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -22598,6 +23543,7 @@ namespace Eighty
         /// Build a samp element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -22607,6 +23553,7 @@ namespace Eighty
         /// Build a samp element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -22616,6 +23563,7 @@ namespace Eighty
         /// Build a samp element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -22625,6 +23573,7 @@ namespace Eighty
         /// Build a samp element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("samp", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -22643,6 +23592,7 @@ namespace Eighty
         /// Build a samp element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html samp_(List<Html> children)
         {
             return samp_(children.AsEnumerable());
@@ -22652,6 +23602,7 @@ namespace Eighty
         /// Build a samp element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html samp_(ImmutableList<Html> children)
         {
             return samp_(children.AsEnumerable());
@@ -22674,6 +23625,7 @@ namespace Eighty
         /// Build a samp element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html samp_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -22690,6 +23642,7 @@ namespace Eighty
         /// Build a samp element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html samp_(Html child1)
         {
             
@@ -22704,6 +23657,7 @@ namespace Eighty
         /// Build a samp element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html samp_(Html child1, Html child2)
         {
             
@@ -22722,6 +23676,7 @@ namespace Eighty
         /// Build a samp element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html samp_(Html child1, Html child2, Html child3)
         {
             
@@ -22744,6 +23699,7 @@ namespace Eighty
         /// Build a samp element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html samp_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -22770,6 +23726,7 @@ namespace Eighty
         /// Build a samp element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html samp_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -22800,6 +23757,7 @@ namespace Eighty
         /// Build a samp element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html samp_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -22834,6 +23792,7 @@ namespace Eighty
         /// Build a samp element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html samp_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -22872,6 +23831,7 @@ namespace Eighty
         /// Build a samp element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html samp_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -23023,6 +23983,7 @@ namespace Eighty
         /// Build a time element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder time(Attr attr1)
         {
             return new TagBuilder("time", ImmutableArrayFactory.Create(attr1), false);
@@ -23032,6 +23993,7 @@ namespace Eighty
         /// Build a time element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder time(Attr attr1, Attr attr2)
         {
             return new TagBuilder("time", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -23041,6 +24003,7 @@ namespace Eighty
         /// Build a time element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder time(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("time", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -23050,6 +24013,7 @@ namespace Eighty
         /// Build a time element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("time", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -23059,6 +24023,7 @@ namespace Eighty
         /// Build a time element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("time", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -23068,6 +24033,7 @@ namespace Eighty
         /// Build a time element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("time", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -23077,6 +24043,7 @@ namespace Eighty
         /// Build a time element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("time", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -23086,6 +24053,7 @@ namespace Eighty
         /// Build a time element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("time", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -23104,6 +24072,7 @@ namespace Eighty
         /// Build a time element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html time_(List<Html> children)
         {
             return time_(children.AsEnumerable());
@@ -23113,6 +24082,7 @@ namespace Eighty
         /// Build a time element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html time_(ImmutableList<Html> children)
         {
             return time_(children.AsEnumerable());
@@ -23135,6 +24105,7 @@ namespace Eighty
         /// Build a time element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html time_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -23151,6 +24122,7 @@ namespace Eighty
         /// Build a time element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html time_(Html child1)
         {
             
@@ -23165,6 +24137,7 @@ namespace Eighty
         /// Build a time element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html time_(Html child1, Html child2)
         {
             
@@ -23183,6 +24156,7 @@ namespace Eighty
         /// Build a time element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html time_(Html child1, Html child2, Html child3)
         {
             
@@ -23205,6 +24179,7 @@ namespace Eighty
         /// Build a time element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html time_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -23231,6 +24206,7 @@ namespace Eighty
         /// Build a time element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html time_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -23261,6 +24237,7 @@ namespace Eighty
         /// Build a time element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html time_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -23295,6 +24272,7 @@ namespace Eighty
         /// Build a time element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html time_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -23333,6 +24311,7 @@ namespace Eighty
         /// Build a time element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html time_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -23504,6 +24483,7 @@ namespace Eighty
         /// Build an ol element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder ol(Attr attr1)
         {
             return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1), false);
@@ -23513,6 +24493,7 @@ namespace Eighty
         /// Build an ol element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder ol(Attr attr1, Attr attr2)
         {
             return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -23522,6 +24503,7 @@ namespace Eighty
         /// Build an ol element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder ol(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -23531,6 +24513,7 @@ namespace Eighty
         /// Build an ol element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -23540,6 +24523,7 @@ namespace Eighty
         /// Build an ol element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -23549,6 +24533,7 @@ namespace Eighty
         /// Build an ol element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -23558,6 +24543,7 @@ namespace Eighty
         /// Build an ol element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -23567,6 +24553,7 @@ namespace Eighty
         /// Build an ol element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("ol", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -23585,6 +24572,7 @@ namespace Eighty
         /// Build an ol element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html ol_(List<Html> children)
         {
             return ol_(children.AsEnumerable());
@@ -23594,6 +24582,7 @@ namespace Eighty
         /// Build an ol element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html ol_(ImmutableList<Html> children)
         {
             return ol_(children.AsEnumerable());
@@ -23616,6 +24605,7 @@ namespace Eighty
         /// Build an ol element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html ol_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -23632,6 +24622,7 @@ namespace Eighty
         /// Build an ol element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html ol_(Html child1)
         {
             
@@ -23646,6 +24637,7 @@ namespace Eighty
         /// Build an ol element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html ol_(Html child1, Html child2)
         {
             
@@ -23664,6 +24656,7 @@ namespace Eighty
         /// Build an ol element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html ol_(Html child1, Html child2, Html child3)
         {
             
@@ -23686,6 +24679,7 @@ namespace Eighty
         /// Build an ol element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html ol_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -23712,6 +24706,7 @@ namespace Eighty
         /// Build an ol element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html ol_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -23742,6 +24737,7 @@ namespace Eighty
         /// Build an ol element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html ol_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -23776,6 +24772,7 @@ namespace Eighty
         /// Build an ol element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html ol_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -23814,6 +24811,7 @@ namespace Eighty
         /// Build an ol element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html ol_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -23985,6 +24983,7 @@ namespace Eighty
         /// Build an ul element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder ul(Attr attr1)
         {
             return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1), false);
@@ -23994,6 +24993,7 @@ namespace Eighty
         /// Build an ul element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder ul(Attr attr1, Attr attr2)
         {
             return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -24003,6 +25003,7 @@ namespace Eighty
         /// Build an ul element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder ul(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -24012,6 +25013,7 @@ namespace Eighty
         /// Build an ul element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -24021,6 +25023,7 @@ namespace Eighty
         /// Build an ul element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -24030,6 +25033,7 @@ namespace Eighty
         /// Build an ul element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -24039,6 +25043,7 @@ namespace Eighty
         /// Build an ul element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -24048,6 +25053,7 @@ namespace Eighty
         /// Build an ul element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("ul", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -24066,6 +25072,7 @@ namespace Eighty
         /// Build an ul element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html ul_(List<Html> children)
         {
             return ul_(children.AsEnumerable());
@@ -24075,6 +25082,7 @@ namespace Eighty
         /// Build an ul element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html ul_(ImmutableList<Html> children)
         {
             return ul_(children.AsEnumerable());
@@ -24097,6 +25105,7 @@ namespace Eighty
         /// Build an ul element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html ul_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -24113,6 +25122,7 @@ namespace Eighty
         /// Build an ul element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html ul_(Html child1)
         {
             
@@ -24127,6 +25137,7 @@ namespace Eighty
         /// Build an ul element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html ul_(Html child1, Html child2)
         {
             
@@ -24145,6 +25156,7 @@ namespace Eighty
         /// Build an ul element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html ul_(Html child1, Html child2, Html child3)
         {
             
@@ -24167,6 +25179,7 @@ namespace Eighty
         /// Build an ul element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html ul_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -24193,6 +25206,7 @@ namespace Eighty
         /// Build an ul element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html ul_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -24223,6 +25237,7 @@ namespace Eighty
         /// Build an ul element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html ul_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -24257,6 +25272,7 @@ namespace Eighty
         /// Build an ul element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html ul_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -24295,6 +25311,7 @@ namespace Eighty
         /// Build an ul element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html ul_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -24446,6 +25463,7 @@ namespace Eighty
         /// Build an li element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder li(Attr attr1)
         {
             return new TagBuilder("li", ImmutableArrayFactory.Create(attr1), false);
@@ -24455,6 +25473,7 @@ namespace Eighty
         /// Build an li element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder li(Attr attr1, Attr attr2)
         {
             return new TagBuilder("li", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -24464,6 +25483,7 @@ namespace Eighty
         /// Build an li element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder li(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("li", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -24473,6 +25493,7 @@ namespace Eighty
         /// Build an li element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("li", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -24482,6 +25503,7 @@ namespace Eighty
         /// Build an li element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("li", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -24491,6 +25513,7 @@ namespace Eighty
         /// Build an li element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("li", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -24500,6 +25523,7 @@ namespace Eighty
         /// Build an li element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("li", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -24509,6 +25533,7 @@ namespace Eighty
         /// Build an li element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("li", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -24527,6 +25552,7 @@ namespace Eighty
         /// Build an li element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html li_(List<Html> children)
         {
             return li_(children.AsEnumerable());
@@ -24536,6 +25562,7 @@ namespace Eighty
         /// Build an li element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html li_(ImmutableList<Html> children)
         {
             return li_(children.AsEnumerable());
@@ -24558,6 +25585,7 @@ namespace Eighty
         /// Build an li element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html li_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -24574,6 +25602,7 @@ namespace Eighty
         /// Build an li element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html li_(Html child1)
         {
             
@@ -24588,6 +25617,7 @@ namespace Eighty
         /// Build an li element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html li_(Html child1, Html child2)
         {
             
@@ -24606,6 +25636,7 @@ namespace Eighty
         /// Build an li element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html li_(Html child1, Html child2, Html child3)
         {
             
@@ -24628,6 +25659,7 @@ namespace Eighty
         /// Build an li element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html li_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -24654,6 +25686,7 @@ namespace Eighty
         /// Build an li element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html li_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -24684,6 +25717,7 @@ namespace Eighty
         /// Build an li element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html li_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -24718,6 +25752,7 @@ namespace Eighty
         /// Build an li element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html li_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -24756,6 +25791,7 @@ namespace Eighty
         /// Build an li element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html li_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -24897,6 +25933,7 @@ namespace Eighty
         /// Build a dl element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dl(Attr attr1)
         {
             return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1), false);
@@ -24906,6 +25943,7 @@ namespace Eighty
         /// Build a dl element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dl(Attr attr1, Attr attr2)
         {
             return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -24915,6 +25953,7 @@ namespace Eighty
         /// Build a dl element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dl(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -24924,6 +25963,7 @@ namespace Eighty
         /// Build a dl element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -24933,6 +25973,7 @@ namespace Eighty
         /// Build a dl element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -24942,6 +25983,7 @@ namespace Eighty
         /// Build a dl element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -24951,6 +25993,7 @@ namespace Eighty
         /// Build a dl element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -24960,6 +26003,7 @@ namespace Eighty
         /// Build a dl element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("dl", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -24978,6 +26022,7 @@ namespace Eighty
         /// Build a dl element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dl_(List<Html> children)
         {
             return dl_(children.AsEnumerable());
@@ -24987,6 +26032,7 @@ namespace Eighty
         /// Build a dl element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dl_(ImmutableList<Html> children)
         {
             return dl_(children.AsEnumerable());
@@ -25009,6 +26055,7 @@ namespace Eighty
         /// Build a dl element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dl_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -25025,6 +26072,7 @@ namespace Eighty
         /// Build a dl element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dl_(Html child1)
         {
             
@@ -25039,6 +26087,7 @@ namespace Eighty
         /// Build a dl element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dl_(Html child1, Html child2)
         {
             
@@ -25057,6 +26106,7 @@ namespace Eighty
         /// Build a dl element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dl_(Html child1, Html child2, Html child3)
         {
             
@@ -25079,6 +26129,7 @@ namespace Eighty
         /// Build a dl element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dl_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -25105,6 +26156,7 @@ namespace Eighty
         /// Build a dl element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dl_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -25135,6 +26187,7 @@ namespace Eighty
         /// Build a dl element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dl_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -25169,6 +26222,7 @@ namespace Eighty
         /// Build a dl element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dl_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -25207,6 +26261,7 @@ namespace Eighty
         /// Build a dl element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dl_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -25348,6 +26403,7 @@ namespace Eighty
         /// Build a dt element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dt(Attr attr1)
         {
             return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1), false);
@@ -25357,6 +26413,7 @@ namespace Eighty
         /// Build a dt element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dt(Attr attr1, Attr attr2)
         {
             return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -25366,6 +26423,7 @@ namespace Eighty
         /// Build a dt element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dt(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -25375,6 +26433,7 @@ namespace Eighty
         /// Build a dt element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -25384,6 +26443,7 @@ namespace Eighty
         /// Build a dt element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -25393,6 +26453,7 @@ namespace Eighty
         /// Build a dt element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -25402,6 +26463,7 @@ namespace Eighty
         /// Build a dt element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -25411,6 +26473,7 @@ namespace Eighty
         /// Build a dt element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("dt", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -25429,6 +26492,7 @@ namespace Eighty
         /// Build a dt element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dt_(List<Html> children)
         {
             return dt_(children.AsEnumerable());
@@ -25438,6 +26502,7 @@ namespace Eighty
         /// Build a dt element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dt_(ImmutableList<Html> children)
         {
             return dt_(children.AsEnumerable());
@@ -25460,6 +26525,7 @@ namespace Eighty
         /// Build a dt element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dt_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -25476,6 +26542,7 @@ namespace Eighty
         /// Build a dt element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dt_(Html child1)
         {
             
@@ -25490,6 +26557,7 @@ namespace Eighty
         /// Build a dt element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dt_(Html child1, Html child2)
         {
             
@@ -25508,6 +26576,7 @@ namespace Eighty
         /// Build a dt element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dt_(Html child1, Html child2, Html child3)
         {
             
@@ -25530,6 +26599,7 @@ namespace Eighty
         /// Build a dt element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dt_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -25556,6 +26626,7 @@ namespace Eighty
         /// Build a dt element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dt_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -25586,6 +26657,7 @@ namespace Eighty
         /// Build a dt element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dt_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -25620,6 +26692,7 @@ namespace Eighty
         /// Build a dt element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dt_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -25658,6 +26731,7 @@ namespace Eighty
         /// Build a dt element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dt_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -25799,6 +26873,7 @@ namespace Eighty
         /// Build a dd element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dd(Attr attr1)
         {
             return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1), false);
@@ -25808,6 +26883,7 @@ namespace Eighty
         /// Build a dd element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dd(Attr attr1, Attr attr2)
         {
             return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -25817,6 +26893,7 @@ namespace Eighty
         /// Build a dd element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dd(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -25826,6 +26903,7 @@ namespace Eighty
         /// Build a dd element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -25835,6 +26913,7 @@ namespace Eighty
         /// Build a dd element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -25844,6 +26923,7 @@ namespace Eighty
         /// Build a dd element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -25853,6 +26933,7 @@ namespace Eighty
         /// Build a dd element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -25862,6 +26943,7 @@ namespace Eighty
         /// Build a dd element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("dd", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -25880,6 +26962,7 @@ namespace Eighty
         /// Build a dd element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dd_(List<Html> children)
         {
             return dd_(children.AsEnumerable());
@@ -25889,6 +26972,7 @@ namespace Eighty
         /// Build a dd element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dd_(ImmutableList<Html> children)
         {
             return dd_(children.AsEnumerable());
@@ -25911,6 +26995,7 @@ namespace Eighty
         /// Build a dd element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dd_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -25927,6 +27012,7 @@ namespace Eighty
         /// Build a dd element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dd_(Html child1)
         {
             
@@ -25941,6 +27027,7 @@ namespace Eighty
         /// Build a dd element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dd_(Html child1, Html child2)
         {
             
@@ -25959,6 +27046,7 @@ namespace Eighty
         /// Build a dd element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dd_(Html child1, Html child2, Html child3)
         {
             
@@ -25981,6 +27069,7 @@ namespace Eighty
         /// Build a dd element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dd_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -26007,6 +27096,7 @@ namespace Eighty
         /// Build a dd element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dd_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -26037,6 +27127,7 @@ namespace Eighty
         /// Build a dd element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dd_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -26071,6 +27162,7 @@ namespace Eighty
         /// Build a dd element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dd_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -26109,6 +27201,7 @@ namespace Eighty
         /// Build a dd element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dd_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -26250,6 +27343,7 @@ namespace Eighty
         /// Build a table element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder table(Attr attr1)
         {
             return new TagBuilder("table", ImmutableArrayFactory.Create(attr1), false);
@@ -26259,6 +27353,7 @@ namespace Eighty
         /// Build a table element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder table(Attr attr1, Attr attr2)
         {
             return new TagBuilder("table", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -26268,6 +27363,7 @@ namespace Eighty
         /// Build a table element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder table(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("table", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -26277,6 +27373,7 @@ namespace Eighty
         /// Build a table element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("table", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -26286,6 +27383,7 @@ namespace Eighty
         /// Build a table element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("table", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -26295,6 +27393,7 @@ namespace Eighty
         /// Build a table element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("table", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -26304,6 +27403,7 @@ namespace Eighty
         /// Build a table element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("table", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -26313,6 +27413,7 @@ namespace Eighty
         /// Build a table element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("table", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -26331,6 +27432,7 @@ namespace Eighty
         /// Build a table element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html table_(List<Html> children)
         {
             return table_(children.AsEnumerable());
@@ -26340,6 +27442,7 @@ namespace Eighty
         /// Build a table element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html table_(ImmutableList<Html> children)
         {
             return table_(children.AsEnumerable());
@@ -26362,6 +27465,7 @@ namespace Eighty
         /// Build a table element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html table_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -26378,6 +27482,7 @@ namespace Eighty
         /// Build a table element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html table_(Html child1)
         {
             
@@ -26392,6 +27497,7 @@ namespace Eighty
         /// Build a table element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html table_(Html child1, Html child2)
         {
             
@@ -26410,6 +27516,7 @@ namespace Eighty
         /// Build a table element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html table_(Html child1, Html child2, Html child3)
         {
             
@@ -26432,6 +27539,7 @@ namespace Eighty
         /// Build a table element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html table_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -26458,6 +27566,7 @@ namespace Eighty
         /// Build a table element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html table_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -26488,6 +27597,7 @@ namespace Eighty
         /// Build a table element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html table_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -26522,6 +27632,7 @@ namespace Eighty
         /// Build a table element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html table_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -26560,6 +27671,7 @@ namespace Eighty
         /// Build a table element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html table_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -26701,6 +27813,7 @@ namespace Eighty
         /// Build a caption element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder caption(Attr attr1)
         {
             return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1), false);
@@ -26710,6 +27823,7 @@ namespace Eighty
         /// Build a caption element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder caption(Attr attr1, Attr attr2)
         {
             return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -26719,6 +27833,7 @@ namespace Eighty
         /// Build a caption element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder caption(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -26728,6 +27843,7 @@ namespace Eighty
         /// Build a caption element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -26737,6 +27853,7 @@ namespace Eighty
         /// Build a caption element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -26746,6 +27863,7 @@ namespace Eighty
         /// Build a caption element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -26755,6 +27873,7 @@ namespace Eighty
         /// Build a caption element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -26764,6 +27883,7 @@ namespace Eighty
         /// Build a caption element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("caption", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -26782,6 +27902,7 @@ namespace Eighty
         /// Build a caption element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html caption_(List<Html> children)
         {
             return caption_(children.AsEnumerable());
@@ -26791,6 +27912,7 @@ namespace Eighty
         /// Build a caption element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html caption_(ImmutableList<Html> children)
         {
             return caption_(children.AsEnumerable());
@@ -26813,6 +27935,7 @@ namespace Eighty
         /// Build a caption element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html caption_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -26829,6 +27952,7 @@ namespace Eighty
         /// Build a caption element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html caption_(Html child1)
         {
             
@@ -26843,6 +27967,7 @@ namespace Eighty
         /// Build a caption element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html caption_(Html child1, Html child2)
         {
             
@@ -26861,6 +27986,7 @@ namespace Eighty
         /// Build a caption element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html caption_(Html child1, Html child2, Html child3)
         {
             
@@ -26883,6 +28009,7 @@ namespace Eighty
         /// Build a caption element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html caption_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -26909,6 +28036,7 @@ namespace Eighty
         /// Build a caption element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html caption_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -26939,6 +28067,7 @@ namespace Eighty
         /// Build a caption element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html caption_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -26973,6 +28102,7 @@ namespace Eighty
         /// Build a caption element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html caption_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -27011,6 +28141,7 @@ namespace Eighty
         /// Build a caption element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html caption_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -27152,6 +28283,7 @@ namespace Eighty
         /// Build a thead element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder thead(Attr attr1)
         {
             return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1), false);
@@ -27161,6 +28293,7 @@ namespace Eighty
         /// Build a thead element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder thead(Attr attr1, Attr attr2)
         {
             return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -27170,6 +28303,7 @@ namespace Eighty
         /// Build a thead element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder thead(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -27179,6 +28313,7 @@ namespace Eighty
         /// Build a thead element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -27188,6 +28323,7 @@ namespace Eighty
         /// Build a thead element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -27197,6 +28333,7 @@ namespace Eighty
         /// Build a thead element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -27206,6 +28343,7 @@ namespace Eighty
         /// Build a thead element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -27215,6 +28353,7 @@ namespace Eighty
         /// Build a thead element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("thead", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -27233,6 +28372,7 @@ namespace Eighty
         /// Build a thead element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html thead_(List<Html> children)
         {
             return thead_(children.AsEnumerable());
@@ -27242,6 +28382,7 @@ namespace Eighty
         /// Build a thead element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html thead_(ImmutableList<Html> children)
         {
             return thead_(children.AsEnumerable());
@@ -27264,6 +28405,7 @@ namespace Eighty
         /// Build a thead element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html thead_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -27280,6 +28422,7 @@ namespace Eighty
         /// Build a thead element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html thead_(Html child1)
         {
             
@@ -27294,6 +28437,7 @@ namespace Eighty
         /// Build a thead element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html thead_(Html child1, Html child2)
         {
             
@@ -27312,6 +28456,7 @@ namespace Eighty
         /// Build a thead element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html thead_(Html child1, Html child2, Html child3)
         {
             
@@ -27334,6 +28479,7 @@ namespace Eighty
         /// Build a thead element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html thead_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -27360,6 +28506,7 @@ namespace Eighty
         /// Build a thead element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html thead_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -27390,6 +28537,7 @@ namespace Eighty
         /// Build a thead element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html thead_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -27424,6 +28572,7 @@ namespace Eighty
         /// Build a thead element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html thead_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -27462,6 +28611,7 @@ namespace Eighty
         /// Build a thead element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html thead_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -27613,6 +28763,7 @@ namespace Eighty
         /// Build a colgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder colgroup(Attr attr1)
         {
             return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1), false);
@@ -27622,6 +28773,7 @@ namespace Eighty
         /// Build a colgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder colgroup(Attr attr1, Attr attr2)
         {
             return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -27631,6 +28783,7 @@ namespace Eighty
         /// Build a colgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -27640,6 +28793,7 @@ namespace Eighty
         /// Build a colgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -27649,6 +28803,7 @@ namespace Eighty
         /// Build a colgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -27658,6 +28813,7 @@ namespace Eighty
         /// Build a colgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -27667,6 +28823,7 @@ namespace Eighty
         /// Build a colgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -27676,6 +28833,7 @@ namespace Eighty
         /// Build a colgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("colgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -27694,6 +28852,7 @@ namespace Eighty
         /// Build a colgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html colgroup_(List<Html> children)
         {
             return colgroup_(children.AsEnumerable());
@@ -27703,6 +28862,7 @@ namespace Eighty
         /// Build a colgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html colgroup_(ImmutableList<Html> children)
         {
             return colgroup_(children.AsEnumerable());
@@ -27725,6 +28885,7 @@ namespace Eighty
         /// Build a colgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html colgroup_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -27741,6 +28902,7 @@ namespace Eighty
         /// Build a colgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html colgroup_(Html child1)
         {
             
@@ -27755,6 +28917,7 @@ namespace Eighty
         /// Build a colgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html colgroup_(Html child1, Html child2)
         {
             
@@ -27773,6 +28936,7 @@ namespace Eighty
         /// Build a colgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html colgroup_(Html child1, Html child2, Html child3)
         {
             
@@ -27795,6 +28959,7 @@ namespace Eighty
         /// Build a colgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html colgroup_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -27821,6 +28986,7 @@ namespace Eighty
         /// Build a colgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html colgroup_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -27851,6 +29017,7 @@ namespace Eighty
         /// Build a colgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html colgroup_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -27885,6 +29052,7 @@ namespace Eighty
         /// Build a colgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html colgroup_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -27923,6 +29091,7 @@ namespace Eighty
         /// Build a colgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html colgroup_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -28074,6 +29243,7 @@ namespace Eighty
         /// Build a col element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder col(Attr attr1)
         {
             return new TagBuilder("col", ImmutableArrayFactory.Create(attr1), false);
@@ -28083,6 +29253,7 @@ namespace Eighty
         /// Build a col element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder col(Attr attr1, Attr attr2)
         {
             return new TagBuilder("col", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -28092,6 +29263,7 @@ namespace Eighty
         /// Build a col element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder col(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("col", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -28101,6 +29273,7 @@ namespace Eighty
         /// Build a col element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("col", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -28110,6 +29283,7 @@ namespace Eighty
         /// Build a col element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("col", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -28119,6 +29293,7 @@ namespace Eighty
         /// Build a col element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("col", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -28128,6 +29303,7 @@ namespace Eighty
         /// Build a col element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("col", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -28137,6 +29313,7 @@ namespace Eighty
         /// Build a col element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("col", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -28155,6 +29332,7 @@ namespace Eighty
         /// Build a col element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html col_(List<Html> children)
         {
             return col_(children.AsEnumerable());
@@ -28164,6 +29342,7 @@ namespace Eighty
         /// Build a col element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html col_(ImmutableList<Html> children)
         {
             return col_(children.AsEnumerable());
@@ -28186,6 +29365,7 @@ namespace Eighty
         /// Build a col element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html col_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -28202,6 +29382,7 @@ namespace Eighty
         /// Build a col element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html col_(Html child1)
         {
             
@@ -28216,6 +29397,7 @@ namespace Eighty
         /// Build a col element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html col_(Html child1, Html child2)
         {
             
@@ -28234,6 +29416,7 @@ namespace Eighty
         /// Build a col element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html col_(Html child1, Html child2, Html child3)
         {
             
@@ -28256,6 +29439,7 @@ namespace Eighty
         /// Build a col element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html col_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -28282,6 +29466,7 @@ namespace Eighty
         /// Build a col element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html col_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -28312,6 +29497,7 @@ namespace Eighty
         /// Build a col element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html col_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -28346,6 +29532,7 @@ namespace Eighty
         /// Build a col element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html col_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -28384,6 +29571,7 @@ namespace Eighty
         /// Build a col element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html col_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -28525,6 +29713,7 @@ namespace Eighty
         /// Build a tbody element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tbody(Attr attr1)
         {
             return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1), false);
@@ -28534,6 +29723,7 @@ namespace Eighty
         /// Build a tbody element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tbody(Attr attr1, Attr attr2)
         {
             return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -28543,6 +29733,7 @@ namespace Eighty
         /// Build a tbody element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -28552,6 +29743,7 @@ namespace Eighty
         /// Build a tbody element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -28561,6 +29753,7 @@ namespace Eighty
         /// Build a tbody element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -28570,6 +29763,7 @@ namespace Eighty
         /// Build a tbody element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -28579,6 +29773,7 @@ namespace Eighty
         /// Build a tbody element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -28588,6 +29783,7 @@ namespace Eighty
         /// Build a tbody element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("tbody", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -28606,6 +29802,7 @@ namespace Eighty
         /// Build a tbody element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tbody_(List<Html> children)
         {
             return tbody_(children.AsEnumerable());
@@ -28615,6 +29812,7 @@ namespace Eighty
         /// Build a tbody element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tbody_(ImmutableList<Html> children)
         {
             return tbody_(children.AsEnumerable());
@@ -28637,6 +29835,7 @@ namespace Eighty
         /// Build a tbody element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tbody_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -28653,6 +29852,7 @@ namespace Eighty
         /// Build a tbody element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tbody_(Html child1)
         {
             
@@ -28667,6 +29867,7 @@ namespace Eighty
         /// Build a tbody element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tbody_(Html child1, Html child2)
         {
             
@@ -28685,6 +29886,7 @@ namespace Eighty
         /// Build a tbody element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tbody_(Html child1, Html child2, Html child3)
         {
             
@@ -28707,6 +29909,7 @@ namespace Eighty
         /// Build a tbody element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tbody_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -28733,6 +29936,7 @@ namespace Eighty
         /// Build a tbody element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tbody_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -28763,6 +29967,7 @@ namespace Eighty
         /// Build a tbody element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tbody_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -28797,6 +30002,7 @@ namespace Eighty
         /// Build a tbody element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tbody_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -28835,6 +30041,7 @@ namespace Eighty
         /// Build a tbody element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tbody_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -28976,6 +30183,7 @@ namespace Eighty
         /// Build a tr element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tr(Attr attr1)
         {
             return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1), false);
@@ -28985,6 +30193,7 @@ namespace Eighty
         /// Build a tr element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tr(Attr attr1, Attr attr2)
         {
             return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -28994,6 +30203,7 @@ namespace Eighty
         /// Build a tr element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tr(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -29003,6 +30213,7 @@ namespace Eighty
         /// Build a tr element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -29012,6 +30223,7 @@ namespace Eighty
         /// Build a tr element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -29021,6 +30233,7 @@ namespace Eighty
         /// Build a tr element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -29030,6 +30243,7 @@ namespace Eighty
         /// Build a tr element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -29039,6 +30253,7 @@ namespace Eighty
         /// Build a tr element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("tr", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -29057,6 +30272,7 @@ namespace Eighty
         /// Build a tr element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tr_(List<Html> children)
         {
             return tr_(children.AsEnumerable());
@@ -29066,6 +30282,7 @@ namespace Eighty
         /// Build a tr element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tr_(ImmutableList<Html> children)
         {
             return tr_(children.AsEnumerable());
@@ -29088,6 +30305,7 @@ namespace Eighty
         /// Build a tr element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tr_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -29104,6 +30322,7 @@ namespace Eighty
         /// Build a tr element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tr_(Html child1)
         {
             
@@ -29118,6 +30337,7 @@ namespace Eighty
         /// Build a tr element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tr_(Html child1, Html child2)
         {
             
@@ -29136,6 +30356,7 @@ namespace Eighty
         /// Build a tr element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tr_(Html child1, Html child2, Html child3)
         {
             
@@ -29158,6 +30379,7 @@ namespace Eighty
         /// Build a tr element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tr_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -29184,6 +30406,7 @@ namespace Eighty
         /// Build a tr element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tr_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -29214,6 +30437,7 @@ namespace Eighty
         /// Build a tr element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tr_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -29248,6 +30472,7 @@ namespace Eighty
         /// Build a tr element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tr_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -29286,6 +30511,7 @@ namespace Eighty
         /// Build a tr element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tr_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -29467,6 +30693,7 @@ namespace Eighty
         /// Build a th element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder th(Attr attr1)
         {
             return new TagBuilder("th", ImmutableArrayFactory.Create(attr1), false);
@@ -29476,6 +30703,7 @@ namespace Eighty
         /// Build a th element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder th(Attr attr1, Attr attr2)
         {
             return new TagBuilder("th", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -29485,6 +30713,7 @@ namespace Eighty
         /// Build a th element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder th(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("th", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -29494,6 +30723,7 @@ namespace Eighty
         /// Build a th element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("th", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -29503,6 +30733,7 @@ namespace Eighty
         /// Build a th element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("th", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -29512,6 +30743,7 @@ namespace Eighty
         /// Build a th element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("th", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -29521,6 +30753,7 @@ namespace Eighty
         /// Build a th element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("th", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -29530,6 +30763,7 @@ namespace Eighty
         /// Build a th element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("th", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -29548,6 +30782,7 @@ namespace Eighty
         /// Build a th element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html th_(List<Html> children)
         {
             return th_(children.AsEnumerable());
@@ -29557,6 +30792,7 @@ namespace Eighty
         /// Build a th element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html th_(ImmutableList<Html> children)
         {
             return th_(children.AsEnumerable());
@@ -29579,6 +30815,7 @@ namespace Eighty
         /// Build a th element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html th_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -29595,6 +30832,7 @@ namespace Eighty
         /// Build a th element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html th_(Html child1)
         {
             
@@ -29609,6 +30847,7 @@ namespace Eighty
         /// Build a th element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html th_(Html child1, Html child2)
         {
             
@@ -29627,6 +30866,7 @@ namespace Eighty
         /// Build a th element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html th_(Html child1, Html child2, Html child3)
         {
             
@@ -29649,6 +30889,7 @@ namespace Eighty
         /// Build a th element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html th_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -29675,6 +30916,7 @@ namespace Eighty
         /// Build a th element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html th_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -29705,6 +30947,7 @@ namespace Eighty
         /// Build a th element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html th_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -29739,6 +30982,7 @@ namespace Eighty
         /// Build a th element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html th_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -29777,6 +31021,7 @@ namespace Eighty
         /// Build a th element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html th_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -29948,6 +31193,7 @@ namespace Eighty
         /// Build a td element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder td(Attr attr1)
         {
             return new TagBuilder("td", ImmutableArrayFactory.Create(attr1), false);
@@ -29957,6 +31203,7 @@ namespace Eighty
         /// Build a td element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder td(Attr attr1, Attr attr2)
         {
             return new TagBuilder("td", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -29966,6 +31213,7 @@ namespace Eighty
         /// Build a td element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder td(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("td", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -29975,6 +31223,7 @@ namespace Eighty
         /// Build a td element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("td", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -29984,6 +31233,7 @@ namespace Eighty
         /// Build a td element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("td", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -29993,6 +31243,7 @@ namespace Eighty
         /// Build a td element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("td", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -30002,6 +31253,7 @@ namespace Eighty
         /// Build a td element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("td", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -30011,6 +31263,7 @@ namespace Eighty
         /// Build a td element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("td", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -30029,6 +31282,7 @@ namespace Eighty
         /// Build a td element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html td_(List<Html> children)
         {
             return td_(children.AsEnumerable());
@@ -30038,6 +31292,7 @@ namespace Eighty
         /// Build a td element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html td_(ImmutableList<Html> children)
         {
             return td_(children.AsEnumerable());
@@ -30060,6 +31315,7 @@ namespace Eighty
         /// Build a td element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html td_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -30076,6 +31332,7 @@ namespace Eighty
         /// Build a td element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html td_(Html child1)
         {
             
@@ -30090,6 +31347,7 @@ namespace Eighty
         /// Build a td element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html td_(Html child1, Html child2)
         {
             
@@ -30108,6 +31366,7 @@ namespace Eighty
         /// Build a td element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html td_(Html child1, Html child2, Html child3)
         {
             
@@ -30130,6 +31389,7 @@ namespace Eighty
         /// Build a td element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html td_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -30156,6 +31416,7 @@ namespace Eighty
         /// Build a td element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html td_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -30186,6 +31447,7 @@ namespace Eighty
         /// Build a td element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html td_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -30220,6 +31482,7 @@ namespace Eighty
         /// Build a td element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html td_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -30258,6 +31521,7 @@ namespace Eighty
         /// Build a td element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html td_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -30399,6 +31663,7 @@ namespace Eighty
         /// Build a tfoot element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tfoot(Attr attr1)
         {
             return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1), false);
@@ -30408,6 +31673,7 @@ namespace Eighty
         /// Build a tfoot element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tfoot(Attr attr1, Attr attr2)
         {
             return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -30417,6 +31683,7 @@ namespace Eighty
         /// Build a tfoot element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -30426,6 +31693,7 @@ namespace Eighty
         /// Build a tfoot element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -30435,6 +31703,7 @@ namespace Eighty
         /// Build a tfoot element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -30444,6 +31713,7 @@ namespace Eighty
         /// Build a tfoot element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -30453,6 +31723,7 @@ namespace Eighty
         /// Build a tfoot element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -30462,6 +31733,7 @@ namespace Eighty
         /// Build a tfoot element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("tfoot", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -30480,6 +31752,7 @@ namespace Eighty
         /// Build a tfoot element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tfoot_(List<Html> children)
         {
             return tfoot_(children.AsEnumerable());
@@ -30489,6 +31762,7 @@ namespace Eighty
         /// Build a tfoot element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tfoot_(ImmutableList<Html> children)
         {
             return tfoot_(children.AsEnumerable());
@@ -30511,6 +31785,7 @@ namespace Eighty
         /// Build a tfoot element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tfoot_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -30527,6 +31802,7 @@ namespace Eighty
         /// Build a tfoot element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tfoot_(Html child1)
         {
             
@@ -30541,6 +31817,7 @@ namespace Eighty
         /// Build a tfoot element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tfoot_(Html child1, Html child2)
         {
             
@@ -30559,6 +31836,7 @@ namespace Eighty
         /// Build a tfoot element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tfoot_(Html child1, Html child2, Html child3)
         {
             
@@ -30581,6 +31859,7 @@ namespace Eighty
         /// Build a tfoot element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tfoot_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -30607,6 +31886,7 @@ namespace Eighty
         /// Build a tfoot element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tfoot_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -30637,6 +31917,7 @@ namespace Eighty
         /// Build a tfoot element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tfoot_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -30671,6 +31952,7 @@ namespace Eighty
         /// Build a tfoot element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tfoot_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -30709,6 +31991,7 @@ namespace Eighty
         /// Build a tfoot element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html tfoot_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -30920,6 +32203,7 @@ namespace Eighty
         /// Build a form element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder form(Attr attr1)
         {
             return new TagBuilder("form", ImmutableArrayFactory.Create(attr1), false);
@@ -30929,6 +32213,7 @@ namespace Eighty
         /// Build a form element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder form(Attr attr1, Attr attr2)
         {
             return new TagBuilder("form", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -30938,6 +32223,7 @@ namespace Eighty
         /// Build a form element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder form(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("form", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -30947,6 +32233,7 @@ namespace Eighty
         /// Build a form element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("form", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -30956,6 +32243,7 @@ namespace Eighty
         /// Build a form element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("form", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -30965,6 +32253,7 @@ namespace Eighty
         /// Build a form element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("form", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -30974,6 +32263,7 @@ namespace Eighty
         /// Build a form element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("form", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -30983,6 +32273,7 @@ namespace Eighty
         /// Build a form element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("form", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -31001,6 +32292,7 @@ namespace Eighty
         /// Build a form element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html form_(List<Html> children)
         {
             return form_(children.AsEnumerable());
@@ -31010,6 +32302,7 @@ namespace Eighty
         /// Build a form element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html form_(ImmutableList<Html> children)
         {
             return form_(children.AsEnumerable());
@@ -31032,6 +32325,7 @@ namespace Eighty
         /// Build a form element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html form_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -31048,6 +32342,7 @@ namespace Eighty
         /// Build a form element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html form_(Html child1)
         {
             
@@ -31062,6 +32357,7 @@ namespace Eighty
         /// Build a form element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html form_(Html child1, Html child2)
         {
             
@@ -31080,6 +32376,7 @@ namespace Eighty
         /// Build a form element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html form_(Html child1, Html child2, Html child3)
         {
             
@@ -31102,6 +32399,7 @@ namespace Eighty
         /// Build a form element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html form_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -31128,6 +32426,7 @@ namespace Eighty
         /// Build a form element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html form_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -31158,6 +32457,7 @@ namespace Eighty
         /// Build a form element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html form_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -31192,6 +32492,7 @@ namespace Eighty
         /// Build a form element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html form_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -31230,6 +32531,7 @@ namespace Eighty
         /// Build a form element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html form_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -31401,6 +32703,7 @@ namespace Eighty
         /// Build a fieldset element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder fieldset(Attr attr1)
         {
             return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1), false);
@@ -31410,6 +32713,7 @@ namespace Eighty
         /// Build a fieldset element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder fieldset(Attr attr1, Attr attr2)
         {
             return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -31419,6 +32723,7 @@ namespace Eighty
         /// Build a fieldset element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -31428,6 +32733,7 @@ namespace Eighty
         /// Build a fieldset element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -31437,6 +32743,7 @@ namespace Eighty
         /// Build a fieldset element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -31446,6 +32753,7 @@ namespace Eighty
         /// Build a fieldset element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -31455,6 +32763,7 @@ namespace Eighty
         /// Build a fieldset element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -31464,6 +32773,7 @@ namespace Eighty
         /// Build a fieldset element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("fieldset", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -31482,6 +32792,7 @@ namespace Eighty
         /// Build a fieldset element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html fieldset_(List<Html> children)
         {
             return fieldset_(children.AsEnumerable());
@@ -31491,6 +32802,7 @@ namespace Eighty
         /// Build a fieldset element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html fieldset_(ImmutableList<Html> children)
         {
             return fieldset_(children.AsEnumerable());
@@ -31513,6 +32825,7 @@ namespace Eighty
         /// Build a fieldset element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html fieldset_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -31529,6 +32842,7 @@ namespace Eighty
         /// Build a fieldset element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html fieldset_(Html child1)
         {
             
@@ -31543,6 +32857,7 @@ namespace Eighty
         /// Build a fieldset element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html fieldset_(Html child1, Html child2)
         {
             
@@ -31561,6 +32876,7 @@ namespace Eighty
         /// Build a fieldset element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html fieldset_(Html child1, Html child2, Html child3)
         {
             
@@ -31583,6 +32899,7 @@ namespace Eighty
         /// Build a fieldset element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html fieldset_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -31609,6 +32926,7 @@ namespace Eighty
         /// Build a fieldset element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html fieldset_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -31639,6 +32957,7 @@ namespace Eighty
         /// Build a fieldset element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html fieldset_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -31673,6 +32992,7 @@ namespace Eighty
         /// Build a fieldset element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html fieldset_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -31711,6 +33031,7 @@ namespace Eighty
         /// Build a fieldset element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html fieldset_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -31862,6 +33183,7 @@ namespace Eighty
         /// Build a label element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder label(Attr attr1)
         {
             return new TagBuilder("label", ImmutableArrayFactory.Create(attr1), false);
@@ -31871,6 +33193,7 @@ namespace Eighty
         /// Build a label element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder label(Attr attr1, Attr attr2)
         {
             return new TagBuilder("label", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -31880,6 +33203,7 @@ namespace Eighty
         /// Build a label element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder label(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("label", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -31889,6 +33213,7 @@ namespace Eighty
         /// Build a label element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("label", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -31898,6 +33223,7 @@ namespace Eighty
         /// Build a label element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("label", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -31907,6 +33233,7 @@ namespace Eighty
         /// Build a label element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("label", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -31916,6 +33243,7 @@ namespace Eighty
         /// Build a label element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("label", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -31925,6 +33253,7 @@ namespace Eighty
         /// Build a label element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("label", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -31943,6 +33272,7 @@ namespace Eighty
         /// Build a label element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html label_(List<Html> children)
         {
             return label_(children.AsEnumerable());
@@ -31952,6 +33282,7 @@ namespace Eighty
         /// Build a label element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html label_(ImmutableList<Html> children)
         {
             return label_(children.AsEnumerable());
@@ -31974,6 +33305,7 @@ namespace Eighty
         /// Build a label element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html label_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -31990,6 +33322,7 @@ namespace Eighty
         /// Build a label element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html label_(Html child1)
         {
             
@@ -32004,6 +33337,7 @@ namespace Eighty
         /// Build a label element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html label_(Html child1, Html child2)
         {
             
@@ -32022,6 +33356,7 @@ namespace Eighty
         /// Build a label element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html label_(Html child1, Html child2, Html child3)
         {
             
@@ -32044,6 +33379,7 @@ namespace Eighty
         /// Build a label element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html label_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -32070,6 +33406,7 @@ namespace Eighty
         /// Build a label element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html label_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -32100,6 +33437,7 @@ namespace Eighty
         /// Build a label element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html label_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -32134,6 +33472,7 @@ namespace Eighty
         /// Build a label element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html label_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -32172,6 +33511,7 @@ namespace Eighty
         /// Build a label element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html label_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -32593,6 +33933,7 @@ namespace Eighty
         /// Build an input element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder input(Attr attr1)
         {
             return new TagBuilder("input", ImmutableArrayFactory.Create(attr1), false);
@@ -32602,6 +33943,7 @@ namespace Eighty
         /// Build an input element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder input(Attr attr1, Attr attr2)
         {
             return new TagBuilder("input", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -32611,6 +33953,7 @@ namespace Eighty
         /// Build an input element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder input(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("input", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -32620,6 +33963,7 @@ namespace Eighty
         /// Build an input element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("input", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -32629,6 +33973,7 @@ namespace Eighty
         /// Build an input element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("input", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -32638,6 +33983,7 @@ namespace Eighty
         /// Build an input element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("input", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -32647,6 +33993,7 @@ namespace Eighty
         /// Build an input element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("input", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -32656,6 +34003,7 @@ namespace Eighty
         /// Build an input element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("input", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -32674,6 +34022,7 @@ namespace Eighty
         /// Build an input element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html input_(List<Html> children)
         {
             return input_(children.AsEnumerable());
@@ -32683,6 +34032,7 @@ namespace Eighty
         /// Build an input element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html input_(ImmutableList<Html> children)
         {
             return input_(children.AsEnumerable());
@@ -32705,6 +34055,7 @@ namespace Eighty
         /// Build an input element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html input_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -32721,6 +34072,7 @@ namespace Eighty
         /// Build an input element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html input_(Html child1)
         {
             
@@ -32735,6 +34087,7 @@ namespace Eighty
         /// Build an input element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html input_(Html child1, Html child2)
         {
             
@@ -32753,6 +34106,7 @@ namespace Eighty
         /// Build an input element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html input_(Html child1, Html child2, Html child3)
         {
             
@@ -32775,6 +34129,7 @@ namespace Eighty
         /// Build an input element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html input_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -32801,6 +34156,7 @@ namespace Eighty
         /// Build an input element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html input_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -32831,6 +34187,7 @@ namespace Eighty
         /// Build an input element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html input_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -32865,6 +34222,7 @@ namespace Eighty
         /// Build an input element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html input_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -32903,6 +34261,7 @@ namespace Eighty
         /// Build an input element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html input_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -33184,6 +34543,7 @@ namespace Eighty
         /// Build a button element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder button(Attr attr1)
         {
             return new TagBuilder("button", ImmutableArrayFactory.Create(attr1), false);
@@ -33193,6 +34553,7 @@ namespace Eighty
         /// Build a button element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder button(Attr attr1, Attr attr2)
         {
             return new TagBuilder("button", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -33202,6 +34563,7 @@ namespace Eighty
         /// Build a button element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder button(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("button", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -33211,6 +34573,7 @@ namespace Eighty
         /// Build a button element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("button", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -33220,6 +34583,7 @@ namespace Eighty
         /// Build a button element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("button", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -33229,6 +34593,7 @@ namespace Eighty
         /// Build a button element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("button", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -33238,6 +34603,7 @@ namespace Eighty
         /// Build a button element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("button", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -33247,6 +34613,7 @@ namespace Eighty
         /// Build a button element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("button", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -33265,6 +34632,7 @@ namespace Eighty
         /// Build a button element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html button_(List<Html> children)
         {
             return button_(children.AsEnumerable());
@@ -33274,6 +34642,7 @@ namespace Eighty
         /// Build a button element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html button_(ImmutableList<Html> children)
         {
             return button_(children.AsEnumerable());
@@ -33296,6 +34665,7 @@ namespace Eighty
         /// Build a button element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html button_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -33312,6 +34682,7 @@ namespace Eighty
         /// Build a button element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html button_(Html child1)
         {
             
@@ -33326,6 +34697,7 @@ namespace Eighty
         /// Build a button element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html button_(Html child1, Html child2)
         {
             
@@ -33344,6 +34716,7 @@ namespace Eighty
         /// Build a button element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html button_(Html child1, Html child2, Html child3)
         {
             
@@ -33366,6 +34739,7 @@ namespace Eighty
         /// Build a button element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html button_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -33392,6 +34766,7 @@ namespace Eighty
         /// Build a button element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html button_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -33422,6 +34797,7 @@ namespace Eighty
         /// Build a button element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html button_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -33456,6 +34832,7 @@ namespace Eighty
         /// Build a button element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html button_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -33494,6 +34871,7 @@ namespace Eighty
         /// Build a button element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html button_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -33775,6 +35153,7 @@ namespace Eighty
         /// Build a textarea element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder textarea(Attr attr1)
         {
             return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1), false);
@@ -33784,6 +35163,7 @@ namespace Eighty
         /// Build a textarea element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder textarea(Attr attr1, Attr attr2)
         {
             return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -33793,6 +35173,7 @@ namespace Eighty
         /// Build a textarea element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -33802,6 +35183,7 @@ namespace Eighty
         /// Build a textarea element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -33811,6 +35193,7 @@ namespace Eighty
         /// Build a textarea element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -33820,6 +35203,7 @@ namespace Eighty
         /// Build a textarea element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -33829,6 +35213,7 @@ namespace Eighty
         /// Build a textarea element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -33838,6 +35223,7 @@ namespace Eighty
         /// Build a textarea element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("textarea", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -33856,6 +35242,7 @@ namespace Eighty
         /// Build a textarea element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html textarea_(List<Html> children)
         {
             return textarea_(children.AsEnumerable());
@@ -33865,6 +35252,7 @@ namespace Eighty
         /// Build a textarea element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html textarea_(ImmutableList<Html> children)
         {
             return textarea_(children.AsEnumerable());
@@ -33887,6 +35275,7 @@ namespace Eighty
         /// Build a textarea element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html textarea_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -33903,6 +35292,7 @@ namespace Eighty
         /// Build a textarea element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html textarea_(Html child1)
         {
             
@@ -33917,6 +35307,7 @@ namespace Eighty
         /// Build a textarea element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html textarea_(Html child1, Html child2)
         {
             
@@ -33935,6 +35326,7 @@ namespace Eighty
         /// Build a textarea element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html textarea_(Html child1, Html child2, Html child3)
         {
             
@@ -33957,6 +35349,7 @@ namespace Eighty
         /// Build a textarea element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html textarea_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -33983,6 +35376,7 @@ namespace Eighty
         /// Build a textarea element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html textarea_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -34013,6 +35407,7 @@ namespace Eighty
         /// Build a textarea element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html textarea_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -34047,6 +35442,7 @@ namespace Eighty
         /// Build a textarea element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html textarea_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -34085,6 +35481,7 @@ namespace Eighty
         /// Build a textarea element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html textarea_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -34226,6 +35623,7 @@ namespace Eighty
         /// Build a datalist element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder datalist(Attr attr1)
         {
             return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1), false);
@@ -34235,6 +35633,7 @@ namespace Eighty
         /// Build a datalist element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder datalist(Attr attr1, Attr attr2)
         {
             return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -34244,6 +35643,7 @@ namespace Eighty
         /// Build a datalist element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -34253,6 +35653,7 @@ namespace Eighty
         /// Build a datalist element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -34262,6 +35663,7 @@ namespace Eighty
         /// Build a datalist element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -34271,6 +35673,7 @@ namespace Eighty
         /// Build a datalist element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -34280,6 +35683,7 @@ namespace Eighty
         /// Build a datalist element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -34289,6 +35693,7 @@ namespace Eighty
         /// Build a datalist element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("datalist", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -34307,6 +35712,7 @@ namespace Eighty
         /// Build a datalist element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html datalist_(List<Html> children)
         {
             return datalist_(children.AsEnumerable());
@@ -34316,6 +35722,7 @@ namespace Eighty
         /// Build a datalist element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html datalist_(ImmutableList<Html> children)
         {
             return datalist_(children.AsEnumerable());
@@ -34338,6 +35745,7 @@ namespace Eighty
         /// Build a datalist element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html datalist_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -34354,6 +35762,7 @@ namespace Eighty
         /// Build a datalist element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html datalist_(Html child1)
         {
             
@@ -34368,6 +35777,7 @@ namespace Eighty
         /// Build a datalist element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html datalist_(Html child1, Html child2)
         {
             
@@ -34386,6 +35796,7 @@ namespace Eighty
         /// Build a datalist element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html datalist_(Html child1, Html child2, Html child3)
         {
             
@@ -34408,6 +35819,7 @@ namespace Eighty
         /// Build a datalist element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html datalist_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -34434,6 +35846,7 @@ namespace Eighty
         /// Build a datalist element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html datalist_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -34464,6 +35877,7 @@ namespace Eighty
         /// Build a datalist element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html datalist_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -34498,6 +35912,7 @@ namespace Eighty
         /// Build a datalist element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html datalist_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -34536,6 +35951,7 @@ namespace Eighty
         /// Build a datalist element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html datalist_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -34697,6 +36113,7 @@ namespace Eighty
         /// Build an optgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder optgroup(Attr attr1)
         {
             return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1), false);
@@ -34706,6 +36123,7 @@ namespace Eighty
         /// Build an optgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder optgroup(Attr attr1, Attr attr2)
         {
             return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -34715,6 +36133,7 @@ namespace Eighty
         /// Build an optgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -34724,6 +36143,7 @@ namespace Eighty
         /// Build an optgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -34733,6 +36153,7 @@ namespace Eighty
         /// Build an optgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -34742,6 +36163,7 @@ namespace Eighty
         /// Build an optgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -34751,6 +36173,7 @@ namespace Eighty
         /// Build an optgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -34760,6 +36183,7 @@ namespace Eighty
         /// Build an optgroup element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("optgroup", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -34778,6 +36202,7 @@ namespace Eighty
         /// Build an optgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html optgroup_(List<Html> children)
         {
             return optgroup_(children.AsEnumerable());
@@ -34787,6 +36212,7 @@ namespace Eighty
         /// Build an optgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html optgroup_(ImmutableList<Html> children)
         {
             return optgroup_(children.AsEnumerable());
@@ -34809,6 +36235,7 @@ namespace Eighty
         /// Build an optgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html optgroup_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -34825,6 +36252,7 @@ namespace Eighty
         /// Build an optgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html optgroup_(Html child1)
         {
             
@@ -34839,6 +36267,7 @@ namespace Eighty
         /// Build an optgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html optgroup_(Html child1, Html child2)
         {
             
@@ -34857,6 +36286,7 @@ namespace Eighty
         /// Build an optgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html optgroup_(Html child1, Html child2, Html child3)
         {
             
@@ -34879,6 +36309,7 @@ namespace Eighty
         /// Build an optgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html optgroup_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -34905,6 +36336,7 @@ namespace Eighty
         /// Build an optgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html optgroup_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -34935,6 +36367,7 @@ namespace Eighty
         /// Build an optgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html optgroup_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -34969,6 +36402,7 @@ namespace Eighty
         /// Build an optgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html optgroup_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -35007,6 +36441,7 @@ namespace Eighty
         /// Build an optgroup element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html optgroup_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -35218,6 +36653,7 @@ namespace Eighty
         /// Build a select element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder select(Attr attr1)
         {
             return new TagBuilder("select", ImmutableArrayFactory.Create(attr1), false);
@@ -35227,6 +36663,7 @@ namespace Eighty
         /// Build a select element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder select(Attr attr1, Attr attr2)
         {
             return new TagBuilder("select", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -35236,6 +36673,7 @@ namespace Eighty
         /// Build a select element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder select(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("select", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -35245,6 +36683,7 @@ namespace Eighty
         /// Build a select element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("select", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -35254,6 +36693,7 @@ namespace Eighty
         /// Build a select element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("select", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -35263,6 +36703,7 @@ namespace Eighty
         /// Build a select element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("select", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -35272,6 +36713,7 @@ namespace Eighty
         /// Build a select element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("select", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -35281,6 +36723,7 @@ namespace Eighty
         /// Build a select element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("select", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -35299,6 +36742,7 @@ namespace Eighty
         /// Build a select element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html select_(List<Html> children)
         {
             return select_(children.AsEnumerable());
@@ -35308,6 +36752,7 @@ namespace Eighty
         /// Build a select element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html select_(ImmutableList<Html> children)
         {
             return select_(children.AsEnumerable());
@@ -35330,6 +36775,7 @@ namespace Eighty
         /// Build a select element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html select_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -35346,6 +36792,7 @@ namespace Eighty
         /// Build a select element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html select_(Html child1)
         {
             
@@ -35360,6 +36807,7 @@ namespace Eighty
         /// Build a select element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html select_(Html child1, Html child2)
         {
             
@@ -35378,6 +36826,7 @@ namespace Eighty
         /// Build a select element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html select_(Html child1, Html child2, Html child3)
         {
             
@@ -35400,6 +36849,7 @@ namespace Eighty
         /// Build a select element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html select_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -35426,6 +36876,7 @@ namespace Eighty
         /// Build a select element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html select_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -35456,6 +36907,7 @@ namespace Eighty
         /// Build a select element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html select_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -35490,6 +36942,7 @@ namespace Eighty
         /// Build a select element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html select_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -35528,6 +36981,7 @@ namespace Eighty
         /// Build a select element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html select_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -35709,6 +37163,7 @@ namespace Eighty
         /// Build an option element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder option(Attr attr1)
         {
             return new TagBuilder("option", ImmutableArrayFactory.Create(attr1), false);
@@ -35718,6 +37173,7 @@ namespace Eighty
         /// Build an option element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder option(Attr attr1, Attr attr2)
         {
             return new TagBuilder("option", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -35727,6 +37183,7 @@ namespace Eighty
         /// Build an option element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder option(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("option", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -35736,6 +37193,7 @@ namespace Eighty
         /// Build an option element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("option", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -35745,6 +37203,7 @@ namespace Eighty
         /// Build an option element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("option", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -35754,6 +37213,7 @@ namespace Eighty
         /// Build an option element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("option", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -35763,6 +37223,7 @@ namespace Eighty
         /// Build an option element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("option", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -35772,6 +37233,7 @@ namespace Eighty
         /// Build an option element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("option", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -35790,6 +37252,7 @@ namespace Eighty
         /// Build an option element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html option_(List<Html> children)
         {
             return option_(children.AsEnumerable());
@@ -35799,6 +37262,7 @@ namespace Eighty
         /// Build an option element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html option_(ImmutableList<Html> children)
         {
             return option_(children.AsEnumerable());
@@ -35821,6 +37285,7 @@ namespace Eighty
         /// Build an option element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html option_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -35837,6 +37302,7 @@ namespace Eighty
         /// Build an option element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html option_(Html child1)
         {
             
@@ -35851,6 +37317,7 @@ namespace Eighty
         /// Build an option element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html option_(Html child1, Html child2)
         {
             
@@ -35869,6 +37336,7 @@ namespace Eighty
         /// Build an option element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html option_(Html child1, Html child2, Html child3)
         {
             
@@ -35891,6 +37359,7 @@ namespace Eighty
         /// Build an option element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html option_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -35917,6 +37386,7 @@ namespace Eighty
         /// Build an option element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html option_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -35947,6 +37417,7 @@ namespace Eighty
         /// Build an option element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html option_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -35981,6 +37452,7 @@ namespace Eighty
         /// Build an option element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html option_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -36019,6 +37491,7 @@ namespace Eighty
         /// Build an option element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html option_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -36160,6 +37633,7 @@ namespace Eighty
         /// Build a legend element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder legend(Attr attr1)
         {
             return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1), false);
@@ -36169,6 +37643,7 @@ namespace Eighty
         /// Build a legend element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder legend(Attr attr1, Attr attr2)
         {
             return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -36178,6 +37653,7 @@ namespace Eighty
         /// Build a legend element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder legend(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -36187,6 +37663,7 @@ namespace Eighty
         /// Build a legend element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -36196,6 +37673,7 @@ namespace Eighty
         /// Build a legend element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -36205,6 +37683,7 @@ namespace Eighty
         /// Build a legend element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -36214,6 +37693,7 @@ namespace Eighty
         /// Build a legend element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -36223,6 +37703,7 @@ namespace Eighty
         /// Build a legend element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("legend", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -36241,6 +37722,7 @@ namespace Eighty
         /// Build a legend element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html legend_(List<Html> children)
         {
             return legend_(children.AsEnumerable());
@@ -36250,6 +37732,7 @@ namespace Eighty
         /// Build a legend element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html legend_(ImmutableList<Html> children)
         {
             return legend_(children.AsEnumerable());
@@ -36272,6 +37755,7 @@ namespace Eighty
         /// Build a legend element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html legend_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -36288,6 +37772,7 @@ namespace Eighty
         /// Build a legend element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html legend_(Html child1)
         {
             
@@ -36302,6 +37787,7 @@ namespace Eighty
         /// Build a legend element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html legend_(Html child1, Html child2)
         {
             
@@ -36320,6 +37806,7 @@ namespace Eighty
         /// Build a legend element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html legend_(Html child1, Html child2, Html child3)
         {
             
@@ -36342,6 +37829,7 @@ namespace Eighty
         /// Build a legend element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html legend_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -36368,6 +37856,7 @@ namespace Eighty
         /// Build a legend element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html legend_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -36398,6 +37887,7 @@ namespace Eighty
         /// Build a legend element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html legend_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -36432,6 +37922,7 @@ namespace Eighty
         /// Build a legend element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html legend_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -36470,6 +37961,7 @@ namespace Eighty
         /// Build a legend element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html legend_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -36681,6 +38173,7 @@ namespace Eighty
         /// Build a meter element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder meter(Attr attr1)
         {
             return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1), false);
@@ -36690,6 +38183,7 @@ namespace Eighty
         /// Build a meter element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder meter(Attr attr1, Attr attr2)
         {
             return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -36699,6 +38193,7 @@ namespace Eighty
         /// Build a meter element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder meter(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -36708,6 +38203,7 @@ namespace Eighty
         /// Build a meter element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -36717,6 +38213,7 @@ namespace Eighty
         /// Build a meter element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -36726,6 +38223,7 @@ namespace Eighty
         /// Build a meter element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -36735,6 +38233,7 @@ namespace Eighty
         /// Build a meter element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -36744,6 +38243,7 @@ namespace Eighty
         /// Build a meter element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("meter", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -36762,6 +38262,7 @@ namespace Eighty
         /// Build a meter element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html meter_(List<Html> children)
         {
             return meter_(children.AsEnumerable());
@@ -36771,6 +38272,7 @@ namespace Eighty
         /// Build a meter element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html meter_(ImmutableList<Html> children)
         {
             return meter_(children.AsEnumerable());
@@ -36793,6 +38295,7 @@ namespace Eighty
         /// Build a meter element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html meter_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -36809,6 +38312,7 @@ namespace Eighty
         /// Build a meter element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html meter_(Html child1)
         {
             
@@ -36823,6 +38327,7 @@ namespace Eighty
         /// Build a meter element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html meter_(Html child1, Html child2)
         {
             
@@ -36841,6 +38346,7 @@ namespace Eighty
         /// Build a meter element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html meter_(Html child1, Html child2, Html child3)
         {
             
@@ -36863,6 +38369,7 @@ namespace Eighty
         /// Build a meter element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html meter_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -36889,6 +38396,7 @@ namespace Eighty
         /// Build a meter element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html meter_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -36919,6 +38427,7 @@ namespace Eighty
         /// Build a meter element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html meter_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -36953,6 +38462,7 @@ namespace Eighty
         /// Build a meter element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html meter_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -36991,6 +38501,7 @@ namespace Eighty
         /// Build a meter element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html meter_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -37162,6 +38673,7 @@ namespace Eighty
         /// Build an output element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder output(Attr attr1)
         {
             return new TagBuilder("output", ImmutableArrayFactory.Create(attr1), false);
@@ -37171,6 +38683,7 @@ namespace Eighty
         /// Build an output element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder output(Attr attr1, Attr attr2)
         {
             return new TagBuilder("output", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -37180,6 +38693,7 @@ namespace Eighty
         /// Build an output element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder output(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("output", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -37189,6 +38703,7 @@ namespace Eighty
         /// Build an output element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("output", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -37198,6 +38713,7 @@ namespace Eighty
         /// Build an output element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("output", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -37207,6 +38723,7 @@ namespace Eighty
         /// Build an output element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("output", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -37216,6 +38733,7 @@ namespace Eighty
         /// Build an output element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("output", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -37225,6 +38743,7 @@ namespace Eighty
         /// Build an output element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("output", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -37243,6 +38762,7 @@ namespace Eighty
         /// Build an output element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html output_(List<Html> children)
         {
             return output_(children.AsEnumerable());
@@ -37252,6 +38772,7 @@ namespace Eighty
         /// Build an output element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html output_(ImmutableList<Html> children)
         {
             return output_(children.AsEnumerable());
@@ -37274,6 +38795,7 @@ namespace Eighty
         /// Build an output element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html output_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -37290,6 +38812,7 @@ namespace Eighty
         /// Build an output element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html output_(Html child1)
         {
             
@@ -37304,6 +38827,7 @@ namespace Eighty
         /// Build an output element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html output_(Html child1, Html child2)
         {
             
@@ -37322,6 +38846,7 @@ namespace Eighty
         /// Build an output element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html output_(Html child1, Html child2, Html child3)
         {
             
@@ -37344,6 +38869,7 @@ namespace Eighty
         /// Build an output element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html output_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -37370,6 +38896,7 @@ namespace Eighty
         /// Build an output element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html output_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -37400,6 +38927,7 @@ namespace Eighty
         /// Build an output element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html output_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -37434,6 +38962,7 @@ namespace Eighty
         /// Build an output element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html output_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -37472,6 +39001,7 @@ namespace Eighty
         /// Build an output element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html output_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -37633,6 +39163,7 @@ namespace Eighty
         /// Build a progress element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder progress(Attr attr1)
         {
             return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1), false);
@@ -37642,6 +39173,7 @@ namespace Eighty
         /// Build a progress element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder progress(Attr attr1, Attr attr2)
         {
             return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -37651,6 +39183,7 @@ namespace Eighty
         /// Build a progress element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder progress(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -37660,6 +39193,7 @@ namespace Eighty
         /// Build a progress element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -37669,6 +39203,7 @@ namespace Eighty
         /// Build a progress element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -37678,6 +39213,7 @@ namespace Eighty
         /// Build a progress element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -37687,6 +39223,7 @@ namespace Eighty
         /// Build a progress element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -37696,6 +39233,7 @@ namespace Eighty
         /// Build a progress element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("progress", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -37714,6 +39252,7 @@ namespace Eighty
         /// Build a progress element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html progress_(List<Html> children)
         {
             return progress_(children.AsEnumerable());
@@ -37723,6 +39262,7 @@ namespace Eighty
         /// Build a progress element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html progress_(ImmutableList<Html> children)
         {
             return progress_(children.AsEnumerable());
@@ -37745,6 +39285,7 @@ namespace Eighty
         /// Build a progress element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html progress_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -37761,6 +39302,7 @@ namespace Eighty
         /// Build a progress element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html progress_(Html child1)
         {
             
@@ -37775,6 +39317,7 @@ namespace Eighty
         /// Build a progress element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html progress_(Html child1, Html child2)
         {
             
@@ -37793,6 +39336,7 @@ namespace Eighty
         /// Build a progress element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html progress_(Html child1, Html child2, Html child3)
         {
             
@@ -37815,6 +39359,7 @@ namespace Eighty
         /// Build a progress element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html progress_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -37841,6 +39386,7 @@ namespace Eighty
         /// Build a progress element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html progress_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -37871,6 +39417,7 @@ namespace Eighty
         /// Build a progress element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html progress_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -37905,6 +39452,7 @@ namespace Eighty
         /// Build a progress element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html progress_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -37943,6 +39491,7 @@ namespace Eighty
         /// Build a progress element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html progress_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -38104,6 +39653,7 @@ namespace Eighty
         /// Build a menu element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder menu(Attr attr1)
         {
             return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1), false);
@@ -38113,6 +39663,7 @@ namespace Eighty
         /// Build a menu element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder menu(Attr attr1, Attr attr2)
         {
             return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -38122,6 +39673,7 @@ namespace Eighty
         /// Build a menu element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder menu(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -38131,6 +39683,7 @@ namespace Eighty
         /// Build a menu element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -38140,6 +39693,7 @@ namespace Eighty
         /// Build a menu element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -38149,6 +39703,7 @@ namespace Eighty
         /// Build a menu element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -38158,6 +39713,7 @@ namespace Eighty
         /// Build a menu element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -38167,6 +39723,7 @@ namespace Eighty
         /// Build a menu element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("menu", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -38185,6 +39742,7 @@ namespace Eighty
         /// Build a menu element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html menu_(List<Html> children)
         {
             return menu_(children.AsEnumerable());
@@ -38194,6 +39752,7 @@ namespace Eighty
         /// Build a menu element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html menu_(ImmutableList<Html> children)
         {
             return menu_(children.AsEnumerable());
@@ -38216,6 +39775,7 @@ namespace Eighty
         /// Build a menu element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html menu_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -38232,6 +39792,7 @@ namespace Eighty
         /// Build a menu element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html menu_(Html child1)
         {
             
@@ -38246,6 +39807,7 @@ namespace Eighty
         /// Build a menu element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html menu_(Html child1, Html child2)
         {
             
@@ -38264,6 +39826,7 @@ namespace Eighty
         /// Build a menu element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html menu_(Html child1, Html child2, Html child3)
         {
             
@@ -38286,6 +39849,7 @@ namespace Eighty
         /// Build a menu element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html menu_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -38312,6 +39876,7 @@ namespace Eighty
         /// Build a menu element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html menu_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -38342,6 +39907,7 @@ namespace Eighty
         /// Build a menu element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html menu_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -38376,6 +39942,7 @@ namespace Eighty
         /// Build a menu element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html menu_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -38414,6 +39981,7 @@ namespace Eighty
         /// Build a menu element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html menu_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -38635,6 +40203,7 @@ namespace Eighty
         /// Build a menuitem element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder menuitem(Attr attr1)
         {
             return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1), false);
@@ -38644,6 +40213,7 @@ namespace Eighty
         /// Build a menuitem element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder menuitem(Attr attr1, Attr attr2)
         {
             return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -38653,6 +40223,7 @@ namespace Eighty
         /// Build a menuitem element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -38662,6 +40233,7 @@ namespace Eighty
         /// Build a menuitem element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -38671,6 +40243,7 @@ namespace Eighty
         /// Build a menuitem element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -38680,6 +40253,7 @@ namespace Eighty
         /// Build a menuitem element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -38689,6 +40263,7 @@ namespace Eighty
         /// Build a menuitem element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -38698,6 +40273,7 @@ namespace Eighty
         /// Build a menuitem element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("menuitem", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -38716,6 +40292,7 @@ namespace Eighty
         /// Build a menuitem element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html menuitem_(List<Html> children)
         {
             return menuitem_(children.AsEnumerable());
@@ -38725,6 +40302,7 @@ namespace Eighty
         /// Build a menuitem element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html menuitem_(ImmutableList<Html> children)
         {
             return menuitem_(children.AsEnumerable());
@@ -38747,6 +40325,7 @@ namespace Eighty
         /// Build a menuitem element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html menuitem_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -38763,6 +40342,7 @@ namespace Eighty
         /// Build a menuitem element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html menuitem_(Html child1)
         {
             
@@ -38777,6 +40357,7 @@ namespace Eighty
         /// Build a menuitem element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html menuitem_(Html child1, Html child2)
         {
             
@@ -38795,6 +40376,7 @@ namespace Eighty
         /// Build a menuitem element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html menuitem_(Html child1, Html child2, Html child3)
         {
             
@@ -38817,6 +40399,7 @@ namespace Eighty
         /// Build a menuitem element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html menuitem_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -38843,6 +40426,7 @@ namespace Eighty
         /// Build a menuitem element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html menuitem_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -38873,6 +40457,7 @@ namespace Eighty
         /// Build a menuitem element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html menuitem_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -38907,6 +40492,7 @@ namespace Eighty
         /// Build a menuitem element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html menuitem_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -38945,6 +40531,7 @@ namespace Eighty
         /// Build a menuitem element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html menuitem_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -39096,6 +40683,7 @@ namespace Eighty
         /// Build a dialog element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dialog(Attr attr1)
         {
             return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1), false);
@@ -39105,6 +40693,7 @@ namespace Eighty
         /// Build a dialog element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dialog(Attr attr1, Attr attr2)
         {
             return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -39114,6 +40703,7 @@ namespace Eighty
         /// Build a dialog element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -39123,6 +40713,7 @@ namespace Eighty
         /// Build a dialog element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -39132,6 +40723,7 @@ namespace Eighty
         /// Build a dialog element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -39141,6 +40733,7 @@ namespace Eighty
         /// Build a dialog element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -39150,6 +40743,7 @@ namespace Eighty
         /// Build a dialog element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -39159,6 +40753,7 @@ namespace Eighty
         /// Build a dialog element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("dialog", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -39177,6 +40772,7 @@ namespace Eighty
         /// Build a dialog element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dialog_(List<Html> children)
         {
             return dialog_(children.AsEnumerable());
@@ -39186,6 +40782,7 @@ namespace Eighty
         /// Build a dialog element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dialog_(ImmutableList<Html> children)
         {
             return dialog_(children.AsEnumerable());
@@ -39208,6 +40805,7 @@ namespace Eighty
         /// Build a dialog element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dialog_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -39224,6 +40822,7 @@ namespace Eighty
         /// Build a dialog element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dialog_(Html child1)
         {
             
@@ -39238,6 +40837,7 @@ namespace Eighty
         /// Build a dialog element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dialog_(Html child1, Html child2)
         {
             
@@ -39256,6 +40856,7 @@ namespace Eighty
         /// Build a dialog element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dialog_(Html child1, Html child2, Html child3)
         {
             
@@ -39278,6 +40879,7 @@ namespace Eighty
         /// Build a dialog element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dialog_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -39304,6 +40906,7 @@ namespace Eighty
         /// Build a dialog element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dialog_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -39334,6 +40937,7 @@ namespace Eighty
         /// Build a dialog element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dialog_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -39368,6 +40972,7 @@ namespace Eighty
         /// Build a dialog element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dialog_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -39406,6 +41011,7 @@ namespace Eighty
         /// Build a dialog element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html dialog_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -39557,6 +41163,7 @@ namespace Eighty
         /// Build a details element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder details(Attr attr1)
         {
             return new TagBuilder("details", ImmutableArrayFactory.Create(attr1), false);
@@ -39566,6 +41173,7 @@ namespace Eighty
         /// Build a details element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder details(Attr attr1, Attr attr2)
         {
             return new TagBuilder("details", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -39575,6 +41183,7 @@ namespace Eighty
         /// Build a details element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder details(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("details", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -39584,6 +41193,7 @@ namespace Eighty
         /// Build a details element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("details", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -39593,6 +41203,7 @@ namespace Eighty
         /// Build a details element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("details", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -39602,6 +41213,7 @@ namespace Eighty
         /// Build a details element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("details", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -39611,6 +41223,7 @@ namespace Eighty
         /// Build a details element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("details", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -39620,6 +41233,7 @@ namespace Eighty
         /// Build a details element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("details", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -39638,6 +41252,7 @@ namespace Eighty
         /// Build a details element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html details_(List<Html> children)
         {
             return details_(children.AsEnumerable());
@@ -39647,6 +41262,7 @@ namespace Eighty
         /// Build a details element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html details_(ImmutableList<Html> children)
         {
             return details_(children.AsEnumerable());
@@ -39669,6 +41285,7 @@ namespace Eighty
         /// Build a details element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html details_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -39685,6 +41302,7 @@ namespace Eighty
         /// Build a details element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html details_(Html child1)
         {
             
@@ -39699,6 +41317,7 @@ namespace Eighty
         /// Build a details element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html details_(Html child1, Html child2)
         {
             
@@ -39717,6 +41336,7 @@ namespace Eighty
         /// Build a details element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html details_(Html child1, Html child2, Html child3)
         {
             
@@ -39739,6 +41359,7 @@ namespace Eighty
         /// Build a details element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html details_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -39765,6 +41386,7 @@ namespace Eighty
         /// Build a details element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html details_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -39795,6 +41417,7 @@ namespace Eighty
         /// Build a details element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html details_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -39829,6 +41452,7 @@ namespace Eighty
         /// Build a details element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html details_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -39867,6 +41491,7 @@ namespace Eighty
         /// Build a details element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html details_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -40008,6 +41633,7 @@ namespace Eighty
         /// Build a summary element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder summary(Attr attr1)
         {
             return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1), false);
@@ -40017,6 +41643,7 @@ namespace Eighty
         /// Build a summary element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder summary(Attr attr1, Attr attr2)
         {
             return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -40026,6 +41653,7 @@ namespace Eighty
         /// Build a summary element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder summary(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -40035,6 +41663,7 @@ namespace Eighty
         /// Build a summary element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -40044,6 +41673,7 @@ namespace Eighty
         /// Build a summary element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -40053,6 +41683,7 @@ namespace Eighty
         /// Build a summary element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -40062,6 +41693,7 @@ namespace Eighty
         /// Build a summary element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -40071,6 +41703,7 @@ namespace Eighty
         /// Build a summary element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("summary", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -40089,6 +41722,7 @@ namespace Eighty
         /// Build a summary element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html summary_(List<Html> children)
         {
             return summary_(children.AsEnumerable());
@@ -40098,6 +41732,7 @@ namespace Eighty
         /// Build a summary element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html summary_(ImmutableList<Html> children)
         {
             return summary_(children.AsEnumerable());
@@ -40120,6 +41755,7 @@ namespace Eighty
         /// Build a summary element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html summary_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -40136,6 +41772,7 @@ namespace Eighty
         /// Build a summary element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html summary_(Html child1)
         {
             
@@ -40150,6 +41787,7 @@ namespace Eighty
         /// Build a summary element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html summary_(Html child1, Html child2)
         {
             
@@ -40168,6 +41806,7 @@ namespace Eighty
         /// Build a summary element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html summary_(Html child1, Html child2, Html child3)
         {
             
@@ -40190,6 +41829,7 @@ namespace Eighty
         /// Build a summary element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html summary_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -40216,6 +41856,7 @@ namespace Eighty
         /// Build a summary element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html summary_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -40246,6 +41887,7 @@ namespace Eighty
         /// Build a summary element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html summary_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -40280,6 +41922,7 @@ namespace Eighty
         /// Build a summary element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html summary_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -40318,6 +41961,7 @@ namespace Eighty
         /// Build a summary element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html summary_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -40527,6 +42171,7 @@ namespace Eighty
         /// Build an img element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html img(Attr attr1)
         {
             return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1), false);
@@ -40536,6 +42181,7 @@ namespace Eighty
         /// Build an img element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html img(Attr attr1, Attr attr2)
         {
             return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -40545,6 +42191,7 @@ namespace Eighty
         /// Build an img element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html img(Attr attr1, Attr attr2, Attr attr3)
         {
             return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -40554,6 +42201,7 @@ namespace Eighty
         /// Build an img element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html img(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -40563,6 +42211,7 @@ namespace Eighty
         /// Build an img element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html img(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -40572,6 +42221,7 @@ namespace Eighty
         /// Build an img element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html img(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -40581,6 +42231,7 @@ namespace Eighty
         /// Build an img element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html img(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -40590,6 +42241,7 @@ namespace Eighty
         /// Build an img element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html img(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new SelfClosingTag("img", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -40768,6 +42420,7 @@ namespace Eighty
         /// Build an audio element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder audio(Attr attr1)
         {
             return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1), false);
@@ -40777,6 +42430,7 @@ namespace Eighty
         /// Build an audio element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder audio(Attr attr1, Attr attr2)
         {
             return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -40786,6 +42440,7 @@ namespace Eighty
         /// Build an audio element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder audio(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -40795,6 +42450,7 @@ namespace Eighty
         /// Build an audio element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -40804,6 +42460,7 @@ namespace Eighty
         /// Build an audio element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -40813,6 +42470,7 @@ namespace Eighty
         /// Build an audio element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -40822,6 +42480,7 @@ namespace Eighty
         /// Build an audio element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -40831,6 +42490,7 @@ namespace Eighty
         /// Build an audio element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("audio", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -40849,6 +42509,7 @@ namespace Eighty
         /// Build an audio element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html audio_(List<Html> children)
         {
             return audio_(children.AsEnumerable());
@@ -40858,6 +42519,7 @@ namespace Eighty
         /// Build an audio element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html audio_(ImmutableList<Html> children)
         {
             return audio_(children.AsEnumerable());
@@ -40880,6 +42542,7 @@ namespace Eighty
         /// Build an audio element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html audio_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -40896,6 +42559,7 @@ namespace Eighty
         /// Build an audio element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html audio_(Html child1)
         {
             
@@ -40910,6 +42574,7 @@ namespace Eighty
         /// Build an audio element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html audio_(Html child1, Html child2)
         {
             
@@ -40928,6 +42593,7 @@ namespace Eighty
         /// Build an audio element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html audio_(Html child1, Html child2, Html child3)
         {
             
@@ -40950,6 +42616,7 @@ namespace Eighty
         /// Build an audio element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html audio_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -40976,6 +42643,7 @@ namespace Eighty
         /// Build an audio element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html audio_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -41006,6 +42674,7 @@ namespace Eighty
         /// Build an audio element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html audio_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -41040,6 +42709,7 @@ namespace Eighty
         /// Build an audio element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html audio_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -41078,6 +42748,7 @@ namespace Eighty
         /// Build an audio element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html audio_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -41319,6 +42990,7 @@ namespace Eighty
         /// Build a video element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder video(Attr attr1)
         {
             return new TagBuilder("video", ImmutableArrayFactory.Create(attr1), false);
@@ -41328,6 +43000,7 @@ namespace Eighty
         /// Build a video element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder video(Attr attr1, Attr attr2)
         {
             return new TagBuilder("video", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -41337,6 +43010,7 @@ namespace Eighty
         /// Build a video element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder video(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("video", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -41346,6 +43020,7 @@ namespace Eighty
         /// Build a video element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("video", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -41355,6 +43030,7 @@ namespace Eighty
         /// Build a video element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("video", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -41364,6 +43040,7 @@ namespace Eighty
         /// Build a video element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("video", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -41373,6 +43050,7 @@ namespace Eighty
         /// Build a video element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("video", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -41382,6 +43060,7 @@ namespace Eighty
         /// Build a video element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("video", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -41400,6 +43079,7 @@ namespace Eighty
         /// Build a video element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html video_(List<Html> children)
         {
             return video_(children.AsEnumerable());
@@ -41409,6 +43089,7 @@ namespace Eighty
         /// Build a video element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html video_(ImmutableList<Html> children)
         {
             return video_(children.AsEnumerable());
@@ -41431,6 +43112,7 @@ namespace Eighty
         /// Build a video element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html video_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -41447,6 +43129,7 @@ namespace Eighty
         /// Build a video element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html video_(Html child1)
         {
             
@@ -41461,6 +43144,7 @@ namespace Eighty
         /// Build a video element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html video_(Html child1, Html child2)
         {
             
@@ -41479,6 +43163,7 @@ namespace Eighty
         /// Build a video element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html video_(Html child1, Html child2, Html child3)
         {
             
@@ -41501,6 +43186,7 @@ namespace Eighty
         /// Build a video element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html video_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -41527,6 +43213,7 @@ namespace Eighty
         /// Build a video element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html video_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -41557,6 +43244,7 @@ namespace Eighty
         /// Build a video element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html video_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -41591,6 +43279,7 @@ namespace Eighty
         /// Build a video element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html video_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -41629,6 +43318,7 @@ namespace Eighty
         /// Build a video element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html video_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -41808,6 +43498,7 @@ namespace Eighty
         /// Build a track element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html track(Attr attr1)
         {
             return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1), false);
@@ -41817,6 +43508,7 @@ namespace Eighty
         /// Build a track element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html track(Attr attr1, Attr attr2)
         {
             return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -41826,6 +43518,7 @@ namespace Eighty
         /// Build a track element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html track(Attr attr1, Attr attr2, Attr attr3)
         {
             return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -41835,6 +43528,7 @@ namespace Eighty
         /// Build a track element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html track(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -41844,6 +43538,7 @@ namespace Eighty
         /// Build a track element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html track(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -41853,6 +43548,7 @@ namespace Eighty
         /// Build a track element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html track(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -41862,6 +43558,7 @@ namespace Eighty
         /// Build a track element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html track(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -41871,6 +43568,7 @@ namespace Eighty
         /// Build a track element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html track(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new SelfClosingTag("track", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -42017,6 +43715,7 @@ namespace Eighty
         /// Build an embed element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html embed(Attr attr1)
         {
             return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1), false);
@@ -42026,6 +43725,7 @@ namespace Eighty
         /// Build an embed element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html embed(Attr attr1, Attr attr2)
         {
             return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -42035,6 +43735,7 @@ namespace Eighty
         /// Build an embed element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html embed(Attr attr1, Attr attr2, Attr attr3)
         {
             return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -42044,6 +43745,7 @@ namespace Eighty
         /// Build an embed element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -42053,6 +43755,7 @@ namespace Eighty
         /// Build an embed element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -42062,6 +43765,7 @@ namespace Eighty
         /// Build an embed element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -42071,6 +43775,7 @@ namespace Eighty
         /// Build an embed element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -42080,6 +43785,7 @@ namespace Eighty
         /// Build an embed element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html embed(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new SelfClosingTag("embed", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -42238,6 +43944,7 @@ namespace Eighty
         /// Build an object element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder @object(Attr attr1)
         {
             return new TagBuilder("object", ImmutableArrayFactory.Create(attr1), false);
@@ -42247,6 +43954,7 @@ namespace Eighty
         /// Build an object element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder @object(Attr attr1, Attr attr2)
         {
             return new TagBuilder("object", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -42256,6 +43964,7 @@ namespace Eighty
         /// Build an object element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder @object(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("object", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -42265,6 +43974,7 @@ namespace Eighty
         /// Build an object element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("object", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -42274,6 +43984,7 @@ namespace Eighty
         /// Build an object element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("object", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -42283,6 +43994,7 @@ namespace Eighty
         /// Build an object element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("object", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -42292,6 +44004,7 @@ namespace Eighty
         /// Build an object element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("object", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -42301,6 +44014,7 @@ namespace Eighty
         /// Build an object element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("object", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -42319,6 +44033,7 @@ namespace Eighty
         /// Build an object element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html @object_(List<Html> children)
         {
             return @object_(children.AsEnumerable());
@@ -42328,6 +44043,7 @@ namespace Eighty
         /// Build an object element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html @object_(ImmutableList<Html> children)
         {
             return @object_(children.AsEnumerable());
@@ -42350,6 +44066,7 @@ namespace Eighty
         /// Build an object element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html @object_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -42366,6 +44083,7 @@ namespace Eighty
         /// Build an object element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html @object_(Html child1)
         {
             
@@ -42380,6 +44098,7 @@ namespace Eighty
         /// Build an object element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html @object_(Html child1, Html child2)
         {
             
@@ -42398,6 +44117,7 @@ namespace Eighty
         /// Build an object element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html @object_(Html child1, Html child2, Html child3)
         {
             
@@ -42420,6 +44140,7 @@ namespace Eighty
         /// Build an object element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html @object_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -42446,6 +44167,7 @@ namespace Eighty
         /// Build an object element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html @object_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -42476,6 +44198,7 @@ namespace Eighty
         /// Build an object element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html @object_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -42510,6 +44233,7 @@ namespace Eighty
         /// Build an object element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html @object_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -42548,6 +44272,7 @@ namespace Eighty
         /// Build an object element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html @object_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -42707,6 +44432,7 @@ namespace Eighty
         /// Build a param element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html param(Attr attr1)
         {
             return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1), false);
@@ -42716,6 +44442,7 @@ namespace Eighty
         /// Build a param element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html param(Attr attr1, Attr attr2)
         {
             return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -42725,6 +44452,7 @@ namespace Eighty
         /// Build a param element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html param(Attr attr1, Attr attr2, Attr attr3)
         {
             return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -42734,6 +44462,7 @@ namespace Eighty
         /// Build a param element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html param(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -42743,6 +44472,7 @@ namespace Eighty
         /// Build a param element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html param(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -42752,6 +44482,7 @@ namespace Eighty
         /// Build a param element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html param(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -42761,6 +44492,7 @@ namespace Eighty
         /// Build a param element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html param(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -42770,6 +44502,7 @@ namespace Eighty
         /// Build a param element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html param(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new SelfClosingTag("param", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -42878,6 +44611,7 @@ namespace Eighty
         /// Build a picture element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder picture(Attr attr1)
         {
             return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1), false);
@@ -42887,6 +44621,7 @@ namespace Eighty
         /// Build a picture element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder picture(Attr attr1, Attr attr2)
         {
             return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -42896,6 +44631,7 @@ namespace Eighty
         /// Build a picture element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder picture(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -42905,6 +44641,7 @@ namespace Eighty
         /// Build a picture element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -42914,6 +44651,7 @@ namespace Eighty
         /// Build a picture element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -42923,6 +44661,7 @@ namespace Eighty
         /// Build a picture element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -42932,6 +44671,7 @@ namespace Eighty
         /// Build a picture element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -42941,6 +44681,7 @@ namespace Eighty
         /// Build a picture element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("picture", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -42959,6 +44700,7 @@ namespace Eighty
         /// Build a picture element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html picture_(List<Html> children)
         {
             return picture_(children.AsEnumerable());
@@ -42968,6 +44710,7 @@ namespace Eighty
         /// Build a picture element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html picture_(ImmutableList<Html> children)
         {
             return picture_(children.AsEnumerable());
@@ -42990,6 +44733,7 @@ namespace Eighty
         /// Build a picture element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html picture_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -43006,6 +44750,7 @@ namespace Eighty
         /// Build a picture element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html picture_(Html child1)
         {
             
@@ -43020,6 +44765,7 @@ namespace Eighty
         /// Build a picture element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html picture_(Html child1, Html child2)
         {
             
@@ -43038,6 +44784,7 @@ namespace Eighty
         /// Build a picture element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html picture_(Html child1, Html child2, Html child3)
         {
             
@@ -43060,6 +44807,7 @@ namespace Eighty
         /// Build a picture element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html picture_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -43086,6 +44834,7 @@ namespace Eighty
         /// Build a picture element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html picture_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -43116,6 +44865,7 @@ namespace Eighty
         /// Build a picture element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html picture_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -43150,6 +44900,7 @@ namespace Eighty
         /// Build a picture element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html picture_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -43188,6 +44939,7 @@ namespace Eighty
         /// Build a picture element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html picture_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -43347,6 +45099,7 @@ namespace Eighty
         /// Build a source element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html source(Attr attr1)
         {
             return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1), false);
@@ -43356,6 +45109,7 @@ namespace Eighty
         /// Build a source element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html source(Attr attr1, Attr attr2)
         {
             return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -43365,6 +45119,7 @@ namespace Eighty
         /// Build a source element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html source(Attr attr1, Attr attr2, Attr attr3)
         {
             return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -43374,6 +45129,7 @@ namespace Eighty
         /// Build a source element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html source(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -43383,6 +45139,7 @@ namespace Eighty
         /// Build a source element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html source(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -43392,6 +45149,7 @@ namespace Eighty
         /// Build a source element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html source(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -43401,6 +45159,7 @@ namespace Eighty
         /// Build a source element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html source(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -43410,6 +45169,7 @@ namespace Eighty
         /// Build a source element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html source(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new SelfClosingTag("source", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -43538,6 +45298,7 @@ namespace Eighty
         /// Build a canvas element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder canvas(Attr attr1)
         {
             return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1), false);
@@ -43547,6 +45308,7 @@ namespace Eighty
         /// Build a canvas element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder canvas(Attr attr1, Attr attr2)
         {
             return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -43556,6 +45318,7 @@ namespace Eighty
         /// Build a canvas element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -43565,6 +45328,7 @@ namespace Eighty
         /// Build a canvas element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -43574,6 +45338,7 @@ namespace Eighty
         /// Build a canvas element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -43583,6 +45348,7 @@ namespace Eighty
         /// Build a canvas element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -43592,6 +45358,7 @@ namespace Eighty
         /// Build a canvas element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -43601,6 +45368,7 @@ namespace Eighty
         /// Build a canvas element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("canvas", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -43619,6 +45387,7 @@ namespace Eighty
         /// Build a canvas element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html canvas_(List<Html> children)
         {
             return canvas_(children.AsEnumerable());
@@ -43628,6 +45397,7 @@ namespace Eighty
         /// Build a canvas element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html canvas_(ImmutableList<Html> children)
         {
             return canvas_(children.AsEnumerable());
@@ -43650,6 +45420,7 @@ namespace Eighty
         /// Build a canvas element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html canvas_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -43666,6 +45437,7 @@ namespace Eighty
         /// Build a canvas element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html canvas_(Html child1)
         {
             
@@ -43680,6 +45452,7 @@ namespace Eighty
         /// Build a canvas element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html canvas_(Html child1, Html child2)
         {
             
@@ -43698,6 +45471,7 @@ namespace Eighty
         /// Build a canvas element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html canvas_(Html child1, Html child2, Html child3)
         {
             
@@ -43720,6 +45494,7 @@ namespace Eighty
         /// Build a canvas element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html canvas_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -43746,6 +45521,7 @@ namespace Eighty
         /// Build a canvas element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html canvas_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -43776,6 +45552,7 @@ namespace Eighty
         /// Build a canvas element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html canvas_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -43810,6 +45587,7 @@ namespace Eighty
         /// Build a canvas element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html canvas_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -43848,6 +45626,7 @@ namespace Eighty
         /// Build a canvas element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html canvas_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -43999,6 +45778,7 @@ namespace Eighty
         /// Build a bdi element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder bdi(Attr attr1)
         {
             return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1), false);
@@ -44008,6 +45788,7 @@ namespace Eighty
         /// Build a bdi element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder bdi(Attr attr1, Attr attr2)
         {
             return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -44017,6 +45798,7 @@ namespace Eighty
         /// Build a bdi element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -44026,6 +45808,7 @@ namespace Eighty
         /// Build a bdi element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -44035,6 +45818,7 @@ namespace Eighty
         /// Build a bdi element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -44044,6 +45828,7 @@ namespace Eighty
         /// Build a bdi element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -44053,6 +45838,7 @@ namespace Eighty
         /// Build a bdi element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -44062,6 +45848,7 @@ namespace Eighty
         /// Build a bdi element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("bdi", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -44080,6 +45867,7 @@ namespace Eighty
         /// Build a bdi element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html bdi_(List<Html> children)
         {
             return bdi_(children.AsEnumerable());
@@ -44089,6 +45877,7 @@ namespace Eighty
         /// Build a bdi element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html bdi_(ImmutableList<Html> children)
         {
             return bdi_(children.AsEnumerable());
@@ -44111,6 +45900,7 @@ namespace Eighty
         /// Build a bdi element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html bdi_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -44127,6 +45917,7 @@ namespace Eighty
         /// Build a bdi element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html bdi_(Html child1)
         {
             
@@ -44141,6 +45932,7 @@ namespace Eighty
         /// Build a bdi element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html bdi_(Html child1, Html child2)
         {
             
@@ -44159,6 +45951,7 @@ namespace Eighty
         /// Build a bdi element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html bdi_(Html child1, Html child2, Html child3)
         {
             
@@ -44181,6 +45974,7 @@ namespace Eighty
         /// Build a bdi element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html bdi_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -44207,6 +46001,7 @@ namespace Eighty
         /// Build a bdi element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html bdi_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -44237,6 +46032,7 @@ namespace Eighty
         /// Build a bdi element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html bdi_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -44271,6 +46067,7 @@ namespace Eighty
         /// Build a bdi element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html bdi_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -44309,6 +46106,7 @@ namespace Eighty
         /// Build a bdi element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html bdi_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             
@@ -44460,6 +46258,7 @@ namespace Eighty
         /// Build a bdo element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder bdo(Attr attr1)
         {
             return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1), false);
@@ -44469,6 +46268,7 @@ namespace Eighty
         /// Build a bdo element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder bdo(Attr attr1, Attr attr2)
         {
             return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1, attr2), false);
@@ -44478,6 +46278,7 @@ namespace Eighty
         /// Build a bdo element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1, attr2, attr3), false);
@@ -44487,6 +46288,7 @@ namespace Eighty
         /// Build a bdo element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), false);
@@ -44496,6 +46298,7 @@ namespace Eighty
         /// Build a bdo element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), false);
@@ -44505,6 +46308,7 @@ namespace Eighty
         /// Build a bdo element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), false);
@@ -44514,6 +46318,7 @@ namespace Eighty
         /// Build a bdo element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), false);
@@ -44523,6 +46328,7 @@ namespace Eighty
         /// Build a bdo element.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder("bdo", ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), false);
@@ -44541,6 +46347,7 @@ namespace Eighty
         /// Build a bdo element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html bdo_(List<Html> children)
         {
             return bdo_(children.AsEnumerable());
@@ -44550,6 +46357,7 @@ namespace Eighty
         /// Build a bdo element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html bdo_(ImmutableList<Html> children)
         {
             return bdo_(children.AsEnumerable());
@@ -44572,6 +46380,7 @@ namespace Eighty
         /// Build a bdo element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html bdo_(ImmutableArray<Html> children)
         {
             foreach (var child in children)
@@ -44588,6 +46397,7 @@ namespace Eighty
         /// Build a bdo element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html bdo_(Html child1)
         {
             
@@ -44602,6 +46412,7 @@ namespace Eighty
         /// Build a bdo element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html bdo_(Html child1, Html child2)
         {
             
@@ -44620,6 +46431,7 @@ namespace Eighty
         /// Build a bdo element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html bdo_(Html child1, Html child2, Html child3)
         {
             
@@ -44642,6 +46454,7 @@ namespace Eighty
         /// Build a bdo element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html bdo_(Html child1, Html child2, Html child3, Html child4)
         {
             
@@ -44668,6 +46481,7 @@ namespace Eighty
         /// Build a bdo element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html bdo_(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             
@@ -44698,6 +46512,7 @@ namespace Eighty
         /// Build a bdo element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html bdo_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             
@@ -44732,6 +46547,7 @@ namespace Eighty
         /// Build a bdo element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html bdo_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             
@@ -44770,6 +46586,7 @@ namespace Eighty
         /// Build a bdo element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html bdo_(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             

@@ -28,6 +28,7 @@ namespace Eighty
         /// <summary>
         /// Put some siblings next to each other.
         /// </summary>
+        [NoDoc]
         public static Html _({SiblingParams(number)})
         {{
             return _(ImmutableArrayFactory.Create({SiblingArgs(number)}));

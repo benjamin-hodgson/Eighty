@@ -9,6 +9,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag which takes children.
         /// </summary>
+        [NoDoc]
         public static TagBuilder Tag(string name, Attr attr1)
         {
             return new TagBuilder(name, ImmutableArrayFactory.Create(attr1), true);
@@ -17,6 +18,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag which takes children.
         /// </summary>
+        [NoDoc]
         public static TagBuilder Tag(string name, Attr attr1, Attr attr2)
         {
             return new TagBuilder(name, ImmutableArrayFactory.Create(attr1, attr2), true);
@@ -25,6 +27,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag which takes children.
         /// </summary>
+        [NoDoc]
         public static TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3)
         {
             return new TagBuilder(name, ImmutableArrayFactory.Create(attr1, attr2, attr3), true);
@@ -33,6 +36,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag which takes children.
         /// </summary>
+        [NoDoc]
         public static TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new TagBuilder(name, ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), true);
@@ -41,6 +45,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag which takes children.
         /// </summary>
+        [NoDoc]
         public static TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new TagBuilder(name, ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), true);
@@ -49,6 +54,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag which takes children.
         /// </summary>
+        [NoDoc]
         public static TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new TagBuilder(name, ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), true);
@@ -57,6 +63,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag which takes children.
         /// </summary>
+        [NoDoc]
         public static TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new TagBuilder(name, ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), true);
@@ -65,6 +72,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag which takes children.
         /// </summary>
+        [NoDoc]
         public static TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new TagBuilder(name, ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), true);
@@ -73,6 +81,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag without any attributes.
         /// </summary>
+        [NoDoc]
         public static Html Tag_(string name, Html child1)
         {
             if (child1 == null)
@@ -85,6 +94,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag without any attributes.
         /// </summary>
+        [NoDoc]
         public static Html Tag_(string name, Html child1, Html child2)
         {
             if (child1 == null)
@@ -101,6 +111,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag without any attributes.
         /// </summary>
+        [NoDoc]
         public static Html Tag_(string name, Html child1, Html child2, Html child3)
         {
             if (child1 == null)
@@ -121,6 +132,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag without any attributes.
         /// </summary>
+        [NoDoc]
         public static Html Tag_(string name, Html child1, Html child2, Html child3, Html child4)
         {
             if (child1 == null)
@@ -145,6 +157,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag without any attributes.
         /// </summary>
+        [NoDoc]
         public static Html Tag_(string name, Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             if (child1 == null)
@@ -173,6 +186,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag without any attributes.
         /// </summary>
+        [NoDoc]
         public static Html Tag_(string name, Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             if (child1 == null)
@@ -205,6 +219,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag without any attributes.
         /// </summary>
+        [NoDoc]
         public static Html Tag_(string name, Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             if (child1 == null)
@@ -241,6 +256,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag without any attributes.
         /// </summary>
+        [NoDoc]
         public static Html Tag_(string name, Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             if (child1 == null)
@@ -281,6 +297,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag which does not take children.
         /// </summary>
+        [NoDoc]
         public static Html SelfClosingTag(string name, Attr attr1)
         {
             return new SelfClosingTag(name, ImmutableArrayFactory.Create(attr1), true);
@@ -289,6 +306,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag which does not take children.
         /// </summary>
+        [NoDoc]
         public static Html SelfClosingTag(string name, Attr attr1, Attr attr2)
         {
             return new SelfClosingTag(name, ImmutableArrayFactory.Create(attr1, attr2), true);
@@ -297,6 +315,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag which does not take children.
         /// </summary>
+        [NoDoc]
         public static Html SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3)
         {
             return new SelfClosingTag(name, ImmutableArrayFactory.Create(attr1, attr2, attr3), true);
@@ -305,6 +324,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag which does not take children.
         /// </summary>
+        [NoDoc]
         public static Html SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             return new SelfClosingTag(name, ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4), true);
@@ -313,6 +333,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag which does not take children.
         /// </summary>
+        [NoDoc]
         public static Html SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             return new SelfClosingTag(name, ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5), true);
@@ -321,6 +342,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag which does not take children.
         /// </summary>
+        [NoDoc]
         public static Html SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             return new SelfClosingTag(name, ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6), true);
@@ -329,6 +351,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag which does not take children.
         /// </summary>
+        [NoDoc]
         public static Html SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             return new SelfClosingTag(name, ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7), true);
@@ -337,6 +360,7 @@ namespace Eighty
         /// <summary>
         /// Create a tag which does not take children.
         /// </summary>
+        [NoDoc]
         public static Html SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             return new SelfClosingTag(name, ImmutableArrayFactory.Create(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8), true);

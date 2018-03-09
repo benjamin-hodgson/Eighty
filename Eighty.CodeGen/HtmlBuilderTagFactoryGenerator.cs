@@ -28,6 +28,7 @@ namespace Eighty.Twenty
         /// Write a tag which takes children.
         /// </summary>
         /// <returns>A <see cref=""TagBuilder""/> which MUST be disposed after setting the tag's children.</returns>
+        [NoDoc]
         protected TagBuilder Tag(string name, {AttrParams(number)})
         {{
             StartTag(name);
@@ -41,6 +42,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a tag which does not take children.
         /// </summary>
+        [NoDoc]
         protected void SelfClosingTag(string name, {AttrParams(number)})
         {{
             StartTag(name);

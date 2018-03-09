@@ -11,6 +11,7 @@ namespace Eighty
         /// Add children to the tag.
         /// </summary>
         /// <returns>An instance of <see cref="Html"/></returns>
+        [NoDoc]
         public Html _(Html child1)
         {
             if (child1 == null)
@@ -24,6 +25,7 @@ namespace Eighty
         /// Add children to the tag.
         /// </summary>
         /// <returns>An instance of <see cref="Html"/></returns>
+        [NoDoc]
         public Html _(Html child1, Html child2)
         {
             if (child1 == null)
@@ -41,6 +43,7 @@ namespace Eighty
         /// Add children to the tag.
         /// </summary>
         /// <returns>An instance of <see cref="Html"/></returns>
+        [NoDoc]
         public Html _(Html child1, Html child2, Html child3)
         {
             if (child1 == null)
@@ -62,6 +65,7 @@ namespace Eighty
         /// Add children to the tag.
         /// </summary>
         /// <returns>An instance of <see cref="Html"/></returns>
+        [NoDoc]
         public Html _(Html child1, Html child2, Html child3, Html child4)
         {
             if (child1 == null)
@@ -87,6 +91,7 @@ namespace Eighty
         /// Add children to the tag.
         /// </summary>
         /// <returns>An instance of <see cref="Html"/></returns>
+        [NoDoc]
         public Html _(Html child1, Html child2, Html child3, Html child4, Html child5)
         {
             if (child1 == null)
@@ -116,6 +121,7 @@ namespace Eighty
         /// Add children to the tag.
         /// </summary>
         /// <returns>An instance of <see cref="Html"/></returns>
+        [NoDoc]
         public Html _(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6)
         {
             if (child1 == null)
@@ -149,6 +155,7 @@ namespace Eighty
         /// Add children to the tag.
         /// </summary>
         /// <returns>An instance of <see cref="Html"/></returns>
+        [NoDoc]
         public Html _(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7)
         {
             if (child1 == null)
@@ -186,6 +193,7 @@ namespace Eighty
         /// Add children to the tag.
         /// </summary>
         /// <returns>An instance of <see cref="Html"/></returns>
+        [NoDoc]
         public Html _(Html child1, Html child2, Html child3, Html child4, Html child5, Html child6, Html child7, Html child8)
         {
             if (child1 == null)

@@ -9,6 +9,7 @@ namespace Eighty.Twenty
         /// Write a tag which takes children.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
+        [NoDoc]
         protected TagBuilder Tag(string name, Attr attr1)
         {
             StartTag(name);
@@ -21,6 +22,7 @@ namespace Eighty.Twenty
         /// Write a tag which takes children.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
+        [NoDoc]
         protected TagBuilder Tag(string name, Attr attr1, Attr attr2)
         {
             StartTag(name);
@@ -33,6 +35,7 @@ namespace Eighty.Twenty
         /// Write a tag which takes children.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
+        [NoDoc]
         protected TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag(name);
@@ -45,6 +48,7 @@ namespace Eighty.Twenty
         /// Write a tag which takes children.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
+        [NoDoc]
         protected TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag(name);
@@ -57,6 +61,7 @@ namespace Eighty.Twenty
         /// Write a tag which takes children.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
+        [NoDoc]
         protected TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag(name);
@@ -69,6 +74,7 @@ namespace Eighty.Twenty
         /// Write a tag which takes children.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
+        [NoDoc]
         protected TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag(name);
@@ -81,6 +87,7 @@ namespace Eighty.Twenty
         /// Write a tag which takes children.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
+        [NoDoc]
         protected TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag(name);
@@ -93,6 +100,7 @@ namespace Eighty.Twenty
         /// Write a tag which takes children.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
+        [NoDoc]
         protected TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag(name);
@@ -104,6 +112,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a tag which does not take children.
         /// </summary>
+        [NoDoc]
         protected void SelfClosingTag(string name, Attr attr1)
         {
             StartTag(name);
@@ -114,6 +123,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a tag which does not take children.
         /// </summary>
+        [NoDoc]
         protected void SelfClosingTag(string name, Attr attr1, Attr attr2)
         {
             StartTag(name);
@@ -124,6 +134,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a tag which does not take children.
         /// </summary>
+        [NoDoc]
         protected void SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag(name);
@@ -134,6 +145,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a tag which does not take children.
         /// </summary>
+        [NoDoc]
         protected void SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag(name);
@@ -144,6 +156,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a tag which does not take children.
         /// </summary>
+        [NoDoc]
         protected void SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag(name);
@@ -154,6 +167,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a tag which does not take children.
         /// </summary>
+        [NoDoc]
         protected void SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag(name);
@@ -164,6 +178,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a tag which does not take children.
         /// </summary>
+        [NoDoc]
         protected void SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag(name);
@@ -174,6 +189,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a tag which does not take children.
         /// </summary>
+        [NoDoc]
         protected void SelfClosingTag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag(name);

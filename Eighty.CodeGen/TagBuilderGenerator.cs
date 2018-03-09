@@ -29,6 +29,7 @@ namespace Eighty
         /// Add children to the tag.
         /// </summary>
         /// <returns>An instance of <see cref=""Html""/></returns>
+        [NoDoc]
         public Html _({ChildParams(number)})
         {{{CheckChildNulls(number)}
             return new Tag(_name, _attrs, ImmutableArrayFactory.Create({ChildArgs(number)}), _shouldEncodeName);

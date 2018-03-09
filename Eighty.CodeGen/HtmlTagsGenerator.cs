@@ -83,6 +83,7 @@ namespace Eighty
         /// Build {IndefiniteArticle(name)} {name} element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html {CsId(name)}_(List<Html> children)
         {{
             return {CsId(name)}_(children.AsEnumerable());
@@ -92,6 +93,7 @@ namespace Eighty
         /// Build {IndefiniteArticle(name)} {name} element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html {CsId(name)}_(ImmutableList<Html> children)
         {{
             return {CsId(name)}_(children.AsEnumerable());
@@ -114,6 +116,7 @@ namespace Eighty
         /// Build {IndefiniteArticle(name)} {name} element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html {CsId(name)}_(ImmutableArray<Html> children)
         {{
             foreach (var child in children)
@@ -175,6 +178,7 @@ namespace Eighty
         /// Build {IndefiniteArticle(name)} {name} element.
         /// </summary>
         /// <returns>A <see cref=""TagBuilder""/> waiting for the element's children</returns>
+        [NoDoc]
         public static TagBuilder {CsId(name)}({AttrParams(n)})
         {{
             return new TagBuilder(""{name}"", ImmutableArrayFactory.Create({AttrArgs(n)}), false);
@@ -186,6 +190,7 @@ namespace Eighty
         /// Build {IndefiniteArticle(name)} {name} element.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html {CsId(name)}({AttrParams(n)})
         {{
             return new SelfClosingTag(""{name}"", ImmutableArrayFactory.Create({AttrArgs(n)}), false);
@@ -197,6 +202,7 @@ namespace Eighty
         /// Build {IndefiniteArticle(name)} {name} element without any attributes.
         /// </summary>
         /// <returns>The element</returns>
+        [NoDoc]
         public static Html {CsId(name)}_({ChildParams(n)})
         {{
             {CheckChildNulls(n)}
