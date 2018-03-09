@@ -4,7 +4,9 @@
       "src": [
         {
           "files": [
-            "Eighty.sln"
+            "Eighty/Eighty.csproj",
+            "Eighty.AspNetCore/Eighty.AspNetCore.csproj",
+            "Eighty.AspNet.Mvc/Eighty.AspNet.Mvc.csproj"
           ],
           "src": ".."
         }
