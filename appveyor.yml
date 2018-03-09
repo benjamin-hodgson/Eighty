@@ -52,7 +52,7 @@ deploy:
 on_success:
   - cmd: git clone https://github.com/benjamin-hodgson/Eighty.git --depth 1 --branch gh-pages gh-pages
   - cmd: if exist "gh-pages\%APPVEYOR_REPO_BRANCH%" rm -r "gh-pages\%APPVEYOR_REPO_BRANCH%"
-  - cmd: xcopy Eighty.Docs\_site "gh-pages\%APPVEYOR_REPO_BRANCH%" /e
+  - cmd: echo d | xcopy Eighty.Docs\_site "gh-pages\%APPVEYOR_REPO_BRANCH%" /e
   - cmd: cd gh-pages
   - cmd: git commit -a -m "Update gh-pages"
   - cmd: git push
