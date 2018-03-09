@@ -1,4 +1,4 @@
-attributeRules:
-  - exclude:
-      hasAttribute:
-        uid: Eighty.NoDocAttribute
+apiRules:
+- exclude:
+    hasAttribute:
+      uid: Eighty.NoDocAttribute
