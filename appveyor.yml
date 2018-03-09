@@ -32,7 +32,7 @@ after_build:
   - cmd: docfx Eighty.Docs/docfx.json
 
 after_test:
-  # - cmd: dotnet run --configuration %CONFIGURATION% --project Eighty.Bench\Eighty.Bench.csproj
+  - cmd: dotnet run --configuration %CONFIGURATION% --project Eighty.Bench\Eighty.Bench.csproj
   - cmd: msbuild Eighty.sln /t:pack /p:Configuration=%CONFIGURATION% /p:IncludeSymbols=true /p:PackageOutputPath=..\nupkgs /v:Minimal
 
 artifacts:
@@ -55,5 +55,5 @@ on_success:
   - cmd: echo d | xcopy Eighty.Docs\_site "gh-pages\%APPVEYOR_REPO_BRANCH%" /e
   - cmd: cd gh-pages
   - cmd: git add "%APPVEYOR_REPO_BRANCH%"
-  - cmd: git commit -m "Update gh-pages"
+  - cmd: git commit --allow-empty -m "Update gh-pages"
   - cmd: git push
