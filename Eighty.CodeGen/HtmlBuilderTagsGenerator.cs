@@ -123,6 +123,7 @@ namespace Eighty.Twenty
         /// Write {IndefiniteArticle(name)} {name} element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref=""TagBuilder""/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        [NoDoc]
         protected TagBuilder {CsId(name)}({AttrParams(n)})
         {{
             StartTagRaw(""{name}"");
@@ -136,6 +137,7 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write {IndefiniteArticle(name)} {name} element.
         /// </summary>
+        [NoDoc]
         protected void {CsId(name)}({AttrParams(n)})
         {{
             StartTagRaw(""{name}"");
