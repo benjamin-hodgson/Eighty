@@ -13,6 +13,7 @@ nuget:
 install:
   - ps: |
       $lastTag = git describe --abbrev=0
+      [Environment]::SetEnvironmentVariable('LAST_TAG', $lastTag, [System.EnvironmentVariableTarget]::User )
       Update-AppveyorBuild -Version "$lastTag-$env:APPVEYOR_BUILD_NUMBER"
 
   - cmd: msbuild Eighty.sln /t:restore /p:Configuration=%CONFIGURATION% /v:Minimal
@@ -55,5 +56,6 @@ on_success:
   - cmd: echo d | xcopy Eighty.Docs\_site "gh-pages\%APPVEYOR_REPO_BRANCH%" /e
   - cmd: cd gh-pages
   - cmd: git add "%APPVEYOR_REPO_BRANCH%"
+  - ps: (gc index.html) -replace 'https://www.benjamin.pizza/Eighty/[^/]*/', "https://www.benjamin.pizza/Eighty/$env:LAST_TAG/" | Out-File index.html
   - cmd: git commit --allow-empty -m "Update gh-pages"
   - cmd: git push
