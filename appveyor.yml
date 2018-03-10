@@ -17,7 +17,7 @@ nuget:
 install:
   - ps: |
       $lastTag = git describe --abbrev=0
-      [Environment]::SetEnvironmentVariable('LAST_TAG', $lastTag, [System.EnvironmentVariableTarget]::User )
+      Set-AppveyorBuildVariable -Name 'LAST_TAG' -Value $lastTag
       Update-AppveyorBuild -Version "$lastTag-$env:APPVEYOR_BUILD_NUMBER"
 
   - cmd: msbuild Eighty.sln /t:restore /p:Configuration=%CONFIGURATION% /v:Minimal
