@@ -29,12 +29,10 @@ build:
   project: Eighty.sln
   verbosity: minimal
 
-after_build:
-  - cmd: docfx Eighty.Docs/docfx.json
-
 after_test:
   - cmd: dotnet run --configuration %CONFIGURATION% --project Eighty.Bench\Eighty.Bench.csproj
   - cmd: msbuild Eighty.sln /t:pack /p:Configuration=%CONFIGURATION% /p:IncludeSymbols=true /p:PackageOutputPath=..\nupkgs /v:Minimal
+  - cmd: docfx Eighty.Docs/docfx.json
 
 artifacts:
   - type: NuGetPackage
