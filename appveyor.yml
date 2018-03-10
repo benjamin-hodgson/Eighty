@@ -61,7 +61,7 @@ on_success:
       if ($env:APPVEYOR_REPO_BRANCH -eq 'master' -or $env:APPVEYOR_REPO_TAG -eq 'true') {
         git clone https://github.com/benjamin-hodgson/Eighty.git --depth 1 --branch gh-pages gh-pages 2> $null
         Remove-Item "gh-pages\$env:APPVEYOR_REPO_BRANCH" -Recurse -ErrorAction Ignore
-        Get-ChildItem -Path Eighty.Docs\_site | Copy-Item -Destination "gh-pages\$env:APPVEYOR_REPO_BRANCH" -Recurse -Container
+        Copy-Item Eighty.Docs\_site -Destination "gh-pages\$env:APPVEYOR_REPO_BRANCH" -Recurse -Container
         cd gh-pages
         git add "$env:APPVEYOR_REPO_BRANCH"
         (gc index.html) -replace 'https://www.benjamin.pizza/Eighty/[^/]*/', "https://www.benjamin.pizza/Eighty/$env:LAST_TAG/" | Out-File index.html
