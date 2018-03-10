@@ -20,10 +20,11 @@ install:
 
   - cmd: cinst docfx
 
-  - cmd: git config --global credential.helper store
-  - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:github_token):x-oauth-basic@github.com`n"
-  - cmd: git config --global user.email "benhodgson91@gmail.com"
-  - cmd: git config --global user.name "AppVeyor build server"
+  - ps: |
+      git config --global credential.helper store
+      Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:github_token):x-oauth-basic@github.com`n"
+      git config --global user.email "benhodgson91@gmail.com"
+      git config --global user.name "AppVeyor build server"
 
 build:
   project: Eighty.sln
