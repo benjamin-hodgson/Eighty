@@ -1,3 +1,4 @@
-# Eighty
+Eighty
+======
 
-See the [API docs](api/index.md)
+See the [API docs](xref:Eighty)
