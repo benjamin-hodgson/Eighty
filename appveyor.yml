@@ -59,5 +59,6 @@ on_success:
       cd gh-pages
       git add "$env:APPVEYOR_REPO_BRANCH"
       (gc index.html) -replace 'https://www.benjamin.pizza/Eighty/[^/]*/', "https://www.benjamin.pizza/Eighty/$env:LAST_TAG/" | Out-File index.html
+      git add index.html
       git commit --allow-empty -m "Update gh-pages"
       git push
