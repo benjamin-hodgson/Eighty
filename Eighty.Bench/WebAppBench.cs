@@ -19,8 +19,8 @@ namespace Eighty.Bench
         public void Setup()
         {
             var path = ThisFilePath();
-            var contentRoot = Path.GetDirectoryName(path) + "/../Eighty.Bench.WebApp";
-            _server = new TestServer(new WebHostBuilder().UseStartup<WebApp.Startup>().UseContentRoot(contentRoot));
+            var contentRoot = Path.GetDirectoryName(path) + "/../Eighty.Test.WebApp";
+            _server = new TestServer(new WebHostBuilder().UseStartup<Eighty.Test.WebApp.Startup>().UseContentRoot(contentRoot));
             _client = _server.CreateClient();
         }
 
@@ -29,31 +29,31 @@ namespace Eighty.Bench
         [Benchmark]
         public async Task Empty()  // just measure the time to get an empty response, so can subtract from the other benchmarks
         {
-            await _client.GetStringAsync("/Home/Empty");
+            await _client.GetStringAsync("/Bench/Empty");
         }
 
         [Benchmark(Baseline = true)]
         public async Task Razor()
         {
-            await _client.GetStringAsync("/Home/Razor");
+            await _client.GetStringAsync("/Bench/Razor");
         }
 
         [Benchmark]
         public async Task Eighty()
         {
-            await _client.GetStringAsync("/Home/Eighty");
+            await _client.GetStringAsync("/Bench/Eighty");
         }
 
         [Benchmark]
         public async Task EightyAsync()
         {
-            await _client.GetStringAsync("/Home/EightyAsync");
+            await _client.GetStringAsync("/Bench/EightyAsync");
         }
 
         [Benchmark]
         public async Task Twenty()
         {
-            await _client.GetStringAsync("/Home/Twenty");
+            await _client.GetStringAsync("/Bench/Twenty");
         }
     }
 }

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace Eighty.Bench.WebApp
+namespace Eighty.Test.WebApp
 {
     public class Program
     {

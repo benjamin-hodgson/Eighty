@@ -4,17 +4,17 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Eighty.Bench.WebApp.Models;
+using Eighty.Test.WebApp.Models;
 using System.IO;
 using System.Text;
 using Eighty.Twenty;
 using System.Collections.Immutable;
 
-namespace Eighty.Bench.WebApp.Controllers
+namespace Eighty.Test.WebApp.Controllers
 {
-    public class HomeController : Controller
+    public class BenchController : Controller
     {
-        private static readonly Model _model = new Model(1000, "foo<>");
+        private static readonly BenchModel _model = new BenchModel(1000, "foo<>");
 
         public IActionResult Empty()
         {

@@ -1,18 +1,18 @@
-using Eighty.Bench.WebApp.Models;
+using Eighty.Test.WebApp.Models;
 using Eighty.Twenty;
 
-namespace Eighty.Bench.WebApp.Views.Home
+namespace Eighty.Test.WebApp.Views.Bench
 {
-    public class Twenty : IHtmlBuilderRenderer<Model>
+    public class Twenty : IHtmlBuilderRenderer<BenchModel>
     {
-        public HtmlBuilder GetHtmlBuilder(Model model)
+        public HtmlBuilder GetHtmlBuilder(BenchModel model)
             => new MyHtmlBuilder(model);
 
         class MyHtmlBuilder : HtmlBuilder
         {
-            private readonly Model _model;
+            private readonly BenchModel _model;
 
-            public MyHtmlBuilder(Model model)
+            public MyHtmlBuilder(BenchModel model)
             {
                 _model = model;
             }

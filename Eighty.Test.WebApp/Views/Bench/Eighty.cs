@@ -1,12 +1,12 @@
 using System.Collections.Immutable;
-using Eighty.Bench.WebApp.Models;
+using Eighty.Test.WebApp.Models;
 using static Eighty.Html;
 
-namespace Eighty.Bench.WebApp.Views.Home
+namespace Eighty.Test.WebApp.Views.Bench
 {
-    public class Eighty : IHtmlRenderer<Model>
+    public class Eighty : IHtmlRenderer<BenchModel>
     {
-        public Html Render(Model model)
+        public Html Render(BenchModel model)
         {
             var builder = ImmutableArray.CreateBuilder<Html>(model.Iterations);
             for (var i = 0; i < model.Iterations; i++)

@@ -1,11 +1,11 @@
-namespace Eighty.Bench.WebApp.Models
+namespace Eighty.Test.WebApp.Models
 {
-    public class Model
+    public class BenchModel
     {
         public int Iterations { get; }
         public string ClassName { get; }
 
-        public Model(int iterations, string className)
+        public BenchModel(int iterations, string className)
         {
             Iterations = iterations;
             ClassName = className;

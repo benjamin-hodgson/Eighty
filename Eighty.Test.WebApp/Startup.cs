@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Eighty.Bench.WebApp
+namespace Eighty.Test.WebApp
 {
     public class Startup
     {
@@ -28,9 +28,13 @@ namespace Eighty.Bench.WebApp
                 .AddEighty(
                     opts =>
                     {
-                        opts.ViewCollection.RegisterSingleton("Home", "Eighty", new Views.Home.Eighty());
-                        opts.ViewCollection.RegisterSingleton("Home", "EightyAsync", new Views.Home.Eighty());
-                        opts.ViewCollection.RegisterSingleton("Home", "Twenty", new Views.Home.Twenty());
+                        opts.ViewCollection.RegisterSingleton("Bench", "Eighty", new Views.Bench.Eighty());
+                        opts.ViewCollection.RegisterSingleton("Bench", "EightyAsync", new Views.Bench.Eighty());
+                        opts.ViewCollection.RegisterSingleton("Bench", "Twenty", new Views.Bench.Twenty());
+
+                        opts.ViewCollection.RegisterSingleton("Test", "HtmlView", new Views.Test.TestHtmlRenderer());
+                        opts.ViewCollection.RegisterSingleton("Test", "HtmlViewAsync", new Views.Test.TestHtmlRenderer());
+                        opts.ViewCollection.RegisterSingleton("Test", "HtmlBuilderView", new Views.Test.TestHtmlBuilderRenderer());
                     }
                 );
         }

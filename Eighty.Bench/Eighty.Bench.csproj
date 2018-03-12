@@ -18,7 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Eighty\Eighty.csproj" />
-    <ProjectReference Include="..\Eighty.Bench.WebApp\Eighty.Bench.WebApp.csproj" />
+    <ProjectReference Include="..\Eighty.Test.WebApp\Eighty.Test.WebApp.csproj" />
   </ItemGroup>
   
   <!--
