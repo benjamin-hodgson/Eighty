@@ -3,6 +3,7 @@ using System.Linq;
 using Xunit;
 using H = Eighty.Html;
 using static Eighty.Html;
+using Eighty.Twenty;
 
 namespace Eighty.Tests
 {
@@ -151,6 +152,20 @@ namespace Eighty.Tests
                 var html = _(img(), img(), img(), img(), img(), img(), img(), img(), img());
                 Assert.Equal("<img/><img/><img/><img/><img/><img/><img/><img/><img/>", html.ToString());
             }
+        }
+
+        class MyHtmlBuilder : HtmlBuilder
+        {
+            protected override void Build()
+            {
+                using (a()) {}
+            }
+        }
+        [Fact]
+        public void Builder()
+        {
+            var html = p_(Html.Builder(() => new MyHtmlBuilder()));
+            Assert.Equal("<p><a></a></p>", html.ToString());
         }
 
         // attributes

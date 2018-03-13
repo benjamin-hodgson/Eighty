@@ -1,5 +1,6 @@
 using System.Collections.Immutable;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Eighty
@@ -11,7 +12,7 @@ namespace Eighty
         private readonly ImmutableArray<Html> _children;
         private readonly bool _shouldEncodeName;
 
-        public Tag(string name, ImmutableArray<Attr> attributes, ImmutableArray<Html> children, bool shouldEncodeName)
+        public Tag(string name, ImmutableArray<Attr> attributes, ImmutableArray<Html> children, bool shouldEncodeName) : base(children.All(c => c.CanWriteAsync))
         {
             _tagName = name;
             _attributes = attributes;

@@ -10,6 +10,10 @@ namespace Eighty
     /// <summary>
     /// A mutable struct, be careful.
     /// 
+    /// Because this struct is a managed type (it contains arrays) and is referenced by pointer
+    /// (see HtmlEncodingTextWriterReference), it must always stay on the stack.
+    /// Don't fix it to obtain a reference to it.
+    /// 
     /// NB. Any changes to this file need to be paralleled in AsyncHtmlEncodingTextWriter.
     /// 
     /// See also https://github.com/dotnet/corefx/blob/3de3cd74ce3d81d13f75928eae728fb7945b6048/src/System.Runtime.Extensions/src/System/Net/WebUtility.cs

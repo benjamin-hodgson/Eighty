@@ -1,5 +1,6 @@
 using System.Collections.Immutable;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Eighty
@@ -8,7 +9,7 @@ namespace Eighty
     {
         private readonly ImmutableArray<Html> _children;
 
-        public Sequence(ImmutableArray<Html> children)
+        public Sequence(ImmutableArray<Html> children) : base(children.All(c => c.CanWriteAsync))
         {
             _children = children;
         }

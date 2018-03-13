@@ -7,7 +7,7 @@ namespace Eighty
     {
         private readonly string _text;
 
-        public Text(string text)
+        public Text(string text) : base(true)
         {
             _text = text;
         }

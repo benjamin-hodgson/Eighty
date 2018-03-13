@@ -10,7 +10,7 @@ namespace Eighty
         private readonly ImmutableArray<Attr> _attributes;
         private readonly bool _shouldEncodeName;
 
-        public SelfClosingTag(string name, ImmutableArray<Attr> attributes, bool shouldEncodeName)
+        public SelfClosingTag(string name, ImmutableArray<Attr> attributes, bool shouldEncodeName) : base(true)
         {
             _name = name;
             _attributes = attributes;

@@ -7,7 +7,7 @@ namespace Eighty
     {
         private string _rawHtml;
 
-        public Raw(string rawHtml)
+        public Raw(string rawHtml) : base(true)
         {
             _rawHtml = rawHtml;
         }

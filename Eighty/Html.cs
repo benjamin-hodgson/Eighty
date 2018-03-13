@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text.Encodings.Web;
 using System.Threading;
 using System.Threading.Tasks;
+using Eighty.Twenty;
 
 namespace Eighty
 {
@@ -14,7 +15,20 @@ namespace Eighty
     /// </summary>
     public abstract partial class Html
     {
-        private protected Html() { }
+        /// <summary>
+        /// Can this <see cref="Html"/> write itself asynchronously?
+        /// 
+        /// Returns false if the HTML contains any calls to <see cref="Builder(Func{HtmlBuilder})"/>.
+        /// 
+        /// If this returns false, <see cref="WriteAsync(TextWriter)"/> will throw <see cref="InvalidOperationException"/>
+        /// </summary>
+        /// <returns>A <see cref="System.Boolean"/> indicating whether this <see cref="Html"/> can write itself asynchronously</returns>
+        public bool CanWriteAsync { get; }
+
+        private protected Html(bool canWriteAsync)
+        {
+            CanWriteAsync = canWriteAsync;
+        }
 
         internal abstract void WriteImpl(ref HtmlEncodingTextWriter writer);
         internal abstract Task WriteAsyncImpl(AsyncHtmlEncodingTextWriter writer);
@@ -61,6 +75,7 @@ namespace Eighty
         /// </summary>
         /// <param name="writer">The writer</param>
         /// <param name="htmlEncoder">The HTML encoder</param>
+        /// <exception cref="InvalidOperationException">Thrown if <see cref="CanWriteAsync"/> is false (ie if this <see cref="Html"/> contains an <see cref="HtmlBuilder"/>.</exception>
         public async Task WriteAsync(TextWriter writer, HtmlEncoder htmlEncoder)
         {
             if (writer == null)
@@ -70,6 +85,10 @@ namespace Eighty
             if (htmlEncoder == null)
             {
                 throw new ArgumentNullException(nameof(htmlEncoder));
+            }
+            if (!CanWriteAsync)
+            {
+                throw new InvalidOperationException("Can't write this HTML asynchronously because it contains an HtmlBuilder");
             }
 
             var htmlEncodingTextWriter = new AsyncHtmlEncodingTextWriter(writer, htmlEncoder);
@@ -198,6 +217,27 @@ namespace Eighty
                 throw new ArgumentNullException(nameof(rawHtml));
             }
             return new Raw(rawHtml);
+        }
+
+        /// <summary>
+        /// Run the <see cref="HtmlBuilder"/> returned by <paramref name="builderFactory"/>.
+        /// 
+        /// The <see cref="Html"/> returned from this method cannot write itself asynchronously;
+        /// its <see cref="CanWriteAsync"/> will return false and its <see cref="WriteAsync(TextWriter)"/> method will throw <see cref="InvalidOperationException"/>.
+        /// 
+        /// <paramref name="builderFactory"/> should generally return a newly created <see cref="HtmlBuilder"/>,
+        /// not a cached instance. Returning a cached <see cref="HtmlBuilder"/> is risky if it's possible that this
+        /// <see cref="Html"/>'s <see cref="Write(TextWriter)"/> method will be called concurrently by multiple threads.
+        /// </summary>
+        /// <param name="builderFactory">A function to create an <see cref="HtmlBuilder"/></param>
+        /// <returns>An instance of <see cref="Html"/>.</returns>
+        public static Html Builder(Func<HtmlBuilder> builderFactory)
+        {
+            if (builderFactory == null)
+            {
+                throw new ArgumentNullException(nameof(builderFactory));
+            }
+            return new Builder(builderFactory);
         }
         
         /// <summary>

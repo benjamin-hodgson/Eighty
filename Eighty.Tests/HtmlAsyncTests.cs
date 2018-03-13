@@ -5,6 +5,7 @@ using static Eighty.Html;
 using System.Threading.Tasks;
 using System.IO;
 using System.Linq;
+using Eighty.Twenty;
 
 namespace Eighty.Tests
 {
@@ -153,6 +154,20 @@ namespace Eighty.Tests
                 var html = _(img(), img(), img(), img(), img(), img(), img(), img(), img());
                 Assert.Equal("<img/><img/><img/><img/><img/><img/><img/><img/><img/>", await GetStringAsync(html));
             }
+        }
+
+        class MyHtmlBuilder : HtmlBuilder
+        {
+            protected override void Build()
+            {
+                using (a()) {}
+            }
+        }
+        [Fact]
+        public async Task Builder()
+        {
+            var html = p_(Html.Builder(() => new MyHtmlBuilder()));
+            await Assert.ThrowsAsync<InvalidOperationException>(async () => await html.WriteAsync(TextWriter.Null));
         }
 
         // attributes

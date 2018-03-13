@@ -33,7 +33,7 @@ namespace Eighty.Twenty
         {{
             StartTag(name);
             Attrs({AttrArgs(number)});
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder(name, this, true);
         }}
 ";
@@ -47,7 +47,7 @@ namespace Eighty.Twenty
         {{
             StartTag(name);
             Attrs({AttrArgs(number)});
-            Writer.WriteRaw(""/>"");
+            _writer.Get().WriteRaw(""/>"");
         }}
 ";
     }

@@ -38,7 +38,7 @@ namespace Eighty.Twenty
         {{
             StartTagRaw(""{name}"");
             {WriteAttrs(attrs)}
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder(""{name}"", this, false);
         }}
 
@@ -50,7 +50,7 @@ namespace Eighty.Twenty
         {{
             StartTagRaw(""{name}"");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder(""{name}"", this, false);
         }}
 
@@ -62,7 +62,7 @@ namespace Eighty.Twenty
         {{
             StartTagRaw(""{name}"");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder(""{name}"", this, false);
         }}
         {TagAttrs(name)}
@@ -78,7 +78,7 @@ namespace Eighty.Twenty
         {{
             StartTagRaw(""{name}"");
             {WriteAttrs(attrs)}
-            Writer.WriteRaw(""/>"");
+            _writer.Get().WriteRaw(""/>"");
         }}
         
         /// <summary>
@@ -88,7 +88,7 @@ namespace Eighty.Twenty
         {{
             StartTagRaw(""{name}"");
             Attrs(attrs);
-            Writer.WriteRaw(""/>"");
+            _writer.Get().WriteRaw(""/>"");
         }}
         
         /// <summary>
@@ -98,7 +98,7 @@ namespace Eighty.Twenty
         {{
             StartTagRaw(""{name}"");
             Attrs(attrs);
-            Writer.WriteRaw(""/>"");
+            _writer.Get().WriteRaw(""/>"");
         }}
         {SelfClosingTagAttrs(name)}
 ";
@@ -128,7 +128,7 @@ namespace Eighty.Twenty
         {{
             StartTagRaw(""{name}"");
             Attrs({AttrArgs(n)});
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder(""{name}"", this, false);
         }}"));
 
@@ -142,7 +142,7 @@ namespace Eighty.Twenty
         {{
             StartTagRaw(""{name}"");
             Attrs({AttrArgs(n)});
-            Writer.WriteRaw(""/>"");
+            _writer.Get().WriteRaw(""/>"");
         }}"));
     }
 }

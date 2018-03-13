@@ -52,7 +52,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("xmlns", xmlns));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("html", this, false);
         }
 
@@ -64,7 +64,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("html");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("html", this, false);
         }
 
@@ -76,7 +76,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("html");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("html", this, false);
         }
         
@@ -89,7 +89,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("html");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("html", this, false);
         }
 
@@ -102,7 +102,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("html");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("html", this, false);
         }
 
@@ -115,7 +115,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("html");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("html", this, false);
         }
 
@@ -128,7 +128,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("html");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("html", this, false);
         }
 
@@ -141,7 +141,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("html");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("html", this, false);
         }
 
@@ -154,7 +154,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("html");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("html", this, false);
         }
 
@@ -167,7 +167,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("html");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("html", this, false);
         }
 
@@ -180,7 +180,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("html");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("html", this, false);
         }
 
@@ -224,7 +224,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("head", this, false);
         }
 
@@ -236,7 +236,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("head");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("head", this, false);
         }
 
@@ -248,7 +248,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("head");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("head", this, false);
         }
         
@@ -261,7 +261,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("head");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("head", this, false);
         }
 
@@ -274,7 +274,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("head");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("head", this, false);
         }
 
@@ -287,7 +287,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("head");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("head", this, false);
         }
 
@@ -300,7 +300,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("head");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("head", this, false);
         }
 
@@ -313,7 +313,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("head");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("head", this, false);
         }
 
@@ -326,7 +326,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("head");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("head", this, false);
         }
 
@@ -339,7 +339,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("head");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("head", this, false);
         }
 
@@ -352,7 +352,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("head");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("head", this, false);
         }
 
@@ -396,7 +396,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("body", this, false);
         }
 
@@ -408,7 +408,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("body");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("body", this, false);
         }
 
@@ -420,7 +420,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("body");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("body", this, false);
         }
         
@@ -433,7 +433,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("body");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("body", this, false);
         }
 
@@ -446,7 +446,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("body");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("body", this, false);
         }
 
@@ -459,7 +459,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("body");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("body", this, false);
         }
 
@@ -472,7 +472,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("body");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("body", this, false);
         }
 
@@ -485,7 +485,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("body");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("body", this, false);
         }
 
@@ -498,7 +498,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("body");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("body", this, false);
         }
 
@@ -511,7 +511,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("body");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("body", this, false);
         }
 
@@ -524,7 +524,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("body");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("body", this, false);
         }
 
@@ -597,7 +597,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("sizes", sizes));
             }
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -607,7 +607,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("link");
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -617,7 +617,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("link");
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -628,7 +628,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("link");
             Attrs(attr1);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -639,7 +639,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("link");
             Attrs(attr1, attr2);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -650,7 +650,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("link");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -661,7 +661,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("link");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -672,7 +672,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("link");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -683,7 +683,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("link");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -694,7 +694,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("link");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -705,7 +705,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("link");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -757,7 +757,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("target", target));
             }
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -767,7 +767,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("base");
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -777,7 +777,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("base");
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -788,7 +788,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("base");
             Attrs(attr1);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -799,7 +799,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("base");
             Attrs(attr1, attr2);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -810,7 +810,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("base");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -821,7 +821,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("base");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -832,7 +832,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("base");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -843,7 +843,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("base");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -854,7 +854,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("base");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -865,7 +865,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("base");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -917,7 +917,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("target", target));
             }
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -927,7 +927,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("meta");
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -937,7 +937,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("meta");
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -948,7 +948,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("meta");
             Attrs(attr1);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -959,7 +959,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("meta");
             Attrs(attr1, attr2);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -970,7 +970,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("meta");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -981,7 +981,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("meta");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -992,7 +992,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("meta");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -1003,7 +1003,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("meta");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -1014,7 +1014,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("meta");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -1025,7 +1025,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("meta");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -1078,7 +1078,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("media", media));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("style", this, false);
         }
 
@@ -1090,7 +1090,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("style");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("style", this, false);
         }
 
@@ -1102,7 +1102,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("style");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("style", this, false);
         }
         
@@ -1115,7 +1115,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("style");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("style", this, false);
         }
 
@@ -1128,7 +1128,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("style");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("style", this, false);
         }
 
@@ -1141,7 +1141,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("style");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("style", this, false);
         }
 
@@ -1154,7 +1154,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("style");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("style", this, false);
         }
 
@@ -1167,7 +1167,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("style");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("style", this, false);
         }
 
@@ -1180,7 +1180,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("style");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("style", this, false);
         }
 
@@ -1193,7 +1193,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("style");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("style", this, false);
         }
 
@@ -1206,7 +1206,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("style");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("style", this, false);
         }
 
@@ -1250,7 +1250,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("title", this, false);
         }
 
@@ -1262,7 +1262,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("title");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("title", this, false);
         }
 
@@ -1274,7 +1274,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("title");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("title", this, false);
         }
         
@@ -1287,7 +1287,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("title");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("title", this, false);
         }
 
@@ -1300,7 +1300,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("title");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("title", this, false);
         }
 
@@ -1313,7 +1313,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("title");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("title", this, false);
         }
 
@@ -1326,7 +1326,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("title");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("title", this, false);
         }
 
@@ -1339,7 +1339,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("title");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("title", this, false);
         }
 
@@ -1352,7 +1352,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("title");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("title", this, false);
         }
 
@@ -1365,7 +1365,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("title");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("title", this, false);
         }
 
@@ -1378,7 +1378,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("title");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("title", this, false);
         }
 
@@ -1442,7 +1442,7 @@ namespace Eighty.Twenty
             {
                 Attr(Eighty.Attr.Raw("async"));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("script", this, false);
         }
 
@@ -1454,7 +1454,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("script");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("script", this, false);
         }
 
@@ -1466,7 +1466,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("script");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("script", this, false);
         }
         
@@ -1479,7 +1479,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("script");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("script", this, false);
         }
 
@@ -1492,7 +1492,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("script");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("script", this, false);
         }
 
@@ -1505,7 +1505,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("script");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("script", this, false);
         }
 
@@ -1518,7 +1518,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("script");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("script", this, false);
         }
 
@@ -1531,7 +1531,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("script");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("script", this, false);
         }
 
@@ -1544,7 +1544,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("script");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("script", this, false);
         }
 
@@ -1557,7 +1557,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("script");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("script", this, false);
         }
 
@@ -1570,7 +1570,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("script");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("script", this, false);
         }
 
@@ -1614,7 +1614,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("noscript", this, false);
         }
 
@@ -1626,7 +1626,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("noscript");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("noscript", this, false);
         }
 
@@ -1638,7 +1638,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("noscript");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("noscript", this, false);
         }
         
@@ -1651,7 +1651,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("noscript");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("noscript", this, false);
         }
 
@@ -1664,7 +1664,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("noscript");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("noscript", this, false);
         }
 
@@ -1677,7 +1677,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("noscript");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("noscript", this, false);
         }
 
@@ -1690,7 +1690,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("noscript");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("noscript", this, false);
         }
 
@@ -1703,7 +1703,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("noscript");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("noscript", this, false);
         }
 
@@ -1716,7 +1716,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("noscript");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("noscript", this, false);
         }
 
@@ -1729,7 +1729,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("noscript");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("noscript", this, false);
         }
 
@@ -1742,7 +1742,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("noscript");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("noscript", this, false);
         }
 
@@ -1786,7 +1786,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("main", this, false);
         }
 
@@ -1798,7 +1798,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("main");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("main", this, false);
         }
 
@@ -1810,7 +1810,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("main");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("main", this, false);
         }
         
@@ -1823,7 +1823,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("main");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("main", this, false);
         }
 
@@ -1836,7 +1836,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("main");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("main", this, false);
         }
 
@@ -1849,7 +1849,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("main");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("main", this, false);
         }
 
@@ -1862,7 +1862,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("main");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("main", this, false);
         }
 
@@ -1875,7 +1875,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("main");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("main", this, false);
         }
 
@@ -1888,7 +1888,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("main");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("main", this, false);
         }
 
@@ -1901,7 +1901,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("main");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("main", this, false);
         }
 
@@ -1914,7 +1914,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("main");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("main", this, false);
         }
 
@@ -1958,7 +1958,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("header", this, false);
         }
 
@@ -1970,7 +1970,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("header");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("header", this, false);
         }
 
@@ -1982,7 +1982,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("header");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("header", this, false);
         }
         
@@ -1995,7 +1995,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("header");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("header", this, false);
         }
 
@@ -2008,7 +2008,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("header");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("header", this, false);
         }
 
@@ -2021,7 +2021,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("header");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("header", this, false);
         }
 
@@ -2034,7 +2034,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("header");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("header", this, false);
         }
 
@@ -2047,7 +2047,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("header");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("header", this, false);
         }
 
@@ -2060,7 +2060,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("header");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("header", this, false);
         }
 
@@ -2073,7 +2073,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("header");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("header", this, false);
         }
 
@@ -2086,7 +2086,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("header");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("header", this, false);
         }
 
@@ -2130,7 +2130,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("article", this, false);
         }
 
@@ -2142,7 +2142,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("article");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("article", this, false);
         }
 
@@ -2154,7 +2154,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("article");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("article", this, false);
         }
         
@@ -2167,7 +2167,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("article");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("article", this, false);
         }
 
@@ -2180,7 +2180,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("article");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("article", this, false);
         }
 
@@ -2193,7 +2193,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("article");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("article", this, false);
         }
 
@@ -2206,7 +2206,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("article");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("article", this, false);
         }
 
@@ -2219,7 +2219,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("article");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("article", this, false);
         }
 
@@ -2232,7 +2232,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("article");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("article", this, false);
         }
 
@@ -2245,7 +2245,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("article");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("article", this, false);
         }
 
@@ -2258,7 +2258,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("article");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("article", this, false);
         }
 
@@ -2302,7 +2302,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("section", this, false);
         }
 
@@ -2314,7 +2314,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("section");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("section", this, false);
         }
 
@@ -2326,7 +2326,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("section");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("section", this, false);
         }
         
@@ -2339,7 +2339,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("section");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("section", this, false);
         }
 
@@ -2352,7 +2352,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("section");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("section", this, false);
         }
 
@@ -2365,7 +2365,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("section");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("section", this, false);
         }
 
@@ -2378,7 +2378,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("section");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("section", this, false);
         }
 
@@ -2391,7 +2391,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("section");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("section", this, false);
         }
 
@@ -2404,7 +2404,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("section");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("section", this, false);
         }
 
@@ -2417,7 +2417,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("section");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("section", this, false);
         }
 
@@ -2430,7 +2430,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("section");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("section", this, false);
         }
 
@@ -2474,7 +2474,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("footer", this, false);
         }
 
@@ -2486,7 +2486,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("footer");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("footer", this, false);
         }
 
@@ -2498,7 +2498,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("footer");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("footer", this, false);
         }
         
@@ -2511,7 +2511,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("footer");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("footer", this, false);
         }
 
@@ -2524,7 +2524,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("footer");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("footer", this, false);
         }
 
@@ -2537,7 +2537,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("footer");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("footer", this, false);
         }
 
@@ -2550,7 +2550,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("footer");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("footer", this, false);
         }
 
@@ -2563,7 +2563,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("footer");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("footer", this, false);
         }
 
@@ -2576,7 +2576,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("footer");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("footer", this, false);
         }
 
@@ -2589,7 +2589,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("footer");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("footer", this, false);
         }
 
@@ -2602,7 +2602,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("footer");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("footer", this, false);
         }
 
@@ -2646,7 +2646,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h1", this, false);
         }
 
@@ -2658,7 +2658,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h1");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h1", this, false);
         }
 
@@ -2670,7 +2670,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h1");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h1", this, false);
         }
         
@@ -2683,7 +2683,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h1");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h1", this, false);
         }
 
@@ -2696,7 +2696,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h1");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h1", this, false);
         }
 
@@ -2709,7 +2709,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h1");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h1", this, false);
         }
 
@@ -2722,7 +2722,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h1");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h1", this, false);
         }
 
@@ -2735,7 +2735,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h1");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h1", this, false);
         }
 
@@ -2748,7 +2748,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h1");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h1", this, false);
         }
 
@@ -2761,7 +2761,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h1");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h1", this, false);
         }
 
@@ -2774,7 +2774,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h1");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h1", this, false);
         }
 
@@ -2818,7 +2818,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h2", this, false);
         }
 
@@ -2830,7 +2830,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h2");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h2", this, false);
         }
 
@@ -2842,7 +2842,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h2");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h2", this, false);
         }
         
@@ -2855,7 +2855,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h2");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h2", this, false);
         }
 
@@ -2868,7 +2868,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h2");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h2", this, false);
         }
 
@@ -2881,7 +2881,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h2");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h2", this, false);
         }
 
@@ -2894,7 +2894,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h2");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h2", this, false);
         }
 
@@ -2907,7 +2907,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h2");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h2", this, false);
         }
 
@@ -2920,7 +2920,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h2");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h2", this, false);
         }
 
@@ -2933,7 +2933,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h2");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h2", this, false);
         }
 
@@ -2946,7 +2946,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h2");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h2", this, false);
         }
 
@@ -2990,7 +2990,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h3", this, false);
         }
 
@@ -3002,7 +3002,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h3");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h3", this, false);
         }
 
@@ -3014,7 +3014,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h3");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h3", this, false);
         }
         
@@ -3027,7 +3027,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h3");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h3", this, false);
         }
 
@@ -3040,7 +3040,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h3");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h3", this, false);
         }
 
@@ -3053,7 +3053,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h3");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h3", this, false);
         }
 
@@ -3066,7 +3066,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h3");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h3", this, false);
         }
 
@@ -3079,7 +3079,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h3");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h3", this, false);
         }
 
@@ -3092,7 +3092,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h3");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h3", this, false);
         }
 
@@ -3105,7 +3105,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h3");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h3", this, false);
         }
 
@@ -3118,7 +3118,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h3");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h3", this, false);
         }
 
@@ -3162,7 +3162,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h4", this, false);
         }
 
@@ -3174,7 +3174,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h4");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h4", this, false);
         }
 
@@ -3186,7 +3186,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h4");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h4", this, false);
         }
         
@@ -3199,7 +3199,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h4");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h4", this, false);
         }
 
@@ -3212,7 +3212,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h4");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h4", this, false);
         }
 
@@ -3225,7 +3225,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h4");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h4", this, false);
         }
 
@@ -3238,7 +3238,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h4");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h4", this, false);
         }
 
@@ -3251,7 +3251,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h4");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h4", this, false);
         }
 
@@ -3264,7 +3264,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h4");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h4", this, false);
         }
 
@@ -3277,7 +3277,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h4");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h4", this, false);
         }
 
@@ -3290,7 +3290,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h4");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h4", this, false);
         }
 
@@ -3334,7 +3334,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h5", this, false);
         }
 
@@ -3346,7 +3346,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h5");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h5", this, false);
         }
 
@@ -3358,7 +3358,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h5");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h5", this, false);
         }
         
@@ -3371,7 +3371,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h5");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h5", this, false);
         }
 
@@ -3384,7 +3384,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h5");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h5", this, false);
         }
 
@@ -3397,7 +3397,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h5");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h5", this, false);
         }
 
@@ -3410,7 +3410,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h5");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h5", this, false);
         }
 
@@ -3423,7 +3423,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h5");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h5", this, false);
         }
 
@@ -3436,7 +3436,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h5");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h5", this, false);
         }
 
@@ -3449,7 +3449,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h5");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h5", this, false);
         }
 
@@ -3462,7 +3462,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h5");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h5", this, false);
         }
 
@@ -3506,7 +3506,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h6", this, false);
         }
 
@@ -3518,7 +3518,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h6");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h6", this, false);
         }
 
@@ -3530,7 +3530,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h6");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h6", this, false);
         }
         
@@ -3543,7 +3543,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h6");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h6", this, false);
         }
 
@@ -3556,7 +3556,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h6");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h6", this, false);
         }
 
@@ -3569,7 +3569,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h6");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h6", this, false);
         }
 
@@ -3582,7 +3582,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h6");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h6", this, false);
         }
 
@@ -3595,7 +3595,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h6");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h6", this, false);
         }
 
@@ -3608,7 +3608,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h6");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h6", this, false);
         }
 
@@ -3621,7 +3621,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h6");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h6", this, false);
         }
 
@@ -3634,7 +3634,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("h6");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("h6", this, false);
         }
 
@@ -3678,7 +3678,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("hgroup", this, false);
         }
 
@@ -3690,7 +3690,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("hgroup");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("hgroup", this, false);
         }
 
@@ -3702,7 +3702,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("hgroup");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("hgroup", this, false);
         }
         
@@ -3715,7 +3715,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("hgroup");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("hgroup", this, false);
         }
 
@@ -3728,7 +3728,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("hgroup");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("hgroup", this, false);
         }
 
@@ -3741,7 +3741,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("hgroup");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("hgroup", this, false);
         }
 
@@ -3754,7 +3754,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("hgroup");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("hgroup", this, false);
         }
 
@@ -3767,7 +3767,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("hgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("hgroup", this, false);
         }
 
@@ -3780,7 +3780,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("hgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("hgroup", this, false);
         }
 
@@ -3793,7 +3793,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("hgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("hgroup", this, false);
         }
 
@@ -3806,7 +3806,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("hgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("hgroup", this, false);
         }
 
@@ -3850,7 +3850,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("div", this, false);
         }
 
@@ -3862,7 +3862,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("div");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("div", this, false);
         }
 
@@ -3874,7 +3874,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("div");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("div", this, false);
         }
         
@@ -3887,7 +3887,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("div");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("div", this, false);
         }
 
@@ -3900,7 +3900,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("div");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("div", this, false);
         }
 
@@ -3913,7 +3913,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("div");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("div", this, false);
         }
 
@@ -3926,7 +3926,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("div");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("div", this, false);
         }
 
@@ -3939,7 +3939,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("div");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("div", this, false);
         }
 
@@ -3952,7 +3952,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("div");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("div", this, false);
         }
 
@@ -3965,7 +3965,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("div");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("div", this, false);
         }
 
@@ -3978,7 +3978,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("div");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("div", this, false);
         }
 
@@ -4022,7 +4022,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("p", this, false);
         }
 
@@ -4034,7 +4034,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("p");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("p", this, false);
         }
 
@@ -4046,7 +4046,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("p");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("p", this, false);
         }
         
@@ -4059,7 +4059,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("p");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("p", this, false);
         }
 
@@ -4072,7 +4072,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("p");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("p", this, false);
         }
 
@@ -4085,7 +4085,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("p");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("p", this, false);
         }
 
@@ -4098,7 +4098,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("p");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("p", this, false);
         }
 
@@ -4111,7 +4111,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("p");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("p", this, false);
         }
 
@@ -4124,7 +4124,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("p");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("p", this, false);
         }
 
@@ -4137,7 +4137,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("p");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("p", this, false);
         }
 
@@ -4150,7 +4150,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("p");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("p", this, false);
         }
 
@@ -4194,7 +4194,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("pre", this, false);
         }
 
@@ -4206,7 +4206,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("pre");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("pre", this, false);
         }
 
@@ -4218,7 +4218,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("pre");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("pre", this, false);
         }
         
@@ -4231,7 +4231,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("pre");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("pre", this, false);
         }
 
@@ -4244,7 +4244,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("pre");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("pre", this, false);
         }
 
@@ -4257,7 +4257,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("pre");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("pre", this, false);
         }
 
@@ -4270,7 +4270,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("pre");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("pre", this, false);
         }
 
@@ -4283,7 +4283,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("pre");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("pre", this, false);
         }
 
@@ -4296,7 +4296,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("pre");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("pre", this, false);
         }
 
@@ -4309,7 +4309,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("pre");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("pre", this, false);
         }
 
@@ -4322,7 +4322,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("pre");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("pre", this, false);
         }
 
@@ -4366,7 +4366,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("blockquote", this, false);
         }
 
@@ -4378,7 +4378,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("blockquote");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("blockquote", this, false);
         }
 
@@ -4390,7 +4390,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("blockquote");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("blockquote", this, false);
         }
         
@@ -4403,7 +4403,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("blockquote");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("blockquote", this, false);
         }
 
@@ -4416,7 +4416,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("blockquote");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("blockquote", this, false);
         }
 
@@ -4429,7 +4429,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("blockquote");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("blockquote", this, false);
         }
 
@@ -4442,7 +4442,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("blockquote");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("blockquote", this, false);
         }
 
@@ -4455,7 +4455,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("blockquote");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("blockquote", this, false);
         }
 
@@ -4468,7 +4468,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("blockquote");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("blockquote", this, false);
         }
 
@@ -4481,7 +4481,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("blockquote");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("blockquote", this, false);
         }
 
@@ -4494,7 +4494,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("blockquote");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("blockquote", this, false);
         }
 
@@ -4538,7 +4538,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("figure", this, false);
         }
 
@@ -4550,7 +4550,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("figure");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("figure", this, false);
         }
 
@@ -4562,7 +4562,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("figure");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("figure", this, false);
         }
         
@@ -4575,7 +4575,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("figure");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("figure", this, false);
         }
 
@@ -4588,7 +4588,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("figure");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("figure", this, false);
         }
 
@@ -4601,7 +4601,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("figure");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("figure", this, false);
         }
 
@@ -4614,7 +4614,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("figure");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("figure", this, false);
         }
 
@@ -4627,7 +4627,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("figure");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("figure", this, false);
         }
 
@@ -4640,7 +4640,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("figure");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("figure", this, false);
         }
 
@@ -4653,7 +4653,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("figure");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("figure", this, false);
         }
 
@@ -4666,7 +4666,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("figure");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("figure", this, false);
         }
 
@@ -4710,7 +4710,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("figcaption", this, false);
         }
 
@@ -4722,7 +4722,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("figcaption");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("figcaption", this, false);
         }
 
@@ -4734,7 +4734,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("figcaption");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("figcaption", this, false);
         }
         
@@ -4747,7 +4747,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("figcaption");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("figcaption", this, false);
         }
 
@@ -4760,7 +4760,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("figcaption");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("figcaption", this, false);
         }
 
@@ -4773,7 +4773,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("figcaption");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("figcaption", this, false);
         }
 
@@ -4786,7 +4786,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("figcaption");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("figcaption", this, false);
         }
 
@@ -4799,7 +4799,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("figcaption");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("figcaption", this, false);
         }
 
@@ -4812,7 +4812,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("figcaption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("figcaption", this, false);
         }
 
@@ -4825,7 +4825,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("figcaption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("figcaption", this, false);
         }
 
@@ -4838,7 +4838,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("figcaption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("figcaption", this, false);
         }
 
@@ -4882,7 +4882,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("aside", this, false);
         }
 
@@ -4894,7 +4894,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("aside");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("aside", this, false);
         }
 
@@ -4906,7 +4906,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("aside");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("aside", this, false);
         }
         
@@ -4919,7 +4919,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("aside");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("aside", this, false);
         }
 
@@ -4932,7 +4932,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("aside");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("aside", this, false);
         }
 
@@ -4945,7 +4945,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("aside");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("aside", this, false);
         }
 
@@ -4958,7 +4958,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("aside");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("aside", this, false);
         }
 
@@ -4971,7 +4971,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("aside");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("aside", this, false);
         }
 
@@ -4984,7 +4984,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("aside");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("aside", this, false);
         }
 
@@ -4997,7 +4997,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("aside");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("aside", this, false);
         }
 
@@ -5010,7 +5010,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("aside");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("aside", this, false);
         }
 
@@ -5054,7 +5054,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("nav", this, false);
         }
 
@@ -5066,7 +5066,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("nav");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("nav", this, false);
         }
 
@@ -5078,7 +5078,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("nav");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("nav", this, false);
         }
         
@@ -5091,7 +5091,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("nav");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("nav", this, false);
         }
 
@@ -5104,7 +5104,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("nav");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("nav", this, false);
         }
 
@@ -5117,7 +5117,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("nav");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("nav", this, false);
         }
 
@@ -5130,7 +5130,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("nav");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("nav", this, false);
         }
 
@@ -5143,7 +5143,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("nav");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("nav", this, false);
         }
 
@@ -5156,7 +5156,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("nav");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("nav", this, false);
         }
 
@@ -5169,7 +5169,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("nav");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("nav", this, false);
         }
 
@@ -5182,7 +5182,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("nav");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("nav", this, false);
         }
 
@@ -5226,7 +5226,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("address", this, false);
         }
 
@@ -5238,7 +5238,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("address");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("address", this, false);
         }
 
@@ -5250,7 +5250,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("address");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("address", this, false);
         }
         
@@ -5263,7 +5263,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("address");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("address", this, false);
         }
 
@@ -5276,7 +5276,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("address");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("address", this, false);
         }
 
@@ -5289,7 +5289,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("address");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("address", this, false);
         }
 
@@ -5302,7 +5302,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("address");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("address", this, false);
         }
 
@@ -5315,7 +5315,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("address");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("address", this, false);
         }
 
@@ -5328,7 +5328,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("address");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("address", this, false);
         }
 
@@ -5341,7 +5341,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("address");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("address", this, false);
         }
 
@@ -5354,7 +5354,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("address");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("address", this, false);
         }
 
@@ -5423,7 +5423,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("download", download));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("a", this, false);
         }
 
@@ -5435,7 +5435,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("a");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("a", this, false);
         }
 
@@ -5447,7 +5447,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("a");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("a", this, false);
         }
         
@@ -5460,7 +5460,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("a");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("a", this, false);
         }
 
@@ -5473,7 +5473,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("a");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("a", this, false);
         }
 
@@ -5486,7 +5486,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("a");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("a", this, false);
         }
 
@@ -5499,7 +5499,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("a");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("a", this, false);
         }
 
@@ -5512,7 +5512,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("a");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("a", this, false);
         }
 
@@ -5525,7 +5525,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("a");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("a", this, false);
         }
 
@@ -5538,7 +5538,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("a");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("a", this, false);
         }
 
@@ -5551,7 +5551,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("a");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("a", this, false);
         }
 
@@ -5595,7 +5595,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("b", this, false);
         }
 
@@ -5607,7 +5607,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("b");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("b", this, false);
         }
 
@@ -5619,7 +5619,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("b");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("b", this, false);
         }
         
@@ -5632,7 +5632,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("b");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("b", this, false);
         }
 
@@ -5645,7 +5645,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("b");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("b", this, false);
         }
 
@@ -5658,7 +5658,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("b");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("b", this, false);
         }
 
@@ -5671,7 +5671,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("b");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("b", this, false);
         }
 
@@ -5684,7 +5684,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("b");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("b", this, false);
         }
 
@@ -5697,7 +5697,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("b");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("b", this, false);
         }
 
@@ -5710,7 +5710,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("b");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("b", this, false);
         }
 
@@ -5723,7 +5723,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("b");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("b", this, false);
         }
 
@@ -5767,7 +5767,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("em", this, false);
         }
 
@@ -5779,7 +5779,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("em");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("em", this, false);
         }
 
@@ -5791,7 +5791,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("em");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("em", this, false);
         }
         
@@ -5804,7 +5804,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("em");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("em", this, false);
         }
 
@@ -5817,7 +5817,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("em");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("em", this, false);
         }
 
@@ -5830,7 +5830,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("em");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("em", this, false);
         }
 
@@ -5843,7 +5843,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("em");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("em", this, false);
         }
 
@@ -5856,7 +5856,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("em");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("em", this, false);
         }
 
@@ -5869,7 +5869,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("em");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("em", this, false);
         }
 
@@ -5882,7 +5882,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("em");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("em", this, false);
         }
 
@@ -5895,7 +5895,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("em");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("em", this, false);
         }
 
@@ -5939,7 +5939,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("i", this, false);
         }
 
@@ -5951,7 +5951,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("i");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("i", this, false);
         }
 
@@ -5963,7 +5963,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("i");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("i", this, false);
         }
         
@@ -5976,7 +5976,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("i");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("i", this, false);
         }
 
@@ -5989,7 +5989,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("i");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("i", this, false);
         }
 
@@ -6002,7 +6002,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("i");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("i", this, false);
         }
 
@@ -6015,7 +6015,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("i");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("i", this, false);
         }
 
@@ -6028,7 +6028,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("i");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("i", this, false);
         }
 
@@ -6041,7 +6041,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("i");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("i", this, false);
         }
 
@@ -6054,7 +6054,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("i");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("i", this, false);
         }
 
@@ -6067,7 +6067,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("i");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("i", this, false);
         }
 
@@ -6111,7 +6111,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("mark", this, false);
         }
 
@@ -6123,7 +6123,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("mark");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("mark", this, false);
         }
 
@@ -6135,7 +6135,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("mark");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("mark", this, false);
         }
         
@@ -6148,7 +6148,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("mark");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("mark", this, false);
         }
 
@@ -6161,7 +6161,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("mark");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("mark", this, false);
         }
 
@@ -6174,7 +6174,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("mark");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("mark", this, false);
         }
 
@@ -6187,7 +6187,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("mark");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("mark", this, false);
         }
 
@@ -6200,7 +6200,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("mark");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("mark", this, false);
         }
 
@@ -6213,7 +6213,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("mark");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("mark", this, false);
         }
 
@@ -6226,7 +6226,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("mark");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("mark", this, false);
         }
 
@@ -6239,7 +6239,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("mark");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("mark", this, false);
         }
 
@@ -6288,7 +6288,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("cite", cite));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("q", this, false);
         }
 
@@ -6300,7 +6300,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("q");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("q", this, false);
         }
 
@@ -6312,7 +6312,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("q");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("q", this, false);
         }
         
@@ -6325,7 +6325,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("q");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("q", this, false);
         }
 
@@ -6338,7 +6338,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("q");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("q", this, false);
         }
 
@@ -6351,7 +6351,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("q");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("q", this, false);
         }
 
@@ -6364,7 +6364,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("q");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("q", this, false);
         }
 
@@ -6377,7 +6377,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("q");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("q", this, false);
         }
 
@@ -6390,7 +6390,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("q");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("q", this, false);
         }
 
@@ -6403,7 +6403,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("q");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("q", this, false);
         }
 
@@ -6416,7 +6416,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("q");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("q", this, false);
         }
 
@@ -6460,7 +6460,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("s", this, false);
         }
 
@@ -6472,7 +6472,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("s");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("s", this, false);
         }
 
@@ -6484,7 +6484,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("s");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("s", this, false);
         }
         
@@ -6497,7 +6497,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("s");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("s", this, false);
         }
 
@@ -6510,7 +6510,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("s");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("s", this, false);
         }
 
@@ -6523,7 +6523,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("s");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("s", this, false);
         }
 
@@ -6536,7 +6536,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("s");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("s", this, false);
         }
 
@@ -6549,7 +6549,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("s");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("s", this, false);
         }
 
@@ -6562,7 +6562,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("s");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("s", this, false);
         }
 
@@ -6575,7 +6575,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("s");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("s", this, false);
         }
 
@@ -6588,7 +6588,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("s");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("s", this, false);
         }
 
@@ -6632,7 +6632,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("small", this, false);
         }
 
@@ -6644,7 +6644,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("small");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("small", this, false);
         }
 
@@ -6656,7 +6656,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("small");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("small", this, false);
         }
         
@@ -6669,7 +6669,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("small");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("small", this, false);
         }
 
@@ -6682,7 +6682,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("small");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("small", this, false);
         }
 
@@ -6695,7 +6695,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("small");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("small", this, false);
         }
 
@@ -6708,7 +6708,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("small");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("small", this, false);
         }
 
@@ -6721,7 +6721,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("small");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("small", this, false);
         }
 
@@ -6734,7 +6734,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("small");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("small", this, false);
         }
 
@@ -6747,7 +6747,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("small");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("small", this, false);
         }
 
@@ -6760,7 +6760,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("small");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("small", this, false);
         }
 
@@ -6804,7 +6804,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("span", this, false);
         }
 
@@ -6816,7 +6816,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("span");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("span", this, false);
         }
 
@@ -6828,7 +6828,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("span");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("span", this, false);
         }
         
@@ -6841,7 +6841,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("span");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("span", this, false);
         }
 
@@ -6854,7 +6854,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("span");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("span", this, false);
         }
 
@@ -6867,7 +6867,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("span");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("span", this, false);
         }
 
@@ -6880,7 +6880,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("span");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("span", this, false);
         }
 
@@ -6893,7 +6893,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("span");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("span", this, false);
         }
 
@@ -6906,7 +6906,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("span");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("span", this, false);
         }
 
@@ -6919,7 +6919,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("span");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("span", this, false);
         }
 
@@ -6932,7 +6932,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("span");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("span", this, false);
         }
 
@@ -6976,7 +6976,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("strong", this, false);
         }
 
@@ -6988,7 +6988,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("strong");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("strong", this, false);
         }
 
@@ -7000,7 +7000,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("strong");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("strong", this, false);
         }
         
@@ -7013,7 +7013,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("strong");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("strong", this, false);
         }
 
@@ -7026,7 +7026,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("strong");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("strong", this, false);
         }
 
@@ -7039,7 +7039,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("strong");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("strong", this, false);
         }
 
@@ -7052,7 +7052,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("strong");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("strong", this, false);
         }
 
@@ -7065,7 +7065,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("strong");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("strong", this, false);
         }
 
@@ -7078,7 +7078,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("strong");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("strong", this, false);
         }
 
@@ -7091,7 +7091,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("strong");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("strong", this, false);
         }
 
@@ -7104,7 +7104,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("strong");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("strong", this, false);
         }
 
@@ -7148,7 +7148,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("sub", this, false);
         }
 
@@ -7160,7 +7160,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("sub");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("sub", this, false);
         }
 
@@ -7172,7 +7172,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("sub");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("sub", this, false);
         }
         
@@ -7185,7 +7185,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("sub");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("sub", this, false);
         }
 
@@ -7198,7 +7198,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("sub");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("sub", this, false);
         }
 
@@ -7211,7 +7211,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("sub");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("sub", this, false);
         }
 
@@ -7224,7 +7224,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("sub");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("sub", this, false);
         }
 
@@ -7237,7 +7237,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("sub");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("sub", this, false);
         }
 
@@ -7250,7 +7250,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("sub");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("sub", this, false);
         }
 
@@ -7263,7 +7263,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("sub");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("sub", this, false);
         }
 
@@ -7276,7 +7276,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("sub");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("sub", this, false);
         }
 
@@ -7320,7 +7320,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("sup", this, false);
         }
 
@@ -7332,7 +7332,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("sup");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("sup", this, false);
         }
 
@@ -7344,7 +7344,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("sup");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("sup", this, false);
         }
         
@@ -7357,7 +7357,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("sup");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("sup", this, false);
         }
 
@@ -7370,7 +7370,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("sup");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("sup", this, false);
         }
 
@@ -7383,7 +7383,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("sup");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("sup", this, false);
         }
 
@@ -7396,7 +7396,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("sup");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("sup", this, false);
         }
 
@@ -7409,7 +7409,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("sup");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("sup", this, false);
         }
 
@@ -7422,7 +7422,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("sup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("sup", this, false);
         }
 
@@ -7435,7 +7435,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("sup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("sup", this, false);
         }
 
@@ -7448,7 +7448,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("sup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("sup", this, false);
         }
 
@@ -7492,7 +7492,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("u", this, false);
         }
 
@@ -7504,7 +7504,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("u");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("u", this, false);
         }
 
@@ -7516,7 +7516,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("u");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("u", this, false);
         }
         
@@ -7529,7 +7529,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("u");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("u", this, false);
         }
 
@@ -7542,7 +7542,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("u");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("u", this, false);
         }
 
@@ -7555,7 +7555,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("u");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("u", this, false);
         }
 
@@ -7568,7 +7568,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("u");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("u", this, false);
         }
 
@@ -7581,7 +7581,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("u");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("u", this, false);
         }
 
@@ -7594,7 +7594,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("u");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("u", this, false);
         }
 
@@ -7607,7 +7607,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("u");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("u", this, false);
         }
 
@@ -7620,7 +7620,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("u");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("u", this, false);
         }
 
@@ -7663,7 +7663,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -7673,7 +7673,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("br");
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -7683,7 +7683,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("br");
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -7694,7 +7694,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("br");
             Attrs(attr1);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -7705,7 +7705,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("br");
             Attrs(attr1, attr2);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -7716,7 +7716,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("br");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -7727,7 +7727,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("br");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -7738,7 +7738,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("br");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -7749,7 +7749,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("br");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -7760,7 +7760,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("br");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -7771,7 +7771,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("br");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -7813,7 +7813,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -7823,7 +7823,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("wbr");
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -7833,7 +7833,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("wbr");
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -7844,7 +7844,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("wbr");
             Attrs(attr1);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -7855,7 +7855,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("wbr");
             Attrs(attr1, attr2);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -7866,7 +7866,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("wbr");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -7877,7 +7877,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("wbr");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -7888,7 +7888,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("wbr");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -7899,7 +7899,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("wbr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -7910,7 +7910,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("wbr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -7921,7 +7921,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("wbr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -7963,7 +7963,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -7973,7 +7973,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("hr");
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -7983,7 +7983,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("hr");
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -7994,7 +7994,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("hr");
             Attrs(attr1);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -8005,7 +8005,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("hr");
             Attrs(attr1, attr2);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -8016,7 +8016,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("hr");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -8027,7 +8027,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("hr");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -8038,7 +8038,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("hr");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -8049,7 +8049,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("hr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -8060,7 +8060,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("hr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -8071,7 +8071,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("hr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -8114,7 +8114,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("abbr", this, false);
         }
 
@@ -8126,7 +8126,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("abbr");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("abbr", this, false);
         }
 
@@ -8138,7 +8138,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("abbr");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("abbr", this, false);
         }
         
@@ -8151,7 +8151,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("abbr");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("abbr", this, false);
         }
 
@@ -8164,7 +8164,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("abbr");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("abbr", this, false);
         }
 
@@ -8177,7 +8177,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("abbr");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("abbr", this, false);
         }
 
@@ -8190,7 +8190,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("abbr");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("abbr", this, false);
         }
 
@@ -8203,7 +8203,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("abbr");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("abbr", this, false);
         }
 
@@ -8216,7 +8216,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("abbr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("abbr", this, false);
         }
 
@@ -8229,7 +8229,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("abbr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("abbr", this, false);
         }
 
@@ -8242,7 +8242,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("abbr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("abbr", this, false);
         }
 
@@ -8286,7 +8286,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("cite", this, false);
         }
 
@@ -8298,7 +8298,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("cite");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("cite", this, false);
         }
 
@@ -8310,7 +8310,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("cite");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("cite", this, false);
         }
         
@@ -8323,7 +8323,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("cite");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("cite", this, false);
         }
 
@@ -8336,7 +8336,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("cite");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("cite", this, false);
         }
 
@@ -8349,7 +8349,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("cite");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("cite", this, false);
         }
 
@@ -8362,7 +8362,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("cite");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("cite", this, false);
         }
 
@@ -8375,7 +8375,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("cite");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("cite", this, false);
         }
 
@@ -8388,7 +8388,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("cite");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("cite", this, false);
         }
 
@@ -8401,7 +8401,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("cite");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("cite", this, false);
         }
 
@@ -8414,7 +8414,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("cite");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("cite", this, false);
         }
 
@@ -8458,7 +8458,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("code", this, false);
         }
 
@@ -8470,7 +8470,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("code");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("code", this, false);
         }
 
@@ -8482,7 +8482,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("code");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("code", this, false);
         }
         
@@ -8495,7 +8495,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("code");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("code", this, false);
         }
 
@@ -8508,7 +8508,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("code");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("code", this, false);
         }
 
@@ -8521,7 +8521,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("code");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("code", this, false);
         }
 
@@ -8534,7 +8534,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("code");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("code", this, false);
         }
 
@@ -8547,7 +8547,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("code");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("code", this, false);
         }
 
@@ -8560,7 +8560,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("code");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("code", this, false);
         }
 
@@ -8573,7 +8573,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("code");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("code", this, false);
         }
 
@@ -8586,7 +8586,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("code");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("code", this, false);
         }
 
@@ -8635,7 +8635,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("value", value));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("data", this, false);
         }
 
@@ -8647,7 +8647,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("data");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("data", this, false);
         }
 
@@ -8659,7 +8659,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("data");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("data", this, false);
         }
         
@@ -8672,7 +8672,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("data");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("data", this, false);
         }
 
@@ -8685,7 +8685,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("data");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("data", this, false);
         }
 
@@ -8698,7 +8698,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("data");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("data", this, false);
         }
 
@@ -8711,7 +8711,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("data");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("data", this, false);
         }
 
@@ -8724,7 +8724,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("data");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("data", this, false);
         }
 
@@ -8737,7 +8737,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("data");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("data", this, false);
         }
 
@@ -8750,7 +8750,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("data");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("data", this, false);
         }
 
@@ -8763,7 +8763,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("data");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("data", this, false);
         }
 
@@ -8807,7 +8807,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dfn", this, false);
         }
 
@@ -8819,7 +8819,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dfn");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dfn", this, false);
         }
 
@@ -8831,7 +8831,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dfn");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dfn", this, false);
         }
         
@@ -8844,7 +8844,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dfn");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dfn", this, false);
         }
 
@@ -8857,7 +8857,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dfn");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dfn", this, false);
         }
 
@@ -8870,7 +8870,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dfn");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dfn", this, false);
         }
 
@@ -8883,7 +8883,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dfn");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dfn", this, false);
         }
 
@@ -8896,7 +8896,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dfn");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dfn", this, false);
         }
 
@@ -8909,7 +8909,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dfn");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dfn", this, false);
         }
 
@@ -8922,7 +8922,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dfn");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dfn", this, false);
         }
 
@@ -8935,7 +8935,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dfn");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dfn", this, false);
         }
 
@@ -8979,7 +8979,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("kbd", this, false);
         }
 
@@ -8991,7 +8991,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("kbd");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("kbd", this, false);
         }
 
@@ -9003,7 +9003,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("kbd");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("kbd", this, false);
         }
         
@@ -9016,7 +9016,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("kbd");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("kbd", this, false);
         }
 
@@ -9029,7 +9029,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("kbd");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("kbd", this, false);
         }
 
@@ -9042,7 +9042,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("kbd");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("kbd", this, false);
         }
 
@@ -9055,7 +9055,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("kbd");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("kbd", this, false);
         }
 
@@ -9068,7 +9068,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("kbd");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("kbd", this, false);
         }
 
@@ -9081,7 +9081,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("kbd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("kbd", this, false);
         }
 
@@ -9094,7 +9094,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("kbd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("kbd", this, false);
         }
 
@@ -9107,7 +9107,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("kbd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("kbd", this, false);
         }
 
@@ -9151,7 +9151,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("samp", this, false);
         }
 
@@ -9163,7 +9163,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("samp");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("samp", this, false);
         }
 
@@ -9175,7 +9175,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("samp");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("samp", this, false);
         }
         
@@ -9188,7 +9188,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("samp");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("samp", this, false);
         }
 
@@ -9201,7 +9201,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("samp");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("samp", this, false);
         }
 
@@ -9214,7 +9214,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("samp");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("samp", this, false);
         }
 
@@ -9227,7 +9227,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("samp");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("samp", this, false);
         }
 
@@ -9240,7 +9240,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("samp");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("samp", this, false);
         }
 
@@ -9253,7 +9253,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("samp");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("samp", this, false);
         }
 
@@ -9266,7 +9266,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("samp");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("samp", this, false);
         }
 
@@ -9279,7 +9279,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("samp");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("samp", this, false);
         }
 
@@ -9328,7 +9328,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("datetime", datetime));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("time", this, false);
         }
 
@@ -9340,7 +9340,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("time");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("time", this, false);
         }
 
@@ -9352,7 +9352,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("time");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("time", this, false);
         }
         
@@ -9365,7 +9365,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("time");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("time", this, false);
         }
 
@@ -9378,7 +9378,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("time");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("time", this, false);
         }
 
@@ -9391,7 +9391,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("time");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("time", this, false);
         }
 
@@ -9404,7 +9404,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("time");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("time", this, false);
         }
 
@@ -9417,7 +9417,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("time");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("time", this, false);
         }
 
@@ -9430,7 +9430,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("time");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("time", this, false);
         }
 
@@ -9443,7 +9443,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("time");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("time", this, false);
         }
 
@@ -9456,7 +9456,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("time");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("time", this, false);
         }
 
@@ -9515,7 +9515,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("start", start));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("ol", this, false);
         }
 
@@ -9527,7 +9527,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("ol");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("ol", this, false);
         }
 
@@ -9539,7 +9539,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("ol");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("ol", this, false);
         }
         
@@ -9552,7 +9552,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("ol");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("ol", this, false);
         }
 
@@ -9565,7 +9565,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("ol");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("ol", this, false);
         }
 
@@ -9578,7 +9578,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("ol");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("ol", this, false);
         }
 
@@ -9591,7 +9591,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("ol");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("ol", this, false);
         }
 
@@ -9604,7 +9604,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("ol");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("ol", this, false);
         }
 
@@ -9617,7 +9617,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("ol");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("ol", this, false);
         }
 
@@ -9630,7 +9630,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("ol");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("ol", this, false);
         }
 
@@ -9643,7 +9643,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("ol");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("ol", this, false);
         }
 
@@ -9702,7 +9702,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("start", start));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("ul", this, false);
         }
 
@@ -9714,7 +9714,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("ul");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("ul", this, false);
         }
 
@@ -9726,7 +9726,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("ul");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("ul", this, false);
         }
         
@@ -9739,7 +9739,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("ul");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("ul", this, false);
         }
 
@@ -9752,7 +9752,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("ul");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("ul", this, false);
         }
 
@@ -9765,7 +9765,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("ul");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("ul", this, false);
         }
 
@@ -9778,7 +9778,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("ul");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("ul", this, false);
         }
 
@@ -9791,7 +9791,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("ul");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("ul", this, false);
         }
 
@@ -9804,7 +9804,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("ul");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("ul", this, false);
         }
 
@@ -9817,7 +9817,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("ul");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("ul", this, false);
         }
 
@@ -9830,7 +9830,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("ul");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("ul", this, false);
         }
 
@@ -9879,7 +9879,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("value", value));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("li", this, false);
         }
 
@@ -9891,7 +9891,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("li");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("li", this, false);
         }
 
@@ -9903,7 +9903,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("li");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("li", this, false);
         }
         
@@ -9916,7 +9916,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("li");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("li", this, false);
         }
 
@@ -9929,7 +9929,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("li");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("li", this, false);
         }
 
@@ -9942,7 +9942,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("li");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("li", this, false);
         }
 
@@ -9955,7 +9955,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("li");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("li", this, false);
         }
 
@@ -9968,7 +9968,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("li");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("li", this, false);
         }
 
@@ -9981,7 +9981,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("li");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("li", this, false);
         }
 
@@ -9994,7 +9994,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("li");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("li", this, false);
         }
 
@@ -10007,7 +10007,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("li");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("li", this, false);
         }
 
@@ -10051,7 +10051,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dl", this, false);
         }
 
@@ -10063,7 +10063,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dl");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dl", this, false);
         }
 
@@ -10075,7 +10075,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dl");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dl", this, false);
         }
         
@@ -10088,7 +10088,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dl");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dl", this, false);
         }
 
@@ -10101,7 +10101,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dl");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dl", this, false);
         }
 
@@ -10114,7 +10114,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dl");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dl", this, false);
         }
 
@@ -10127,7 +10127,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dl");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dl", this, false);
         }
 
@@ -10140,7 +10140,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dl");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dl", this, false);
         }
 
@@ -10153,7 +10153,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dl");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dl", this, false);
         }
 
@@ -10166,7 +10166,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dl");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dl", this, false);
         }
 
@@ -10179,7 +10179,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dl");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dl", this, false);
         }
 
@@ -10223,7 +10223,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dt", this, false);
         }
 
@@ -10235,7 +10235,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dt");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dt", this, false);
         }
 
@@ -10247,7 +10247,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dt");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dt", this, false);
         }
         
@@ -10260,7 +10260,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dt");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dt", this, false);
         }
 
@@ -10273,7 +10273,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dt");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dt", this, false);
         }
 
@@ -10286,7 +10286,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dt");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dt", this, false);
         }
 
@@ -10299,7 +10299,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dt");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dt", this, false);
         }
 
@@ -10312,7 +10312,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dt");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dt", this, false);
         }
 
@@ -10325,7 +10325,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dt");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dt", this, false);
         }
 
@@ -10338,7 +10338,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dt");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dt", this, false);
         }
 
@@ -10351,7 +10351,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dt");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dt", this, false);
         }
 
@@ -10395,7 +10395,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dd", this, false);
         }
 
@@ -10407,7 +10407,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dd");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dd", this, false);
         }
 
@@ -10419,7 +10419,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dd");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dd", this, false);
         }
         
@@ -10432,7 +10432,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dd");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dd", this, false);
         }
 
@@ -10445,7 +10445,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dd");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dd", this, false);
         }
 
@@ -10458,7 +10458,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dd");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dd", this, false);
         }
 
@@ -10471,7 +10471,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dd");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dd", this, false);
         }
 
@@ -10484,7 +10484,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dd");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dd", this, false);
         }
 
@@ -10497,7 +10497,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dd", this, false);
         }
 
@@ -10510,7 +10510,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dd", this, false);
         }
 
@@ -10523,7 +10523,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dd", this, false);
         }
 
@@ -10567,7 +10567,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("table", this, false);
         }
 
@@ -10579,7 +10579,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("table");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("table", this, false);
         }
 
@@ -10591,7 +10591,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("table");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("table", this, false);
         }
         
@@ -10604,7 +10604,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("table");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("table", this, false);
         }
 
@@ -10617,7 +10617,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("table");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("table", this, false);
         }
 
@@ -10630,7 +10630,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("table");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("table", this, false);
         }
 
@@ -10643,7 +10643,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("table");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("table", this, false);
         }
 
@@ -10656,7 +10656,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("table");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("table", this, false);
         }
 
@@ -10669,7 +10669,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("table");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("table", this, false);
         }
 
@@ -10682,7 +10682,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("table");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("table", this, false);
         }
 
@@ -10695,7 +10695,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("table");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("table", this, false);
         }
 
@@ -10739,7 +10739,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("caption", this, false);
         }
 
@@ -10751,7 +10751,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("caption");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("caption", this, false);
         }
 
@@ -10763,7 +10763,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("caption");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("caption", this, false);
         }
         
@@ -10776,7 +10776,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("caption");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("caption", this, false);
         }
 
@@ -10789,7 +10789,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("caption");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("caption", this, false);
         }
 
@@ -10802,7 +10802,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("caption");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("caption", this, false);
         }
 
@@ -10815,7 +10815,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("caption");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("caption", this, false);
         }
 
@@ -10828,7 +10828,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("caption");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("caption", this, false);
         }
 
@@ -10841,7 +10841,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("caption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("caption", this, false);
         }
 
@@ -10854,7 +10854,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("caption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("caption", this, false);
         }
 
@@ -10867,7 +10867,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("caption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("caption", this, false);
         }
 
@@ -10911,7 +10911,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("thead", this, false);
         }
 
@@ -10923,7 +10923,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("thead");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("thead", this, false);
         }
 
@@ -10935,7 +10935,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("thead");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("thead", this, false);
         }
         
@@ -10948,7 +10948,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("thead");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("thead", this, false);
         }
 
@@ -10961,7 +10961,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("thead");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("thead", this, false);
         }
 
@@ -10974,7 +10974,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("thead");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("thead", this, false);
         }
 
@@ -10987,7 +10987,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("thead");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("thead", this, false);
         }
 
@@ -11000,7 +11000,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("thead");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("thead", this, false);
         }
 
@@ -11013,7 +11013,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("thead");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("thead", this, false);
         }
 
@@ -11026,7 +11026,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("thead");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("thead", this, false);
         }
 
@@ -11039,7 +11039,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("thead");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("thead", this, false);
         }
 
@@ -11088,7 +11088,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("span", span));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("colgroup", this, false);
         }
 
@@ -11100,7 +11100,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("colgroup");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("colgroup", this, false);
         }
 
@@ -11112,7 +11112,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("colgroup");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("colgroup", this, false);
         }
         
@@ -11125,7 +11125,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("colgroup");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("colgroup", this, false);
         }
 
@@ -11138,7 +11138,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("colgroup");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("colgroup", this, false);
         }
 
@@ -11151,7 +11151,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("colgroup");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("colgroup", this, false);
         }
 
@@ -11164,7 +11164,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("colgroup");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("colgroup", this, false);
         }
 
@@ -11177,7 +11177,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("colgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("colgroup", this, false);
         }
 
@@ -11190,7 +11190,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("colgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("colgroup", this, false);
         }
 
@@ -11203,7 +11203,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("colgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("colgroup", this, false);
         }
 
@@ -11216,7 +11216,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("colgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("colgroup", this, false);
         }
 
@@ -11265,7 +11265,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("span", span));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("col", this, false);
         }
 
@@ -11277,7 +11277,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("col");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("col", this, false);
         }
 
@@ -11289,7 +11289,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("col");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("col", this, false);
         }
         
@@ -11302,7 +11302,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("col");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("col", this, false);
         }
 
@@ -11315,7 +11315,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("col");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("col", this, false);
         }
 
@@ -11328,7 +11328,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("col");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("col", this, false);
         }
 
@@ -11341,7 +11341,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("col");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("col", this, false);
         }
 
@@ -11354,7 +11354,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("col");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("col", this, false);
         }
 
@@ -11367,7 +11367,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("col");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("col", this, false);
         }
 
@@ -11380,7 +11380,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("col");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("col", this, false);
         }
 
@@ -11393,7 +11393,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("col");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("col", this, false);
         }
 
@@ -11437,7 +11437,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tbody", this, false);
         }
 
@@ -11449,7 +11449,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tbody");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tbody", this, false);
         }
 
@@ -11461,7 +11461,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tbody");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tbody", this, false);
         }
         
@@ -11474,7 +11474,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tbody");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tbody", this, false);
         }
 
@@ -11487,7 +11487,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tbody");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tbody", this, false);
         }
 
@@ -11500,7 +11500,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tbody");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tbody", this, false);
         }
 
@@ -11513,7 +11513,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tbody");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tbody", this, false);
         }
 
@@ -11526,7 +11526,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tbody");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tbody", this, false);
         }
 
@@ -11539,7 +11539,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tbody");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tbody", this, false);
         }
 
@@ -11552,7 +11552,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tbody");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tbody", this, false);
         }
 
@@ -11565,7 +11565,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tbody");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tbody", this, false);
         }
 
@@ -11609,7 +11609,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tr", this, false);
         }
 
@@ -11621,7 +11621,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tr");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tr", this, false);
         }
 
@@ -11633,7 +11633,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tr");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tr", this, false);
         }
         
@@ -11646,7 +11646,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tr");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tr", this, false);
         }
 
@@ -11659,7 +11659,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tr");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tr", this, false);
         }
 
@@ -11672,7 +11672,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tr");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tr", this, false);
         }
 
@@ -11685,7 +11685,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tr");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tr", this, false);
         }
 
@@ -11698,7 +11698,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tr");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tr", this, false);
         }
 
@@ -11711,7 +11711,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tr", this, false);
         }
 
@@ -11724,7 +11724,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tr", this, false);
         }
 
@@ -11737,7 +11737,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tr", this, false);
         }
 
@@ -11801,7 +11801,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("scope", scope));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("th", this, false);
         }
 
@@ -11813,7 +11813,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("th");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("th", this, false);
         }
 
@@ -11825,7 +11825,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("th");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("th", this, false);
         }
         
@@ -11838,7 +11838,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("th");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("th", this, false);
         }
 
@@ -11851,7 +11851,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("th");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("th", this, false);
         }
 
@@ -11864,7 +11864,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("th");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("th", this, false);
         }
 
@@ -11877,7 +11877,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("th");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("th", this, false);
         }
 
@@ -11890,7 +11890,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("th");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("th", this, false);
         }
 
@@ -11903,7 +11903,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("th");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("th", this, false);
         }
 
@@ -11916,7 +11916,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("th");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("th", this, false);
         }
 
@@ -11929,7 +11929,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("th");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("th", this, false);
         }
 
@@ -11988,7 +11988,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("headers", headers));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("td", this, false);
         }
 
@@ -12000,7 +12000,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("td");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("td", this, false);
         }
 
@@ -12012,7 +12012,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("td");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("td", this, false);
         }
         
@@ -12025,7 +12025,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("td");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("td", this, false);
         }
 
@@ -12038,7 +12038,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("td");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("td", this, false);
         }
 
@@ -12051,7 +12051,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("td");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("td", this, false);
         }
 
@@ -12064,7 +12064,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("td");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("td", this, false);
         }
 
@@ -12077,7 +12077,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("td");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("td", this, false);
         }
 
@@ -12090,7 +12090,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("td");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("td", this, false);
         }
 
@@ -12103,7 +12103,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("td");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("td", this, false);
         }
 
@@ -12116,7 +12116,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("td");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("td", this, false);
         }
 
@@ -12160,7 +12160,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tfoot", this, false);
         }
 
@@ -12172,7 +12172,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tfoot");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tfoot", this, false);
         }
 
@@ -12184,7 +12184,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tfoot");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tfoot", this, false);
         }
         
@@ -12197,7 +12197,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tfoot");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tfoot", this, false);
         }
 
@@ -12210,7 +12210,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tfoot");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tfoot", this, false);
         }
 
@@ -12223,7 +12223,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tfoot");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tfoot", this, false);
         }
 
@@ -12236,7 +12236,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tfoot");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tfoot", this, false);
         }
 
@@ -12249,7 +12249,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tfoot");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tfoot", this, false);
         }
 
@@ -12262,7 +12262,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tfoot");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tfoot", this, false);
         }
 
@@ -12275,7 +12275,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tfoot");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tfoot", this, false);
         }
 
@@ -12288,7 +12288,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("tfoot");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("tfoot", this, false);
         }
 
@@ -12367,7 +12367,7 @@ namespace Eighty.Twenty
             {
                 Attr(Eighty.Attr.Raw("novalidate"));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("form", this, false);
         }
 
@@ -12379,7 +12379,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("form");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("form", this, false);
         }
 
@@ -12391,7 +12391,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("form");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("form", this, false);
         }
         
@@ -12404,7 +12404,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("form");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("form", this, false);
         }
 
@@ -12417,7 +12417,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("form");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("form", this, false);
         }
 
@@ -12430,7 +12430,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("form");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("form", this, false);
         }
 
@@ -12443,7 +12443,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("form");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("form", this, false);
         }
 
@@ -12456,7 +12456,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("form");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("form", this, false);
         }
 
@@ -12469,7 +12469,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("form");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("form", this, false);
         }
 
@@ -12482,7 +12482,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("form");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("form", this, false);
         }
 
@@ -12495,7 +12495,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("form");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("form", this, false);
         }
 
@@ -12554,7 +12554,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("form", form));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("fieldset", this, false);
         }
 
@@ -12566,7 +12566,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("fieldset");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("fieldset", this, false);
         }
 
@@ -12578,7 +12578,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("fieldset");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("fieldset", this, false);
         }
         
@@ -12591,7 +12591,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("fieldset");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("fieldset", this, false);
         }
 
@@ -12604,7 +12604,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("fieldset");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("fieldset", this, false);
         }
 
@@ -12617,7 +12617,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("fieldset");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("fieldset", this, false);
         }
 
@@ -12630,7 +12630,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("fieldset");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("fieldset", this, false);
         }
 
@@ -12643,7 +12643,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("fieldset");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("fieldset", this, false);
         }
 
@@ -12656,7 +12656,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("fieldset");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("fieldset", this, false);
         }
 
@@ -12669,7 +12669,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("fieldset");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("fieldset", this, false);
         }
 
@@ -12682,7 +12682,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("fieldset");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("fieldset", this, false);
         }
 
@@ -12731,7 +12731,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("for", @for));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("label", this, false);
         }
 
@@ -12743,7 +12743,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("label");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("label", this, false);
         }
 
@@ -12755,7 +12755,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("label");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("label", this, false);
         }
         
@@ -12768,7 +12768,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("label");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("label", this, false);
         }
 
@@ -12781,7 +12781,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("label");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("label", this, false);
         }
 
@@ -12794,7 +12794,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("label");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("label", this, false);
         }
 
@@ -12807,7 +12807,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("label");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("label", this, false);
         }
 
@@ -12820,7 +12820,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("label");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("label", this, false);
         }
 
@@ -12833,7 +12833,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("label");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("label", this, false);
         }
 
@@ -12846,7 +12846,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("label");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("label", this, false);
         }
 
@@ -12859,7 +12859,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("label");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("label", this, false);
         }
 
@@ -13043,7 +13043,7 @@ namespace Eighty.Twenty
             {
                 Attr(Eighty.Attr.Raw("formnovalidate"));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("input", this, false);
         }
 
@@ -13055,7 +13055,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("input");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("input", this, false);
         }
 
@@ -13067,7 +13067,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("input");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("input", this, false);
         }
         
@@ -13080,7 +13080,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("input");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("input", this, false);
         }
 
@@ -13093,7 +13093,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("input");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("input", this, false);
         }
 
@@ -13106,7 +13106,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("input");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("input", this, false);
         }
 
@@ -13119,7 +13119,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("input");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("input", this, false);
         }
 
@@ -13132,7 +13132,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("input");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("input", this, false);
         }
 
@@ -13145,7 +13145,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("input");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("input", this, false);
         }
 
@@ -13158,7 +13158,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("input");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("input", this, false);
         }
 
@@ -13171,7 +13171,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("input");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("input", this, false);
         }
 
@@ -13285,7 +13285,7 @@ namespace Eighty.Twenty
             {
                 Attr(Eighty.Attr.Raw("formnovalidate"));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("button", this, false);
         }
 
@@ -13297,7 +13297,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("button");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("button", this, false);
         }
 
@@ -13309,7 +13309,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("button");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("button", this, false);
         }
         
@@ -13322,7 +13322,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("button");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("button", this, false);
         }
 
@@ -13335,7 +13335,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("button");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("button", this, false);
         }
 
@@ -13348,7 +13348,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("button");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("button", this, false);
         }
 
@@ -13361,7 +13361,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("button");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("button", this, false);
         }
 
@@ -13374,7 +13374,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("button");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("button", this, false);
         }
 
@@ -13387,7 +13387,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("button");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("button", this, false);
         }
 
@@ -13400,7 +13400,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("button");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("button", this, false);
         }
 
@@ -13413,7 +13413,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("button");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("button", this, false);
         }
 
@@ -13527,7 +13527,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("form", form));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("textarea", this, false);
         }
 
@@ -13539,7 +13539,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("textarea");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("textarea", this, false);
         }
 
@@ -13551,7 +13551,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("textarea");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("textarea", this, false);
         }
         
@@ -13564,7 +13564,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("textarea");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("textarea", this, false);
         }
 
@@ -13577,7 +13577,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("textarea");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("textarea", this, false);
         }
 
@@ -13590,7 +13590,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("textarea");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("textarea", this, false);
         }
 
@@ -13603,7 +13603,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("textarea");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("textarea", this, false);
         }
 
@@ -13616,7 +13616,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("textarea");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("textarea", this, false);
         }
 
@@ -13629,7 +13629,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("textarea");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("textarea", this, false);
         }
 
@@ -13642,7 +13642,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("textarea");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("textarea", this, false);
         }
 
@@ -13655,7 +13655,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("textarea");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("textarea", this, false);
         }
 
@@ -13699,7 +13699,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("datalist", this, false);
         }
 
@@ -13711,7 +13711,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("datalist");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("datalist", this, false);
         }
 
@@ -13723,7 +13723,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("datalist");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("datalist", this, false);
         }
         
@@ -13736,7 +13736,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("datalist");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("datalist", this, false);
         }
 
@@ -13749,7 +13749,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("datalist");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("datalist", this, false);
         }
 
@@ -13762,7 +13762,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("datalist");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("datalist", this, false);
         }
 
@@ -13775,7 +13775,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("datalist");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("datalist", this, false);
         }
 
@@ -13788,7 +13788,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("datalist");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("datalist", this, false);
         }
 
@@ -13801,7 +13801,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("datalist");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("datalist", this, false);
         }
 
@@ -13814,7 +13814,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("datalist");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("datalist", this, false);
         }
 
@@ -13827,7 +13827,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("datalist");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("datalist", this, false);
         }
 
@@ -13881,7 +13881,7 @@ namespace Eighty.Twenty
             {
                 Attr(Eighty.Attr.Raw("disabled"));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("optgroup", this, false);
         }
 
@@ -13893,7 +13893,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("optgroup");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("optgroup", this, false);
         }
 
@@ -13905,7 +13905,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("optgroup");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("optgroup", this, false);
         }
         
@@ -13918,7 +13918,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("optgroup");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("optgroup", this, false);
         }
 
@@ -13931,7 +13931,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("optgroup");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("optgroup", this, false);
         }
 
@@ -13944,7 +13944,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("optgroup");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("optgroup", this, false);
         }
 
@@ -13957,7 +13957,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("optgroup");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("optgroup", this, false);
         }
 
@@ -13970,7 +13970,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("optgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("optgroup", this, false);
         }
 
@@ -13983,7 +13983,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("optgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("optgroup", this, false);
         }
 
@@ -13996,7 +13996,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("optgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("optgroup", this, false);
         }
 
@@ -14009,7 +14009,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("optgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("optgroup", this, false);
         }
 
@@ -14088,7 +14088,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("form", form));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("select", this, false);
         }
 
@@ -14100,7 +14100,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("select");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("select", this, false);
         }
 
@@ -14112,7 +14112,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("select");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("select", this, false);
         }
         
@@ -14125,7 +14125,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("select");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("select", this, false);
         }
 
@@ -14138,7 +14138,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("select");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("select", this, false);
         }
 
@@ -14151,7 +14151,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("select");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("select", this, false);
         }
 
@@ -14164,7 +14164,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("select");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("select", this, false);
         }
 
@@ -14177,7 +14177,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("select");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("select", this, false);
         }
 
@@ -14190,7 +14190,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("select");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("select", this, false);
         }
 
@@ -14203,7 +14203,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("select");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("select", this, false);
         }
 
@@ -14216,7 +14216,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("select");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("select", this, false);
         }
 
@@ -14280,7 +14280,7 @@ namespace Eighty.Twenty
             {
                 Attr(Eighty.Attr.Raw("selected"));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("option", this, false);
         }
 
@@ -14292,7 +14292,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("option");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("option", this, false);
         }
 
@@ -14304,7 +14304,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("option");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("option", this, false);
         }
         
@@ -14317,7 +14317,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("option");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("option", this, false);
         }
 
@@ -14330,7 +14330,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("option");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("option", this, false);
         }
 
@@ -14343,7 +14343,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("option");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("option", this, false);
         }
 
@@ -14356,7 +14356,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("option");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("option", this, false);
         }
 
@@ -14369,7 +14369,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("option");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("option", this, false);
         }
 
@@ -14382,7 +14382,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("option");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("option", this, false);
         }
 
@@ -14395,7 +14395,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("option");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("option", this, false);
         }
 
@@ -14408,7 +14408,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("option");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("option", this, false);
         }
 
@@ -14452,7 +14452,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("legend", this, false);
         }
 
@@ -14464,7 +14464,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("legend");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("legend", this, false);
         }
 
@@ -14476,7 +14476,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("legend");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("legend", this, false);
         }
         
@@ -14489,7 +14489,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("legend");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("legend", this, false);
         }
 
@@ -14502,7 +14502,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("legend");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("legend", this, false);
         }
 
@@ -14515,7 +14515,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("legend");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("legend", this, false);
         }
 
@@ -14528,7 +14528,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("legend");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("legend", this, false);
         }
 
@@ -14541,7 +14541,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("legend");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("legend", this, false);
         }
 
@@ -14554,7 +14554,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("legend");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("legend", this, false);
         }
 
@@ -14567,7 +14567,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("legend");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("legend", this, false);
         }
 
@@ -14580,7 +14580,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("legend");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("legend", this, false);
         }
 
@@ -14659,7 +14659,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("optimum", optimum));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("meter", this, false);
         }
 
@@ -14671,7 +14671,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("meter");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("meter", this, false);
         }
 
@@ -14683,7 +14683,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("meter");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("meter", this, false);
         }
         
@@ -14696,7 +14696,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("meter");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("meter", this, false);
         }
 
@@ -14709,7 +14709,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("meter");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("meter", this, false);
         }
 
@@ -14722,7 +14722,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("meter");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("meter", this, false);
         }
 
@@ -14735,7 +14735,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("meter");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("meter", this, false);
         }
 
@@ -14748,7 +14748,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("meter");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("meter", this, false);
         }
 
@@ -14761,7 +14761,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("meter");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("meter", this, false);
         }
 
@@ -14774,7 +14774,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("meter");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("meter", this, false);
         }
 
@@ -14787,7 +14787,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("meter");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("meter", this, false);
         }
 
@@ -14846,7 +14846,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("form", form));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("output", this, false);
         }
 
@@ -14858,7 +14858,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("output");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("output", this, false);
         }
 
@@ -14870,7 +14870,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("output");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("output", this, false);
         }
         
@@ -14883,7 +14883,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("output");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("output", this, false);
         }
 
@@ -14896,7 +14896,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("output");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("output", this, false);
         }
 
@@ -14909,7 +14909,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("output");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("output", this, false);
         }
 
@@ -14922,7 +14922,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("output");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("output", this, false);
         }
 
@@ -14935,7 +14935,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("output");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("output", this, false);
         }
 
@@ -14948,7 +14948,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("output");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("output", this, false);
         }
 
@@ -14961,7 +14961,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("output");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("output", this, false);
         }
 
@@ -14974,7 +14974,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("output");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("output", this, false);
         }
 
@@ -15028,7 +15028,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("max", max));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("progress", this, false);
         }
 
@@ -15040,7 +15040,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("progress");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("progress", this, false);
         }
 
@@ -15052,7 +15052,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("progress");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("progress", this, false);
         }
         
@@ -15065,7 +15065,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("progress");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("progress", this, false);
         }
 
@@ -15078,7 +15078,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("progress");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("progress", this, false);
         }
 
@@ -15091,7 +15091,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("progress");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("progress", this, false);
         }
 
@@ -15104,7 +15104,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("progress");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("progress", this, false);
         }
 
@@ -15117,7 +15117,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("progress");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("progress", this, false);
         }
 
@@ -15130,7 +15130,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("progress");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("progress", this, false);
         }
 
@@ -15143,7 +15143,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("progress");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("progress", this, false);
         }
 
@@ -15156,7 +15156,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("progress");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("progress", this, false);
         }
 
@@ -15210,7 +15210,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("label", label));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("menu", this, false);
         }
 
@@ -15222,7 +15222,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("menu");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("menu", this, false);
         }
 
@@ -15234,7 +15234,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("menu");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("menu", this, false);
         }
         
@@ -15247,7 +15247,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("menu");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("menu", this, false);
         }
 
@@ -15260,7 +15260,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("menu");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("menu", this, false);
         }
 
@@ -15273,7 +15273,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("menu");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("menu", this, false);
         }
 
@@ -15286,7 +15286,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("menu");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("menu", this, false);
         }
 
@@ -15299,7 +15299,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("menu");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("menu", this, false);
         }
 
@@ -15312,7 +15312,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("menu");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("menu", this, false);
         }
 
@@ -15325,7 +15325,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("menu");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("menu", this, false);
         }
 
@@ -15338,7 +15338,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("menu");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("menu", this, false);
         }
 
@@ -15422,7 +15422,7 @@ namespace Eighty.Twenty
             {
                 Attr(Eighty.Attr.Raw("checked"));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("menuitem", this, false);
         }
 
@@ -15434,7 +15434,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("menuitem");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("menuitem", this, false);
         }
 
@@ -15446,7 +15446,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("menuitem");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("menuitem", this, false);
         }
         
@@ -15459,7 +15459,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("menuitem");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("menuitem", this, false);
         }
 
@@ -15472,7 +15472,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("menuitem");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("menuitem", this, false);
         }
 
@@ -15485,7 +15485,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("menuitem");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("menuitem", this, false);
         }
 
@@ -15498,7 +15498,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("menuitem");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("menuitem", this, false);
         }
 
@@ -15511,7 +15511,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("menuitem");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("menuitem", this, false);
         }
 
@@ -15524,7 +15524,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("menuitem");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("menuitem", this, false);
         }
 
@@ -15537,7 +15537,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("menuitem");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("menuitem", this, false);
         }
 
@@ -15550,7 +15550,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("menuitem");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("menuitem", this, false);
         }
 
@@ -15599,7 +15599,7 @@ namespace Eighty.Twenty
             {
                 Attr(Eighty.Attr.Raw("open"));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dialog", this, false);
         }
 
@@ -15611,7 +15611,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dialog");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dialog", this, false);
         }
 
@@ -15623,7 +15623,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dialog");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dialog", this, false);
         }
         
@@ -15636,7 +15636,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dialog");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dialog", this, false);
         }
 
@@ -15649,7 +15649,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dialog");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dialog", this, false);
         }
 
@@ -15662,7 +15662,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dialog");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dialog", this, false);
         }
 
@@ -15675,7 +15675,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dialog");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dialog", this, false);
         }
 
@@ -15688,7 +15688,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dialog");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dialog", this, false);
         }
 
@@ -15701,7 +15701,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dialog");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dialog", this, false);
         }
 
@@ -15714,7 +15714,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dialog");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dialog", this, false);
         }
 
@@ -15727,7 +15727,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("dialog");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("dialog", this, false);
         }
 
@@ -15776,7 +15776,7 @@ namespace Eighty.Twenty
             {
                 Attr(Eighty.Attr.Raw("open"));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("details", this, false);
         }
 
@@ -15788,7 +15788,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("details");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("details", this, false);
         }
 
@@ -15800,7 +15800,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("details");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("details", this, false);
         }
         
@@ -15813,7 +15813,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("details");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("details", this, false);
         }
 
@@ -15826,7 +15826,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("details");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("details", this, false);
         }
 
@@ -15839,7 +15839,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("details");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("details", this, false);
         }
 
@@ -15852,7 +15852,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("details");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("details", this, false);
         }
 
@@ -15865,7 +15865,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("details");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("details", this, false);
         }
 
@@ -15878,7 +15878,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("details");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("details", this, false);
         }
 
@@ -15891,7 +15891,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("details");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("details", this, false);
         }
 
@@ -15904,7 +15904,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("details");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("details", this, false);
         }
 
@@ -15948,7 +15948,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("summary", this, false);
         }
 
@@ -15960,7 +15960,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("summary");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("summary", this, false);
         }
 
@@ -15972,7 +15972,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("summary");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("summary", this, false);
         }
         
@@ -15985,7 +15985,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("summary");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("summary", this, false);
         }
 
@@ -15998,7 +15998,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("summary");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("summary", this, false);
         }
 
@@ -16011,7 +16011,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("summary");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("summary", this, false);
         }
 
@@ -16024,7 +16024,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("summary");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("summary", this, false);
         }
 
@@ -16037,7 +16037,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("summary");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("summary", this, false);
         }
 
@@ -16050,7 +16050,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("summary");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("summary", this, false);
         }
 
@@ -16063,7 +16063,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("summary");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("summary", this, false);
         }
 
@@ -16076,7 +16076,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("summary");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("summary", this, false);
         }
 
@@ -16154,7 +16154,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("crossorigin", crossorigin));
             }
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -16164,7 +16164,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("img");
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -16174,7 +16174,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("img");
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -16185,7 +16185,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("img");
             Attrs(attr1);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -16196,7 +16196,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("img");
             Attrs(attr1, attr2);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -16207,7 +16207,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("img");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -16218,7 +16218,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("img");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -16229,7 +16229,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("img");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -16240,7 +16240,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("img");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -16251,7 +16251,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("img");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -16262,7 +16262,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("img");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -16340,7 +16340,7 @@ namespace Eighty.Twenty
             {
                 Attr(Eighty.Attr.Raw("controls"));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("audio", this, false);
         }
 
@@ -16352,7 +16352,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("audio");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("audio", this, false);
         }
 
@@ -16364,7 +16364,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("audio");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("audio", this, false);
         }
         
@@ -16377,7 +16377,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("audio");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("audio", this, false);
         }
 
@@ -16390,7 +16390,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("audio");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("audio", this, false);
         }
 
@@ -16403,7 +16403,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("audio");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("audio", this, false);
         }
 
@@ -16416,7 +16416,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("audio");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("audio", this, false);
         }
 
@@ -16429,7 +16429,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("audio");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("audio", this, false);
         }
 
@@ -16442,7 +16442,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("audio");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("audio", this, false);
         }
 
@@ -16455,7 +16455,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("audio");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("audio", this, false);
         }
 
@@ -16468,7 +16468,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("audio");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("audio", this, false);
         }
 
@@ -16562,7 +16562,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("crossorigin", crossorigin));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("video", this, false);
         }
 
@@ -16574,7 +16574,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("video");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("video", this, false);
         }
 
@@ -16586,7 +16586,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("video");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("video", this, false);
         }
         
@@ -16599,7 +16599,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("video");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("video", this, false);
         }
 
@@ -16612,7 +16612,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("video");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("video", this, false);
         }
 
@@ -16625,7 +16625,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("video");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("video", this, false);
         }
 
@@ -16638,7 +16638,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("video");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("video", this, false);
         }
 
@@ -16651,7 +16651,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("video");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("video", this, false);
         }
 
@@ -16664,7 +16664,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("video");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("video", this, false);
         }
 
@@ -16677,7 +16677,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("video");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("video", this, false);
         }
 
@@ -16690,7 +16690,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("video");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("video", this, false);
         }
 
@@ -16753,7 +16753,7 @@ namespace Eighty.Twenty
             {
                 Attr(Eighty.Attr.Raw("default"));
             }
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -16763,7 +16763,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("track");
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -16773,7 +16773,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("track");
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -16784,7 +16784,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("track");
             Attrs(attr1);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -16795,7 +16795,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("track");
             Attrs(attr1, attr2);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -16806,7 +16806,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("track");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -16817,7 +16817,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("track");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -16828,7 +16828,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("track");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -16839,7 +16839,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("track");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -16850,7 +16850,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("track");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -16861,7 +16861,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("track");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -16923,7 +16923,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("width", width));
             }
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -16933,7 +16933,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("embed");
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -16943,7 +16943,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("embed");
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -16954,7 +16954,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("embed");
             Attrs(attr1);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -16965,7 +16965,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("embed");
             Attrs(attr1, attr2);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -16976,7 +16976,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("embed");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -16987,7 +16987,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("embed");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -16998,7 +16998,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("embed");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -17009,7 +17009,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("embed");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -17020,7 +17020,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("embed");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -17031,7 +17031,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("embed");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -17099,7 +17099,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("name", name));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("object", this, false);
         }
 
@@ -17111,7 +17111,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("object");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("object", this, false);
         }
 
@@ -17123,7 +17123,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("object");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("object", this, false);
         }
         
@@ -17136,7 +17136,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("object");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("object", this, false);
         }
 
@@ -17149,7 +17149,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("object");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("object", this, false);
         }
 
@@ -17162,7 +17162,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("object");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("object", this, false);
         }
 
@@ -17175,7 +17175,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("object");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("object", this, false);
         }
 
@@ -17188,7 +17188,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("object");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("object", this, false);
         }
 
@@ -17201,7 +17201,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("object");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("object", this, false);
         }
 
@@ -17214,7 +17214,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("object");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("object", this, false);
         }
 
@@ -17227,7 +17227,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("object");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("object", this, false);
         }
 
@@ -17280,7 +17280,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("value", value));
             }
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -17290,7 +17290,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("param");
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -17300,7 +17300,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("param");
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -17311,7 +17311,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("param");
             Attrs(attr1);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -17322,7 +17322,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("param");
             Attrs(attr1, attr2);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -17333,7 +17333,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("param");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -17344,7 +17344,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("param");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -17355,7 +17355,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("param");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -17366,7 +17366,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("param");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -17377,7 +17377,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("param");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -17388,7 +17388,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("param");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -17431,7 +17431,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("contenteditable", contenteditable));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("picture", this, false);
         }
 
@@ -17443,7 +17443,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("picture");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("picture", this, false);
         }
 
@@ -17455,7 +17455,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("picture");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("picture", this, false);
         }
         
@@ -17468,7 +17468,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("picture");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("picture", this, false);
         }
 
@@ -17481,7 +17481,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("picture");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("picture", this, false);
         }
 
@@ -17494,7 +17494,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("picture");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("picture", this, false);
         }
 
@@ -17507,7 +17507,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("picture");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("picture", this, false);
         }
 
@@ -17520,7 +17520,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("picture");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("picture", this, false);
         }
 
@@ -17533,7 +17533,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("picture");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("picture", this, false);
         }
 
@@ -17546,7 +17546,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("picture");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("picture", this, false);
         }
 
@@ -17559,7 +17559,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("picture");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("picture", this, false);
         }
 
@@ -17612,7 +17612,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("src", src));
             }
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -17622,7 +17622,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("source");
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -17632,7 +17632,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("source");
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         
         /// <summary>
@@ -17643,7 +17643,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("source");
             Attrs(attr1);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -17654,7 +17654,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("source");
             Attrs(attr1, attr2);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -17665,7 +17665,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("source");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -17676,7 +17676,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("source");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -17687,7 +17687,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("source");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -17698,7 +17698,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("source");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -17709,7 +17709,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("source");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -17720,7 +17720,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("source");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -17773,7 +17773,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("width", width));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("canvas", this, false);
         }
 
@@ -17785,7 +17785,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("canvas");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("canvas", this, false);
         }
 
@@ -17797,7 +17797,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("canvas");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("canvas", this, false);
         }
         
@@ -17810,7 +17810,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("canvas");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("canvas", this, false);
         }
 
@@ -17823,7 +17823,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("canvas");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("canvas", this, false);
         }
 
@@ -17836,7 +17836,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("canvas");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("canvas", this, false);
         }
 
@@ -17849,7 +17849,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("canvas");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("canvas", this, false);
         }
 
@@ -17862,7 +17862,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("canvas");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("canvas", this, false);
         }
 
@@ -17875,7 +17875,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("canvas");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("canvas", this, false);
         }
 
@@ -17888,7 +17888,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("canvas");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("canvas", this, false);
         }
 
@@ -17901,7 +17901,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("canvas");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("canvas", this, false);
         }
 
@@ -17950,7 +17950,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("dir", dir));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("bdi", this, false);
         }
 
@@ -17962,7 +17962,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("bdi");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("bdi", this, false);
         }
 
@@ -17974,7 +17974,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("bdi");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("bdi", this, false);
         }
         
@@ -17987,7 +17987,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("bdi");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("bdi", this, false);
         }
 
@@ -18000,7 +18000,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("bdi");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("bdi", this, false);
         }
 
@@ -18013,7 +18013,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("bdi");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("bdi", this, false);
         }
 
@@ -18026,7 +18026,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("bdi");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("bdi", this, false);
         }
 
@@ -18039,7 +18039,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("bdi");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("bdi", this, false);
         }
 
@@ -18052,7 +18052,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("bdi");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("bdi", this, false);
         }
 
@@ -18065,7 +18065,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("bdi");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("bdi", this, false);
         }
 
@@ -18078,7 +18078,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("bdi");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("bdi", this, false);
         }
 
@@ -18127,7 +18127,7 @@ namespace Eighty.Twenty
             {
                 Attr(new Eighty.Attr("dir", dir));
             }
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("bdo", this, false);
         }
 
@@ -18139,7 +18139,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("bdo");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("bdo", this, false);
         }
 
@@ -18151,7 +18151,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("bdo");
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("bdo", this, false);
         }
         
@@ -18164,7 +18164,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("bdo");
             Attrs(attr1);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("bdo", this, false);
         }
 
@@ -18177,7 +18177,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("bdo");
             Attrs(attr1, attr2);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("bdo", this, false);
         }
 
@@ -18190,7 +18190,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("bdo");
             Attrs(attr1, attr2, attr3);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("bdo", this, false);
         }
 
@@ -18203,7 +18203,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("bdo");
             Attrs(attr1, attr2, attr3, attr4);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("bdo", this, false);
         }
 
@@ -18216,7 +18216,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("bdo");
             Attrs(attr1, attr2, attr3, attr4, attr5);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("bdo", this, false);
         }
 
@@ -18229,7 +18229,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("bdo");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("bdo", this, false);
         }
 
@@ -18242,7 +18242,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("bdo");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("bdo", this, false);
         }
 
@@ -18255,7 +18255,7 @@ namespace Eighty.Twenty
         {
             StartTagRaw("bdo");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder("bdo", this, false);
         }
     }

@@ -4,28 +4,16 @@ using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
 using System.Text.Encodings.Web;
+using System.Runtime.CompilerServices;
 
 namespace Eighty.Twenty
 {
     /// <summary>
     /// Tools for rendering HTML imperatively.
     /// </summary>
-    public abstract partial class HtmlBuilder
+    public unsafe abstract partial class HtmlBuilder
     {
-        private HtmlEncodingTextWriter _writer;  // mutable struct, must not be readonly
-        private HtmlBuilder _parent;
-
-        private ref HtmlEncodingTextWriter Writer
-        {
-            get
-            {
-                if (_parent != null)
-                {
-                    return ref _parent.Writer;
-                }
-                return ref _writer;
-            }
-        }
+        private HtmlEncodingTextWriterReference _writer;
 
         /// <summary>
         /// An <see cref="HtmlBuilder"/> which generates an empty HTML document
@@ -54,22 +42,28 @@ namespace Eighty.Twenty
                 throw new ArgumentNullException(nameof(writer));
             }
 
-            if (!_writer.IsDefault() || _parent != null)
+            if (!_writer.IsDefault())
             {
                 throw new InvalidOperationException("Write is not re-entrant");
             }
 
-            _writer = new HtmlEncodingTextWriter(writer, htmlEncoder);
+            var htmlEncodingTextWriter = new HtmlEncodingTextWriter(writer, htmlEncoder);
+            _writer = new HtmlEncodingTextWriterReference(ref htmlEncodingTextWriter);
             
             try
             {
                 Build();
-                _writer.FlushAndClear();
+                htmlEncodingTextWriter.FlushAndClear();
             }
             finally
             {
                 _writer = default;
             }
+        }
+
+        internal void WritePartial(ref HtmlEncodingTextWriter writer)
+        {
+            RenderAsPartial(new HtmlEncodingTextWriterReference(ref writer));
         }
 
         /// <summary>
@@ -96,17 +90,17 @@ namespace Eighty.Twenty
                 throw new ArgumentNullException(nameof(partial));
             }
             
-            partial.RenderAsPartial(this);
+            partial.RenderAsPartial(_writer);
         }
 
-        private void RenderAsPartial(HtmlBuilder parent)
+        private void RenderAsPartial(HtmlEncodingTextWriterReference writer)
         {
-            if (!_writer.IsDefault() || _parent != null)
+            if (!_writer.IsDefault())
             {
                 throw new InvalidOperationException("Write is not re-entrant");
             }
 
-            _parent = parent;
+            _writer = writer;
 
             try
             {
@@ -114,7 +108,7 @@ namespace Eighty.Twenty
             }
             finally
             {
-                _parent = null;
+                _writer = default;
             }
         }
 
@@ -126,7 +120,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder(name, this, true);
         }
         /// <summary>
@@ -137,7 +131,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attrs);
-            Writer.WriteRaw('>');
+            _writer.Get().WriteRaw('>');
             return new TagBuilder(name, this, true);
         }
 
@@ -148,7 +142,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
         /// <summary>
         /// Write a tag which does not take children.
@@ -157,7 +151,7 @@ namespace Eighty.Twenty
         {
             StartTag(name);
             Attrs(attrs);
-            Writer.WriteRaw("/>");
+            _writer.Get().WriteRaw("/>");
         }
 
         /// <summary>
@@ -166,7 +160,7 @@ namespace Eighty.Twenty
         /// <param name="text">The text to HTML-encode</param>
         protected internal void Text(string text)
         {
-            Writer.Write(text);
+            _writer.Get().Write(text);
         }
 
         /// <summary>
@@ -175,7 +169,7 @@ namespace Eighty.Twenty
         /// <param name="rawHtml">The pre-encoded string</param>
         protected internal void Raw(string rawHtml)
         {
-            Writer.WriteRaw(rawHtml);
+            _writer.Get().WriteRaw(rawHtml);
         }
 
         /// <summary>
@@ -184,7 +178,7 @@ namespace Eighty.Twenty
         /// <param name="html">The HTML to write.</param>
         protected void Html(Html html)
         {
-            html.WriteImpl(ref Writer);
+            html.WriteImpl(ref _writer.Get());
         }
 
         /// <summary>
@@ -197,13 +191,13 @@ namespace Eighty.Twenty
 
         private void StartTag(string name)
         {
-            Writer.WriteRaw('<');
-            Writer.Write(name);
+            _writer.Get().WriteRaw('<');
+            _writer.Get().Write(name);
         }
         private void StartTagRaw(string name)
         {
-            Writer.WriteRaw('<');
-            Writer.WriteRaw(name);
+            _writer.Get().WriteRaw('<');
+            _writer.Get().WriteRaw(name);
         }
         private void Attrs(params Attr[] attrs)
         {
@@ -281,8 +275,8 @@ namespace Eighty.Twenty
         }
         private void Attr(Attr attr)
         {
-            Writer.WriteRaw(' ');
-            attr.Write(ref Writer);
+            _writer.Get().WriteRaw(' ');
+            attr.Write(ref _writer.Get());
         }
     }
 }
