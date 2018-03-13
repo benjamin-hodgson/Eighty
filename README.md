@@ -54,7 +54,7 @@ To render your `Html`, use its `Write` or `WriteAsync` methods. (If you just wan
 ```csharp
 using (var writer = new StringWriter())
 {
-    await html.WriteAsync(writer);
+    html.Write(writer);
     Console.WriteLine(writer.ToString());
 }
 ```
