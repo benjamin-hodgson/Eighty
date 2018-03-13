@@ -2466,6 +2466,21 @@ references:
   commentId: Overload:Eighty.Html.br
   fullName: Eighty.Html.br
   nameWithType: Html.br
+- uid: Eighty.Html.Builder(System.Func{Eighty.Twenty.HtmlBuilder})
+  name: Builder(Func<HtmlBuilder>)
+  href: api/Eighty.Html.html#Eighty_Html_Builder_System_Func_Eighty_Twenty_HtmlBuilder__
+  commentId: M:Eighty.Html.Builder(System.Func{Eighty.Twenty.HtmlBuilder})
+  name.vb: Builder(Func(Of HtmlBuilder))
+  fullName: Eighty.Html.Builder(System.Func<Eighty.Twenty.HtmlBuilder>)
+  fullName.vb: Eighty.Html.Builder(System.Func(Of Eighty.Twenty.HtmlBuilder))
+  nameWithType: Html.Builder(Func<HtmlBuilder>)
+  nameWithType.vb: Html.Builder(Func(Of HtmlBuilder))
+- uid: Eighty.Html.Builder*
+  name: Builder
+  href: api/Eighty.Html.html#Eighty_Html_Builder_
+  commentId: Overload:Eighty.Html.Builder
+  fullName: Eighty.Html.Builder
+  nameWithType: Html.Builder
 - uid: Eighty.Html.button(Eighty.Attr[])
   name: button(Attr[])
   href: api/Eighty.Html.html#Eighty_Html_button_Eighty_Attr___
@@ -2574,6 +2589,18 @@ references:
   commentId: Overload:Eighty.Html.canvas_
   fullName: Eighty.Html.canvas_
   nameWithType: Html.canvas_
+- uid: Eighty.Html.CanWriteAsync
+  name: CanWriteAsync
+  href: api/Eighty.Html.html#Eighty_Html_CanWriteAsync
+  commentId: P:Eighty.Html.CanWriteAsync
+  fullName: Eighty.Html.CanWriteAsync
+  nameWithType: Html.CanWriteAsync
+- uid: Eighty.Html.CanWriteAsync*
+  name: CanWriteAsync
+  href: api/Eighty.Html.html#Eighty_Html_CanWriteAsync_
+  commentId: Overload:Eighty.Html.CanWriteAsync
+  fullName: Eighty.Html.CanWriteAsync
+  nameWithType: Html.CanWriteAsync
 - uid: Eighty.Html.caption(Eighty.Attr[])
   name: caption(Attr[])
   href: api/Eighty.Html.html#Eighty_Html_caption_Eighty_Attr___
