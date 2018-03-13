@@ -24,6 +24,6 @@ namespace Eighty.Twenty
             return ref Unsafe.AsRef<HtmlEncodingTextWriter>(_writer);
         }
 
-        public bool IsDefault() => new IntPtr(_writer).Equals(IntPtr.Zero);
+        public bool IsDefault() => new IntPtr(_writer) == IntPtr.Zero;
     }
 }
