@@ -36,7 +36,7 @@ namespace Eighty.Tests
         }
 
         [Fact]
-        public void TestHtml()
+        public void TestHtmlBuilder()
         {
             var expected =
                 "<!DOCTYPE HTML>" +
@@ -58,6 +58,22 @@ namespace Eighty.Tests
                 new MyHtmlBuilder().Write(writer);
                 Assert.Equal(expected, writer.ToString());
             }
+        }
+
+        class HtmlBuilderWithHtml : HtmlBuilder
+        {
+            protected override void Build()
+            {
+                using (p())
+                {
+                    Html(Eighty.Html.a());
+                }
+            }
+        }
+        [Fact]
+        public void TestHtml()
+        {
+            Assert.Equal("<p><a></a></p>", new HtmlBuilderWithHtml().ToString());
         }
 
 
