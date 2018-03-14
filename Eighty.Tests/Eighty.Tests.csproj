@@ -22,7 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Eighty\Eighty.csproj" />
-    <ProjectReference Include="..\Eighty.Test.WebApp\Eighty.Test.WebApp.csproj" />
+    <ProjectReference Include="..\Eighty.AspNetCore.TestApp\Eighty.AspNetCore.TestApp.csproj" />
     <ProjectReference Include="..\Eighty.AspNetCore\Eighty.AspNetCore.csproj" />
   </ItemGroup>
   

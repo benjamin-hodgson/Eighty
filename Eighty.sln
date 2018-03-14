@@ -10,7 +10,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eighty.Tests", "Eighty.Test
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eighty.Bench", "Eighty.Bench\Eighty.Bench.csproj", "{2C820AA5-0F8B-4402-9061-E842EB1930F5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eighty.Test.WebApp", "Eighty.Test.WebApp\Eighty.Test.WebApp.csproj", "{7608490E-8D14-4459-B240-8FC3DDBDD36F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eighty.AspNetCore.TestApp", "Eighty.AspNetCore.TestApp\Eighty.AspNetCore.TestApp.csproj", "{7608490E-8D14-4459-B240-8FC3DDBDD36F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eighty.AspNetCore", "Eighty.AspNetCore\Eighty.AspNetCore.csproj", "{4D0FECBE-737E-45C3-9EE8-B1224326E3F6}"
 EndProject
