@@ -1,7 +1,7 @@
 using System.Linq;
 using static Eighty.Html;
 
-namespace Eighty.Test.WebApp.Views.Test
+namespace Eighty.AspNetCore.TestApp.Views.Test
 {
     class TestHtmlRenderer : IHtmlRenderer<int>
     {

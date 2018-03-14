@@ -1,4 +1,4 @@
-namespace Eighty.Test.WebApp.Models
+namespace Eighty.AspNetCore.TestApp.Models
 {
     public class BenchModel
     {

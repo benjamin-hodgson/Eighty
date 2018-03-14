@@ -1,12 +1,10 @@
+using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using Eighty.AspNetCore.Mvc.ActionResults;
+using Eighty.AspNetCore.TestApp.Views.Test;
 using static Eighty.Html;
-using System.Net;
-using Eighty.Twenty;
-using System.Linq;
-using Eighty.Test.WebApp.Views.Test;
 
-namespace Eighty.Test.WebApp.Controllers
+namespace Eighty.AspNetCore.TestApp.Controllers
 {
     public class TestController : Controller
     {

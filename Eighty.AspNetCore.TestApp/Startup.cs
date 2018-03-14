@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Eighty.AspNetCore.Mvc;
-using Eighty.AspNetCore.Mvc.ViewFeatures;
+﻿using Eighty.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Eighty.Test.WebApp
+namespace Eighty.AspNetCore.TestApp
 {
     public class Startup
     {

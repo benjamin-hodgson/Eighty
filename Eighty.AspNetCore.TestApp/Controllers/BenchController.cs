@@ -1,16 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Eighty.Test.WebApp.Models;
-using System.IO;
-using System.Text;
-using Eighty.Twenty;
-using System.Collections.Immutable;
+﻿using Microsoft.AspNetCore.Mvc;
+using Eighty.AspNetCore.TestApp.Models;
 
-namespace Eighty.Test.WebApp.Controllers
+namespace Eighty.AspNetCore.TestApp.Controllers
 {
     public class BenchController : Controller
     {

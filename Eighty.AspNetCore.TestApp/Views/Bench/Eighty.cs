@@ -1,8 +1,8 @@
 using System.Collections.Immutable;
-using Eighty.Test.WebApp.Models;
+using Eighty.AspNetCore.TestApp.Models;
 using static Eighty.Html;
 
-namespace Eighty.Test.WebApp.Views.Bench
+namespace Eighty.AspNetCore.TestApp.Views.Bench
 {
     public class Eighty : IHtmlRenderer<BenchModel>
     {

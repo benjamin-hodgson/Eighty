@@ -1,7 +1,7 @@
-using Eighty.Test.WebApp.Models;
+using Eighty.AspNetCore.TestApp.Models;
 using Eighty.Twenty;
 
-namespace Eighty.Test.WebApp.Views.Bench
+namespace Eighty.AspNetCore.TestApp.Views.Bench
 {
     public class Twenty : IHtmlBuilderRenderer<BenchModel>
     {
