@@ -167,7 +167,11 @@ namespace Eighty.Tests
         public async Task Builder()
         {
             var html = p_(Html.Builder(() => new MyHtmlBuilder()));
-            await Assert.ThrowsAsync<InvalidOperationException>(async () => await html.WriteAsync(TextWriter.Null));
+            using (var writer = new StringWriter())
+            {
+                await Assert.ThrowsAsync<InvalidOperationException>(() => html.WriteAsync(writer));
+                Assert.Equal("", writer.ToString());  // shouldn't have written anything
+            }
         }
 
         // attributes
