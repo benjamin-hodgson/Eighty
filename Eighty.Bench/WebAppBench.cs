@@ -19,7 +19,7 @@ namespace Eighty.Bench
         public void Setup()
         {
             var path = ThisFilePath();
-            var contentRoot = Path.GetDirectoryName(path) + "/../Eighty.Test.WebApp";
+            var contentRoot = Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(path)), "/Eighty.AspNet.TestApp");
             _server = new TestServer(new WebHostBuilder().UseStartup<Eighty.AspNetCore.TestApp.Startup>().UseContentRoot(contentRoot));
             _client = _server.CreateClient();
         }
