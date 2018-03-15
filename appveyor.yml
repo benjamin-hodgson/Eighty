@@ -22,6 +22,7 @@ install:
 
   - ps: .\BuildScripts\appveyor\InitBuildNumber.ps1
   - cmd: msbuild Eighty.sln /t:restore /p:Configuration=%CONFIGURATION% /v:Minimal
+  - cmd: nuget restore Eighty.AspNet.TestApp -SolutionDirectory .
   - cmd: cinst docfx
   - ps: .\BuildScripts\appveyor\ConfigureGit.ps1
 
