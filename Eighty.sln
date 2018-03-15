@@ -16,6 +16,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eighty.AspNetCore", "Eighty
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eighty.AspNet.Mvc", "Eighty.AspNet.Mvc\Eighty.AspNet.Mvc.csproj", "{5756B44D-8D9D-4203-B271-25326291F3B2}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eighty.AspNet.Tests", "Eighty.AspNet.Tests\Eighty.AspNet.Tests.csproj", "{4F9F972C-8F57-4271-90B1-476A70C6568F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eighty.AspNet.TestApp", "Eighty.AspNet.TestApp\Eighty.AspNet.TestApp.csproj", "{EF6EADF8-8A74-4994-BC5E-EACA91BAA243}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -152,6 +156,40 @@ Global
 		{5756B44D-8D9D-4203-B271-25326291F3B2}.Release|x64.Build.0 = Release|Any CPU
 		{5756B44D-8D9D-4203-B271-25326291F3B2}.Release|x86.ActiveCfg = Release|Any CPU
 		{5756B44D-8D9D-4203-B271-25326291F3B2}.Release|x86.Build.0 = Release|Any CPU
+		{4F9F972C-8F57-4271-90B1-476A70C6568F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F9F972C-8F57-4271-90B1-476A70C6568F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4F9F972C-8F57-4271-90B1-476A70C6568F}.Debug|x64.Build.0 = Debug|Any CPU
+		{4F9F972C-8F57-4271-90B1-476A70C6568F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4F9F972C-8F57-4271-90B1-476A70C6568F}.Debug|x86.Build.0 = Debug|Any CPU
+		{4F9F972C-8F57-4271-90B1-476A70C6568F}.DebugBuildLegacyFramework|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F9F972C-8F57-4271-90B1-476A70C6568F}.DebugBuildLegacyFramework|Any CPU.Build.0 = Debug|Any CPU
+		{4F9F972C-8F57-4271-90B1-476A70C6568F}.DebugBuildLegacyFramework|x64.ActiveCfg = Debug|Any CPU
+		{4F9F972C-8F57-4271-90B1-476A70C6568F}.DebugBuildLegacyFramework|x64.Build.0 = Debug|Any CPU
+		{4F9F972C-8F57-4271-90B1-476A70C6568F}.DebugBuildLegacyFramework|x86.ActiveCfg = Debug|Any CPU
+		{4F9F972C-8F57-4271-90B1-476A70C6568F}.DebugBuildLegacyFramework|x86.Build.0 = Debug|Any CPU
+		{4F9F972C-8F57-4271-90B1-476A70C6568F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F9F972C-8F57-4271-90B1-476A70C6568F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F9F972C-8F57-4271-90B1-476A70C6568F}.Release|x64.ActiveCfg = Release|Any CPU
+		{4F9F972C-8F57-4271-90B1-476A70C6568F}.Release|x64.Build.0 = Release|Any CPU
+		{4F9F972C-8F57-4271-90B1-476A70C6568F}.Release|x86.ActiveCfg = Release|Any CPU
+		{4F9F972C-8F57-4271-90B1-476A70C6568F}.Release|x86.Build.0 = Release|Any CPU
+		{EF6EADF8-8A74-4994-BC5E-EACA91BAA243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF6EADF8-8A74-4994-BC5E-EACA91BAA243}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EF6EADF8-8A74-4994-BC5E-EACA91BAA243}.Debug|x64.Build.0 = Debug|Any CPU
+		{EF6EADF8-8A74-4994-BC5E-EACA91BAA243}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EF6EADF8-8A74-4994-BC5E-EACA91BAA243}.Debug|x86.Build.0 = Debug|Any CPU
+		{EF6EADF8-8A74-4994-BC5E-EACA91BAA243}.DebugBuildLegacyFramework|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF6EADF8-8A74-4994-BC5E-EACA91BAA243}.DebugBuildLegacyFramework|Any CPU.Build.0 = Debug|Any CPU
+		{EF6EADF8-8A74-4994-BC5E-EACA91BAA243}.DebugBuildLegacyFramework|x64.ActiveCfg = Debug|Any CPU
+		{EF6EADF8-8A74-4994-BC5E-EACA91BAA243}.DebugBuildLegacyFramework|x64.Build.0 = Debug|Any CPU
+		{EF6EADF8-8A74-4994-BC5E-EACA91BAA243}.DebugBuildLegacyFramework|x86.ActiveCfg = Debug|Any CPU
+		{EF6EADF8-8A74-4994-BC5E-EACA91BAA243}.DebugBuildLegacyFramework|x86.Build.0 = Debug|Any CPU
+		{EF6EADF8-8A74-4994-BC5E-EACA91BAA243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF6EADF8-8A74-4994-BC5E-EACA91BAA243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF6EADF8-8A74-4994-BC5E-EACA91BAA243}.Release|x64.ActiveCfg = Release|Any CPU
+		{EF6EADF8-8A74-4994-BC5E-EACA91BAA243}.Release|x64.Build.0 = Release|Any CPU
+		{EF6EADF8-8A74-4994-BC5E-EACA91BAA243}.Release|x86.ActiveCfg = Release|Any CPU
+		{EF6EADF8-8A74-4994-BC5E-EACA91BAA243}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
