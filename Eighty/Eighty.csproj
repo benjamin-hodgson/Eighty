@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
 
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>benjamin.hodgson</Authors>
-    <Copyright>© Benjamin Hodgson, 2017</Copyright>
+    <Copyright>© Benjamin Hodgson, 2018</Copyright>
     <Description>A fast and simple HTML generation library, developed at Stack Overflow.</Description>
     <PackageTags>html;web;template</PackageTags>
 
