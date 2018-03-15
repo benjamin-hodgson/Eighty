@@ -4,65 +4,44 @@ using System.Collections.Immutable;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 
 namespace Eighty
 {
     internal static class ImmutableArrayFactory
     {
-        private static readonly Func<Attr[], ImmutableArray<Attr>> _unsafeFreezeAttr = GetUnsafeFreeze<Attr>();
-        private static readonly Func<Html[], ImmutableArray<Html>> _unsafeFreezeHtml = GetUnsafeFreeze<Html>();
-        private static Func<T[], ImmutableArray<T>> GetUnsafeFreeze<T>()
-        {
-            var ctor = typeof(ImmutableArray<T>)
-                .GetConstructors(BindingFlags.NonPublic | BindingFlags.Instance)
-                .Single(c => c.GetParameters().Count() == 1 && c.GetParameters().Single().ParameterType.Equals(typeof(T[])));
-            var param = Expression.Parameter(typeof(T[]));
-            var body = Expression.New(ctor, param);
-            var func = Expression.Lambda<Func<T[], ImmutableArray<T>>>(body, param);
-            return func.Compile();
-        }
-
-        public static ImmutableArray<Attr> Create(Attr item1)
+        public static ImmutableArray<T> Create<T>(T item1)
             => ImmutableArray.Create(item1);
-        public static ImmutableArray<Attr> Create(Attr item1, Attr item2)
+        public static ImmutableArray<T> Create<T>(T item1, T item2)
             => ImmutableArray.Create(item1, item2);
-        public static ImmutableArray<Attr> Create(Attr item1, Attr item2, Attr item3)
+        public static ImmutableArray<T> Create<T>(T item1, T item2, T item3)
             => ImmutableArray.Create(item1, item2, item3);
-        public static ImmutableArray<Attr> Create(Attr item1, Attr item2, Attr item3, Attr item4)
+        public static ImmutableArray<T> Create<T>(T item1, T item2, T item3, T item4)
             => ImmutableArray.Create(item1, item2, item3, item4);
 
-        public static ImmutableArray<Attr> Create(Attr item1, Attr item2, Attr item3, Attr item4, Attr item5)
+        public static ImmutableArray<T> Create<T>(T item1, T item2, T item3, T item4, T item5)
             => UnsafeFreeze(new[] { item1, item2, item3, item4, item5 });
-        public static ImmutableArray<Attr> Create(Attr item1, Attr item2, Attr item3, Attr item4, Attr item5, Attr item6)
+        public static ImmutableArray<T> Create<T>(T item1, T item2, T item3, T item4, T item5, T item6)
             => UnsafeFreeze(new[] { item1, item2, item3, item4, item5, item6 });
-        public static ImmutableArray<Attr> Create(Attr item1, Attr item2, Attr item3, Attr item4, Attr item5, Attr item6, Attr item7)
+        public static ImmutableArray<T> Create<T>(T item1, T item2, T item3, T item4, T item5, T item6, T item7)
             => UnsafeFreeze(new[] { item1, item2, item3, item4, item5, item6, item7 });
-        public static ImmutableArray<Attr> Create(Attr item1, Attr item2, Attr item3, Attr item4, Attr item5, Attr item6, Attr item7, Attr item8)
+        public static ImmutableArray<T> Create<T>(T item1, T item2, T item3, T item4, T item5, T item6, T item7, T item8)
             => UnsafeFreeze(new[] { item1, item2, item3, item4, item5, item6, item7, item8 });
 
-        public static ImmutableArray<Attr> UnsafeFreeze(Attr[] items)
-            => _unsafeFreezeAttr(items);
-
-
-        public static ImmutableArray<Html> Create(Html item1)
-            => ImmutableArray.Create(item1);
-        public static ImmutableArray<Html> Create(Html item1, Html item2)
-            => ImmutableArray.Create(item1, item2);
-        public static ImmutableArray<Html> Create(Html item1, Html item2, Html item3)
-            => ImmutableArray.Create(item1, item2, item3);
-        public static ImmutableArray<Html> Create(Html item1, Html item2, Html item3, Html item4)
-            => ImmutableArray.Create(item1, item2, item3, item4);
-
-        public static ImmutableArray<Html> Create(Html item1, Html item2, Html item3, Html item4, Html item5)
-            => UnsafeFreeze(new[] { item1, item2, item3, item4, item5 });
-        public static ImmutableArray<Html> Create(Html item1, Html item2, Html item3, Html item4, Html item5, Html item6)
-            => UnsafeFreeze(new[] { item1, item2, item3, item4, item5, item6 });
-        public static ImmutableArray<Html> Create(Html item1, Html item2, Html item3, Html item4, Html item5, Html item6, Html item7)
-            => UnsafeFreeze(new[] { item1, item2, item3, item4, item5, item6, item7 });
-        public static ImmutableArray<Html> Create(Html item1, Html item2, Html item3, Html item4, Html item5, Html item6, Html item7, Html item8)
-            => UnsafeFreeze(new[] { item1, item2, item3, item4, item5, item6, item7, item8 });
-
-        public static ImmutableArray<Html> UnsafeFreeze(Html[] items)
-            => _unsafeFreezeHtml(items);
+        /// <summary>
+        /// Unsafely turn a T[] into an <see cref="ImmutableArray{T}"/>.
+        /// Don't mutate the input array afterwards!
+        /// </summary>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static ImmutableArray<T> UnsafeFreeze<T>(T[] items)
+            // wowza, what's going on here? ImmutableArray<T> is a struct with a single T[] field,
+            // so it's represented at runtime in the same way as T[].
+            // Unsafe.As lets us unsafely coerce between the two representations.
+            // So this is basically equivalent to calling ImmutableArray<T>'s private constructor,
+            // except I don't have to call the ctor by reflection and codegen.
+            // This saves a virtual call (although no real difference in practice) and makes
+            // it easy to implement this method generically (quite difficult with codegen).
+            // See discussion here: https://github.com/dotnet/corefx/issues/28064#issuecomment-373388610
+            => Unsafe.As<T[], ImmutableArray<T>>(ref items);
     }
 }
