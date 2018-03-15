@@ -36,44 +36,44 @@ namespace Eighty.AspNet.Tests
         [Fact]
         public void TestHtmlResult()
         {
-            IntegrationTest("HtmlResult");
+            IntegrationTest("HtmlResult", HttpStatusCode.PartialContent);
         }
 
         [Fact]
         public void TestHtmlBuilderResult()
         {
-            IntegrationTest("HtmlBuilderResult");
+            IntegrationTest("HtmlBuilderResult", HttpStatusCode.PartialContent);
         }
 
         [Fact]
         public void TestHtmlRendererResult()
         {
-            IntegrationTest("HtmlRendererResult");
+            IntegrationTest("HtmlRendererResult", HttpStatusCode.PartialContent);
         }
 
         [Fact]
         public void TestHtmlBuilderRendererResult()
         {
-            IntegrationTest("HtmlBuilderRendererResult");
+            IntegrationTest("HtmlBuilderRendererResult", HttpStatusCode.PartialContent);
         }
 
         [Fact]
         public void TestHtmlView()
         {
-            IntegrationTest("HtmlView");
+            IntegrationTest("HtmlView", HttpStatusCode.OK);
         }
 
         [Fact]
         public void TestHtmlBuilderView()
         {
-            IntegrationTest("HtmlBuilderView");
+            IntegrationTest("HtmlBuilderView", HttpStatusCode.OK);
         }
 
-        private void IntegrationTest(string actionName)
+        private void IntegrationTest(string actionName, HttpStatusCode statusCode)
         {
-            var response = (HttpWebResponse)WebRequest.CreateHttp("http://localhost:8888/Test/HtmlResult").GetResponse();
+            var response = (HttpWebResponse)WebRequest.CreateHttp("http://localhost:8888/Test/" + actionName).GetResponse();
 
-            Assert.Equal(HttpStatusCode.PartialContent, response.StatusCode);
+            Assert.Equal(statusCode, response.StatusCode);
             using (var reader = new StreamReader(response.GetResponseStream()))
             {
                 Assert.Equal("<p></p>", reader.ReadToEnd());

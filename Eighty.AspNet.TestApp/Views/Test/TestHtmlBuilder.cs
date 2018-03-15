@@ -1,6 +1,6 @@
 using Eighty.Twenty;
 
-namespace Eighty.AspNet.TestApp
+namespace Eighty.AspNet.TestApp.Views.Test
 {
     class TestHtmlBuilder : HtmlBuilder
     {
