@@ -11,7 +11,7 @@ namespace Eighty.Twenty
     /// <summary>
     /// Tools for rendering HTML imperatively.
     /// </summary>
-    public unsafe abstract partial class HtmlBuilder
+    public abstract partial class HtmlBuilder
     {
         private HtmlEncodingTextWriterReference _writer;
 
