@@ -11,7 +11,6 @@ namespace Eighty.Twenty
         /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder html(
             string id = null,
             string @class = null,
@@ -188,7 +187,6 @@ namespace Eighty.Twenty
         /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder head(
             string id = null,
             string @class = null,
@@ -360,7 +358,6 @@ namespace Eighty.Twenty
         /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder body(
             string id = null,
             string @class = null,
@@ -531,7 +528,6 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a link element.
         /// </summary>
-        [NoDoc]
         protected void link(
             string id = null,
             string @class = null,
@@ -711,7 +707,6 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a base element.
         /// </summary>
-        [NoDoc]
         protected void @base(
             string id = null,
             string @class = null,
@@ -871,7 +866,6 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a meta element.
         /// </summary>
-        [NoDoc]
         protected void meta(
             string id = null,
             string @class = null,
@@ -1032,7 +1026,6 @@ namespace Eighty.Twenty
         /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder style(
             string id = null,
             string @class = null,
@@ -1214,7 +1207,6 @@ namespace Eighty.Twenty
         /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder title(
             string id = null,
             string @class = null,
@@ -1386,7 +1378,6 @@ namespace Eighty.Twenty
         /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder script(
             string id = null,
             string @class = null,
@@ -1578,7 +1569,6 @@ namespace Eighty.Twenty
         /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder noscript(
             string id = null,
             string @class = null,
@@ -1750,7 +1740,6 @@ namespace Eighty.Twenty
         /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder main(
             string id = null,
             string @class = null,
@@ -1922,7 +1911,6 @@ namespace Eighty.Twenty
         /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder header(
             string id = null,
             string @class = null,
@@ -2094,7 +2082,6 @@ namespace Eighty.Twenty
         /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder article(
             string id = null,
             string @class = null,
@@ -2266,7 +2253,6 @@ namespace Eighty.Twenty
         /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder section(
             string id = null,
             string @class = null,
@@ -2438,7 +2424,6 @@ namespace Eighty.Twenty
         /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder footer(
             string id = null,
             string @class = null,
@@ -2610,7 +2595,6 @@ namespace Eighty.Twenty
         /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder h1(
             string id = null,
             string @class = null,
@@ -2782,7 +2766,6 @@ namespace Eighty.Twenty
         /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder h2(
             string id = null,
             string @class = null,
@@ -2954,7 +2937,6 @@ namespace Eighty.Twenty
         /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder h3(
             string id = null,
             string @class = null,
@@ -3126,7 +3108,6 @@ namespace Eighty.Twenty
         /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder h4(
             string id = null,
             string @class = null,
@@ -3298,7 +3279,6 @@ namespace Eighty.Twenty
         /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder h5(
             string id = null,
             string @class = null,
@@ -3470,7 +3450,6 @@ namespace Eighty.Twenty
         /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder h6(
             string id = null,
             string @class = null,
@@ -3642,7 +3621,6 @@ namespace Eighty.Twenty
         /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder hgroup(
             string id = null,
             string @class = null,
@@ -3814,7 +3792,6 @@ namespace Eighty.Twenty
         /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder div(
             string id = null,
             string @class = null,
@@ -3986,7 +3963,6 @@ namespace Eighty.Twenty
         /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder p(
             string id = null,
             string @class = null,
@@ -4158,7 +4134,6 @@ namespace Eighty.Twenty
         /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder pre(
             string id = null,
             string @class = null,
@@ -4330,7 +4305,6 @@ namespace Eighty.Twenty
         /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder blockquote(
             string id = null,
             string @class = null,
@@ -4502,7 +4476,6 @@ namespace Eighty.Twenty
         /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder figure(
             string id = null,
             string @class = null,
@@ -4674,7 +4647,6 @@ namespace Eighty.Twenty
         /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder figcaption(
             string id = null,
             string @class = null,
@@ -4846,7 +4818,6 @@ namespace Eighty.Twenty
         /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder aside(
             string id = null,
             string @class = null,
@@ -5018,7 +4989,6 @@ namespace Eighty.Twenty
         /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder nav(
             string id = null,
             string @class = null,
@@ -5190,7 +5160,6 @@ namespace Eighty.Twenty
         /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder address(
             string id = null,
             string @class = null,
@@ -5362,7 +5331,6 @@ namespace Eighty.Twenty
         /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder a(
             string id = null,
             string @class = null,
@@ -5559,7 +5527,6 @@ namespace Eighty.Twenty
         /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder b(
             string id = null,
             string @class = null,
@@ -5731,7 +5698,6 @@ namespace Eighty.Twenty
         /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder em(
             string id = null,
             string @class = null,
@@ -5903,7 +5869,6 @@ namespace Eighty.Twenty
         /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder i(
             string id = null,
             string @class = null,
@@ -6075,7 +6040,6 @@ namespace Eighty.Twenty
         /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder mark(
             string id = null,
             string @class = null,
@@ -6247,7 +6211,6 @@ namespace Eighty.Twenty
         /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder q(
             string id = null,
             string @class = null,
@@ -6424,7 +6387,6 @@ namespace Eighty.Twenty
         /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder s(
             string id = null,
             string @class = null,
@@ -6596,7 +6558,6 @@ namespace Eighty.Twenty
         /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder small(
             string id = null,
             string @class = null,
@@ -6768,7 +6729,6 @@ namespace Eighty.Twenty
         /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder span(
             string id = null,
             string @class = null,
@@ -6940,7 +6900,6 @@ namespace Eighty.Twenty
         /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder strong(
             string id = null,
             string @class = null,
@@ -7112,7 +7071,6 @@ namespace Eighty.Twenty
         /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder sub(
             string id = null,
             string @class = null,
@@ -7284,7 +7242,6 @@ namespace Eighty.Twenty
         /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder sup(
             string id = null,
             string @class = null,
@@ -7456,7 +7413,6 @@ namespace Eighty.Twenty
         /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder u(
             string id = null,
             string @class = null,
@@ -7627,7 +7583,6 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a br element.
         /// </summary>
-        [NoDoc]
         protected void br(
             string id = null,
             string @class = null,
@@ -7777,7 +7732,6 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a wbr element.
         /// </summary>
-        [NoDoc]
         protected void wbr(
             string id = null,
             string @class = null,
@@ -7927,7 +7881,6 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an hr element.
         /// </summary>
-        [NoDoc]
         protected void hr(
             string id = null,
             string @class = null,
@@ -8078,7 +8031,6 @@ namespace Eighty.Twenty
         /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder abbr(
             string id = null,
             string @class = null,
@@ -8250,7 +8202,6 @@ namespace Eighty.Twenty
         /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder cite(
             string id = null,
             string @class = null,
@@ -8422,7 +8373,6 @@ namespace Eighty.Twenty
         /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder code(
             string id = null,
             string @class = null,
@@ -8594,7 +8544,6 @@ namespace Eighty.Twenty
         /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder data(
             string id = null,
             string @class = null,
@@ -8771,7 +8720,6 @@ namespace Eighty.Twenty
         /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder dfn(
             string id = null,
             string @class = null,
@@ -8943,7 +8891,6 @@ namespace Eighty.Twenty
         /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder kbd(
             string id = null,
             string @class = null,
@@ -9115,7 +9062,6 @@ namespace Eighty.Twenty
         /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder samp(
             string id = null,
             string @class = null,
@@ -9287,7 +9233,6 @@ namespace Eighty.Twenty
         /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder time(
             string id = null,
             string @class = null,
@@ -9464,7 +9409,6 @@ namespace Eighty.Twenty
         /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder ol(
             string id = null,
             string @class = null,
@@ -9651,7 +9595,6 @@ namespace Eighty.Twenty
         /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder ul(
             string id = null,
             string @class = null,
@@ -9838,7 +9781,6 @@ namespace Eighty.Twenty
         /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder li(
             string id = null,
             string @class = null,
@@ -10015,7 +9957,6 @@ namespace Eighty.Twenty
         /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder dl(
             string id = null,
             string @class = null,
@@ -10187,7 +10128,6 @@ namespace Eighty.Twenty
         /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder dt(
             string id = null,
             string @class = null,
@@ -10359,7 +10299,6 @@ namespace Eighty.Twenty
         /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder dd(
             string id = null,
             string @class = null,
@@ -10531,7 +10470,6 @@ namespace Eighty.Twenty
         /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder table(
             string id = null,
             string @class = null,
@@ -10703,7 +10641,6 @@ namespace Eighty.Twenty
         /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder caption(
             string id = null,
             string @class = null,
@@ -10875,7 +10812,6 @@ namespace Eighty.Twenty
         /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder thead(
             string id = null,
             string @class = null,
@@ -11047,7 +10983,6 @@ namespace Eighty.Twenty
         /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder colgroup(
             string id = null,
             string @class = null,
@@ -11224,7 +11159,6 @@ namespace Eighty.Twenty
         /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder col(
             string id = null,
             string @class = null,
@@ -11401,7 +11335,6 @@ namespace Eighty.Twenty
         /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder tbody(
             string id = null,
             string @class = null,
@@ -11573,7 +11506,6 @@ namespace Eighty.Twenty
         /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder tr(
             string id = null,
             string @class = null,
@@ -11745,7 +11677,6 @@ namespace Eighty.Twenty
         /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder th(
             string id = null,
             string @class = null,
@@ -11937,7 +11868,6 @@ namespace Eighty.Twenty
         /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder td(
             string id = null,
             string @class = null,
@@ -12124,7 +12054,6 @@ namespace Eighty.Twenty
         /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder tfoot(
             string id = null,
             string @class = null,
@@ -12296,7 +12225,6 @@ namespace Eighty.Twenty
         /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder form(
             string id = null,
             string @class = null,
@@ -12503,7 +12431,6 @@ namespace Eighty.Twenty
         /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder fieldset(
             string id = null,
             string @class = null,
@@ -12690,7 +12617,6 @@ namespace Eighty.Twenty
         /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder label(
             string id = null,
             string @class = null,
@@ -12867,7 +12793,6 @@ namespace Eighty.Twenty
         /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder input(
             string id = null,
             string @class = null,
@@ -13179,7 +13104,6 @@ namespace Eighty.Twenty
         /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder button(
             string id = null,
             string @class = null,
@@ -13421,7 +13345,6 @@ namespace Eighty.Twenty
         /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder textarea(
             string id = null,
             string @class = null,
@@ -13663,7 +13586,6 @@ namespace Eighty.Twenty
         /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder datalist(
             string id = null,
             string @class = null,
@@ -13835,7 +13757,6 @@ namespace Eighty.Twenty
         /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder optgroup(
             string id = null,
             string @class = null,
@@ -14017,7 +13938,6 @@ namespace Eighty.Twenty
         /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder select(
             string id = null,
             string @class = null,
@@ -14224,7 +14144,6 @@ namespace Eighty.Twenty
         /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder option(
             string id = null,
             string @class = null,
@@ -14416,7 +14335,6 @@ namespace Eighty.Twenty
         /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder legend(
             string id = null,
             string @class = null,
@@ -14588,7 +14506,6 @@ namespace Eighty.Twenty
         /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder meter(
             string id = null,
             string @class = null,
@@ -14795,7 +14712,6 @@ namespace Eighty.Twenty
         /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder output(
             string id = null,
             string @class = null,
@@ -14982,7 +14898,6 @@ namespace Eighty.Twenty
         /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder progress(
             string id = null,
             string @class = null,
@@ -15164,7 +15079,6 @@ namespace Eighty.Twenty
         /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder menu(
             string id = null,
             string @class = null,
@@ -15346,7 +15260,6 @@ namespace Eighty.Twenty
         /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder menuitem(
             string id = null,
             string @class = null,
@@ -15558,7 +15471,6 @@ namespace Eighty.Twenty
         /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder dialog(
             string id = null,
             string @class = null,
@@ -15735,7 +15647,6 @@ namespace Eighty.Twenty
         /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder details(
             string id = null,
             string @class = null,
@@ -15912,7 +15823,6 @@ namespace Eighty.Twenty
         /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder summary(
             string id = null,
             string @class = null,
@@ -16083,7 +15993,6 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an img element.
         /// </summary>
-        [NoDoc]
         protected void img(
             string id = null,
             string @class = null,
@@ -16269,7 +16178,6 @@ namespace Eighty.Twenty
         /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder audio(
             string id = null,
             string @class = null,
@@ -16476,7 +16384,6 @@ namespace Eighty.Twenty
         /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder video(
             string id = null,
             string @class = null,
@@ -16697,7 +16604,6 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a track element.
         /// </summary>
-        [NoDoc]
         protected void track(
             string id = null,
             string @class = null,
@@ -16867,7 +16773,6 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write an embed element.
         /// </summary>
-        [NoDoc]
         protected void embed(
             string id = null,
             string @class = null,
@@ -17038,7 +16943,6 @@ namespace Eighty.Twenty
         /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder @object(
             string id = null,
             string @class = null,
@@ -17234,7 +17138,6 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a param element.
         /// </summary>
-        [NoDoc]
         protected void param(
             string id = null,
             string @class = null,
@@ -17395,7 +17298,6 @@ namespace Eighty.Twenty
         /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder picture(
             string id = null,
             string @class = null,
@@ -17566,7 +17468,6 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a source element.
         /// </summary>
-        [NoDoc]
         protected void source(
             string id = null,
             string @class = null,
@@ -17727,7 +17628,6 @@ namespace Eighty.Twenty
         /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder canvas(
             string id = null,
             string @class = null,
@@ -17909,7 +17809,6 @@ namespace Eighty.Twenty
         /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder bdi(
             string id = null,
             string @class = null,
@@ -18086,7 +17985,6 @@ namespace Eighty.Twenty
         /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
         /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        [NoDoc]
         protected TagBuilder bdo(
             string id = null,
             string @class = null,
