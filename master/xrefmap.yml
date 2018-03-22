@@ -47,6 +47,7 @@ references:
   name: Create
   href: api/Eighty.AspNet.Mvc.ActionResults.EightyActionResultFactory.html#Eighty_AspNet_Mvc_ActionResults_EightyActionResultFactory_Create_
   commentId: Overload:Eighty.AspNet.Mvc.ActionResults.EightyActionResultFactory.Create
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ActionResults.EightyActionResultFactory.Create
   nameWithType: EightyActionResultFactory.Create
 - uid: Eighty.AspNet.Mvc.ActionResults.EightyActionResultFactory.Create``1(Eighty.IHtmlRenderer{``0},``0,System.Nullable{System.Net.HttpStatusCode})
@@ -89,6 +90,7 @@ references:
   name: ToActionResult
   href: api/Eighty.AspNet.Mvc.ActionResults.EightyActionResultFactory.html#Eighty_AspNet_Mvc_ActionResults_EightyActionResultFactory_ToActionResult_
   commentId: Overload:Eighty.AspNet.Mvc.ActionResults.EightyActionResultFactory.ToActionResult
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ActionResults.EightyActionResultFactory.ToActionResult
   nameWithType: EightyActionResultFactory.ToActionResult
 - uid: Eighty.AspNet.Mvc.ActionResults.EightyActionResultFactory.ToActionResult``1(Eighty.IHtmlRenderer{``0},``0,System.Nullable{System.Net.HttpStatusCode})
@@ -131,6 +133,7 @@ references:
   name: HtmlBuilderRendererResult
   href: api/Eighty.AspNet.Mvc.ActionResults.HtmlBuilderRendererResult-1.html#Eighty_AspNet_Mvc_ActionResults_HtmlBuilderRendererResult_1__ctor_
   commentId: Overload:Eighty.AspNet.Mvc.ActionResults.HtmlBuilderRendererResult`1.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ActionResults.HtmlBuilderRendererResult<TModel>.HtmlBuilderRendererResult
   fullName.vb: Eighty.AspNet.Mvc.ActionResults.HtmlBuilderRendererResult(Of TModel).HtmlBuilderRendererResult
   nameWithType: HtmlBuilderRendererResult<TModel>.HtmlBuilderRendererResult
@@ -147,6 +150,7 @@ references:
   name: ExecuteResult
   href: api/Eighty.AspNet.Mvc.ActionResults.HtmlBuilderRendererResult-1.html#Eighty_AspNet_Mvc_ActionResults_HtmlBuilderRendererResult_1_ExecuteResult_
   commentId: Overload:Eighty.AspNet.Mvc.ActionResults.HtmlBuilderRendererResult`1.ExecuteResult
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ActionResults.HtmlBuilderRendererResult<TModel>.ExecuteResult
   fullName.vb: Eighty.AspNet.Mvc.ActionResults.HtmlBuilderRendererResult(Of TModel).ExecuteResult
   nameWithType: HtmlBuilderRendererResult<TModel>.ExecuteResult
@@ -163,6 +167,7 @@ references:
   name: Model
   href: api/Eighty.AspNet.Mvc.ActionResults.HtmlBuilderRendererResult-1.html#Eighty_AspNet_Mvc_ActionResults_HtmlBuilderRendererResult_1_Model_
   commentId: Overload:Eighty.AspNet.Mvc.ActionResults.HtmlBuilderRendererResult`1.Model
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ActionResults.HtmlBuilderRendererResult<TModel>.Model
   fullName.vb: Eighty.AspNet.Mvc.ActionResults.HtmlBuilderRendererResult(Of TModel).Model
   nameWithType: HtmlBuilderRendererResult<TModel>.Model
@@ -179,6 +184,7 @@ references:
   name: StatusCode
   href: api/Eighty.AspNet.Mvc.ActionResults.HtmlBuilderRendererResult-1.html#Eighty_AspNet_Mvc_ActionResults_HtmlBuilderRendererResult_1_StatusCode_
   commentId: Overload:Eighty.AspNet.Mvc.ActionResults.HtmlBuilderRendererResult`1.StatusCode
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ActionResults.HtmlBuilderRendererResult<TModel>.StatusCode
   fullName.vb: Eighty.AspNet.Mvc.ActionResults.HtmlBuilderRendererResult(Of TModel).StatusCode
   nameWithType: HtmlBuilderRendererResult<TModel>.StatusCode
@@ -195,6 +201,7 @@ references:
   name: View
   href: api/Eighty.AspNet.Mvc.ActionResults.HtmlBuilderRendererResult-1.html#Eighty_AspNet_Mvc_ActionResults_HtmlBuilderRendererResult_1_View_
   commentId: Overload:Eighty.AspNet.Mvc.ActionResults.HtmlBuilderRendererResult`1.View
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ActionResults.HtmlBuilderRendererResult<TModel>.View
   fullName.vb: Eighty.AspNet.Mvc.ActionResults.HtmlBuilderRendererResult(Of TModel).View
   nameWithType: HtmlBuilderRendererResult<TModel>.View
@@ -218,6 +225,7 @@ references:
   name: HtmlBuilderResult
   href: api/Eighty.AspNet.Mvc.ActionResults.HtmlBuilderResult.html#Eighty_AspNet_Mvc_ActionResults_HtmlBuilderResult__ctor_
   commentId: Overload:Eighty.AspNet.Mvc.ActionResults.HtmlBuilderResult.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ActionResults.HtmlBuilderResult.HtmlBuilderResult
   nameWithType: HtmlBuilderResult.HtmlBuilderResult
 - uid: Eighty.AspNet.Mvc.ActionResults.HtmlBuilderResult.ExecuteResult(System.Web.Mvc.ControllerContext)
@@ -230,6 +238,7 @@ references:
   name: ExecuteResult
   href: api/Eighty.AspNet.Mvc.ActionResults.HtmlBuilderResult.html#Eighty_AspNet_Mvc_ActionResults_HtmlBuilderResult_ExecuteResult_
   commentId: Overload:Eighty.AspNet.Mvc.ActionResults.HtmlBuilderResult.ExecuteResult
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ActionResults.HtmlBuilderResult.ExecuteResult
   nameWithType: HtmlBuilderResult.ExecuteResult
 - uid: Eighty.AspNet.Mvc.ActionResults.HtmlBuilderResult.HtmlBuilder
@@ -242,6 +251,7 @@ references:
   name: HtmlBuilder
   href: api/Eighty.AspNet.Mvc.ActionResults.HtmlBuilderResult.html#Eighty_AspNet_Mvc_ActionResults_HtmlBuilderResult_HtmlBuilder_
   commentId: Overload:Eighty.AspNet.Mvc.ActionResults.HtmlBuilderResult.HtmlBuilder
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ActionResults.HtmlBuilderResult.HtmlBuilder
   nameWithType: HtmlBuilderResult.HtmlBuilder
 - uid: Eighty.AspNet.Mvc.ActionResults.HtmlBuilderResult.StatusCode
@@ -254,6 +264,7 @@ references:
   name: StatusCode
   href: api/Eighty.AspNet.Mvc.ActionResults.HtmlBuilderResult.html#Eighty_AspNet_Mvc_ActionResults_HtmlBuilderResult_StatusCode_
   commentId: Overload:Eighty.AspNet.Mvc.ActionResults.HtmlBuilderResult.StatusCode
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ActionResults.HtmlBuilderResult.StatusCode
   nameWithType: HtmlBuilderResult.StatusCode
 - uid: Eighty.AspNet.Mvc.ActionResults.HtmlRendererResult`1
@@ -278,6 +289,7 @@ references:
   name: HtmlRendererResult
   href: api/Eighty.AspNet.Mvc.ActionResults.HtmlRendererResult-1.html#Eighty_AspNet_Mvc_ActionResults_HtmlRendererResult_1__ctor_
   commentId: Overload:Eighty.AspNet.Mvc.ActionResults.HtmlRendererResult`1.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ActionResults.HtmlRendererResult<TModel>.HtmlRendererResult
   fullName.vb: Eighty.AspNet.Mvc.ActionResults.HtmlRendererResult(Of TModel).HtmlRendererResult
   nameWithType: HtmlRendererResult<TModel>.HtmlRendererResult
@@ -294,6 +306,7 @@ references:
   name: ExecuteResult
   href: api/Eighty.AspNet.Mvc.ActionResults.HtmlRendererResult-1.html#Eighty_AspNet_Mvc_ActionResults_HtmlRendererResult_1_ExecuteResult_
   commentId: Overload:Eighty.AspNet.Mvc.ActionResults.HtmlRendererResult`1.ExecuteResult
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ActionResults.HtmlRendererResult<TModel>.ExecuteResult
   fullName.vb: Eighty.AspNet.Mvc.ActionResults.HtmlRendererResult(Of TModel).ExecuteResult
   nameWithType: HtmlRendererResult<TModel>.ExecuteResult
@@ -310,6 +323,7 @@ references:
   name: Model
   href: api/Eighty.AspNet.Mvc.ActionResults.HtmlRendererResult-1.html#Eighty_AspNet_Mvc_ActionResults_HtmlRendererResult_1_Model_
   commentId: Overload:Eighty.AspNet.Mvc.ActionResults.HtmlRendererResult`1.Model
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ActionResults.HtmlRendererResult<TModel>.Model
   fullName.vb: Eighty.AspNet.Mvc.ActionResults.HtmlRendererResult(Of TModel).Model
   nameWithType: HtmlRendererResult<TModel>.Model
@@ -326,6 +340,7 @@ references:
   name: StatusCode
   href: api/Eighty.AspNet.Mvc.ActionResults.HtmlRendererResult-1.html#Eighty_AspNet_Mvc_ActionResults_HtmlRendererResult_1_StatusCode_
   commentId: Overload:Eighty.AspNet.Mvc.ActionResults.HtmlRendererResult`1.StatusCode
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ActionResults.HtmlRendererResult<TModel>.StatusCode
   fullName.vb: Eighty.AspNet.Mvc.ActionResults.HtmlRendererResult(Of TModel).StatusCode
   nameWithType: HtmlRendererResult<TModel>.StatusCode
@@ -342,6 +357,7 @@ references:
   name: View
   href: api/Eighty.AspNet.Mvc.ActionResults.HtmlRendererResult-1.html#Eighty_AspNet_Mvc_ActionResults_HtmlRendererResult_1_View_
   commentId: Overload:Eighty.AspNet.Mvc.ActionResults.HtmlRendererResult`1.View
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ActionResults.HtmlRendererResult<TModel>.View
   fullName.vb: Eighty.AspNet.Mvc.ActionResults.HtmlRendererResult(Of TModel).View
   nameWithType: HtmlRendererResult<TModel>.View
@@ -365,6 +381,7 @@ references:
   name: HtmlResult
   href: api/Eighty.AspNet.Mvc.ActionResults.HtmlResult.html#Eighty_AspNet_Mvc_ActionResults_HtmlResult__ctor_
   commentId: Overload:Eighty.AspNet.Mvc.ActionResults.HtmlResult.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ActionResults.HtmlResult.HtmlResult
   nameWithType: HtmlResult.HtmlResult
 - uid: Eighty.AspNet.Mvc.ActionResults.HtmlResult.ExecuteResult(System.Web.Mvc.ControllerContext)
@@ -377,6 +394,7 @@ references:
   name: ExecuteResult
   href: api/Eighty.AspNet.Mvc.ActionResults.HtmlResult.html#Eighty_AspNet_Mvc_ActionResults_HtmlResult_ExecuteResult_
   commentId: Overload:Eighty.AspNet.Mvc.ActionResults.HtmlResult.ExecuteResult
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ActionResults.HtmlResult.ExecuteResult
   nameWithType: HtmlResult.ExecuteResult
 - uid: Eighty.AspNet.Mvc.ActionResults.HtmlResult.Html
@@ -389,6 +407,7 @@ references:
   name: Html
   href: api/Eighty.AspNet.Mvc.ActionResults.HtmlResult.html#Eighty_AspNet_Mvc_ActionResults_HtmlResult_Html_
   commentId: Overload:Eighty.AspNet.Mvc.ActionResults.HtmlResult.Html
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ActionResults.HtmlResult.Html
   nameWithType: HtmlResult.Html
 - uid: Eighty.AspNet.Mvc.ActionResults.HtmlResult.StatusCode
@@ -401,6 +420,7 @@ references:
   name: StatusCode
   href: api/Eighty.AspNet.Mvc.ActionResults.HtmlResult.html#Eighty_AspNet_Mvc_ActionResults_HtmlResult_StatusCode_
   commentId: Overload:Eighty.AspNet.Mvc.ActionResults.HtmlResult.StatusCode
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ActionResults.HtmlResult.StatusCode
   nameWithType: HtmlResult.StatusCode
 - uid: Eighty.AspNet.Mvc.EightyHtmlString
@@ -419,6 +439,7 @@ references:
   name: EightyHtmlString
   href: api/Eighty.AspNet.Mvc.EightyHtmlString.html#Eighty_AspNet_Mvc_EightyHtmlString__ctor_
   commentId: Overload:Eighty.AspNet.Mvc.EightyHtmlString.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.EightyHtmlString.EightyHtmlString
   nameWithType: EightyHtmlString.EightyHtmlString
 - uid: Eighty.AspNet.Mvc.EightyHtmlString.ToHtmlString
@@ -431,6 +452,7 @@ references:
   name: ToHtmlString
   href: api/Eighty.AspNet.Mvc.EightyHtmlString.html#Eighty_AspNet_Mvc_EightyHtmlString_ToHtmlString_
   commentId: Overload:Eighty.AspNet.Mvc.EightyHtmlString.ToHtmlString
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.EightyHtmlString.ToHtmlString
   nameWithType: EightyHtmlString.ToHtmlString
 - uid: Eighty.AspNet.Mvc.EightyMvcConfiguration
@@ -452,6 +474,7 @@ references:
   name: Configure
   href: api/Eighty.AspNet.Mvc.EightyMvcConfiguration.html#Eighty_AspNet_Mvc_EightyMvcConfiguration_Configure_
   commentId: Overload:Eighty.AspNet.Mvc.EightyMvcConfiguration.Configure
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.EightyMvcConfiguration.Configure
   nameWithType: EightyMvcConfiguration.Configure
 - uid: Eighty.AspNet.Mvc.EightyMvcConfiguration.ViewOptions
@@ -464,6 +487,7 @@ references:
   name: ViewOptions
   href: api/Eighty.AspNet.Mvc.EightyMvcConfiguration.html#Eighty_AspNet_Mvc_EightyMvcConfiguration_ViewOptions_
   commentId: Overload:Eighty.AspNet.Mvc.EightyMvcConfiguration.ViewOptions
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.EightyMvcConfiguration.ViewOptions
   nameWithType: EightyMvcConfiguration.ViewOptions
 - uid: Eighty.AspNet.Mvc.HtmlHelperExtensions
@@ -482,6 +506,7 @@ references:
   name: Html
   href: api/Eighty.AspNet.Mvc.HtmlHelperExtensions.html#Eighty_AspNet_Mvc_HtmlHelperExtensions_Html_
   commentId: Overload:Eighty.AspNet.Mvc.HtmlHelperExtensions.Html
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.HtmlHelperExtensions.Html
   nameWithType: HtmlHelperExtensions.Html
 - uid: Eighty.AspNet.Mvc.HtmlHelperExtensions.HtmlBuilder(System.Web.Mvc.HtmlHelper,Eighty.Twenty.HtmlBuilder)
@@ -494,6 +519,7 @@ references:
   name: HtmlBuilder
   href: api/Eighty.AspNet.Mvc.HtmlHelperExtensions.html#Eighty_AspNet_Mvc_HtmlHelperExtensions_HtmlBuilder_
   commentId: Overload:Eighty.AspNet.Mvc.HtmlHelperExtensions.HtmlBuilder
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.HtmlHelperExtensions.HtmlBuilder
   nameWithType: HtmlHelperExtensions.HtmlBuilder
 - uid: Eighty.AspNet.Mvc.TwentyHtmlString
@@ -512,6 +538,7 @@ references:
   name: TwentyHtmlString
   href: api/Eighty.AspNet.Mvc.TwentyHtmlString.html#Eighty_AspNet_Mvc_TwentyHtmlString__ctor_
   commentId: Overload:Eighty.AspNet.Mvc.TwentyHtmlString.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.TwentyHtmlString.TwentyHtmlString
   nameWithType: TwentyHtmlString.TwentyHtmlString
 - uid: Eighty.AspNet.Mvc.TwentyHtmlString.ToHtmlString
@@ -524,6 +551,7 @@ references:
   name: ToHtmlString
   href: api/Eighty.AspNet.Mvc.TwentyHtmlString.html#Eighty_AspNet_Mvc_TwentyHtmlString_ToHtmlString_
   commentId: Overload:Eighty.AspNet.Mvc.TwentyHtmlString.ToHtmlString
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.TwentyHtmlString.ToHtmlString
   nameWithType: TwentyHtmlString.ToHtmlString
 - uid: Eighty.AspNet.Mvc.ViewFeatures
@@ -554,6 +582,7 @@ references:
   name: EightyViewAdapter
   href: api/Eighty.AspNet.Mvc.ViewFeatures.EightyViewAdapter-1.html#Eighty_AspNet_Mvc_ViewFeatures_EightyViewAdapter_1__ctor_
   commentId: Overload:Eighty.AspNet.Mvc.ViewFeatures.EightyViewAdapter`1.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ViewFeatures.EightyViewAdapter<TModel>.EightyViewAdapter
   fullName.vb: Eighty.AspNet.Mvc.ViewFeatures.EightyViewAdapter(Of TModel).EightyViewAdapter
   nameWithType: EightyViewAdapter<TModel>.EightyViewAdapter
@@ -570,6 +599,7 @@ references:
   name: Path
   href: api/Eighty.AspNet.Mvc.ViewFeatures.EightyViewAdapter-1.html#Eighty_AspNet_Mvc_ViewFeatures_EightyViewAdapter_1_Path_
   commentId: Overload:Eighty.AspNet.Mvc.ViewFeatures.EightyViewAdapter`1.Path
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ViewFeatures.EightyViewAdapter<TModel>.Path
   fullName.vb: Eighty.AspNet.Mvc.ViewFeatures.EightyViewAdapter(Of TModel).Path
   nameWithType: EightyViewAdapter<TModel>.Path
@@ -586,6 +616,7 @@ references:
   name: Render
   href: api/Eighty.AspNet.Mvc.ViewFeatures.EightyViewAdapter-1.html#Eighty_AspNet_Mvc_ViewFeatures_EightyViewAdapter_1_Render_
   commentId: Overload:Eighty.AspNet.Mvc.ViewFeatures.EightyViewAdapter`1.Render
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ViewFeatures.EightyViewAdapter<TModel>.Render
   fullName.vb: Eighty.AspNet.Mvc.ViewFeatures.EightyViewAdapter(Of TModel).Render
   nameWithType: EightyViewAdapter<TModel>.Render
@@ -600,6 +631,7 @@ references:
   name: RegisterSingleton
   href: api/Eighty.AspNet.Mvc.ViewFeatures.EightyViewCollection.html#Eighty_AspNet_Mvc_ViewFeatures_EightyViewCollection_RegisterSingleton_
   commentId: Overload:Eighty.AspNet.Mvc.ViewFeatures.EightyViewCollection.RegisterSingleton
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ViewFeatures.EightyViewCollection.RegisterSingleton
   nameWithType: EightyViewCollection.RegisterSingleton
 - uid: Eighty.AspNet.Mvc.ViewFeatures.EightyViewCollection.RegisterSingleton``1(System.String,Eighty.IHtmlRenderer{``0})
@@ -654,6 +686,7 @@ references:
   name: ViewCollection
   href: api/Eighty.AspNet.Mvc.ViewFeatures.EightyViewConfiguration.html#Eighty_AspNet_Mvc_ViewFeatures_EightyViewConfiguration_ViewCollection_
   commentId: Overload:Eighty.AspNet.Mvc.ViewFeatures.EightyViewConfiguration.ViewCollection
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ViewFeatures.EightyViewConfiguration.ViewCollection
   nameWithType: EightyViewConfiguration.ViewCollection
 - uid: Eighty.AspNet.Mvc.ViewFeatures.EightyViewEngine
@@ -672,6 +705,7 @@ references:
   name: EightyViewEngine
   href: api/Eighty.AspNet.Mvc.ViewFeatures.EightyViewEngine.html#Eighty_AspNet_Mvc_ViewFeatures_EightyViewEngine__ctor_
   commentId: Overload:Eighty.AspNet.Mvc.ViewFeatures.EightyViewEngine.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ViewFeatures.EightyViewEngine.EightyViewEngine
   nameWithType: EightyViewEngine.EightyViewEngine
 - uid: Eighty.AspNet.Mvc.ViewFeatures.EightyViewEngine.FindPartialView(System.Web.Mvc.ControllerContext,System.String,System.Boolean)
@@ -684,6 +718,7 @@ references:
   name: FindPartialView
   href: api/Eighty.AspNet.Mvc.ViewFeatures.EightyViewEngine.html#Eighty_AspNet_Mvc_ViewFeatures_EightyViewEngine_FindPartialView_
   commentId: Overload:Eighty.AspNet.Mvc.ViewFeatures.EightyViewEngine.FindPartialView
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ViewFeatures.EightyViewEngine.FindPartialView
   nameWithType: EightyViewEngine.FindPartialView
 - uid: Eighty.AspNet.Mvc.ViewFeatures.EightyViewEngine.FindView(System.Web.Mvc.ControllerContext,System.String,System.String,System.Boolean)
@@ -696,6 +731,7 @@ references:
   name: FindView
   href: api/Eighty.AspNet.Mvc.ViewFeatures.EightyViewEngine.html#Eighty_AspNet_Mvc_ViewFeatures_EightyViewEngine_FindView_
   commentId: Overload:Eighty.AspNet.Mvc.ViewFeatures.EightyViewEngine.FindView
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ViewFeatures.EightyViewEngine.FindView
   nameWithType: EightyViewEngine.FindView
 - uid: Eighty.AspNet.Mvc.ViewFeatures.EightyViewEngine.ReleaseView(System.Web.Mvc.ControllerContext,System.Web.Mvc.IView)
@@ -708,6 +744,7 @@ references:
   name: ReleaseView
   href: api/Eighty.AspNet.Mvc.ViewFeatures.EightyViewEngine.html#Eighty_AspNet_Mvc_ViewFeatures_EightyViewEngine_ReleaseView_
   commentId: Overload:Eighty.AspNet.Mvc.ViewFeatures.EightyViewEngine.ReleaseView
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ViewFeatures.EightyViewEngine.ReleaseView
   nameWithType: EightyViewEngine.ReleaseView
 - uid: Eighty.AspNet.Mvc.ViewFeatures.TwentyViewAdapter`1
@@ -732,6 +769,7 @@ references:
   name: TwentyViewAdapter
   href: api/Eighty.AspNet.Mvc.ViewFeatures.TwentyViewAdapter-1.html#Eighty_AspNet_Mvc_ViewFeatures_TwentyViewAdapter_1__ctor_
   commentId: Overload:Eighty.AspNet.Mvc.ViewFeatures.TwentyViewAdapter`1.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ViewFeatures.TwentyViewAdapter<TModel>.TwentyViewAdapter
   fullName.vb: Eighty.AspNet.Mvc.ViewFeatures.TwentyViewAdapter(Of TModel).TwentyViewAdapter
   nameWithType: TwentyViewAdapter<TModel>.TwentyViewAdapter
@@ -748,6 +786,7 @@ references:
   name: Path
   href: api/Eighty.AspNet.Mvc.ViewFeatures.TwentyViewAdapter-1.html#Eighty_AspNet_Mvc_ViewFeatures_TwentyViewAdapter_1_Path_
   commentId: Overload:Eighty.AspNet.Mvc.ViewFeatures.TwentyViewAdapter`1.Path
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ViewFeatures.TwentyViewAdapter<TModel>.Path
   fullName.vb: Eighty.AspNet.Mvc.ViewFeatures.TwentyViewAdapter(Of TModel).Path
   nameWithType: TwentyViewAdapter<TModel>.Path
@@ -764,6 +803,7 @@ references:
   name: Render
   href: api/Eighty.AspNet.Mvc.ViewFeatures.TwentyViewAdapter-1.html#Eighty_AspNet_Mvc_ViewFeatures_TwentyViewAdapter_1_Render_
   commentId: Overload:Eighty.AspNet.Mvc.ViewFeatures.TwentyViewAdapter`1.Render
+  isSpec: "True"
   fullName: Eighty.AspNet.Mvc.ViewFeatures.TwentyViewAdapter<TModel>.Render
   fullName.vb: Eighty.AspNet.Mvc.ViewFeatures.TwentyViewAdapter(Of TModel).Render
   nameWithType: TwentyViewAdapter<TModel>.Render
@@ -790,6 +830,7 @@ references:
   name: EightyHtmlContent
   href: api/Eighty.AspNetCore.EightyHtmlContent.html#Eighty_AspNetCore_EightyHtmlContent__ctor_
   commentId: Overload:Eighty.AspNetCore.EightyHtmlContent.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNetCore.EightyHtmlContent.EightyHtmlContent
   nameWithType: EightyHtmlContent.EightyHtmlContent
 - uid: Eighty.AspNetCore.EightyHtmlContent.WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder)
@@ -802,6 +843,7 @@ references:
   name: WriteTo
   href: api/Eighty.AspNetCore.EightyHtmlContent.html#Eighty_AspNetCore_EightyHtmlContent_WriteTo_
   commentId: Overload:Eighty.AspNetCore.EightyHtmlContent.WriteTo
+  isSpec: "True"
   fullName: Eighty.AspNetCore.EightyHtmlContent.WriteTo
   nameWithType: EightyHtmlContent.WriteTo
 - uid: Eighty.AspNetCore.Mvc
@@ -844,6 +886,7 @@ references:
   name: Create
   href: api/Eighty.AspNetCore.Mvc.ActionResults.EightyActionResultFactory.html#Eighty_AspNetCore_Mvc_ActionResults_EightyActionResultFactory_Create_
   commentId: Overload:Eighty.AspNetCore.Mvc.ActionResults.EightyActionResultFactory.Create
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ActionResults.EightyActionResultFactory.Create
   nameWithType: EightyActionResultFactory.Create
 - uid: Eighty.AspNetCore.Mvc.ActionResults.EightyActionResultFactory.Create``1(Eighty.IHtmlRenderer{``0},``0,System.Nullable{System.Net.HttpStatusCode},System.Boolean)
@@ -886,6 +929,7 @@ references:
   name: ToActionResult
   href: api/Eighty.AspNetCore.Mvc.ActionResults.EightyActionResultFactory.html#Eighty_AspNetCore_Mvc_ActionResults_EightyActionResultFactory_ToActionResult_
   commentId: Overload:Eighty.AspNetCore.Mvc.ActionResults.EightyActionResultFactory.ToActionResult
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ActionResults.EightyActionResultFactory.ToActionResult
   nameWithType: EightyActionResultFactory.ToActionResult
 - uid: Eighty.AspNetCore.Mvc.ActionResults.EightyActionResultFactory.ToActionResult``1(Eighty.IHtmlRenderer{``0},``0,System.Nullable{System.Net.HttpStatusCode},System.Boolean)
@@ -928,6 +972,7 @@ references:
   name: HtmlBuilderRendererResult
   href: api/Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult-1.html#Eighty_AspNetCore_Mvc_ActionResults_HtmlBuilderRendererResult_1__ctor_
   commentId: Overload:Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult`1.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult<TModel>.HtmlBuilderRendererResult
   fullName.vb: Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult(Of TModel).HtmlBuilderRendererResult
   nameWithType: HtmlBuilderRendererResult<TModel>.HtmlBuilderRendererResult
@@ -944,6 +989,7 @@ references:
   name: ExecuteResultAsync
   href: api/Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult-1.html#Eighty_AspNetCore_Mvc_ActionResults_HtmlBuilderRendererResult_1_ExecuteResultAsync_
   commentId: Overload:Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult`1.ExecuteResultAsync
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult<TModel>.ExecuteResultAsync
   fullName.vb: Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult(Of TModel).ExecuteResultAsync
   nameWithType: HtmlBuilderRendererResult<TModel>.ExecuteResultAsync
@@ -960,6 +1006,7 @@ references:
   name: Model
   href: api/Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult-1.html#Eighty_AspNetCore_Mvc_ActionResults_HtmlBuilderRendererResult_1_Model_
   commentId: Overload:Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult`1.Model
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult<TModel>.Model
   fullName.vb: Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult(Of TModel).Model
   nameWithType: HtmlBuilderRendererResult<TModel>.Model
@@ -976,6 +1023,7 @@ references:
   name: StatusCode
   href: api/Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult-1.html#Eighty_AspNetCore_Mvc_ActionResults_HtmlBuilderRendererResult_1_StatusCode_
   commentId: Overload:Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult`1.StatusCode
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult<TModel>.StatusCode
   fullName.vb: Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult(Of TModel).StatusCode
   nameWithType: HtmlBuilderRendererResult<TModel>.StatusCode
@@ -992,6 +1040,7 @@ references:
   name: View
   href: api/Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult-1.html#Eighty_AspNetCore_Mvc_ActionResults_HtmlBuilderRendererResult_1_View_
   commentId: Overload:Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult`1.View
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult<TModel>.View
   fullName.vb: Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult(Of TModel).View
   nameWithType: HtmlBuilderRendererResult<TModel>.View
@@ -1015,6 +1064,7 @@ references:
   name: HtmlBuilderResult
   href: api/Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderResult.html#Eighty_AspNetCore_Mvc_ActionResults_HtmlBuilderResult__ctor_
   commentId: Overload:Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderResult.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderResult.HtmlBuilderResult
   nameWithType: HtmlBuilderResult.HtmlBuilderResult
 - uid: Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderResult.ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext)
@@ -1027,6 +1077,7 @@ references:
   name: ExecuteResultAsync
   href: api/Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderResult.html#Eighty_AspNetCore_Mvc_ActionResults_HtmlBuilderResult_ExecuteResultAsync_
   commentId: Overload:Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderResult.ExecuteResultAsync
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderResult.ExecuteResultAsync
   nameWithType: HtmlBuilderResult.ExecuteResultAsync
 - uid: Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderResult.HtmlBuilder
@@ -1039,6 +1090,7 @@ references:
   name: HtmlBuilder
   href: api/Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderResult.html#Eighty_AspNetCore_Mvc_ActionResults_HtmlBuilderResult_HtmlBuilder_
   commentId: Overload:Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderResult.HtmlBuilder
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderResult.HtmlBuilder
   nameWithType: HtmlBuilderResult.HtmlBuilder
 - uid: Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderResult.StatusCode
@@ -1051,6 +1103,7 @@ references:
   name: StatusCode
   href: api/Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderResult.html#Eighty_AspNetCore_Mvc_ActionResults_HtmlBuilderResult_StatusCode_
   commentId: Overload:Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderResult.StatusCode
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderResult.StatusCode
   nameWithType: HtmlBuilderResult.StatusCode
 - uid: Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult`1
@@ -1075,6 +1128,7 @@ references:
   name: HtmlRendererResult
   href: api/Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult-1.html#Eighty_AspNetCore_Mvc_ActionResults_HtmlRendererResult_1__ctor_
   commentId: Overload:Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult`1.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult<TModel>.HtmlRendererResult
   fullName.vb: Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult(Of TModel).HtmlRendererResult
   nameWithType: HtmlRendererResult<TModel>.HtmlRendererResult
@@ -1091,6 +1145,7 @@ references:
   name: ExecuteResultAsync
   href: api/Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult-1.html#Eighty_AspNetCore_Mvc_ActionResults_HtmlRendererResult_1_ExecuteResultAsync_
   commentId: Overload:Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult`1.ExecuteResultAsync
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult<TModel>.ExecuteResultAsync
   fullName.vb: Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult(Of TModel).ExecuteResultAsync
   nameWithType: HtmlRendererResult<TModel>.ExecuteResultAsync
@@ -1107,6 +1162,7 @@ references:
   name: Model
   href: api/Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult-1.html#Eighty_AspNetCore_Mvc_ActionResults_HtmlRendererResult_1_Model_
   commentId: Overload:Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult`1.Model
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult<TModel>.Model
   fullName.vb: Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult(Of TModel).Model
   nameWithType: HtmlRendererResult<TModel>.Model
@@ -1123,6 +1179,7 @@ references:
   name: RenderAsync
   href: api/Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult-1.html#Eighty_AspNetCore_Mvc_ActionResults_HtmlRendererResult_1_RenderAsync_
   commentId: Overload:Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult`1.RenderAsync
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult<TModel>.RenderAsync
   fullName.vb: Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult(Of TModel).RenderAsync
   nameWithType: HtmlRendererResult<TModel>.RenderAsync
@@ -1139,6 +1196,7 @@ references:
   name: StatusCode
   href: api/Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult-1.html#Eighty_AspNetCore_Mvc_ActionResults_HtmlRendererResult_1_StatusCode_
   commentId: Overload:Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult`1.StatusCode
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult<TModel>.StatusCode
   fullName.vb: Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult(Of TModel).StatusCode
   nameWithType: HtmlRendererResult<TModel>.StatusCode
@@ -1155,6 +1213,7 @@ references:
   name: View
   href: api/Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult-1.html#Eighty_AspNetCore_Mvc_ActionResults_HtmlRendererResult_1_View_
   commentId: Overload:Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult`1.View
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult<TModel>.View
   fullName.vb: Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult(Of TModel).View
   nameWithType: HtmlRendererResult<TModel>.View
@@ -1178,6 +1237,7 @@ references:
   name: HtmlResult
   href: api/Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.html#Eighty_AspNetCore_Mvc_ActionResults_HtmlResult__ctor_
   commentId: Overload:Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.HtmlResult
   nameWithType: HtmlResult.HtmlResult
 - uid: Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext)
@@ -1190,6 +1250,7 @@ references:
   name: ExecuteResultAsync
   href: api/Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.html#Eighty_AspNetCore_Mvc_ActionResults_HtmlResult_ExecuteResultAsync_
   commentId: Overload:Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.ExecuteResultAsync
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.ExecuteResultAsync
   nameWithType: HtmlResult.ExecuteResultAsync
 - uid: Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.Html
@@ -1202,6 +1263,7 @@ references:
   name: Html
   href: api/Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.html#Eighty_AspNetCore_Mvc_ActionResults_HtmlResult_Html_
   commentId: Overload:Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.Html
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.Html
   nameWithType: HtmlResult.Html
 - uid: Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.RenderAsync
@@ -1214,6 +1276,7 @@ references:
   name: RenderAsync
   href: api/Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.html#Eighty_AspNetCore_Mvc_ActionResults_HtmlResult_RenderAsync_
   commentId: Overload:Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.RenderAsync
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.RenderAsync
   nameWithType: HtmlResult.RenderAsync
 - uid: Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.StatusCode
@@ -1226,6 +1289,7 @@ references:
   name: StatusCode
   href: api/Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.html#Eighty_AspNetCore_Mvc_ActionResults_HtmlResult_StatusCode_
   commentId: Overload:Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.StatusCode
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.StatusCode
   nameWithType: HtmlResult.StatusCode
 - uid: Eighty.AspNetCore.Mvc.MvcBuilderExtensions
@@ -1247,6 +1311,7 @@ references:
   name: AddEighty
   href: api/Eighty.AspNetCore.Mvc.MvcBuilderExtensions.html#Eighty_AspNetCore_Mvc_MvcBuilderExtensions_AddEighty_
   commentId: Overload:Eighty.AspNetCore.Mvc.MvcBuilderExtensions.AddEighty
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.MvcBuilderExtensions.AddEighty
   nameWithType: MvcBuilderExtensions.AddEighty
 - uid: Eighty.AspNetCore.Mvc.ResultExecutors
@@ -1276,6 +1341,7 @@ references:
   name: HtmlBuilderRendererResultExecutor
   href: api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor-1.html#Eighty_AspNetCore_Mvc_ResultExecutors_HtmlBuilderRendererResultExecutor_1__ctor_
   commentId: Overload:Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor`1.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor<TModel>.HtmlBuilderRendererResultExecutor
   fullName.vb: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor(Of TModel).HtmlBuilderRendererResultExecutor
   nameWithType: HtmlBuilderRendererResultExecutor<TModel>.HtmlBuilderRendererResultExecutor
@@ -1293,6 +1359,7 @@ references:
   name: ExecuteAsync
   href: api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor-1.html#Eighty_AspNetCore_Mvc_ResultExecutors_HtmlBuilderRendererResultExecutor_1_ExecuteAsync_
   commentId: Overload:Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor`1.ExecuteAsync
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor<TModel>.ExecuteAsync
   fullName.vb: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor(Of TModel).ExecuteAsync
   nameWithType: HtmlBuilderRendererResultExecutor<TModel>.ExecuteAsync
@@ -1316,6 +1383,7 @@ references:
   name: HtmlBuilderResultExecutor
   href: api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor.html#Eighty_AspNetCore_Mvc_ResultExecutors_HtmlBuilderResultExecutor__ctor_
   commentId: Overload:Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor.HtmlBuilderResultExecutor
   nameWithType: HtmlBuilderResultExecutor.HtmlBuilderResultExecutor
 - uid: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor.Execute(Microsoft.AspNetCore.Mvc.ActionContext,Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderResult)
@@ -1328,6 +1396,7 @@ references:
   name: Execute
   href: api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor.html#Eighty_AspNetCore_Mvc_ResultExecutors_HtmlBuilderResultExecutor_Execute_
   commentId: Overload:Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor.Execute
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor.Execute
   nameWithType: HtmlBuilderResultExecutor.Execute
 - uid: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor`1
@@ -1351,6 +1420,7 @@ references:
   name: HtmlRendererResultExecutor
   href: api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor-1.html#Eighty_AspNetCore_Mvc_ResultExecutors_HtmlRendererResultExecutor_1__ctor_
   commentId: Overload:Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor`1.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor<TModel>.HtmlRendererResultExecutor
   fullName.vb: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor(Of TModel).HtmlRendererResultExecutor
   nameWithType: HtmlRendererResultExecutor<TModel>.HtmlRendererResultExecutor
@@ -1368,6 +1438,7 @@ references:
   name: ExecuteAsync
   href: api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor-1.html#Eighty_AspNetCore_Mvc_ResultExecutors_HtmlRendererResultExecutor_1_ExecuteAsync_
   commentId: Overload:Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor`1.ExecuteAsync
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor<TModel>.ExecuteAsync
   fullName.vb: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor(Of TModel).ExecuteAsync
   nameWithType: HtmlRendererResultExecutor<TModel>.ExecuteAsync
@@ -1391,6 +1462,7 @@ references:
   name: HtmlResultExecutor
   href: api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor.html#Eighty_AspNetCore_Mvc_ResultExecutors_HtmlResultExecutor__ctor_
   commentId: Overload:Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor.HtmlResultExecutor
   nameWithType: HtmlResultExecutor.HtmlResultExecutor
 - uid: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor.ExecuteAsync(Microsoft.AspNetCore.Mvc.ActionContext,Eighty.AspNetCore.Mvc.ActionResults.HtmlResult)
@@ -1403,6 +1475,7 @@ references:
   name: ExecuteAsync
   href: api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor.html#Eighty_AspNetCore_Mvc_ResultExecutors_HtmlResultExecutor_ExecuteAsync_
   commentId: Overload:Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor.ExecuteAsync
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor.ExecuteAsync
   nameWithType: HtmlResultExecutor.ExecuteAsync
 - uid: Eighty.AspNetCore.Mvc.ViewFeatures
@@ -1427,6 +1500,7 @@ references:
   name: EightyMvcViewOptionsSetup
   href: api/Eighty.AspNetCore.Mvc.ViewFeatures.EightyMvcViewOptionsSetup.html#Eighty_AspNetCore_Mvc_ViewFeatures_EightyMvcViewOptionsSetup__ctor_
   commentId: Overload:Eighty.AspNetCore.Mvc.ViewFeatures.EightyMvcViewOptionsSetup.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ViewFeatures.EightyMvcViewOptionsSetup.EightyMvcViewOptionsSetup
   nameWithType: EightyMvcViewOptionsSetup.EightyMvcViewOptionsSetup
 - uid: Eighty.AspNetCore.Mvc.ViewFeatures.EightyMvcViewOptionsSetup.Configure(Microsoft.AspNetCore.Mvc.MvcViewOptions)
@@ -1439,6 +1513,7 @@ references:
   name: Configure
   href: api/Eighty.AspNetCore.Mvc.ViewFeatures.EightyMvcViewOptionsSetup.html#Eighty_AspNetCore_Mvc_ViewFeatures_EightyMvcViewOptionsSetup_Configure_
   commentId: Overload:Eighty.AspNetCore.Mvc.ViewFeatures.EightyMvcViewOptionsSetup.Configure
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ViewFeatures.EightyMvcViewOptionsSetup.Configure
   nameWithType: EightyMvcViewOptionsSetup.Configure
 - uid: Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewAdapter`1
@@ -1463,6 +1538,7 @@ references:
   name: EightyViewAdapter
   href: api/Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewAdapter-1.html#Eighty_AspNetCore_Mvc_ViewFeatures_EightyViewAdapter_1__ctor_
   commentId: Overload:Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewAdapter`1.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewAdapter<TModel>.EightyViewAdapter
   fullName.vb: Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewAdapter(Of TModel).EightyViewAdapter
   nameWithType: EightyViewAdapter<TModel>.EightyViewAdapter
@@ -1479,6 +1555,7 @@ references:
   name: Path
   href: api/Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewAdapter-1.html#Eighty_AspNetCore_Mvc_ViewFeatures_EightyViewAdapter_1_Path_
   commentId: Overload:Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewAdapter`1.Path
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewAdapter<TModel>.Path
   fullName.vb: Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewAdapter(Of TModel).Path
   nameWithType: EightyViewAdapter<TModel>.Path
@@ -1495,6 +1572,7 @@ references:
   name: RenderAsync
   href: api/Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewAdapter-1.html#Eighty_AspNetCore_Mvc_ViewFeatures_EightyViewAdapter_1_RenderAsync_
   commentId: Overload:Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewAdapter`1.RenderAsync
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewAdapter<TModel>.RenderAsync
   fullName.vb: Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewAdapter(Of TModel).RenderAsync
   nameWithType: EightyViewAdapter<TModel>.RenderAsync
@@ -1509,6 +1587,7 @@ references:
   name: RegisterSingleton
   href: api/Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewCollection.html#Eighty_AspNetCore_Mvc_ViewFeatures_EightyViewCollection_RegisterSingleton_
   commentId: Overload:Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewCollection.RegisterSingleton
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewCollection.RegisterSingleton
   nameWithType: EightyViewCollection.RegisterSingleton
 - uid: Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewCollection.RegisterSingleton``1(System.String,Eighty.IHtmlRenderer{``0})
@@ -1563,6 +1642,7 @@ references:
   name: EightyViewEngine
   href: api/Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewEngine.html#Eighty_AspNetCore_Mvc_ViewFeatures_EightyViewEngine__ctor_
   commentId: Overload:Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewEngine.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewEngine.EightyViewEngine
   nameWithType: EightyViewEngine.EightyViewEngine
 - uid: Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewEngine.FindView(Microsoft.AspNetCore.Mvc.ActionContext,System.String,System.Boolean)
@@ -1575,6 +1655,7 @@ references:
   name: FindView
   href: api/Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewEngine.html#Eighty_AspNetCore_Mvc_ViewFeatures_EightyViewEngine_FindView_
   commentId: Overload:Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewEngine.FindView
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewEngine.FindView
   nameWithType: EightyViewEngine.FindView
 - uid: Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewEngine.GetView(System.String,System.String,System.Boolean)
@@ -1587,6 +1668,7 @@ references:
   name: GetView
   href: api/Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewEngine.html#Eighty_AspNetCore_Mvc_ViewFeatures_EightyViewEngine_GetView_
   commentId: Overload:Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewEngine.GetView
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewEngine.GetView
   nameWithType: EightyViewEngine.GetView
 - uid: Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewOptions
@@ -1605,6 +1687,7 @@ references:
   name: ViewCollection
   href: api/Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewOptions.html#Eighty_AspNetCore_Mvc_ViewFeatures_EightyViewOptions_ViewCollection_
   commentId: Overload:Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewOptions.ViewCollection
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewOptions.ViewCollection
   nameWithType: EightyViewOptions.ViewCollection
 - uid: Eighty.AspNetCore.Mvc.ViewFeatures.TwentyViewAdapter`1
@@ -1629,6 +1712,7 @@ references:
   name: TwentyViewAdapter
   href: api/Eighty.AspNetCore.Mvc.ViewFeatures.TwentyViewAdapter-1.html#Eighty_AspNetCore_Mvc_ViewFeatures_TwentyViewAdapter_1__ctor_
   commentId: Overload:Eighty.AspNetCore.Mvc.ViewFeatures.TwentyViewAdapter`1.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ViewFeatures.TwentyViewAdapter<TModel>.TwentyViewAdapter
   fullName.vb: Eighty.AspNetCore.Mvc.ViewFeatures.TwentyViewAdapter(Of TModel).TwentyViewAdapter
   nameWithType: TwentyViewAdapter<TModel>.TwentyViewAdapter
@@ -1645,6 +1729,7 @@ references:
   name: Path
   href: api/Eighty.AspNetCore.Mvc.ViewFeatures.TwentyViewAdapter-1.html#Eighty_AspNetCore_Mvc_ViewFeatures_TwentyViewAdapter_1_Path_
   commentId: Overload:Eighty.AspNetCore.Mvc.ViewFeatures.TwentyViewAdapter`1.Path
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ViewFeatures.TwentyViewAdapter<TModel>.Path
   fullName.vb: Eighty.AspNetCore.Mvc.ViewFeatures.TwentyViewAdapter(Of TModel).Path
   nameWithType: TwentyViewAdapter<TModel>.Path
@@ -1661,6 +1746,7 @@ references:
   name: RenderAsync
   href: api/Eighty.AspNetCore.Mvc.ViewFeatures.TwentyViewAdapter-1.html#Eighty_AspNetCore_Mvc_ViewFeatures_TwentyViewAdapter_1_RenderAsync_
   commentId: Overload:Eighty.AspNetCore.Mvc.ViewFeatures.TwentyViewAdapter`1.RenderAsync
+  isSpec: "True"
   fullName: Eighty.AspNetCore.Mvc.ViewFeatures.TwentyViewAdapter<TModel>.RenderAsync
   fullName.vb: Eighty.AspNetCore.Mvc.ViewFeatures.TwentyViewAdapter(Of TModel).RenderAsync
   nameWithType: TwentyViewAdapter<TModel>.RenderAsync
@@ -1681,6 +1767,7 @@ references:
   name: TwentyHtmlContent
   href: api/Eighty.AspNetCore.TwentyHtmlContent.html#Eighty_AspNetCore_TwentyHtmlContent__ctor_
   commentId: Overload:Eighty.AspNetCore.TwentyHtmlContent.#ctor
+  isSpec: "True"
   fullName: Eighty.AspNetCore.TwentyHtmlContent.TwentyHtmlContent
   nameWithType: TwentyHtmlContent.TwentyHtmlContent
 - uid: Eighty.AspNetCore.TwentyHtmlContent.WriteTo(System.IO.TextWriter,System.Text.Encodings.Web.HtmlEncoder)
@@ -1693,6 +1780,7 @@ references:
   name: WriteTo
   href: api/Eighty.AspNetCore.TwentyHtmlContent.html#Eighty_AspNetCore_TwentyHtmlContent_WriteTo_
   commentId: Overload:Eighty.AspNetCore.TwentyHtmlContent.WriteTo
+  isSpec: "True"
   fullName: Eighty.AspNetCore.TwentyHtmlContent.WriteTo
   nameWithType: TwentyHtmlContent.WriteTo
 - uid: Eighty.Attr
@@ -1717,6 +1805,7 @@ references:
   name: Attr
   href: api/Eighty.Attr.html#Eighty_Attr__ctor_
   commentId: Overload:Eighty.Attr.#ctor
+  isSpec: "True"
   fullName: Eighty.Attr.Attr
   nameWithType: Attr.Attr
 - uid: Eighty.Attr.op_Implicit(System.ValueTuple{System.String,System.String})~Eighty.Attr
@@ -1732,6 +1821,7 @@ references:
   name: Implicit
   href: api/Eighty.Attr.html#Eighty_Attr_op_Implicit_
   commentId: Overload:Eighty.Attr.op_Implicit
+  isSpec: "True"
   name.vb: Widening
   fullName: Eighty.Attr.Implicit
   fullName.vb: Eighty.Attr.Widening
@@ -1753,6 +1843,7 @@ references:
   name: Raw
   href: api/Eighty.Attr.html#Eighty_Attr_Raw_
   commentId: Overload:Eighty.Attr.Raw
+  isSpec: "True"
   fullName: Eighty.Attr.Raw
   nameWithType: Attr.Raw
 - uid: Eighty.Html
@@ -1810,6 +1901,7 @@ references:
   name: _
   href: api/Eighty.Html.html#Eighty_Html___
   commentId: Overload:Eighty.Html._
+  isSpec: "True"
   fullName: Eighty.Html._
   nameWithType: Html._
 - uid: Eighty.Html.a(Eighty.Attr[])
@@ -1840,6 +1932,7 @@ references:
   name: a
   href: api/Eighty.Html.html#Eighty_Html_a_
   commentId: Overload:Eighty.Html.a
+  isSpec: "True"
   fullName: Eighty.Html.a
   nameWithType: Html.a
 - uid: Eighty.Html.a_(Eighty.Html[])
@@ -1864,6 +1957,7 @@ references:
   name: a_
   href: api/Eighty.Html.html#Eighty_Html_a__
   commentId: Overload:Eighty.Html.a_
+  isSpec: "True"
   fullName: Eighty.Html.a_
   nameWithType: Html.a_
 - uid: Eighty.Html.abbr(Eighty.Attr[])
@@ -1894,6 +1988,7 @@ references:
   name: abbr
   href: api/Eighty.Html.html#Eighty_Html_abbr_
   commentId: Overload:Eighty.Html.abbr
+  isSpec: "True"
   fullName: Eighty.Html.abbr
   nameWithType: Html.abbr
 - uid: Eighty.Html.abbr_(Eighty.Html[])
@@ -1918,6 +2013,7 @@ references:
   name: abbr_
   href: api/Eighty.Html.html#Eighty_Html_abbr__
   commentId: Overload:Eighty.Html.abbr_
+  isSpec: "True"
   fullName: Eighty.Html.abbr_
   nameWithType: Html.abbr_
 - uid: Eighty.Html.address(Eighty.Attr[])
@@ -1948,6 +2044,7 @@ references:
   name: address
   href: api/Eighty.Html.html#Eighty_Html_address_
   commentId: Overload:Eighty.Html.address
+  isSpec: "True"
   fullName: Eighty.Html.address
   nameWithType: Html.address
 - uid: Eighty.Html.address_(Eighty.Html[])
@@ -1972,6 +2069,7 @@ references:
   name: address_
   href: api/Eighty.Html.html#Eighty_Html_address__
   commentId: Overload:Eighty.Html.address_
+  isSpec: "True"
   fullName: Eighty.Html.address_
   nameWithType: Html.address_
 - uid: Eighty.Html.article(Eighty.Attr[])
@@ -2002,6 +2100,7 @@ references:
   name: article
   href: api/Eighty.Html.html#Eighty_Html_article_
   commentId: Overload:Eighty.Html.article
+  isSpec: "True"
   fullName: Eighty.Html.article
   nameWithType: Html.article
 - uid: Eighty.Html.article_(Eighty.Html[])
@@ -2026,6 +2125,7 @@ references:
   name: article_
   href: api/Eighty.Html.html#Eighty_Html_article__
   commentId: Overload:Eighty.Html.article_
+  isSpec: "True"
   fullName: Eighty.Html.article_
   nameWithType: Html.article_
 - uid: Eighty.Html.aside(Eighty.Attr[])
@@ -2056,6 +2156,7 @@ references:
   name: aside
   href: api/Eighty.Html.html#Eighty_Html_aside_
   commentId: Overload:Eighty.Html.aside
+  isSpec: "True"
   fullName: Eighty.Html.aside
   nameWithType: Html.aside
 - uid: Eighty.Html.aside_(Eighty.Html[])
@@ -2080,6 +2181,7 @@ references:
   name: aside_
   href: api/Eighty.Html.html#Eighty_Html_aside__
   commentId: Overload:Eighty.Html.aside_
+  isSpec: "True"
   fullName: Eighty.Html.aside_
   nameWithType: Html.aside_
 - uid: Eighty.Html.audio(Eighty.Attr[])
@@ -2110,6 +2212,7 @@ references:
   name: audio
   href: api/Eighty.Html.html#Eighty_Html_audio_
   commentId: Overload:Eighty.Html.audio
+  isSpec: "True"
   fullName: Eighty.Html.audio
   nameWithType: Html.audio
 - uid: Eighty.Html.audio_(Eighty.Html[])
@@ -2134,6 +2237,7 @@ references:
   name: audio_
   href: api/Eighty.Html.html#Eighty_Html_audio__
   commentId: Overload:Eighty.Html.audio_
+  isSpec: "True"
   fullName: Eighty.Html.audio_
   nameWithType: Html.audio_
 - uid: Eighty.Html.b(Eighty.Attr[])
@@ -2164,6 +2268,7 @@ references:
   name: b
   href: api/Eighty.Html.html#Eighty_Html_b_
   commentId: Overload:Eighty.Html.b
+  isSpec: "True"
   fullName: Eighty.Html.b
   nameWithType: Html.b
 - uid: Eighty.Html.b_(Eighty.Html[])
@@ -2188,6 +2293,7 @@ references:
   name: b_
   href: api/Eighty.Html.html#Eighty_Html_b__
   commentId: Overload:Eighty.Html.b_
+  isSpec: "True"
   fullName: Eighty.Html.b_
   nameWithType: Html.b_
 - uid: Eighty.Html.base(Eighty.Attr[])
@@ -2218,6 +2324,7 @@ references:
   name: base
   href: api/Eighty.Html.html#Eighty_Html_base_
   commentId: Overload:Eighty.Html.base
+  isSpec: "True"
   fullName: Eighty.Html.base
   nameWithType: Html.base
 - uid: Eighty.Html.bdi(Eighty.Attr[])
@@ -2248,6 +2355,7 @@ references:
   name: bdi
   href: api/Eighty.Html.html#Eighty_Html_bdi_
   commentId: Overload:Eighty.Html.bdi
+  isSpec: "True"
   fullName: Eighty.Html.bdi
   nameWithType: Html.bdi
 - uid: Eighty.Html.bdi_(Eighty.Html[])
@@ -2272,6 +2380,7 @@ references:
   name: bdi_
   href: api/Eighty.Html.html#Eighty_Html_bdi__
   commentId: Overload:Eighty.Html.bdi_
+  isSpec: "True"
   fullName: Eighty.Html.bdi_
   nameWithType: Html.bdi_
 - uid: Eighty.Html.bdo(Eighty.Attr[])
@@ -2302,6 +2411,7 @@ references:
   name: bdo
   href: api/Eighty.Html.html#Eighty_Html_bdo_
   commentId: Overload:Eighty.Html.bdo
+  isSpec: "True"
   fullName: Eighty.Html.bdo
   nameWithType: Html.bdo
 - uid: Eighty.Html.bdo_(Eighty.Html[])
@@ -2326,6 +2436,7 @@ references:
   name: bdo_
   href: api/Eighty.Html.html#Eighty_Html_bdo__
   commentId: Overload:Eighty.Html.bdo_
+  isSpec: "True"
   fullName: Eighty.Html.bdo_
   nameWithType: Html.bdo_
 - uid: Eighty.Html.blockquote(Eighty.Attr[])
@@ -2356,6 +2467,7 @@ references:
   name: blockquote
   href: api/Eighty.Html.html#Eighty_Html_blockquote_
   commentId: Overload:Eighty.Html.blockquote
+  isSpec: "True"
   fullName: Eighty.Html.blockquote
   nameWithType: Html.blockquote
 - uid: Eighty.Html.blockquote_(Eighty.Html[])
@@ -2380,6 +2492,7 @@ references:
   name: blockquote_
   href: api/Eighty.Html.html#Eighty_Html_blockquote__
   commentId: Overload:Eighty.Html.blockquote_
+  isSpec: "True"
   fullName: Eighty.Html.blockquote_
   nameWithType: Html.blockquote_
 - uid: Eighty.Html.body(Eighty.Attr[])
@@ -2410,6 +2523,7 @@ references:
   name: body
   href: api/Eighty.Html.html#Eighty_Html_body_
   commentId: Overload:Eighty.Html.body
+  isSpec: "True"
   fullName: Eighty.Html.body
   nameWithType: Html.body
 - uid: Eighty.Html.body_(Eighty.Html[])
@@ -2434,6 +2548,7 @@ references:
   name: body_
   href: api/Eighty.Html.html#Eighty_Html_body__
   commentId: Overload:Eighty.Html.body_
+  isSpec: "True"
   fullName: Eighty.Html.body_
   nameWithType: Html.body_
 - uid: Eighty.Html.br(Eighty.Attr[])
@@ -2464,6 +2579,7 @@ references:
   name: br
   href: api/Eighty.Html.html#Eighty_Html_br_
   commentId: Overload:Eighty.Html.br
+  isSpec: "True"
   fullName: Eighty.Html.br
   nameWithType: Html.br
 - uid: Eighty.Html.Builder(System.Func{Eighty.Twenty.HtmlBuilder})
@@ -2479,6 +2595,7 @@ references:
   name: Builder
   href: api/Eighty.Html.html#Eighty_Html_Builder_
   commentId: Overload:Eighty.Html.Builder
+  isSpec: "True"
   fullName: Eighty.Html.Builder
   nameWithType: Html.Builder
 - uid: Eighty.Html.button(Eighty.Attr[])
@@ -2509,6 +2626,7 @@ references:
   name: button
   href: api/Eighty.Html.html#Eighty_Html_button_
   commentId: Overload:Eighty.Html.button
+  isSpec: "True"
   fullName: Eighty.Html.button
   nameWithType: Html.button
 - uid: Eighty.Html.button_(Eighty.Html[])
@@ -2533,6 +2651,7 @@ references:
   name: button_
   href: api/Eighty.Html.html#Eighty_Html_button__
   commentId: Overload:Eighty.Html.button_
+  isSpec: "True"
   fullName: Eighty.Html.button_
   nameWithType: Html.button_
 - uid: Eighty.Html.canvas(Eighty.Attr[])
@@ -2563,6 +2682,7 @@ references:
   name: canvas
   href: api/Eighty.Html.html#Eighty_Html_canvas_
   commentId: Overload:Eighty.Html.canvas
+  isSpec: "True"
   fullName: Eighty.Html.canvas
   nameWithType: Html.canvas
 - uid: Eighty.Html.canvas_(Eighty.Html[])
@@ -2587,6 +2707,7 @@ references:
   name: canvas_
   href: api/Eighty.Html.html#Eighty_Html_canvas__
   commentId: Overload:Eighty.Html.canvas_
+  isSpec: "True"
   fullName: Eighty.Html.canvas_
   nameWithType: Html.canvas_
 - uid: Eighty.Html.CanWriteAsync
@@ -2599,6 +2720,7 @@ references:
   name: CanWriteAsync
   href: api/Eighty.Html.html#Eighty_Html_CanWriteAsync_
   commentId: Overload:Eighty.Html.CanWriteAsync
+  isSpec: "True"
   fullName: Eighty.Html.CanWriteAsync
   nameWithType: Html.CanWriteAsync
 - uid: Eighty.Html.caption(Eighty.Attr[])
@@ -2629,6 +2751,7 @@ references:
   name: caption
   href: api/Eighty.Html.html#Eighty_Html_caption_
   commentId: Overload:Eighty.Html.caption
+  isSpec: "True"
   fullName: Eighty.Html.caption
   nameWithType: Html.caption
 - uid: Eighty.Html.caption_(Eighty.Html[])
@@ -2653,6 +2776,7 @@ references:
   name: caption_
   href: api/Eighty.Html.html#Eighty_Html_caption__
   commentId: Overload:Eighty.Html.caption_
+  isSpec: "True"
   fullName: Eighty.Html.caption_
   nameWithType: Html.caption_
 - uid: Eighty.Html.cite(Eighty.Attr[])
@@ -2683,6 +2807,7 @@ references:
   name: cite
   href: api/Eighty.Html.html#Eighty_Html_cite_
   commentId: Overload:Eighty.Html.cite
+  isSpec: "True"
   fullName: Eighty.Html.cite
   nameWithType: Html.cite
 - uid: Eighty.Html.cite_(Eighty.Html[])
@@ -2707,6 +2832,7 @@ references:
   name: cite_
   href: api/Eighty.Html.html#Eighty_Html_cite__
   commentId: Overload:Eighty.Html.cite_
+  isSpec: "True"
   fullName: Eighty.Html.cite_
   nameWithType: Html.cite_
 - uid: Eighty.Html.code(Eighty.Attr[])
@@ -2737,6 +2863,7 @@ references:
   name: code
   href: api/Eighty.Html.html#Eighty_Html_code_
   commentId: Overload:Eighty.Html.code
+  isSpec: "True"
   fullName: Eighty.Html.code
   nameWithType: Html.code
 - uid: Eighty.Html.code_(Eighty.Html[])
@@ -2761,6 +2888,7 @@ references:
   name: code_
   href: api/Eighty.Html.html#Eighty_Html_code__
   commentId: Overload:Eighty.Html.code_
+  isSpec: "True"
   fullName: Eighty.Html.code_
   nameWithType: Html.code_
 - uid: Eighty.Html.col(Eighty.Attr[])
@@ -2791,6 +2919,7 @@ references:
   name: col
   href: api/Eighty.Html.html#Eighty_Html_col_
   commentId: Overload:Eighty.Html.col
+  isSpec: "True"
   fullName: Eighty.Html.col
   nameWithType: Html.col
 - uid: Eighty.Html.col_(Eighty.Html[])
@@ -2815,6 +2944,7 @@ references:
   name: col_
   href: api/Eighty.Html.html#Eighty_Html_col__
   commentId: Overload:Eighty.Html.col_
+  isSpec: "True"
   fullName: Eighty.Html.col_
   nameWithType: Html.col_
 - uid: Eighty.Html.colgroup(Eighty.Attr[])
@@ -2845,6 +2975,7 @@ references:
   name: colgroup
   href: api/Eighty.Html.html#Eighty_Html_colgroup_
   commentId: Overload:Eighty.Html.colgroup
+  isSpec: "True"
   fullName: Eighty.Html.colgroup
   nameWithType: Html.colgroup
 - uid: Eighty.Html.colgroup_(Eighty.Html[])
@@ -2869,6 +3000,7 @@ references:
   name: colgroup_
   href: api/Eighty.Html.html#Eighty_Html_colgroup__
   commentId: Overload:Eighty.Html.colgroup_
+  isSpec: "True"
   fullName: Eighty.Html.colgroup_
   nameWithType: Html.colgroup_
 - uid: Eighty.Html.data(Eighty.Attr[])
@@ -2899,6 +3031,7 @@ references:
   name: data
   href: api/Eighty.Html.html#Eighty_Html_data_
   commentId: Overload:Eighty.Html.data
+  isSpec: "True"
   fullName: Eighty.Html.data
   nameWithType: Html.data
 - uid: Eighty.Html.data_(Eighty.Html[])
@@ -2923,6 +3056,7 @@ references:
   name: data_
   href: api/Eighty.Html.html#Eighty_Html_data__
   commentId: Overload:Eighty.Html.data_
+  isSpec: "True"
   fullName: Eighty.Html.data_
   nameWithType: Html.data_
 - uid: Eighty.Html.datalist(Eighty.Attr[])
@@ -2953,6 +3087,7 @@ references:
   name: datalist
   href: api/Eighty.Html.html#Eighty_Html_datalist_
   commentId: Overload:Eighty.Html.datalist
+  isSpec: "True"
   fullName: Eighty.Html.datalist
   nameWithType: Html.datalist
 - uid: Eighty.Html.datalist_(Eighty.Html[])
@@ -2977,6 +3112,7 @@ references:
   name: datalist_
   href: api/Eighty.Html.html#Eighty_Html_datalist__
   commentId: Overload:Eighty.Html.datalist_
+  isSpec: "True"
   fullName: Eighty.Html.datalist_
   nameWithType: Html.datalist_
 - uid: Eighty.Html.dd(Eighty.Attr[])
@@ -3007,6 +3143,7 @@ references:
   name: dd
   href: api/Eighty.Html.html#Eighty_Html_dd_
   commentId: Overload:Eighty.Html.dd
+  isSpec: "True"
   fullName: Eighty.Html.dd
   nameWithType: Html.dd
 - uid: Eighty.Html.dd_(Eighty.Html[])
@@ -3031,6 +3168,7 @@ references:
   name: dd_
   href: api/Eighty.Html.html#Eighty_Html_dd__
   commentId: Overload:Eighty.Html.dd_
+  isSpec: "True"
   fullName: Eighty.Html.dd_
   nameWithType: Html.dd_
 - uid: Eighty.Html.details(Eighty.Attr[])
@@ -3061,6 +3199,7 @@ references:
   name: details
   href: api/Eighty.Html.html#Eighty_Html_details_
   commentId: Overload:Eighty.Html.details
+  isSpec: "True"
   fullName: Eighty.Html.details
   nameWithType: Html.details
 - uid: Eighty.Html.details_(Eighty.Html[])
@@ -3085,6 +3224,7 @@ references:
   name: details_
   href: api/Eighty.Html.html#Eighty_Html_details__
   commentId: Overload:Eighty.Html.details_
+  isSpec: "True"
   fullName: Eighty.Html.details_
   nameWithType: Html.details_
 - uid: Eighty.Html.dfn(Eighty.Attr[])
@@ -3115,6 +3255,7 @@ references:
   name: dfn
   href: api/Eighty.Html.html#Eighty_Html_dfn_
   commentId: Overload:Eighty.Html.dfn
+  isSpec: "True"
   fullName: Eighty.Html.dfn
   nameWithType: Html.dfn
 - uid: Eighty.Html.dfn_(Eighty.Html[])
@@ -3139,6 +3280,7 @@ references:
   name: dfn_
   href: api/Eighty.Html.html#Eighty_Html_dfn__
   commentId: Overload:Eighty.Html.dfn_
+  isSpec: "True"
   fullName: Eighty.Html.dfn_
   nameWithType: Html.dfn_
 - uid: Eighty.Html.dialog(Eighty.Attr[])
@@ -3169,6 +3311,7 @@ references:
   name: dialog
   href: api/Eighty.Html.html#Eighty_Html_dialog_
   commentId: Overload:Eighty.Html.dialog
+  isSpec: "True"
   fullName: Eighty.Html.dialog
   nameWithType: Html.dialog
 - uid: Eighty.Html.dialog_(Eighty.Html[])
@@ -3193,6 +3336,7 @@ references:
   name: dialog_
   href: api/Eighty.Html.html#Eighty_Html_dialog__
   commentId: Overload:Eighty.Html.dialog_
+  isSpec: "True"
   fullName: Eighty.Html.dialog_
   nameWithType: Html.dialog_
 - uid: Eighty.Html.div(Eighty.Attr[])
@@ -3223,6 +3367,7 @@ references:
   name: div
   href: api/Eighty.Html.html#Eighty_Html_div_
   commentId: Overload:Eighty.Html.div
+  isSpec: "True"
   fullName: Eighty.Html.div
   nameWithType: Html.div
 - uid: Eighty.Html.div_(Eighty.Html[])
@@ -3247,6 +3392,7 @@ references:
   name: div_
   href: api/Eighty.Html.html#Eighty_Html_div__
   commentId: Overload:Eighty.Html.div_
+  isSpec: "True"
   fullName: Eighty.Html.div_
   nameWithType: Html.div_
 - uid: Eighty.Html.dl(Eighty.Attr[])
@@ -3277,6 +3423,7 @@ references:
   name: dl
   href: api/Eighty.Html.html#Eighty_Html_dl_
   commentId: Overload:Eighty.Html.dl
+  isSpec: "True"
   fullName: Eighty.Html.dl
   nameWithType: Html.dl
 - uid: Eighty.Html.dl_(Eighty.Html[])
@@ -3301,6 +3448,7 @@ references:
   name: dl_
   href: api/Eighty.Html.html#Eighty_Html_dl__
   commentId: Overload:Eighty.Html.dl_
+  isSpec: "True"
   fullName: Eighty.Html.dl_
   nameWithType: Html.dl_
 - uid: Eighty.Html.doctype
@@ -3313,6 +3461,7 @@ references:
   name: doctype
   href: api/Eighty.Html.html#Eighty_Html_doctype_
   commentId: Overload:Eighty.Html.doctype
+  isSpec: "True"
   fullName: Eighty.Html.doctype
   nameWithType: Html.doctype
 - uid: Eighty.Html.doctypeHtml_(Eighty.Html[])
@@ -3328,6 +3477,7 @@ references:
   name: doctypeHtml_
   href: api/Eighty.Html.html#Eighty_Html_doctypeHtml__
   commentId: Overload:Eighty.Html.doctypeHtml_
+  isSpec: "True"
   fullName: Eighty.Html.doctypeHtml_
   nameWithType: Html.doctypeHtml_
 - uid: Eighty.Html.dt(Eighty.Attr[])
@@ -3358,6 +3508,7 @@ references:
   name: dt
   href: api/Eighty.Html.html#Eighty_Html_dt_
   commentId: Overload:Eighty.Html.dt
+  isSpec: "True"
   fullName: Eighty.Html.dt
   nameWithType: Html.dt
 - uid: Eighty.Html.dt_(Eighty.Html[])
@@ -3382,6 +3533,7 @@ references:
   name: dt_
   href: api/Eighty.Html.html#Eighty_Html_dt__
   commentId: Overload:Eighty.Html.dt_
+  isSpec: "True"
   fullName: Eighty.Html.dt_
   nameWithType: Html.dt_
 - uid: Eighty.Html.em(Eighty.Attr[])
@@ -3412,6 +3564,7 @@ references:
   name: em
   href: api/Eighty.Html.html#Eighty_Html_em_
   commentId: Overload:Eighty.Html.em
+  isSpec: "True"
   fullName: Eighty.Html.em
   nameWithType: Html.em
 - uid: Eighty.Html.em_(Eighty.Html[])
@@ -3436,6 +3589,7 @@ references:
   name: em_
   href: api/Eighty.Html.html#Eighty_Html_em__
   commentId: Overload:Eighty.Html.em_
+  isSpec: "True"
   fullName: Eighty.Html.em_
   nameWithType: Html.em_
 - uid: Eighty.Html.embed(Eighty.Attr[])
@@ -3466,6 +3620,7 @@ references:
   name: embed
   href: api/Eighty.Html.html#Eighty_Html_embed_
   commentId: Overload:Eighty.Html.embed
+  isSpec: "True"
   fullName: Eighty.Html.embed
   nameWithType: Html.embed
 - uid: Eighty.Html.fieldset(Eighty.Attr[])
@@ -3496,6 +3651,7 @@ references:
   name: fieldset
   href: api/Eighty.Html.html#Eighty_Html_fieldset_
   commentId: Overload:Eighty.Html.fieldset
+  isSpec: "True"
   fullName: Eighty.Html.fieldset
   nameWithType: Html.fieldset
 - uid: Eighty.Html.fieldset_(Eighty.Html[])
@@ -3520,6 +3676,7 @@ references:
   name: fieldset_
   href: api/Eighty.Html.html#Eighty_Html_fieldset__
   commentId: Overload:Eighty.Html.fieldset_
+  isSpec: "True"
   fullName: Eighty.Html.fieldset_
   nameWithType: Html.fieldset_
 - uid: Eighty.Html.figcaption(Eighty.Attr[])
@@ -3550,6 +3707,7 @@ references:
   name: figcaption
   href: api/Eighty.Html.html#Eighty_Html_figcaption_
   commentId: Overload:Eighty.Html.figcaption
+  isSpec: "True"
   fullName: Eighty.Html.figcaption
   nameWithType: Html.figcaption
 - uid: Eighty.Html.figcaption_(Eighty.Html[])
@@ -3574,6 +3732,7 @@ references:
   name: figcaption_
   href: api/Eighty.Html.html#Eighty_Html_figcaption__
   commentId: Overload:Eighty.Html.figcaption_
+  isSpec: "True"
   fullName: Eighty.Html.figcaption_
   nameWithType: Html.figcaption_
 - uid: Eighty.Html.figure(Eighty.Attr[])
@@ -3604,6 +3763,7 @@ references:
   name: figure
   href: api/Eighty.Html.html#Eighty_Html_figure_
   commentId: Overload:Eighty.Html.figure
+  isSpec: "True"
   fullName: Eighty.Html.figure
   nameWithType: Html.figure
 - uid: Eighty.Html.figure_(Eighty.Html[])
@@ -3628,6 +3788,7 @@ references:
   name: figure_
   href: api/Eighty.Html.html#Eighty_Html_figure__
   commentId: Overload:Eighty.Html.figure_
+  isSpec: "True"
   fullName: Eighty.Html.figure_
   nameWithType: Html.figure_
 - uid: Eighty.Html.footer(Eighty.Attr[])
@@ -3658,6 +3819,7 @@ references:
   name: footer
   href: api/Eighty.Html.html#Eighty_Html_footer_
   commentId: Overload:Eighty.Html.footer
+  isSpec: "True"
   fullName: Eighty.Html.footer
   nameWithType: Html.footer
 - uid: Eighty.Html.footer_(Eighty.Html[])
@@ -3682,6 +3844,7 @@ references:
   name: footer_
   href: api/Eighty.Html.html#Eighty_Html_footer__
   commentId: Overload:Eighty.Html.footer_
+  isSpec: "True"
   fullName: Eighty.Html.footer_
   nameWithType: Html.footer_
 - uid: Eighty.Html.form(Eighty.Attr[])
@@ -3712,6 +3875,7 @@ references:
   name: form
   href: api/Eighty.Html.html#Eighty_Html_form_
   commentId: Overload:Eighty.Html.form
+  isSpec: "True"
   fullName: Eighty.Html.form
   nameWithType: Html.form
 - uid: Eighty.Html.form_(Eighty.Html[])
@@ -3736,6 +3900,7 @@ references:
   name: form_
   href: api/Eighty.Html.html#Eighty_Html_form__
   commentId: Overload:Eighty.Html.form_
+  isSpec: "True"
   fullName: Eighty.Html.form_
   nameWithType: Html.form_
 - uid: Eighty.Html.h1(Eighty.Attr[])
@@ -3766,6 +3931,7 @@ references:
   name: h1
   href: api/Eighty.Html.html#Eighty_Html_h1_
   commentId: Overload:Eighty.Html.h1
+  isSpec: "True"
   fullName: Eighty.Html.h1
   nameWithType: Html.h1
 - uid: Eighty.Html.h1_(Eighty.Html[])
@@ -3790,6 +3956,7 @@ references:
   name: h1_
   href: api/Eighty.Html.html#Eighty_Html_h1__
   commentId: Overload:Eighty.Html.h1_
+  isSpec: "True"
   fullName: Eighty.Html.h1_
   nameWithType: Html.h1_
 - uid: Eighty.Html.h2(Eighty.Attr[])
@@ -3820,6 +3987,7 @@ references:
   name: h2
   href: api/Eighty.Html.html#Eighty_Html_h2_
   commentId: Overload:Eighty.Html.h2
+  isSpec: "True"
   fullName: Eighty.Html.h2
   nameWithType: Html.h2
 - uid: Eighty.Html.h2_(Eighty.Html[])
@@ -3844,6 +4012,7 @@ references:
   name: h2_
   href: api/Eighty.Html.html#Eighty_Html_h2__
   commentId: Overload:Eighty.Html.h2_
+  isSpec: "True"
   fullName: Eighty.Html.h2_
   nameWithType: Html.h2_
 - uid: Eighty.Html.h3(Eighty.Attr[])
@@ -3874,6 +4043,7 @@ references:
   name: h3
   href: api/Eighty.Html.html#Eighty_Html_h3_
   commentId: Overload:Eighty.Html.h3
+  isSpec: "True"
   fullName: Eighty.Html.h3
   nameWithType: Html.h3
 - uid: Eighty.Html.h3_(Eighty.Html[])
@@ -3898,6 +4068,7 @@ references:
   name: h3_
   href: api/Eighty.Html.html#Eighty_Html_h3__
   commentId: Overload:Eighty.Html.h3_
+  isSpec: "True"
   fullName: Eighty.Html.h3_
   nameWithType: Html.h3_
 - uid: Eighty.Html.h4(Eighty.Attr[])
@@ -3928,6 +4099,7 @@ references:
   name: h4
   href: api/Eighty.Html.html#Eighty_Html_h4_
   commentId: Overload:Eighty.Html.h4
+  isSpec: "True"
   fullName: Eighty.Html.h4
   nameWithType: Html.h4
 - uid: Eighty.Html.h4_(Eighty.Html[])
@@ -3952,6 +4124,7 @@ references:
   name: h4_
   href: api/Eighty.Html.html#Eighty_Html_h4__
   commentId: Overload:Eighty.Html.h4_
+  isSpec: "True"
   fullName: Eighty.Html.h4_
   nameWithType: Html.h4_
 - uid: Eighty.Html.h5(Eighty.Attr[])
@@ -3982,6 +4155,7 @@ references:
   name: h5
   href: api/Eighty.Html.html#Eighty_Html_h5_
   commentId: Overload:Eighty.Html.h5
+  isSpec: "True"
   fullName: Eighty.Html.h5
   nameWithType: Html.h5
 - uid: Eighty.Html.h5_(Eighty.Html[])
@@ -4006,6 +4180,7 @@ references:
   name: h5_
   href: api/Eighty.Html.html#Eighty_Html_h5__
   commentId: Overload:Eighty.Html.h5_
+  isSpec: "True"
   fullName: Eighty.Html.h5_
   nameWithType: Html.h5_
 - uid: Eighty.Html.h6(Eighty.Attr[])
@@ -4036,6 +4211,7 @@ references:
   name: h6
   href: api/Eighty.Html.html#Eighty_Html_h6_
   commentId: Overload:Eighty.Html.h6
+  isSpec: "True"
   fullName: Eighty.Html.h6
   nameWithType: Html.h6
 - uid: Eighty.Html.h6_(Eighty.Html[])
@@ -4060,6 +4236,7 @@ references:
   name: h6_
   href: api/Eighty.Html.html#Eighty_Html_h6__
   commentId: Overload:Eighty.Html.h6_
+  isSpec: "True"
   fullName: Eighty.Html.h6_
   nameWithType: Html.h6_
 - uid: Eighty.Html.head(Eighty.Attr[])
@@ -4090,6 +4267,7 @@ references:
   name: head
   href: api/Eighty.Html.html#Eighty_Html_head_
   commentId: Overload:Eighty.Html.head
+  isSpec: "True"
   fullName: Eighty.Html.head
   nameWithType: Html.head
 - uid: Eighty.Html.head_(Eighty.Html[])
@@ -4114,6 +4292,7 @@ references:
   name: head_
   href: api/Eighty.Html.html#Eighty_Html_head__
   commentId: Overload:Eighty.Html.head_
+  isSpec: "True"
   fullName: Eighty.Html.head_
   nameWithType: Html.head_
 - uid: Eighty.Html.header(Eighty.Attr[])
@@ -4144,6 +4323,7 @@ references:
   name: header
   href: api/Eighty.Html.html#Eighty_Html_header_
   commentId: Overload:Eighty.Html.header
+  isSpec: "True"
   fullName: Eighty.Html.header
   nameWithType: Html.header
 - uid: Eighty.Html.header_(Eighty.Html[])
@@ -4168,6 +4348,7 @@ references:
   name: header_
   href: api/Eighty.Html.html#Eighty_Html_header__
   commentId: Overload:Eighty.Html.header_
+  isSpec: "True"
   fullName: Eighty.Html.header_
   nameWithType: Html.header_
 - uid: Eighty.Html.hgroup(Eighty.Attr[])
@@ -4198,6 +4379,7 @@ references:
   name: hgroup
   href: api/Eighty.Html.html#Eighty_Html_hgroup_
   commentId: Overload:Eighty.Html.hgroup
+  isSpec: "True"
   fullName: Eighty.Html.hgroup
   nameWithType: Html.hgroup
 - uid: Eighty.Html.hgroup_(Eighty.Html[])
@@ -4222,6 +4404,7 @@ references:
   name: hgroup_
   href: api/Eighty.Html.html#Eighty_Html_hgroup__
   commentId: Overload:Eighty.Html.hgroup_
+  isSpec: "True"
   fullName: Eighty.Html.hgroup_
   nameWithType: Html.hgroup_
 - uid: Eighty.Html.hr(Eighty.Attr[])
@@ -4252,6 +4435,7 @@ references:
   name: hr
   href: api/Eighty.Html.html#Eighty_Html_hr_
   commentId: Overload:Eighty.Html.hr
+  isSpec: "True"
   fullName: Eighty.Html.hr
   nameWithType: Html.hr
 - uid: Eighty.Html.html(Eighty.Attr[])
@@ -4282,6 +4466,7 @@ references:
   name: html
   href: api/Eighty.Html.html#Eighty_Html_html_
   commentId: Overload:Eighty.Html.html
+  isSpec: "True"
   fullName: Eighty.Html.html
   nameWithType: Html.html
 - uid: Eighty.Html.html_(Eighty.Html[])
@@ -4306,6 +4491,7 @@ references:
   name: html_
   href: api/Eighty.Html.html#Eighty_Html_html__
   commentId: Overload:Eighty.Html.html_
+  isSpec: "True"
   fullName: Eighty.Html.html_
   nameWithType: Html.html_
 - uid: Eighty.Html.i(Eighty.Attr[])
@@ -4336,6 +4522,7 @@ references:
   name: i
   href: api/Eighty.Html.html#Eighty_Html_i_
   commentId: Overload:Eighty.Html.i
+  isSpec: "True"
   fullName: Eighty.Html.i
   nameWithType: Html.i
 - uid: Eighty.Html.i_(Eighty.Html[])
@@ -4360,6 +4547,7 @@ references:
   name: i_
   href: api/Eighty.Html.html#Eighty_Html_i__
   commentId: Overload:Eighty.Html.i_
+  isSpec: "True"
   fullName: Eighty.Html.i_
   nameWithType: Html.i_
 - uid: Eighty.Html.img(Eighty.Attr[])
@@ -4390,6 +4578,7 @@ references:
   name: img
   href: api/Eighty.Html.html#Eighty_Html_img_
   commentId: Overload:Eighty.Html.img
+  isSpec: "True"
   fullName: Eighty.Html.img
   nameWithType: Html.img
 - uid: Eighty.Html.input(Eighty.Attr[])
@@ -4420,6 +4609,7 @@ references:
   name: input
   href: api/Eighty.Html.html#Eighty_Html_input_
   commentId: Overload:Eighty.Html.input
+  isSpec: "True"
   fullName: Eighty.Html.input
   nameWithType: Html.input
 - uid: Eighty.Html.input_(Eighty.Html[])
@@ -4444,6 +4634,7 @@ references:
   name: input_
   href: api/Eighty.Html.html#Eighty_Html_input__
   commentId: Overload:Eighty.Html.input_
+  isSpec: "True"
   fullName: Eighty.Html.input_
   nameWithType: Html.input_
 - uid: Eighty.Html.kbd(Eighty.Attr[])
@@ -4474,6 +4665,7 @@ references:
   name: kbd
   href: api/Eighty.Html.html#Eighty_Html_kbd_
   commentId: Overload:Eighty.Html.kbd
+  isSpec: "True"
   fullName: Eighty.Html.kbd
   nameWithType: Html.kbd
 - uid: Eighty.Html.kbd_(Eighty.Html[])
@@ -4498,6 +4690,7 @@ references:
   name: kbd_
   href: api/Eighty.Html.html#Eighty_Html_kbd__
   commentId: Overload:Eighty.Html.kbd_
+  isSpec: "True"
   fullName: Eighty.Html.kbd_
   nameWithType: Html.kbd_
 - uid: Eighty.Html.label(Eighty.Attr[])
@@ -4528,6 +4721,7 @@ references:
   name: label
   href: api/Eighty.Html.html#Eighty_Html_label_
   commentId: Overload:Eighty.Html.label
+  isSpec: "True"
   fullName: Eighty.Html.label
   nameWithType: Html.label
 - uid: Eighty.Html.label_(Eighty.Html[])
@@ -4552,6 +4746,7 @@ references:
   name: label_
   href: api/Eighty.Html.html#Eighty_Html_label__
   commentId: Overload:Eighty.Html.label_
+  isSpec: "True"
   fullName: Eighty.Html.label_
   nameWithType: Html.label_
 - uid: Eighty.Html.legend(Eighty.Attr[])
@@ -4582,6 +4777,7 @@ references:
   name: legend
   href: api/Eighty.Html.html#Eighty_Html_legend_
   commentId: Overload:Eighty.Html.legend
+  isSpec: "True"
   fullName: Eighty.Html.legend
   nameWithType: Html.legend
 - uid: Eighty.Html.legend_(Eighty.Html[])
@@ -4606,6 +4802,7 @@ references:
   name: legend_
   href: api/Eighty.Html.html#Eighty_Html_legend__
   commentId: Overload:Eighty.Html.legend_
+  isSpec: "True"
   fullName: Eighty.Html.legend_
   nameWithType: Html.legend_
 - uid: Eighty.Html.li(Eighty.Attr[])
@@ -4636,6 +4833,7 @@ references:
   name: li
   href: api/Eighty.Html.html#Eighty_Html_li_
   commentId: Overload:Eighty.Html.li
+  isSpec: "True"
   fullName: Eighty.Html.li
   nameWithType: Html.li
 - uid: Eighty.Html.li_(Eighty.Html[])
@@ -4660,6 +4858,7 @@ references:
   name: li_
   href: api/Eighty.Html.html#Eighty_Html_li__
   commentId: Overload:Eighty.Html.li_
+  isSpec: "True"
   fullName: Eighty.Html.li_
   nameWithType: Html.li_
 - uid: Eighty.Html.link(Eighty.Attr[])
@@ -4690,6 +4889,7 @@ references:
   name: link
   href: api/Eighty.Html.html#Eighty_Html_link_
   commentId: Overload:Eighty.Html.link
+  isSpec: "True"
   fullName: Eighty.Html.link
   nameWithType: Html.link
 - uid: Eighty.Html.main(Eighty.Attr[])
@@ -4720,6 +4920,7 @@ references:
   name: main
   href: api/Eighty.Html.html#Eighty_Html_main_
   commentId: Overload:Eighty.Html.main
+  isSpec: "True"
   fullName: Eighty.Html.main
   nameWithType: Html.main
 - uid: Eighty.Html.main_(Eighty.Html[])
@@ -4744,6 +4945,7 @@ references:
   name: main_
   href: api/Eighty.Html.html#Eighty_Html_main__
   commentId: Overload:Eighty.Html.main_
+  isSpec: "True"
   fullName: Eighty.Html.main_
   nameWithType: Html.main_
 - uid: Eighty.Html.mark(Eighty.Attr[])
@@ -4774,6 +4976,7 @@ references:
   name: mark
   href: api/Eighty.Html.html#Eighty_Html_mark_
   commentId: Overload:Eighty.Html.mark
+  isSpec: "True"
   fullName: Eighty.Html.mark
   nameWithType: Html.mark
 - uid: Eighty.Html.mark_(Eighty.Html[])
@@ -4798,6 +5001,7 @@ references:
   name: mark_
   href: api/Eighty.Html.html#Eighty_Html_mark__
   commentId: Overload:Eighty.Html.mark_
+  isSpec: "True"
   fullName: Eighty.Html.mark_
   nameWithType: Html.mark_
 - uid: Eighty.Html.menu(Eighty.Attr[])
@@ -4828,6 +5032,7 @@ references:
   name: menu
   href: api/Eighty.Html.html#Eighty_Html_menu_
   commentId: Overload:Eighty.Html.menu
+  isSpec: "True"
   fullName: Eighty.Html.menu
   nameWithType: Html.menu
 - uid: Eighty.Html.menu_(Eighty.Html[])
@@ -4852,6 +5057,7 @@ references:
   name: menu_
   href: api/Eighty.Html.html#Eighty_Html_menu__
   commentId: Overload:Eighty.Html.menu_
+  isSpec: "True"
   fullName: Eighty.Html.menu_
   nameWithType: Html.menu_
 - uid: Eighty.Html.menuitem(Eighty.Attr[])
@@ -4882,6 +5088,7 @@ references:
   name: menuitem
   href: api/Eighty.Html.html#Eighty_Html_menuitem_
   commentId: Overload:Eighty.Html.menuitem
+  isSpec: "True"
   fullName: Eighty.Html.menuitem
   nameWithType: Html.menuitem
 - uid: Eighty.Html.menuitem_(Eighty.Html[])
@@ -4906,6 +5113,7 @@ references:
   name: menuitem_
   href: api/Eighty.Html.html#Eighty_Html_menuitem__
   commentId: Overload:Eighty.Html.menuitem_
+  isSpec: "True"
   fullName: Eighty.Html.menuitem_
   nameWithType: Html.menuitem_
 - uid: Eighty.Html.meta(Eighty.Attr[])
@@ -4936,6 +5144,7 @@ references:
   name: meta
   href: api/Eighty.Html.html#Eighty_Html_meta_
   commentId: Overload:Eighty.Html.meta
+  isSpec: "True"
   fullName: Eighty.Html.meta
   nameWithType: Html.meta
 - uid: Eighty.Html.meter(Eighty.Attr[])
@@ -4966,6 +5175,7 @@ references:
   name: meter
   href: api/Eighty.Html.html#Eighty_Html_meter_
   commentId: Overload:Eighty.Html.meter
+  isSpec: "True"
   fullName: Eighty.Html.meter
   nameWithType: Html.meter
 - uid: Eighty.Html.meter_(Eighty.Html[])
@@ -4990,6 +5200,7 @@ references:
   name: meter_
   href: api/Eighty.Html.html#Eighty_Html_meter__
   commentId: Overload:Eighty.Html.meter_
+  isSpec: "True"
   fullName: Eighty.Html.meter_
   nameWithType: Html.meter_
 - uid: Eighty.Html.nav(Eighty.Attr[])
@@ -5020,6 +5231,7 @@ references:
   name: nav
   href: api/Eighty.Html.html#Eighty_Html_nav_
   commentId: Overload:Eighty.Html.nav
+  isSpec: "True"
   fullName: Eighty.Html.nav
   nameWithType: Html.nav
 - uid: Eighty.Html.nav_(Eighty.Html[])
@@ -5044,6 +5256,7 @@ references:
   name: nav_
   href: api/Eighty.Html.html#Eighty_Html_nav__
   commentId: Overload:Eighty.Html.nav_
+  isSpec: "True"
   fullName: Eighty.Html.nav_
   nameWithType: Html.nav_
 - uid: Eighty.Html.noscript(Eighty.Attr[])
@@ -5074,6 +5287,7 @@ references:
   name: noscript
   href: api/Eighty.Html.html#Eighty_Html_noscript_
   commentId: Overload:Eighty.Html.noscript
+  isSpec: "True"
   fullName: Eighty.Html.noscript
   nameWithType: Html.noscript
 - uid: Eighty.Html.noscript_(Eighty.Html[])
@@ -5098,6 +5312,7 @@ references:
   name: noscript_
   href: api/Eighty.Html.html#Eighty_Html_noscript__
   commentId: Overload:Eighty.Html.noscript_
+  isSpec: "True"
   fullName: Eighty.Html.noscript_
   nameWithType: Html.noscript_
 - uid: Eighty.Html.object(Eighty.Attr[])
@@ -5128,6 +5343,7 @@ references:
   name: object
   href: api/Eighty.Html.html#Eighty_Html_object_
   commentId: Overload:Eighty.Html.object
+  isSpec: "True"
   fullName: Eighty.Html.object
   nameWithType: Html.object
 - uid: Eighty.Html.object_(Eighty.Html[])
@@ -5152,6 +5368,7 @@ references:
   name: object_
   href: api/Eighty.Html.html#Eighty_Html_object__
   commentId: Overload:Eighty.Html.object_
+  isSpec: "True"
   fullName: Eighty.Html.object_
   nameWithType: Html.object_
 - uid: Eighty.Html.ol(Eighty.Attr[])
@@ -5182,6 +5399,7 @@ references:
   name: ol
   href: api/Eighty.Html.html#Eighty_Html_ol_
   commentId: Overload:Eighty.Html.ol
+  isSpec: "True"
   fullName: Eighty.Html.ol
   nameWithType: Html.ol
 - uid: Eighty.Html.ol_(Eighty.Html[])
@@ -5206,6 +5424,7 @@ references:
   name: ol_
   href: api/Eighty.Html.html#Eighty_Html_ol__
   commentId: Overload:Eighty.Html.ol_
+  isSpec: "True"
   fullName: Eighty.Html.ol_
   nameWithType: Html.ol_
 - uid: Eighty.Html.op_Implicit(Eighty.Html[])~Eighty.Html
@@ -5266,6 +5485,7 @@ references:
   name: Implicit
   href: api/Eighty.Html.html#Eighty_Html_op_Implicit_
   commentId: Overload:Eighty.Html.op_Implicit
+  isSpec: "True"
   name.vb: Widening
   fullName: Eighty.Html.Implicit
   fullName.vb: Eighty.Html.Widening
@@ -5299,6 +5519,7 @@ references:
   name: optgroup
   href: api/Eighty.Html.html#Eighty_Html_optgroup_
   commentId: Overload:Eighty.Html.optgroup
+  isSpec: "True"
   fullName: Eighty.Html.optgroup
   nameWithType: Html.optgroup
 - uid: Eighty.Html.optgroup_(Eighty.Html[])
@@ -5323,6 +5544,7 @@ references:
   name: optgroup_
   href: api/Eighty.Html.html#Eighty_Html_optgroup__
   commentId: Overload:Eighty.Html.optgroup_
+  isSpec: "True"
   fullName: Eighty.Html.optgroup_
   nameWithType: Html.optgroup_
 - uid: Eighty.Html.option(Eighty.Attr[])
@@ -5353,6 +5575,7 @@ references:
   name: option
   href: api/Eighty.Html.html#Eighty_Html_option_
   commentId: Overload:Eighty.Html.option
+  isSpec: "True"
   fullName: Eighty.Html.option
   nameWithType: Html.option
 - uid: Eighty.Html.option_(Eighty.Html[])
@@ -5377,6 +5600,7 @@ references:
   name: option_
   href: api/Eighty.Html.html#Eighty_Html_option__
   commentId: Overload:Eighty.Html.option_
+  isSpec: "True"
   fullName: Eighty.Html.option_
   nameWithType: Html.option_
 - uid: Eighty.Html.output(Eighty.Attr[])
@@ -5407,6 +5631,7 @@ references:
   name: output
   href: api/Eighty.Html.html#Eighty_Html_output_
   commentId: Overload:Eighty.Html.output
+  isSpec: "True"
   fullName: Eighty.Html.output
   nameWithType: Html.output
 - uid: Eighty.Html.output_(Eighty.Html[])
@@ -5431,6 +5656,7 @@ references:
   name: output_
   href: api/Eighty.Html.html#Eighty_Html_output__
   commentId: Overload:Eighty.Html.output_
+  isSpec: "True"
   fullName: Eighty.Html.output_
   nameWithType: Html.output_
 - uid: Eighty.Html.p(Eighty.Attr[])
@@ -5461,6 +5687,7 @@ references:
   name: p
   href: api/Eighty.Html.html#Eighty_Html_p_
   commentId: Overload:Eighty.Html.p
+  isSpec: "True"
   fullName: Eighty.Html.p
   nameWithType: Html.p
 - uid: Eighty.Html.p_(Eighty.Html[])
@@ -5485,6 +5712,7 @@ references:
   name: p_
   href: api/Eighty.Html.html#Eighty_Html_p__
   commentId: Overload:Eighty.Html.p_
+  isSpec: "True"
   fullName: Eighty.Html.p_
   nameWithType: Html.p_
 - uid: Eighty.Html.param(Eighty.Attr[])
@@ -5515,6 +5743,7 @@ references:
   name: param
   href: api/Eighty.Html.html#Eighty_Html_param_
   commentId: Overload:Eighty.Html.param
+  isSpec: "True"
   fullName: Eighty.Html.param
   nameWithType: Html.param
 - uid: Eighty.Html.picture(Eighty.Attr[])
@@ -5545,6 +5774,7 @@ references:
   name: picture
   href: api/Eighty.Html.html#Eighty_Html_picture_
   commentId: Overload:Eighty.Html.picture
+  isSpec: "True"
   fullName: Eighty.Html.picture
   nameWithType: Html.picture
 - uid: Eighty.Html.picture_(Eighty.Html[])
@@ -5569,6 +5799,7 @@ references:
   name: picture_
   href: api/Eighty.Html.html#Eighty_Html_picture__
   commentId: Overload:Eighty.Html.picture_
+  isSpec: "True"
   fullName: Eighty.Html.picture_
   nameWithType: Html.picture_
 - uid: Eighty.Html.pre(Eighty.Attr[])
@@ -5599,6 +5830,7 @@ references:
   name: pre
   href: api/Eighty.Html.html#Eighty_Html_pre_
   commentId: Overload:Eighty.Html.pre
+  isSpec: "True"
   fullName: Eighty.Html.pre
   nameWithType: Html.pre
 - uid: Eighty.Html.pre_(Eighty.Html[])
@@ -5623,6 +5855,7 @@ references:
   name: pre_
   href: api/Eighty.Html.html#Eighty_Html_pre__
   commentId: Overload:Eighty.Html.pre_
+  isSpec: "True"
   fullName: Eighty.Html.pre_
   nameWithType: Html.pre_
 - uid: Eighty.Html.progress(Eighty.Attr[])
@@ -5653,6 +5886,7 @@ references:
   name: progress
   href: api/Eighty.Html.html#Eighty_Html_progress_
   commentId: Overload:Eighty.Html.progress
+  isSpec: "True"
   fullName: Eighty.Html.progress
   nameWithType: Html.progress
 - uid: Eighty.Html.progress_(Eighty.Html[])
@@ -5677,6 +5911,7 @@ references:
   name: progress_
   href: api/Eighty.Html.html#Eighty_Html_progress__
   commentId: Overload:Eighty.Html.progress_
+  isSpec: "True"
   fullName: Eighty.Html.progress_
   nameWithType: Html.progress_
 - uid: Eighty.Html.q(Eighty.Attr[])
@@ -5707,6 +5942,7 @@ references:
   name: q
   href: api/Eighty.Html.html#Eighty_Html_q_
   commentId: Overload:Eighty.Html.q
+  isSpec: "True"
   fullName: Eighty.Html.q
   nameWithType: Html.q
 - uid: Eighty.Html.q_(Eighty.Html[])
@@ -5731,6 +5967,7 @@ references:
   name: q_
   href: api/Eighty.Html.html#Eighty_Html_q__
   commentId: Overload:Eighty.Html.q_
+  isSpec: "True"
   fullName: Eighty.Html.q_
   nameWithType: Html.q_
 - uid: Eighty.Html.Raw(System.String)
@@ -5743,6 +5980,7 @@ references:
   name: Raw
   href: api/Eighty.Html.html#Eighty_Html_Raw_
   commentId: Overload:Eighty.Html.Raw
+  isSpec: "True"
   fullName: Eighty.Html.Raw
   nameWithType: Html.Raw
 - uid: Eighty.Html.s(Eighty.Attr[])
@@ -5773,6 +6011,7 @@ references:
   name: s
   href: api/Eighty.Html.html#Eighty_Html_s_
   commentId: Overload:Eighty.Html.s
+  isSpec: "True"
   fullName: Eighty.Html.s
   nameWithType: Html.s
 - uid: Eighty.Html.s_(Eighty.Html[])
@@ -5797,6 +6036,7 @@ references:
   name: s_
   href: api/Eighty.Html.html#Eighty_Html_s__
   commentId: Overload:Eighty.Html.s_
+  isSpec: "True"
   fullName: Eighty.Html.s_
   nameWithType: Html.s_
 - uid: Eighty.Html.samp(Eighty.Attr[])
@@ -5827,6 +6067,7 @@ references:
   name: samp
   href: api/Eighty.Html.html#Eighty_Html_samp_
   commentId: Overload:Eighty.Html.samp
+  isSpec: "True"
   fullName: Eighty.Html.samp
   nameWithType: Html.samp
 - uid: Eighty.Html.samp_(Eighty.Html[])
@@ -5851,6 +6092,7 @@ references:
   name: samp_
   href: api/Eighty.Html.html#Eighty_Html_samp__
   commentId: Overload:Eighty.Html.samp_
+  isSpec: "True"
   fullName: Eighty.Html.samp_
   nameWithType: Html.samp_
 - uid: Eighty.Html.script(Eighty.Attr[])
@@ -5881,6 +6123,7 @@ references:
   name: script
   href: api/Eighty.Html.html#Eighty_Html_script_
   commentId: Overload:Eighty.Html.script
+  isSpec: "True"
   fullName: Eighty.Html.script
   nameWithType: Html.script
 - uid: Eighty.Html.script_(Eighty.Html[])
@@ -5905,6 +6148,7 @@ references:
   name: script_
   href: api/Eighty.Html.html#Eighty_Html_script__
   commentId: Overload:Eighty.Html.script_
+  isSpec: "True"
   fullName: Eighty.Html.script_
   nameWithType: Html.script_
 - uid: Eighty.Html.section(Eighty.Attr[])
@@ -5935,6 +6179,7 @@ references:
   name: section
   href: api/Eighty.Html.html#Eighty_Html_section_
   commentId: Overload:Eighty.Html.section
+  isSpec: "True"
   fullName: Eighty.Html.section
   nameWithType: Html.section
 - uid: Eighty.Html.section_(Eighty.Html[])
@@ -5959,6 +6204,7 @@ references:
   name: section_
   href: api/Eighty.Html.html#Eighty_Html_section__
   commentId: Overload:Eighty.Html.section_
+  isSpec: "True"
   fullName: Eighty.Html.section_
   nameWithType: Html.section_
 - uid: Eighty.Html.select(Eighty.Attr[])
@@ -5989,6 +6235,7 @@ references:
   name: select
   href: api/Eighty.Html.html#Eighty_Html_select_
   commentId: Overload:Eighty.Html.select
+  isSpec: "True"
   fullName: Eighty.Html.select
   nameWithType: Html.select
 - uid: Eighty.Html.select_(Eighty.Html[])
@@ -6013,6 +6260,7 @@ references:
   name: select_
   href: api/Eighty.Html.html#Eighty_Html_select__
   commentId: Overload:Eighty.Html.select_
+  isSpec: "True"
   fullName: Eighty.Html.select_
   nameWithType: Html.select_
 - uid: Eighty.Html.SelfClosingTag(System.String,Eighty.Attr[])
@@ -6037,6 +6285,7 @@ references:
   name: SelfClosingTag
   href: api/Eighty.Html.html#Eighty_Html_SelfClosingTag_
   commentId: Overload:Eighty.Html.SelfClosingTag
+  isSpec: "True"
   fullName: Eighty.Html.SelfClosingTag
   nameWithType: Html.SelfClosingTag
 - uid: Eighty.Html.small(Eighty.Attr[])
@@ -6067,6 +6316,7 @@ references:
   name: small
   href: api/Eighty.Html.html#Eighty_Html_small_
   commentId: Overload:Eighty.Html.small
+  isSpec: "True"
   fullName: Eighty.Html.small
   nameWithType: Html.small
 - uid: Eighty.Html.small_(Eighty.Html[])
@@ -6091,6 +6341,7 @@ references:
   name: small_
   href: api/Eighty.Html.html#Eighty_Html_small__
   commentId: Overload:Eighty.Html.small_
+  isSpec: "True"
   fullName: Eighty.Html.small_
   nameWithType: Html.small_
 - uid: Eighty.Html.source(Eighty.Attr[])
@@ -6121,6 +6372,7 @@ references:
   name: source
   href: api/Eighty.Html.html#Eighty_Html_source_
   commentId: Overload:Eighty.Html.source
+  isSpec: "True"
   fullName: Eighty.Html.source
   nameWithType: Html.source
 - uid: Eighty.Html.span(Eighty.Attr[])
@@ -6151,6 +6403,7 @@ references:
   name: span
   href: api/Eighty.Html.html#Eighty_Html_span_
   commentId: Overload:Eighty.Html.span
+  isSpec: "True"
   fullName: Eighty.Html.span
   nameWithType: Html.span
 - uid: Eighty.Html.span_(Eighty.Html[])
@@ -6175,6 +6428,7 @@ references:
   name: span_
   href: api/Eighty.Html.html#Eighty_Html_span__
   commentId: Overload:Eighty.Html.span_
+  isSpec: "True"
   fullName: Eighty.Html.span_
   nameWithType: Html.span_
 - uid: Eighty.Html.strong(Eighty.Attr[])
@@ -6205,6 +6459,7 @@ references:
   name: strong
   href: api/Eighty.Html.html#Eighty_Html_strong_
   commentId: Overload:Eighty.Html.strong
+  isSpec: "True"
   fullName: Eighty.Html.strong
   nameWithType: Html.strong
 - uid: Eighty.Html.strong_(Eighty.Html[])
@@ -6229,6 +6484,7 @@ references:
   name: strong_
   href: api/Eighty.Html.html#Eighty_Html_strong__
   commentId: Overload:Eighty.Html.strong_
+  isSpec: "True"
   fullName: Eighty.Html.strong_
   nameWithType: Html.strong_
 - uid: Eighty.Html.style(Eighty.Attr[])
@@ -6259,6 +6515,7 @@ references:
   name: style
   href: api/Eighty.Html.html#Eighty_Html_style_
   commentId: Overload:Eighty.Html.style
+  isSpec: "True"
   fullName: Eighty.Html.style
   nameWithType: Html.style
 - uid: Eighty.Html.style_(Eighty.Html[])
@@ -6283,6 +6540,7 @@ references:
   name: style_
   href: api/Eighty.Html.html#Eighty_Html_style__
   commentId: Overload:Eighty.Html.style_
+  isSpec: "True"
   fullName: Eighty.Html.style_
   nameWithType: Html.style_
 - uid: Eighty.Html.sub(Eighty.Attr[])
@@ -6313,6 +6571,7 @@ references:
   name: sub
   href: api/Eighty.Html.html#Eighty_Html_sub_
   commentId: Overload:Eighty.Html.sub
+  isSpec: "True"
   fullName: Eighty.Html.sub
   nameWithType: Html.sub
 - uid: Eighty.Html.sub_(Eighty.Html[])
@@ -6337,6 +6596,7 @@ references:
   name: sub_
   href: api/Eighty.Html.html#Eighty_Html_sub__
   commentId: Overload:Eighty.Html.sub_
+  isSpec: "True"
   fullName: Eighty.Html.sub_
   nameWithType: Html.sub_
 - uid: Eighty.Html.summary(Eighty.Attr[])
@@ -6367,6 +6627,7 @@ references:
   name: summary
   href: api/Eighty.Html.html#Eighty_Html_summary_
   commentId: Overload:Eighty.Html.summary
+  isSpec: "True"
   fullName: Eighty.Html.summary
   nameWithType: Html.summary
 - uid: Eighty.Html.summary_(Eighty.Html[])
@@ -6391,6 +6652,7 @@ references:
   name: summary_
   href: api/Eighty.Html.html#Eighty_Html_summary__
   commentId: Overload:Eighty.Html.summary_
+  isSpec: "True"
   fullName: Eighty.Html.summary_
   nameWithType: Html.summary_
 - uid: Eighty.Html.sup(Eighty.Attr[])
@@ -6421,6 +6683,7 @@ references:
   name: sup
   href: api/Eighty.Html.html#Eighty_Html_sup_
   commentId: Overload:Eighty.Html.sup
+  isSpec: "True"
   fullName: Eighty.Html.sup
   nameWithType: Html.sup
 - uid: Eighty.Html.sup_(Eighty.Html[])
@@ -6445,6 +6708,7 @@ references:
   name: sup_
   href: api/Eighty.Html.html#Eighty_Html_sup__
   commentId: Overload:Eighty.Html.sup_
+  isSpec: "True"
   fullName: Eighty.Html.sup_
   nameWithType: Html.sup_
 - uid: Eighty.Html.table(Eighty.Attr[])
@@ -6475,6 +6739,7 @@ references:
   name: table
   href: api/Eighty.Html.html#Eighty_Html_table_
   commentId: Overload:Eighty.Html.table
+  isSpec: "True"
   fullName: Eighty.Html.table
   nameWithType: Html.table
 - uid: Eighty.Html.table_(Eighty.Html[])
@@ -6499,6 +6764,7 @@ references:
   name: table_
   href: api/Eighty.Html.html#Eighty_Html_table__
   commentId: Overload:Eighty.Html.table_
+  isSpec: "True"
   fullName: Eighty.Html.table_
   nameWithType: Html.table_
 - uid: Eighty.Html.Tag(System.String,Eighty.Attr[])
@@ -6523,6 +6789,7 @@ references:
   name: Tag
   href: api/Eighty.Html.html#Eighty_Html_Tag_
   commentId: Overload:Eighty.Html.Tag
+  isSpec: "True"
   fullName: Eighty.Html.Tag
   nameWithType: Html.Tag
 - uid: Eighty.Html.Tag_(System.String,Eighty.Html[])
@@ -6574,6 +6841,7 @@ references:
   name: Tag_
   href: api/Eighty.Html.html#Eighty_Html_Tag__
   commentId: Overload:Eighty.Html.Tag_
+  isSpec: "True"
   fullName: Eighty.Html.Tag_
   nameWithType: Html.Tag_
 - uid: Eighty.Html.tbody(Eighty.Attr[])
@@ -6604,6 +6872,7 @@ references:
   name: tbody
   href: api/Eighty.Html.html#Eighty_Html_tbody_
   commentId: Overload:Eighty.Html.tbody
+  isSpec: "True"
   fullName: Eighty.Html.tbody
   nameWithType: Html.tbody
 - uid: Eighty.Html.tbody_(Eighty.Html[])
@@ -6628,6 +6897,7 @@ references:
   name: tbody_
   href: api/Eighty.Html.html#Eighty_Html_tbody__
   commentId: Overload:Eighty.Html.tbody_
+  isSpec: "True"
   fullName: Eighty.Html.tbody_
   nameWithType: Html.tbody_
 - uid: Eighty.Html.td(Eighty.Attr[])
@@ -6658,6 +6928,7 @@ references:
   name: td
   href: api/Eighty.Html.html#Eighty_Html_td_
   commentId: Overload:Eighty.Html.td
+  isSpec: "True"
   fullName: Eighty.Html.td
   nameWithType: Html.td
 - uid: Eighty.Html.td_(Eighty.Html[])
@@ -6682,6 +6953,7 @@ references:
   name: td_
   href: api/Eighty.Html.html#Eighty_Html_td__
   commentId: Overload:Eighty.Html.td_
+  isSpec: "True"
   fullName: Eighty.Html.td_
   nameWithType: Html.td_
 - uid: Eighty.Html.Text(System.String)
@@ -6694,6 +6966,7 @@ references:
   name: Text
   href: api/Eighty.Html.html#Eighty_Html_Text_
   commentId: Overload:Eighty.Html.Text
+  isSpec: "True"
   fullName: Eighty.Html.Text
   nameWithType: Html.Text
 - uid: Eighty.Html.textarea(Eighty.Attr[])
@@ -6724,6 +6997,7 @@ references:
   name: textarea
   href: api/Eighty.Html.html#Eighty_Html_textarea_
   commentId: Overload:Eighty.Html.textarea
+  isSpec: "True"
   fullName: Eighty.Html.textarea
   nameWithType: Html.textarea
 - uid: Eighty.Html.textarea_(Eighty.Html[])
@@ -6748,6 +7022,7 @@ references:
   name: textarea_
   href: api/Eighty.Html.html#Eighty_Html_textarea__
   commentId: Overload:Eighty.Html.textarea_
+  isSpec: "True"
   fullName: Eighty.Html.textarea_
   nameWithType: Html.textarea_
 - uid: Eighty.Html.tfoot(Eighty.Attr[])
@@ -6778,6 +7053,7 @@ references:
   name: tfoot
   href: api/Eighty.Html.html#Eighty_Html_tfoot_
   commentId: Overload:Eighty.Html.tfoot
+  isSpec: "True"
   fullName: Eighty.Html.tfoot
   nameWithType: Html.tfoot
 - uid: Eighty.Html.tfoot_(Eighty.Html[])
@@ -6802,6 +7078,7 @@ references:
   name: tfoot_
   href: api/Eighty.Html.html#Eighty_Html_tfoot__
   commentId: Overload:Eighty.Html.tfoot_
+  isSpec: "True"
   fullName: Eighty.Html.tfoot_
   nameWithType: Html.tfoot_
 - uid: Eighty.Html.th(Eighty.Attr[])
@@ -6832,6 +7109,7 @@ references:
   name: th
   href: api/Eighty.Html.html#Eighty_Html_th_
   commentId: Overload:Eighty.Html.th
+  isSpec: "True"
   fullName: Eighty.Html.th
   nameWithType: Html.th
 - uid: Eighty.Html.th_(Eighty.Html[])
@@ -6856,6 +7134,7 @@ references:
   name: th_
   href: api/Eighty.Html.html#Eighty_Html_th__
   commentId: Overload:Eighty.Html.th_
+  isSpec: "True"
   fullName: Eighty.Html.th_
   nameWithType: Html.th_
 - uid: Eighty.Html.thead(Eighty.Attr[])
@@ -6886,6 +7165,7 @@ references:
   name: thead
   href: api/Eighty.Html.html#Eighty_Html_thead_
   commentId: Overload:Eighty.Html.thead
+  isSpec: "True"
   fullName: Eighty.Html.thead
   nameWithType: Html.thead
 - uid: Eighty.Html.thead_(Eighty.Html[])
@@ -6910,6 +7190,7 @@ references:
   name: thead_
   href: api/Eighty.Html.html#Eighty_Html_thead__
   commentId: Overload:Eighty.Html.thead_
+  isSpec: "True"
   fullName: Eighty.Html.thead_
   nameWithType: Html.thead_
 - uid: Eighty.Html.time(Eighty.Attr[])
@@ -6940,6 +7221,7 @@ references:
   name: time
   href: api/Eighty.Html.html#Eighty_Html_time_
   commentId: Overload:Eighty.Html.time
+  isSpec: "True"
   fullName: Eighty.Html.time
   nameWithType: Html.time
 - uid: Eighty.Html.time_(Eighty.Html[])
@@ -6964,6 +7246,7 @@ references:
   name: time_
   href: api/Eighty.Html.html#Eighty_Html_time__
   commentId: Overload:Eighty.Html.time_
+  isSpec: "True"
   fullName: Eighty.Html.time_
   nameWithType: Html.time_
 - uid: Eighty.Html.title(Eighty.Attr[])
@@ -6994,6 +7277,7 @@ references:
   name: title
   href: api/Eighty.Html.html#Eighty_Html_title_
   commentId: Overload:Eighty.Html.title
+  isSpec: "True"
   fullName: Eighty.Html.title
   nameWithType: Html.title
 - uid: Eighty.Html.title_(Eighty.Html[])
@@ -7018,6 +7302,7 @@ references:
   name: title_
   href: api/Eighty.Html.html#Eighty_Html_title__
   commentId: Overload:Eighty.Html.title_
+  isSpec: "True"
   fullName: Eighty.Html.title_
   nameWithType: Html.title_
 - uid: Eighty.Html.ToString
@@ -7030,6 +7315,7 @@ references:
   name: ToString
   href: api/Eighty.Html.html#Eighty_Html_ToString_
   commentId: Overload:Eighty.Html.ToString
+  isSpec: "True"
   fullName: Eighty.Html.ToString
   nameWithType: Html.ToString
 - uid: Eighty.Html.tr(Eighty.Attr[])
@@ -7060,6 +7346,7 @@ references:
   name: tr
   href: api/Eighty.Html.html#Eighty_Html_tr_
   commentId: Overload:Eighty.Html.tr
+  isSpec: "True"
   fullName: Eighty.Html.tr
   nameWithType: Html.tr
 - uid: Eighty.Html.tr_(Eighty.Html[])
@@ -7084,6 +7371,7 @@ references:
   name: tr_
   href: api/Eighty.Html.html#Eighty_Html_tr__
   commentId: Overload:Eighty.Html.tr_
+  isSpec: "True"
   fullName: Eighty.Html.tr_
   nameWithType: Html.tr_
 - uid: Eighty.Html.track(Eighty.Attr[])
@@ -7114,6 +7402,7 @@ references:
   name: track
   href: api/Eighty.Html.html#Eighty_Html_track_
   commentId: Overload:Eighty.Html.track
+  isSpec: "True"
   fullName: Eighty.Html.track
   nameWithType: Html.track
 - uid: Eighty.Html.u(Eighty.Attr[])
@@ -7144,6 +7433,7 @@ references:
   name: u
   href: api/Eighty.Html.html#Eighty_Html_u_
   commentId: Overload:Eighty.Html.u
+  isSpec: "True"
   fullName: Eighty.Html.u
   nameWithType: Html.u
 - uid: Eighty.Html.u_(Eighty.Html[])
@@ -7168,6 +7458,7 @@ references:
   name: u_
   href: api/Eighty.Html.html#Eighty_Html_u__
   commentId: Overload:Eighty.Html.u_
+  isSpec: "True"
   fullName: Eighty.Html.u_
   nameWithType: Html.u_
 - uid: Eighty.Html.ul(Eighty.Attr[])
@@ -7198,6 +7489,7 @@ references:
   name: ul
   href: api/Eighty.Html.html#Eighty_Html_ul_
   commentId: Overload:Eighty.Html.ul
+  isSpec: "True"
   fullName: Eighty.Html.ul
   nameWithType: Html.ul
 - uid: Eighty.Html.ul_(Eighty.Html[])
@@ -7222,6 +7514,7 @@ references:
   name: ul_
   href: api/Eighty.Html.html#Eighty_Html_ul__
   commentId: Overload:Eighty.Html.ul_
+  isSpec: "True"
   fullName: Eighty.Html.ul_
   nameWithType: Html.ul_
 - uid: Eighty.Html.video(Eighty.Attr[])
@@ -7252,6 +7545,7 @@ references:
   name: video
   href: api/Eighty.Html.html#Eighty_Html_video_
   commentId: Overload:Eighty.Html.video
+  isSpec: "True"
   fullName: Eighty.Html.video
   nameWithType: Html.video
 - uid: Eighty.Html.video_(Eighty.Html[])
@@ -7276,6 +7570,7 @@ references:
   name: video_
   href: api/Eighty.Html.html#Eighty_Html_video__
   commentId: Overload:Eighty.Html.video_
+  isSpec: "True"
   fullName: Eighty.Html.video_
   nameWithType: Html.video_
 - uid: Eighty.Html.wbr(Eighty.Attr[])
@@ -7306,6 +7601,7 @@ references:
   name: wbr
   href: api/Eighty.Html.html#Eighty_Html_wbr_
   commentId: Overload:Eighty.Html.wbr
+  isSpec: "True"
   fullName: Eighty.Html.wbr
   nameWithType: Html.wbr
 - uid: Eighty.Html.Write(System.IO.TextWriter)
@@ -7324,6 +7620,7 @@ references:
   name: Write
   href: api/Eighty.Html.html#Eighty_Html_Write_
   commentId: Overload:Eighty.Html.Write
+  isSpec: "True"
   fullName: Eighty.Html.Write
   nameWithType: Html.Write
 - uid: Eighty.Html.WriteAsync(System.IO.TextWriter)
@@ -7342,6 +7639,7 @@ references:
   name: WriteAsync
   href: api/Eighty.Html.html#Eighty_Html_WriteAsync_
   commentId: Overload:Eighty.Html.WriteAsync
+  isSpec: "True"
   fullName: Eighty.Html.WriteAsync
   nameWithType: Html.WriteAsync
 - uid: Eighty.IHtmlRenderer`1
@@ -7365,6 +7663,7 @@ references:
   name: Render
   href: api/Eighty.IHtmlRenderer-1.html#Eighty_IHtmlRenderer_1_Render_
   commentId: Overload:Eighty.IHtmlRenderer`1.Render
+  isSpec: "True"
   fullName: Eighty.IHtmlRenderer<TModel>.Render
   fullName.vb: Eighty.IHtmlRenderer(Of TModel).Render
   nameWithType: IHtmlRenderer<TModel>.Render
@@ -7424,6 +7723,7 @@ references:
   name: _
   href: api/Eighty.TagBuilder.html#Eighty_TagBuilder___
   commentId: Overload:Eighty.TagBuilder._
+  isSpec: "True"
   fullName: Eighty.TagBuilder._
   nameWithType: TagBuilder._
 - uid: Eighty.Twenty
@@ -7466,6 +7766,7 @@ references:
   name: a
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_a_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.a
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.a
   nameWithType: HtmlBuilder.a
 - uid: Eighty.Twenty.HtmlBuilder.abbr(Eighty.Attr[])
@@ -7496,6 +7797,7 @@ references:
   name: abbr
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_abbr_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.abbr
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.abbr
   nameWithType: HtmlBuilder.abbr
 - uid: Eighty.Twenty.HtmlBuilder.address(Eighty.Attr[])
@@ -7526,6 +7828,7 @@ references:
   name: address
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_address_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.address
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.address
   nameWithType: HtmlBuilder.address
 - uid: Eighty.Twenty.HtmlBuilder.article(Eighty.Attr[])
@@ -7556,6 +7859,7 @@ references:
   name: article
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_article_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.article
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.article
   nameWithType: HtmlBuilder.article
 - uid: Eighty.Twenty.HtmlBuilder.aside(Eighty.Attr[])
@@ -7586,6 +7890,7 @@ references:
   name: aside
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_aside_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.aside
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.aside
   nameWithType: HtmlBuilder.aside
 - uid: Eighty.Twenty.HtmlBuilder.audio(Eighty.Attr[])
@@ -7616,6 +7921,7 @@ references:
   name: audio
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_audio_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.audio
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.audio
   nameWithType: HtmlBuilder.audio
 - uid: Eighty.Twenty.HtmlBuilder.b(Eighty.Attr[])
@@ -7646,6 +7952,7 @@ references:
   name: b
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_b_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.b
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.b
   nameWithType: HtmlBuilder.b
 - uid: Eighty.Twenty.HtmlBuilder.base(Eighty.Attr[])
@@ -7676,6 +7983,7 @@ references:
   name: base
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_base_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.base
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.base
   nameWithType: HtmlBuilder.base
 - uid: Eighty.Twenty.HtmlBuilder.bdi(Eighty.Attr[])
@@ -7706,6 +8014,7 @@ references:
   name: bdi
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_bdi_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.bdi
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.bdi
   nameWithType: HtmlBuilder.bdi
 - uid: Eighty.Twenty.HtmlBuilder.bdo(Eighty.Attr[])
@@ -7736,6 +8045,7 @@ references:
   name: bdo
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_bdo_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.bdo
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.bdo
   nameWithType: HtmlBuilder.bdo
 - uid: Eighty.Twenty.HtmlBuilder.blockquote(Eighty.Attr[])
@@ -7766,6 +8076,7 @@ references:
   name: blockquote
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_blockquote_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.blockquote
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.blockquote
   nameWithType: HtmlBuilder.blockquote
 - uid: Eighty.Twenty.HtmlBuilder.body(Eighty.Attr[])
@@ -7796,6 +8107,7 @@ references:
   name: body
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_body_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.body
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.body
   nameWithType: HtmlBuilder.body
 - uid: Eighty.Twenty.HtmlBuilder.br(Eighty.Attr[])
@@ -7826,6 +8138,7 @@ references:
   name: br
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_br_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.br
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.br
   nameWithType: HtmlBuilder.br
 - uid: Eighty.Twenty.HtmlBuilder.Build
@@ -7838,6 +8151,7 @@ references:
   name: Build
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_Build_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.Build
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.Build
   nameWithType: HtmlBuilder.Build
 - uid: Eighty.Twenty.HtmlBuilder.button(Eighty.Attr[])
@@ -7868,6 +8182,7 @@ references:
   name: button
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_button_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.button
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.button
   nameWithType: HtmlBuilder.button
 - uid: Eighty.Twenty.HtmlBuilder.canvas(Eighty.Attr[])
@@ -7898,6 +8213,7 @@ references:
   name: canvas
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_canvas_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.canvas
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.canvas
   nameWithType: HtmlBuilder.canvas
 - uid: Eighty.Twenty.HtmlBuilder.caption(Eighty.Attr[])
@@ -7928,6 +8244,7 @@ references:
   name: caption
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_caption_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.caption
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.caption
   nameWithType: HtmlBuilder.caption
 - uid: Eighty.Twenty.HtmlBuilder.cite(Eighty.Attr[])
@@ -7958,6 +8275,7 @@ references:
   name: cite
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_cite_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.cite
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.cite
   nameWithType: HtmlBuilder.cite
 - uid: Eighty.Twenty.HtmlBuilder.code(Eighty.Attr[])
@@ -7988,6 +8306,7 @@ references:
   name: code
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_code_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.code
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.code
   nameWithType: HtmlBuilder.code
 - uid: Eighty.Twenty.HtmlBuilder.col(Eighty.Attr[])
@@ -8018,6 +8337,7 @@ references:
   name: col
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_col_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.col
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.col
   nameWithType: HtmlBuilder.col
 - uid: Eighty.Twenty.HtmlBuilder.colgroup(Eighty.Attr[])
@@ -8048,6 +8368,7 @@ references:
   name: colgroup
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_colgroup_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.colgroup
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.colgroup
   nameWithType: HtmlBuilder.colgroup
 - uid: Eighty.Twenty.HtmlBuilder.data(Eighty.Attr[])
@@ -8078,6 +8399,7 @@ references:
   name: data
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_data_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.data
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.data
   nameWithType: HtmlBuilder.data
 - uid: Eighty.Twenty.HtmlBuilder.datalist(Eighty.Attr[])
@@ -8108,6 +8430,7 @@ references:
   name: datalist
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_datalist_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.datalist
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.datalist
   nameWithType: HtmlBuilder.datalist
 - uid: Eighty.Twenty.HtmlBuilder.dd(Eighty.Attr[])
@@ -8138,6 +8461,7 @@ references:
   name: dd
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_dd_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.dd
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.dd
   nameWithType: HtmlBuilder.dd
 - uid: Eighty.Twenty.HtmlBuilder.details(Eighty.Attr[])
@@ -8168,6 +8492,7 @@ references:
   name: details
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_details_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.details
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.details
   nameWithType: HtmlBuilder.details
 - uid: Eighty.Twenty.HtmlBuilder.dfn(Eighty.Attr[])
@@ -8198,6 +8523,7 @@ references:
   name: dfn
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_dfn_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.dfn
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.dfn
   nameWithType: HtmlBuilder.dfn
 - uid: Eighty.Twenty.HtmlBuilder.dialog(Eighty.Attr[])
@@ -8228,6 +8554,7 @@ references:
   name: dialog
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_dialog_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.dialog
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.dialog
   nameWithType: HtmlBuilder.dialog
 - uid: Eighty.Twenty.HtmlBuilder.div(Eighty.Attr[])
@@ -8258,6 +8585,7 @@ references:
   name: div
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_div_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.div
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.div
   nameWithType: HtmlBuilder.div
 - uid: Eighty.Twenty.HtmlBuilder.dl(Eighty.Attr[])
@@ -8288,6 +8616,7 @@ references:
   name: dl
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_dl_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.dl
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.dl
   nameWithType: HtmlBuilder.dl
 - uid: Eighty.Twenty.HtmlBuilder.doctype
@@ -8300,6 +8629,7 @@ references:
   name: doctype
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_doctype_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.doctype
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.doctype
   nameWithType: HtmlBuilder.doctype
 - uid: Eighty.Twenty.HtmlBuilder.doctypeHtml
@@ -8312,6 +8642,7 @@ references:
   name: doctypeHtml
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_doctypeHtml_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.doctypeHtml
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.doctypeHtml
   nameWithType: HtmlBuilder.doctypeHtml
 - uid: Eighty.Twenty.HtmlBuilder.dt(Eighty.Attr[])
@@ -8342,6 +8673,7 @@ references:
   name: dt
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_dt_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.dt
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.dt
   nameWithType: HtmlBuilder.dt
 - uid: Eighty.Twenty.HtmlBuilder.em(Eighty.Attr[])
@@ -8372,6 +8704,7 @@ references:
   name: em
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_em_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.em
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.em
   nameWithType: HtmlBuilder.em
 - uid: Eighty.Twenty.HtmlBuilder.embed(Eighty.Attr[])
@@ -8402,6 +8735,7 @@ references:
   name: embed
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_embed_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.embed
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.embed
   nameWithType: HtmlBuilder.embed
 - uid: Eighty.Twenty.HtmlBuilder.fieldset(Eighty.Attr[])
@@ -8432,6 +8766,7 @@ references:
   name: fieldset
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_fieldset_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.fieldset
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.fieldset
   nameWithType: HtmlBuilder.fieldset
 - uid: Eighty.Twenty.HtmlBuilder.figcaption(Eighty.Attr[])
@@ -8462,6 +8797,7 @@ references:
   name: figcaption
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_figcaption_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.figcaption
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.figcaption
   nameWithType: HtmlBuilder.figcaption
 - uid: Eighty.Twenty.HtmlBuilder.figure(Eighty.Attr[])
@@ -8492,6 +8828,7 @@ references:
   name: figure
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_figure_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.figure
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.figure
   nameWithType: HtmlBuilder.figure
 - uid: Eighty.Twenty.HtmlBuilder.footer(Eighty.Attr[])
@@ -8522,6 +8859,7 @@ references:
   name: footer
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_footer_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.footer
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.footer
   nameWithType: HtmlBuilder.footer
 - uid: Eighty.Twenty.HtmlBuilder.form(Eighty.Attr[])
@@ -8552,6 +8890,7 @@ references:
   name: form
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_form_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.form
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.form
   nameWithType: HtmlBuilder.form
 - uid: Eighty.Twenty.HtmlBuilder.h1(Eighty.Attr[])
@@ -8582,6 +8921,7 @@ references:
   name: h1
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_h1_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.h1
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.h1
   nameWithType: HtmlBuilder.h1
 - uid: Eighty.Twenty.HtmlBuilder.h2(Eighty.Attr[])
@@ -8612,6 +8952,7 @@ references:
   name: h2
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_h2_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.h2
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.h2
   nameWithType: HtmlBuilder.h2
 - uid: Eighty.Twenty.HtmlBuilder.h3(Eighty.Attr[])
@@ -8642,6 +8983,7 @@ references:
   name: h3
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_h3_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.h3
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.h3
   nameWithType: HtmlBuilder.h3
 - uid: Eighty.Twenty.HtmlBuilder.h4(Eighty.Attr[])
@@ -8672,6 +9014,7 @@ references:
   name: h4
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_h4_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.h4
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.h4
   nameWithType: HtmlBuilder.h4
 - uid: Eighty.Twenty.HtmlBuilder.h5(Eighty.Attr[])
@@ -8702,6 +9045,7 @@ references:
   name: h5
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_h5_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.h5
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.h5
   nameWithType: HtmlBuilder.h5
 - uid: Eighty.Twenty.HtmlBuilder.h6(Eighty.Attr[])
@@ -8732,6 +9076,7 @@ references:
   name: h6
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_h6_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.h6
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.h6
   nameWithType: HtmlBuilder.h6
 - uid: Eighty.Twenty.HtmlBuilder.head(Eighty.Attr[])
@@ -8762,6 +9107,7 @@ references:
   name: head
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_head_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.head
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.head
   nameWithType: HtmlBuilder.head
 - uid: Eighty.Twenty.HtmlBuilder.header(Eighty.Attr[])
@@ -8792,6 +9138,7 @@ references:
   name: header
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_header_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.header
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.header
   nameWithType: HtmlBuilder.header
 - uid: Eighty.Twenty.HtmlBuilder.hgroup(Eighty.Attr[])
@@ -8822,6 +9169,7 @@ references:
   name: hgroup
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_hgroup_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.hgroup
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.hgroup
   nameWithType: HtmlBuilder.hgroup
 - uid: Eighty.Twenty.HtmlBuilder.hr(Eighty.Attr[])
@@ -8852,6 +9200,7 @@ references:
   name: hr
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_hr_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.hr
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.hr
   nameWithType: HtmlBuilder.hr
 - uid: Eighty.Twenty.HtmlBuilder.html(Eighty.Attr[])
@@ -8888,12 +9237,14 @@ references:
   name: html
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_html_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.html
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.html
   nameWithType: HtmlBuilder.html
 - uid: Eighty.Twenty.HtmlBuilder.Html*
   name: Html
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_Html_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.Html
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.Html
   nameWithType: HtmlBuilder.Html
 - uid: Eighty.Twenty.HtmlBuilder.i(Eighty.Attr[])
@@ -8924,6 +9275,7 @@ references:
   name: i
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_i_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.i
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.i
   nameWithType: HtmlBuilder.i
 - uid: Eighty.Twenty.HtmlBuilder.img(Eighty.Attr[])
@@ -8954,6 +9306,7 @@ references:
   name: img
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_img_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.img
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.img
   nameWithType: HtmlBuilder.img
 - uid: Eighty.Twenty.HtmlBuilder.input(Eighty.Attr[])
@@ -8984,6 +9337,7 @@ references:
   name: input
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_input_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.input
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.input
   nameWithType: HtmlBuilder.input
 - uid: Eighty.Twenty.HtmlBuilder.kbd(Eighty.Attr[])
@@ -9014,6 +9368,7 @@ references:
   name: kbd
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_kbd_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.kbd
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.kbd
   nameWithType: HtmlBuilder.kbd
 - uid: Eighty.Twenty.HtmlBuilder.label(Eighty.Attr[])
@@ -9044,6 +9399,7 @@ references:
   name: label
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_label_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.label
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.label
   nameWithType: HtmlBuilder.label
 - uid: Eighty.Twenty.HtmlBuilder.legend(Eighty.Attr[])
@@ -9074,6 +9430,7 @@ references:
   name: legend
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_legend_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.legend
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.legend
   nameWithType: HtmlBuilder.legend
 - uid: Eighty.Twenty.HtmlBuilder.li(Eighty.Attr[])
@@ -9104,6 +9461,7 @@ references:
   name: li
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_li_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.li
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.li
   nameWithType: HtmlBuilder.li
 - uid: Eighty.Twenty.HtmlBuilder.link(Eighty.Attr[])
@@ -9134,6 +9492,7 @@ references:
   name: link
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_link_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.link
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.link
   nameWithType: HtmlBuilder.link
 - uid: Eighty.Twenty.HtmlBuilder.main(Eighty.Attr[])
@@ -9164,6 +9523,7 @@ references:
   name: main
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_main_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.main
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.main
   nameWithType: HtmlBuilder.main
 - uid: Eighty.Twenty.HtmlBuilder.mark(Eighty.Attr[])
@@ -9194,6 +9554,7 @@ references:
   name: mark
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_mark_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.mark
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.mark
   nameWithType: HtmlBuilder.mark
 - uid: Eighty.Twenty.HtmlBuilder.menu(Eighty.Attr[])
@@ -9224,6 +9585,7 @@ references:
   name: menu
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_menu_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.menu
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.menu
   nameWithType: HtmlBuilder.menu
 - uid: Eighty.Twenty.HtmlBuilder.menuitem(Eighty.Attr[])
@@ -9254,6 +9616,7 @@ references:
   name: menuitem
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_menuitem_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.menuitem
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.menuitem
   nameWithType: HtmlBuilder.menuitem
 - uid: Eighty.Twenty.HtmlBuilder.meta(Eighty.Attr[])
@@ -9284,6 +9647,7 @@ references:
   name: meta
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_meta_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.meta
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.meta
   nameWithType: HtmlBuilder.meta
 - uid: Eighty.Twenty.HtmlBuilder.meter(Eighty.Attr[])
@@ -9314,6 +9678,7 @@ references:
   name: meter
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_meter_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.meter
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.meter
   nameWithType: HtmlBuilder.meter
 - uid: Eighty.Twenty.HtmlBuilder.nav(Eighty.Attr[])
@@ -9344,6 +9709,7 @@ references:
   name: nav
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_nav_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.nav
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.nav
   nameWithType: HtmlBuilder.nav
 - uid: Eighty.Twenty.HtmlBuilder.noscript(Eighty.Attr[])
@@ -9374,6 +9740,7 @@ references:
   name: noscript
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_noscript_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.noscript
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.noscript
   nameWithType: HtmlBuilder.noscript
 - uid: Eighty.Twenty.HtmlBuilder.Null
@@ -9386,6 +9753,7 @@ references:
   name: "Null"
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_Null_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.Null
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.Null
   nameWithType: HtmlBuilder.Null
 - uid: Eighty.Twenty.HtmlBuilder.object(Eighty.Attr[])
@@ -9416,6 +9784,7 @@ references:
   name: object
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_object_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.object
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.object
   nameWithType: HtmlBuilder.object
 - uid: Eighty.Twenty.HtmlBuilder.ol(Eighty.Attr[])
@@ -9446,6 +9815,7 @@ references:
   name: ol
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_ol_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.ol
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.ol
   nameWithType: HtmlBuilder.ol
 - uid: Eighty.Twenty.HtmlBuilder.optgroup(Eighty.Attr[])
@@ -9476,6 +9846,7 @@ references:
   name: optgroup
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_optgroup_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.optgroup
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.optgroup
   nameWithType: HtmlBuilder.optgroup
 - uid: Eighty.Twenty.HtmlBuilder.option(Eighty.Attr[])
@@ -9506,6 +9877,7 @@ references:
   name: option
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_option_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.option
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.option
   nameWithType: HtmlBuilder.option
 - uid: Eighty.Twenty.HtmlBuilder.output(Eighty.Attr[])
@@ -9536,6 +9908,7 @@ references:
   name: output
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_output_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.output
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.output
   nameWithType: HtmlBuilder.output
 - uid: Eighty.Twenty.HtmlBuilder.p(Eighty.Attr[])
@@ -9566,6 +9939,7 @@ references:
   name: p
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_p_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.p
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.p
   nameWithType: HtmlBuilder.p
 - uid: Eighty.Twenty.HtmlBuilder.param(Eighty.Attr[])
@@ -9596,6 +9970,7 @@ references:
   name: param
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_param_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.param
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.param
   nameWithType: HtmlBuilder.param
 - uid: Eighty.Twenty.HtmlBuilder.Partial(Eighty.Twenty.HtmlBuilder)
@@ -9608,6 +9983,7 @@ references:
   name: Partial
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_Partial_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.Partial
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.Partial
   nameWithType: HtmlBuilder.Partial
 - uid: Eighty.Twenty.HtmlBuilder.picture(Eighty.Attr[])
@@ -9638,6 +10014,7 @@ references:
   name: picture
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_picture_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.picture
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.picture
   nameWithType: HtmlBuilder.picture
 - uid: Eighty.Twenty.HtmlBuilder.pre(Eighty.Attr[])
@@ -9668,6 +10045,7 @@ references:
   name: pre
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_pre_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.pre
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.pre
   nameWithType: HtmlBuilder.pre
 - uid: Eighty.Twenty.HtmlBuilder.progress(Eighty.Attr[])
@@ -9698,6 +10076,7 @@ references:
   name: progress
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_progress_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.progress
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.progress
   nameWithType: HtmlBuilder.progress
 - uid: Eighty.Twenty.HtmlBuilder.q(Eighty.Attr[])
@@ -9728,6 +10107,7 @@ references:
   name: q
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_q_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.q
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.q
   nameWithType: HtmlBuilder.q
 - uid: Eighty.Twenty.HtmlBuilder.Raw(System.String)
@@ -9740,6 +10120,7 @@ references:
   name: Raw
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_Raw_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.Raw
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.Raw
   nameWithType: HtmlBuilder.Raw
 - uid: Eighty.Twenty.HtmlBuilder.s(Eighty.Attr[])
@@ -9770,6 +10151,7 @@ references:
   name: s
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_s_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.s
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.s
   nameWithType: HtmlBuilder.s
 - uid: Eighty.Twenty.HtmlBuilder.samp(Eighty.Attr[])
@@ -9800,6 +10182,7 @@ references:
   name: samp
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_samp_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.samp
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.samp
   nameWithType: HtmlBuilder.samp
 - uid: Eighty.Twenty.HtmlBuilder.script(Eighty.Attr[])
@@ -9830,6 +10213,7 @@ references:
   name: script
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_script_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.script
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.script
   nameWithType: HtmlBuilder.script
 - uid: Eighty.Twenty.HtmlBuilder.section(Eighty.Attr[])
@@ -9860,6 +10244,7 @@ references:
   name: section
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_section_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.section
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.section
   nameWithType: HtmlBuilder.section
 - uid: Eighty.Twenty.HtmlBuilder.select(Eighty.Attr[])
@@ -9890,6 +10275,7 @@ references:
   name: select
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_select_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.select
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.select
   nameWithType: HtmlBuilder.select
 - uid: Eighty.Twenty.HtmlBuilder.SelfClosingTag(System.String,Eighty.Attr[])
@@ -9914,6 +10300,7 @@ references:
   name: SelfClosingTag
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_SelfClosingTag_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.SelfClosingTag
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.SelfClosingTag
   nameWithType: HtmlBuilder.SelfClosingTag
 - uid: Eighty.Twenty.HtmlBuilder.small(Eighty.Attr[])
@@ -9944,6 +10331,7 @@ references:
   name: small
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_small_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.small
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.small
   nameWithType: HtmlBuilder.small
 - uid: Eighty.Twenty.HtmlBuilder.source(Eighty.Attr[])
@@ -9974,6 +10362,7 @@ references:
   name: source
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_source_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.source
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.source
   nameWithType: HtmlBuilder.source
 - uid: Eighty.Twenty.HtmlBuilder.span(Eighty.Attr[])
@@ -10004,6 +10393,7 @@ references:
   name: span
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_span_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.span
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.span
   nameWithType: HtmlBuilder.span
 - uid: Eighty.Twenty.HtmlBuilder.strong(Eighty.Attr[])
@@ -10034,6 +10424,7 @@ references:
   name: strong
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_strong_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.strong
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.strong
   nameWithType: HtmlBuilder.strong
 - uid: Eighty.Twenty.HtmlBuilder.style(Eighty.Attr[])
@@ -10064,6 +10455,7 @@ references:
   name: style
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_style_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.style
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.style
   nameWithType: HtmlBuilder.style
 - uid: Eighty.Twenty.HtmlBuilder.sub(Eighty.Attr[])
@@ -10094,6 +10486,7 @@ references:
   name: sub
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_sub_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.sub
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.sub
   nameWithType: HtmlBuilder.sub
 - uid: Eighty.Twenty.HtmlBuilder.summary(Eighty.Attr[])
@@ -10124,6 +10517,7 @@ references:
   name: summary
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_summary_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.summary
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.summary
   nameWithType: HtmlBuilder.summary
 - uid: Eighty.Twenty.HtmlBuilder.sup(Eighty.Attr[])
@@ -10154,6 +10548,7 @@ references:
   name: sup
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_sup_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.sup
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.sup
   nameWithType: HtmlBuilder.sup
 - uid: Eighty.Twenty.HtmlBuilder.table(Eighty.Attr[])
@@ -10184,6 +10579,7 @@ references:
   name: table
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_table_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.table
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.table
   nameWithType: HtmlBuilder.table
 - uid: Eighty.Twenty.HtmlBuilder.Tag(System.String,Eighty.Attr[])
@@ -10208,6 +10604,7 @@ references:
   name: Tag
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_Tag_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.Tag
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.Tag
   nameWithType: HtmlBuilder.Tag
 - uid: Eighty.Twenty.HtmlBuilder.tbody(Eighty.Attr[])
@@ -10238,6 +10635,7 @@ references:
   name: tbody
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_tbody_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.tbody
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.tbody
   nameWithType: HtmlBuilder.tbody
 - uid: Eighty.Twenty.HtmlBuilder.td(Eighty.Attr[])
@@ -10268,6 +10666,7 @@ references:
   name: td
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_td_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.td
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.td
   nameWithType: HtmlBuilder.td
 - uid: Eighty.Twenty.HtmlBuilder.Text(System.String)
@@ -10280,6 +10679,7 @@ references:
   name: Text
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_Text_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.Text
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.Text
   nameWithType: HtmlBuilder.Text
 - uid: Eighty.Twenty.HtmlBuilder.textarea(Eighty.Attr[])
@@ -10310,6 +10710,7 @@ references:
   name: textarea
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_textarea_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.textarea
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.textarea
   nameWithType: HtmlBuilder.textarea
 - uid: Eighty.Twenty.HtmlBuilder.tfoot(Eighty.Attr[])
@@ -10340,6 +10741,7 @@ references:
   name: tfoot
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_tfoot_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.tfoot
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.tfoot
   nameWithType: HtmlBuilder.tfoot
 - uid: Eighty.Twenty.HtmlBuilder.th(Eighty.Attr[])
@@ -10370,6 +10772,7 @@ references:
   name: th
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_th_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.th
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.th
   nameWithType: HtmlBuilder.th
 - uid: Eighty.Twenty.HtmlBuilder.thead(Eighty.Attr[])
@@ -10400,6 +10803,7 @@ references:
   name: thead
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_thead_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.thead
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.thead
   nameWithType: HtmlBuilder.thead
 - uid: Eighty.Twenty.HtmlBuilder.time(Eighty.Attr[])
@@ -10430,6 +10834,7 @@ references:
   name: time
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_time_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.time
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.time
   nameWithType: HtmlBuilder.time
 - uid: Eighty.Twenty.HtmlBuilder.title(Eighty.Attr[])
@@ -10460,6 +10865,7 @@ references:
   name: title
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_title_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.title
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.title
   nameWithType: HtmlBuilder.title
 - uid: Eighty.Twenty.HtmlBuilder.ToString
@@ -10472,6 +10878,7 @@ references:
   name: ToString
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_ToString_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.ToString
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.ToString
   nameWithType: HtmlBuilder.ToString
 - uid: Eighty.Twenty.HtmlBuilder.tr(Eighty.Attr[])
@@ -10502,6 +10909,7 @@ references:
   name: tr
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_tr_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.tr
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.tr
   nameWithType: HtmlBuilder.tr
 - uid: Eighty.Twenty.HtmlBuilder.track(Eighty.Attr[])
@@ -10532,6 +10940,7 @@ references:
   name: track
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_track_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.track
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.track
   nameWithType: HtmlBuilder.track
 - uid: Eighty.Twenty.HtmlBuilder.u(Eighty.Attr[])
@@ -10562,6 +10971,7 @@ references:
   name: u
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_u_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.u
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.u
   nameWithType: HtmlBuilder.u
 - uid: Eighty.Twenty.HtmlBuilder.ul(Eighty.Attr[])
@@ -10592,6 +11002,7 @@ references:
   name: ul
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_ul_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.ul
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.ul
   nameWithType: HtmlBuilder.ul
 - uid: Eighty.Twenty.HtmlBuilder.video(Eighty.Attr[])
@@ -10622,6 +11033,7 @@ references:
   name: video
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_video_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.video
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.video
   nameWithType: HtmlBuilder.video
 - uid: Eighty.Twenty.HtmlBuilder.wbr(Eighty.Attr[])
@@ -10652,6 +11064,7 @@ references:
   name: wbr
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_wbr_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.wbr
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.wbr
   nameWithType: HtmlBuilder.wbr
 - uid: Eighty.Twenty.HtmlBuilder.Write(System.IO.TextWriter)
@@ -10670,6 +11083,7 @@ references:
   name: Write
   href: api/Eighty.Twenty.HtmlBuilder.html#Eighty_Twenty_HtmlBuilder_Write_
   commentId: Overload:Eighty.Twenty.HtmlBuilder.Write
+  isSpec: "True"
   fullName: Eighty.Twenty.HtmlBuilder.Write
   nameWithType: HtmlBuilder.Write
 - uid: Eighty.Twenty.IHtmlBuilderRenderer`1
@@ -10693,6 +11107,7 @@ references:
   name: GetHtmlBuilder
   href: api/Eighty.Twenty.IHtmlBuilderRenderer-1.html#Eighty_Twenty_IHtmlBuilderRenderer_1_GetHtmlBuilder_
   commentId: Overload:Eighty.Twenty.IHtmlBuilderRenderer`1.GetHtmlBuilder
+  isSpec: "True"
   fullName: Eighty.Twenty.IHtmlBuilderRenderer<TModel>.GetHtmlBuilder
   fullName.vb: Eighty.Twenty.IHtmlBuilderRenderer(Of TModel).GetHtmlBuilder
   nameWithType: IHtmlBuilderRenderer<TModel>.GetHtmlBuilder
@@ -10713,5 +11128,6 @@ references:
   name: Dispose
   href: api/Eighty.Twenty.TagBuilder.html#Eighty_Twenty_TagBuilder_Dispose_
   commentId: Overload:Eighty.Twenty.TagBuilder.Dispose
+  isSpec: "True"
   fullName: Eighty.Twenty.TagBuilder.Dispose
   nameWithType: TagBuilder.Dispose
