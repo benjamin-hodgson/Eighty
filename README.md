@@ -24,6 +24,8 @@ Eighty is available from [Nuget](https://www.nuget.org/packages/Eighty).
 Guide
 -----
 
+You can read an intro to Eighty's programming model [on my personal website](https://www.benjamin.pizza/posts/2018-03-10-eighty.html).
+
 Almost all of Eighty's API lives in the `Html` class, which is designed to be imported with `using static`. (I like to additionally import it under an alias, to minimise line noise when you need to disambiguate something.)
 
 ```csharp
