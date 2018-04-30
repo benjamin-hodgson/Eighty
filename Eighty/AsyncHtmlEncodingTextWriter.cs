@@ -12,15 +12,12 @@ namespace Eighty
     /// This has to be a class because its mutating methods are async and would operate on a copy of the struct if this were a struct
     /// 
     /// NB. Any changes to this file need to be paralleled in HtmlEncodingTextWriter
-    /// 
-    /// See also https://github.com/dotnet/corefx/blob/3de3cd74ce3d81d13f75928eae728fb7945b6048/src/System.Runtime.Extensions/src/System/Net/WebUtility.cs
     /// </summary>
     internal class AsyncHtmlEncodingTextWriter
     {
         private readonly TextWriter _underlyingWriter;
         private readonly HtmlEncoder _htmlEncoder;
         private char[] _buffer;
-        private char[] _scratchpad;
         private int _bufPos;
 
         public AsyncHtmlEncodingTextWriter(TextWriter underlyingWriter, HtmlEncoder htmlEncoder)
@@ -28,7 +25,6 @@ namespace Eighty
             _underlyingWriter = underlyingWriter;
             _htmlEncoder = htmlEncoder;
             _buffer = ArrayPool<char>.Shared.Rent(4096);
-            _scratchpad = ArrayPool<char>.Shared.Rent(_htmlEncoder.MaxOutputCharactersPerInputCharacter);
             _bufPos = 0;
         }
 
@@ -37,8 +33,6 @@ namespace Eighty
             await Flush().ConfigureAwait(false);
             ArrayPool<char>.Shared.Return(_buffer);
             _buffer = null;
-            ArrayPool<char>.Shared.Return(_scratchpad);
-            _scratchpad = null;
             _bufPos = 0;
         }
 
@@ -72,32 +66,40 @@ namespace Eighty
         {
             while (position < s.Length)
             {
-                var isSurrogatePair = char.IsSurrogatePair(s, position);
-                if (char.IsSurrogate(s, position) && !isSurrogatePair)
+                int codePoint;
+                int numberOfCharactersConsumed;
+                if (char.IsSurrogatePair(s, position))
+                {
+                    codePoint = char.ConvertToUtf32(s, position);
+                    numberOfCharactersConsumed = 2;
+                }
+                else if (char.IsSurrogate(s, position))
                 {
                     await WriteUnicodeReplacementChar().ConfigureAwait(false);
-                    position++;
+                    position += 1;
                     continue;
                 }
+                else
+                {
+                    codePoint = char.ConvertToUtf32(s, position);
+                    numberOfCharactersConsumed = 1;
+                }
 
-                var codePoint = char.ConvertToUtf32(s, position);  // won't fail because we checked the precondition
                 if (!_htmlEncoder.WillEncode(codePoint))
                 {
                     break;
                 }
-                position += isSurrogatePair ? 2 : 1;
 
-                if (_bufPos + _htmlEncoder.MaxOutputCharactersPerInputCharacter < _buffer.Length)
+                if (!_htmlEncoder.TryEncodeUnicodeScalar(codePoint, _buffer, _bufPos, out var numberOfCharactersWritten))
                 {
-                    // there's definitely enough space in the buffer, write the encoded html directly
-                    EncodeIntoBuffer(codePoint);
+                    await Flush().ConfigureAwait(false);
+                    if (!_htmlEncoder.TryEncodeUnicodeScalar(codePoint, _buffer, _bufPos, out numberOfCharactersWritten))
+                    {
+                        throw new InvalidOperationException("Buffer overflow when encoding HTML. Please report this as a bug in Eighty!");
+                    }
                 }
-                else
-                {
-                    // write it to the scratchpad first, because it definitely has enough space, then copy over in chunks
-                    var numberOfCharactersWritten = EncodeIntoScratchpad(codePoint);
-                    await WriteRawImpl(_scratchpad, 0, numberOfCharactersWritten).ConfigureAwait(false);
-                }
+                position += numberOfCharactersConsumed;
+                _bufPos += numberOfCharactersWritten;
             }
             return position;
         }
@@ -116,22 +118,6 @@ namespace Eighty
                 throw new InvalidOperationException("Buffer overflow when encoding HTML. Please report this as a bug in Eighty!");
             }
             _bufPos += numberOfCharactersWritten;
-        }
-
-        private unsafe int EncodeIntoScratchpad(int codePoint)
-        {
-            bool success;
-            int numberOfCharactersWritten;
-            fixed (char* b = _scratchpad)
-            {
-                success = _htmlEncoder.TryEncodeUnicodeScalar(codePoint, b, _scratchpad.Length, out numberOfCharactersWritten);
-            }
-            if (!success)
-            {
-                // should be unreachable
-                throw new InvalidOperationException("Buffer overflow when encoding HTML. Please report this as a bug in Eighty!");
-            }
-            return numberOfCharactersWritten;
         }
 
         public async Task WriteRaw(char c)

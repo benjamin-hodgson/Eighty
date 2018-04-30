@@ -90,7 +90,7 @@ namespace Eighty
 
                 if (!_htmlEncoder.WillEncode(codePoint))
                 {
-                    return;
+                    break;
                 }
 
                 if (!_htmlEncoder.TryEncodeUnicodeScalar(codePoint, _current, (int)(_end - _current), out var numberOfCharactersWritten))
