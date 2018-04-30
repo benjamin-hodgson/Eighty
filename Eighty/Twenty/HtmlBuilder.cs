@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text.Encodings.Web;
 using System.Runtime.CompilerServices;
+using System.Buffers;
 
 namespace Eighty.Twenty
 {
@@ -35,7 +36,7 @@ namespace Eighty.Twenty
         /// </summary>
         /// <param name="writer">The writer</param>
         /// <param name="htmlEncoder">The HTML encoder</param>
-        public void Write(TextWriter writer, HtmlEncoder htmlEncoder)
+        public unsafe void Write(TextWriter writer, HtmlEncoder htmlEncoder)
         {
             if (writer == null)
             {
@@ -47,17 +48,22 @@ namespace Eighty.Twenty
                 throw new InvalidOperationException("Write is not re-entrant");
             }
 
-            var htmlEncodingTextWriter = new HtmlEncodingTextWriter(writer, htmlEncoder);
-            _writer = new HtmlEncodingTextWriterReference(ref htmlEncodingTextWriter);
-            
-            try
+            var buffer = ArrayPool<char>.Shared.Rent(4096);
+            fixed (char* start = buffer)
             {
-                Build();
-                htmlEncodingTextWriter.FlushAndClear();
-            }
-            finally
-            {
-                _writer = default;
+                var htmlEncodingTextWriter = new HtmlEncodingTextWriter(writer, htmlEncoder, buffer, start, buffer.Length);
+                _writer = new HtmlEncodingTextWriterReference(ref htmlEncodingTextWriter);
+                
+                try
+                {
+                    Build();
+                    htmlEncodingTextWriter.Flush();
+                }
+                finally
+                {
+                    _writer = default;
+                    ArrayPool<char>.Shared.Return(buffer);
+                }
             }
         }
 

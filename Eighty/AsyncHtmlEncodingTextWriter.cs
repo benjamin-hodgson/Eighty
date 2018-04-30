@@ -27,7 +27,7 @@ namespace Eighty
         {
             _underlyingWriter = underlyingWriter;
             _htmlEncoder = htmlEncoder;
-            _buffer = ArrayPool<char>.Shared.Rent(2048);
+            _buffer = ArrayPool<char>.Shared.Rent(4096);
             _scratchpad = ArrayPool<char>.Shared.Rent(_htmlEncoder.MaxOutputCharactersPerInputCharacter);
             _bufPos = 0;
         }

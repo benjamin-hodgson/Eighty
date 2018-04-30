@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Buffers;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.IO;
@@ -47,7 +48,7 @@ namespace Eighty
         /// </summary>
         /// <param name="writer">The writer</param>
         /// <param name="htmlEncoder">The HTML encoder</param>
-        public void Write(TextWriter writer, HtmlEncoder htmlEncoder)
+        public unsafe void Write(TextWriter writer, HtmlEncoder htmlEncoder)
         {
             if (writer == null)
             {
@@ -58,9 +59,14 @@ namespace Eighty
                 throw new ArgumentNullException(nameof(htmlEncoder));
             }
 
-            var htmlEncodingTextWriter = new HtmlEncodingTextWriter(writer, htmlEncoder);
-            WriteImpl(ref htmlEncodingTextWriter);
-            htmlEncodingTextWriter.FlushAndClear();
+            var buffer = ArrayPool<char>.Shared.Rent(4096);
+            fixed (char* start = buffer)
+            {
+                var htmlEncodingTextWriter = new HtmlEncodingTextWriter(writer, htmlEncoder, buffer, start, buffer.Length);
+                WriteImpl(ref htmlEncodingTextWriter);
+                htmlEncodingTextWriter.Flush();
+            }
+            ArrayPool<char>.Shared.Return(buffer);
         }
 
         /// <summary>

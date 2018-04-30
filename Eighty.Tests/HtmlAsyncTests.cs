@@ -27,12 +27,12 @@ namespace Eighty.Tests
         public async Task LongText()
         {
             {
-                var expected = new string('a', 5000);
+                var expected = new string('a', 10000);
                 Html html = expected;
                 Assert.Equal(expected, await GetStringAsync(html));
             }
             {
-                var expected = string.Concat(Enumerable.Repeat("abcdefghijkl", 1000));
+                var expected = string.Concat(Enumerable.Repeat("abcdefghijkl", 5000));
                 Html html = expected;
                 Assert.Equal(expected, await GetStringAsync(html));
             }
@@ -42,6 +42,13 @@ namespace Eighty.Tests
         {
             Html html = "<>\"&'";
             Assert.Equal("&lt;&gt;&quot;&amp;&#x27;", await GetStringAsync(html));
+        }
+        [Fact]
+        public async Task TextEscaping_Long()
+        {
+            Html html = string.Concat(Enumerable.Repeat("<>\"&'", 10000));
+            var expected = string.Concat(Enumerable.Repeat("&lt;&gt;&quot;&amp;&#x27;", 10000));
+            Assert.Equal(expected, await GetStringAsync(html));
         }
         [Fact]
         public async Task TextEscaping_Unicode()
@@ -58,6 +65,16 @@ namespace Eighty.Tests
         [Fact]
         public async Task Text_BadSurrogatePair()
         {
+            {
+                // a low surrogate on its own
+                Html html = new string(new[]{ '\xdc1c' });
+                Assert.Equal("\uFFFD", await GetStringAsync(html));
+            }
+            {
+                // a high surrogate on its own
+                Html html = new string(new[]{ '\xd83c' });
+                Assert.Equal("\uFFFD", await GetStringAsync(html));
+            }
             {
                 // "\U0001F01C" is '\xd83c', '\xdc1c', so flipping them produces an invalid pair
                 Html html = new string(new[]{ '\xdc1c', '\xd83c' });

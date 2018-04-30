@@ -15,58 +15,49 @@ namespace Eighty
     /// can reach the contained arrays.
     /// 
     /// NB. Any changes to this file need to be paralleled in AsyncHtmlEncodingTextWriter.
-    /// 
-    /// See also https://github.com/dotnet/corefx/blob/3de3cd74ce3d81d13f75928eae728fb7945b6048/src/System.Runtime.Extensions/src/System/Net/WebUtility.cs
     /// </summary>
     [StructLayout(LayoutKind.Auto)]
-    internal struct HtmlEncodingTextWriter
+    internal unsafe struct HtmlEncodingTextWriter
     {
         private readonly TextWriter _underlyingWriter;
         private readonly HtmlEncoder _htmlEncoder;
-        private char[] _buffer;
-        private char[] _scratchpad;
-        private int _bufPos;
 
-        public HtmlEncodingTextWriter(TextWriter underlyingWriter, HtmlEncoder htmlEncoder)
+        // invariant: _start <= _current < _end
+        // invariant: _start points to the same location as _underlyingBuffer
+        private readonly char[] _underlyingBuffer;
+        private readonly char* _start;
+        private char* _current;
+        private readonly char* _end;
+
+        public HtmlEncodingTextWriter(TextWriter underlyingWriter, HtmlEncoder htmlEncoder, char[] underlyingBuffer, char* start, int length)
         {
             _underlyingWriter = underlyingWriter;
             _htmlEncoder = htmlEncoder;
-            _buffer = ArrayPool<char>.Shared.Rent(2048);
-            _scratchpad = ArrayPool<char>.Shared.Rent(_htmlEncoder.MaxOutputCharactersPerInputCharacter);
-            _bufPos = 0;
-        }
-
-        public bool IsDefault()
-            => _buffer == null;
-
-        public void FlushAndClear()
-        {
-            Flush();
-            ArrayPool<char>.Shared.Return(_buffer);
-            _buffer = null;
-            ArrayPool<char>.Shared.Return(_scratchpad);
-            _scratchpad = null;
-            _bufPos = 0;
+            _underlyingBuffer = underlyingBuffer;
+            _start = _current = start;
+            _end = start + length;
         }
 
         public void Write(string s)
         {
-            var position = 0;
-            while (position < s.Length)
+            fixed (char* str = s)
             {
-                var safeChunkLength = _htmlEncoder.FindFirstCharacterToEncode(s, position);
-                if (safeChunkLength == -1)  // no encoding chars in the input, write the whole string without encoding
-                {
-                    safeChunkLength = s.Length - position;
-                }
+                var start = str;
+                var end = str + s.Length;
 
-                WriteRawImpl(s, position, safeChunkLength);
-                position += safeChunkLength;
-
-                if (position < s.Length)
+                while (start < end)
                 {
+                    var len = (int)(end - start);
+                    var safeChunkLength = _htmlEncoder.FindFirstCharacterToEncode(start, len);
+                    if (safeChunkLength == -1)  // no encoding chars in the input, write the whole string without encoding
+                    {
+                        safeChunkLength = len;
+                    }
+
+                    WriteRawImpl(ref start, start + safeChunkLength);
+
                     // we're now looking at an HTML-encoding character
-                    position = WriteEncodingChars(s, position);
+                    WriteEncodingChars(ref start, end);
                 }
             }
         }
@@ -74,133 +65,88 @@ namespace Eighty
         /// <summary>
         /// Consume a run of HTML-encoding characters from the string
         /// </summary>
-        /// <returns>The new position</returns>
-        private int WriteEncodingChars(string s, int position)
+        private void WriteEncodingChars(ref char* start, char* end)
         {
-            while (position < s.Length)
+            while (start < end)
             {
-                var isSurrogatePair = char.IsSurrogatePair(s, position);
-                if (char.IsSurrogate(s, position) && !isSurrogatePair)
+                int codePoint;
+                int numberOfCharactersConsumed;
+                if (end - start > 1 && char.IsSurrogatePair(*start, *(start + 1)))
+                {
+                    codePoint = char.ConvertToUtf32(*start, *(start + 1));
+                    numberOfCharactersConsumed = 2;
+                }
+                else if (char.IsSurrogate(*start))
                 {
                     WriteUnicodeReplacementChar();
-                    position++;
+                    start += 1;
                     continue;
-                }
-
-                var codePoint = char.ConvertToUtf32(s, position);  // won't fail because we checked the precondition
-                if (!_htmlEncoder.WillEncode(codePoint))
-                {
-                    break;
-                }
-                position += isSurrogatePair ? 2 : 1;
-
-                if (_bufPos + _htmlEncoder.MaxOutputCharactersPerInputCharacter < _buffer.Length)
-                {
-                    // there's definitely enough space in the buffer, write the encoded html directly
-                    EncodeIntoBuffer(codePoint);
                 }
                 else
                 {
-                    // write it to the scratchpad first, because it definitely has enough space, then copy over in chunks
-                    var numberOfCharactersWritten = EncodeIntoScratchpad(codePoint);
-                    WriteRawImpl(_scratchpad, 0, numberOfCharactersWritten);
+                    codePoint = (int)*start;
+                    numberOfCharactersConsumed = 1;
                 }
-            }
-            return position;
-        }
 
-        private unsafe void EncodeIntoBuffer(int codePoint)
-        {
-            bool success;
-            int numberOfCharactersWritten;
-            fixed (char* b = _buffer)
-            {
-                success = _htmlEncoder.TryEncodeUnicodeScalar(codePoint, b + _bufPos, _buffer.Length - _bufPos, out numberOfCharactersWritten);
-            }
-            if (!success)
-            {
-                // should be unreachable
-                throw new InvalidOperationException("Buffer overflow when encoding HTML. Please report this as a bug in Eighty!");
-            }
-            _bufPos += numberOfCharactersWritten;
-        }
+                if (!_htmlEncoder.WillEncode(codePoint))
+                {
+                    return;
+                }
 
-        private unsafe int EncodeIntoScratchpad(int codePoint)
-        {
-            bool success;
-            int numberOfCharactersWritten;
-            fixed (char* b = _scratchpad)
-            {
-                success = _htmlEncoder.TryEncodeUnicodeScalar(codePoint, b, _scratchpad.Length, out numberOfCharactersWritten);
+                if (!_htmlEncoder.TryEncodeUnicodeScalar(codePoint, _current, (int)(_end - _current), out var numberOfCharactersWritten))
+                {
+                    Flush();  // _current gets reset here - don't try to deduplicate (_end - _current)!
+                    if (!_htmlEncoder.TryEncodeUnicodeScalar(codePoint, _current, (int)(_end - _current), out numberOfCharactersWritten))
+                    {
+                        throw new InvalidOperationException("Buffer overflow when encoding HTML. Please report this as a bug in Eighty!");
+                    }
+                }
+                start += numberOfCharactersConsumed;
+                _current += numberOfCharactersWritten;
             }
-            if (!success)
-            {
-                // should be unreachable
-                throw new InvalidOperationException("Buffer overflow when encoding HTML. Please report this as a bug in Eighty!");
-            }
-            return numberOfCharactersWritten;
         }
 
         public void WriteRaw(char c)
         {
             FlushIfNecessary();
-            _buffer[_bufPos] = c;
-            _bufPos++;
+            *_current = c;
+            _current++;
         }
 
         public void WriteRaw(string s)
         {
-            WriteRawImpl(s, 0, s.Length);
+            fixed (char* str = s)
+            {
+                var start = str;
+                WriteRawImpl(ref start, str + s.Length);
+            }
         }
 
-        private void WriteRawImpl(string s, int start, int count)
+        private void WriteRawImpl(ref char* start, char* end)
         {
-            if (count <= _buffer.Length - _bufPos)
+            if (end - start <= _end - _current)
             {
                 // the whole string fits in the buffer, no need to flush
-                s.CopyTo(start, _buffer, _bufPos, count);
-                _bufPos += count;
+                
+                for (; start < end; start++, _current++)
+                {
+                    *_current = *start;
+                }
                 return;
             }
-            WriteInChunks(s, start, count);
+            WriteInChunks(ref start, end);
         }
-        private void WriteInChunks(string s, int start, int count)
+        private void WriteInChunks(ref char* start, char* end)
         {
-            while (count > 0)
+            while (start < end)
             {
-                var chunkSize = Math.Min(count, _buffer.Length - _bufPos);
+                var chunkSize = Math.Min(end - start, _end - _current);
+                var chunkEnd = start + chunkSize;
 
-                s.CopyTo(start, _buffer, _bufPos, chunkSize);
-
-                count -= chunkSize;
-                start += chunkSize;
-                _bufPos += chunkSize;
-
-                FlushIfNecessary();
-            }
-        }
-        private void WriteRawImpl(char[] arr, int start, int count)
-        {
-            if (count <= _buffer.Length - _bufPos)
-            {
-                // the whole string fits in the buffer, no need to flush
-                Array.Copy(arr, start, _buffer, _bufPos, count);
-                _bufPos += count;
-                return;
-            }
-            WriteInChunks(arr, start, count);
-        }
-        private void WriteInChunks(char[] arr, int start, int count)
-        {
-            while (count > 0)
-            {
-                var chunkSize = Math.Min(count, _buffer.Length - _bufPos);
-
-                Array.Copy(arr, start, _buffer, _bufPos, chunkSize);
-
-                count -= chunkSize;
-                start += chunkSize;
-                _bufPos += chunkSize;
+                for (; start < chunkEnd; start++, _current++)
+                {
+                    *_current = *start;
+                }
 
                 FlushIfNecessary();
             }
@@ -213,17 +159,17 @@ namespace Eighty
 
         private void FlushIfNecessary()
         {
-            if (_bufPos == _buffer.Length)
+            if (_current == _end)
             {
                 Flush();
             }
         }
 
-        private void Flush()
+        public void Flush()
         {
-            var len = _bufPos;
-            _bufPos = 0;
-            _underlyingWriter.Write(_buffer, 0, len);
+            var len = _current - _start;
+            _current = _start;
+            _underlyingWriter.Write(_underlyingBuffer, 0, (int)len);
         }
     }
 }
