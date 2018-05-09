@@ -104,22 +104,6 @@ namespace Eighty
             return position;
         }
 
-        private unsafe void EncodeIntoBuffer(int codePoint)
-        {
-            bool success;
-            int numberOfCharactersWritten;
-            fixed (char* b = _buffer)
-            {
-                success = _htmlEncoder.TryEncodeUnicodeScalar(codePoint, b + _bufPos, _buffer.Length - _bufPos, out numberOfCharactersWritten);
-            }
-            if (!success)
-            {
-                // should be unreachable
-                throw new InvalidOperationException("Buffer overflow when encoding HTML. Please report this as a bug in Eighty!");
-            }
-            _bufPos += numberOfCharactersWritten;
-        }
-
         public async Task WriteRaw(char c)
         {
             await FlushIfNecessary().ConfigureAwait(false);
