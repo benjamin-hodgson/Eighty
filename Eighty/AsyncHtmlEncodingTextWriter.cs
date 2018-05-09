@@ -158,32 +158,6 @@ namespace Eighty
                 await FlushIfNecessary().ConfigureAwait(false);
             }
         }
-        private Task WriteRawImpl(char[] arr, int start, int count)
-        {
-            if (count <= _buffer.Length - _bufPos)
-            {
-                // the whole string fits in the buffer, no need to flush
-                Array.Copy(arr, start, _buffer, _bufPos, count);
-                _bufPos += count;
-                return Task.CompletedTask;
-            }
-            return WriteInChunks(arr, start, count);
-        }
-        private async Task WriteInChunks(char[] arr, int start, int count)
-        {
-            while (count > 0)
-            {
-                var chunkSize = Math.Min(count, _buffer.Length - _bufPos);
-
-                Array.Copy(arr, start, _buffer, _bufPos, chunkSize);
-
-                count -= chunkSize;
-                start += chunkSize;
-                _bufPos += chunkSize;
-
-                await FlushIfNecessary().ConfigureAwait(false);
-            }
-        }
 
         private Task WriteUnicodeReplacementChar()
         {
