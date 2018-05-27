@@ -113,6 +113,11 @@ namespace Eighty
                 return writer.ToString();
             }
         }
+        
+        /// <summary>
+        /// An empty chunk of <see cref="Html"/>
+        /// </summary>
+        public static Html Empty { get; } = _();
 
         /// <summary>
         /// Create a tag which takes children.
