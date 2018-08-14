@@ -19,7 +19,7 @@ var html = article(@class: "readme")._(
 Installation
 ------------
 
-Eighty is available from [Nuget](https://www.nuget.org/packages/Eighty).
+Eighty is available from [Nuget](https://www.nuget.org/packages/Eighty). API docs are hosted [on my website](https://www.benjamin.pizza/Eighty).
 
 Guide
 -----
