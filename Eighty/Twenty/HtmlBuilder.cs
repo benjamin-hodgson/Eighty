@@ -78,7 +78,7 @@ namespace Eighty.Twenty
         /// <returns>The HTML as a string</returns>
         public override string ToString()
         {
-            using (var writer = new StringWriter())
+            using (var writer = new PooledStringWriter())
             {
                 Write(writer);
                 return writer.ToString();

@@ -107,7 +107,7 @@ namespace Eighty
         /// </summary>
         public override string ToString()
         {
-            using (var writer = new StringWriter())
+            using (var writer = new PooledStringWriter())
             {
                 Write(writer);
                 return writer.ToString();
