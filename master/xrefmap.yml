@@ -1809,14 +1809,14 @@ references:
   fullName: Eighty.Attr.Attr
   nameWithType: Attr.Attr
 - uid: Eighty.Attr.op_Implicit(System.ValueTuple{System.String,System.String})~Eighty.Attr
-  name: Implicit( to Attr)
+  name: Implicit((String name, String value) to Attr)
   href: api/Eighty.Attr.html#Eighty_Attr_op_Implicit_System_ValueTuple_System_String_System_String___Eighty_Attr
   commentId: M:Eighty.Attr.op_Implicit(System.ValueTuple{System.String,System.String})~Eighty.Attr
-  name.vb: Widening( to Attr)
-  fullName: Eighty.Attr.Implicit(System. to Eighty.Attr)
-  fullName.vb: Eighty.Attr.Widening(System. to Eighty.Attr)
-  nameWithType: Attr.Implicit( to Attr)
-  nameWithType.vb: Attr.Widening( to Attr)
+  name.vb: Widening((name As String, value As String) to Attr)
+  fullName: Eighty.Attr.Implicit(System.ValueTuple<System.String, System.String> to Eighty.Attr)
+  fullName.vb: Eighty.Attr.Widening(System.ValueTuple(Of System.String, System.String) to Eighty.Attr)
+  nameWithType: Attr.Implicit((String name, String value) to Attr)
+  nameWithType.vb: Attr.Widening((name As String, value As String) to Attr)
 - uid: Eighty.Attr.op_Implicit*
   name: Implicit
   href: api/Eighty.Attr.html#Eighty_Attr_op_Implicit_
