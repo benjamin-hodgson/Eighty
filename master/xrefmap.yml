@@ -1329,12 +1329,12 @@ references:
   fullName.vb: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor(Of TModel)
   nameWithType: HtmlBuilderRendererResultExecutor<TModel>
   nameWithType.vb: HtmlBuilderRendererResultExecutor(Of TModel)
-- uid: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor`1.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.Mvc.Internal.IHttpResponseStreamWriterFactory)
+- uid: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor`1.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory)
   name: HtmlBuilderRendererResultExecutor(ILoggerFactory, IHttpResponseStreamWriterFactory)
-  href: api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor-1.html#Eighty_AspNetCore_Mvc_ResultExecutors_HtmlBuilderRendererResultExecutor_1__ctor_Microsoft_Extensions_Logging_ILoggerFactory_Microsoft_AspNetCore_Mvc_Internal_IHttpResponseStreamWriterFactory_
-  commentId: M:Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor`1.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.Mvc.Internal.IHttpResponseStreamWriterFactory)
-  fullName: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor<TModel>.HtmlBuilderRendererResultExecutor(Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.AspNetCore.Mvc.Internal.IHttpResponseStreamWriterFactory)
-  fullName.vb: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor(Of TModel).HtmlBuilderRendererResultExecutor(Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.AspNetCore.Mvc.Internal.IHttpResponseStreamWriterFactory)
+  href: api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor-1.html#Eighty_AspNetCore_Mvc_ResultExecutors_HtmlBuilderRendererResultExecutor_1__ctor_Microsoft_Extensions_Logging_ILoggerFactory_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpResponseStreamWriterFactory_
+  commentId: M:Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor`1.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory)
+  fullName: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor<TModel>.HtmlBuilderRendererResultExecutor(Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory)
+  fullName.vb: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor(Of TModel).HtmlBuilderRendererResultExecutor(Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory)
   nameWithType: HtmlBuilderRendererResultExecutor<TModel>.HtmlBuilderRendererResultExecutor(ILoggerFactory, IHttpResponseStreamWriterFactory)
   nameWithType.vb: HtmlBuilderRendererResultExecutor(Of TModel).HtmlBuilderRendererResultExecutor(ILoggerFactory, IHttpResponseStreamWriterFactory)
 - uid: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor`1.#ctor*
@@ -1370,13 +1370,13 @@ references:
   commentId: T:Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor
   fullName: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor
   nameWithType: HtmlBuilderResultExecutor
-- uid: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor.#ctor(Microsoft.Extensions.Logging.ILogger{Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor},Microsoft.AspNetCore.Mvc.Internal.IHttpResponseStreamWriterFactory)
+- uid: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor.#ctor(Microsoft.Extensions.Logging.ILogger{Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor},Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory)
   name: HtmlBuilderResultExecutor(ILogger<HtmlBuilderResultExecutor>, IHttpResponseStreamWriterFactory)
-  href: api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor.html#Eighty_AspNetCore_Mvc_ResultExecutors_HtmlBuilderResultExecutor__ctor_Microsoft_Extensions_Logging_ILogger_Eighty_AspNetCore_Mvc_ResultExecutors_HtmlBuilderResultExecutor__Microsoft_AspNetCore_Mvc_Internal_IHttpResponseStreamWriterFactory_
-  commentId: M:Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor.#ctor(Microsoft.Extensions.Logging.ILogger{Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor},Microsoft.AspNetCore.Mvc.Internal.IHttpResponseStreamWriterFactory)
+  href: api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor.html#Eighty_AspNetCore_Mvc_ResultExecutors_HtmlBuilderResultExecutor__ctor_Microsoft_Extensions_Logging_ILogger_Eighty_AspNetCore_Mvc_ResultExecutors_HtmlBuilderResultExecutor__Microsoft_AspNetCore_Mvc_Infrastructure_IHttpResponseStreamWriterFactory_
+  commentId: M:Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor.#ctor(Microsoft.Extensions.Logging.ILogger{Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor},Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory)
   name.vb: HtmlBuilderResultExecutor(ILogger(Of HtmlBuilderResultExecutor), IHttpResponseStreamWriterFactory)
-  fullName: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor.HtmlBuilderResultExecutor(Microsoft.Extensions.Logging.ILogger<Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor>, Microsoft.AspNetCore.Mvc.Internal.IHttpResponseStreamWriterFactory)
-  fullName.vb: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor.HtmlBuilderResultExecutor(Microsoft.Extensions.Logging.ILogger(Of Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor), Microsoft.AspNetCore.Mvc.Internal.IHttpResponseStreamWriterFactory)
+  fullName: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor.HtmlBuilderResultExecutor(Microsoft.Extensions.Logging.ILogger<Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor>, Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory)
+  fullName.vb: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor.HtmlBuilderResultExecutor(Microsoft.Extensions.Logging.ILogger(Of Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor), Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory)
   nameWithType: HtmlBuilderResultExecutor.HtmlBuilderResultExecutor(ILogger<HtmlBuilderResultExecutor>, IHttpResponseStreamWriterFactory)
   nameWithType.vb: HtmlBuilderResultExecutor.HtmlBuilderResultExecutor(ILogger(Of HtmlBuilderResultExecutor), IHttpResponseStreamWriterFactory)
 - uid: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor.#ctor*
@@ -1408,12 +1408,12 @@ references:
   fullName.vb: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor(Of TModel)
   nameWithType: HtmlRendererResultExecutor<TModel>
   nameWithType.vb: HtmlRendererResultExecutor(Of TModel)
-- uid: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor`1.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.Mvc.Internal.IHttpResponseStreamWriterFactory)
+- uid: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor`1.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory)
   name: HtmlRendererResultExecutor(ILoggerFactory, IHttpResponseStreamWriterFactory)
-  href: api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor-1.html#Eighty_AspNetCore_Mvc_ResultExecutors_HtmlRendererResultExecutor_1__ctor_Microsoft_Extensions_Logging_ILoggerFactory_Microsoft_AspNetCore_Mvc_Internal_IHttpResponseStreamWriterFactory_
-  commentId: M:Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor`1.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.Mvc.Internal.IHttpResponseStreamWriterFactory)
-  fullName: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor<TModel>.HtmlRendererResultExecutor(Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.AspNetCore.Mvc.Internal.IHttpResponseStreamWriterFactory)
-  fullName.vb: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor(Of TModel).HtmlRendererResultExecutor(Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.AspNetCore.Mvc.Internal.IHttpResponseStreamWriterFactory)
+  href: api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor-1.html#Eighty_AspNetCore_Mvc_ResultExecutors_HtmlRendererResultExecutor_1__ctor_Microsoft_Extensions_Logging_ILoggerFactory_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpResponseStreamWriterFactory_
+  commentId: M:Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor`1.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory)
+  fullName: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor<TModel>.HtmlRendererResultExecutor(Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory)
+  fullName.vb: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor(Of TModel).HtmlRendererResultExecutor(Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory)
   nameWithType: HtmlRendererResultExecutor<TModel>.HtmlRendererResultExecutor(ILoggerFactory, IHttpResponseStreamWriterFactory)
   nameWithType.vb: HtmlRendererResultExecutor(Of TModel).HtmlRendererResultExecutor(ILoggerFactory, IHttpResponseStreamWriterFactory)
 - uid: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor`1.#ctor*
@@ -1449,13 +1449,13 @@ references:
   commentId: T:Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor
   fullName: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor
   nameWithType: HtmlResultExecutor
-- uid: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor.#ctor(Microsoft.Extensions.Logging.ILogger{Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor},Microsoft.AspNetCore.Mvc.Internal.IHttpResponseStreamWriterFactory)
+- uid: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor.#ctor(Microsoft.Extensions.Logging.ILogger{Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor},Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory)
   name: HtmlResultExecutor(ILogger<HtmlResultExecutor>, IHttpResponseStreamWriterFactory)
-  href: api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor.html#Eighty_AspNetCore_Mvc_ResultExecutors_HtmlResultExecutor__ctor_Microsoft_Extensions_Logging_ILogger_Eighty_AspNetCore_Mvc_ResultExecutors_HtmlResultExecutor__Microsoft_AspNetCore_Mvc_Internal_IHttpResponseStreamWriterFactory_
-  commentId: M:Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor.#ctor(Microsoft.Extensions.Logging.ILogger{Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor},Microsoft.AspNetCore.Mvc.Internal.IHttpResponseStreamWriterFactory)
+  href: api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor.html#Eighty_AspNetCore_Mvc_ResultExecutors_HtmlResultExecutor__ctor_Microsoft_Extensions_Logging_ILogger_Eighty_AspNetCore_Mvc_ResultExecutors_HtmlResultExecutor__Microsoft_AspNetCore_Mvc_Infrastructure_IHttpResponseStreamWriterFactory_
+  commentId: M:Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor.#ctor(Microsoft.Extensions.Logging.ILogger{Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor},Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory)
   name.vb: HtmlResultExecutor(ILogger(Of HtmlResultExecutor), IHttpResponseStreamWriterFactory)
-  fullName: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor.HtmlResultExecutor(Microsoft.Extensions.Logging.ILogger<Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor>, Microsoft.AspNetCore.Mvc.Internal.IHttpResponseStreamWriterFactory)
-  fullName.vb: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor.HtmlResultExecutor(Microsoft.Extensions.Logging.ILogger(Of Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor), Microsoft.AspNetCore.Mvc.Internal.IHttpResponseStreamWriterFactory)
+  fullName: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor.HtmlResultExecutor(Microsoft.Extensions.Logging.ILogger<Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor>, Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory)
+  fullName.vb: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor.HtmlResultExecutor(Microsoft.Extensions.Logging.ILogger(Of Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor), Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory)
   nameWithType: HtmlResultExecutor.HtmlResultExecutor(ILogger<HtmlResultExecutor>, IHttpResponseStreamWriterFactory)
   nameWithType.vb: HtmlResultExecutor.HtmlResultExecutor(ILogger(Of HtmlResultExecutor), IHttpResponseStreamWriterFactory)
 - uid: Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor.#ctor*
