@@ -3,6 +3,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Eighty.AspNetCore.Mvc.ActionResults;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.Internal;
 using Microsoft.Extensions.Logging;
 
