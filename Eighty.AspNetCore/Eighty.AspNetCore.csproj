@@ -15,6 +15,9 @@
 
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <LangVersion>latest</LangVersion>
+
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\Eighty.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>
