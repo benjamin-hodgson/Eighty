@@ -60,7 +60,7 @@ jobs:
     - name: Build docs
       uses: nikeee/docfx-action@v1.0.0
       with:
-        args: Sawmill.Docs/docfx.json
+        args: Eighty.Docs/docfx.json
         
     - name: Deploy docs
       uses: JamesIves/github-pages-deploy-action@4.1.1
