@@ -12,7 +12,7 @@ namespace Eighty.AspNetCore.TestApp.Controllers
         {
             return p_().ToActionResult(HttpStatusCode.PartialContent);
         }
-        public IActionResult HtmlResultAsync()
+        public IActionResult AsyncHtmlResult()
         {
             return p_().ToActionResult(HttpStatusCode.PartialContent, renderAsync: true);
         }
@@ -27,7 +27,7 @@ namespace Eighty.AspNetCore.TestApp.Controllers
         {
             return new TestHtmlRenderer().ToActionResult(1, HttpStatusCode.PartialContent);
         }
-        public IActionResult HtmlRendererResultAsync()
+        public IActionResult AsyncHtmlRendererResult()
         {
             return new TestHtmlRenderer().ToActionResult(1, HttpStatusCode.PartialContent, renderAsync: true);
         }
@@ -43,10 +43,10 @@ namespace Eighty.AspNetCore.TestApp.Controllers
         {
             return View(1);
         }
-        public IActionResult HtmlViewAsync()
+        public IActionResult AsyncHtmlView()
         {
             ViewData["RenderAsync"] = true;
-            return View(1);
+            return View("HtmlView", 1);
         }
         public IActionResult HtmlBuilderView()
         {

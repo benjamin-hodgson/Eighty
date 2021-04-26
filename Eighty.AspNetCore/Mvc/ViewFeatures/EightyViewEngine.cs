@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Eighty.Twenty;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Internal;
+using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.AspNetCore.Mvc.ViewEngines;
 
 namespace Eighty.AspNetCore.Mvc.ViewFeatures
@@ -45,7 +45,7 @@ namespace Eighty.AspNetCore.Mvc.ViewFeatures
             {
                 throw new ArgumentNullException(nameof(viewName));
             }
-            var controllerName = NormalizedRouteValue.GetNormalizedRouteValue(context, "controller");
+            var controllerName = RazorViewEngine.GetNormalizedRouteValue(context, "controller");
             var path = controllerName + "/" + viewName;
             if (!_views.TryGetValue(path, out var value))
             {

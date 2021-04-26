@@ -69,7 +69,7 @@ namespace Eighty.Tests
                 Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync());
             }
             {
-                var response = await _client.GetAsync("Test/HtmlResultAsync");
+                var response = await _client.GetAsync("Test/AsyncHtmlResult");
                 Assert.Equal(HttpStatusCode.PartialContent, response.StatusCode);
                 Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync());
             }
@@ -92,7 +92,7 @@ namespace Eighty.Tests
                 Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync());
             }
             {
-                var response = await _client.GetAsync("Test/HtmlRendererResultAsync");
+                var response = await _client.GetAsync("Test/AsyncHtmlRendererResult");
                 Assert.Equal(HttpStatusCode.PartialContent, response.StatusCode);
                 Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync());
             }
@@ -114,7 +114,7 @@ namespace Eighty.Tests
                 Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync());
             }
             {
-                var response = await _client.GetAsync("Test/HtmlViewAsync");
+                var response = await _client.GetAsync("Test/AsyncHtmlView");
                 Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync());
             }
         }
