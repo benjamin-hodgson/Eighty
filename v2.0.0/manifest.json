@@ -1,0 +1,488 @@
+{
+  "homepages": [],
+  "source_base_path": "/github/workspace/Eighty.Docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.EightyHtmlContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.EightyHtmlContent.html",
+          "hash": "i0IaZfmrqnhhLWjdEutaCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.Mvc.ActionResults.EightyActionResultFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.Mvc.ActionResults.EightyActionResultFactory.html",
+          "hash": "Ncs2QJ4HHVfslE/XhdIV2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult-1.html",
+          "hash": "JtyA/eXe3niSQP4UEjS8qg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderResult.html",
+          "hash": "R15UFsWdJbaFXWAVgdvI9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult-1.html",
+          "hash": "SMbHJ4Yw/hbFr/vcLnYMIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.html",
+          "hash": "bBmb9eD21teVwmTidYyElA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.Mvc.ActionResults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.Mvc.ActionResults.html",
+          "hash": "ZjLMjkYmjgCK+xziJn0k6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.Mvc.MvcBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.Mvc.MvcBuilderExtensions.html",
+          "hash": "2lTq473sqn2F30oOqdtHyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor-1.html",
+          "hash": "A0tGlfhTP216kVVvZS9iGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor.html",
+          "hash": "cA9iFj6FlyvSwmH6rpDi2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor-1.html",
+          "hash": "XTM+rbRhJiuFoz2XTSv5kA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor.html",
+          "hash": "XswE2Z/uDBz/5aKDhHax5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.Mvc.ResultExecutors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.Mvc.ResultExecutors.html",
+          "hash": "URGcLoefy9w3FHWNhK4nvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.Mvc.ViewFeatures.EightyMvcViewOptionsSetup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.Mvc.ViewFeatures.EightyMvcViewOptionsSetup.html",
+          "hash": "Y+nHBIKzrJ0ZGgagNP9uBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewAdapter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewAdapter-1.html",
+          "hash": "vhn3vvEPibwHUw3UoWI/KQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewCollection.html",
+          "hash": "QShWVsdxHcSgyFwE/wxqVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewEngine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewEngine.html",
+          "hash": "xysWc9bNCtrZvXeyxHDD1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewOptions.html",
+          "hash": "XSwXGTxUHcvBqMdJLm4V5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.Mvc.ViewFeatures.TwentyViewAdapter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.Mvc.ViewFeatures.TwentyViewAdapter-1.html",
+          "hash": "fdmWCP77SKchUXFChcQpaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.Mvc.ViewFeatures.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.Mvc.ViewFeatures.html",
+          "hash": "ZITB7GcZfE33UqIJjfdaOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.Mvc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.Mvc.html",
+          "hash": "hnHUIDxuFL+2ojad/WglSA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.TwentyHtmlContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.TwentyHtmlContent.html",
+          "hash": "hrS2hihgqp/4W/Z0jujbxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.AspNetCore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.AspNetCore.html",
+          "hash": "mwoIMZqhwnbjxJZdFRipTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.Attr.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.Attr.html",
+          "hash": "SiOHA6kI4g9Znm/D6uI7qg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.Html.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.Html.html",
+          "hash": "+7rjKoMADjG6Gph0aNG0PA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.IHtmlRenderer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.IHtmlRenderer-1.html",
+          "hash": "0qzTmrHvgY6QiJPqVZTMPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.TagBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.TagBuilder.html",
+          "hash": "lMoKDEJqhWLlr+ZvkE5fUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.Twenty.HtmlBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.Twenty.HtmlBuilder.html",
+          "hash": "6enQUapQRyECGqfG7PR18A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.Twenty.IHtmlBuilderRenderer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.Twenty.IHtmlBuilderRenderer-1.html",
+          "hash": "7dGHi+pi/WXPoUWVAZ8qdQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.Twenty.TagBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.Twenty.TagBuilder.html",
+          "hash": "PMfwIY+5WwlZB2gBbqD69w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.Twenty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.Twenty.html",
+          "hash": "hnfGb0fAjf3kDc8T3TAkmg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eighty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eighty.html",
+          "hash": "dnKKV9yJkWh9lF1bG7vZFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "nakHYxG/387UU2rs/vcb8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "ZdD1LLSKtZ/pwHqesmQlCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "58wq5E6SomZzmLvOXSH6Tw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "wDgNr2bQ8qpIdquWeq5zSA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 32,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
