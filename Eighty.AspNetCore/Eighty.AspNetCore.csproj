@@ -10,7 +10,8 @@
 
     <PackageProjectUrl>https://github.com/benjamin-hodgson/Eighty</PackageProjectUrl>
     <RepositoryUrl>https://github.com/benjamin-hodgson/Eighty.git</RepositoryUrl>
-    <PackageLicenseUrl>https://github.com/benjamin-hodgson/Eighty/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
 
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <LangVersion>latest</LangVersion>
