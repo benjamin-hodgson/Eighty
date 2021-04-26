@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.4.0</Version>
 
     <Authors>benjamin.hodgson</Authors>
     <Copyright>© Benjamin Hodgson, 2018</Copyright>
@@ -15,6 +14,9 @@
 
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <LangVersion>latest</LangVersion>
+    
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
 
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\Eighty.snk</AssemblyOriginatorKeyFile>

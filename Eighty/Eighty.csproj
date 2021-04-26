@@ -1,8 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Version>1.4.0</Version>
-
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>benjamin.hodgson</Authors>
     <Copyright>© Benjamin Hodgson, 2018</Copyright>
@@ -16,6 +14,9 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <LangVersion>latest</LangVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\Eighty.snk</AssemblyOriginatorKeyFile>

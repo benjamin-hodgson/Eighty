@@ -1,8 +1,6 @@
 Eighty
 ======
 
-[![Build status](https://ci.appveyor.com/api/projects/status/2j85aw32h15tnthf?svg=true)](https://ci.appveyor.com/project/benjamin-hodgson/eighty)
-
 Eighty (as in _eigh-ty-M-L_) is a simple HTML generation library. It's an embedded domain-specific language, allowing you to write C# code which roughly resembles HTML. Programming with Eighty is _just programming_: HTML is represented as ordinary immutable C# values which can be passed around as usual. This makes for an approachable alternative to Razor when you don't need the complexity of a whole templating language. It's a great fit for simple web apps or command-line tools like report generators.
 
 ```csharp
