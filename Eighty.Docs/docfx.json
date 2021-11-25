@@ -4,9 +4,44 @@
       "src": [
         {
           "files": [
+            "Eighty/bin/Release/netstandard2.0/Eighty.dll",
+            "Eighty.AspNetCore/bin/Release/net6.0/Eighty.AspNetCore.dll"
+          ],
+          "src": ".."
+        }
+      ],
+      "dest": "."
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "*.yml",
+          "index.md"
+        ]
+      }
+    ],
+    "dest": "_site",
+    "globalMetadata": {
+        "_enableSearch": true,
+        "_disableBreadcrumb": true,
+        "_appTitle": "Eighty"
+    },
+    "xrefService": [ "https://xref.docs.microsoft.com/query?uid={uid}" ]
+  }
+}
+
+
+
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
             "Eighty/Eighty.csproj",
-            "Eighty.AspNetCore/Eighty.AspNetCore.csproj",
-            "Eighty.AspNet.Mvc/Eighty.AspNet.Mvc.csproj"
+            "Eighty.AspNetCore/Eighty.AspNetCore.csproj"
           ],
           "src": ".."
         }
