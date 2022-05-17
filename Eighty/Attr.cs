@@ -153,7 +153,7 @@ public readonly struct Attr
     /// <param name="nameValue">The name and value of the attribute</param>
     public static implicit operator Attr((string name, string value) nameValue)
         => FromValueTuple(nameValue);
-    
+
     /// <summary>
     /// Create an HTML attribute.
     /// </summary>

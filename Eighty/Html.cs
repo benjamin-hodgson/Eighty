@@ -298,7 +298,7 @@ public abstract partial class Html
         }
         return new Sequence(siblings);
     }
-        
+
     /// <summary>
     /// Render HTML-encoded text.
     /// </summary>
