@@ -14,5 +14,9 @@
         
         <SignAssembly>true</SignAssembly>
         <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)Eighty.snk</AssemblyOriginatorKeyFile>
+
+        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+
+        <NoWarn>$(NoWarn);NU1507</NoWarn>
     </PropertyGroup>
 </Project>
