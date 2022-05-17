@@ -1,10 +1,12 @@
 ﻿using System.Linq;
 
+using static Eighty.CodeGen.CodeGenHelpers;
+
 namespace Eighty.CodeGen;
 
-internal class HtmlTagFactoryGenerator : EightyCodeGenerator
+internal static class HtmlTagFactoryGenerator
 {
-    public string GenerateTagFactoryMethods()
+    public static string GenerateTagFactoryMethods()
     {
         var tagMethods = string.Concat(Enumerable.Range(1, 8).Select(TagMethod));
         var tagUnderscoreMethods = string.Concat(Enumerable.Range(1, 8).Select(TagUnderscoreMethod));
@@ -24,7 +26,7 @@ namespace Eighty
     }
 
 
-    private string TagMethod(int number)
+    private static string TagMethod(int number)
         => $@"
         /// <summary>
         /// Create a tag which takes children.
@@ -35,7 +37,7 @@ namespace Eighty
             return new TagBuilder(name, ImmutableArrayFactory.Create({AttrArgs(number)}), true);
         }}
 ";
-    private string TagUnderscoreMethod(int number)
+    private static string TagUnderscoreMethod(int number)
         => $@"
         /// <summary>
         /// Create a tag without any attributes.
@@ -46,7 +48,7 @@ namespace Eighty
             return new Tag(name, ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create({ChildArgs(number)}), true);
         }}
 ";
-    private string SelfClosingTagMethod(int number)
+    private static string SelfClosingTagMethod(int number)
         => $@"
         /// <summary>
         /// Create a tag which does not take children.

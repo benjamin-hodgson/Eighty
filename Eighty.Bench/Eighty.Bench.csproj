@@ -4,6 +4,7 @@
         <OutputType>exe</OutputType>
         <TargetFramework>net6.0</TargetFramework>
         <IsPackable>false</IsPackable>
+        <NoWarn>$(NoWarn);CA1812;CA2234</NoWarn>
     </PropertyGroup>
 
     <PropertyGroup>

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 
 using Eighty.Twenty;
 
@@ -10,6 +11,7 @@ namespace Eighty.AspNetCore.Mvc.ViewFeatures;
 /// <summary>
 /// A collection of views
 /// </summary>
+[SuppressMessage("naming", "CA1711")]  // "Rename type name so that it does not end in 'Collection'"
 public class EightyViewCollection
 {
     internal Dictionary<string, Func<IServiceProvider, IView>> Views { get; } = new Dictionary<string, Func<IServiceProvider, IView>>();

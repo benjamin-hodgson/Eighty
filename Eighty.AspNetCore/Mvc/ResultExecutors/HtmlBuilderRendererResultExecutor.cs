@@ -15,6 +15,7 @@ namespace Eighty.AspNetCore.Mvc.ResultExecutors;
 /// </summary>
 public class HtmlBuilderRendererResultExecutor<TModel>
 {
+    private static readonly Action<ILogger, string, Exception> _loggerMsg = LoggerMessage.Define<string>(LogLevel.Information, 1, "Executing EightyViewResult<{Name}>");
     private readonly ILogger _logger;
     private readonly IHttpResponseStreamWriterFactory _writerFactory;
 
@@ -56,7 +57,7 @@ public class HtmlBuilderRendererResultExecutor<TModel>
             throw new ArgumentNullException(nameof(result));
         }
 
-        _logger.LogInformation(1, "Executing EightyViewResult<{0}>", typeof(TModel).Name);
+        _loggerMsg(_logger, typeof(TModel).Name, null!);
 
         var response = context.HttpContext.Response;
 
@@ -67,10 +68,8 @@ public class HtmlBuilderRendererResultExecutor<TModel>
         response.ContentType = "text/html; charset=utf-8";
 
         var htmlBuilder = result.View.GetHtmlBuilder(result.Model);
-        using (var writer = _writerFactory.CreateWriter(response.Body, Encoding.UTF8))
-        {
-            htmlBuilder.Write(writer);
-            await writer.FlushAsync();
-        }
+        using var writer = _writerFactory.CreateWriter(response.Body, Encoding.UTF8);
+        htmlBuilder.Write(writer);
+        await writer.FlushAsync().ConfigureAwait(false);
     }
 }

@@ -1,4 +1,5 @@
 using System.Collections.Immutable;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -30,12 +31,14 @@ public class SimpleBench
     }
 
     [GlobalCleanup]
+    [SuppressMessage("performance", "CA1822")]  // "Member does not access instance data and can be marked as static"
     public void Cleanup()
     {
         File.Delete("output.html");
     }
 
     [BenchmarkCategory("Flat"), Benchmark]
+    [SuppressMessage("performance", "CA1822")]  // "Member does not access instance data and can be marked as static"
     public void Flat_Eighty_BuildAndRender()
     {
         var html = p(@class: "para<>")._();
@@ -49,6 +52,7 @@ public class SimpleBench
     }
 
     [BenchmarkCategory("Flat"), Benchmark(Baseline = true)]
+    [SuppressMessage("performance", "CA1822")]  // "Member does not access instance data and can be marked as static"
     public void Flat_Eighty_BuildAndRender_NoSharing()
     {
         var builder = ImmutableArray.CreateBuilder<Html>(1000);
@@ -71,7 +75,7 @@ public class SimpleBench
     public async Task Flat_Eighty_RenderAsync()
     {
         using var writer = new StreamWriter("output.html");
-        await _flatPsEighty!.WriteAsync(writer);
+        await _flatPsEighty!.WriteAsync(writer).ConfigureAwait(false);
     }
 
     [BenchmarkCategory("Flat"), Benchmark]
@@ -99,7 +103,7 @@ public class SimpleBench
     public async Task Deep_Eighty_RenderAsync()
     {
         using var writer = new StreamWriter("output.html");
-        await _deepPsEighty!.WriteAsync(writer);
+        await _deepPsEighty!.WriteAsync(writer).ConfigureAwait(false);
     }
 
     [BenchmarkCategory("Deep"), Benchmark]

@@ -56,6 +56,6 @@ public class HtmlResult : IActionResult
         }
 
         var executor = context.HttpContext.RequestServices.GetRequiredService<HtmlResultExecutor>();
-        await executor.ExecuteAsync(context, this);
+        await executor.ExecuteAsync(context, this).ConfigureAwait(false);
     }
 }

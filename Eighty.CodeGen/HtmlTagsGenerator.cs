@@ -1,12 +1,14 @@
 ﻿using System.Linq;
 
+using static Eighty.CodeGen.CodeGenHelpers;
+
 namespace Eighty.CodeGen;
 
-internal class HtmlTagsGenerator : EightyCodeGenerator
+internal static class HtmlTagsGenerator
 {
-    public string GenerateTags()
+    public static string GenerateTags()
     {
-        var methods = string.Concat(_elements.Select(
+        var methods = string.Concat(Elements.Select(
             el => el.isSelfClosing
                 ? SelfClosingTagDef(el.name, el.attrs)
                 : TagDef(el.name, el.attrs)
@@ -28,7 +30,7 @@ namespace Eighty
     }
 
 
-    private string TagDef(string name, string[] attrs)
+    private static string TagDef(string name, string[] attrs)
         => $@"
         /// <summary>
         /// Build {IndefiniteArticle(name)} {name} element.
@@ -131,7 +133,7 @@ namespace Eighty
         {TagChildren(name)}
 ";
 
-    private string SelfClosingTagDef(string name, string[] attrs)
+    private static string SelfClosingTagDef(string name, string[] attrs)
         => $@"
         /// <summary>
         /// Build {IndefiniteArticle(name)} {name} element.
@@ -172,7 +174,7 @@ namespace Eighty
         {SelfClosingTagAttrs(name)}
 ";
 
-    private string TagAttrs(string name)
+    private static string TagAttrs(string name)
         => string.Join("\n", Enumerable.Range(1, 8).Select(n => $@"
         /// <summary>
         /// Build {IndefiniteArticle(name)} {name} element.
@@ -184,7 +186,7 @@ namespace Eighty
             return new TagBuilder(""{name}"", ImmutableArrayFactory.Create({AttrArgs(n)}), false);
         }}"));
 
-    private string SelfClosingTagAttrs(string name)
+    private static string SelfClosingTagAttrs(string name)
         => string.Join("\n", Enumerable.Range(1, 8).Select(n => $@"
         /// <summary>
         /// Build {IndefiniteArticle(name)} {name} element.
@@ -196,7 +198,7 @@ namespace Eighty
             return new SelfClosingTag(""{name}"", ImmutableArrayFactory.Create({AttrArgs(n)}), false);
         }}"));
 
-    private string TagChildren(string name)
+    private static string TagChildren(string name)
         => string.Join("\n", Enumerable.Range(1, 8).Select(n => $@"
         /// <summary>
         /// Build {IndefiniteArticle(name)} {name} element without any attributes.
@@ -210,7 +212,7 @@ namespace Eighty
         }}"));
 
 
-    private string CountNonNulls(string[] attrs)
+    private static string CountNonNulls(string[] attrs)
         => string.Concat(attrs.Select(a =>
             a[0] == '!'
                 ? $@"
@@ -224,7 +226,7 @@ namespace Eighty
                 attrCount++;
             }}"));
 
-    private string PackArray(string[] attrs)
+    private static string PackArray(string[] attrs)
         => string.Concat(attrs.Select(a =>
             a[0] == '!'
                 ? $@"

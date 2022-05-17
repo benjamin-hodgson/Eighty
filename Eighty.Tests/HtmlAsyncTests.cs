@@ -286,12 +286,10 @@ public class HtmlAsyncTests
         }
     }
 
-    private async Task<string> GetStringAsync(H html)
+    private static async Task<string> GetStringAsync(H html)
     {
-        using (var writer = new StringWriter())
-        {
-            await html.WriteAsync(writer);
-            return writer.ToString();
-        }
+        using var writer = new StringWriter();
+        await html.WriteAsync(writer);
+        return writer.ToString();
     }
 }

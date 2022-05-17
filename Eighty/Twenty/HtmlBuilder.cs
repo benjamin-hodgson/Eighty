@@ -1,6 +1,7 @@
 using System;
 using System.Buffers;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Text.Encodings.Web;
 
@@ -9,6 +10,7 @@ namespace Eighty.Twenty;
 /// <summary>
 /// Tools for rendering HTML imperatively.
 /// </summary>
+[SuppressMessage("naming", "CA1708")]  // Names of members should differ by more than case
 public abstract partial class HtmlBuilder
 {
     private HtmlEncodingTextWriterReference _writer;
@@ -121,6 +123,14 @@ public abstract partial class HtmlBuilder
     /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
     protected TagBuilder Tag(string name, params Attr[] attrs)
     {
+        if (name == null)
+        {
+            throw new ArgumentNullException(nameof(name));
+        }
+        if (attrs == null)
+        {
+            throw new ArgumentNullException(nameof(attrs));
+        }
         StartTag(name);
         Attrs(attrs);
         _writer.Get().WriteRaw('>');
@@ -132,6 +142,14 @@ public abstract partial class HtmlBuilder
     /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
     protected TagBuilder Tag(string name, IEnumerable<Attr> attrs)
     {
+        if (name == null)
+        {
+            throw new ArgumentNullException(nameof(name));
+        }
+        if (attrs == null)
+        {
+            throw new ArgumentNullException(nameof(attrs));
+        }
         StartTag(name);
         Attrs(attrs);
         _writer.Get().WriteRaw('>');
@@ -143,6 +161,14 @@ public abstract partial class HtmlBuilder
     /// </summary>
     protected void SelfClosingTag(string name, params Attr[] attrs)
     {
+        if (name == null)
+        {
+            throw new ArgumentNullException(nameof(name));
+        }
+        if (attrs == null)
+        {
+            throw new ArgumentNullException(nameof(attrs));
+        }
         StartTag(name);
         Attrs(attrs);
         _writer.Get().WriteRaw("/>");
@@ -152,6 +178,14 @@ public abstract partial class HtmlBuilder
     /// </summary>
     protected void SelfClosingTag(string name, IEnumerable<Attr> attrs)
     {
+        if (name == null)
+        {
+            throw new ArgumentNullException(nameof(name));
+        }
+        if (attrs == null)
+        {
+            throw new ArgumentNullException(nameof(attrs));
+        }
         StartTag(name);
         Attrs(attrs);
         _writer.Get().WriteRaw("/>");
@@ -163,6 +197,10 @@ public abstract partial class HtmlBuilder
     /// <param name="text">The text to HTML-encode</param>
     protected internal void Text(string text)
     {
+        if (text == null)
+        {
+            throw new ArgumentNullException(nameof(text));
+        }
         _writer.Get().Write(text);
     }
 
@@ -172,6 +210,10 @@ public abstract partial class HtmlBuilder
     /// <param name="rawHtml">The pre-encoded string</param>
     protected internal void Raw(string rawHtml)
     {
+        if (rawHtml == null)
+        {
+            throw new ArgumentNullException(nameof(rawHtml));
+        }
         _writer.Get().WriteRaw(rawHtml);
     }
 
@@ -181,6 +223,10 @@ public abstract partial class HtmlBuilder
     /// <param name="html">The HTML to write.</param>
     protected void Html(Html html)
     {
+        if (html == null)
+        {
+            throw new ArgumentNullException(nameof(html));
+        }
         html.WriteImpl(ref _writer.Get());
     }
 

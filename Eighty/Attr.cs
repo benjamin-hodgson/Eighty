@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 
 namespace Eighty;
@@ -6,6 +7,7 @@ namespace Eighty;
 /// <summary>
 /// Represents an HTML attribute.
 /// </summary>
+[SuppressMessage("performance", "CA1815")]  // "struct should override Equals"
 public readonly struct Attr
 {
     private readonly string _name;
@@ -150,5 +152,12 @@ public readonly struct Attr
     /// </summary>
     /// <param name="nameValue">The name and value of the attribute</param>
     public static implicit operator Attr((string name, string value) nameValue)
+        => FromValueTuple(nameValue);
+    
+    /// <summary>
+    /// Create an HTML attribute.
+    /// </summary>
+    /// <param name="nameValue">The name and value of the attribute</param>
+    public static Attr FromValueTuple((string name, string value) nameValue)
         => new(nameValue.name, nameValue.value);
 }

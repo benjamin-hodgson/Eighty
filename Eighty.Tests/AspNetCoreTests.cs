@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Net;
 using System.Net.Http;
@@ -17,6 +18,7 @@ using static Eighty.Html;
 
 namespace Eighty.Tests;
 
+[SuppressMessage("design", "CA1001")]  // Type owns disposable field(s) but is not disposable
 public class AspNetCoreTests
 {
     private readonly TestServer _server;

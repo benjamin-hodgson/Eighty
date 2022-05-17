@@ -18,6 +18,8 @@
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
 
         <NoWarn>$(NoWarn);NU1507</NoWarn>
+        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+        <AnalysisMode>all</AnalysisMode>
         <Nullable>enable</Nullable>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     </PropertyGroup>

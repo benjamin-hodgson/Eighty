@@ -1,12 +1,14 @@
 using System.Linq;
 
+using static Eighty.CodeGen.CodeGenHelpers;
+
 namespace Eighty.CodeGen;
 
-internal class HtmlBuilderTagsGenerator : EightyCodeGenerator
+internal static class HtmlBuilderTagsGenerator
 {
-    public string GenerateFile()
+    public static string GenerateFile()
     {
-        var methods = string.Concat(_elements.Select(
+        var methods = string.Concat(Elements.Select(
             el => el.isSelfClosing
                 ? SelfClosingTagDef(el.name, el.attrs)
                 : TagDef(el.name, el.attrs)
@@ -26,7 +28,7 @@ namespace Eighty.Twenty
     }
 
 
-    private string TagDef(string name, string[] attrs)
+    private static string TagDef(string name, string[] attrs)
         => $@"
         /// <summary>
         /// Write {IndefiniteArticle(name)} {name} element. The returned value MUST be disposed exactly once, immediately after the children have been written.
@@ -66,7 +68,7 @@ namespace Eighty.Twenty
         }}
         {TagAttrs(name)}
 ";
-    private string SelfClosingTagDef(string name, string[] attrs)
+    private static string SelfClosingTagDef(string name, string[] attrs)
         => $@"
         /// <summary>
         /// Write {IndefiniteArticle(name)} {name} element.
@@ -101,7 +103,7 @@ namespace Eighty.Twenty
         {SelfClosingTagAttrs(name)}
 ";
 
-    private string WriteAttrs(string[] attrs)
+    private static string WriteAttrs(string[] attrs)
         => string.Concat(attrs.Select(a =>
             a[0] == '!'
                 ? $@"
@@ -115,7 +117,7 @@ namespace Eighty.Twenty
                 Attr(new Eighty.Attr(""{a}"", {CsId(a)}));
             }}"));
 
-    private string TagAttrs(string name)
+    private static string TagAttrs(string name)
         => string.Join("\n", Enumerable.Range(1, 8).Select(n => $@"
         /// <summary>
         /// Write {IndefiniteArticle(name)} {name} element. The returned value MUST be disposed exactly once, immediately after the children have been written.
@@ -130,7 +132,7 @@ namespace Eighty.Twenty
             return new TagBuilder(""{name}"", this, false);
         }}"));
 
-    private string SelfClosingTagAttrs(string name)
+    private static string SelfClosingTagAttrs(string name)
         => string.Join("\n", Enumerable.Range(1, 8).Select(n => $@"
         /// <summary>
         /// Write {IndefiniteArticle(name)} {name} element.

@@ -23,9 +23,9 @@ public class Startup
             .AddEighty(
                 opts =>
                 {
-                    opts.ViewCollection.RegisterSingleton("Bench", "Eighty", new Views.Bench.Eighty());
-                    opts.ViewCollection.RegisterSingleton("Bench", "EightyAsync", new Views.Bench.Eighty());
-                    opts.ViewCollection.RegisterSingleton("Bench", "Twenty", new Views.Bench.Twenty());
+                    opts.ViewCollection.RegisterSingleton("Bench", "Eighty", new Views.Bench.EightyRenderer());
+                    opts.ViewCollection.RegisterSingleton("Bench", "EightyAsync", new Views.Bench.EightyRenderer());
+                    opts.ViewCollection.RegisterSingleton("Bench", "Twenty", new Views.Bench.TwentyRenderer());
 
                     opts.ViewCollection.RegisterSingleton("Test", "HtmlView", new Views.Test.TestHtmlRenderer());
                     opts.ViewCollection.RegisterSingleton("Test", "HtmlViewAsync", new Views.Test.TestHtmlRenderer());

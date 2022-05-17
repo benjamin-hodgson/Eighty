@@ -15,6 +15,7 @@ namespace Eighty.AspNetCore.Mvc.ResultExecutors;
 /// </summary>
 public class HtmlBuilderResultExecutor
 {
+    private static readonly Action<ILogger, Exception> _loggerMsg = LoggerMessage.Define(LogLevel.Information, 1, "Executing HtmlBuilderResult");
     private readonly ILogger _logger;
     private readonly IHttpResponseStreamWriterFactory _writerFactory;
 
@@ -56,7 +57,7 @@ public class HtmlBuilderResultExecutor
             throw new ArgumentNullException(nameof(result));
         }
 
-        _logger.LogInformation(1, "Executing HtmlBuilderResult");
+        _loggerMsg(_logger, null!);
 
         var response = context.HttpContext.Response;
 
@@ -66,10 +67,8 @@ public class HtmlBuilderResultExecutor
         }
         response.ContentType = "text/html; charset=utf-8";
 
-        using (var writer = _writerFactory.CreateWriter(response.Body, Encoding.UTF8))
-        {
-            result.HtmlBuilder.Write(writer);
-            await writer.FlushAsync();
-        }
+        using var writer = _writerFactory.CreateWriter(response.Body, Encoding.UTF8);
+        result.HtmlBuilder.Write(writer);
+        await writer.FlushAsync().ConfigureAwait(false);
     }
 }

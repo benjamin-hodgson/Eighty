@@ -15,6 +15,7 @@ namespace Eighty.AspNetCore.Mvc.ResultExecutors;
 /// </summary>
 public class HtmlResultExecutor
 {
+    private static readonly Action<ILogger, Exception> _loggerMsg = LoggerMessage.Define(LogLevel.Information, 1, "Executing HtmlResult");
     private readonly ILogger _logger;
     private readonly IHttpResponseStreamWriterFactory _writerFactory;
 
@@ -56,7 +57,7 @@ public class HtmlResultExecutor
             throw new ArgumentNullException(nameof(result));
         }
 
-        _logger.LogInformation(1, "Executing HtmlResult");
+        _loggerMsg(_logger, null!);
 
         var response = context.HttpContext.Response;
 
@@ -66,18 +67,18 @@ public class HtmlResultExecutor
         }
         response.ContentType = "text/html; charset=utf-8";
 
-        using (var writer = _writerFactory.CreateWriter(response.Body, Encoding.UTF8))
+        using var writer = _writerFactory.CreateWriter(response.Body, Encoding.UTF8);
+        if (result.RenderAsync)
         {
-            if (result.RenderAsync)
-            {
-                await result.Html.WriteAsync(writer);
-                await writer.FlushAsync();
-            }
-            else
-            {
-                result.Html.Write(writer);
-                await writer.FlushAsync();
-            }
+            await result.Html.WriteAsync(writer).ConfigureAwait(false);
+            await writer.FlushAsync().ConfigureAwait(false);
+        }
+        else
+        {
+#pragma warning disable CA1849  // "Method synchronously blocks. Await async method instead."
+            result.Html.Write(writer);
+#pragma warning restore CA1849
+            await writer.FlushAsync().ConfigureAwait(false);
         }
     }
 }

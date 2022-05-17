@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
 namespace Eighty;
@@ -8,6 +9,7 @@ namespace Eighty;
 /// <summary>
 /// Represents a "half-open" HTML tag which is waiting for its children.
 /// </summary>
+[SuppressMessage("performance", "CA1815")]  // "struct should override Equals"
 public readonly partial struct TagBuilder
 {
     private readonly string _name;
@@ -32,6 +34,7 @@ public readonly partial struct TagBuilder
     /// Add children to the tag.
     /// </summary>
     /// <returns>An instance of <see cref="Html"/></returns>
+    [SuppressMessage("design", "CA1002", Justification = "this would be a breaking change")]  // "Change List to use 'Collection<T>', 'ReadOnlyCollection<T>' or 'KeyedCollection<K,V>'"
     public Html _(List<Html> children)
         => _(children.AsEnumerable());
 

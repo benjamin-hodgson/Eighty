@@ -3,7 +3,7 @@ using Eighty.Twenty;
 
 namespace Eighty.AspNetCore.TestApp.Views.Bench;
 
-public class Twenty : IHtmlBuilderRenderer<BenchModel>
+public class TwentyRenderer : IHtmlBuilderRenderer<BenchModel>
 {
     public HtmlBuilder GetHtmlBuilder(BenchModel model)
         => new MyHtmlBuilder(model);

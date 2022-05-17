@@ -1,8 +1,9 @@
+using System;
 using System.Linq;
 
 namespace Eighty.CodeGen;
 
-internal class EightyCodeGenerator
+internal static class CodeGenHelpers
 {
     // https://developer.mozilla.org/en-US/docs/Web/HTML/Element
     private static readonly string[] _globalAttrs
@@ -15,7 +16,7 @@ internal class EightyCodeGenerator
             "tabindex",
             "contenteditable"
         };
-    protected static readonly (string name, bool isSelfClosing, string[] attrs)[] _elements
+    public static readonly (string name, bool isSelfClosing, string[] attrs)[] Elements
         = new[]
         {
             Tag("html", "xmlns"),
@@ -181,7 +182,7 @@ internal class EightyCodeGenerator
     private static (string, bool, string[]) STag(string name, params string[] attrs)
         => (name, true, _globalAttrs.Concat(attrs).ToArray());
 
-    protected static string Params(string[] attrs)
+    public static string Params(string[] attrs)
         => string.Join(',', attrs.Select(a =>
             a[0] == '!'
                 ? $"\n            bool {CsId(a)} = false"
@@ -189,7 +190,7 @@ internal class EightyCodeGenerator
         ));
 
     private static readonly string[] _keywords = new[] { "class", "base", "for", "checked", "readonly", "object", "default" };
-    protected static string CsId(string name)
+    public static string CsId(string name)
     {
         var id = name.TrimStart('!');
         if (_keywords.Contains(id))
@@ -199,28 +200,28 @@ internal class EightyCodeGenerator
         return id;
     }
 
-    private static readonly string _vowels = "aeiou";
-    private static readonly string _vowelSoundingLetters = "aefhilmnorsx";
-    protected static string IndefiniteArticle(string noun)
+    private const string _vowels = "aeiou";
+    private const string _vowelSoundingLetters = "aefhilmnorsx";
+    public static string IndefiniteArticle(string noun)
         => noun == "html"
-        || noun.Length <= 2 && _vowelSoundingLetters.Contains(noun[0])
-        || _vowels.Contains(noun[0])
+        || noun.Length <= 2 && _vowelSoundingLetters.Contains(noun[0], StringComparison.OrdinalIgnoreCase)
+        || _vowels.Contains(noun[0], StringComparison.OrdinalIgnoreCase)
             ? "an"
             : "a";
 
-    protected static string AttrParams(int number)
+    public static string AttrParams(int number)
         => string.Join(", ", Enumerable.Range(1, number).Select(n => "Attr attr" + n));
 
-    protected static string AttrArgs(int number)
+    public static string AttrArgs(int number)
         => string.Join(", ", Enumerable.Range(1, number).Select(n => "attr" + n));
 
-    protected static string ChildParams(int number)
+    public static string ChildParams(int number)
         => string.Join(", ", Enumerable.Range(1, number).Select(n => "Html child" + n));
 
-    protected static string ChildArgs(int number)
+    public static string ChildArgs(int number)
         => string.Join(", ", Enumerable.Range(1, number).Select(n => "child" + n));
 
-    protected static string CheckChildNulls(int number)
+    public static string CheckChildNulls(int number)
         => string.Concat(Enumerable.Range(1, number).Select(n => $@"
             if (child{n} == null)
             {{

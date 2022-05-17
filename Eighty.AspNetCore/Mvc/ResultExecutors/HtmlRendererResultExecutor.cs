@@ -15,6 +15,7 @@ namespace Eighty.AspNetCore.Mvc.ResultExecutors;
 /// </summary>
 public class HtmlRendererResultExecutor<TModel>
 {
+    private static readonly Action<ILogger, string, Exception> _loggerMsg = LoggerMessage.Define<string>(LogLevel.Information, 1, "Executing EightyViewResult<{Name}>");
     private readonly ILogger _logger;
     private readonly IHttpResponseStreamWriterFactory _writerFactory;
 
@@ -56,7 +57,7 @@ public class HtmlRendererResultExecutor<TModel>
             throw new ArgumentNullException(nameof(result));
         }
 
-        _logger.LogInformation(1, "Executing EightyViewResult<{0}>", typeof(TModel).Name);
+        _loggerMsg(_logger, typeof(TModel).Name, null!);
 
         var response = context.HttpContext.Response;
 
@@ -67,18 +68,18 @@ public class HtmlRendererResultExecutor<TModel>
         response.ContentType = "text/html; charset=utf-8";
 
         var html = result.View.Render(result.Model);
-        using (var writer = _writerFactory.CreateWriter(response.Body, Encoding.UTF8))
+        using var writer = _writerFactory.CreateWriter(response.Body, Encoding.UTF8);
+        if (result.RenderAsync)
         {
-            if (result.RenderAsync)
-            {
-                await html.WriteAsync(writer);
-                await writer.FlushAsync();
-            }
-            else
-            {
-                html.Write(writer);
-                await writer.FlushAsync();
-            }
+            await html.WriteAsync(writer).ConfigureAwait(false);
+            await writer.FlushAsync().ConfigureAwait(false);
+        }
+        else
+        {
+#pragma warning disable CA1849  // "Method synchronously blocks. Await async method instead."
+            html.Write(writer);
+#pragma warning restore CA1849
+            await writer.FlushAsync().ConfigureAwait(false);
         }
     }
 }

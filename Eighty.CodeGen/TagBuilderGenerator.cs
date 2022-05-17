@@ -1,10 +1,12 @@
 ﻿using System.Linq;
 
+using static Eighty.CodeGen.CodeGenHelpers;
+
 namespace Eighty.CodeGen;
 
-internal class TagBuilderGenerator : EightyCodeGenerator
+internal static class TagBuilderGenerator
 {
-    public string GenerateTagBuilderMethods()
+    public static string GenerateTagBuilderMethods()
     {
         var underscoreMethods = string.Concat(Enumerable.Range(1, 8).Select(UnderscoreMethod));
 
@@ -23,7 +25,7 @@ namespace Eighty
     }
 
 
-    private string UnderscoreMethod(int number)
+    private static string UnderscoreMethod(int number)
         => $@"
         /// <summary>
         /// Add children to the tag.

@@ -2,9 +2,9 @@
 
 namespace Eighty.CodeGen;
 
-internal class HtmlUnderscoreGenerator : EightyCodeGenerator
+internal static class HtmlUnderscoreGenerator
 {
-    public string GenerateUnderscores()
+    public static string GenerateUnderscores()
     {
         var methods = string.Concat(Enumerable.Range(1, 8).Select(UnderscoreMethod));
 
@@ -23,7 +23,7 @@ namespace Eighty
     }
 
 
-    private string UnderscoreMethod(int number)
+    private static string UnderscoreMethod(int number)
         => $@"
         /// <summary>
         /// Put some siblings next to each other.
@@ -35,9 +35,9 @@ namespace Eighty
         }}
 ";
 
-    private string SiblingParams(int number)
+    private static string SiblingParams(int number)
         => string.Join(", ", Enumerable.Range(1, number).Select(n => "Html sibling" + n));
 
-    private string SiblingArgs(int number)
+    private static string SiblingArgs(int number)
         => string.Join(", ", Enumerable.Range(1, number).Select(n => "sibling" + n));
 }

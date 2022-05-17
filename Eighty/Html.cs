@@ -2,6 +2,7 @@
 using System.Buffers;
 using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Text.Encodings.Web;
@@ -146,6 +147,7 @@ public abstract partial class Html
     /// <summary>
     /// Create a tag without any attributes.
     /// </summary>
+    [SuppressMessage("design", "CA1002", Justification = "this would be a breaking change")]  // "Change List to use 'Collection<T>', 'ReadOnlyCollection<T>' or 'KeyedCollection<K,V>'"
     public static Html Tag_(string name, List<Html> children)
         => Tag_(name, children.AsEnumerable());
 
@@ -260,6 +262,7 @@ public abstract partial class Html
     /// <summary>
     /// Put some siblings next to each other.
     /// </summary>
+    [SuppressMessage("design", "CA1002", Justification = "this would be a breaking change")]  // "Change List to use 'Collection<T>', 'ReadOnlyCollection<T>' or 'KeyedCollection<K,V>'"
     public static Html _(List<Html> siblings)
         => _(siblings.AsEnumerable());
 
@@ -295,6 +298,40 @@ public abstract partial class Html
         }
         return new Sequence(siblings);
     }
+        
+    /// <summary>
+    /// Render HTML-encoded text.
+    /// </summary>
+    /// <param name="text">The text to HTML-encode</param>
+    /// <returns>An instance of <see cref="Html"/>.</returns>
+    public static Html FromString(string text)
+        => Text(text);
+    /// <summary>
+    /// Put some siblings next to each other.
+    /// </summary>
+    public static Html FromHtmlArray(Html[] siblings)
+        => _(siblings);
+    /// <summary>
+    /// Put some siblings next to each other.
+    /// </summary>
+    [SuppressMessage("design", "CA1002", Justification = "this would be a breaking change")]  // "Change List to use 'Collection<T>', 'ReadOnlyCollection<T>' or 'KeyedCollection<K,V>'"
+    public static Html FromList(List<Html> siblings)
+        => _(siblings);
+    /// <summary>
+    /// Put some siblings next to each other.
+    /// </summary>
+    public static Html FromImmutableList(ImmutableList<Html> siblings)
+        => _(siblings);
+    /// <summary>
+    /// Put some siblings next to each other.
+    /// </summary>
+    public static Html FromImmutableArray(ImmutableArray<Html> siblings)
+        => _(siblings);
+    /// <summary>
+    /// Create a tag with no children.
+    /// </summary>
+    public static Html FromTagBuilder(TagBuilder tagBuilder)
+        => tagBuilder._();
 
     /// <summary>
     /// Render HTML-encoded text.
@@ -311,6 +348,7 @@ public abstract partial class Html
     /// <summary>
     /// Put some siblings next to each other.
     /// </summary>
+    [SuppressMessage("design", "CA1002", Justification = "this would be a breaking change")]  // "Change List to use 'Collection<T>', 'ReadOnlyCollection<T>' or 'KeyedCollection<K,V>'"
     public static implicit operator Html(List<Html> siblings)
         => _(siblings);
     /// <summary>

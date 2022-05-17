@@ -49,10 +49,12 @@ public class EightyViewAdapter<TModel> : IView
 
             if (context.ViewData.TryGetValue("RenderAsync", out var renderAsync) && renderAsync is bool b && b)
             {
-                await html.WriteAsync(context.Writer);
+                await html.WriteAsync(context.Writer).ConfigureAwait(false);
                 return;
             }
+#pragma warning disable CA1849  // "Method synchronously blocks. Await async method instead."
             html.Write(context.Writer);
+#pragma warning restore CA1849
             return;
         }
         throw new InvalidOperationException($"Expected a model of type {typeof(TModel).Name} but the actual model is of type {context.ViewData.Model.GetType().Name}");

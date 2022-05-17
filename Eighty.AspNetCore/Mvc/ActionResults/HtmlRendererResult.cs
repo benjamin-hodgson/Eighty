@@ -64,6 +64,6 @@ public class HtmlRendererResult<TModel> : IActionResult
         }
 
         var executor = context.HttpContext.RequestServices.GetRequiredService<HtmlRendererResultExecutor<TModel>>();
-        await executor.ExecuteAsync(context, this);
+        await executor.ExecuteAsync(context, this).ConfigureAwait(false);
     }
 }
