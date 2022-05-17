@@ -31,6 +31,21 @@ references:
   commentId: Overload:Eighty.Attr.#ctor
   fullName: Eighty.Attr.Attr
   nameWithType: Attr.Attr
+- uid: Eighty.Attr.FromValueTuple(System.ValueTuple{System.String,System.String})
+  name: FromValueTuple(ValueTuple<String, String>)
+  href: Eighty.Attr.html#Eighty_Attr_FromValueTuple_System_ValueTuple_System_String_System_String__
+  commentId: M:Eighty.Attr.FromValueTuple(System.ValueTuple{System.String,System.String})
+  name.vb: FromValueTuple(ValueTuple(Of String, String))
+  fullName: Eighty.Attr.FromValueTuple(System.ValueTuple<System.String, System.String>)
+  fullName.vb: Eighty.Attr.FromValueTuple(System.ValueTuple(Of System.String, System.String))
+  nameWithType: Attr.FromValueTuple(ValueTuple<String, String>)
+  nameWithType.vb: Attr.FromValueTuple(ValueTuple(Of String, String))
+- uid: Eighty.Attr.FromValueTuple*
+  name: FromValueTuple
+  href: Eighty.Attr.html#Eighty_Attr_FromValueTuple_
+  commentId: Overload:Eighty.Attr.FromValueTuple
+  fullName: Eighty.Attr.FromValueTuple
+  nameWithType: Attr.FromValueTuple
 - uid: Eighty.Attr.op_Implicit(System.ValueTuple{System.String,System.String})~Eighty.Attr
   name: Implicit(ValueTuple<String, String> to Attr)
   href: Eighty.Attr.html#Eighty_Attr_op_Implicit_System_ValueTuple_System_String_System_String___Eighty_Attr
@@ -6361,6 +6376,90 @@ references:
   commentId: Overload:Eighty.Html.form_
   fullName: Eighty.Html.form_
   nameWithType: Html.form_
+- uid: Eighty.Html.FromHtmlArray(Eighty.Html[])
+  name: FromHtmlArray(Html[])
+  href: Eighty.Html.html#Eighty_Html_FromHtmlArray_Eighty_Html___
+  commentId: M:Eighty.Html.FromHtmlArray(Eighty.Html[])
+  name.vb: FromHtmlArray(Html())
+  fullName: Eighty.Html.FromHtmlArray(Eighty.Html[])
+  fullName.vb: Eighty.Html.FromHtmlArray(Eighty.Html())
+  nameWithType: Html.FromHtmlArray(Html[])
+  nameWithType.vb: Html.FromHtmlArray(Html())
+- uid: Eighty.Html.FromHtmlArray*
+  name: FromHtmlArray
+  href: Eighty.Html.html#Eighty_Html_FromHtmlArray_
+  commentId: Overload:Eighty.Html.FromHtmlArray
+  fullName: Eighty.Html.FromHtmlArray
+  nameWithType: Html.FromHtmlArray
+- uid: Eighty.Html.FromImmutableArray(System.Collections.Immutable.ImmutableArray{Eighty.Html})
+  name: FromImmutableArray(ImmutableArray<Html>)
+  href: Eighty.Html.html#Eighty_Html_FromImmutableArray_System_Collections_Immutable_ImmutableArray_Eighty_Html__
+  commentId: M:Eighty.Html.FromImmutableArray(System.Collections.Immutable.ImmutableArray{Eighty.Html})
+  name.vb: FromImmutableArray(ImmutableArray(Of Html))
+  fullName: Eighty.Html.FromImmutableArray(System.Collections.Immutable.ImmutableArray<Eighty.Html>)
+  fullName.vb: Eighty.Html.FromImmutableArray(System.Collections.Immutable.ImmutableArray(Of Eighty.Html))
+  nameWithType: Html.FromImmutableArray(ImmutableArray<Html>)
+  nameWithType.vb: Html.FromImmutableArray(ImmutableArray(Of Html))
+- uid: Eighty.Html.FromImmutableArray*
+  name: FromImmutableArray
+  href: Eighty.Html.html#Eighty_Html_FromImmutableArray_
+  commentId: Overload:Eighty.Html.FromImmutableArray
+  fullName: Eighty.Html.FromImmutableArray
+  nameWithType: Html.FromImmutableArray
+- uid: Eighty.Html.FromImmutableList(System.Collections.Immutable.ImmutableList{Eighty.Html})
+  name: FromImmutableList(ImmutableList<Html>)
+  href: Eighty.Html.html#Eighty_Html_FromImmutableList_System_Collections_Immutable_ImmutableList_Eighty_Html__
+  commentId: M:Eighty.Html.FromImmutableList(System.Collections.Immutable.ImmutableList{Eighty.Html})
+  name.vb: FromImmutableList(ImmutableList(Of Html))
+  fullName: Eighty.Html.FromImmutableList(System.Collections.Immutable.ImmutableList<Eighty.Html>)
+  fullName.vb: Eighty.Html.FromImmutableList(System.Collections.Immutable.ImmutableList(Of Eighty.Html))
+  nameWithType: Html.FromImmutableList(ImmutableList<Html>)
+  nameWithType.vb: Html.FromImmutableList(ImmutableList(Of Html))
+- uid: Eighty.Html.FromImmutableList*
+  name: FromImmutableList
+  href: Eighty.Html.html#Eighty_Html_FromImmutableList_
+  commentId: Overload:Eighty.Html.FromImmutableList
+  fullName: Eighty.Html.FromImmutableList
+  nameWithType: Html.FromImmutableList
+- uid: Eighty.Html.FromList(System.Collections.Generic.List{Eighty.Html})
+  name: FromList(List<Html>)
+  href: Eighty.Html.html#Eighty_Html_FromList_System_Collections_Generic_List_Eighty_Html__
+  commentId: M:Eighty.Html.FromList(System.Collections.Generic.List{Eighty.Html})
+  name.vb: FromList(List(Of Html))
+  fullName: Eighty.Html.FromList(System.Collections.Generic.List<Eighty.Html>)
+  fullName.vb: Eighty.Html.FromList(System.Collections.Generic.List(Of Eighty.Html))
+  nameWithType: Html.FromList(List<Html>)
+  nameWithType.vb: Html.FromList(List(Of Html))
+- uid: Eighty.Html.FromList*
+  name: FromList
+  href: Eighty.Html.html#Eighty_Html_FromList_
+  commentId: Overload:Eighty.Html.FromList
+  fullName: Eighty.Html.FromList
+  nameWithType: Html.FromList
+- uid: Eighty.Html.FromString(System.String)
+  name: FromString(String)
+  href: Eighty.Html.html#Eighty_Html_FromString_System_String_
+  commentId: M:Eighty.Html.FromString(System.String)
+  fullName: Eighty.Html.FromString(System.String)
+  nameWithType: Html.FromString(String)
+- uid: Eighty.Html.FromString*
+  name: FromString
+  href: Eighty.Html.html#Eighty_Html_FromString_
+  commentId: Overload:Eighty.Html.FromString
+  fullName: Eighty.Html.FromString
+  nameWithType: Html.FromString
+- uid: Eighty.Html.FromTagBuilder(Eighty.TagBuilder)
+  name: FromTagBuilder(TagBuilder)
+  href: Eighty.Html.html#Eighty_Html_FromTagBuilder_Eighty_TagBuilder_
+  commentId: M:Eighty.Html.FromTagBuilder(Eighty.TagBuilder)
+  fullName: Eighty.Html.FromTagBuilder(Eighty.TagBuilder)
+  nameWithType: Html.FromTagBuilder(TagBuilder)
+- uid: Eighty.Html.FromTagBuilder*
+  name: FromTagBuilder
+  href: Eighty.Html.html#Eighty_Html_FromTagBuilder_
+  commentId: Overload:Eighty.Html.FromTagBuilder
+  fullName: Eighty.Html.FromTagBuilder
+  nameWithType: Html.FromTagBuilder
 - uid: Eighty.Html.h1(Eighty.Attr)
   name: h1(Attr)
   href: Eighty.Html.html#Eighty_Html_h1_Eighty_Attr_
