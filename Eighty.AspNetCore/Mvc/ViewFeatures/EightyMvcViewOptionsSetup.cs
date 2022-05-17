@@ -1,36 +1,36 @@
 using System;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 
-namespace Eighty.AspNetCore.Mvc.ViewFeatures
+namespace Eighty.AspNetCore.Mvc.ViewFeatures;
+
+/// <summary>
+/// Configures the <see cref="MvcViewOptions"/> to set up an <see cref="EightyViewEngine"/>
+/// </summary>
+public class EightyMvcViewOptionsSetup : IConfigureOptions<MvcViewOptions>
 {
+    private readonly EightyViewEngine _viewEngine;
+
     /// <summary>
-    /// Configures the <see cref="MvcViewOptions"/> to set up an <see cref="EightyViewEngine"/>
+    /// Creates a <see cref="EightyMvcViewOptionsSetup"/>
     /// </summary>
-    public class EightyMvcViewOptionsSetup : IConfigureOptions<MvcViewOptions>
+    public EightyMvcViewOptionsSetup(EightyViewEngine viewEngine)
     {
-        private EightyViewEngine _viewEngine;
-
-        /// <summary>
-        /// Creates a <see cref="EightyMvcViewOptionsSetup"/>
-        /// </summary>
-        public EightyMvcViewOptionsSetup(EightyViewEngine viewEngine)
+        if (viewEngine == null)
         {
-            if (viewEngine == null)
-            {
-                throw new ArgumentNullException(nameof(viewEngine));
-            }
-            _viewEngine = viewEngine;
+            throw new ArgumentNullException(nameof(viewEngine));
         }
+        _viewEngine = viewEngine;
+    }
 
-        /// <inheritdoc/>
-        public void Configure(MvcViewOptions options)
+    /// <inheritdoc/>
+    public void Configure(MvcViewOptions options)
+    {
+        if (options == null)
         {
-            if (options == null)
-            {
-                throw new ArgumentNullException(nameof(options));
-            }
-            options.ViewEngines.Add(_viewEngine);
+            throw new ArgumentNullException(nameof(options));
         }
+        options.ViewEngines.Add(_viewEngine);
     }
 }

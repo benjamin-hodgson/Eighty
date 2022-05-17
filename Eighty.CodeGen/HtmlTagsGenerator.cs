@@ -2,7 +2,7 @@
 
 namespace Eighty.CodeGen
 {
-    class HtmlTagsGenerator : EightyCodeGenerator
+    internal class HtmlTagsGenerator : EightyCodeGenerator
     {
         public string GenerateTags()
         {
@@ -211,7 +211,7 @@ namespace Eighty
 
 
         private string CountNonNulls(string[] attrs)
-            => string.Concat(attrs.Select(a => 
+            => string.Concat(attrs.Select(a =>
                 a[0] == '!'
                     ? $@"
             if ({CsId(a)})
@@ -230,7 +230,7 @@ namespace Eighty
                     ? $@"
             if ({CsId(a)})
             {{
-                array[i] = Attr.Raw(""{a.Substring(1)}"");
+                array[i] = Attr.Raw(""{a[1..]}"");
                 i++;
             }}"
                     : $@"

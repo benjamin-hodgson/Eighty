@@ -1,43 +1,44 @@
 using System;
 using System.IO;
 using System.Text.Encodings.Web;
+
 using Eighty.Twenty;
+
 using Microsoft.AspNetCore.Html;
 
-namespace Eighty.AspNetCore
+namespace Eighty.AspNetCore;
+
+/// <summary>
+/// An implementation of <see cref="IHtmlContent"/> which wraps an <see cref="HtmlBuilder"/>
+/// </summary>
+public class TwentyHtmlContent : IHtmlContent
 {
+    private readonly HtmlBuilder _builder;
+
     /// <summary>
-    /// An implementation of <see cref="IHtmlContent"/> which wraps an <see cref="HtmlBuilder"/>
+    /// Create a <see cref="TwentyHtmlContent"/>
     /// </summary>
-    public class TwentyHtmlContent : IHtmlContent
+    /// <param name="builder">The <see cref="HtmlBuilder"/></param>
+    public TwentyHtmlContent(HtmlBuilder builder)
     {
-        private readonly HtmlBuilder _builder;
-
-        /// <summary>
-        /// Create a <see cref="TwentyHtmlContent"/>
-        /// </summary>
-        /// <param name="builder">The <see cref="HtmlBuilder"/></param>
-        public TwentyHtmlContent(HtmlBuilder builder)
+        if (builder == null)
         {
-            if (builder == null)
-            {
-                throw new ArgumentNullException(nameof(builder));
-            }
-            _builder = builder;
+            throw new ArgumentNullException(nameof(builder));
         }
+        _builder = builder;
+    }
 
-        /// <inheritdoc/>
-        public void WriteTo(TextWriter writer, HtmlEncoder encoder)
+    /// <inheritdoc/>
+    public void WriteTo(TextWriter writer, HtmlEncoder encoder)
+    {
+        if (writer == null)
         {
-            if (writer == null)
-            {
-                throw new ArgumentNullException(nameof(writer));
-            }
-            if (encoder == null)
-            {
-                throw new ArgumentNullException(nameof(encoder));
-            }
-            _builder.Write(writer, encoder);
+            throw new ArgumentNullException(nameof(writer));
         }
+        if (encoder == null)
+        {
+            throw new ArgumentNullException(nameof(encoder));
+        }
+        _builder.Write(writer, encoder);
     }
 }

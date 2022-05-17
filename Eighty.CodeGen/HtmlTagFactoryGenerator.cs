@@ -2,7 +2,7 @@
 
 namespace Eighty.CodeGen
 {
-    class HtmlTagFactoryGenerator : EightyCodeGenerator
+    internal class HtmlTagFactoryGenerator : EightyCodeGenerator
     {
         public string GenerateTagFactoryMethods()
         {

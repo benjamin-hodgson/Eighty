@@ -1,20 +1,13 @@
+using Eighty.AspNetCore.TestApp;
+
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace Eighty.AspNetCore.TestApp
-{
-    public class Program
+Host
+    .CreateDefaultBuilder(args)
+    .ConfigureWebHostDefaults(webBuilder =>
     {
-        public static void Main(string[] args)
-        {
-            Host
-                .CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                })
-                .Build()
-                .Run();
-        }
-    }
-}
+        webBuilder.UseStartup<Startup>();
+    })
+    .Build()
+    .Run();

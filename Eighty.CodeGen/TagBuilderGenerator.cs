@@ -2,7 +2,7 @@
 
 namespace Eighty.CodeGen
 {
-    class TagBuilderGenerator : EightyCodeGenerator
+    internal class TagBuilderGenerator : EightyCodeGenerator
     {
         public string GenerateTagBuilderMethods()
         {

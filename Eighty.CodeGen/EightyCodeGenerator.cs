@@ -2,7 +2,7 @@ using System.Linq;
 
 namespace Eighty.CodeGen
 {
-    class EightyCodeGenerator
+    internal class EightyCodeGenerator
     {
         // https://developer.mozilla.org/en-US/docs/Web/HTML/Element
         private static readonly string[] _globalAttrs

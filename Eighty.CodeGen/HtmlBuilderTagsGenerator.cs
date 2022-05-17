@@ -2,7 +2,7 @@ using System.Linq;
 
 namespace Eighty.CodeGen
 {
-    class HtmlBuilderTagsGenerator : EightyCodeGenerator
+    internal class HtmlBuilderTagsGenerator : EightyCodeGenerator
     {
         public string GenerateFile()
         {
@@ -102,12 +102,12 @@ namespace Eighty.Twenty
 ";
 
         private string WriteAttrs(string[] attrs)
-            => string.Concat(attrs.Select(a => 
+            => string.Concat(attrs.Select(a =>
                 a[0] == '!'
                     ? $@"
             if ({CsId(a)})
             {{
-                Attr(Eighty.Attr.Raw(""{a.Substring(1)}""));
+                Attr(Eighty.Attr.Raw(""{a[1..]}""));
             }}"
                     : $@"
             if ({CsId(a)} != null)

@@ -1,21 +1,20 @@
 using Eighty.Twenty;
 
-namespace Eighty.AspNetCore.TestApp.Views.Test
-{
-    class TestHtmlBuilder : HtmlBuilder
-    {
-        private readonly int _count;
+namespace Eighty.AspNetCore.TestApp.Views.Test;
 
-        public TestHtmlBuilder(int count)
+internal class TestHtmlBuilder : HtmlBuilder
+{
+    private readonly int _count;
+
+    public TestHtmlBuilder(int count)
+    {
+        _count = count;
+    }
+    protected override void Build()
+    {
+        for (var i = 0; i < _count; i++)
         {
-            _count = count;
-        }
-        protected override void Build()
-        {
-            for (var i = 0; i < _count; i++)
-            {
-                using (p()) {}
-            }
+            using (p()) { }
         }
     }
 }

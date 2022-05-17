@@ -1,32 +1,31 @@
 using System;
-using System.IO;
 using System.Threading.Tasks;
+
 using Eighty.Twenty;
 
-namespace Eighty
+namespace Eighty;
+
+internal class Builder : Html
 {
-    internal class Builder : Html
+    private readonly Func<HtmlBuilder> _builderFactory;
+
+    public Builder(Func<HtmlBuilder> builderFactory) : base(false)
     {
-        private Func<HtmlBuilder> _builderFactory;
+        _builderFactory = builderFactory;
+    }
 
-        public Builder(Func<HtmlBuilder> builderFactory) : base(false)
+    internal override void WriteImpl(ref HtmlEncodingTextWriter writer)
+    {
+        var builder = _builderFactory();
+        if (builder == null)
         {
-            _builderFactory = builderFactory;
+            throw new InvalidOperationException("Builder factory cannot return null");
         }
+        builder.WritePartial(ref writer);
+    }
 
-        internal override void WriteImpl(ref HtmlEncodingTextWriter writer)
-        {
-            var builder = _builderFactory();
-            if (builder == null)
-            {
-                throw new InvalidOperationException("Builder factory cannot return null");
-            }
-            builder.WritePartial(ref writer);
-        }
-
-        internal override Task WriteAsyncImpl(AsyncHtmlEncodingTextWriter writer)
-        {
-            throw new InvalidOperationException("Can't run an HtmlBuilder asynchronously");
-        }
+    internal override Task WriteAsyncImpl(AsyncHtmlEncodingTextWriter writer)
+    {
+        throw new InvalidOperationException("Can't run an HtmlBuilder asynchronously");
     }
 }

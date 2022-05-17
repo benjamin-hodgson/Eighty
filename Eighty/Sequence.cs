@@ -1,33 +1,31 @@
 using System.Collections.Immutable;
-using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Eighty
+namespace Eighty;
+
+internal sealed class Sequence : Html
 {
-    internal sealed class Sequence : Html
+    private readonly ImmutableArray<Html> _children;
+
+    public Sequence(ImmutableArray<Html> children) : base(children.All(c => c.CanWriteAsync))
     {
-        private readonly ImmutableArray<Html> _children;
+        _children = children;
+    }
 
-        public Sequence(ImmutableArray<Html> children) : base(children.All(c => c.CanWriteAsync))
+    internal override void WriteImpl(ref HtmlEncodingTextWriter writer)
+    {
+        foreach (var child in _children)
         {
-            _children = children;
+            child.WriteImpl(ref writer);
         }
+    }
 
-        internal override void WriteImpl(ref HtmlEncodingTextWriter writer)
+    internal override async Task WriteAsyncImpl(AsyncHtmlEncodingTextWriter writer)
+    {
+        foreach (var child in _children)
         {
-            foreach (var child in _children)
-            {
-                child.WriteImpl(ref writer);
-            }
-        }
-
-        internal override async Task WriteAsyncImpl(AsyncHtmlEncodingTextWriter writer)
-        {
-            foreach (var child in _children)
-            {
-                await child.WriteAsyncImpl(writer).ConfigureAwait(false);
-            }
+            await child.WriteAsyncImpl(writer).ConfigureAwait(false);
         }
     }
 }

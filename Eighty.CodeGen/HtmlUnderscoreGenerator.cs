@@ -2,7 +2,7 @@
 
 namespace Eighty.CodeGen
 {
-    class HtmlUnderscoreGenerator : EightyCodeGenerator
+    internal class HtmlUnderscoreGenerator : EightyCodeGenerator
     {
         public string GenerateUnderscores()
         {

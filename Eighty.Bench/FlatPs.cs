@@ -1,15 +1,14 @@
 ﻿using Eighty.Twenty;
 
-namespace Eighty.Bench
+namespace Eighty.Bench;
+
+public class FlatPs : HtmlBuilder
 {
-    public class FlatPs : HtmlBuilder
+    protected override void Build()
     {
-        protected override void Build()
+        for (var i = 0; i < 1000; i++)
         {
-            for (var i = 0; i < 1000; i++)
-            {
-                using (p(@class: "para<>")) { }
-            }
+            using (p(@class: "para<>")) { }
         }
     }
 }
