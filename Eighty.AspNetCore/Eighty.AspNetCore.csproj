@@ -1,34 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <LangVersion>10</LangVersion>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
 
-    <Authors>benjamin.hodgson</Authors>
-    <Copyright>© Benjamin Hodgson, 2018</Copyright>
-    <Description>A fast and simple HTML generation library, developed at Stack Overflow.</Description>
-    <PackageTags>html;web;template</PackageTags>
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
 
-    <PackageProjectUrl>https://github.com/benjamin-hodgson/Eighty</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/benjamin-hodgson/Eighty.git</RepositoryUrl>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-
-
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <LangVersion>latest</LangVersion>
-    
-    <IncludeSymbols>true</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\Eighty.snk</AssemblyOriginatorKeyFile>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <FrameworkReference Include="Microsoft.AspNetCore.App" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Eighty\Eighty.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Eighty\Eighty.csproj" />
+    </ItemGroup>
 
 </Project>

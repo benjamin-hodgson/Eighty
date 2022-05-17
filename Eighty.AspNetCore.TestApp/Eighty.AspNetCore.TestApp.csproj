@@ -1,11 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Eighty\Eighty.csproj" />
-    <ProjectReference Include="..\Eighty.AspNetCore\Eighty.AspNetCore.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Eighty\Eighty.csproj" />
+        <ProjectReference Include="..\Eighty.AspNetCore\Eighty.AspNetCore.csproj" />
+    </ItemGroup>
 </Project>

@@ -1,37 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <Authors>benjamin.hodgson</Authors>
-    <Copyright>© Benjamin Hodgson, 2018</Copyright>
-    <Description>A fast and simple HTML generation library, developed at Stack Overflow.</Description>
-    <PackageTags>html;web;template</PackageTags>
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <LangVersion>10</LangVersion>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
 
-    <PackageProjectUrl>https://github.com/benjamin-hodgson/Eighty</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/benjamin-hodgson/Eighty.git</RepositoryUrl>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <LangVersion>latest</LangVersion>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-    
-    <IncludeSymbols>true</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\Eighty.snk</AssemblyOriginatorKeyFile>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="Eighty.snk" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="System.Buffers" Version="4.4.0" />
-    <PackageReference Include="System.Collections.Immutable" Version="1.2.0" />
-    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.4.0" />
-    <PackageReference Include="System.Text.Encodings.Web" Version="4.5.1" />
-    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.4.0" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="System.Buffers" Version="4.4.0" />
+        <PackageReference Include="System.Collections.Immutable" Version="1.2.0" />
+        <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.4.0" />
+        <PackageReference Include="System.Text.Encodings.Web" Version="4.5.1" />
+        <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.4.0" />
+    </ItemGroup>
 
 </Project>
