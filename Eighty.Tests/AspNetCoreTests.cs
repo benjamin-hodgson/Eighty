@@ -25,23 +25,21 @@ public class AspNetCoreTests
     public AspNetCoreTests()
     {
         var path = ThisFilePath();
-        var contentRoot = Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(path)), "Eighty.AspNetCore.TestApp");
+        var contentRoot = Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(path))!, "Eighty.AspNetCore.TestApp");
         _server = new TestServer(new WebHostBuilder().UseStartup<AspNetCore.TestApp.Startup>().UseContentRoot(contentRoot));
         _client = _server.CreateClient();
     }
 
-    private static string ThisFilePath([CallerFilePath] string filePath = null) => filePath;
+    private static string? ThisFilePath([CallerFilePath] string? filePath = null) => filePath;
 
     [Fact]
     public void TestEightyHtmlContent()
     {
         var htmlContent = new EightyHtmlContent(p());
 
-        using (var writer = new StringWriter())
-        {
-            htmlContent.WriteTo(writer, HtmlEncoder.Default);
-            Assert.Equal("<p></p>", writer.ToString());
-        }
+        using var writer = new StringWriter();
+        htmlContent.WriteTo(writer, HtmlEncoder.Default);
+        Assert.Equal("<p></p>", writer.ToString());
     }
 
     private class MyHtmlBuilder : HtmlBuilder
@@ -56,11 +54,9 @@ public class AspNetCoreTests
     {
         var htmlContent = new TwentyHtmlContent(new MyHtmlBuilder());
 
-        using (var writer = new StringWriter())
-        {
-            htmlContent.WriteTo(writer, HtmlEncoder.Default);
-            Assert.Equal("<p></p>", writer.ToString());
-        }
+        using var writer = new StringWriter();
+        htmlContent.WriteTo(writer, HtmlEncoder.Default);
+        Assert.Equal("<p></p>", writer.ToString());
     }
 
 

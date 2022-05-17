@@ -9,7 +9,7 @@ namespace Eighty;
 public readonly struct Attr
 {
     private readonly string _name;
-    private readonly string _value;
+    private readonly string? _value;
     private readonly bool _shouldEncode;
 
     /// <summary>

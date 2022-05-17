@@ -29,7 +29,7 @@ public static class MvcBuilderExtensions
         }
 
         builder.Services.AddSingleton(
-            p => new EightyViewEngine(p.GetService<IOptions<EightyViewOptions>>().Value, p)
+            p => new EightyViewEngine(p.GetService<IOptions<EightyViewOptions>>()!.Value, p)
         );
         builder.Services.TryAddEnumerable(
             ServiceDescriptor.Transient<IConfigureOptions<MvcViewOptions>, EightyMvcViewOptionsSetup>()

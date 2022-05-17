@@ -18,5 +18,7 @@
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
 
         <NoWarn>$(NoWarn);NU1507</NoWarn>
+        <Nullable>enable</Nullable>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     </PropertyGroup>
 </Project>

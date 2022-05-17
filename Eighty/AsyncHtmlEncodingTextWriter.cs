@@ -15,7 +15,7 @@ internal class AsyncHtmlEncodingTextWriter
 {
     private readonly TextWriter _underlyingWriter;
     private readonly HtmlEncoder _htmlEncoder;
-    private char[] _buffer;
+    private char[]? _buffer;
     private int _bufPos;
 
     public AsyncHtmlEncodingTextWriter(TextWriter underlyingWriter, HtmlEncoder htmlEncoder)
@@ -88,10 +88,10 @@ internal class AsyncHtmlEncodingTextWriter
                 break;
             }
 
-            if (!_htmlEncoder.TryEncodeUnicodeScalar(codePoint, _buffer, _bufPos, out var numberOfCharactersWritten))
+            if (!_htmlEncoder.TryEncodeUnicodeScalar(codePoint, _buffer!, _bufPos, out var numberOfCharactersWritten))
             {
                 await Flush().ConfigureAwait(false);
-                if (!_htmlEncoder.TryEncodeUnicodeScalar(codePoint, _buffer, _bufPos, out numberOfCharactersWritten))
+                if (!_htmlEncoder.TryEncodeUnicodeScalar(codePoint, _buffer!, _bufPos, out numberOfCharactersWritten))
                 {
                     throw new InvalidOperationException("Buffer overflow when encoding HTML. Please report this as a bug in Eighty!");
                 }
@@ -105,7 +105,7 @@ internal class AsyncHtmlEncodingTextWriter
     public async Task WriteRaw(char c)
     {
         await FlushIfNecessary().ConfigureAwait(false);
-        _buffer[_bufPos] = c;
+        _buffer![_bufPos] = c;
         _bufPos++;
     }
 
@@ -116,7 +116,7 @@ internal class AsyncHtmlEncodingTextWriter
 
     private Task WriteRawImpl(string s, int start, int count)
     {
-        if (count <= _buffer.Length - _bufPos)
+        if (count <= _buffer!.Length - _bufPos)
         {
             // the whole string fits in the buffer, no need to flush
             s.CopyTo(start, _buffer, _bufPos, count);
@@ -129,7 +129,7 @@ internal class AsyncHtmlEncodingTextWriter
     {
         while (count > 0)
         {
-            var chunkSize = Math.Min(count, _buffer.Length - _bufPos);
+            var chunkSize = Math.Min(count, _buffer!.Length - _bufPos);
 
             s.CopyTo(start, _buffer, _bufPos, chunkSize);
 
@@ -148,7 +148,7 @@ internal class AsyncHtmlEncodingTextWriter
 
     private Task FlushIfNecessary()
     {
-        if (_bufPos == _buffer.Length)
+        if (_bufPos == _buffer!.Length)
         {
             return Flush();
         }

@@ -8,7 +8,7 @@ namespace Eighty;
 internal class PooledStringWriter : TextWriter
 {
     private const int _initialCapacity = 4096;
-    private char[] _buffer;
+    private char[]? _buffer;
     private int _length;
 
     public PooledStringWriter()
@@ -22,7 +22,7 @@ internal class PooledStringWriter : TextWriter
     public override void Write(char value)
     {
         GrowIfNecessary(1);
-        _buffer[_length] = value;
+        _buffer![_length] = value;
         _length++;
     }
 
@@ -54,7 +54,7 @@ internal class PooledStringWriter : TextWriter
     private void GrowIfNecessary(int minimumSpace)
     {
         var minimumLength = _length + minimumSpace;
-        if (minimumLength > _buffer.Length)
+        if (minimumLength > _buffer!.Length)
         {
             var newBufferSize = Math.Max(minimumLength, _buffer.Length * 2);
             var newBuffer = ArrayPool<char>.Shared.Rent(newBufferSize);
