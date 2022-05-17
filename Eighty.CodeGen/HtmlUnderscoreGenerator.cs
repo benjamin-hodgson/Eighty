@@ -1,14 +1,14 @@
 ﻿using System.Linq;
 
-namespace Eighty.CodeGen
-{
-    internal class HtmlUnderscoreGenerator : EightyCodeGenerator
-    {
-        public string GenerateUnderscores()
-        {
-            var methods = string.Concat(Enumerable.Range(1, 8).Select(UnderscoreMethod));
+namespace Eighty.CodeGen;
 
-            return $@"#region GeneratedCode
+internal class HtmlUnderscoreGenerator : EightyCodeGenerator
+{
+    public string GenerateUnderscores()
+    {
+        var methods = string.Concat(Enumerable.Range(1, 8).Select(UnderscoreMethod));
+
+        return $@"#region GeneratedCode
 using System;
 using System.Threading;
 using System.Collections.Immutable;
@@ -20,11 +20,11 @@ namespace Eighty
 }}
 #endregion
 ";
-        }
+    }
 
 
-        private string UnderscoreMethod(int number)
-            => $@"
+    private string UnderscoreMethod(int number)
+        => $@"
         /// <summary>
         /// Put some siblings next to each other.
         /// </summary>
@@ -35,10 +35,9 @@ namespace Eighty
         }}
 ";
 
-        private string SiblingParams(int number)
-            => string.Join(", ", Enumerable.Range(1, number).Select(n => "Html sibling" + n));
+    private string SiblingParams(int number)
+        => string.Join(", ", Enumerable.Range(1, number).Select(n => "Html sibling" + n));
 
-        private string SiblingArgs(int number)
-            => string.Join(", ", Enumerable.Range(1, number).Select(n => "sibling" + n));
-    }
+    private string SiblingArgs(int number)
+        => string.Join(", ", Enumerable.Range(1, number).Select(n => "sibling" + n));
 }

@@ -1,17 +1,17 @@
 using System.Linq;
 
-namespace Eighty.CodeGen
+namespace Eighty.CodeGen;
+
+internal class HtmlBuilderTagsGenerator : EightyCodeGenerator
 {
-    internal class HtmlBuilderTagsGenerator : EightyCodeGenerator
+    public string GenerateFile()
     {
-        public string GenerateFile()
-        {
-            var methods = string.Concat(_elements.Select(
-                el => el.isSelfClosing
-                    ? SelfClosingTagDef(el.name, el.attrs)
-                    : TagDef(el.name, el.attrs)
-            ));
-            return $@"#region GeneratedCode
+        var methods = string.Concat(_elements.Select(
+            el => el.isSelfClosing
+                ? SelfClosingTagDef(el.name, el.attrs)
+                : TagDef(el.name, el.attrs)
+        ));
+        return $@"#region GeneratedCode
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -23,11 +23,11 @@ namespace Eighty.Twenty
 }}
 #endregion
 ";
-        }
+    }
 
 
-        private string TagDef(string name, string[] attrs)
-            => $@"
+    private string TagDef(string name, string[] attrs)
+        => $@"
         /// <summary>
         /// Write {IndefiniteArticle(name)} {name} element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
@@ -66,8 +66,8 @@ namespace Eighty.Twenty
         }}
         {TagAttrs(name)}
 ";
-        private string SelfClosingTagDef(string name, string[] attrs)
-            => $@"
+    private string SelfClosingTagDef(string name, string[] attrs)
+        => $@"
         /// <summary>
         /// Write {IndefiniteArticle(name)} {name} element.
         /// </summary>
@@ -101,22 +101,22 @@ namespace Eighty.Twenty
         {SelfClosingTagAttrs(name)}
 ";
 
-        private string WriteAttrs(string[] attrs)
-            => string.Concat(attrs.Select(a =>
-                a[0] == '!'
-                    ? $@"
+    private string WriteAttrs(string[] attrs)
+        => string.Concat(attrs.Select(a =>
+            a[0] == '!'
+                ? $@"
             if ({CsId(a)})
             {{
                 Attr(Eighty.Attr.Raw(""{a[1..]}""));
             }}"
-                    : $@"
+                : $@"
             if ({CsId(a)} != null)
             {{
                 Attr(new Eighty.Attr(""{a}"", {CsId(a)}));
             }}"));
 
-        private string TagAttrs(string name)
-            => string.Join("\n", Enumerable.Range(1, 8).Select(n => $@"
+    private string TagAttrs(string name)
+        => string.Join("\n", Enumerable.Range(1, 8).Select(n => $@"
         /// <summary>
         /// Write {IndefiniteArticle(name)} {name} element. The returned value MUST be disposed exactly once, immediately after the children have been written.
         /// </summary>
@@ -130,8 +130,8 @@ namespace Eighty.Twenty
             return new TagBuilder(""{name}"", this, false);
         }}"));
 
-        private string SelfClosingTagAttrs(string name)
-            => string.Join("\n", Enumerable.Range(1, 8).Select(n => $@"
+    private string SelfClosingTagAttrs(string name)
+        => string.Join("\n", Enumerable.Range(1, 8).Select(n => $@"
         /// <summary>
         /// Write {IndefiniteArticle(name)} {name} element.
         /// </summary>
@@ -142,5 +142,4 @@ namespace Eighty.Twenty
             Attrs({AttrArgs(n)});
             _writer.Get().WriteRaw(""/>"");
         }}"));
-    }
 }

@@ -1,15 +1,15 @@
 ﻿using System.Linq;
 
-namespace Eighty.CodeGen
-{
-    internal class HtmlBuilderTagFactoryGenerator : EightyCodeGenerator
-    {
-        public string GenerateTagFactoryMethods()
-        {
-            var tagMethods = string.Concat(Enumerable.Range(1, 8).Select(TagMethod));
-            var selfClosingTagMethods = string.Concat(Enumerable.Range(1, 8).Select(SelfClosingTagMethod));
+namespace Eighty.CodeGen;
 
-            return $@"#region GeneratedCode
+internal class HtmlBuilderTagFactoryGenerator : EightyCodeGenerator
+{
+    public string GenerateTagFactoryMethods()
+    {
+        var tagMethods = string.Concat(Enumerable.Range(1, 8).Select(TagMethod));
+        var selfClosingTagMethods = string.Concat(Enumerable.Range(1, 8).Select(SelfClosingTagMethod));
+
+        return $@"#region GeneratedCode
 using System;
 
 namespace Eighty.Twenty
@@ -19,11 +19,11 @@ namespace Eighty.Twenty
 }}
 #endregion
 ";
-        }
+    }
 
 
-        private string TagMethod(int number)
-            => $@"
+    private string TagMethod(int number)
+        => $@"
         /// <summary>
         /// Write a tag which takes children.
         /// </summary>
@@ -37,8 +37,8 @@ namespace Eighty.Twenty
             return new TagBuilder(name, this, true);
         }}
 ";
-        private string SelfClosingTagMethod(int number)
-            => $@"
+    private string SelfClosingTagMethod(int number)
+        => $@"
         /// <summary>
         /// Write a tag which does not take children.
         /// </summary>
@@ -50,5 +50,4 @@ namespace Eighty.Twenty
             _writer.Get().WriteRaw(""/>"");
         }}
 ";
-    }
 }

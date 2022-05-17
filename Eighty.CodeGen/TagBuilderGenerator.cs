@@ -1,14 +1,14 @@
 ﻿using System.Linq;
 
-namespace Eighty.CodeGen
-{
-    internal class TagBuilderGenerator : EightyCodeGenerator
-    {
-        public string GenerateTagBuilderMethods()
-        {
-            var underscoreMethods = string.Concat(Enumerable.Range(1, 8).Select(UnderscoreMethod));
+namespace Eighty.CodeGen;
 
-            return $@"#region GeneratedCode
+internal class TagBuilderGenerator : EightyCodeGenerator
+{
+    public string GenerateTagBuilderMethods()
+    {
+        var underscoreMethods = string.Concat(Enumerable.Range(1, 8).Select(UnderscoreMethod));
+
+        return $@"#region GeneratedCode
 using System;
 using System.Threading;
 using System.Collections.Immutable;
@@ -20,11 +20,11 @@ namespace Eighty
 }}
 #endregion
 ";
-        }
+    }
 
 
-        private string UnderscoreMethod(int number)
-            => $@"
+    private string UnderscoreMethod(int number)
+        => $@"
         /// <summary>
         /// Add children to the tag.
         /// </summary>
@@ -35,5 +35,4 @@ namespace Eighty
             return new Tag(_name, _attrs, ImmutableArrayFactory.Create({ChildArgs(number)}), _shouldEncodeName);
         }}
 ";
-    }
 }

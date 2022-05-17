@@ -1,18 +1,18 @@
 ﻿using System.Linq;
 
-namespace Eighty.CodeGen
-{
-    internal class HtmlTagsGenerator : EightyCodeGenerator
-    {
-        public string GenerateTags()
-        {
-            var methods = string.Concat(_elements.Select(
-                el => el.isSelfClosing
-                    ? SelfClosingTagDef(el.name, el.attrs)
-                    : TagDef(el.name, el.attrs)
-            ));
+namespace Eighty.CodeGen;
 
-            return $@"#region GeneratedCode
+internal class HtmlTagsGenerator : EightyCodeGenerator
+{
+    public string GenerateTags()
+    {
+        var methods = string.Concat(_elements.Select(
+            el => el.isSelfClosing
+                ? SelfClosingTagDef(el.name, el.attrs)
+                : TagDef(el.name, el.attrs)
+        ));
+
+        return $@"#region GeneratedCode
 using System;
 using System.Linq;
 using System.Collections.Generic;
@@ -25,11 +25,11 @@ namespace Eighty
 }}
 #endregion
 ";
-        }
+    }
 
 
-        private string TagDef(string name, string[] attrs)
-            => $@"
+    private string TagDef(string name, string[] attrs)
+        => $@"
         /// <summary>
         /// Build {IndefiniteArticle(name)} {name} element.
         /// </summary>
@@ -131,8 +131,8 @@ namespace Eighty
         {TagChildren(name)}
 ";
 
-        private string SelfClosingTagDef(string name, string[] attrs)
-            => $@"
+    private string SelfClosingTagDef(string name, string[] attrs)
+        => $@"
         /// <summary>
         /// Build {IndefiniteArticle(name)} {name} element.
         /// </summary>
@@ -172,8 +172,8 @@ namespace Eighty
         {SelfClosingTagAttrs(name)}
 ";
 
-        private string TagAttrs(string name)
-            => string.Join("\n", Enumerable.Range(1, 8).Select(n => $@"
+    private string TagAttrs(string name)
+        => string.Join("\n", Enumerable.Range(1, 8).Select(n => $@"
         /// <summary>
         /// Build {IndefiniteArticle(name)} {name} element.
         /// </summary>
@@ -184,8 +184,8 @@ namespace Eighty
             return new TagBuilder(""{name}"", ImmutableArrayFactory.Create({AttrArgs(n)}), false);
         }}"));
 
-        private string SelfClosingTagAttrs(string name)
-            => string.Join("\n", Enumerable.Range(1, 8).Select(n => $@"
+    private string SelfClosingTagAttrs(string name)
+        => string.Join("\n", Enumerable.Range(1, 8).Select(n => $@"
         /// <summary>
         /// Build {IndefiniteArticle(name)} {name} element.
         /// </summary>
@@ -196,8 +196,8 @@ namespace Eighty
             return new SelfClosingTag(""{name}"", ImmutableArrayFactory.Create({AttrArgs(n)}), false);
         }}"));
 
-        private string TagChildren(string name)
-            => string.Join("\n", Enumerable.Range(1, 8).Select(n => $@"
+    private string TagChildren(string name)
+        => string.Join("\n", Enumerable.Range(1, 8).Select(n => $@"
         /// <summary>
         /// Build {IndefiniteArticle(name)} {name} element without any attributes.
         /// </summary>
@@ -210,34 +210,33 @@ namespace Eighty
         }}"));
 
 
-        private string CountNonNulls(string[] attrs)
-            => string.Concat(attrs.Select(a =>
-                a[0] == '!'
-                    ? $@"
+    private string CountNonNulls(string[] attrs)
+        => string.Concat(attrs.Select(a =>
+            a[0] == '!'
+                ? $@"
             if ({CsId(a)})
             {{
                 attrCount++;
             }}"
-                    : $@"
+                : $@"
             if ({CsId(a)} != null)
             {{
                 attrCount++;
             }}"));
 
-        private string PackArray(string[] attrs)
-            => string.Concat(attrs.Select(a =>
-                a[0] == '!'
-                    ? $@"
+    private string PackArray(string[] attrs)
+        => string.Concat(attrs.Select(a =>
+            a[0] == '!'
+                ? $@"
             if ({CsId(a)})
             {{
                 array[i] = Attr.Raw(""{a[1..]}"");
                 i++;
             }}"
-                    : $@"
+                : $@"
             if ({CsId(a)} != null)
             {{
                 array[i] = new Attr(""{a}"", {CsId(a)});
                 i++;
             }}"));
-    }
 }
