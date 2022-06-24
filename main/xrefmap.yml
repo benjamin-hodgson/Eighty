@@ -32,14 +32,14 @@ references:
   fullName: Eighty.Attr.Attr
   nameWithType: Attr.Attr
 - uid: Eighty.Attr.FromValueTuple(System.ValueTuple{System.String,System.String})
-  name: FromValueTuple(ValueTuple<String, String>)
+  name: FromValueTuple((String, String))
   href: Eighty.Attr.html#Eighty_Attr_FromValueTuple_System_ValueTuple_System_String_System_String__
   commentId: M:Eighty.Attr.FromValueTuple(System.ValueTuple{System.String,System.String})
-  name.vb: FromValueTuple(ValueTuple(Of String, String))
+  name.vb: FromValueTuple((String, String)(Of String, String))
   fullName: Eighty.Attr.FromValueTuple(System.ValueTuple<System.String, System.String>)
   fullName.vb: Eighty.Attr.FromValueTuple(System.ValueTuple(Of System.String, System.String))
-  nameWithType: Attr.FromValueTuple(ValueTuple<String, String>)
-  nameWithType.vb: Attr.FromValueTuple(ValueTuple(Of String, String))
+  nameWithType: Attr.FromValueTuple((String, String))
+  nameWithType.vb: Attr.FromValueTuple((String, String)(Of String, String))
 - uid: Eighty.Attr.FromValueTuple*
   name: FromValueTuple
   href: Eighty.Attr.html#Eighty_Attr_FromValueTuple_
@@ -47,14 +47,14 @@ references:
   fullName: Eighty.Attr.FromValueTuple
   nameWithType: Attr.FromValueTuple
 - uid: Eighty.Attr.op_Implicit(System.ValueTuple{System.String,System.String})~Eighty.Attr
-  name: Implicit(ValueTuple<String, String> to Attr)
+  name: Implicit((String, String) to Attr)
   href: Eighty.Attr.html#Eighty_Attr_op_Implicit_System_ValueTuple_System_String_System_String___Eighty_Attr
   commentId: M:Eighty.Attr.op_Implicit(System.ValueTuple{System.String,System.String})~Eighty.Attr
-  name.vb: Widening(ValueTuple(Of String, String) to Attr)
+  name.vb: Widening((String, String)(Of String, String) to Attr)
   fullName: Eighty.Attr.Implicit(System.ValueTuple<System.String, System.String> to Eighty.Attr)
   fullName.vb: Eighty.Attr.Widening(System.ValueTuple(Of System.String, System.String) to Eighty.Attr)
-  nameWithType: Attr.Implicit(ValueTuple<String, String> to Attr)
-  nameWithType.vb: Attr.Widening(ValueTuple(Of String, String) to Attr)
+  nameWithType: Attr.Implicit((String, String) to Attr)
+  nameWithType.vb: Attr.Widening((String, String)(Of String, String) to Attr)
 - uid: Eighty.Attr.op_Implicit*
   name: Implicit
   href: Eighty.Attr.html#Eighty_Attr_op_Implicit_

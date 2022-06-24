@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "/github/workspace/Eighty.Docs",
+  "source_base_path": "/home/runner/work/Eighty/Eighty/Eighty.Docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "Eighty.Attr.html",
-          "hash": "LlOGro9M1yZprrrWikXUtw=="
+          "hash": "Ea5gmh1HPAyk3gzd7QtRVbS/OpVURGwxeuUesji1pVc="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "Eighty.Html.html",
-          "hash": "JCt1mi/aifDxr1Fwr/qfrw=="
+          "hash": "IH3NCNFyuWEUh+XaWRiscdTxZTLKGzPWwmkipl123fc="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "Eighty.IHtmlRenderer-1.html",
-          "hash": "7WVmdDDCU8/m7Ps7idbvsg=="
+          "hash": "7gkvTK89zYXTjywCNyi7OP34xeES5OYq9u1M9wCxT+8="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "Eighty.TagBuilder.html",
-          "hash": "xV8lII3Ea/1R5S416xOcmA=="
+          "hash": "mnrivoTPmwKg3H4EXFQqZu3fXd4/6IIvTpRe/ruC++I="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "Eighty.Twenty.HtmlBuilder.html",
-          "hash": "PfB+Y3HSnco8mCyyAvWFvQ=="
+          "hash": "G3qW5yfuX41VSKCWsazPS9G0DGsREMDJORAsOOl49J8="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "Eighty.Twenty.IHtmlBuilderRenderer-1.html",
-          "hash": "NbyCERT7z6T2cxvq/EsG0g=="
+          "hash": "8jWRBlicoGYiA8xJqVIKKcVPobahp8BNpwoA57TAOZk="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "Eighty.Twenty.TagBuilder.html",
-          "hash": "Oxm37Nfk/XPZdiNnpOuC8A=="
+          "hash": "NRqnL9h48MigdK4XUdedjk2r5gmaPxgDk+GJVvEEI24="
         }
       },
       "is_incremental": false,
@@ -102,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "Eighty.Twenty.html",
-          "hash": "6xj4K/pSv6CzDTKF5GbLPQ=="
+          "hash": "DtxkPdF+ArF4dWvllo0/+Rrq46eRtLiFRb0Ij5IWGWk="
         }
       },
       "is_incremental": false,
@@ -114,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "Eighty.html",
-          "hash": "xKWszlCG6AfMwp/sIDHTww=="
+          "hash": "I+3SdJ85pPuiNRsaYj5oodB3Ix6zdaCFBoHMN+ip/oE="
         }
       },
       "is_incremental": false,
@@ -126,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "t6pN0t75vME6DNuuhArB2Q=="
+          "hash": "y5Kx+r5fJifu6e4Gu+SmKGH7CmsU4AiLlO6cfHEpFk4="
         }
       },
       "is_incremental": false,
