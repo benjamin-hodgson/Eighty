@@ -23,4 +23,11 @@
         <Nullable>enable</Nullable>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     </PropertyGroup>
+    
+    <ItemGroup Condition="'$(IsPackable.ToLower())' != 'false'">
+        <PackageReference Include="Benjamin.Pizza.BuildScripts">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>build</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
 </Project>
