@@ -9,21 +9,12 @@
         <RepositoryUrl>https://github.com/benjamin-hodgson/Eighty.git</RepositoryUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
 
-        <PublishRepositoryUrl>true</PublishRepositoryUrl>
-        <EmbedUntrackedSources>true</EmbedUntrackedSources>
-        <IncludeSymbols>true</IncludeSymbols>
-        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-
-        <SignAssembly>true</SignAssembly>
         <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)Eighty.snk</AssemblyOriginatorKeyFile>
 
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
 
-        <NoWarn>$(NoWarn);NU1507</NoWarn>
-        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
-        <AnalysisMode>all</AnalysisMode>
         <Nullable>enable</Nullable>
-        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <NoWarn>$(NoWarn);NU1507</NoWarn>
     </PropertyGroup>
 
     <ItemGroup>
