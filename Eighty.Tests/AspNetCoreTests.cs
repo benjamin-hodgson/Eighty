@@ -2,7 +2,6 @@ using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Net;
 using System.Net.Http;
-using System.Runtime.CompilerServices;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 
@@ -26,13 +25,13 @@ public class AspNetCoreTests
 
     public AspNetCoreTests()
     {
-        var path = ThisFilePath();
-        var contentRoot = Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(path))!, "Eighty.AspNetCore.TestApp");
-        _server = new TestServer(new WebHostBuilder().UseStartup<AspNetCore.TestApp.Startup>().UseContentRoot(contentRoot));
+        _server = new TestServer(
+            new WebHostBuilder()
+                .UseStartup<AspNetCore.TestApp.Startup>()
+                .UseSolutionRelativeContentRoot("Eighty.AspNetCore.TestApp")
+        );
         _client = _server.CreateClient();
     }
-
-    private static string? ThisFilePath([CallerFilePath] string? filePath = null) => filePath;
 
     [Fact]
     public void TestEightyHtmlContent()
