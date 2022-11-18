@@ -14,7 +14,6 @@
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
 
         <Nullable>enable</Nullable>
-        <NoWarn>$(NoWarn);NU1507</NoWarn>
     </PropertyGroup>
 
     <ItemGroup>
