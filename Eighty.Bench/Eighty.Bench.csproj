@@ -1,10 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
+    <Import Project="../Eighty.BuildTool.props" />
 
     <PropertyGroup>
         <OutputType>exe</OutputType>
-        <TargetFramework>net6.0</TargetFramework>
-        <IsPackable>false</IsPackable>
-        <NoWarn>$(NoWarn);CA1812;CA2234</NoWarn>
+        <NoWarn>$(NoWarn);CA2234</NoWarn>
     </PropertyGroup>
 
     <PropertyGroup>
@@ -22,7 +21,7 @@
         <ProjectReference Include="..\Eighty\Eighty.csproj" />
         <ProjectReference Include="..\Eighty.AspNetCore.TestApp\Eighty.AspNetCore.TestApp.csproj" />
     </ItemGroup>
-    
+
     <!--
       Work around https://github.com/NuGet/Home/issues/4412. MVC uses DependencyContext.Load() which looks next to a .dll
       for a .deps.json. Information isn't available elsewhere. Need the .deps.json file for all web site applications.

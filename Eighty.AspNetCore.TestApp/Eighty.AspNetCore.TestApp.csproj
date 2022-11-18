@@ -1,8 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
-    <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
-        <NoWarn>$(NoWarn);CA1812</NoWarn>
-    </PropertyGroup>
+    <Import Project="../Eighty.BuildTool.props" />
 
     <ItemGroup>
         <ProjectReference Include="..\Eighty\Eighty.csproj" />
