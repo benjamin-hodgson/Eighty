@@ -31,6 +31,24 @@ references:
   commentId: Overload:Eighty.Attr.#ctor
   fullName: Eighty.Attr.Attr
   nameWithType: Attr.Attr
+- uid: Eighty.Attr.Equals(Eighty.Attr)
+  name: Equals(Attr)
+  href: Eighty.Attr.html#Eighty_Attr_Equals_Eighty_Attr_
+  commentId: M:Eighty.Attr.Equals(Eighty.Attr)
+  fullName: Eighty.Attr.Equals(Eighty.Attr)
+  nameWithType: Attr.Equals(Attr)
+- uid: Eighty.Attr.Equals(System.Object)
+  name: Equals(Object)
+  href: Eighty.Attr.html#Eighty_Attr_Equals_System_Object_
+  commentId: M:Eighty.Attr.Equals(System.Object)
+  fullName: Eighty.Attr.Equals(System.Object)
+  nameWithType: Attr.Equals(Object)
+- uid: Eighty.Attr.Equals*
+  name: Equals
+  href: Eighty.Attr.html#Eighty_Attr_Equals_
+  commentId: Overload:Eighty.Attr.Equals
+  fullName: Eighty.Attr.Equals
+  nameWithType: Attr.Equals
 - uid: Eighty.Attr.FromValueTuple(System.ValueTuple{System.String,System.String})
   name: FromValueTuple((String, String))
   href: Eighty.Attr.html#Eighty_Attr_FromValueTuple_System_ValueTuple_System_String_System_String__
@@ -46,6 +64,18 @@ references:
   commentId: Overload:Eighty.Attr.FromValueTuple
   fullName: Eighty.Attr.FromValueTuple
   nameWithType: Attr.FromValueTuple
+- uid: Eighty.Attr.GetHashCode
+  name: GetHashCode()
+  href: Eighty.Attr.html#Eighty_Attr_GetHashCode
+  commentId: M:Eighty.Attr.GetHashCode
+  fullName: Eighty.Attr.GetHashCode()
+  nameWithType: Attr.GetHashCode()
+- uid: Eighty.Attr.GetHashCode*
+  name: GetHashCode
+  href: Eighty.Attr.html#Eighty_Attr_GetHashCode_
+  commentId: Overload:Eighty.Attr.GetHashCode
+  fullName: Eighty.Attr.GetHashCode
+  nameWithType: Attr.GetHashCode
 - uid: Eighty.Attr.op_Implicit(System.ValueTuple{System.String,System.String})~Eighty.Attr
   name: Implicit((String, String) to Attr)
   href: Eighty.Attr.html#Eighty_Attr_op_Implicit_System_ValueTuple_System_String_System_String___Eighty_Attr
@@ -17858,6 +17888,36 @@ references:
   commentId: Overload:Eighty.TagBuilder._
   fullName: Eighty.TagBuilder._
   nameWithType: TagBuilder._
+- uid: Eighty.TagBuilder.Equals(Eighty.TagBuilder)
+  name: Equals(TagBuilder)
+  href: Eighty.TagBuilder.html#Eighty_TagBuilder_Equals_Eighty_TagBuilder_
+  commentId: M:Eighty.TagBuilder.Equals(Eighty.TagBuilder)
+  fullName: Eighty.TagBuilder.Equals(Eighty.TagBuilder)
+  nameWithType: TagBuilder.Equals(TagBuilder)
+- uid: Eighty.TagBuilder.Equals(System.Object)
+  name: Equals(Object)
+  href: Eighty.TagBuilder.html#Eighty_TagBuilder_Equals_System_Object_
+  commentId: M:Eighty.TagBuilder.Equals(System.Object)
+  fullName: Eighty.TagBuilder.Equals(System.Object)
+  nameWithType: TagBuilder.Equals(Object)
+- uid: Eighty.TagBuilder.Equals*
+  name: Equals
+  href: Eighty.TagBuilder.html#Eighty_TagBuilder_Equals_
+  commentId: Overload:Eighty.TagBuilder.Equals
+  fullName: Eighty.TagBuilder.Equals
+  nameWithType: TagBuilder.Equals
+- uid: Eighty.TagBuilder.GetHashCode
+  name: GetHashCode()
+  href: Eighty.TagBuilder.html#Eighty_TagBuilder_GetHashCode
+  commentId: M:Eighty.TagBuilder.GetHashCode
+  fullName: Eighty.TagBuilder.GetHashCode()
+  nameWithType: TagBuilder.GetHashCode()
+- uid: Eighty.TagBuilder.GetHashCode*
+  name: GetHashCode
+  href: Eighty.TagBuilder.html#Eighty_TagBuilder_GetHashCode_
+  commentId: Overload:Eighty.TagBuilder.GetHashCode
+  fullName: Eighty.TagBuilder.GetHashCode
+  nameWithType: TagBuilder.GetHashCode
 - uid: Eighty.Twenty
   name: Eighty.Twenty
   href: Eighty.Twenty.html
