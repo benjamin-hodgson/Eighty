@@ -595,7 +595,7 @@ namespace Eighty.Twenty
             }
             _writer.Get().WriteRaw("/>");
         }
-        
+
         /// <summary>
         /// Write a link element.
         /// </summary>
@@ -605,7 +605,7 @@ namespace Eighty.Twenty
             Attrs(attrs);
             _writer.Get().WriteRaw("/>");
         }
-        
+
         /// <summary>
         /// Write a link element.
         /// </summary>
@@ -754,7 +754,7 @@ namespace Eighty.Twenty
             }
             _writer.Get().WriteRaw("/>");
         }
-        
+
         /// <summary>
         /// Write a base element.
         /// </summary>
@@ -764,7 +764,7 @@ namespace Eighty.Twenty
             Attrs(attrs);
             _writer.Get().WriteRaw("/>");
         }
-        
+
         /// <summary>
         /// Write a base element.
         /// </summary>
@@ -913,7 +913,7 @@ namespace Eighty.Twenty
             }
             _writer.Get().WriteRaw("/>");
         }
-        
+
         /// <summary>
         /// Write a meta element.
         /// </summary>
@@ -923,7 +923,7 @@ namespace Eighty.Twenty
             Attrs(attrs);
             _writer.Get().WriteRaw("/>");
         }
-        
+
         /// <summary>
         /// Write a meta element.
         /// </summary>
@@ -7620,7 +7620,7 @@ namespace Eighty.Twenty
             }
             _writer.Get().WriteRaw("/>");
         }
-        
+
         /// <summary>
         /// Write a br element.
         /// </summary>
@@ -7630,7 +7630,7 @@ namespace Eighty.Twenty
             Attrs(attrs);
             _writer.Get().WriteRaw("/>");
         }
-        
+
         /// <summary>
         /// Write a br element.
         /// </summary>
@@ -7769,7 +7769,7 @@ namespace Eighty.Twenty
             }
             _writer.Get().WriteRaw("/>");
         }
-        
+
         /// <summary>
         /// Write a wbr element.
         /// </summary>
@@ -7779,7 +7779,7 @@ namespace Eighty.Twenty
             Attrs(attrs);
             _writer.Get().WriteRaw("/>");
         }
-        
+
         /// <summary>
         /// Write a wbr element.
         /// </summary>
@@ -7918,7 +7918,7 @@ namespace Eighty.Twenty
             }
             _writer.Get().WriteRaw("/>");
         }
-        
+
         /// <summary>
         /// Write an hr element.
         /// </summary>
@@ -7928,7 +7928,7 @@ namespace Eighty.Twenty
             Attrs(attrs);
             _writer.Get().WriteRaw("/>");
         }
-        
+
         /// <summary>
         /// Write an hr element.
         /// </summary>
@@ -16065,7 +16065,7 @@ namespace Eighty.Twenty
             }
             _writer.Get().WriteRaw("/>");
         }
-        
+
         /// <summary>
         /// Write an img element.
         /// </summary>
@@ -16075,7 +16075,7 @@ namespace Eighty.Twenty
             Attrs(attrs);
             _writer.Get().WriteRaw("/>");
         }
-        
+
         /// <summary>
         /// Write an img element.
         /// </summary>
@@ -16661,7 +16661,7 @@ namespace Eighty.Twenty
             }
             _writer.Get().WriteRaw("/>");
         }
-        
+
         /// <summary>
         /// Write a track element.
         /// </summary>
@@ -16671,7 +16671,7 @@ namespace Eighty.Twenty
             Attrs(attrs);
             _writer.Get().WriteRaw("/>");
         }
-        
+
         /// <summary>
         /// Write a track element.
         /// </summary>
@@ -16830,7 +16830,7 @@ namespace Eighty.Twenty
             }
             _writer.Get().WriteRaw("/>");
         }
-        
+
         /// <summary>
         /// Write an embed element.
         /// </summary>
@@ -16840,7 +16840,7 @@ namespace Eighty.Twenty
             Attrs(attrs);
             _writer.Get().WriteRaw("/>");
         }
-        
+
         /// <summary>
         /// Write an embed element.
         /// </summary>
@@ -17185,7 +17185,7 @@ namespace Eighty.Twenty
             }
             _writer.Get().WriteRaw("/>");
         }
-        
+
         /// <summary>
         /// Write a param element.
         /// </summary>
@@ -17195,7 +17195,7 @@ namespace Eighty.Twenty
             Attrs(attrs);
             _writer.Get().WriteRaw("/>");
         }
-        
+
         /// <summary>
         /// Write a param element.
         /// </summary>
@@ -17515,7 +17515,7 @@ namespace Eighty.Twenty
             }
             _writer.Get().WriteRaw("/>");
         }
-        
+
         /// <summary>
         /// Write a source element.
         /// </summary>
@@ -17525,7 +17525,7 @@ namespace Eighty.Twenty
             Attrs(attrs);
             _writer.Get().WriteRaw("/>");
         }
-        
+
         /// <summary>
         /// Write a source element.
         /// </summary>
