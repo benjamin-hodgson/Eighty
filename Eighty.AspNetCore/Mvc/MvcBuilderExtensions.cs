@@ -11,16 +11,16 @@ using Microsoft.Extensions.Options;
 namespace Eighty.AspNetCore.Mvc;
 
 /// <summary>
-/// Extension methods for <see cref="IMvcBuilder"/> for configuring Eighty
+/// Extension methods for <see cref="IMvcBuilder"/> for configuring Eighty.
 /// </summary>
 public static class MvcBuilderExtensions
 {
     /// <summary>
     /// Configure all of Eighty's MVC features.
     /// </summary>
-    /// <param name="builder">The MVC builder</param>
-    /// <param name="registerEightyViews">An action to register your application's views with the <see cref="EightyViewEngine"/></param>
-    /// <returns>The MVC builder</returns>
+    /// <param name="builder">The MVC builder.</param>
+    /// <param name="registerEightyViews">An action to register your application's views with the <see cref="EightyViewEngine"/>.</param>
+    /// <returns>The <paramref name="builder" />.</returns>
     public static IMvcBuilder AddEighty(this IMvcBuilder builder, Action<EightyViewOptions> registerEightyViews)
     {
         if (builder == null)

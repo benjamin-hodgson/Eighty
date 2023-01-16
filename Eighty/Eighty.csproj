@@ -5,6 +5,7 @@
         <LangVersion>10</LangVersion>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <NoWarn>$(NoWarn);NETSDK1138</NoWarn>
     </PropertyGroup>
 
     <ItemGroup>

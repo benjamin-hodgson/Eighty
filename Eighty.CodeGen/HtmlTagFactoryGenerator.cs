@@ -25,7 +25,6 @@ namespace Eighty
 ";
     }
 
-
     private static string TagMethod(int number)
         => $@"
         /// <summary>
@@ -37,6 +36,7 @@ namespace Eighty
             return new TagBuilder(name, ImmutableArrayFactory.Create({AttrArgs(number)}), true);
         }}
 ";
+
     private static string TagUnderscoreMethod(int number)
         => $@"
         /// <summary>
@@ -48,6 +48,7 @@ namespace Eighty
             return new Tag(name, ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create({ChildArgs(number)}), true);
         }}
 ";
+
     private static string SelfClosingTagMethod(int number)
         => $@"
         /// <summary>

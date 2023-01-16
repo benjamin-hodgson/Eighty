@@ -10,11 +10,14 @@ internal class TestHtmlBuilder : HtmlBuilder
     {
         _count = count;
     }
+
     protected override void Build()
     {
         for (var i = 0; i < _count; i++)
         {
-            using (p()) { }
+            using (p())
+            {
+            }
         }
     }
 }

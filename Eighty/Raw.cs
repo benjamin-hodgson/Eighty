@@ -6,7 +6,8 @@ internal class Raw : Html
 {
     private readonly string _rawHtml;
 
-    public Raw(string rawHtml) : base(true)
+    public Raw(string rawHtml)
+        : base(true)
     {
         _rawHtml = rawHtml;
     }

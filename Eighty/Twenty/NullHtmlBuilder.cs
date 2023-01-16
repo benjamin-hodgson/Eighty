@@ -2,9 +2,13 @@ namespace Eighty.Twenty;
 
 internal class NullHtmlBuilder : HtmlBuilder
 {
-    private NullHtmlBuilder() { }
+    private NullHtmlBuilder()
+    {
+    }
 
-    protected override void Build() { }
+    protected override void Build()
+    {
+    }
 
     public static HtmlBuilder Instance { get; } = new NullHtmlBuilder();
 }

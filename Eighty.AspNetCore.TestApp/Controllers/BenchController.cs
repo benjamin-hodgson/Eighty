@@ -34,5 +34,3 @@ public class BenchController : Controller
         return View(_model);
     }
 }
-
-

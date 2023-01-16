@@ -23,7 +23,6 @@ namespace Eighty.Twenty
 ";
     }
 
-
     private static string TagMethod(int number)
         => $@"
         /// <summary>
@@ -39,6 +38,7 @@ namespace Eighty.Twenty
             return new TagBuilder(name, this, true);
         }}
 ";
+
     private static string SelfClosingTagMethod(int number)
         => $@"
         /// <summary>

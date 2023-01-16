@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc.ViewEngines;
 namespace Eighty.AspNetCore.Mvc.ViewFeatures;
 
 /// <summary>
-/// An <see cref="IViewEngine"/> which can render <see cref="IHtmlRenderer{TModel}"/>s and <see cref="IHtmlBuilderRenderer{TModel}"/>s
+/// An <see cref="IViewEngine"/> which can render <see cref="IHtmlRenderer{TModel}"/>s and <see cref="IHtmlBuilderRenderer{TModel}"/>s.
 /// </summary>
 public class EightyViewEngine : IViewEngine
 {
@@ -18,20 +18,22 @@ public class EightyViewEngine : IViewEngine
     private readonly IServiceProvider _serviceProvider;
 
     /// <summary>
-    /// Create an <see cref="EightyViewEngine"/>
+    /// Create an <see cref="EightyViewEngine"/>.
     /// </summary>
-    /// <param name="options">The view options</param>
-    /// <param name="serviceProvider">The service provider</param>
+    /// <param name="options">The view options.</param>
+    /// <param name="serviceProvider">The service provider.</param>
     public EightyViewEngine(EightyViewOptions options, IServiceProvider serviceProvider)
     {
         if (options == null)
         {
             throw new ArgumentNullException(nameof(options));
         }
+
         if (serviceProvider == null)
         {
             throw new ArgumentNullException(nameof(serviceProvider));
         }
+
         _views = options.ViewCollection.Views;
         _serviceProvider = serviceProvider;
     }
@@ -43,16 +45,19 @@ public class EightyViewEngine : IViewEngine
         {
             throw new ArgumentNullException(nameof(context));
         }
+
         if (viewName == null)
         {
             throw new ArgumentNullException(nameof(viewName));
         }
+
         var controllerName = RazorViewEngine.GetNormalizedRouteValue(context, "controller");
         var path = controllerName + "/" + viewName;
         if (!_views.TryGetValue(path, out var value))
         {
             return ViewEngineResult.NotFound(path, new[] { "EightyCompiledViews/" + path });
         }
+
         return ViewEngineResult.Found(path, value(_serviceProvider));
     }
 
@@ -63,10 +68,12 @@ public class EightyViewEngine : IViewEngine
         {
             throw new ArgumentNullException(nameof(viewPath));
         }
+
         if (!_views.TryGetValue(viewPath, out var value))
         {
             return ViewEngineResult.NotFound(viewPath, new[] { "EightyCompiledViews/" + viewPath });
         }
+
         return ViewEngineResult.Found(viewPath, value(_serviceProvider));
     }
 }

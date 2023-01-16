@@ -5,6 +5,16 @@ namespace Eighty.CodeGen;
 
 internal static class CodeGenHelpers
 {
+    private const string _vowels = "aeiou";
+    private const string _vowelSoundingLetters = "aefhilmnorsx";
+
+    public static string IndefiniteArticle(string noun)
+        => noun == "html"
+        || (noun.Length <= 2 && _vowelSoundingLetters.Contains(noun[0], StringComparison.OrdinalIgnoreCase))
+        || _vowels.Contains(noun[0], StringComparison.OrdinalIgnoreCase)
+            ? "an"
+            : "a";
+
     // https://developer.mozilla.org/en-US/docs/Web/HTML/Element
     private static readonly string[] _globalAttrs
         = new[]
@@ -16,7 +26,10 @@ internal static class CodeGenHelpers
             "tabindex",
             "contenteditable"
         };
-    public static readonly (string name, bool isSelfClosing, string[] attrs)[] Elements
+
+#pragma warning disable SA1116  // The parameters should begin on the line after the declaration, whenever the parameters span across multiple lines
+#pragma warning disable SA1117  // The parameters should all be placed on the same line or each parameter should be placed on its own line.
+    public static readonly (string Name, bool SelfClosing, string[] Attrs)[] Elements
         = new[]
         {
             Tag("html", "xmlns"),
@@ -176,10 +189,13 @@ internal static class CodeGenHelpers
             Tag("bdi", "dir"),
             Tag("bdo", "dir"),
         };
+#pragma warning restore SA1117
+#pragma warning restore SA1116
 
-    private static (string, bool, string[]) Tag(string name, params string[] attrs)
+    private static (string Name, bool SelfClosing, string[] Attrs) Tag(string name, params string[] attrs)
         => (name, false, _globalAttrs.Concat(attrs).ToArray());
-    private static (string, bool, string[]) STag(string name, params string[] attrs)
+
+    private static (string Name, bool SelfClosing, string[] Attrs) STag(string name, params string[] attrs)
         => (name, true, _globalAttrs.Concat(attrs).ToArray());
 
     public static string Params(string[] attrs)
@@ -190,24 +206,14 @@ internal static class CodeGenHelpers
         ));
 
     private static readonly string[] _keywords = new[] { "class", "base", "for", "checked", "readonly", "object", "default" };
+
     public static string CsId(string name)
     {
         var id = name.TrimStart('!');
-        if (_keywords.Contains(id))
-        {
-            return "@" + id;
-        }
-        return id;
+        return _keywords.Contains(id)
+            ? "@" + id
+            : id;
     }
-
-    private const string _vowels = "aeiou";
-    private const string _vowelSoundingLetters = "aefhilmnorsx";
-    public static string IndefiniteArticle(string noun)
-        => noun == "html"
-        || noun.Length <= 2 && _vowelSoundingLetters.Contains(noun[0], StringComparison.OrdinalIgnoreCase)
-        || _vowels.Contains(noun[0], StringComparison.OrdinalIgnoreCase)
-            ? "an"
-            : "a";
 
     public static string AttrParams(int number)
         => string.Join(", ", Enumerable.Range(1, number).Select(n => "Attr attr" + n));

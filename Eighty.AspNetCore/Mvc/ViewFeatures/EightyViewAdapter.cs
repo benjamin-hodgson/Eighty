@@ -7,30 +7,33 @@ using Microsoft.AspNetCore.Mvc.ViewEngines;
 namespace Eighty.AspNetCore.Mvc.ViewFeatures;
 
 /// <summary>
-/// Wraps an <see cref="IHtmlRenderer{TModel}"/> into an <see cref="IView"/>
+/// Wraps an <see cref="IHtmlRenderer{TModel}"/> into an <see cref="IView"/>.
 /// </summary>
-/// <typeparam name="TModel">The model type</typeparam>
+/// <typeparam name="TModel">The model type.</typeparam>
 public class EightyViewAdapter<TModel> : IView
 {
     /// <inheritdoc/>
     public string Path { get; }
+
     private readonly IHtmlRenderer<TModel> _view;
 
     /// <summary>
-    /// Creates an <see cref="EightyViewAdapter{TModel}"/>
+    /// Creates an <see cref="EightyViewAdapter{TModel}"/>.
     /// </summary>
-    /// <param name="path">The view path</param>
-    /// <param name="view">The view</param>
+    /// <param name="path">The view path.</param>
+    /// <param name="view">The view.</param>
     public EightyViewAdapter(string path, IHtmlRenderer<TModel> view)
     {
         if (path == null)
         {
             throw new ArgumentNullException(nameof(path));
         }
+
         if (view == null)
         {
             throw new ArgumentNullException(nameof(view));
         }
+
         Path = path;
         _view = view;
     }
@@ -57,6 +60,7 @@ public class EightyViewAdapter<TModel> : IView
 #pragma warning restore CA1849
             return;
         }
+
         throw new InvalidOperationException($"Expected a model of type {typeof(TModel).Name} but the actual model is of type {context.ViewData.Model.GetType().Name}");
     }
 }

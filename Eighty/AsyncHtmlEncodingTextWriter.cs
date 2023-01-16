@@ -8,8 +8,8 @@ namespace Eighty;
 
 /// <summary>
 /// This has to be a class because its mutating methods are async and would operate on a copy of the struct if this were a struct
-/// 
-/// NB. Any changes to this file need to be paralleled in HtmlEncodingTextWriter
+///
+/// NB. Any changes to this file need to be paralleled in HtmlEncodingTextWriter.
 /// </summary>
 internal class AsyncHtmlEncodingTextWriter
 {
@@ -40,8 +40,9 @@ internal class AsyncHtmlEncodingTextWriter
         while (position < s.Length)
         {
             var safeChunkLength = _htmlEncoder.FindFirstCharacterToEncode(s, position);
-            if (safeChunkLength == -1)  // no encoding chars in the input, write the whole string without encoding
+            if (safeChunkLength == -1)
             {
+                // no encoding chars in the input, write the whole string without encoding
                 safeChunkLength = s.Length - position;
             }
 
@@ -57,9 +58,9 @@ internal class AsyncHtmlEncodingTextWriter
     }
 
     /// <summary>
-    /// Consume a run of HTML-encoding characters from the string
+    /// Consume a run of HTML-encoding characters from the string.
     /// </summary>
-    /// <returns>The new position</returns>
+    /// <returns>The new position.</returns>
     private async ValueTask<int> WriteEncodingChars(string s, int position)
     {
         while (position < s.Length)
@@ -96,9 +97,11 @@ internal class AsyncHtmlEncodingTextWriter
                     throw new InvalidOperationException("Buffer overflow when encoding HTML. Please report this as a bug in Eighty!");
                 }
             }
+
             position += numberOfCharactersConsumed;
             _bufPos += numberOfCharactersWritten;
         }
+
         return position;
     }
 
@@ -123,8 +126,10 @@ internal class AsyncHtmlEncodingTextWriter
             _bufPos += count;
             return Task.CompletedTask;
         }
+
         return WriteInChunks(s, start, count);
     }
+
     private async Task WriteInChunks(string s, int start, int count)
     {
         while (count > 0)
@@ -143,7 +148,7 @@ internal class AsyncHtmlEncodingTextWriter
 
     private Task WriteUnicodeReplacementChar()
     {
-        return WriteRaw(HtmlEncodingHelpers.UNICODE_REPLACEMENT_CHAR);
+        return WriteRaw(HtmlEncodingHelpers.UnicodeReplacementChar);
     }
 
     private Task FlushIfNecessary()
@@ -152,6 +157,7 @@ internal class AsyncHtmlEncodingTextWriter
         {
             return Flush();
         }
+
         return Task.CompletedTask;
     }
 

@@ -13,7 +13,8 @@ using static Eighty.Html;
 
 namespace Eighty.Bench;
 
-[MemoryDiagnoser, GroupBenchmarksBy(BenchmarkLogicalGroupRule.ByCategory)]
+[MemoryDiagnoser]
+[GroupBenchmarksBy(BenchmarkLogicalGroupRule.ByCategory)]
 public class SimpleBench
 {
     private Html? _flatPsEighty;
@@ -31,14 +32,16 @@ public class SimpleBench
     }
 
     [GlobalCleanup]
-    [SuppressMessage("performance", "CA1822")]  // "Member does not access instance data and can be marked as static"
+    [SuppressMessage("performance", "CA1822", Justification = "Benchmark")] // "Member does not access instance data and can be marked as static"
     public void Cleanup()
     {
         File.Delete("output.html");
     }
 
-    [BenchmarkCategory("Flat"), Benchmark]
-    [SuppressMessage("performance", "CA1822")]  // "Member does not access instance data and can be marked as static"
+    [BenchmarkCategory("Flat")]
+    [Benchmark]
+    [SuppressMessage("performance", "CA1822", Justification = "Benchmark")] // "Member does not access instance data and can be marked as static"
+    [SuppressMessage("performance", "SA1312", Justification = "Benchmark")] // "Variable should begin with lower-case letter"
     public void Flat_Eighty_BuildAndRender()
     {
         var html = p(@class: "para<>")._();
@@ -47,12 +50,15 @@ public class SimpleBench
         {
             builder.Add(html);
         }
+
         using var writer = new StreamWriter("output.html");
         _(builder.MoveToImmutable()).Write(writer);
     }
 
-    [BenchmarkCategory("Flat"), Benchmark(Baseline = true)]
-    [SuppressMessage("performance", "CA1822")]  // "Member does not access instance data and can be marked as static"
+    [BenchmarkCategory("Flat")]
+    [Benchmark(Baseline = true)]
+    [SuppressMessage("performance", "CA1822", Justification = "Benchmark")] // "Member does not access instance data and can be marked as static"
+    [SuppressMessage("performance", "SA1312", Justification = "Benchmark")] // "Variable should begin with lower-case letter"
     public void Flat_Eighty_BuildAndRender_NoSharing()
     {
         var builder = ImmutableArray.CreateBuilder<Html>(1000);
@@ -60,53 +66,61 @@ public class SimpleBench
         {
             builder.Add(p(@class: "para<>")._());
         }
+
         using var writer = new StreamWriter("output.html");
         _(builder.MoveToImmutable()).Write(writer);
     }
 
-    [BenchmarkCategory("Flat"), Benchmark]
+    [BenchmarkCategory("Flat")]
+    [Benchmark]
     public void Flat_Eighty_Render()
     {
         using var writer = new StreamWriter("output.html");
         _flatPsEighty!.Write(writer);
     }
 
-    [BenchmarkCategory("Flat"), Benchmark]
+    [BenchmarkCategory("Flat")]
+    [Benchmark]
     public async Task Flat_Eighty_RenderAsync()
     {
         using var writer = new StreamWriter("output.html");
         await _flatPsEighty!.WriteAsync(writer).ConfigureAwait(false);
     }
 
-    [BenchmarkCategory("Flat"), Benchmark]
+    [BenchmarkCategory("Flat")]
+    [Benchmark]
     public void Flat_Twenty()
     {
         using var writer = new StreamWriter("output.html");
         _flatPsTwenty!.Write(writer);
     }
 
-    [BenchmarkCategory("Deep"), Benchmark(Baseline = true)]
+    [BenchmarkCategory("Deep")]
+    [Benchmark(Baseline = true)]
     public void Deep_Eighty_BuildAndRender()
     {
         using var writer = new StreamWriter("output.html");
         DeepPs(1000).Write(writer);
     }
 
-    [BenchmarkCategory("Deep"), Benchmark]
+    [BenchmarkCategory("Deep")]
+    [Benchmark]
     public void Deep_Eighty_Render()
     {
         using var writer = new StreamWriter("output.html");
         _deepPsEighty!.Write(writer);
     }
 
-    [BenchmarkCategory("Deep"), Benchmark]
+    [BenchmarkCategory("Deep")]
+    [Benchmark]
     public async Task Deep_Eighty_RenderAsync()
     {
         using var writer = new StreamWriter("output.html");
         await _deepPsEighty!.WriteAsync(writer).ConfigureAwait(false);
     }
 
-    [BenchmarkCategory("Deep"), Benchmark]
+    [BenchmarkCategory("Deep")]
+    [Benchmark]
     public void Deep_Twenty()
     {
         using var writer = new StreamWriter("output.html");

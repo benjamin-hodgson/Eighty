@@ -6,7 +6,8 @@ internal class Text : Html
 {
     private readonly string _text;
 
-    public Text(string text) : base(true)
+    public Text(string text)
+        : base(true)
     {
         _text = text;
     }

@@ -21,12 +21,14 @@ public class HtmlAsyncTests
         H html = "hello";
         Assert.Equal("hello", await GetStringAsync(html));
     }
+
     [Fact]
     public async Task Text_HighAscii()
     {
         H html = ((char)232).ToString();  // "è"
         Assert.Equal("&#xE8;", await GetStringAsync(html));
     }
+
     [Fact]
     public async Task LongText()
     {
@@ -35,18 +37,21 @@ public class HtmlAsyncTests
             H html = expected;
             Assert.Equal(expected, await GetStringAsync(html));
         }
+
         {
             var expected = string.Concat(Enumerable.Repeat("abcdefghijkl", 5000));
             H html = expected;
             Assert.Equal(expected, await GetStringAsync(html));
         }
     }
+
     [Fact]
     public async Task TextEscaping()
     {
         H html = "<>\"&'";
         Assert.Equal("&lt;&gt;&quot;&amp;&#x27;", await GetStringAsync(html));
     }
+
     [Fact]
     public async Task TextEscaping_Long()
     {
@@ -54,6 +59,7 @@ public class HtmlAsyncTests
         var expected = string.Concat(Enumerable.Repeat("&lt;&gt;&quot;&amp;&#x27;", 10000));
         Assert.Equal(expected, await GetStringAsync(html));
     }
+
     [Fact]
     public async Task TextEscaping_Unicode()
     {
@@ -61,11 +67,13 @@ public class HtmlAsyncTests
             H html = "\U0001F01C";
             Assert.Equal("&#x1F01C;", await GetStringAsync(html));
         }
+
         {
             H html = "\U0001F01C then some text";
             Assert.Equal("&#x1F01C; then some text", await GetStringAsync(html));
         }
     }
+
     [Fact]
     public async Task Text_BadSurrogatePair()
     {
@@ -74,34 +82,40 @@ public class HtmlAsyncTests
             H html = new string(new[] { '\xdc1c' });
             Assert.Equal("\uFFFD", await GetStringAsync(html));
         }
+
         {
             // a high surrogate on its own
             H html = new string(new[] { '\xd83c' });
             Assert.Equal("\uFFFD", await GetStringAsync(html));
         }
+
         {
             // "\U0001F01C" is '\xd83c', '\xdc1c', so flipping them produces an invalid pair
             H html = new string(new[] { '\xdc1c', '\xd83c' });
             Assert.Equal("\uFFFD\uFFFD", await GetStringAsync(html));
         }
+
         {
             // a single bad surrogate followed by a valid pair
             H html = new string(new[] { '\xdc1c', '\xd83c', '\xdc1c' });
             Assert.Equal("\uFFFD&#x1F01C;", await GetStringAsync(html));
         }
     }
+
     [Fact]
     public async Task RawText()
     {
         var html = Raw("<>\"");
         Assert.Equal("<>\"", await GetStringAsync(html));
     }
+
     [Fact]
     public async Task SelfClosingTag()
     {
         var html = img();
         Assert.Equal("<img/>", await GetStringAsync(html));
     }
+
     [Fact]
     public async Task EmptyTag()
     {
@@ -109,15 +123,18 @@ public class HtmlAsyncTests
             var html = p()._();
             Assert.Equal("<p></p>", await GetStringAsync(html));
         }
+
         {
             var html = p_();
             Assert.Equal("<p></p>", await GetStringAsync(html));
         }
+
         {
             H html = p();
             Assert.Equal("<p></p>", await GetStringAsync(html));
         }
     }
+
     [Fact]
     public async Task TagWithText()
     {
@@ -125,11 +142,13 @@ public class HtmlAsyncTests
             var html = p()._("hello");
             Assert.Equal("<p>hello</p>", await GetStringAsync(html));
         }
+
         {
             var html = p_("hello");
             Assert.Equal("<p>hello</p>", await GetStringAsync(html));
         }
     }
+
     [Fact]
     public async Task TagWithChildren()
     {
@@ -137,6 +156,7 @@ public class HtmlAsyncTests
             var html = p()._(a(), img());
             Assert.Equal("<p><a></a><img/></p>", await GetStringAsync(html));
         }
+
         {
             var html = p_(a(), img());
             Assert.Equal("<p><a></a><img/></p>", await GetStringAsync(html));
@@ -147,6 +167,7 @@ public class HtmlAsyncTests
             var html = p()._(img(), img(), img(), img(), img(), img(), img(), img());
             Assert.Equal("<p><img/><img/><img/><img/><img/><img/><img/><img/></p>", await GetStringAsync(html));
         }
+
         {
             var html = p_(img(), img(), img(), img(), img(), img(), img(), img());
             Assert.Equal("<p><img/><img/><img/><img/><img/><img/><img/><img/></p>", await GetStringAsync(html));
@@ -157,11 +178,13 @@ public class HtmlAsyncTests
             var html = p()._(img(), img(), img(), img(), img(), img(), img(), img(), img());
             Assert.Equal("<p><img/><img/><img/><img/><img/><img/><img/><img/><img/></p>", await GetStringAsync(html));
         }
+
         {
             var html = p_(img(), img(), img(), img(), img(), img(), img(), img(), img());
             Assert.Equal("<p><img/><img/><img/><img/><img/><img/><img/><img/><img/></p>", await GetStringAsync(html));
         }
     }
+
     [Fact]
     public async Task Siblings()
     {
@@ -181,9 +204,12 @@ public class HtmlAsyncTests
     {
         protected override void Build()
         {
-            using (a()) { }
+            using (a())
+            {
+            }
         }
     }
+
     [Fact]
     public async Task Builder()
     {
@@ -196,7 +222,6 @@ public class HtmlAsyncTests
     }
 
     // attributes
-
     [Fact]
     public async Task SelfClosingTagWithAttrs()
     {
@@ -204,6 +229,7 @@ public class HtmlAsyncTests
             var html = img(src: "http://foo.bar.baz", title: "my image");
             Assert.Equal("<img title=\"my image\" src=\"http://foo.bar.baz\"/>", await GetStringAsync(html));
         }
+
         {
             var html = img(("src", "http://foo.bar.baz"), ("title", "my image"));
             Assert.Equal("<img src=\"http://foo.bar.baz\" title=\"my image\"/>", await GetStringAsync(html));
@@ -221,6 +247,7 @@ public class HtmlAsyncTests
             Assert.Equal("<img x=\"y\" x=\"y\" x=\"y\" x=\"y\" x=\"y\" x=\"y\" x=\"y\" x=\"y\" x=\"y\"/>", await GetStringAsync(html));
         }
     }
+
     [Fact]
     public async Task EmptyTagWithAttrs()
     {
@@ -228,11 +255,13 @@ public class HtmlAsyncTests
             var html = p(title: "my paragraph", @class: "foo")._();
             Assert.Equal("<p class=\"foo\" title=\"my paragraph\"></p>", await GetStringAsync(html));
         }
+
         {
             var html = p(("title", "my paragraph"), ("class", "foo"))._();
             Assert.Equal("<p title=\"my paragraph\" class=\"foo\"></p>", await GetStringAsync(html));
         }
     }
+
     [Fact]
     public async Task BooleanAttrs()
     {
@@ -240,15 +269,18 @@ public class HtmlAsyncTests
             var html = button(disabled: false)._();
             Assert.Equal("<button></button>", await GetStringAsync(html));
         }
+
         {
             var html = button(disabled: true)._();
             Assert.Equal("<button disabled></button>", await GetStringAsync(html));
         }
+
         {
             var html = button(new Attr("disabled"))._();
             Assert.Equal("<button disabled></button>", await GetStringAsync(html));
         }
     }
+
     [Fact]
     public async Task AttrEscaping()
     {
@@ -256,11 +288,13 @@ public class HtmlAsyncTests
             var html = p(title: "<>\"")._();
             Assert.Equal("<p title=\"&lt;&gt;&quot;\"></p>", await GetStringAsync(html));
         }
+
         {
             var html = p(("title", "<>\""), ("<>\"", "<>\""))._();
             Assert.Equal("<p title=\"&lt;&gt;&quot;\" &lt;&gt;&quot;=\"&lt;&gt;&quot;\"></p>", await GetStringAsync(html));
         }
     }
+
     [Fact]
     public async Task BooleanAttrEscaping()
     {
@@ -269,6 +303,7 @@ public class HtmlAsyncTests
             Assert.Equal("<button &lt;&gt;&quot;></button>", await GetStringAsync(html));
         }
     }
+
     [Fact]
     public async Task AttrRaw()
     {
@@ -277,6 +312,7 @@ public class HtmlAsyncTests
             Assert.Equal("<p <>\"=\"<>\"\"></p>", await GetStringAsync(html));
         }
     }
+
     [Fact]
     public async Task BooleanAttrRaw()
     {

@@ -47,6 +47,7 @@ internal class PooledStringWriter : TextWriter
             ArrayPool<char>.Shared.Return(_buffer);
             _buffer = null;
         }
+
         base.Dispose(disposing);
     }
 

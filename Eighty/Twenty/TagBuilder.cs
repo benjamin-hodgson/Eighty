@@ -7,7 +7,7 @@ namespace Eighty.Twenty;
 /// Represents a "half-open" tag waiting for its children.
 /// Note that the <see cref="TagBuilder"/> MUST be disposed exactly once, immediately after the children have been written.
 /// </summary>
-[SuppressMessage("performance", "CA1815")]  // "struct should override Equals"
+[SuppressMessage("performance", "CA1815", Justification = "Not a value")] // "struct should override Equals"
 public readonly struct TagBuilder : IDisposable
 {
     private readonly string _tagName;
@@ -35,6 +35,7 @@ public readonly struct TagBuilder : IDisposable
         {
             _builder.Raw(_tagName);
         }
+
         _builder.Raw(">");
     }
 }

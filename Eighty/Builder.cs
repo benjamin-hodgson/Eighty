@@ -9,7 +9,8 @@ internal class Builder : Html
 {
     private readonly Func<HtmlBuilder> _builderFactory;
 
-    public Builder(Func<HtmlBuilder> builderFactory) : base(false)
+    public Builder(Func<HtmlBuilder> builderFactory)
+        : base(false)
     {
         _builderFactory = builderFactory;
     }
@@ -21,6 +22,7 @@ internal class Builder : Html
         {
             throw new InvalidOperationException("Builder factory cannot return null");
         }
+
         builder.WritePartial(ref writer);
     }
 

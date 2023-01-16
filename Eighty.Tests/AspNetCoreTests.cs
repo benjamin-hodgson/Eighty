@@ -17,7 +17,7 @@ using static Eighty.Html;
 
 namespace Eighty.Tests;
 
-[SuppressMessage("design", "CA1001")]  // Type owns disposable field(s) but is not disposable
+[SuppressMessage("design", "CA1001", Justification = "Test code")] // Type owns disposable field(s) but is not disposable
 public class AspNetCoreTests
 {
     private readonly TestServer _server;
@@ -47,9 +47,12 @@ public class AspNetCoreTests
     {
         protected override void Build()
         {
-            using (p()) { }
+            using (p())
+            {
+            }
         }
     }
+
     [Fact]
     public void TestTwentyHtmlContent()
     {
@@ -60,7 +63,6 @@ public class AspNetCoreTests
         Assert.Equal("<p></p>", writer.ToString());
     }
 
-
     [Fact]
     public async Task TestHtmlResult()
     {
@@ -69,6 +71,7 @@ public class AspNetCoreTests
             Assert.Equal(HttpStatusCode.PartialContent, response.StatusCode);
             Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync());
         }
+
         {
             var response = await _client.GetAsync("Test/AsyncHtmlResult");
             Assert.Equal(HttpStatusCode.PartialContent, response.StatusCode);
@@ -92,6 +95,7 @@ public class AspNetCoreTests
             Assert.Equal(HttpStatusCode.PartialContent, response.StatusCode);
             Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync());
         }
+
         {
             var response = await _client.GetAsync("Test/AsyncHtmlRendererResult");
             Assert.Equal(HttpStatusCode.PartialContent, response.StatusCode);
@@ -114,6 +118,7 @@ public class AspNetCoreTests
             var response = await _client.GetAsync("Test/HtmlView");
             Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync());
         }
+
         {
             var response = await _client.GetAsync("Test/AsyncHtmlView");
             Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync());

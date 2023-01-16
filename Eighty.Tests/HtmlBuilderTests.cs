@@ -23,6 +23,7 @@ public class HtmlBuilderTests
 
                     link(rel: "stylesheet", type: "text/css", href: "/all.css");
                 }
+
                 using (body())
                 {
                     using (h1())
@@ -80,6 +81,7 @@ public class HtmlBuilderTests
             }
         }
     }
+
     [Fact]
     public void TestHtml()
     {
@@ -107,6 +109,7 @@ public class HtmlBuilderTests
             }
         }
     }
+
     [Fact]
     public void TestPartial()
     {

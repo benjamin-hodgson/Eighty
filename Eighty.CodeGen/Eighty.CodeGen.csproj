@@ -3,6 +3,7 @@
 
     <PropertyGroup>
         <OutputType>exe</OutputType>
+        <NoWarn>$(NoWarn);SA1516</NoWarn>
     </PropertyGroup>
 
 </Project>

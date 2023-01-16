@@ -9,9 +9,9 @@ internal static class HtmlBuilderTagsGenerator
     public static string GenerateFile()
     {
         var methods = string.Concat(Elements.Select(
-            el => el.isSelfClosing
-                ? SelfClosingTagDef(el.name, el.attrs)
-                : TagDef(el.name, el.attrs)
+            el => el.SelfClosing
+                ? SelfClosingTagDef(el.Name, el.Attrs)
+                : TagDef(el.Name, el.Attrs)
         ));
         return $@"#region GeneratedCode
 using System;
@@ -26,7 +26,6 @@ namespace Eighty.Twenty
 #endregion
 ";
     }
-
 
     private static string TagDef(string name, string[] attrs)
         => $@"
@@ -68,6 +67,7 @@ namespace Eighty.Twenty
         }}
         {TagAttrs(name)}
 ";
+
     private static string SelfClosingTagDef(string name, string[] attrs)
         => $@"
         /// <summary>
@@ -80,7 +80,7 @@ namespace Eighty.Twenty
             {WriteAttrs(attrs)}
             _writer.Get().WriteRaw(""/>"");
         }}
-        
+
         /// <summary>
         /// Write {IndefiniteArticle(name)} {name} element.
         /// </summary>
@@ -90,7 +90,7 @@ namespace Eighty.Twenty
             Attrs(attrs);
             _writer.Get().WriteRaw(""/>"");
         }}
-        
+
         /// <summary>
         /// Write {IndefiniteArticle(name)} {name} element.
         /// </summary>

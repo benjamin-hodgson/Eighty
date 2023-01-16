@@ -3,5 +3,6 @@
         <IsPackable>false</IsPackable>
         <TargetFramework>net6.0</TargetFramework>
         <RollForward>major</RollForward>
+        <NoWarn>$(NoWarn);SA0001</NoWarn>
     </PropertyGroup>
 </Project>

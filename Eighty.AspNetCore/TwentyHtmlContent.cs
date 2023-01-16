@@ -9,22 +9,23 @@ using Microsoft.AspNetCore.Html;
 namespace Eighty.AspNetCore;
 
 /// <summary>
-/// An implementation of <see cref="IHtmlContent"/> which wraps an <see cref="HtmlBuilder"/>
+/// An implementation of <see cref="IHtmlContent"/> which wraps an <see cref="HtmlBuilder"/>.
 /// </summary>
 public class TwentyHtmlContent : IHtmlContent
 {
     private readonly HtmlBuilder _builder;
 
     /// <summary>
-    /// Create a <see cref="TwentyHtmlContent"/>
+    /// Create a <see cref="TwentyHtmlContent"/>.
     /// </summary>
-    /// <param name="builder">The <see cref="HtmlBuilder"/></param>
+    /// <param name="builder">The <see cref="HtmlBuilder"/>.</param>
     public TwentyHtmlContent(HtmlBuilder builder)
     {
         if (builder == null)
         {
             throw new ArgumentNullException(nameof(builder));
         }
+
         _builder = builder;
     }
 
@@ -35,10 +36,12 @@ public class TwentyHtmlContent : IHtmlContent
         {
             throw new ArgumentNullException(nameof(writer));
         }
+
         if (encoder == null)
         {
             throw new ArgumentNullException(nameof(encoder));
         }
+
         _builder.Write(writer, encoder);
     }
 }

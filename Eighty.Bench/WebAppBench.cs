@@ -29,7 +29,7 @@ public class WebAppBench : IDisposable
     private static string? ThisFilePath([CallerFilePath] string? filePath = null) => filePath;
 
     [Benchmark]
-    public async Task Empty()  // just measure the time to get an empty response, so can subtract from the other benchmarks
+    public async Task Empty() // just measure the time to get an empty response, so can subtract from the other benchmarks
     {
         await _client!.GetStringAsync("/Bench/Empty").ConfigureAwait(false);
     }

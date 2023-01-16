@@ -9,9 +9,9 @@ internal static class HtmlTagsGenerator
     public static string GenerateTags()
     {
         var methods = string.Concat(Elements.Select(
-            el => el.isSelfClosing
-                ? SelfClosingTagDef(el.name, el.attrs)
-                : TagDef(el.name, el.attrs)
+            el => el.SelfClosing
+                ? SelfClosingTagDef(el.Name, el.Attrs)
+                : TagDef(el.Name, el.Attrs)
         ));
 
         return $@"#region GeneratedCode
@@ -28,7 +28,6 @@ namespace Eighty
 #endregion
 ";
     }
-
 
     private static string TagDef(string name, string[] attrs)
         => $@"
@@ -210,7 +209,6 @@ namespace Eighty
             {CheckChildNulls(n)}
             return new Tag(""{name}"", ImmutableArray.Create<Attr>(), ImmutableArrayFactory.Create({ChildArgs(n)}), false);
         }}"));
-
 
     private static string CountNonNulls(string[] attrs)
         => string.Concat(attrs.Select(a =>

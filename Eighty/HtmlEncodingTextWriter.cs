@@ -7,11 +7,11 @@ namespace Eighty;
 
 /// <summary>
 /// A mutable struct, be careful.
-/// 
+///
 /// Because this struct is a managed type (it contains arrays) and is referenced by pointer
 /// (see HtmlEncodingTextWriterReference), it must always stay on the stack so that the GC
 /// can reach the contained arrays.
-/// 
+///
 /// NB. Any changes to this file need to be paralleled in AsyncHtmlEncodingTextWriter.
 /// </summary>
 [StructLayout(LayoutKind.Auto)]
@@ -47,8 +47,9 @@ internal unsafe struct HtmlEncodingTextWriter
             {
                 var len = (int)(end - start);
                 var safeChunkLength = _htmlEncoder.FindFirstCharacterToEncode(start, len);
-                if (safeChunkLength == -1)  // no encoding chars in the input, write the whole string without encoding
+                if (safeChunkLength == -1)
                 {
+                    // no encoding chars in the input, write the whole string without encoding
                     safeChunkLength = len;
                 }
 
@@ -61,7 +62,7 @@ internal unsafe struct HtmlEncodingTextWriter
     }
 
     /// <summary>
-    /// Consume a run of HTML-encoding characters from the string
+    /// Consume a run of HTML-encoding characters from the string.
     /// </summary>
     private void WriteEncodingChars(ref char* start, char* end)
     {
@@ -99,6 +100,7 @@ internal unsafe struct HtmlEncodingTextWriter
                     throw new InvalidOperationException("Buffer overflow when encoding HTML. Please report this as a bug in Eighty!");
                 }
             }
+
             start += numberOfCharactersConsumed;
             _current += numberOfCharactersWritten;
         }
@@ -125,15 +127,17 @@ internal unsafe struct HtmlEncodingTextWriter
         if (end - start <= _end - _current)
         {
             // the whole string fits in the buffer, no need to flush
-
             for (; start < end; start++, _current++)
             {
                 *_current = *start;
             }
+
             return;
         }
+
         WriteInChunks(ref start, end);
     }
+
     private void WriteInChunks(ref char* start, char* end)
     {
         while (start < end)
@@ -152,7 +156,7 @@ internal unsafe struct HtmlEncodingTextWriter
 
     private void WriteUnicodeReplacementChar()
     {
-        WriteRaw(HtmlEncodingHelpers.UNICODE_REPLACEMENT_CHAR);
+        WriteRaw(HtmlEncodingHelpers.UnicodeReplacementChar);
     }
 
     private void FlushIfNecessary()

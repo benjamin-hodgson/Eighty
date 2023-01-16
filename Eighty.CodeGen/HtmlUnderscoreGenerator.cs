@@ -22,7 +22,6 @@ namespace Eighty
 ";
     }
 
-
     private static string UnderscoreMethod(int number)
         => $@"
         /// <summary>

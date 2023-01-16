@@ -16,13 +16,13 @@ public class TwentyRenderer : IHtmlBuilderRenderer<BenchModel>
         {
             _model = model;
         }
+
         protected override void Build()
         {
             for (var i = 0; i < _model.Iterations; i++)
             {
                 using (p(@class: _model.ClassName))
                 {
-
                 }
             }
         }

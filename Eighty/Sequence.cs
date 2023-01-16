@@ -8,7 +8,8 @@ internal sealed class Sequence : Html
 {
     private readonly ImmutableArray<Html> _children;
 
-    public Sequence(ImmutableArray<Html> children) : base(children.All(c => c.CanWriteAsync))
+    public Sequence(ImmutableArray<Html> children)
+        : base(children.All(c => c.CanWriteAsync))
     {
         _children = children;
     }

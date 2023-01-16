@@ -18,12 +18,14 @@ public class HtmlTests
         H html = "hello";
         Assert.Equal("hello", html.ToString());
     }
+
     [Fact]
     public void Text_HighAscii()
     {
         H html = ((char)232).ToString();  // "è"
         Assert.Equal("&#xE8;", html.ToString());
     }
+
     [Fact]
     public void LongText()
     {
@@ -32,18 +34,21 @@ public class HtmlTests
             H html = expected;
             Assert.Equal(expected, html.ToString());
         }
+
         {
             var expected = string.Concat(Enumerable.Repeat("abcdefghijkl", 5000));
             H html = expected;
             Assert.Equal(expected, html.ToString());
         }
     }
+
     [Fact]
     public void TextEscaping()
     {
         H html = "<>\"&'";
         Assert.Equal("&lt;&gt;&quot;&amp;&#x27;", html.ToString());
     }
+
     [Fact]
     public void TextEscaping_Long()
     {
@@ -51,6 +56,7 @@ public class HtmlTests
         var expected = string.Concat(Enumerable.Repeat("&lt;&gt;&quot;&amp;&#x27;", 10000));
         Assert.Equal(expected, html.ToString());
     }
+
     [Fact]
     public void TextEscaping_Unicode()
     {
@@ -58,11 +64,13 @@ public class HtmlTests
             H html = "\U0001F01C";
             Assert.Equal("&#x1F01C;", html.ToString());
         }
+
         {
             H html = "\U0001F01C then some text";
             Assert.Equal("&#x1F01C; then some text", html.ToString());
         }
     }
+
     [Fact]
     public void Text_BadSurrogatePair()
     {
@@ -71,34 +79,40 @@ public class HtmlTests
             H html = new string(new[] { '\xdc1c' });
             Assert.Equal("\uFFFD", html.ToString());
         }
+
         {
             // a high surrogate on its own
             H html = new string(new[] { '\xd83c' });
             Assert.Equal("\uFFFD", html.ToString());
         }
+
         {
             // "\U0001F01C" is '\xd83c', '\xdc1c', so flipping them produces an invalid pair
             H html = new string(new[] { '\xdc1c', '\xd83c' });
             Assert.Equal("\uFFFD\uFFFD", html.ToString());
         }
+
         {
             // a single bad surrogate followed by a valid pair
             H html = new string(new[] { '\xdc1c', '\xd83c', '\xdc1c' });
             Assert.Equal("\uFFFD&#x1F01C;", html.ToString());
         }
     }
+
     [Fact]
     public void RawText()
     {
         var html = Raw("<>\"");
         Assert.Equal("<>\"", html.ToString());
     }
+
     [Fact]
     public void SelfClosingTag()
     {
         var html = img();
         Assert.Equal("<img/>", html.ToString());
     }
+
     [Fact]
     public void EmptyTag()
     {
@@ -106,15 +120,18 @@ public class HtmlTests
             var html = p()._();
             Assert.Equal("<p></p>", html.ToString());
         }
+
         {
             var html = p_();
             Assert.Equal("<p></p>", html.ToString());
         }
+
         {
             H html = p();
             Assert.Equal("<p></p>", html.ToString());
         }
     }
+
     [Fact]
     public void TagWithText()
     {
@@ -122,11 +139,13 @@ public class HtmlTests
             var html = p()._("hello");
             Assert.Equal("<p>hello</p>", html.ToString());
         }
+
         {
             var html = p_("hello");
             Assert.Equal("<p>hello</p>", html.ToString());
         }
     }
+
     [Fact]
     public void TagWithChildren()
     {
@@ -134,6 +153,7 @@ public class HtmlTests
             var html = p()._(a(), img());
             Assert.Equal("<p><a></a><img/></p>", html.ToString());
         }
+
         {
             var html = p_(a(), img());
             Assert.Equal("<p><a></a><img/></p>", html.ToString());
@@ -144,6 +164,7 @@ public class HtmlTests
             var html = p()._(img(), img(), img(), img(), img(), img(), img(), img());
             Assert.Equal("<p><img/><img/><img/><img/><img/><img/><img/><img/></p>", html.ToString());
         }
+
         {
             var html = p_(img(), img(), img(), img(), img(), img(), img(), img());
             Assert.Equal("<p><img/><img/><img/><img/><img/><img/><img/><img/></p>", html.ToString());
@@ -154,11 +175,13 @@ public class HtmlTests
             var html = p()._(img(), img(), img(), img(), img(), img(), img(), img(), img());
             Assert.Equal("<p><img/><img/><img/><img/><img/><img/><img/><img/><img/></p>", html.ToString());
         }
+
         {
             var html = p_(img(), img(), img(), img(), img(), img(), img(), img(), img());
             Assert.Equal("<p><img/><img/><img/><img/><img/><img/><img/><img/><img/></p>", html.ToString());
         }
     }
+
     [Fact]
     public void Siblings()
     {
@@ -178,9 +201,12 @@ public class HtmlTests
     {
         protected override void Build()
         {
-            using (a()) { }
+            using (a())
+            {
+            }
         }
     }
+
     [Fact]
     public void Builder()
     {
@@ -189,7 +215,6 @@ public class HtmlTests
     }
 
     // attributes
-
     [Fact]
     public void SelfClosingTagWithAttrs()
     {
@@ -197,6 +222,7 @@ public class HtmlTests
             var html = img(src: "http://foo.bar.baz", title: "my image");
             Assert.Equal("<img title=\"my image\" src=\"http://foo.bar.baz\"/>", html.ToString());
         }
+
         {
             var html = img(("src", "http://foo.bar.baz"), ("title", "my image"));
             Assert.Equal("<img src=\"http://foo.bar.baz\" title=\"my image\"/>", html.ToString());
@@ -214,6 +240,7 @@ public class HtmlTests
             Assert.Equal("<img x=\"y\" x=\"y\" x=\"y\" x=\"y\" x=\"y\" x=\"y\" x=\"y\" x=\"y\" x=\"y\"/>", html.ToString());
         }
     }
+
     [Fact]
     public void EmptyTagWithAttrs()
     {
@@ -221,11 +248,13 @@ public class HtmlTests
             var html = p(title: "my paragraph", @class: "foo")._();
             Assert.Equal("<p class=\"foo\" title=\"my paragraph\"></p>", html.ToString());
         }
+
         {
             var html = p(("title", "my paragraph"), ("class", "foo"))._();
             Assert.Equal("<p title=\"my paragraph\" class=\"foo\"></p>", html.ToString());
         }
     }
+
     [Fact]
     public void BooleanAttrs()
     {
@@ -233,15 +262,18 @@ public class HtmlTests
             var html = button(disabled: false)._();
             Assert.Equal("<button></button>", html.ToString());
         }
+
         {
             var html = button(disabled: true)._();
             Assert.Equal("<button disabled></button>", html.ToString());
         }
+
         {
             var html = button(new Attr("disabled"))._();
             Assert.Equal("<button disabled></button>", html.ToString());
         }
     }
+
     [Fact]
     public void AttrEscaping()
     {
@@ -249,11 +281,13 @@ public class HtmlTests
             var html = p(title: "<>\"")._();
             Assert.Equal("<p title=\"&lt;&gt;&quot;\"></p>", html.ToString());
         }
+
         {
             var html = p(("title", "<>\""), ("<>\"", "<>\""))._();
             Assert.Equal("<p title=\"&lt;&gt;&quot;\" &lt;&gt;&quot;=\"&lt;&gt;&quot;\"></p>", html.ToString());
         }
     }
+
     [Fact]
     public void BooleanAttrEscaping()
     {
@@ -262,6 +296,7 @@ public class HtmlTests
             Assert.Equal("<button &lt;&gt;&quot;></button>", html.ToString());
         }
     }
+
     [Fact]
     public void AttrRaw()
     {
@@ -270,6 +305,7 @@ public class HtmlTests
             Assert.Equal("<p <>\"=\"<>\"\"></p>", html.ToString());
         }
     }
+
     [Fact]
     public void BooleanAttrRaw()
     {

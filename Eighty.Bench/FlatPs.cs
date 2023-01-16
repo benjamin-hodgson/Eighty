@@ -8,7 +8,9 @@ public class FlatPs : HtmlBuilder
     {
         for (var i = 0; i < 1000; i++)
         {
-            using (p(@class: "para<>")) { }
+            using (p(@class: "para<>"))
+            {
+            }
         }
     }
 }

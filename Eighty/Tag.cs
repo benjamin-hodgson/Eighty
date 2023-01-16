@@ -11,7 +11,8 @@ internal sealed class Tag : Html
     private readonly ImmutableArray<Html> _children;
     private readonly bool _shouldEncodeName;
 
-    public Tag(string name, ImmutableArray<Attr> attributes, ImmutableArray<Html> children, bool shouldEncodeName) : base(children.All(c => c.CanWriteAsync))
+    public Tag(string name, ImmutableArray<Attr> attributes, ImmutableArray<Html> children, bool shouldEncodeName)
+        : base(children.All(c => c.CanWriteAsync))
     {
         _tagName = name;
         _attributes = attributes;
