@@ -2,7 +2,7 @@ using Eighty.Twenty;
 
 namespace Eighty.AspNetCore.TestApp.Views.Test;
 
-internal class TestHtmlBuilder : HtmlBuilder
+internal sealed class TestHtmlBuilder : HtmlBuilder
 {
     private readonly int _count;
 

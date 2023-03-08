@@ -1,6 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
     <Import Project="../Eighty.BuildTool.props" />
 
+    <PropertyGroup>
+        <NoWarn>$(NoWarn);CA1852</NoWarn>  <!-- https://github.com/dotnet/roslyn-analyzers/pull/6504 -->
+    </PropertyGroup>
+
     <ItemGroup>
         <ProjectReference Include="..\Eighty\Eighty.csproj" />
         <ProjectReference Include="..\Eighty.AspNetCore\Eighty.AspNetCore.csproj" />

@@ -8,7 +8,7 @@ public class BenchController : Controller
 {
     private static readonly BenchModel _model = new(1000, "foo<>");
 
-    public IActionResult Empty()
+    public new IActionResult Empty()
     {
         return NoContent();
     }

@@ -197,7 +197,7 @@ public class HtmlTests
         }
     }
 
-    private class MyHtmlBuilder : HtmlBuilder
+    private sealed class MyHtmlBuilder : HtmlBuilder
     {
         protected override void Build()
         {

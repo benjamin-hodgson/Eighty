@@ -31,31 +31,31 @@ public class WebAppBench : IDisposable
     [Benchmark]
     public async Task Empty() // just measure the time to get an empty response, so can subtract from the other benchmarks
     {
-        await _client!.GetStringAsync("/Bench/Empty").ConfigureAwait(false);
+        await _client!.GetStringAsync(new Uri("/Bench/Empty")).ConfigureAwait(false);
     }
 
     [Benchmark(Baseline = true)]
     public async Task Razor()
     {
-        await _client!.GetStringAsync("/Bench/Razor").ConfigureAwait(false);
+        await _client!.GetStringAsync(new Uri("/Bench/Razor")).ConfigureAwait(false);
     }
 
     [Benchmark]
     public async Task Eighty()
     {
-        await _client!.GetStringAsync("/Bench/Eighty").ConfigureAwait(false);
+        await _client!.GetStringAsync(new Uri("/Bench/Eighty")).ConfigureAwait(false);
     }
 
     [Benchmark]
     public async Task EightyAsync()
     {
-        await _client!.GetStringAsync("/Bench/EightyAsync").ConfigureAwait(false);
+        await _client!.GetStringAsync(new Uri("/Bench/EightyAsync")).ConfigureAwait(false);
     }
 
     [Benchmark]
     public async Task Twenty()
     {
-        await _client!.GetStringAsync("/Bench/Twenty").ConfigureAwait(false);
+        await _client!.GetStringAsync(new Uri("/Bench/Twenty")).ConfigureAwait(false);
     }
 
     public void Dispose()

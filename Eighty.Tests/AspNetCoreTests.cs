@@ -1,3 +1,4 @@
+using System;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Net;
@@ -17,7 +18,8 @@ using static Eighty.Html;
 
 namespace Eighty.Tests;
 
-[SuppressMessage("design", "CA1001", Justification = "Test code")] // Type owns disposable field(s) but is not disposable
+[SuppressMessage("design", "CA1001: Types that own disposable fields should be disposable", Justification = "Test code")]
+[SuppressMessage("usage", "CA2234: Pass System.Uri objects instead of strings", Justification = "Test code")]
 public class AspNetCoreTests
 {
     private readonly TestServer _server;
@@ -43,7 +45,7 @@ public class AspNetCoreTests
         Assert.Equal("<p></p>", writer.ToString());
     }
 
-    private class MyHtmlBuilder : HtmlBuilder
+    private sealed class MyHtmlBuilder : HtmlBuilder
     {
         protected override void Build()
         {

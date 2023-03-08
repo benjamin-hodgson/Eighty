@@ -8,7 +8,7 @@ namespace Eighty.Tests;
 
 public class HtmlBuilderTests
 {
-    private class MyHtmlBuilder : HtmlBuilder
+    private sealed class MyHtmlBuilder : HtmlBuilder
     {
         protected override void Build()
         {
@@ -71,7 +71,7 @@ public class HtmlBuilderTests
         }
     }
 
-    private class HtmlBuilderWithHtml : HtmlBuilder
+    private sealed class HtmlBuilderWithHtml : HtmlBuilder
     {
         protected override void Build()
         {
@@ -88,7 +88,7 @@ public class HtmlBuilderTests
         Assert.Equal("<p><a></a></p>", new HtmlBuilderWithHtml().ToString());
     }
 
-    private class TestPartial_HtmlBuilder1 : HtmlBuilder
+    private sealed class TestPartial_HtmlBuilder1 : HtmlBuilder
     {
         protected override void Build()
         {
@@ -99,7 +99,7 @@ public class HtmlBuilderTests
         }
     }
 
-    private class TestPartial_HtmlBuilder2 : HtmlBuilder
+    private sealed class TestPartial_HtmlBuilder2 : HtmlBuilder
     {
         protected override void Build()
         {

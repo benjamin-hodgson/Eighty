@@ -200,7 +200,7 @@ public class HtmlAsyncTests
         }
     }
 
-    private class MyHtmlBuilder : HtmlBuilder
+    private sealed class MyHtmlBuilder : HtmlBuilder
     {
         protected override void Build()
         {

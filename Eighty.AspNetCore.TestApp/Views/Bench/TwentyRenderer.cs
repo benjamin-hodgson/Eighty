@@ -8,7 +8,7 @@ public class TwentyRenderer : IHtmlBuilderRenderer<BenchModel>
     public HtmlBuilder GetHtmlBuilder(BenchModel model)
         => new MyHtmlBuilder(model);
 
-    private class MyHtmlBuilder : HtmlBuilder
+    private sealed class MyHtmlBuilder : HtmlBuilder
     {
         private readonly BenchModel _model;
 

@@ -4,7 +4,7 @@ using static Eighty.Html;
 
 namespace Eighty.AspNetCore.TestApp.Views.Test;
 
-internal class TestHtmlRenderer : IHtmlRenderer<int>
+internal sealed class TestHtmlRenderer : IHtmlRenderer<int>
 {
     public Html Render(int model)
     {
