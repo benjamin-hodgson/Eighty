@@ -297,6 +297,26 @@ public abstract partial class Html
     /// <summary>
     /// Put some siblings next to each other.
     /// </summary>
+    /// <remarks>
+    /// This method copies the <see cref="ReadOnlySpan{T}"/>.
+    /// </remarks>
+    /// <param name="siblings">The siblings.</param>
+    /// <returns>An instance of <see cref="Html"/>.</returns>
+    [SuppressMessage("naming", "SA1300", Justification = "Purposeful")] // Element should begin with an uppercase letter
+    public static Html _(ReadOnlySpan<Html> siblings)
+    {
+        var b = ImmutableArray.CreateBuilder<Html>(siblings.Length);
+        foreach (var sibling in siblings)
+        {
+            b.Add(sibling);
+        }
+
+        return _(b.MoveToImmutable());
+    }
+
+    /// <summary>
+    /// Put some siblings next to each other.
+    /// </summary>
     /// <param name="siblings">The siblings.</param>
     /// <returns>An instance of <see cref="Html"/>.</returns>
     [SuppressMessage("naming", "SA1300", Justification = "Purposeful")] // Element should begin with an uppercase letter

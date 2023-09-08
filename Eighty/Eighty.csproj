@@ -10,6 +10,7 @@
     <ItemGroup>
         <PackageReference Include="System.Buffers" />
         <PackageReference Include="System.Collections.Immutable" />
+        <PackageReference Include="System.Memory" />
         <PackageReference Include="System.Runtime.CompilerServices.Unsafe" />
         <PackageReference Include="System.Text.Encodings.Web" />
         <PackageReference Include="System.Threading.Tasks.Extensions" />
