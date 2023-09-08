@@ -1,3 +1,15 @@
+2.1.0
+-----
+
+### Added
+
+* An overload of `_` which accepts a `ReadOnlySpan`
+
+### Changed
+
+* Some declared dependency versions
+
+
 2.0.0
 -----
 
