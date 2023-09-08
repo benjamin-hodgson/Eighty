@@ -211,6 +211,15 @@ references:
   fullName.vb: Eighty.Html._(System.Collections.Immutable.ImmutableList(Of Eighty.Html))
   nameWithType: Html._(ImmutableList<Html>)
   nameWithType.vb: Html._(ImmutableList(Of Html))
+- uid: Eighty.Html._(System.ReadOnlySpan{Eighty.Html})
+  name: _(ReadOnlySpan<Html>)
+  href: Eighty.Html.html#Eighty_Html___System_ReadOnlySpan_Eighty_Html__
+  commentId: M:Eighty.Html._(System.ReadOnlySpan{Eighty.Html})
+  name.vb: _(ReadOnlySpan(Of Html))
+  fullName: Eighty.Html._(System.ReadOnlySpan<Eighty.Html>)
+  fullName.vb: Eighty.Html._(System.ReadOnlySpan(Of Eighty.Html))
+  nameWithType: Html._(ReadOnlySpan<Html>)
+  nameWithType.vb: Html._(ReadOnlySpan(Of Html))
 - uid: Eighty.Html._*
   name: _
   href: Eighty.Html.html#Eighty_Html___
