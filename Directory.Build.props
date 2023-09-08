@@ -9,6 +9,7 @@
         <RepositoryUrl>https://github.com/benjamin-hodgson/Eighty.git</RepositoryUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
 
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)Eighty.snk</AssemblyOriginatorKeyFile>
 
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
