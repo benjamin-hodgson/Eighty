@@ -1,0 +1,601 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Class Attr
+     | Eighty </title>
+        <meta name="viewport" content="width=device-width">
+        <meta name="title" content="Class Attr
+     | Eighty ">
+        <meta name="generator" content="docfx 2.59.2.0">
+    
+        
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="shortcut" "icon"="" href="/favicon.ico" type="image/x-icon">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2.1.1/out/water.min.css" integrity="sha256-QST90Wzz4PEr5KlclQaOCsjc00FTyf86Wrj41oqZB4w=" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/highlight.css">
+        
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script async="" id="highlightjs-script" src="js/third-party/highlight.js"></script>
+        <script defer="" src="js/main.js"></script>
+        
+        
+    </head>
+    <body>
+        <header class="row-space">
+            <h1 class="title"><a href="Eighty" class="xref">Eighty</a></h1>
+            <form role="search">
+                <input type="text" id="search" placeholder="Search" autocomplete="off">
+            </form>
+        </header>
+
+        <div id="search-results" class="centre">
+            
+        </div>
+
+        <main class="columns hide-when-search">
+            <div class="col col-md">
+                <button type="button" class="sm:block centre js-expander" aria-controls="toc">Show / Hide Table of Contents</button>
+                <nav id="toc" class="sticky sm:hide">
+                    <form>
+                        <input id="toc-filter" type="text" placeholder="Enter here to filter...">
+                    </form>
+                            <ul id="toc0" class="active active-i">
+                                    <li>
+                                            <button type="button" class="link expander active active-i js-expander" aria-controls="toc0_0"></button>
+                                            <a href="Eighty.html" title="Eighty" class="active active-i">Eighty</a>
+                                            <ul id="toc0_0" class="active active-i">
+                                                    <li>
+                                                            <a href="Eighty.Attr.html" title="Attr" class="active active-i">Attr</a>
+                                                    </li>
+                                                    <li>
+                                                            <a href="Eighty.Html.html" title="Html" class="">Html</a>
+                                                    </li>
+                                                    <li>
+                                                            <a href="Eighty.IHtmlRenderer-1.html" title="IHtmlRenderer&lt;TModel&gt;" class="">IHtmlRenderer&lt;TModel&gt;</a>
+                                                    </li>
+                                                    <li>
+                                                            <a href="Eighty.TagBuilder.html" title="TagBuilder" class="">TagBuilder</a>
+                                                    </li>
+                                            </ul>
+                                    </li>
+                                    <li>
+                                            <button type="button" class="link expander  js-expander" aria-controls="toc0_1"></button>
+                                            <a href="Eighty.Twenty.html" title="Eighty.Twenty" class="">Eighty.Twenty</a>
+                                            <ul id="toc0_1" class="">
+                                                    <li>
+                                                            <a href="Eighty.Twenty.HtmlBuilder.html" title="HtmlBuilder" class="">HtmlBuilder</a>
+                                                    </li>
+                                                    <li>
+                                                            <a href="Eighty.Twenty.IHtmlBuilderRenderer-1.html" title="IHtmlBuilderRenderer&lt;TModel&gt;" class="">IHtmlBuilderRenderer&lt;TModel&gt;</a>
+                                                    </li>
+                                                    <li>
+                                                            <a href="Eighty.Twenty.TagBuilder.html" title="TagBuilder" class="">TagBuilder</a>
+                                                    </li>
+                                            </ul>
+                                    </li>
+                            </ul>
+                </nav>
+            </div>
+
+            <div class="col columns">
+<article class="col">
+        <h1 id="Eighty_Attr"><a href="#Eighty_Attr">Class Attr
+        </a></h1>
+        <div><p>Represents an HTML attribute.</p>
+</div>
+            <h5>Inheritance</h5>
+            <ul>
+                    <li><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></li>
+                <li>Attr</li>
+            </ul>
+            <h5>Implements</h5>
+            <ul>
+                    <li><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Eighty.Attr.html">Attr</a>&gt;</li>
+            </ul>
+        
+        
+        <h5>Declaration</h5>
+        <pre><code class="lang-csharp hljs">public sealed class Attr : ValueType</code></pre>
+        
+        
+        
+            <h3 id="constructors"><a href="#constructors">Constructors
+        </a></h3>
+
+                
+                <a id="Eighty_Attr__ctor_"></a>
+                <h4 id="Eighty_Attr__ctor_System_String_"><a href="#Eighty_Attr__ctor_System_String_">Attr(String)</a></h4>
+                <div><p>Create a Boolean HTML attribute.</p>
+</div>
+                <h5>Declaration</h5>
+                    <pre><code class="lang-csharp hljs">public Attr(string name)</code></pre>
+
+                        <h5>Parameters</h5>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p></td>
+                                    <td><p>name</p></td>
+                                    <td><p>The name of the attribute.</p>
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+        
+        
+        
+        
+        
+        
+        
+        
+                        
+        
+                
+                <a id="Eighty_Attr__ctor_"></a>
+                <h4 id="Eighty_Attr__ctor_System_String_System_String_"><a href="#Eighty_Attr__ctor_System_String_System_String_">Attr(String, String)</a></h4>
+                <div><p>Create an HTML attribute.</p>
+</div>
+                <h5>Declaration</h5>
+                    <pre><code class="lang-csharp hljs">public Attr(string name, string value)</code></pre>
+
+                        <h5>Parameters</h5>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p></td>
+                                    <td><p>name</p></td>
+                                    <td><p>The name of the attribute.</p>
+</td>
+                                </tr>
+                                <tr>
+                                    <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p></td>
+                                    <td><p>value</p></td>
+                                    <td><p>The value.</p>
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+        
+        
+        
+        
+        
+        
+        
+        
+                        
+        
+            <h3 id="methods"><a href="#methods">Methods
+        </a></h3>
+
+                
+                <a id="Eighty_Attr_Equals_"></a>
+                <h4 id="Eighty_Attr_Equals_Eighty_Attr_"><a href="#Eighty_Attr_Equals_Eighty_Attr_">Equals(Attr)</a></h4>
+                <div></div>
+                <h5>Declaration</h5>
+                    <pre><code class="lang-csharp hljs">public bool Equals(Attr attr)</code></pre>
+
+                        <h5>Parameters</h5>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><p><a class="xref" href="Eighty.Attr.html">Attr</a></p></td>
+                                    <td><p>attr</p></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+        
+                        <h5>Returns</h5>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+        
+        
+        
+        
+        
+        
+        
+                        
+        
+                
+                <a id="Eighty_Attr_Equals_"></a>
+                <h4 id="Eighty_Attr_Equals_System_Object_"><a href="#Eighty_Attr_Equals_System_Object_">Equals(Object)</a></h4>
+                <div></div>
+                <h5>Declaration</h5>
+                    <pre><code class="lang-csharp hljs">public override bool Equals(object other)</code></pre>
+
+                        <h5>Parameters</h5>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p></td>
+                                    <td><p>other</p></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+        
+                        <h5>Returns</h5>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+        
+        
+        
+        
+        
+        
+        
+                        
+        
+                
+                <a id="Eighty_Attr_FromValueTuple_"></a>
+                <h4 id="Eighty_Attr_FromValueTuple_System_ValueTuple_System_String_System_String__"><a href="#Eighty_Attr_FromValueTuple_System_ValueTuple_System_String_System_String__">FromValueTuple((String, String))</a></h4>
+                <div><p>Create an HTML attribute.</p>
+</div>
+                <h5>Declaration</h5>
+                    <pre><code class="lang-csharp hljs">public static Attr FromValueTuple((string, string) nameValue)</code></pre>
+
+                        <h5>Parameters</h5>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-2">(, )</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</p></td>
+                                    <td><p>nameValue</p></td>
+                                    <td><p>The name and value of the attribute.</p>
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+        
+                        <h5>Returns</h5>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><p><a class="xref" href="Eighty.Attr.html">Attr</a></p></td>
+                                    <td><p>An <a class="xref" href="Eighty.Attr.html">Attr</a>.</p>
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+        
+        
+        
+        
+        
+        
+        
+                        
+        
+                
+                <a id="Eighty_Attr_GetHashCode_"></a>
+                <h4 id="Eighty_Attr_GetHashCode"><a href="#Eighty_Attr_GetHashCode">GetHashCode()</a></h4>
+                <div></div>
+                <h5>Declaration</h5>
+                    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+
+        
+                        <h5>Returns</h5>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+        
+        
+        
+        
+        
+        
+        
+                        
+        
+                
+                <a id="Eighty_Attr_Raw_"></a>
+                <h4 id="Eighty_Attr_Raw_System_String_"><a href="#Eighty_Attr_Raw_System_String_">Raw(String)</a></h4>
+                <div><p>Create a Boolean HTML attribute without HTML-encoding the name first.</p>
+</div>
+                <h5>Declaration</h5>
+                    <pre><code class="lang-csharp hljs">public static Attr Raw(string name)</code></pre>
+
+                        <h5>Parameters</h5>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p></td>
+                                    <td><p>name</p></td>
+                                    <td><p>The pre-encoded name.</p>
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+        
+                        <h5>Returns</h5>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><p><a class="xref" href="Eighty.Attr.html">Attr</a></p></td>
+                                    <td><p>An HTML attribute.</p>
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+        
+        
+        
+        
+        
+        
+        
+                        
+        
+                
+                <a id="Eighty_Attr_Raw_"></a>
+                <h4 id="Eighty_Attr_Raw_System_String_System_String_"><a href="#Eighty_Attr_Raw_System_String_System_String_">Raw(String, String)</a></h4>
+                <div><p>Create an HTML attribute without HTML-encoding the name and value first.</p>
+</div>
+                <h5>Declaration</h5>
+                    <pre><code class="lang-csharp hljs">public static Attr Raw(string name, string value)</code></pre>
+
+                        <h5>Parameters</h5>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p></td>
+                                    <td><p>name</p></td>
+                                    <td><p>The pre-encoded name.</p>
+</td>
+                                </tr>
+                                <tr>
+                                    <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p></td>
+                                    <td><p>value</p></td>
+                                    <td><p>The pre-encoded value.</p>
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+        
+                        <h5>Returns</h5>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><p><a class="xref" href="Eighty.Attr.html">Attr</a></p></td>
+                                    <td><p>An HTML attribute.</p>
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+        
+        
+        
+        
+        
+        
+        
+                        
+        
+            <h3 id="operators"><a href="#operators">Operators
+        </a></h3>
+
+                
+                <a id="Eighty_Attr_op_Implicit_"></a>
+                <h4 id="Eighty_Attr_op_Implicit_System_ValueTuple_System_String_System_String___Eighty_Attr"><a href="#Eighty_Attr_op_Implicit_System_ValueTuple_System_String_System_String___Eighty_Attr">Implicit((String, String) to Attr)</a></h4>
+                <div><p>Create an HTML attribute.</p>
+</div>
+                <h5>Declaration</h5>
+                    <pre><code class="lang-csharp hljs">public static implicit operator Attr((string, string) nameValue)</code></pre>
+
+                        <h5>Parameters</h5>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-2">(, )</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</p></td>
+                                    <td><p>nameValue</p></td>
+                                    <td><p>The name and value of the attribute.</p>
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+        
+                        <h5>Returns</h5>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><p><a class="xref" href="Eighty.Attr.html">Attr</a></p></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+        
+        
+        
+        
+        
+        
+        
+                        
+        
+        
+        <h3 id="implements"><a href="#implements">Implements</a></h3>
+        <div>
+                <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">System.IEquatable&lt;T&gt;</a>
+        </div>
+        
+
+        
+
+    </article>
+
+<div class="col col-sm sticky md:hide">
+    <h5>In This Article</h5>
+    <nav id="local-toc">
+        <ul class="active">
+            <li>
+                <a class="active" href="#Eighty_Attr">Class Attr
+    </a>
+                <ul class="active">
+                        <li>
+                            <a href="#constructors">Constructors
+    </a>
+
+                            <ul>
+                                    <li><a href="#Eighty_Attr__ctor_System_String_">Attr(String)</a></li>
+                                    <li><a href="#Eighty_Attr__ctor_System_String_System_String_">Attr(String, String)</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#methods">Methods
+    </a>
+
+                            <ul>
+                                    <li><a href="#Eighty_Attr_Equals_Eighty_Attr_">Equals(Attr)</a></li>
+                                    <li><a href="#Eighty_Attr_Equals_System_Object_">Equals(Object)</a></li>
+                                    <li><a href="#Eighty_Attr_FromValueTuple_System_ValueTuple_System_String_System_String__">FromValueTuple((String, String))</a></li>
+                                    <li><a href="#Eighty_Attr_GetHashCode">GetHashCode()</a></li>
+                                    <li><a href="#Eighty_Attr_Raw_System_String_">Raw(String)</a></li>
+                                    <li><a href="#Eighty_Attr_Raw_System_String_System_String_">Raw(String, String)</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#operators">Operators
+    </a>
+
+                            <ul>
+                                    <li><a href="#Eighty_Attr_op_Implicit_System_ValueTuple_System_String_System_String___Eighty_Attr">Implicit((String, String) to Attr)</a></li>
+                            </ul>
+                        </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+</div>
+        </main>
+
+        <footer class="row-space">
+            <span>
+                <a href="#top">Back to top</a>
+            </span>
+            <span>Generated by <strong>DocFX</strong></span>
+        </footer>
+
+            </body>
+</html>
