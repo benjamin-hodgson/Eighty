@@ -3,13 +3,8 @@
 
     <PropertyGroup>
         <OutputType>exe</OutputType>
-        <NoWarn>$(NoWarn);CA1852</NoWarn>  <!-- https://github.com/dotnet/roslyn-analyzers/pull/6504 -->
-    </PropertyGroup>
-
-    <PropertyGroup>
         <PreserveCompilationContext>true</PreserveCompilationContext>
     </PropertyGroup>
-
 
     <ItemGroup>
         <FrameworkReference Include="Microsoft.AspNetCore.App" />
@@ -21,15 +16,4 @@
         <ProjectReference Include="..\Eighty\Eighty.csproj" />
         <ProjectReference Include="..\Eighty.AspNetCore.TestApp\Eighty.AspNetCore.TestApp.csproj" />
     </ItemGroup>
-
-    <!--
-      Work around https://github.com/NuGet/Home/issues/4412. MVC uses DependencyContext.Load() which looks next to a .dll
-      for a .deps.json. Information isn't available elsewhere. Need the .deps.json file for all web site applications.
-    -->
-    <Target Name="CopyDepsFiles" AfterTargets="Build" Condition="'$(TargetFramework)'!=''">
-        <ItemGroup>
-            <DepsFilePaths Include="$([System.IO.Path]::ChangeExtension('%(_ResolvedProjectReferencePaths.FullPath)', '.deps.json'))" />
-        </ItemGroup>
-        <Copy SourceFiles="%(DepsFilePaths.FullPath)" DestinationFolder="$(OutputPath)" Condition="Exists('%(DepsFilePaths.FullPath)')" />
-    </Target>
 </Project>

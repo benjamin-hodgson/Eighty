@@ -2,36 +2,22 @@
     <Import Project="../Eighty.BuildTool.props" />
 
     <PropertyGroup>
-        <NoWarn>$(NoWarn);CA2007</NoWarn>  <!-- CA2007: Consider calling ConfigureAwait on the awaited task -->
-    </PropertyGroup>
-
-    <PropertyGroup>
         <PreserveCompilationContext>true</PreserveCompilationContext>
+        <NoWarn>$(NoWarn);CA2007</NoWarn>  <!-- CA2007: Consider calling ConfigureAwait on the awaited task -->
     </PropertyGroup>
 
     <ItemGroup>
         <FrameworkReference Include="Microsoft.AspNetCore.App" />
+        <PackageReference Include="coverlet.collector" />
+        <PackageReference Include="Microsoft.AspNetCore.TestHost" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" />
         <PackageReference Include="xunit" />
         <PackageReference Include="xunit.runner.visualstudio" />
-        <PackageReference Include="coverlet.collector" />
-        <PackageReference Include="Microsoft.AspNetCore.TestHost" />
     </ItemGroup>
 
     <ItemGroup>
         <ProjectReference Include="..\Eighty\Eighty.csproj" />
-        <ProjectReference Include="..\Eighty.AspNetCore.TestApp\Eighty.AspNetCore.TestApp.csproj" />
         <ProjectReference Include="..\Eighty.AspNetCore\Eighty.AspNetCore.csproj" />
+        <ProjectReference Include="..\Eighty.AspNetCore.TestApp\Eighty.AspNetCore.TestApp.csproj" />
     </ItemGroup>
-
-    <!--
-      Work around https://github.com/NuGet/Home/issues/4412. MVC uses DependencyContext.Load() which looks next to a .dll
-      for a .deps.json. Information isn't available elsewhere. Need the .deps.json file for all web site applications.
-    -->
-    <Target Name="CopyDepsFiles" AfterTargets="Build" Condition="'$(TargetFramework)'!=''">
-        <ItemGroup>
-            <DepsFilePaths Include="$([System.IO.Path]::ChangeExtension('%(_ResolvedProjectReferencePaths.FullPath)', '.deps.json'))" />
-        </ItemGroup>
-        <Copy SourceFiles="%(DepsFilePaths.FullPath)" DestinationFolder="$(OutputPath)" Condition="Exists('%(DepsFilePaths.FullPath)')" />
-    </Target>
 </Project>
