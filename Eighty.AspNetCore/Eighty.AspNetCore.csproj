@@ -7,6 +7,14 @@
         <NoWarn>$(NoWarn);NETSDK1138</NoWarn> <!-- NETSDK1138: The target framework 'net5.0' is out of support -->
     </PropertyGroup>
 
+    <PropertyGroup>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="../README.md" Pack="true" PackagePath="/"/>
+    </ItemGroup>
+
     <ItemGroup>
         <FrameworkReference Include="Microsoft.AspNetCore.App" />
     </ItemGroup>

@@ -7,6 +7,14 @@
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
 
+    <PropertyGroup>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="../README.md" Pack="true" PackagePath="/"/>
+    </ItemGroup>
+
     <ItemGroup>
         <PackageReference Include="System.Buffers" />
         <PackageReference Include="System.Collections.Immutable" />
