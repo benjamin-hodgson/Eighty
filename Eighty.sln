@@ -14,6 +14,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eighty.AspNetCore.TestApp",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eighty.AspNetCore", "Eighty.AspNetCore\Eighty.AspNetCore.csproj", "{4D0FECBE-737E-45C3-9EE8-B1224326E3F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eighty.Docs", "Eighty.Docs\Eighty.Docs.proj", "{0A088D29-D183-4E23-8A6A-729BEE9857BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,24 @@ Global
 		{4D0FECBE-737E-45C3-9EE8-B1224326E3F6}.Release|x64.Build.0 = Release|Any CPU
 		{4D0FECBE-737E-45C3-9EE8-B1224326E3F6}.Release|x86.ActiveCfg = Release|Any CPU
 		{4D0FECBE-737E-45C3-9EE8-B1224326E3F6}.Release|x86.Build.0 = Release|Any CPU
+		{0A088D29-D183-4E23-8A6A-729BEE9857BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A088D29-D183-4E23-8A6A-729BEE9857BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A088D29-D183-4E23-8A6A-729BEE9857BD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0A088D29-D183-4E23-8A6A-729BEE9857BD}.Debug|x64.Build.0 = Debug|Any CPU
+		{0A088D29-D183-4E23-8A6A-729BEE9857BD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0A088D29-D183-4E23-8A6A-729BEE9857BD}.Debug|x86.Build.0 = Debug|Any CPU
+		{0A088D29-D183-4E23-8A6A-729BEE9857BD}.DebugBuildLegacyFramework|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A088D29-D183-4E23-8A6A-729BEE9857BD}.DebugBuildLegacyFramework|Any CPU.Build.0 = Debug|Any CPU
+		{0A088D29-D183-4E23-8A6A-729BEE9857BD}.DebugBuildLegacyFramework|x64.ActiveCfg = Debug|Any CPU
+		{0A088D29-D183-4E23-8A6A-729BEE9857BD}.DebugBuildLegacyFramework|x64.Build.0 = Debug|Any CPU
+		{0A088D29-D183-4E23-8A6A-729BEE9857BD}.DebugBuildLegacyFramework|x86.ActiveCfg = Debug|Any CPU
+		{0A088D29-D183-4E23-8A6A-729BEE9857BD}.DebugBuildLegacyFramework|x86.Build.0 = Debug|Any CPU
+		{0A088D29-D183-4E23-8A6A-729BEE9857BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A088D29-D183-4E23-8A6A-729BEE9857BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A088D29-D183-4E23-8A6A-729BEE9857BD}.Release|x64.ActiveCfg = Release|Any CPU
+		{0A088D29-D183-4E23-8A6A-729BEE9857BD}.Release|x64.Build.0 = Release|Any CPU
+		{0A088D29-D183-4E23-8A6A-729BEE9857BD}.Release|x86.ActiveCfg = Release|Any CPU
+		{0A088D29-D183-4E23-8A6A-729BEE9857BD}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

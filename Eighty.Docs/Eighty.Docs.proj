@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.Build.NoTargets">
+
+    <Import Project="../Eighty.BuildTool.props" />
+
+    <PropertyGroup>
+        <IsDocumentationProject>true</IsDocumentationProject>
+        <DocumentationSiteTitle>Eighty</DocumentationSiteTitle>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../Eighty/Eighty.csproj">
+            <OutputItemType>DocumentationAssembly</OutputItemType>
+        </ProjectReference>
+        <ProjectReference Include="../Eighty.AspNetCore/Eighty.AspNetCore.csproj">
+            <OutputItemType>DocumentationAssembly</OutputItemType>
+        </ProjectReference>
+    </ItemGroup>
+
+</Project>
