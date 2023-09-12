@@ -1,0 +1,351 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/runner/work/Eighty/Eighty/Eighty.Docs/obj/Release",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.EightyHtmlContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.EightyHtmlContent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.Mvc.ActionResults.EightyActionResultFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.Mvc.ActionResults.EightyActionResultFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderRendererResult-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.Mvc.ActionResults.HtmlBuilderResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.Mvc.ActionResults.HtmlRendererResult-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.Mvc.ActionResults.HtmlResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.Mvc.ActionResults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.Mvc.ActionResults.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.Mvc.MvcBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.Mvc.MvcBuilderExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderRendererResultExecutor-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.Mvc.ResultExecutors.HtmlBuilderResultExecutor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.Mvc.ResultExecutors.HtmlRendererResultExecutor-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.Mvc.ResultExecutors.HtmlResultExecutor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.Mvc.ResultExecutors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.Mvc.ResultExecutors.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.Mvc.ViewFeatures.EightyMvcViewOptionsSetup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.Mvc.ViewFeatures.EightyMvcViewOptionsSetup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewAdapter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewAdapter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewEngine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewEngine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.Mvc.ViewFeatures.EightyViewOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.Mvc.ViewFeatures.TwentyViewAdapter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.Mvc.ViewFeatures.TwentyViewAdapter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.Mvc.ViewFeatures.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.Mvc.ViewFeatures.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.Mvc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.Mvc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.TwentyHtmlContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.TwentyHtmlContent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.AspNetCore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.AspNetCore.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.Attr.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.Attr.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.Html.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.Html.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.IHtmlRenderer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.IHtmlRenderer-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.TagBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.TagBuilder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.Twenty.HtmlBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.Twenty.HtmlBuilder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.Twenty.IHtmlBuilderRenderer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.Twenty.IHtmlBuilderRenderer-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.Twenty.TagBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.Twenty.TagBuilder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.Twenty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.Twenty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Eighty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Eighty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
