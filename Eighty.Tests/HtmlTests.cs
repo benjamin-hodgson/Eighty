@@ -74,6 +74,7 @@ public class HtmlTests
     [Fact]
     public void Text_BadSurrogatePair()
     {
+#pragma warning disable CA1861  // "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array"
         {
             // a low surrogate on its own
             H html = new string(new[] { '\xdc1c' });
@@ -97,6 +98,7 @@ public class HtmlTests
             H html = new string(new[] { '\xdc1c', '\xd83c', '\xdc1c' });
             Assert.Equal("\uFFFD&#x1F01C;", html.ToString());
         }
+#pragma warning restore CA1861  // "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array"
     }
 
     [Fact]

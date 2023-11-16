@@ -11,10 +11,7 @@ public class EightyRenderer : IHtmlRenderer<BenchModel>
 {
     public Html Render(BenchModel model)
     {
-        if (model == null)
-        {
-            throw new ArgumentNullException(nameof(model));
-        }
+        ArgumentNullException.ThrowIfNull(model);
 
         var builder = ImmutableArray.CreateBuilder<Html>(model.Iterations);
         for (var i = 0; i < model.Iterations; i++)

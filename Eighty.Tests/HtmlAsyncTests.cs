@@ -77,6 +77,7 @@ public class HtmlAsyncTests
     [Fact]
     public async Task Text_BadSurrogatePair()
     {
+#pragma warning disable CA1861  // "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array"
         {
             // a low surrogate on its own
             H html = new string(new[] { '\xdc1c' });
@@ -100,6 +101,7 @@ public class HtmlAsyncTests
             H html = new string(new[] { '\xdc1c', '\xd83c', '\xdc1c' });
             Assert.Equal("\uFFFD&#x1F01C;", await GetStringAsync(html));
         }
+#pragma warning restore CA1861  // "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array"
     }
 
     [Fact]

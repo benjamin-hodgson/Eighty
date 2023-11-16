@@ -13,6 +13,7 @@
         <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)Eighty.snk</AssemblyOriginatorKeyFile>
 
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+        <UseArtifactsOutput>true</UseArtifactsOutput>
 
         <Nullable>enable</Nullable>
     </PropertyGroup>

@@ -1,8 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
+
     <Import Project="../Eighty.BuildTool.props" />
 
     <ItemGroup>
         <ProjectReference Include="..\Eighty\Eighty.csproj" />
         <ProjectReference Include="..\Eighty.AspNetCore\Eighty.AspNetCore.csproj" />
     </ItemGroup>
+
 </Project>

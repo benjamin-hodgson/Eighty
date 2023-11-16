@@ -95,6 +95,7 @@ public class SimpleBench
         _flatPsTwenty!.Write(writer);
     }
 
+#pragma warning disable CA1822  // "Member does not access instance data and can be marked as static"
     [BenchmarkCategory("Deep")]
     [Benchmark(Baseline = true)]
     public void Deep_Eighty_BuildAndRender()
@@ -102,6 +103,7 @@ public class SimpleBench
         using var writer = new StreamWriter("output.html");
         DeepPs(1000).Write(writer);
     }
+#pragma warning restore CA1822  // "Member does not access instance data and can be marked as static"
 
     [BenchmarkCategory("Deep")]
     [Benchmark]
@@ -127,7 +129,7 @@ public class SimpleBench
         _deepPsTwenty!.Write(writer);
     }
 
-    private Html DeepPs(int lvl)
+    private static Html DeepPs(int lvl)
         => lvl == 0
             ? Text("")
             : p(@class: "para<>")._(DeepPs(lvl - 1));

@@ -1,4 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
+
     <Import Project="../Eighty.BuildTool.props" />
 
     <PropertyGroup>
@@ -16,4 +17,5 @@
         <ProjectReference Include="..\Eighty\Eighty.csproj" />
         <ProjectReference Include="..\Eighty.AspNetCore.TestApp\Eighty.AspNetCore.TestApp.csproj" />
     </ItemGroup>
+
 </Project>
