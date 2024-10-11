@@ -88,6 +88,24 @@ public class HtmlBuilderTests
         Assert.Equal("<p><a></a></p>", new HtmlBuilderWithHtml().ToString());
     }
 
+    private sealed class MisusedHtmlBuilderWithHtml : HtmlBuilder
+    {
+        protected override void Build()
+        {
+            using var disposable = p();
+            using (disposable)
+            {
+                Html(Eighty.Html.a());
+            }
+        }
+    }
+
+    [Fact]
+    public void TestMultipleDispose()
+    {
+        Assert.Equal("<p><a></a></p>", new MisusedHtmlBuilderWithHtml().ToString());
+    }
+
     private sealed class TestPartial_HtmlBuilder1 : HtmlBuilder
     {
         protected override void Build()

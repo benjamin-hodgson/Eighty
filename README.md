@@ -107,6 +107,6 @@ class MyHtmlBuilder : HtmlBuilder
 }
 ```
 
-The tag methods like `div` write the opening tag to the output stream and then return an `IDisposable` which writes the closing tag in its `Dispose` method. It's therefore imperative (ha ha) that you don't accidentally miss out a `using` statement, as that would result in a half-closed tag! You should also avoid calling `Dispose` more than once.
+The tag methods like `div` write the opening tag to the output stream and then return an `IDisposable` which writes the closing tag in its `Dispose` method. It's therefore imperative (ha ha) that you don't accidentally miss out a `using` statement, as that would result in a half-closed tag!
 
 It also means that `HtmlBuilder` is not thread-safe; instances of `HtmlBuilder` can only be safely accessed from one thread at a time. And it doesn't support `async`, because there's no way to implement `Dispose` asynchronously.

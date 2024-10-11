@@ -1,6 +1,7 @@
 ﻿using Eighty.AspNetCore.Mvc;
 
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -19,6 +20,11 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         services
+            .Configure<KestrelServerOptions>(options =>
+            {
+                // Allow synchronous IO for HtmlEncodingTextWriter.Flush
+                options.AllowSynchronousIO = true;
+            })
             .AddControllersWithViews()
             .AddEighty(
                 opts =>

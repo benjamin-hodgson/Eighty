@@ -8,9 +8,9 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a tag which takes children.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed after setting the tag's children.</returns>
         [NoDoc]
-        protected TagBuilder Tag(string name, Attr attr1)
+        protected IDisposable Tag(string name, Attr attr1)
         {
             StartTag(name);
             Attrs(attr1);
@@ -21,9 +21,9 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a tag which takes children.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed after setting the tag's children.</returns>
         [NoDoc]
-        protected TagBuilder Tag(string name, Attr attr1, Attr attr2)
+        protected IDisposable Tag(string name, Attr attr1, Attr attr2)
         {
             StartTag(name);
             Attrs(attr1, attr2);
@@ -34,9 +34,9 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a tag which takes children.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed after setting the tag's children.</returns>
         [NoDoc]
-        protected TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable Tag(string name, Attr attr1, Attr attr2, Attr attr3)
         {
             StartTag(name);
             Attrs(attr1, attr2, attr3);
@@ -47,9 +47,9 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a tag which takes children.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed after setting the tag's children.</returns>
         [NoDoc]
-        protected TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTag(name);
             Attrs(attr1, attr2, attr3, attr4);
@@ -60,9 +60,9 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a tag which takes children.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed after setting the tag's children.</returns>
         [NoDoc]
-        protected TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTag(name);
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -73,9 +73,9 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a tag which takes children.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed after setting the tag's children.</returns>
         [NoDoc]
-        protected TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTag(name);
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -86,9 +86,9 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a tag which takes children.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed after setting the tag's children.</returns>
         [NoDoc]
-        protected TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTag(name);
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -99,9 +99,9 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a tag which takes children.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed after setting the tag's children.</returns>
         [NoDoc]
-        protected TagBuilder Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable Tag(string name, Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTag(name);
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);

@@ -8,10 +8,10 @@ namespace Eighty.Twenty
     public abstract partial class HtmlBuilder
     {
         /// <summary>
-        /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an html element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder html(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable html(
             string id = null,
             string @class = null,
             string style = null,
@@ -56,10 +56,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an html element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder html(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable html(params Attr[] attrs)
         {
             StartTagRaw("html");
             Attrs(attrs);
@@ -68,10 +68,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an html element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder html(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable html(IEnumerable<Attr> attrs)
         {
             StartTagRaw("html");
             Attrs(attrs);
@@ -80,11 +80,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an html element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder html(Attr attr1)
+        protected IDisposable html(Attr attr1)
         {
             StartTagRaw("html");
             Attrs(attr1);
@@ -93,11 +93,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an html element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder html(Attr attr1, Attr attr2)
+        protected IDisposable html(Attr attr1, Attr attr2)
         {
             StartTagRaw("html");
             Attrs(attr1, attr2);
@@ -106,11 +106,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an html element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder html(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable html(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("html");
             Attrs(attr1, attr2, attr3);
@@ -119,11 +119,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an html element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable html(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("html");
             Attrs(attr1, attr2, attr3, attr4);
@@ -132,11 +132,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an html element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("html");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -145,11 +145,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an html element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("html");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -158,11 +158,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an html element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("html");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -171,11 +171,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an html element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an html element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable html(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("html");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -184,10 +184,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a head element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder head(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable head(
             string id = null,
             string @class = null,
             string style = null,
@@ -227,10 +227,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a head element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder head(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable head(params Attr[] attrs)
         {
             StartTagRaw("head");
             Attrs(attrs);
@@ -239,10 +239,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a head element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder head(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable head(IEnumerable<Attr> attrs)
         {
             StartTagRaw("head");
             Attrs(attrs);
@@ -251,11 +251,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a head element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder head(Attr attr1)
+        protected IDisposable head(Attr attr1)
         {
             StartTagRaw("head");
             Attrs(attr1);
@@ -264,11 +264,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a head element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder head(Attr attr1, Attr attr2)
+        protected IDisposable head(Attr attr1, Attr attr2)
         {
             StartTagRaw("head");
             Attrs(attr1, attr2);
@@ -277,11 +277,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a head element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder head(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable head(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("head");
             Attrs(attr1, attr2, attr3);
@@ -290,11 +290,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a head element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable head(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("head");
             Attrs(attr1, attr2, attr3, attr4);
@@ -303,11 +303,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a head element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("head");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -316,11 +316,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a head element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("head");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -329,11 +329,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a head element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("head");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -342,11 +342,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a head element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a head element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable head(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("head");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -355,10 +355,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a body element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder body(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable body(
             string id = null,
             string @class = null,
             string style = null,
@@ -398,10 +398,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a body element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder body(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable body(params Attr[] attrs)
         {
             StartTagRaw("body");
             Attrs(attrs);
@@ -410,10 +410,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a body element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder body(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable body(IEnumerable<Attr> attrs)
         {
             StartTagRaw("body");
             Attrs(attrs);
@@ -422,11 +422,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a body element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder body(Attr attr1)
+        protected IDisposable body(Attr attr1)
         {
             StartTagRaw("body");
             Attrs(attr1);
@@ -435,11 +435,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a body element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder body(Attr attr1, Attr attr2)
+        protected IDisposable body(Attr attr1, Attr attr2)
         {
             StartTagRaw("body");
             Attrs(attr1, attr2);
@@ -448,11 +448,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a body element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder body(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable body(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("body");
             Attrs(attr1, attr2, attr3);
@@ -461,11 +461,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a body element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable body(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("body");
             Attrs(attr1, attr2, attr3, attr4);
@@ -474,11 +474,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a body element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("body");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -487,11 +487,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a body element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("body");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -500,11 +500,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a body element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("body");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -513,11 +513,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a body element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a body element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable body(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("body");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -1023,10 +1023,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a style element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder style(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable style(
             string id = null,
             string @class = null,
             string style = null,
@@ -1076,10 +1076,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a style element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder style(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable style(params Attr[] attrs)
         {
             StartTagRaw("style");
             Attrs(attrs);
@@ -1088,10 +1088,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a style element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder style(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable style(IEnumerable<Attr> attrs)
         {
             StartTagRaw("style");
             Attrs(attrs);
@@ -1100,11 +1100,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a style element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder style(Attr attr1)
+        protected IDisposable style(Attr attr1)
         {
             StartTagRaw("style");
             Attrs(attr1);
@@ -1113,11 +1113,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a style element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder style(Attr attr1, Attr attr2)
+        protected IDisposable style(Attr attr1, Attr attr2)
         {
             StartTagRaw("style");
             Attrs(attr1, attr2);
@@ -1126,11 +1126,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a style element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder style(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable style(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("style");
             Attrs(attr1, attr2, attr3);
@@ -1139,11 +1139,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a style element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable style(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("style");
             Attrs(attr1, attr2, attr3, attr4);
@@ -1152,11 +1152,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a style element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("style");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -1165,11 +1165,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a style element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("style");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -1178,11 +1178,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a style element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("style");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -1191,11 +1191,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a style element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a style element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable style(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("style");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -1204,10 +1204,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a title element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder title(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable title(
             string id = null,
             string @class = null,
             string style = null,
@@ -1247,10 +1247,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a title element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder title(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable title(params Attr[] attrs)
         {
             StartTagRaw("title");
             Attrs(attrs);
@@ -1259,10 +1259,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a title element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder title(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable title(IEnumerable<Attr> attrs)
         {
             StartTagRaw("title");
             Attrs(attrs);
@@ -1271,11 +1271,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a title element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder title(Attr attr1)
+        protected IDisposable title(Attr attr1)
         {
             StartTagRaw("title");
             Attrs(attr1);
@@ -1284,11 +1284,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a title element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder title(Attr attr1, Attr attr2)
+        protected IDisposable title(Attr attr1, Attr attr2)
         {
             StartTagRaw("title");
             Attrs(attr1, attr2);
@@ -1297,11 +1297,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a title element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder title(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable title(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("title");
             Attrs(attr1, attr2, attr3);
@@ -1310,11 +1310,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a title element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable title(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("title");
             Attrs(attr1, attr2, attr3, attr4);
@@ -1323,11 +1323,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a title element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("title");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -1336,11 +1336,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a title element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("title");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -1349,11 +1349,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a title element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("title");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -1362,11 +1362,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a title element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a title element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable title(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("title");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -1375,10 +1375,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a script element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder script(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable script(
             string id = null,
             string @class = null,
             string style = null,
@@ -1438,10 +1438,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a script element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder script(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable script(params Attr[] attrs)
         {
             StartTagRaw("script");
             Attrs(attrs);
@@ -1450,10 +1450,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a script element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder script(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable script(IEnumerable<Attr> attrs)
         {
             StartTagRaw("script");
             Attrs(attrs);
@@ -1462,11 +1462,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a script element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder script(Attr attr1)
+        protected IDisposable script(Attr attr1)
         {
             StartTagRaw("script");
             Attrs(attr1);
@@ -1475,11 +1475,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a script element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder script(Attr attr1, Attr attr2)
+        protected IDisposable script(Attr attr1, Attr attr2)
         {
             StartTagRaw("script");
             Attrs(attr1, attr2);
@@ -1488,11 +1488,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a script element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder script(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable script(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("script");
             Attrs(attr1, attr2, attr3);
@@ -1501,11 +1501,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a script element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable script(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("script");
             Attrs(attr1, attr2, attr3, attr4);
@@ -1514,11 +1514,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a script element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("script");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -1527,11 +1527,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a script element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("script");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -1540,11 +1540,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a script element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("script");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -1553,11 +1553,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a script element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a script element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable script(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("script");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -1566,10 +1566,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a noscript element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder noscript(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable noscript(
             string id = null,
             string @class = null,
             string style = null,
@@ -1609,10 +1609,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a noscript element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder noscript(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable noscript(params Attr[] attrs)
         {
             StartTagRaw("noscript");
             Attrs(attrs);
@@ -1621,10 +1621,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a noscript element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder noscript(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable noscript(IEnumerable<Attr> attrs)
         {
             StartTagRaw("noscript");
             Attrs(attrs);
@@ -1633,11 +1633,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a noscript element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder noscript(Attr attr1)
+        protected IDisposable noscript(Attr attr1)
         {
             StartTagRaw("noscript");
             Attrs(attr1);
@@ -1646,11 +1646,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a noscript element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder noscript(Attr attr1, Attr attr2)
+        protected IDisposable noscript(Attr attr1, Attr attr2)
         {
             StartTagRaw("noscript");
             Attrs(attr1, attr2);
@@ -1659,11 +1659,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a noscript element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable noscript(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("noscript");
             Attrs(attr1, attr2, attr3);
@@ -1672,11 +1672,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a noscript element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("noscript");
             Attrs(attr1, attr2, attr3, attr4);
@@ -1685,11 +1685,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a noscript element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("noscript");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -1698,11 +1698,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a noscript element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("noscript");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -1711,11 +1711,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a noscript element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("noscript");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -1724,11 +1724,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a noscript element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a noscript element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable noscript(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("noscript");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -1737,10 +1737,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a main element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder main(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable main(
             string id = null,
             string @class = null,
             string style = null,
@@ -1780,10 +1780,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a main element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder main(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable main(params Attr[] attrs)
         {
             StartTagRaw("main");
             Attrs(attrs);
@@ -1792,10 +1792,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a main element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder main(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable main(IEnumerable<Attr> attrs)
         {
             StartTagRaw("main");
             Attrs(attrs);
@@ -1804,11 +1804,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a main element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder main(Attr attr1)
+        protected IDisposable main(Attr attr1)
         {
             StartTagRaw("main");
             Attrs(attr1);
@@ -1817,11 +1817,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a main element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder main(Attr attr1, Attr attr2)
+        protected IDisposable main(Attr attr1, Attr attr2)
         {
             StartTagRaw("main");
             Attrs(attr1, attr2);
@@ -1830,11 +1830,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a main element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder main(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable main(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("main");
             Attrs(attr1, attr2, attr3);
@@ -1843,11 +1843,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a main element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable main(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("main");
             Attrs(attr1, attr2, attr3, attr4);
@@ -1856,11 +1856,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a main element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("main");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -1869,11 +1869,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a main element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("main");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -1882,11 +1882,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a main element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("main");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -1895,11 +1895,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a main element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a main element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable main(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("main");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -1908,10 +1908,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a header element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder header(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable header(
             string id = null,
             string @class = null,
             string style = null,
@@ -1951,10 +1951,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a header element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder header(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable header(params Attr[] attrs)
         {
             StartTagRaw("header");
             Attrs(attrs);
@@ -1963,10 +1963,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a header element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder header(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable header(IEnumerable<Attr> attrs)
         {
             StartTagRaw("header");
             Attrs(attrs);
@@ -1975,11 +1975,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a header element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder header(Attr attr1)
+        protected IDisposable header(Attr attr1)
         {
             StartTagRaw("header");
             Attrs(attr1);
@@ -1988,11 +1988,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a header element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder header(Attr attr1, Attr attr2)
+        protected IDisposable header(Attr attr1, Attr attr2)
         {
             StartTagRaw("header");
             Attrs(attr1, attr2);
@@ -2001,11 +2001,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a header element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder header(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable header(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("header");
             Attrs(attr1, attr2, attr3);
@@ -2014,11 +2014,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a header element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable header(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("header");
             Attrs(attr1, attr2, attr3, attr4);
@@ -2027,11 +2027,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a header element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("header");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -2040,11 +2040,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a header element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("header");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -2053,11 +2053,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a header element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("header");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -2066,11 +2066,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a header element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a header element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable header(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("header");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -2079,10 +2079,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an article element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder article(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable article(
             string id = null,
             string @class = null,
             string style = null,
@@ -2122,10 +2122,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an article element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder article(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable article(params Attr[] attrs)
         {
             StartTagRaw("article");
             Attrs(attrs);
@@ -2134,10 +2134,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an article element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder article(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable article(IEnumerable<Attr> attrs)
         {
             StartTagRaw("article");
             Attrs(attrs);
@@ -2146,11 +2146,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an article element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder article(Attr attr1)
+        protected IDisposable article(Attr attr1)
         {
             StartTagRaw("article");
             Attrs(attr1);
@@ -2159,11 +2159,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an article element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder article(Attr attr1, Attr attr2)
+        protected IDisposable article(Attr attr1, Attr attr2)
         {
             StartTagRaw("article");
             Attrs(attr1, attr2);
@@ -2172,11 +2172,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an article element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder article(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable article(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("article");
             Attrs(attr1, attr2, attr3);
@@ -2185,11 +2185,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an article element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable article(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("article");
             Attrs(attr1, attr2, attr3, attr4);
@@ -2198,11 +2198,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an article element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("article");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -2211,11 +2211,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an article element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("article");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -2224,11 +2224,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an article element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("article");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -2237,11 +2237,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an article element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an article element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable article(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("article");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -2250,10 +2250,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a section element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder section(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable section(
             string id = null,
             string @class = null,
             string style = null,
@@ -2293,10 +2293,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a section element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder section(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable section(params Attr[] attrs)
         {
             StartTagRaw("section");
             Attrs(attrs);
@@ -2305,10 +2305,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a section element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder section(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable section(IEnumerable<Attr> attrs)
         {
             StartTagRaw("section");
             Attrs(attrs);
@@ -2317,11 +2317,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a section element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder section(Attr attr1)
+        protected IDisposable section(Attr attr1)
         {
             StartTagRaw("section");
             Attrs(attr1);
@@ -2330,11 +2330,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a section element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder section(Attr attr1, Attr attr2)
+        protected IDisposable section(Attr attr1, Attr attr2)
         {
             StartTagRaw("section");
             Attrs(attr1, attr2);
@@ -2343,11 +2343,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a section element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder section(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable section(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("section");
             Attrs(attr1, attr2, attr3);
@@ -2356,11 +2356,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a section element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable section(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("section");
             Attrs(attr1, attr2, attr3, attr4);
@@ -2369,11 +2369,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a section element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("section");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -2382,11 +2382,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a section element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("section");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -2395,11 +2395,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a section element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("section");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -2408,11 +2408,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a section element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a section element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable section(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("section");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -2421,10 +2421,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a footer element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder footer(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable footer(
             string id = null,
             string @class = null,
             string style = null,
@@ -2464,10 +2464,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a footer element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder footer(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable footer(params Attr[] attrs)
         {
             StartTagRaw("footer");
             Attrs(attrs);
@@ -2476,10 +2476,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a footer element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder footer(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable footer(IEnumerable<Attr> attrs)
         {
             StartTagRaw("footer");
             Attrs(attrs);
@@ -2488,11 +2488,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a footer element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder footer(Attr attr1)
+        protected IDisposable footer(Attr attr1)
         {
             StartTagRaw("footer");
             Attrs(attr1);
@@ -2501,11 +2501,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a footer element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder footer(Attr attr1, Attr attr2)
+        protected IDisposable footer(Attr attr1, Attr attr2)
         {
             StartTagRaw("footer");
             Attrs(attr1, attr2);
@@ -2514,11 +2514,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a footer element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder footer(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable footer(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("footer");
             Attrs(attr1, attr2, attr3);
@@ -2527,11 +2527,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a footer element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("footer");
             Attrs(attr1, attr2, attr3, attr4);
@@ -2540,11 +2540,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a footer element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("footer");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -2553,11 +2553,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a footer element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("footer");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -2566,11 +2566,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a footer element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("footer");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -2579,11 +2579,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a footer element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a footer element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable footer(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("footer");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -2592,10 +2592,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h1 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder h1(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable h1(
             string id = null,
             string @class = null,
             string style = null,
@@ -2635,10 +2635,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h1 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder h1(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable h1(params Attr[] attrs)
         {
             StartTagRaw("h1");
             Attrs(attrs);
@@ -2647,10 +2647,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h1 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder h1(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable h1(IEnumerable<Attr> attrs)
         {
             StartTagRaw("h1");
             Attrs(attrs);
@@ -2659,11 +2659,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h1 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h1(Attr attr1)
+        protected IDisposable h1(Attr attr1)
         {
             StartTagRaw("h1");
             Attrs(attr1);
@@ -2672,11 +2672,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h1 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h1(Attr attr1, Attr attr2)
+        protected IDisposable h1(Attr attr1, Attr attr2)
         {
             StartTagRaw("h1");
             Attrs(attr1, attr2);
@@ -2685,11 +2685,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h1 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h1(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable h1(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("h1");
             Attrs(attr1, attr2, attr3);
@@ -2698,11 +2698,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h1 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("h1");
             Attrs(attr1, attr2, attr3, attr4);
@@ -2711,11 +2711,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h1 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("h1");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -2724,11 +2724,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h1 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("h1");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -2737,11 +2737,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h1 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("h1");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -2750,11 +2750,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h1 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h1 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable h1(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("h1");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -2763,10 +2763,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h2 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder h2(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable h2(
             string id = null,
             string @class = null,
             string style = null,
@@ -2806,10 +2806,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h2 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder h2(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable h2(params Attr[] attrs)
         {
             StartTagRaw("h2");
             Attrs(attrs);
@@ -2818,10 +2818,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h2 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder h2(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable h2(IEnumerable<Attr> attrs)
         {
             StartTagRaw("h2");
             Attrs(attrs);
@@ -2830,11 +2830,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h2 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h2(Attr attr1)
+        protected IDisposable h2(Attr attr1)
         {
             StartTagRaw("h2");
             Attrs(attr1);
@@ -2843,11 +2843,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h2 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h2(Attr attr1, Attr attr2)
+        protected IDisposable h2(Attr attr1, Attr attr2)
         {
             StartTagRaw("h2");
             Attrs(attr1, attr2);
@@ -2856,11 +2856,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h2 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h2(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable h2(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("h2");
             Attrs(attr1, attr2, attr3);
@@ -2869,11 +2869,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h2 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("h2");
             Attrs(attr1, attr2, attr3, attr4);
@@ -2882,11 +2882,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h2 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("h2");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -2895,11 +2895,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h2 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("h2");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -2908,11 +2908,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h2 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("h2");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -2921,11 +2921,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h2 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h2 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable h2(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("h2");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -2934,10 +2934,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h3 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder h3(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable h3(
             string id = null,
             string @class = null,
             string style = null,
@@ -2977,10 +2977,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h3 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder h3(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable h3(params Attr[] attrs)
         {
             StartTagRaw("h3");
             Attrs(attrs);
@@ -2989,10 +2989,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h3 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder h3(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable h3(IEnumerable<Attr> attrs)
         {
             StartTagRaw("h3");
             Attrs(attrs);
@@ -3001,11 +3001,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h3 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h3(Attr attr1)
+        protected IDisposable h3(Attr attr1)
         {
             StartTagRaw("h3");
             Attrs(attr1);
@@ -3014,11 +3014,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h3 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h3(Attr attr1, Attr attr2)
+        protected IDisposable h3(Attr attr1, Attr attr2)
         {
             StartTagRaw("h3");
             Attrs(attr1, attr2);
@@ -3027,11 +3027,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h3 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h3(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable h3(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("h3");
             Attrs(attr1, attr2, attr3);
@@ -3040,11 +3040,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h3 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("h3");
             Attrs(attr1, attr2, attr3, attr4);
@@ -3053,11 +3053,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h3 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("h3");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -3066,11 +3066,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h3 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("h3");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -3079,11 +3079,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h3 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("h3");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -3092,11 +3092,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h3 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h3 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable h3(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("h3");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -3105,10 +3105,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h4 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder h4(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable h4(
             string id = null,
             string @class = null,
             string style = null,
@@ -3148,10 +3148,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h4 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder h4(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable h4(params Attr[] attrs)
         {
             StartTagRaw("h4");
             Attrs(attrs);
@@ -3160,10 +3160,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h4 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder h4(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable h4(IEnumerable<Attr> attrs)
         {
             StartTagRaw("h4");
             Attrs(attrs);
@@ -3172,11 +3172,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h4 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h4(Attr attr1)
+        protected IDisposable h4(Attr attr1)
         {
             StartTagRaw("h4");
             Attrs(attr1);
@@ -3185,11 +3185,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h4 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h4(Attr attr1, Attr attr2)
+        protected IDisposable h4(Attr attr1, Attr attr2)
         {
             StartTagRaw("h4");
             Attrs(attr1, attr2);
@@ -3198,11 +3198,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h4 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h4(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable h4(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("h4");
             Attrs(attr1, attr2, attr3);
@@ -3211,11 +3211,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h4 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("h4");
             Attrs(attr1, attr2, attr3, attr4);
@@ -3224,11 +3224,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h4 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("h4");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -3237,11 +3237,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h4 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("h4");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -3250,11 +3250,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h4 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("h4");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -3263,11 +3263,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h4 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h4 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable h4(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("h4");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -3276,10 +3276,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h5 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder h5(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable h5(
             string id = null,
             string @class = null,
             string style = null,
@@ -3319,10 +3319,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h5 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder h5(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable h5(params Attr[] attrs)
         {
             StartTagRaw("h5");
             Attrs(attrs);
@@ -3331,10 +3331,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h5 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder h5(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable h5(IEnumerable<Attr> attrs)
         {
             StartTagRaw("h5");
             Attrs(attrs);
@@ -3343,11 +3343,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h5 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h5(Attr attr1)
+        protected IDisposable h5(Attr attr1)
         {
             StartTagRaw("h5");
             Attrs(attr1);
@@ -3356,11 +3356,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h5 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h5(Attr attr1, Attr attr2)
+        protected IDisposable h5(Attr attr1, Attr attr2)
         {
             StartTagRaw("h5");
             Attrs(attr1, attr2);
@@ -3369,11 +3369,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h5 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h5(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable h5(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("h5");
             Attrs(attr1, attr2, attr3);
@@ -3382,11 +3382,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h5 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("h5");
             Attrs(attr1, attr2, attr3, attr4);
@@ -3395,11 +3395,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h5 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("h5");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -3408,11 +3408,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h5 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("h5");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -3421,11 +3421,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h5 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("h5");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -3434,11 +3434,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h5 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h5 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable h5(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("h5");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -3447,10 +3447,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h6 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder h6(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable h6(
             string id = null,
             string @class = null,
             string style = null,
@@ -3490,10 +3490,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h6 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder h6(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable h6(params Attr[] attrs)
         {
             StartTagRaw("h6");
             Attrs(attrs);
@@ -3502,10 +3502,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h6 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder h6(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable h6(IEnumerable<Attr> attrs)
         {
             StartTagRaw("h6");
             Attrs(attrs);
@@ -3514,11 +3514,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h6 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h6(Attr attr1)
+        protected IDisposable h6(Attr attr1)
         {
             StartTagRaw("h6");
             Attrs(attr1);
@@ -3527,11 +3527,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h6 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h6(Attr attr1, Attr attr2)
+        protected IDisposable h6(Attr attr1, Attr attr2)
         {
             StartTagRaw("h6");
             Attrs(attr1, attr2);
@@ -3540,11 +3540,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h6 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h6(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable h6(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("h6");
             Attrs(attr1, attr2, attr3);
@@ -3553,11 +3553,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h6 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("h6");
             Attrs(attr1, attr2, attr3, attr4);
@@ -3566,11 +3566,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h6 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("h6");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -3579,11 +3579,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h6 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("h6");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -3592,11 +3592,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h6 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("h6");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -3605,11 +3605,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an h6 element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an h6 element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable h6(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("h6");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -3618,10 +3618,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a hgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder hgroup(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable hgroup(
             string id = null,
             string @class = null,
             string style = null,
@@ -3661,10 +3661,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a hgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder hgroup(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable hgroup(params Attr[] attrs)
         {
             StartTagRaw("hgroup");
             Attrs(attrs);
@@ -3673,10 +3673,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a hgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder hgroup(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable hgroup(IEnumerable<Attr> attrs)
         {
             StartTagRaw("hgroup");
             Attrs(attrs);
@@ -3685,11 +3685,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a hgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder hgroup(Attr attr1)
+        protected IDisposable hgroup(Attr attr1)
         {
             StartTagRaw("hgroup");
             Attrs(attr1);
@@ -3698,11 +3698,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a hgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder hgroup(Attr attr1, Attr attr2)
+        protected IDisposable hgroup(Attr attr1, Attr attr2)
         {
             StartTagRaw("hgroup");
             Attrs(attr1, attr2);
@@ -3711,11 +3711,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a hgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable hgroup(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("hgroup");
             Attrs(attr1, attr2, attr3);
@@ -3724,11 +3724,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a hgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("hgroup");
             Attrs(attr1, attr2, attr3, attr4);
@@ -3737,11 +3737,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a hgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("hgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -3750,11 +3750,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a hgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("hgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -3763,11 +3763,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a hgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("hgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -3776,11 +3776,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a hgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a hgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable hgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("hgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -3789,10 +3789,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a div element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder div(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable div(
             string id = null,
             string @class = null,
             string style = null,
@@ -3832,10 +3832,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a div element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder div(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable div(params Attr[] attrs)
         {
             StartTagRaw("div");
             Attrs(attrs);
@@ -3844,10 +3844,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a div element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder div(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable div(IEnumerable<Attr> attrs)
         {
             StartTagRaw("div");
             Attrs(attrs);
@@ -3856,11 +3856,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a div element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder div(Attr attr1)
+        protected IDisposable div(Attr attr1)
         {
             StartTagRaw("div");
             Attrs(attr1);
@@ -3869,11 +3869,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a div element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder div(Attr attr1, Attr attr2)
+        protected IDisposable div(Attr attr1, Attr attr2)
         {
             StartTagRaw("div");
             Attrs(attr1, attr2);
@@ -3882,11 +3882,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a div element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder div(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable div(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("div");
             Attrs(attr1, attr2, attr3);
@@ -3895,11 +3895,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a div element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable div(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("div");
             Attrs(attr1, attr2, attr3, attr4);
@@ -3908,11 +3908,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a div element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("div");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -3921,11 +3921,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a div element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("div");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -3934,11 +3934,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a div element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("div");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -3947,11 +3947,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a div element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a div element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable div(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("div");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -3960,10 +3960,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a p element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder p(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable p(
             string id = null,
             string @class = null,
             string style = null,
@@ -4003,10 +4003,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a p element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder p(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable p(params Attr[] attrs)
         {
             StartTagRaw("p");
             Attrs(attrs);
@@ -4015,10 +4015,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a p element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder p(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable p(IEnumerable<Attr> attrs)
         {
             StartTagRaw("p");
             Attrs(attrs);
@@ -4027,11 +4027,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a p element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder p(Attr attr1)
+        protected IDisposable p(Attr attr1)
         {
             StartTagRaw("p");
             Attrs(attr1);
@@ -4040,11 +4040,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a p element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder p(Attr attr1, Attr attr2)
+        protected IDisposable p(Attr attr1, Attr attr2)
         {
             StartTagRaw("p");
             Attrs(attr1, attr2);
@@ -4053,11 +4053,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a p element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder p(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable p(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("p");
             Attrs(attr1, attr2, attr3);
@@ -4066,11 +4066,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a p element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable p(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("p");
             Attrs(attr1, attr2, attr3, attr4);
@@ -4079,11 +4079,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a p element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("p");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -4092,11 +4092,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a p element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("p");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -4105,11 +4105,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a p element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("p");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -4118,11 +4118,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a p element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a p element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable p(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("p");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -4131,10 +4131,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a pre element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder pre(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable pre(
             string id = null,
             string @class = null,
             string style = null,
@@ -4174,10 +4174,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a pre element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder pre(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable pre(params Attr[] attrs)
         {
             StartTagRaw("pre");
             Attrs(attrs);
@@ -4186,10 +4186,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a pre element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder pre(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable pre(IEnumerable<Attr> attrs)
         {
             StartTagRaw("pre");
             Attrs(attrs);
@@ -4198,11 +4198,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a pre element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder pre(Attr attr1)
+        protected IDisposable pre(Attr attr1)
         {
             StartTagRaw("pre");
             Attrs(attr1);
@@ -4211,11 +4211,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a pre element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder pre(Attr attr1, Attr attr2)
+        protected IDisposable pre(Attr attr1, Attr attr2)
         {
             StartTagRaw("pre");
             Attrs(attr1, attr2);
@@ -4224,11 +4224,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a pre element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder pre(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable pre(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("pre");
             Attrs(attr1, attr2, attr3);
@@ -4237,11 +4237,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a pre element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("pre");
             Attrs(attr1, attr2, attr3, attr4);
@@ -4250,11 +4250,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a pre element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("pre");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -4263,11 +4263,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a pre element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("pre");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -4276,11 +4276,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a pre element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("pre");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -4289,11 +4289,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a pre element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a pre element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable pre(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("pre");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -4302,10 +4302,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a blockquote element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder blockquote(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable blockquote(
             string id = null,
             string @class = null,
             string style = null,
@@ -4345,10 +4345,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a blockquote element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder blockquote(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable blockquote(params Attr[] attrs)
         {
             StartTagRaw("blockquote");
             Attrs(attrs);
@@ -4357,10 +4357,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a blockquote element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder blockquote(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable blockquote(IEnumerable<Attr> attrs)
         {
             StartTagRaw("blockquote");
             Attrs(attrs);
@@ -4369,11 +4369,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a blockquote element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder blockquote(Attr attr1)
+        protected IDisposable blockquote(Attr attr1)
         {
             StartTagRaw("blockquote");
             Attrs(attr1);
@@ -4382,11 +4382,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a blockquote element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder blockquote(Attr attr1, Attr attr2)
+        protected IDisposable blockquote(Attr attr1, Attr attr2)
         {
             StartTagRaw("blockquote");
             Attrs(attr1, attr2);
@@ -4395,11 +4395,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a blockquote element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable blockquote(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("blockquote");
             Attrs(attr1, attr2, attr3);
@@ -4408,11 +4408,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a blockquote element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("blockquote");
             Attrs(attr1, attr2, attr3, attr4);
@@ -4421,11 +4421,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a blockquote element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("blockquote");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -4434,11 +4434,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a blockquote element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("blockquote");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -4447,11 +4447,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a blockquote element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("blockquote");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -4460,11 +4460,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a blockquote element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a blockquote element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable blockquote(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("blockquote");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -4473,10 +4473,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a figure element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder figure(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable figure(
             string id = null,
             string @class = null,
             string style = null,
@@ -4516,10 +4516,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a figure element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder figure(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable figure(params Attr[] attrs)
         {
             StartTagRaw("figure");
             Attrs(attrs);
@@ -4528,10 +4528,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a figure element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder figure(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable figure(IEnumerable<Attr> attrs)
         {
             StartTagRaw("figure");
             Attrs(attrs);
@@ -4540,11 +4540,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a figure element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder figure(Attr attr1)
+        protected IDisposable figure(Attr attr1)
         {
             StartTagRaw("figure");
             Attrs(attr1);
@@ -4553,11 +4553,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a figure element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder figure(Attr attr1, Attr attr2)
+        protected IDisposable figure(Attr attr1, Attr attr2)
         {
             StartTagRaw("figure");
             Attrs(attr1, attr2);
@@ -4566,11 +4566,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a figure element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder figure(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable figure(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("figure");
             Attrs(attr1, attr2, attr3);
@@ -4579,11 +4579,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a figure element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("figure");
             Attrs(attr1, attr2, attr3, attr4);
@@ -4592,11 +4592,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a figure element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("figure");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -4605,11 +4605,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a figure element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("figure");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -4618,11 +4618,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a figure element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("figure");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -4631,11 +4631,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a figure element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a figure element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable figure(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("figure");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -4644,10 +4644,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a figcaption element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder figcaption(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable figcaption(
             string id = null,
             string @class = null,
             string style = null,
@@ -4687,10 +4687,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a figcaption element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder figcaption(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable figcaption(params Attr[] attrs)
         {
             StartTagRaw("figcaption");
             Attrs(attrs);
@@ -4699,10 +4699,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a figcaption element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder figcaption(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable figcaption(IEnumerable<Attr> attrs)
         {
             StartTagRaw("figcaption");
             Attrs(attrs);
@@ -4711,11 +4711,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a figcaption element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder figcaption(Attr attr1)
+        protected IDisposable figcaption(Attr attr1)
         {
             StartTagRaw("figcaption");
             Attrs(attr1);
@@ -4724,11 +4724,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a figcaption element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder figcaption(Attr attr1, Attr attr2)
+        protected IDisposable figcaption(Attr attr1, Attr attr2)
         {
             StartTagRaw("figcaption");
             Attrs(attr1, attr2);
@@ -4737,11 +4737,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a figcaption element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable figcaption(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("figcaption");
             Attrs(attr1, attr2, attr3);
@@ -4750,11 +4750,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a figcaption element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("figcaption");
             Attrs(attr1, attr2, attr3, attr4);
@@ -4763,11 +4763,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a figcaption element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("figcaption");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -4776,11 +4776,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a figcaption element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("figcaption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -4789,11 +4789,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a figcaption element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("figcaption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -4802,11 +4802,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a figcaption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a figcaption element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable figcaption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("figcaption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -4815,10 +4815,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an aside element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder aside(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable aside(
             string id = null,
             string @class = null,
             string style = null,
@@ -4858,10 +4858,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an aside element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder aside(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable aside(params Attr[] attrs)
         {
             StartTagRaw("aside");
             Attrs(attrs);
@@ -4870,10 +4870,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an aside element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder aside(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable aside(IEnumerable<Attr> attrs)
         {
             StartTagRaw("aside");
             Attrs(attrs);
@@ -4882,11 +4882,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an aside element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder aside(Attr attr1)
+        protected IDisposable aside(Attr attr1)
         {
             StartTagRaw("aside");
             Attrs(attr1);
@@ -4895,11 +4895,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an aside element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder aside(Attr attr1, Attr attr2)
+        protected IDisposable aside(Attr attr1, Attr attr2)
         {
             StartTagRaw("aside");
             Attrs(attr1, attr2);
@@ -4908,11 +4908,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an aside element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder aside(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable aside(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("aside");
             Attrs(attr1, attr2, attr3);
@@ -4921,11 +4921,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an aside element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("aside");
             Attrs(attr1, attr2, attr3, attr4);
@@ -4934,11 +4934,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an aside element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("aside");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -4947,11 +4947,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an aside element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("aside");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -4960,11 +4960,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an aside element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("aside");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -4973,11 +4973,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an aside element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an aside element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable aside(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("aside");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -4986,10 +4986,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a nav element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder nav(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable nav(
             string id = null,
             string @class = null,
             string style = null,
@@ -5029,10 +5029,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a nav element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder nav(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable nav(params Attr[] attrs)
         {
             StartTagRaw("nav");
             Attrs(attrs);
@@ -5041,10 +5041,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a nav element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder nav(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable nav(IEnumerable<Attr> attrs)
         {
             StartTagRaw("nav");
             Attrs(attrs);
@@ -5053,11 +5053,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a nav element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder nav(Attr attr1)
+        protected IDisposable nav(Attr attr1)
         {
             StartTagRaw("nav");
             Attrs(attr1);
@@ -5066,11 +5066,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a nav element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder nav(Attr attr1, Attr attr2)
+        protected IDisposable nav(Attr attr1, Attr attr2)
         {
             StartTagRaw("nav");
             Attrs(attr1, attr2);
@@ -5079,11 +5079,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a nav element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder nav(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable nav(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("nav");
             Attrs(attr1, attr2, attr3);
@@ -5092,11 +5092,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a nav element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("nav");
             Attrs(attr1, attr2, attr3, attr4);
@@ -5105,11 +5105,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a nav element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("nav");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -5118,11 +5118,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a nav element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("nav");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -5131,11 +5131,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a nav element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("nav");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -5144,11 +5144,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a nav element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a nav element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable nav(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("nav");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -5157,10 +5157,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an address element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder address(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable address(
             string id = null,
             string @class = null,
             string style = null,
@@ -5200,10 +5200,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an address element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder address(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable address(params Attr[] attrs)
         {
             StartTagRaw("address");
             Attrs(attrs);
@@ -5212,10 +5212,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an address element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder address(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable address(IEnumerable<Attr> attrs)
         {
             StartTagRaw("address");
             Attrs(attrs);
@@ -5224,11 +5224,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an address element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder address(Attr attr1)
+        protected IDisposable address(Attr attr1)
         {
             StartTagRaw("address");
             Attrs(attr1);
@@ -5237,11 +5237,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an address element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder address(Attr attr1, Attr attr2)
+        protected IDisposable address(Attr attr1, Attr attr2)
         {
             StartTagRaw("address");
             Attrs(attr1, attr2);
@@ -5250,11 +5250,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an address element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder address(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable address(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("address");
             Attrs(attr1, attr2, attr3);
@@ -5263,11 +5263,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an address element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable address(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("address");
             Attrs(attr1, attr2, attr3, attr4);
@@ -5276,11 +5276,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an address element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("address");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -5289,11 +5289,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an address element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("address");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -5302,11 +5302,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an address element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("address");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -5315,11 +5315,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an address element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an address element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable address(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("address");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -5328,10 +5328,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an a element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder a(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable a(
             string id = null,
             string @class = null,
             string style = null,
@@ -5396,10 +5396,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an a element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder a(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable a(params Attr[] attrs)
         {
             StartTagRaw("a");
             Attrs(attrs);
@@ -5408,10 +5408,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an a element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder a(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable a(IEnumerable<Attr> attrs)
         {
             StartTagRaw("a");
             Attrs(attrs);
@@ -5420,11 +5420,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an a element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder a(Attr attr1)
+        protected IDisposable a(Attr attr1)
         {
             StartTagRaw("a");
             Attrs(attr1);
@@ -5433,11 +5433,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an a element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder a(Attr attr1, Attr attr2)
+        protected IDisposable a(Attr attr1, Attr attr2)
         {
             StartTagRaw("a");
             Attrs(attr1, attr2);
@@ -5446,11 +5446,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an a element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder a(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable a(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("a");
             Attrs(attr1, attr2, attr3);
@@ -5459,11 +5459,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an a element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable a(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("a");
             Attrs(attr1, attr2, attr3, attr4);
@@ -5472,11 +5472,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an a element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("a");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -5485,11 +5485,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an a element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("a");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -5498,11 +5498,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an a element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("a");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -5511,11 +5511,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an a element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an a element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable a(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("a");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -5524,10 +5524,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a b element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder b(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable b(
             string id = null,
             string @class = null,
             string style = null,
@@ -5567,10 +5567,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a b element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder b(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable b(params Attr[] attrs)
         {
             StartTagRaw("b");
             Attrs(attrs);
@@ -5579,10 +5579,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a b element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder b(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable b(IEnumerable<Attr> attrs)
         {
             StartTagRaw("b");
             Attrs(attrs);
@@ -5591,11 +5591,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a b element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder b(Attr attr1)
+        protected IDisposable b(Attr attr1)
         {
             StartTagRaw("b");
             Attrs(attr1);
@@ -5604,11 +5604,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a b element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder b(Attr attr1, Attr attr2)
+        protected IDisposable b(Attr attr1, Attr attr2)
         {
             StartTagRaw("b");
             Attrs(attr1, attr2);
@@ -5617,11 +5617,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a b element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder b(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable b(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("b");
             Attrs(attr1, attr2, attr3);
@@ -5630,11 +5630,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a b element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable b(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("b");
             Attrs(attr1, attr2, attr3, attr4);
@@ -5643,11 +5643,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a b element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("b");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -5656,11 +5656,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a b element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("b");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -5669,11 +5669,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a b element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("b");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -5682,11 +5682,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a b element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a b element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable b(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("b");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -5695,10 +5695,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an em element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder em(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable em(
             string id = null,
             string @class = null,
             string style = null,
@@ -5738,10 +5738,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an em element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder em(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable em(params Attr[] attrs)
         {
             StartTagRaw("em");
             Attrs(attrs);
@@ -5750,10 +5750,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an em element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder em(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable em(IEnumerable<Attr> attrs)
         {
             StartTagRaw("em");
             Attrs(attrs);
@@ -5762,11 +5762,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an em element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder em(Attr attr1)
+        protected IDisposable em(Attr attr1)
         {
             StartTagRaw("em");
             Attrs(attr1);
@@ -5775,11 +5775,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an em element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder em(Attr attr1, Attr attr2)
+        protected IDisposable em(Attr attr1, Attr attr2)
         {
             StartTagRaw("em");
             Attrs(attr1, attr2);
@@ -5788,11 +5788,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an em element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder em(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable em(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("em");
             Attrs(attr1, attr2, attr3);
@@ -5801,11 +5801,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an em element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable em(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("em");
             Attrs(attr1, attr2, attr3, attr4);
@@ -5814,11 +5814,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an em element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("em");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -5827,11 +5827,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an em element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("em");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -5840,11 +5840,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an em element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("em");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -5853,11 +5853,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an em element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an em element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable em(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("em");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -5866,10 +5866,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an i element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder i(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable i(
             string id = null,
             string @class = null,
             string style = null,
@@ -5909,10 +5909,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an i element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder i(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable i(params Attr[] attrs)
         {
             StartTagRaw("i");
             Attrs(attrs);
@@ -5921,10 +5921,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an i element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder i(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable i(IEnumerable<Attr> attrs)
         {
             StartTagRaw("i");
             Attrs(attrs);
@@ -5933,11 +5933,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an i element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder i(Attr attr1)
+        protected IDisposable i(Attr attr1)
         {
             StartTagRaw("i");
             Attrs(attr1);
@@ -5946,11 +5946,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an i element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder i(Attr attr1, Attr attr2)
+        protected IDisposable i(Attr attr1, Attr attr2)
         {
             StartTagRaw("i");
             Attrs(attr1, attr2);
@@ -5959,11 +5959,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an i element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder i(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable i(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("i");
             Attrs(attr1, attr2, attr3);
@@ -5972,11 +5972,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an i element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable i(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("i");
             Attrs(attr1, attr2, attr3, attr4);
@@ -5985,11 +5985,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an i element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("i");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -5998,11 +5998,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an i element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("i");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -6011,11 +6011,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an i element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("i");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -6024,11 +6024,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an i element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an i element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable i(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("i");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -6037,10 +6037,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a mark element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder mark(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable mark(
             string id = null,
             string @class = null,
             string style = null,
@@ -6080,10 +6080,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a mark element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder mark(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable mark(params Attr[] attrs)
         {
             StartTagRaw("mark");
             Attrs(attrs);
@@ -6092,10 +6092,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a mark element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder mark(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable mark(IEnumerable<Attr> attrs)
         {
             StartTagRaw("mark");
             Attrs(attrs);
@@ -6104,11 +6104,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a mark element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder mark(Attr attr1)
+        protected IDisposable mark(Attr attr1)
         {
             StartTagRaw("mark");
             Attrs(attr1);
@@ -6117,11 +6117,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a mark element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder mark(Attr attr1, Attr attr2)
+        protected IDisposable mark(Attr attr1, Attr attr2)
         {
             StartTagRaw("mark");
             Attrs(attr1, attr2);
@@ -6130,11 +6130,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a mark element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder mark(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable mark(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("mark");
             Attrs(attr1, attr2, attr3);
@@ -6143,11 +6143,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a mark element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("mark");
             Attrs(attr1, attr2, attr3, attr4);
@@ -6156,11 +6156,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a mark element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("mark");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -6169,11 +6169,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a mark element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("mark");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -6182,11 +6182,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a mark element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("mark");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -6195,11 +6195,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a mark element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a mark element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable mark(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("mark");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -6208,10 +6208,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a q element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder q(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable q(
             string id = null,
             string @class = null,
             string style = null,
@@ -6256,10 +6256,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a q element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder q(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable q(params Attr[] attrs)
         {
             StartTagRaw("q");
             Attrs(attrs);
@@ -6268,10 +6268,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a q element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder q(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable q(IEnumerable<Attr> attrs)
         {
             StartTagRaw("q");
             Attrs(attrs);
@@ -6280,11 +6280,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a q element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder q(Attr attr1)
+        protected IDisposable q(Attr attr1)
         {
             StartTagRaw("q");
             Attrs(attr1);
@@ -6293,11 +6293,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a q element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder q(Attr attr1, Attr attr2)
+        protected IDisposable q(Attr attr1, Attr attr2)
         {
             StartTagRaw("q");
             Attrs(attr1, attr2);
@@ -6306,11 +6306,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a q element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder q(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable q(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("q");
             Attrs(attr1, attr2, attr3);
@@ -6319,11 +6319,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a q element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable q(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("q");
             Attrs(attr1, attr2, attr3, attr4);
@@ -6332,11 +6332,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a q element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("q");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -6345,11 +6345,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a q element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("q");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -6358,11 +6358,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a q element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("q");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -6371,11 +6371,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a q element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a q element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable q(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("q");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -6384,10 +6384,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an s element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder s(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable s(
             string id = null,
             string @class = null,
             string style = null,
@@ -6427,10 +6427,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an s element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder s(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable s(params Attr[] attrs)
         {
             StartTagRaw("s");
             Attrs(attrs);
@@ -6439,10 +6439,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an s element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder s(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable s(IEnumerable<Attr> attrs)
         {
             StartTagRaw("s");
             Attrs(attrs);
@@ -6451,11 +6451,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an s element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder s(Attr attr1)
+        protected IDisposable s(Attr attr1)
         {
             StartTagRaw("s");
             Attrs(attr1);
@@ -6464,11 +6464,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an s element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder s(Attr attr1, Attr attr2)
+        protected IDisposable s(Attr attr1, Attr attr2)
         {
             StartTagRaw("s");
             Attrs(attr1, attr2);
@@ -6477,11 +6477,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an s element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder s(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable s(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("s");
             Attrs(attr1, attr2, attr3);
@@ -6490,11 +6490,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an s element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable s(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("s");
             Attrs(attr1, attr2, attr3, attr4);
@@ -6503,11 +6503,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an s element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("s");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -6516,11 +6516,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an s element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("s");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -6529,11 +6529,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an s element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("s");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -6542,11 +6542,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an s element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an s element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable s(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("s");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -6555,10 +6555,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a small element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder small(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable small(
             string id = null,
             string @class = null,
             string style = null,
@@ -6598,10 +6598,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a small element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder small(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable small(params Attr[] attrs)
         {
             StartTagRaw("small");
             Attrs(attrs);
@@ -6610,10 +6610,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a small element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder small(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable small(IEnumerable<Attr> attrs)
         {
             StartTagRaw("small");
             Attrs(attrs);
@@ -6622,11 +6622,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a small element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder small(Attr attr1)
+        protected IDisposable small(Attr attr1)
         {
             StartTagRaw("small");
             Attrs(attr1);
@@ -6635,11 +6635,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a small element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder small(Attr attr1, Attr attr2)
+        protected IDisposable small(Attr attr1, Attr attr2)
         {
             StartTagRaw("small");
             Attrs(attr1, attr2);
@@ -6648,11 +6648,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a small element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder small(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable small(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("small");
             Attrs(attr1, attr2, attr3);
@@ -6661,11 +6661,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a small element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable small(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("small");
             Attrs(attr1, attr2, attr3, attr4);
@@ -6674,11 +6674,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a small element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("small");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -6687,11 +6687,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a small element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("small");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -6700,11 +6700,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a small element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("small");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -6713,11 +6713,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a small element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a small element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable small(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("small");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -6726,10 +6726,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a span element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder span(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable span(
             string id = null,
             string @class = null,
             string style = null,
@@ -6769,10 +6769,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a span element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder span(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable span(params Attr[] attrs)
         {
             StartTagRaw("span");
             Attrs(attrs);
@@ -6781,10 +6781,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a span element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder span(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable span(IEnumerable<Attr> attrs)
         {
             StartTagRaw("span");
             Attrs(attrs);
@@ -6793,11 +6793,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a span element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder span(Attr attr1)
+        protected IDisposable span(Attr attr1)
         {
             StartTagRaw("span");
             Attrs(attr1);
@@ -6806,11 +6806,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a span element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder span(Attr attr1, Attr attr2)
+        protected IDisposable span(Attr attr1, Attr attr2)
         {
             StartTagRaw("span");
             Attrs(attr1, attr2);
@@ -6819,11 +6819,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a span element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder span(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable span(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("span");
             Attrs(attr1, attr2, attr3);
@@ -6832,11 +6832,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a span element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable span(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("span");
             Attrs(attr1, attr2, attr3, attr4);
@@ -6845,11 +6845,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a span element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("span");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -6858,11 +6858,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a span element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("span");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -6871,11 +6871,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a span element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("span");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -6884,11 +6884,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a span element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a span element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable span(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("span");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -6897,10 +6897,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a strong element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder strong(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable strong(
             string id = null,
             string @class = null,
             string style = null,
@@ -6940,10 +6940,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a strong element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder strong(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable strong(params Attr[] attrs)
         {
             StartTagRaw("strong");
             Attrs(attrs);
@@ -6952,10 +6952,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a strong element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder strong(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable strong(IEnumerable<Attr> attrs)
         {
             StartTagRaw("strong");
             Attrs(attrs);
@@ -6964,11 +6964,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a strong element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder strong(Attr attr1)
+        protected IDisposable strong(Attr attr1)
         {
             StartTagRaw("strong");
             Attrs(attr1);
@@ -6977,11 +6977,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a strong element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder strong(Attr attr1, Attr attr2)
+        protected IDisposable strong(Attr attr1, Attr attr2)
         {
             StartTagRaw("strong");
             Attrs(attr1, attr2);
@@ -6990,11 +6990,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a strong element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder strong(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable strong(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("strong");
             Attrs(attr1, attr2, attr3);
@@ -7003,11 +7003,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a strong element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("strong");
             Attrs(attr1, attr2, attr3, attr4);
@@ -7016,11 +7016,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a strong element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("strong");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -7029,11 +7029,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a strong element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("strong");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -7042,11 +7042,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a strong element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("strong");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -7055,11 +7055,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a strong element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a strong element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable strong(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("strong");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -7068,10 +7068,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a sub element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder sub(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable sub(
             string id = null,
             string @class = null,
             string style = null,
@@ -7111,10 +7111,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a sub element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder sub(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable sub(params Attr[] attrs)
         {
             StartTagRaw("sub");
             Attrs(attrs);
@@ -7123,10 +7123,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a sub element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder sub(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable sub(IEnumerable<Attr> attrs)
         {
             StartTagRaw("sub");
             Attrs(attrs);
@@ -7135,11 +7135,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a sub element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder sub(Attr attr1)
+        protected IDisposable sub(Attr attr1)
         {
             StartTagRaw("sub");
             Attrs(attr1);
@@ -7148,11 +7148,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a sub element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder sub(Attr attr1, Attr attr2)
+        protected IDisposable sub(Attr attr1, Attr attr2)
         {
             StartTagRaw("sub");
             Attrs(attr1, attr2);
@@ -7161,11 +7161,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a sub element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder sub(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable sub(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("sub");
             Attrs(attr1, attr2, attr3);
@@ -7174,11 +7174,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a sub element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("sub");
             Attrs(attr1, attr2, attr3, attr4);
@@ -7187,11 +7187,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a sub element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("sub");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -7200,11 +7200,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a sub element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("sub");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -7213,11 +7213,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a sub element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("sub");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -7226,11 +7226,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a sub element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a sub element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable sub(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("sub");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -7239,10 +7239,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a sup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder sup(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable sup(
             string id = null,
             string @class = null,
             string style = null,
@@ -7282,10 +7282,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a sup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder sup(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable sup(params Attr[] attrs)
         {
             StartTagRaw("sup");
             Attrs(attrs);
@@ -7294,10 +7294,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a sup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder sup(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable sup(IEnumerable<Attr> attrs)
         {
             StartTagRaw("sup");
             Attrs(attrs);
@@ -7306,11 +7306,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a sup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder sup(Attr attr1)
+        protected IDisposable sup(Attr attr1)
         {
             StartTagRaw("sup");
             Attrs(attr1);
@@ -7319,11 +7319,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a sup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder sup(Attr attr1, Attr attr2)
+        protected IDisposable sup(Attr attr1, Attr attr2)
         {
             StartTagRaw("sup");
             Attrs(attr1, attr2);
@@ -7332,11 +7332,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a sup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder sup(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable sup(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("sup");
             Attrs(attr1, attr2, attr3);
@@ -7345,11 +7345,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a sup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("sup");
             Attrs(attr1, attr2, attr3, attr4);
@@ -7358,11 +7358,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a sup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("sup");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -7371,11 +7371,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a sup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("sup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -7384,11 +7384,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a sup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("sup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -7397,11 +7397,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a sup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a sup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable sup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("sup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -7410,10 +7410,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an u element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder u(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable u(
             string id = null,
             string @class = null,
             string style = null,
@@ -7453,10 +7453,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an u element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder u(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable u(params Attr[] attrs)
         {
             StartTagRaw("u");
             Attrs(attrs);
@@ -7465,10 +7465,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an u element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder u(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable u(IEnumerable<Attr> attrs)
         {
             StartTagRaw("u");
             Attrs(attrs);
@@ -7477,11 +7477,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an u element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder u(Attr attr1)
+        protected IDisposable u(Attr attr1)
         {
             StartTagRaw("u");
             Attrs(attr1);
@@ -7490,11 +7490,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an u element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder u(Attr attr1, Attr attr2)
+        protected IDisposable u(Attr attr1, Attr attr2)
         {
             StartTagRaw("u");
             Attrs(attr1, attr2);
@@ -7503,11 +7503,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an u element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder u(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable u(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("u");
             Attrs(attr1, attr2, attr3);
@@ -7516,11 +7516,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an u element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable u(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("u");
             Attrs(attr1, attr2, attr3, attr4);
@@ -7529,11 +7529,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an u element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("u");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -7542,11 +7542,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an u element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("u");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -7555,11 +7555,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an u element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("u");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -7568,11 +7568,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an u element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an u element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable u(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("u");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -8028,10 +8028,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an abbr element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder abbr(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable abbr(
             string id = null,
             string @class = null,
             string style = null,
@@ -8071,10 +8071,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an abbr element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder abbr(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable abbr(params Attr[] attrs)
         {
             StartTagRaw("abbr");
             Attrs(attrs);
@@ -8083,10 +8083,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an abbr element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder abbr(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable abbr(IEnumerable<Attr> attrs)
         {
             StartTagRaw("abbr");
             Attrs(attrs);
@@ -8095,11 +8095,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an abbr element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder abbr(Attr attr1)
+        protected IDisposable abbr(Attr attr1)
         {
             StartTagRaw("abbr");
             Attrs(attr1);
@@ -8108,11 +8108,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an abbr element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder abbr(Attr attr1, Attr attr2)
+        protected IDisposable abbr(Attr attr1, Attr attr2)
         {
             StartTagRaw("abbr");
             Attrs(attr1, attr2);
@@ -8121,11 +8121,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an abbr element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable abbr(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("abbr");
             Attrs(attr1, attr2, attr3);
@@ -8134,11 +8134,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an abbr element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("abbr");
             Attrs(attr1, attr2, attr3, attr4);
@@ -8147,11 +8147,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an abbr element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("abbr");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -8160,11 +8160,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an abbr element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("abbr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -8173,11 +8173,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an abbr element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("abbr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -8186,11 +8186,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an abbr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an abbr element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable abbr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("abbr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -8199,10 +8199,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a cite element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder cite(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable cite(
             string id = null,
             string @class = null,
             string style = null,
@@ -8242,10 +8242,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a cite element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder cite(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable cite(params Attr[] attrs)
         {
             StartTagRaw("cite");
             Attrs(attrs);
@@ -8254,10 +8254,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a cite element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder cite(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable cite(IEnumerable<Attr> attrs)
         {
             StartTagRaw("cite");
             Attrs(attrs);
@@ -8266,11 +8266,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a cite element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder cite(Attr attr1)
+        protected IDisposable cite(Attr attr1)
         {
             StartTagRaw("cite");
             Attrs(attr1);
@@ -8279,11 +8279,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a cite element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder cite(Attr attr1, Attr attr2)
+        protected IDisposable cite(Attr attr1, Attr attr2)
         {
             StartTagRaw("cite");
             Attrs(attr1, attr2);
@@ -8292,11 +8292,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a cite element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder cite(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable cite(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("cite");
             Attrs(attr1, attr2, attr3);
@@ -8305,11 +8305,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a cite element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("cite");
             Attrs(attr1, attr2, attr3, attr4);
@@ -8318,11 +8318,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a cite element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("cite");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -8331,11 +8331,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a cite element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("cite");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -8344,11 +8344,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a cite element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("cite");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -8357,11 +8357,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a cite element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a cite element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable cite(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("cite");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -8370,10 +8370,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a code element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder code(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable code(
             string id = null,
             string @class = null,
             string style = null,
@@ -8413,10 +8413,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a code element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder code(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable code(params Attr[] attrs)
         {
             StartTagRaw("code");
             Attrs(attrs);
@@ -8425,10 +8425,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a code element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder code(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable code(IEnumerable<Attr> attrs)
         {
             StartTagRaw("code");
             Attrs(attrs);
@@ -8437,11 +8437,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a code element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder code(Attr attr1)
+        protected IDisposable code(Attr attr1)
         {
             StartTagRaw("code");
             Attrs(attr1);
@@ -8450,11 +8450,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a code element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder code(Attr attr1, Attr attr2)
+        protected IDisposable code(Attr attr1, Attr attr2)
         {
             StartTagRaw("code");
             Attrs(attr1, attr2);
@@ -8463,11 +8463,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a code element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder code(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable code(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("code");
             Attrs(attr1, attr2, attr3);
@@ -8476,11 +8476,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a code element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable code(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("code");
             Attrs(attr1, attr2, attr3, attr4);
@@ -8489,11 +8489,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a code element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("code");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -8502,11 +8502,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a code element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("code");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -8515,11 +8515,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a code element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("code");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -8528,11 +8528,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a code element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a code element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable code(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("code");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -8541,10 +8541,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a data element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder data(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable data(
             string id = null,
             string @class = null,
             string style = null,
@@ -8589,10 +8589,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a data element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder data(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable data(params Attr[] attrs)
         {
             StartTagRaw("data");
             Attrs(attrs);
@@ -8601,10 +8601,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a data element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder data(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable data(IEnumerable<Attr> attrs)
         {
             StartTagRaw("data");
             Attrs(attrs);
@@ -8613,11 +8613,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a data element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder data(Attr attr1)
+        protected IDisposable data(Attr attr1)
         {
             StartTagRaw("data");
             Attrs(attr1);
@@ -8626,11 +8626,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a data element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder data(Attr attr1, Attr attr2)
+        protected IDisposable data(Attr attr1, Attr attr2)
         {
             StartTagRaw("data");
             Attrs(attr1, attr2);
@@ -8639,11 +8639,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a data element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder data(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable data(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("data");
             Attrs(attr1, attr2, attr3);
@@ -8652,11 +8652,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a data element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable data(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("data");
             Attrs(attr1, attr2, attr3, attr4);
@@ -8665,11 +8665,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a data element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("data");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -8678,11 +8678,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a data element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("data");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -8691,11 +8691,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a data element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("data");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -8704,11 +8704,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a data element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a data element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable data(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("data");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -8717,10 +8717,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dfn element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder dfn(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable dfn(
             string id = null,
             string @class = null,
             string style = null,
@@ -8760,10 +8760,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dfn element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder dfn(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable dfn(params Attr[] attrs)
         {
             StartTagRaw("dfn");
             Attrs(attrs);
@@ -8772,10 +8772,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dfn element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder dfn(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable dfn(IEnumerable<Attr> attrs)
         {
             StartTagRaw("dfn");
             Attrs(attrs);
@@ -8784,11 +8784,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dfn element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dfn(Attr attr1)
+        protected IDisposable dfn(Attr attr1)
         {
             StartTagRaw("dfn");
             Attrs(attr1);
@@ -8797,11 +8797,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dfn element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dfn(Attr attr1, Attr attr2)
+        protected IDisposable dfn(Attr attr1, Attr attr2)
         {
             StartTagRaw("dfn");
             Attrs(attr1, attr2);
@@ -8810,11 +8810,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dfn element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable dfn(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("dfn");
             Attrs(attr1, attr2, attr3);
@@ -8823,11 +8823,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dfn element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("dfn");
             Attrs(attr1, attr2, attr3, attr4);
@@ -8836,11 +8836,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dfn element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("dfn");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -8849,11 +8849,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dfn element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("dfn");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -8862,11 +8862,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dfn element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("dfn");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -8875,11 +8875,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dfn element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dfn element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable dfn(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("dfn");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -8888,10 +8888,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a kbd element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder kbd(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable kbd(
             string id = null,
             string @class = null,
             string style = null,
@@ -8931,10 +8931,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a kbd element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder kbd(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable kbd(params Attr[] attrs)
         {
             StartTagRaw("kbd");
             Attrs(attrs);
@@ -8943,10 +8943,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a kbd element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder kbd(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable kbd(IEnumerable<Attr> attrs)
         {
             StartTagRaw("kbd");
             Attrs(attrs);
@@ -8955,11 +8955,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a kbd element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder kbd(Attr attr1)
+        protected IDisposable kbd(Attr attr1)
         {
             StartTagRaw("kbd");
             Attrs(attr1);
@@ -8968,11 +8968,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a kbd element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder kbd(Attr attr1, Attr attr2)
+        protected IDisposable kbd(Attr attr1, Attr attr2)
         {
             StartTagRaw("kbd");
             Attrs(attr1, attr2);
@@ -8981,11 +8981,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a kbd element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable kbd(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("kbd");
             Attrs(attr1, attr2, attr3);
@@ -8994,11 +8994,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a kbd element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("kbd");
             Attrs(attr1, attr2, attr3, attr4);
@@ -9007,11 +9007,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a kbd element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("kbd");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -9020,11 +9020,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a kbd element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("kbd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -9033,11 +9033,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a kbd element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("kbd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -9046,11 +9046,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a kbd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a kbd element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable kbd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("kbd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -9059,10 +9059,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a samp element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder samp(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable samp(
             string id = null,
             string @class = null,
             string style = null,
@@ -9102,10 +9102,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a samp element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder samp(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable samp(params Attr[] attrs)
         {
             StartTagRaw("samp");
             Attrs(attrs);
@@ -9114,10 +9114,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a samp element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder samp(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable samp(IEnumerable<Attr> attrs)
         {
             StartTagRaw("samp");
             Attrs(attrs);
@@ -9126,11 +9126,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a samp element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder samp(Attr attr1)
+        protected IDisposable samp(Attr attr1)
         {
             StartTagRaw("samp");
             Attrs(attr1);
@@ -9139,11 +9139,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a samp element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder samp(Attr attr1, Attr attr2)
+        protected IDisposable samp(Attr attr1, Attr attr2)
         {
             StartTagRaw("samp");
             Attrs(attr1, attr2);
@@ -9152,11 +9152,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a samp element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder samp(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable samp(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("samp");
             Attrs(attr1, attr2, attr3);
@@ -9165,11 +9165,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a samp element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("samp");
             Attrs(attr1, attr2, attr3, attr4);
@@ -9178,11 +9178,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a samp element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("samp");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -9191,11 +9191,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a samp element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("samp");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -9204,11 +9204,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a samp element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("samp");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -9217,11 +9217,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a samp element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a samp element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable samp(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("samp");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -9230,10 +9230,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a time element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder time(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable time(
             string id = null,
             string @class = null,
             string style = null,
@@ -9278,10 +9278,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a time element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder time(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable time(params Attr[] attrs)
         {
             StartTagRaw("time");
             Attrs(attrs);
@@ -9290,10 +9290,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a time element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder time(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable time(IEnumerable<Attr> attrs)
         {
             StartTagRaw("time");
             Attrs(attrs);
@@ -9302,11 +9302,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a time element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder time(Attr attr1)
+        protected IDisposable time(Attr attr1)
         {
             StartTagRaw("time");
             Attrs(attr1);
@@ -9315,11 +9315,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a time element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder time(Attr attr1, Attr attr2)
+        protected IDisposable time(Attr attr1, Attr attr2)
         {
             StartTagRaw("time");
             Attrs(attr1, attr2);
@@ -9328,11 +9328,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a time element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder time(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable time(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("time");
             Attrs(attr1, attr2, attr3);
@@ -9341,11 +9341,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a time element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable time(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("time");
             Attrs(attr1, attr2, attr3, attr4);
@@ -9354,11 +9354,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a time element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("time");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -9367,11 +9367,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a time element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("time");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -9380,11 +9380,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a time element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("time");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -9393,11 +9393,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a time element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a time element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable time(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("time");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -9406,10 +9406,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an ol element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder ol(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable ol(
             string id = null,
             string @class = null,
             string style = null,
@@ -9464,10 +9464,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an ol element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder ol(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable ol(params Attr[] attrs)
         {
             StartTagRaw("ol");
             Attrs(attrs);
@@ -9476,10 +9476,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an ol element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder ol(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable ol(IEnumerable<Attr> attrs)
         {
             StartTagRaw("ol");
             Attrs(attrs);
@@ -9488,11 +9488,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an ol element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder ol(Attr attr1)
+        protected IDisposable ol(Attr attr1)
         {
             StartTagRaw("ol");
             Attrs(attr1);
@@ -9501,11 +9501,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an ol element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder ol(Attr attr1, Attr attr2)
+        protected IDisposable ol(Attr attr1, Attr attr2)
         {
             StartTagRaw("ol");
             Attrs(attr1, attr2);
@@ -9514,11 +9514,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an ol element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder ol(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable ol(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("ol");
             Attrs(attr1, attr2, attr3);
@@ -9527,11 +9527,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an ol element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("ol");
             Attrs(attr1, attr2, attr3, attr4);
@@ -9540,11 +9540,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an ol element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("ol");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -9553,11 +9553,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an ol element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("ol");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -9566,11 +9566,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an ol element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("ol");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -9579,11 +9579,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an ol element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an ol element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable ol(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("ol");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -9592,10 +9592,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an ul element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder ul(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable ul(
             string id = null,
             string @class = null,
             string style = null,
@@ -9650,10 +9650,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an ul element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder ul(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable ul(params Attr[] attrs)
         {
             StartTagRaw("ul");
             Attrs(attrs);
@@ -9662,10 +9662,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an ul element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder ul(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable ul(IEnumerable<Attr> attrs)
         {
             StartTagRaw("ul");
             Attrs(attrs);
@@ -9674,11 +9674,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an ul element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder ul(Attr attr1)
+        protected IDisposable ul(Attr attr1)
         {
             StartTagRaw("ul");
             Attrs(attr1);
@@ -9687,11 +9687,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an ul element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder ul(Attr attr1, Attr attr2)
+        protected IDisposable ul(Attr attr1, Attr attr2)
         {
             StartTagRaw("ul");
             Attrs(attr1, attr2);
@@ -9700,11 +9700,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an ul element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder ul(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable ul(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("ul");
             Attrs(attr1, attr2, attr3);
@@ -9713,11 +9713,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an ul element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("ul");
             Attrs(attr1, attr2, attr3, attr4);
@@ -9726,11 +9726,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an ul element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("ul");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -9739,11 +9739,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an ul element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("ul");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -9752,11 +9752,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an ul element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("ul");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -9765,11 +9765,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an ul element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an ul element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable ul(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("ul");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -9778,10 +9778,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an li element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder li(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable li(
             string id = null,
             string @class = null,
             string style = null,
@@ -9826,10 +9826,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an li element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder li(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable li(params Attr[] attrs)
         {
             StartTagRaw("li");
             Attrs(attrs);
@@ -9838,10 +9838,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an li element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder li(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable li(IEnumerable<Attr> attrs)
         {
             StartTagRaw("li");
             Attrs(attrs);
@@ -9850,11 +9850,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an li element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder li(Attr attr1)
+        protected IDisposable li(Attr attr1)
         {
             StartTagRaw("li");
             Attrs(attr1);
@@ -9863,11 +9863,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an li element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder li(Attr attr1, Attr attr2)
+        protected IDisposable li(Attr attr1, Attr attr2)
         {
             StartTagRaw("li");
             Attrs(attr1, attr2);
@@ -9876,11 +9876,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an li element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder li(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable li(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("li");
             Attrs(attr1, attr2, attr3);
@@ -9889,11 +9889,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an li element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable li(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("li");
             Attrs(attr1, attr2, attr3, attr4);
@@ -9902,11 +9902,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an li element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("li");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -9915,11 +9915,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an li element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("li");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -9928,11 +9928,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an li element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("li");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -9941,11 +9941,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an li element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an li element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable li(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("li");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -9954,10 +9954,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dl element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder dl(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable dl(
             string id = null,
             string @class = null,
             string style = null,
@@ -9997,10 +9997,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dl element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder dl(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable dl(params Attr[] attrs)
         {
             StartTagRaw("dl");
             Attrs(attrs);
@@ -10009,10 +10009,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dl element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder dl(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable dl(IEnumerable<Attr> attrs)
         {
             StartTagRaw("dl");
             Attrs(attrs);
@@ -10021,11 +10021,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dl element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dl(Attr attr1)
+        protected IDisposable dl(Attr attr1)
         {
             StartTagRaw("dl");
             Attrs(attr1);
@@ -10034,11 +10034,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dl element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dl(Attr attr1, Attr attr2)
+        protected IDisposable dl(Attr attr1, Attr attr2)
         {
             StartTagRaw("dl");
             Attrs(attr1, attr2);
@@ -10047,11 +10047,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dl element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dl(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable dl(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("dl");
             Attrs(attr1, attr2, attr3);
@@ -10060,11 +10060,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dl element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("dl");
             Attrs(attr1, attr2, attr3, attr4);
@@ -10073,11 +10073,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dl element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("dl");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -10086,11 +10086,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dl element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("dl");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -10099,11 +10099,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dl element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("dl");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -10112,11 +10112,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dl element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dl element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable dl(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("dl");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -10125,10 +10125,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dt element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder dt(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable dt(
             string id = null,
             string @class = null,
             string style = null,
@@ -10168,10 +10168,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dt element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder dt(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable dt(params Attr[] attrs)
         {
             StartTagRaw("dt");
             Attrs(attrs);
@@ -10180,10 +10180,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dt element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder dt(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable dt(IEnumerable<Attr> attrs)
         {
             StartTagRaw("dt");
             Attrs(attrs);
@@ -10192,11 +10192,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dt element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dt(Attr attr1)
+        protected IDisposable dt(Attr attr1)
         {
             StartTagRaw("dt");
             Attrs(attr1);
@@ -10205,11 +10205,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dt element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dt(Attr attr1, Attr attr2)
+        protected IDisposable dt(Attr attr1, Attr attr2)
         {
             StartTagRaw("dt");
             Attrs(attr1, attr2);
@@ -10218,11 +10218,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dt element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dt(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable dt(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("dt");
             Attrs(attr1, attr2, attr3);
@@ -10231,11 +10231,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dt element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("dt");
             Attrs(attr1, attr2, attr3, attr4);
@@ -10244,11 +10244,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dt element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("dt");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -10257,11 +10257,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dt element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("dt");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -10270,11 +10270,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dt element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("dt");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -10283,11 +10283,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dt element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dt element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable dt(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("dt");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -10296,10 +10296,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dd element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder dd(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable dd(
             string id = null,
             string @class = null,
             string style = null,
@@ -10339,10 +10339,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dd element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder dd(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable dd(params Attr[] attrs)
         {
             StartTagRaw("dd");
             Attrs(attrs);
@@ -10351,10 +10351,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dd element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder dd(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable dd(IEnumerable<Attr> attrs)
         {
             StartTagRaw("dd");
             Attrs(attrs);
@@ -10363,11 +10363,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dd element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dd(Attr attr1)
+        protected IDisposable dd(Attr attr1)
         {
             StartTagRaw("dd");
             Attrs(attr1);
@@ -10376,11 +10376,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dd element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dd(Attr attr1, Attr attr2)
+        protected IDisposable dd(Attr attr1, Attr attr2)
         {
             StartTagRaw("dd");
             Attrs(attr1, attr2);
@@ -10389,11 +10389,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dd element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dd(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable dd(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("dd");
             Attrs(attr1, attr2, attr3);
@@ -10402,11 +10402,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dd element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("dd");
             Attrs(attr1, attr2, attr3, attr4);
@@ -10415,11 +10415,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dd element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("dd");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -10428,11 +10428,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dd element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("dd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -10441,11 +10441,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dd element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("dd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -10454,11 +10454,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dd element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dd element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable dd(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("dd");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -10467,10 +10467,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a table element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder table(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable table(
             string id = null,
             string @class = null,
             string style = null,
@@ -10510,10 +10510,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a table element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder table(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable table(params Attr[] attrs)
         {
             StartTagRaw("table");
             Attrs(attrs);
@@ -10522,10 +10522,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a table element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder table(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable table(IEnumerable<Attr> attrs)
         {
             StartTagRaw("table");
             Attrs(attrs);
@@ -10534,11 +10534,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a table element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder table(Attr attr1)
+        protected IDisposable table(Attr attr1)
         {
             StartTagRaw("table");
             Attrs(attr1);
@@ -10547,11 +10547,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a table element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder table(Attr attr1, Attr attr2)
+        protected IDisposable table(Attr attr1, Attr attr2)
         {
             StartTagRaw("table");
             Attrs(attr1, attr2);
@@ -10560,11 +10560,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a table element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder table(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable table(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("table");
             Attrs(attr1, attr2, attr3);
@@ -10573,11 +10573,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a table element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable table(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("table");
             Attrs(attr1, attr2, attr3, attr4);
@@ -10586,11 +10586,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a table element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("table");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -10599,11 +10599,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a table element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("table");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -10612,11 +10612,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a table element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("table");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -10625,11 +10625,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a table element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a table element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable table(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("table");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -10638,10 +10638,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a caption element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder caption(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable caption(
             string id = null,
             string @class = null,
             string style = null,
@@ -10681,10 +10681,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a caption element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder caption(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable caption(params Attr[] attrs)
         {
             StartTagRaw("caption");
             Attrs(attrs);
@@ -10693,10 +10693,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a caption element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder caption(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable caption(IEnumerable<Attr> attrs)
         {
             StartTagRaw("caption");
             Attrs(attrs);
@@ -10705,11 +10705,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a caption element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder caption(Attr attr1)
+        protected IDisposable caption(Attr attr1)
         {
             StartTagRaw("caption");
             Attrs(attr1);
@@ -10718,11 +10718,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a caption element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder caption(Attr attr1, Attr attr2)
+        protected IDisposable caption(Attr attr1, Attr attr2)
         {
             StartTagRaw("caption");
             Attrs(attr1, attr2);
@@ -10731,11 +10731,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a caption element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder caption(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable caption(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("caption");
             Attrs(attr1, attr2, attr3);
@@ -10744,11 +10744,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a caption element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("caption");
             Attrs(attr1, attr2, attr3, attr4);
@@ -10757,11 +10757,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a caption element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("caption");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -10770,11 +10770,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a caption element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("caption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -10783,11 +10783,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a caption element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("caption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -10796,11 +10796,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a caption element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a caption element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable caption(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("caption");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -10809,10 +10809,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a thead element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder thead(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable thead(
             string id = null,
             string @class = null,
             string style = null,
@@ -10852,10 +10852,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a thead element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder thead(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable thead(params Attr[] attrs)
         {
             StartTagRaw("thead");
             Attrs(attrs);
@@ -10864,10 +10864,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a thead element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder thead(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable thead(IEnumerable<Attr> attrs)
         {
             StartTagRaw("thead");
             Attrs(attrs);
@@ -10876,11 +10876,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a thead element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder thead(Attr attr1)
+        protected IDisposable thead(Attr attr1)
         {
             StartTagRaw("thead");
             Attrs(attr1);
@@ -10889,11 +10889,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a thead element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder thead(Attr attr1, Attr attr2)
+        protected IDisposable thead(Attr attr1, Attr attr2)
         {
             StartTagRaw("thead");
             Attrs(attr1, attr2);
@@ -10902,11 +10902,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a thead element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder thead(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable thead(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("thead");
             Attrs(attr1, attr2, attr3);
@@ -10915,11 +10915,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a thead element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("thead");
             Attrs(attr1, attr2, attr3, attr4);
@@ -10928,11 +10928,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a thead element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("thead");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -10941,11 +10941,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a thead element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("thead");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -10954,11 +10954,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a thead element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("thead");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -10967,11 +10967,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a thead element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a thead element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable thead(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("thead");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -10980,10 +10980,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a colgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder colgroup(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable colgroup(
             string id = null,
             string @class = null,
             string style = null,
@@ -11028,10 +11028,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a colgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder colgroup(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable colgroup(params Attr[] attrs)
         {
             StartTagRaw("colgroup");
             Attrs(attrs);
@@ -11040,10 +11040,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a colgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder colgroup(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable colgroup(IEnumerable<Attr> attrs)
         {
             StartTagRaw("colgroup");
             Attrs(attrs);
@@ -11052,11 +11052,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a colgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder colgroup(Attr attr1)
+        protected IDisposable colgroup(Attr attr1)
         {
             StartTagRaw("colgroup");
             Attrs(attr1);
@@ -11065,11 +11065,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a colgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder colgroup(Attr attr1, Attr attr2)
+        protected IDisposable colgroup(Attr attr1, Attr attr2)
         {
             StartTagRaw("colgroup");
             Attrs(attr1, attr2);
@@ -11078,11 +11078,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a colgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable colgroup(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("colgroup");
             Attrs(attr1, attr2, attr3);
@@ -11091,11 +11091,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a colgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("colgroup");
             Attrs(attr1, attr2, attr3, attr4);
@@ -11104,11 +11104,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a colgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("colgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -11117,11 +11117,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a colgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("colgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -11130,11 +11130,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a colgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("colgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -11143,11 +11143,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a colgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a colgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable colgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("colgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -11156,10 +11156,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a col element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder col(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable col(
             string id = null,
             string @class = null,
             string style = null,
@@ -11204,10 +11204,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a col element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder col(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable col(params Attr[] attrs)
         {
             StartTagRaw("col");
             Attrs(attrs);
@@ -11216,10 +11216,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a col element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder col(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable col(IEnumerable<Attr> attrs)
         {
             StartTagRaw("col");
             Attrs(attrs);
@@ -11228,11 +11228,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a col element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder col(Attr attr1)
+        protected IDisposable col(Attr attr1)
         {
             StartTagRaw("col");
             Attrs(attr1);
@@ -11241,11 +11241,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a col element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder col(Attr attr1, Attr attr2)
+        protected IDisposable col(Attr attr1, Attr attr2)
         {
             StartTagRaw("col");
             Attrs(attr1, attr2);
@@ -11254,11 +11254,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a col element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder col(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable col(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("col");
             Attrs(attr1, attr2, attr3);
@@ -11267,11 +11267,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a col element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable col(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("col");
             Attrs(attr1, attr2, attr3, attr4);
@@ -11280,11 +11280,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a col element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("col");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -11293,11 +11293,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a col element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("col");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -11306,11 +11306,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a col element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("col");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -11319,11 +11319,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a col element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a col element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable col(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("col");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -11332,10 +11332,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tbody element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder tbody(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable tbody(
             string id = null,
             string @class = null,
             string style = null,
@@ -11375,10 +11375,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tbody element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder tbody(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable tbody(params Attr[] attrs)
         {
             StartTagRaw("tbody");
             Attrs(attrs);
@@ -11387,10 +11387,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tbody element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder tbody(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable tbody(IEnumerable<Attr> attrs)
         {
             StartTagRaw("tbody");
             Attrs(attrs);
@@ -11399,11 +11399,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tbody element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tbody(Attr attr1)
+        protected IDisposable tbody(Attr attr1)
         {
             StartTagRaw("tbody");
             Attrs(attr1);
@@ -11412,11 +11412,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tbody element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tbody(Attr attr1, Attr attr2)
+        protected IDisposable tbody(Attr attr1, Attr attr2)
         {
             StartTagRaw("tbody");
             Attrs(attr1, attr2);
@@ -11425,11 +11425,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tbody element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable tbody(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("tbody");
             Attrs(attr1, attr2, attr3);
@@ -11438,11 +11438,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tbody element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("tbody");
             Attrs(attr1, attr2, attr3, attr4);
@@ -11451,11 +11451,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tbody element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("tbody");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -11464,11 +11464,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tbody element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("tbody");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -11477,11 +11477,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tbody element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("tbody");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -11490,11 +11490,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tbody element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tbody element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable tbody(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("tbody");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -11503,10 +11503,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tr element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder tr(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable tr(
             string id = null,
             string @class = null,
             string style = null,
@@ -11546,10 +11546,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tr element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder tr(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable tr(params Attr[] attrs)
         {
             StartTagRaw("tr");
             Attrs(attrs);
@@ -11558,10 +11558,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tr element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder tr(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable tr(IEnumerable<Attr> attrs)
         {
             StartTagRaw("tr");
             Attrs(attrs);
@@ -11570,11 +11570,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tr element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tr(Attr attr1)
+        protected IDisposable tr(Attr attr1)
         {
             StartTagRaw("tr");
             Attrs(attr1);
@@ -11583,11 +11583,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tr element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tr(Attr attr1, Attr attr2)
+        protected IDisposable tr(Attr attr1, Attr attr2)
         {
             StartTagRaw("tr");
             Attrs(attr1, attr2);
@@ -11596,11 +11596,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tr element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tr(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable tr(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("tr");
             Attrs(attr1, attr2, attr3);
@@ -11609,11 +11609,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tr element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("tr");
             Attrs(attr1, attr2, attr3, attr4);
@@ -11622,11 +11622,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tr element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("tr");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -11635,11 +11635,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tr element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("tr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -11648,11 +11648,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tr element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("tr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -11661,11 +11661,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tr element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tr element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable tr(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("tr");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -11674,10 +11674,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a th element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder th(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable th(
             string id = null,
             string @class = null,
             string style = null,
@@ -11737,10 +11737,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a th element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder th(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable th(params Attr[] attrs)
         {
             StartTagRaw("th");
             Attrs(attrs);
@@ -11749,10 +11749,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a th element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder th(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable th(IEnumerable<Attr> attrs)
         {
             StartTagRaw("th");
             Attrs(attrs);
@@ -11761,11 +11761,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a th element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder th(Attr attr1)
+        protected IDisposable th(Attr attr1)
         {
             StartTagRaw("th");
             Attrs(attr1);
@@ -11774,11 +11774,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a th element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder th(Attr attr1, Attr attr2)
+        protected IDisposable th(Attr attr1, Attr attr2)
         {
             StartTagRaw("th");
             Attrs(attr1, attr2);
@@ -11787,11 +11787,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a th element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder th(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable th(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("th");
             Attrs(attr1, attr2, attr3);
@@ -11800,11 +11800,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a th element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable th(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("th");
             Attrs(attr1, attr2, attr3, attr4);
@@ -11813,11 +11813,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a th element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("th");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -11826,11 +11826,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a th element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("th");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -11839,11 +11839,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a th element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("th");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -11852,11 +11852,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a th element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a th element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable th(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("th");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -11865,10 +11865,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a td element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder td(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable td(
             string id = null,
             string @class = null,
             string style = null,
@@ -11923,10 +11923,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a td element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder td(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable td(params Attr[] attrs)
         {
             StartTagRaw("td");
             Attrs(attrs);
@@ -11935,10 +11935,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a td element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder td(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable td(IEnumerable<Attr> attrs)
         {
             StartTagRaw("td");
             Attrs(attrs);
@@ -11947,11 +11947,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a td element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder td(Attr attr1)
+        protected IDisposable td(Attr attr1)
         {
             StartTagRaw("td");
             Attrs(attr1);
@@ -11960,11 +11960,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a td element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder td(Attr attr1, Attr attr2)
+        protected IDisposable td(Attr attr1, Attr attr2)
         {
             StartTagRaw("td");
             Attrs(attr1, attr2);
@@ -11973,11 +11973,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a td element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder td(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable td(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("td");
             Attrs(attr1, attr2, attr3);
@@ -11986,11 +11986,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a td element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable td(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("td");
             Attrs(attr1, attr2, attr3, attr4);
@@ -11999,11 +11999,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a td element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("td");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -12012,11 +12012,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a td element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("td");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -12025,11 +12025,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a td element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("td");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -12038,11 +12038,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a td element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a td element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable td(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("td");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -12051,10 +12051,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tfoot element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder tfoot(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable tfoot(
             string id = null,
             string @class = null,
             string style = null,
@@ -12094,10 +12094,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tfoot element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder tfoot(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable tfoot(params Attr[] attrs)
         {
             StartTagRaw("tfoot");
             Attrs(attrs);
@@ -12106,10 +12106,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tfoot element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder tfoot(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable tfoot(IEnumerable<Attr> attrs)
         {
             StartTagRaw("tfoot");
             Attrs(attrs);
@@ -12118,11 +12118,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tfoot element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tfoot(Attr attr1)
+        protected IDisposable tfoot(Attr attr1)
         {
             StartTagRaw("tfoot");
             Attrs(attr1);
@@ -12131,11 +12131,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tfoot element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tfoot(Attr attr1, Attr attr2)
+        protected IDisposable tfoot(Attr attr1, Attr attr2)
         {
             StartTagRaw("tfoot");
             Attrs(attr1, attr2);
@@ -12144,11 +12144,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tfoot element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable tfoot(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("tfoot");
             Attrs(attr1, attr2, attr3);
@@ -12157,11 +12157,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tfoot element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("tfoot");
             Attrs(attr1, attr2, attr3, attr4);
@@ -12170,11 +12170,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tfoot element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("tfoot");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -12183,11 +12183,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tfoot element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("tfoot");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -12196,11 +12196,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tfoot element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("tfoot");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -12209,11 +12209,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a tfoot element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a tfoot element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable tfoot(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("tfoot");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -12222,10 +12222,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a form element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder form(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable form(
             string id = null,
             string @class = null,
             string style = null,
@@ -12300,10 +12300,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a form element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder form(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable form(params Attr[] attrs)
         {
             StartTagRaw("form");
             Attrs(attrs);
@@ -12312,10 +12312,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a form element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder form(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable form(IEnumerable<Attr> attrs)
         {
             StartTagRaw("form");
             Attrs(attrs);
@@ -12324,11 +12324,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a form element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder form(Attr attr1)
+        protected IDisposable form(Attr attr1)
         {
             StartTagRaw("form");
             Attrs(attr1);
@@ -12337,11 +12337,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a form element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder form(Attr attr1, Attr attr2)
+        protected IDisposable form(Attr attr1, Attr attr2)
         {
             StartTagRaw("form");
             Attrs(attr1, attr2);
@@ -12350,11 +12350,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a form element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder form(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable form(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("form");
             Attrs(attr1, attr2, attr3);
@@ -12363,11 +12363,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a form element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable form(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("form");
             Attrs(attr1, attr2, attr3, attr4);
@@ -12376,11 +12376,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a form element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("form");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -12389,11 +12389,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a form element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("form");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -12402,11 +12402,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a form element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("form");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -12415,11 +12415,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a form element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a form element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable form(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("form");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -12428,10 +12428,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a fieldset element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder fieldset(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable fieldset(
             string id = null,
             string @class = null,
             string style = null,
@@ -12486,10 +12486,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a fieldset element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder fieldset(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable fieldset(params Attr[] attrs)
         {
             StartTagRaw("fieldset");
             Attrs(attrs);
@@ -12498,10 +12498,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a fieldset element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder fieldset(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable fieldset(IEnumerable<Attr> attrs)
         {
             StartTagRaw("fieldset");
             Attrs(attrs);
@@ -12510,11 +12510,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a fieldset element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder fieldset(Attr attr1)
+        protected IDisposable fieldset(Attr attr1)
         {
             StartTagRaw("fieldset");
             Attrs(attr1);
@@ -12523,11 +12523,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a fieldset element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder fieldset(Attr attr1, Attr attr2)
+        protected IDisposable fieldset(Attr attr1, Attr attr2)
         {
             StartTagRaw("fieldset");
             Attrs(attr1, attr2);
@@ -12536,11 +12536,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a fieldset element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable fieldset(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("fieldset");
             Attrs(attr1, attr2, attr3);
@@ -12549,11 +12549,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a fieldset element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("fieldset");
             Attrs(attr1, attr2, attr3, attr4);
@@ -12562,11 +12562,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a fieldset element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("fieldset");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -12575,11 +12575,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a fieldset element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("fieldset");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -12588,11 +12588,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a fieldset element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("fieldset");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -12601,11 +12601,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a fieldset element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a fieldset element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable fieldset(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("fieldset");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -12614,10 +12614,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a label element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder label(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable label(
             string id = null,
             string @class = null,
             string style = null,
@@ -12662,10 +12662,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a label element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder label(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable label(params Attr[] attrs)
         {
             StartTagRaw("label");
             Attrs(attrs);
@@ -12674,10 +12674,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a label element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder label(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable label(IEnumerable<Attr> attrs)
         {
             StartTagRaw("label");
             Attrs(attrs);
@@ -12686,11 +12686,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a label element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder label(Attr attr1)
+        protected IDisposable label(Attr attr1)
         {
             StartTagRaw("label");
             Attrs(attr1);
@@ -12699,11 +12699,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a label element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder label(Attr attr1, Attr attr2)
+        protected IDisposable label(Attr attr1, Attr attr2)
         {
             StartTagRaw("label");
             Attrs(attr1, attr2);
@@ -12712,11 +12712,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a label element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder label(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable label(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("label");
             Attrs(attr1, attr2, attr3);
@@ -12725,11 +12725,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a label element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable label(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("label");
             Attrs(attr1, attr2, attr3, attr4);
@@ -12738,11 +12738,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a label element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("label");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -12751,11 +12751,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a label element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("label");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -12764,11 +12764,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a label element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("label");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -12777,11 +12777,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a label element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a label element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable label(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("label");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -12790,10 +12790,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an input element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder input(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable input(
             string id = null,
             string @class = null,
             string style = null,
@@ -12973,10 +12973,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an input element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder input(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable input(params Attr[] attrs)
         {
             StartTagRaw("input");
             Attrs(attrs);
@@ -12985,10 +12985,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an input element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder input(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable input(IEnumerable<Attr> attrs)
         {
             StartTagRaw("input");
             Attrs(attrs);
@@ -12997,11 +12997,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an input element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder input(Attr attr1)
+        protected IDisposable input(Attr attr1)
         {
             StartTagRaw("input");
             Attrs(attr1);
@@ -13010,11 +13010,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an input element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder input(Attr attr1, Attr attr2)
+        protected IDisposable input(Attr attr1, Attr attr2)
         {
             StartTagRaw("input");
             Attrs(attr1, attr2);
@@ -13023,11 +13023,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an input element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder input(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable input(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("input");
             Attrs(attr1, attr2, attr3);
@@ -13036,11 +13036,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an input element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable input(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("input");
             Attrs(attr1, attr2, attr3, attr4);
@@ -13049,11 +13049,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an input element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("input");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -13062,11 +13062,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an input element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("input");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -13075,11 +13075,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an input element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("input");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -13088,11 +13088,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an input element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an input element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable input(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("input");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -13101,10 +13101,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a button element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder button(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable button(
             string id = null,
             string @class = null,
             string style = null,
@@ -13214,10 +13214,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a button element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder button(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable button(params Attr[] attrs)
         {
             StartTagRaw("button");
             Attrs(attrs);
@@ -13226,10 +13226,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a button element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder button(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable button(IEnumerable<Attr> attrs)
         {
             StartTagRaw("button");
             Attrs(attrs);
@@ -13238,11 +13238,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a button element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder button(Attr attr1)
+        protected IDisposable button(Attr attr1)
         {
             StartTagRaw("button");
             Attrs(attr1);
@@ -13251,11 +13251,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a button element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder button(Attr attr1, Attr attr2)
+        protected IDisposable button(Attr attr1, Attr attr2)
         {
             StartTagRaw("button");
             Attrs(attr1, attr2);
@@ -13264,11 +13264,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a button element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder button(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable button(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("button");
             Attrs(attr1, attr2, attr3);
@@ -13277,11 +13277,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a button element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable button(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("button");
             Attrs(attr1, attr2, attr3, attr4);
@@ -13290,11 +13290,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a button element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("button");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -13303,11 +13303,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a button element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("button");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -13316,11 +13316,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a button element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("button");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -13329,11 +13329,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a button element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a button element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable button(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("button");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -13342,10 +13342,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a textarea element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder textarea(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable textarea(
             string id = null,
             string @class = null,
             string style = null,
@@ -13455,10 +13455,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a textarea element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder textarea(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable textarea(params Attr[] attrs)
         {
             StartTagRaw("textarea");
             Attrs(attrs);
@@ -13467,10 +13467,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a textarea element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder textarea(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable textarea(IEnumerable<Attr> attrs)
         {
             StartTagRaw("textarea");
             Attrs(attrs);
@@ -13479,11 +13479,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a textarea element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder textarea(Attr attr1)
+        protected IDisposable textarea(Attr attr1)
         {
             StartTagRaw("textarea");
             Attrs(attr1);
@@ -13492,11 +13492,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a textarea element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder textarea(Attr attr1, Attr attr2)
+        protected IDisposable textarea(Attr attr1, Attr attr2)
         {
             StartTagRaw("textarea");
             Attrs(attr1, attr2);
@@ -13505,11 +13505,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a textarea element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable textarea(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("textarea");
             Attrs(attr1, attr2, attr3);
@@ -13518,11 +13518,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a textarea element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("textarea");
             Attrs(attr1, attr2, attr3, attr4);
@@ -13531,11 +13531,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a textarea element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("textarea");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -13544,11 +13544,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a textarea element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("textarea");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -13557,11 +13557,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a textarea element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("textarea");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -13570,11 +13570,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a textarea element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a textarea element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable textarea(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("textarea");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -13583,10 +13583,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a datalist element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder datalist(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable datalist(
             string id = null,
             string @class = null,
             string style = null,
@@ -13626,10 +13626,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a datalist element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder datalist(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable datalist(params Attr[] attrs)
         {
             StartTagRaw("datalist");
             Attrs(attrs);
@@ -13638,10 +13638,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a datalist element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder datalist(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable datalist(IEnumerable<Attr> attrs)
         {
             StartTagRaw("datalist");
             Attrs(attrs);
@@ -13650,11 +13650,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a datalist element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder datalist(Attr attr1)
+        protected IDisposable datalist(Attr attr1)
         {
             StartTagRaw("datalist");
             Attrs(attr1);
@@ -13663,11 +13663,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a datalist element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder datalist(Attr attr1, Attr attr2)
+        protected IDisposable datalist(Attr attr1, Attr attr2)
         {
             StartTagRaw("datalist");
             Attrs(attr1, attr2);
@@ -13676,11 +13676,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a datalist element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable datalist(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("datalist");
             Attrs(attr1, attr2, attr3);
@@ -13689,11 +13689,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a datalist element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("datalist");
             Attrs(attr1, attr2, attr3, attr4);
@@ -13702,11 +13702,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a datalist element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("datalist");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -13715,11 +13715,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a datalist element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("datalist");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -13728,11 +13728,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a datalist element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("datalist");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -13741,11 +13741,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a datalist element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a datalist element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable datalist(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("datalist");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -13754,10 +13754,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an optgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder optgroup(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable optgroup(
             string id = null,
             string @class = null,
             string style = null,
@@ -13807,10 +13807,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an optgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder optgroup(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable optgroup(params Attr[] attrs)
         {
             StartTagRaw("optgroup");
             Attrs(attrs);
@@ -13819,10 +13819,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an optgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder optgroup(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable optgroup(IEnumerable<Attr> attrs)
         {
             StartTagRaw("optgroup");
             Attrs(attrs);
@@ -13831,11 +13831,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an optgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder optgroup(Attr attr1)
+        protected IDisposable optgroup(Attr attr1)
         {
             StartTagRaw("optgroup");
             Attrs(attr1);
@@ -13844,11 +13844,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an optgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder optgroup(Attr attr1, Attr attr2)
+        protected IDisposable optgroup(Attr attr1, Attr attr2)
         {
             StartTagRaw("optgroup");
             Attrs(attr1, attr2);
@@ -13857,11 +13857,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an optgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable optgroup(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("optgroup");
             Attrs(attr1, attr2, attr3);
@@ -13870,11 +13870,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an optgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("optgroup");
             Attrs(attr1, attr2, attr3, attr4);
@@ -13883,11 +13883,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an optgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("optgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -13896,11 +13896,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an optgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("optgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -13909,11 +13909,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an optgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("optgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -13922,11 +13922,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an optgroup element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an optgroup element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable optgroup(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("optgroup");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -13935,10 +13935,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a select element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder select(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable select(
             string id = null,
             string @class = null,
             string style = null,
@@ -14013,10 +14013,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a select element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder select(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable select(params Attr[] attrs)
         {
             StartTagRaw("select");
             Attrs(attrs);
@@ -14025,10 +14025,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a select element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder select(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable select(IEnumerable<Attr> attrs)
         {
             StartTagRaw("select");
             Attrs(attrs);
@@ -14037,11 +14037,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a select element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder select(Attr attr1)
+        protected IDisposable select(Attr attr1)
         {
             StartTagRaw("select");
             Attrs(attr1);
@@ -14050,11 +14050,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a select element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder select(Attr attr1, Attr attr2)
+        protected IDisposable select(Attr attr1, Attr attr2)
         {
             StartTagRaw("select");
             Attrs(attr1, attr2);
@@ -14063,11 +14063,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a select element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder select(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable select(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("select");
             Attrs(attr1, attr2, attr3);
@@ -14076,11 +14076,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a select element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable select(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("select");
             Attrs(attr1, attr2, attr3, attr4);
@@ -14089,11 +14089,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a select element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("select");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -14102,11 +14102,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a select element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("select");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -14115,11 +14115,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a select element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("select");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -14128,11 +14128,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a select element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a select element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable select(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("select");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -14141,10 +14141,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an option element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder option(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable option(
             string id = null,
             string @class = null,
             string style = null,
@@ -14204,10 +14204,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an option element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder option(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable option(params Attr[] attrs)
         {
             StartTagRaw("option");
             Attrs(attrs);
@@ -14216,10 +14216,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an option element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder option(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable option(IEnumerable<Attr> attrs)
         {
             StartTagRaw("option");
             Attrs(attrs);
@@ -14228,11 +14228,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an option element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder option(Attr attr1)
+        protected IDisposable option(Attr attr1)
         {
             StartTagRaw("option");
             Attrs(attr1);
@@ -14241,11 +14241,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an option element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder option(Attr attr1, Attr attr2)
+        protected IDisposable option(Attr attr1, Attr attr2)
         {
             StartTagRaw("option");
             Attrs(attr1, attr2);
@@ -14254,11 +14254,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an option element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder option(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable option(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("option");
             Attrs(attr1, attr2, attr3);
@@ -14267,11 +14267,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an option element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable option(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("option");
             Attrs(attr1, attr2, attr3, attr4);
@@ -14280,11 +14280,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an option element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("option");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -14293,11 +14293,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an option element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("option");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -14306,11 +14306,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an option element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("option");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -14319,11 +14319,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an option element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an option element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable option(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("option");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -14332,10 +14332,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a legend element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder legend(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable legend(
             string id = null,
             string @class = null,
             string style = null,
@@ -14375,10 +14375,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a legend element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder legend(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable legend(params Attr[] attrs)
         {
             StartTagRaw("legend");
             Attrs(attrs);
@@ -14387,10 +14387,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a legend element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder legend(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable legend(IEnumerable<Attr> attrs)
         {
             StartTagRaw("legend");
             Attrs(attrs);
@@ -14399,11 +14399,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a legend element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder legend(Attr attr1)
+        protected IDisposable legend(Attr attr1)
         {
             StartTagRaw("legend");
             Attrs(attr1);
@@ -14412,11 +14412,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a legend element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder legend(Attr attr1, Attr attr2)
+        protected IDisposable legend(Attr attr1, Attr attr2)
         {
             StartTagRaw("legend");
             Attrs(attr1, attr2);
@@ -14425,11 +14425,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a legend element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder legend(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable legend(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("legend");
             Attrs(attr1, attr2, attr3);
@@ -14438,11 +14438,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a legend element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("legend");
             Attrs(attr1, attr2, attr3, attr4);
@@ -14451,11 +14451,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a legend element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("legend");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -14464,11 +14464,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a legend element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("legend");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -14477,11 +14477,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a legend element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("legend");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -14490,11 +14490,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a legend element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a legend element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable legend(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("legend");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -14503,10 +14503,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a meter element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder meter(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable meter(
             string id = null,
             string @class = null,
             string style = null,
@@ -14581,10 +14581,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a meter element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder meter(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable meter(params Attr[] attrs)
         {
             StartTagRaw("meter");
             Attrs(attrs);
@@ -14593,10 +14593,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a meter element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder meter(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable meter(IEnumerable<Attr> attrs)
         {
             StartTagRaw("meter");
             Attrs(attrs);
@@ -14605,11 +14605,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a meter element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder meter(Attr attr1)
+        protected IDisposable meter(Attr attr1)
         {
             StartTagRaw("meter");
             Attrs(attr1);
@@ -14618,11 +14618,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a meter element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder meter(Attr attr1, Attr attr2)
+        protected IDisposable meter(Attr attr1, Attr attr2)
         {
             StartTagRaw("meter");
             Attrs(attr1, attr2);
@@ -14631,11 +14631,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a meter element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder meter(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable meter(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("meter");
             Attrs(attr1, attr2, attr3);
@@ -14644,11 +14644,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a meter element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("meter");
             Attrs(attr1, attr2, attr3, attr4);
@@ -14657,11 +14657,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a meter element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("meter");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -14670,11 +14670,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a meter element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("meter");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -14683,11 +14683,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a meter element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("meter");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -14696,11 +14696,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a meter element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a meter element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable meter(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("meter");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -14709,10 +14709,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an output element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder output(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable output(
             string id = null,
             string @class = null,
             string style = null,
@@ -14767,10 +14767,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an output element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder output(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable output(params Attr[] attrs)
         {
             StartTagRaw("output");
             Attrs(attrs);
@@ -14779,10 +14779,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an output element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder output(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable output(IEnumerable<Attr> attrs)
         {
             StartTagRaw("output");
             Attrs(attrs);
@@ -14791,11 +14791,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an output element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder output(Attr attr1)
+        protected IDisposable output(Attr attr1)
         {
             StartTagRaw("output");
             Attrs(attr1);
@@ -14804,11 +14804,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an output element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder output(Attr attr1, Attr attr2)
+        protected IDisposable output(Attr attr1, Attr attr2)
         {
             StartTagRaw("output");
             Attrs(attr1, attr2);
@@ -14817,11 +14817,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an output element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder output(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable output(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("output");
             Attrs(attr1, attr2, attr3);
@@ -14830,11 +14830,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an output element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable output(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("output");
             Attrs(attr1, attr2, attr3, attr4);
@@ -14843,11 +14843,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an output element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("output");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -14856,11 +14856,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an output element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("output");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -14869,11 +14869,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an output element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("output");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -14882,11 +14882,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an output element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an output element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable output(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("output");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -14895,10 +14895,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a progress element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder progress(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable progress(
             string id = null,
             string @class = null,
             string style = null,
@@ -14948,10 +14948,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a progress element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder progress(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable progress(params Attr[] attrs)
         {
             StartTagRaw("progress");
             Attrs(attrs);
@@ -14960,10 +14960,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a progress element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder progress(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable progress(IEnumerable<Attr> attrs)
         {
             StartTagRaw("progress");
             Attrs(attrs);
@@ -14972,11 +14972,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a progress element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder progress(Attr attr1)
+        protected IDisposable progress(Attr attr1)
         {
             StartTagRaw("progress");
             Attrs(attr1);
@@ -14985,11 +14985,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a progress element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder progress(Attr attr1, Attr attr2)
+        protected IDisposable progress(Attr attr1, Attr attr2)
         {
             StartTagRaw("progress");
             Attrs(attr1, attr2);
@@ -14998,11 +14998,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a progress element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder progress(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable progress(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("progress");
             Attrs(attr1, attr2, attr3);
@@ -15011,11 +15011,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a progress element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("progress");
             Attrs(attr1, attr2, attr3, attr4);
@@ -15024,11 +15024,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a progress element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("progress");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -15037,11 +15037,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a progress element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("progress");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -15050,11 +15050,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a progress element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("progress");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -15063,11 +15063,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a progress element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a progress element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable progress(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("progress");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -15076,10 +15076,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a menu element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder menu(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable menu(
             string id = null,
             string @class = null,
             string style = null,
@@ -15129,10 +15129,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a menu element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder menu(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable menu(params Attr[] attrs)
         {
             StartTagRaw("menu");
             Attrs(attrs);
@@ -15141,10 +15141,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a menu element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder menu(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable menu(IEnumerable<Attr> attrs)
         {
             StartTagRaw("menu");
             Attrs(attrs);
@@ -15153,11 +15153,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a menu element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder menu(Attr attr1)
+        protected IDisposable menu(Attr attr1)
         {
             StartTagRaw("menu");
             Attrs(attr1);
@@ -15166,11 +15166,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a menu element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder menu(Attr attr1, Attr attr2)
+        protected IDisposable menu(Attr attr1, Attr attr2)
         {
             StartTagRaw("menu");
             Attrs(attr1, attr2);
@@ -15179,11 +15179,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a menu element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder menu(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable menu(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("menu");
             Attrs(attr1, attr2, attr3);
@@ -15192,11 +15192,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a menu element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("menu");
             Attrs(attr1, attr2, attr3, attr4);
@@ -15205,11 +15205,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a menu element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("menu");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -15218,11 +15218,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a menu element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("menu");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -15231,11 +15231,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a menu element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("menu");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -15244,11 +15244,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a menu element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a menu element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable menu(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("menu");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -15257,10 +15257,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a menuitem element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder menuitem(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable menuitem(
             string id = null,
             string @class = null,
             string style = null,
@@ -15340,10 +15340,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a menuitem element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder menuitem(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable menuitem(params Attr[] attrs)
         {
             StartTagRaw("menuitem");
             Attrs(attrs);
@@ -15352,10 +15352,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a menuitem element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder menuitem(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable menuitem(IEnumerable<Attr> attrs)
         {
             StartTagRaw("menuitem");
             Attrs(attrs);
@@ -15364,11 +15364,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a menuitem element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder menuitem(Attr attr1)
+        protected IDisposable menuitem(Attr attr1)
         {
             StartTagRaw("menuitem");
             Attrs(attr1);
@@ -15377,11 +15377,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a menuitem element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder menuitem(Attr attr1, Attr attr2)
+        protected IDisposable menuitem(Attr attr1, Attr attr2)
         {
             StartTagRaw("menuitem");
             Attrs(attr1, attr2);
@@ -15390,11 +15390,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a menuitem element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable menuitem(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("menuitem");
             Attrs(attr1, attr2, attr3);
@@ -15403,11 +15403,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a menuitem element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("menuitem");
             Attrs(attr1, attr2, attr3, attr4);
@@ -15416,11 +15416,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a menuitem element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("menuitem");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -15429,11 +15429,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a menuitem element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("menuitem");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -15442,11 +15442,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a menuitem element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("menuitem");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -15455,11 +15455,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a menuitem element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a menuitem element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable menuitem(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("menuitem");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -15468,10 +15468,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dialog element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder dialog(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable dialog(
             string id = null,
             string @class = null,
             string style = null,
@@ -15516,10 +15516,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dialog element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder dialog(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable dialog(params Attr[] attrs)
         {
             StartTagRaw("dialog");
             Attrs(attrs);
@@ -15528,10 +15528,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dialog element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder dialog(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable dialog(IEnumerable<Attr> attrs)
         {
             StartTagRaw("dialog");
             Attrs(attrs);
@@ -15540,11 +15540,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dialog element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dialog(Attr attr1)
+        protected IDisposable dialog(Attr attr1)
         {
             StartTagRaw("dialog");
             Attrs(attr1);
@@ -15553,11 +15553,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dialog element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dialog(Attr attr1, Attr attr2)
+        protected IDisposable dialog(Attr attr1, Attr attr2)
         {
             StartTagRaw("dialog");
             Attrs(attr1, attr2);
@@ -15566,11 +15566,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dialog element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable dialog(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("dialog");
             Attrs(attr1, attr2, attr3);
@@ -15579,11 +15579,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dialog element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("dialog");
             Attrs(attr1, attr2, attr3, attr4);
@@ -15592,11 +15592,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dialog element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("dialog");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -15605,11 +15605,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dialog element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("dialog");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -15618,11 +15618,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dialog element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("dialog");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -15631,11 +15631,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a dialog element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a dialog element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable dialog(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("dialog");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -15644,10 +15644,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a details element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder details(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable details(
             string id = null,
             string @class = null,
             string style = null,
@@ -15692,10 +15692,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a details element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder details(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable details(params Attr[] attrs)
         {
             StartTagRaw("details");
             Attrs(attrs);
@@ -15704,10 +15704,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a details element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder details(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable details(IEnumerable<Attr> attrs)
         {
             StartTagRaw("details");
             Attrs(attrs);
@@ -15716,11 +15716,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a details element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder details(Attr attr1)
+        protected IDisposable details(Attr attr1)
         {
             StartTagRaw("details");
             Attrs(attr1);
@@ -15729,11 +15729,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a details element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder details(Attr attr1, Attr attr2)
+        protected IDisposable details(Attr attr1, Attr attr2)
         {
             StartTagRaw("details");
             Attrs(attr1, attr2);
@@ -15742,11 +15742,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a details element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder details(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable details(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("details");
             Attrs(attr1, attr2, attr3);
@@ -15755,11 +15755,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a details element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable details(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("details");
             Attrs(attr1, attr2, attr3, attr4);
@@ -15768,11 +15768,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a details element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("details");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -15781,11 +15781,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a details element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("details");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -15794,11 +15794,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a details element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("details");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -15807,11 +15807,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a details element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a details element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable details(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("details");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -15820,10 +15820,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a summary element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder summary(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable summary(
             string id = null,
             string @class = null,
             string style = null,
@@ -15863,10 +15863,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a summary element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder summary(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable summary(params Attr[] attrs)
         {
             StartTagRaw("summary");
             Attrs(attrs);
@@ -15875,10 +15875,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a summary element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder summary(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable summary(IEnumerable<Attr> attrs)
         {
             StartTagRaw("summary");
             Attrs(attrs);
@@ -15887,11 +15887,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a summary element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder summary(Attr attr1)
+        protected IDisposable summary(Attr attr1)
         {
             StartTagRaw("summary");
             Attrs(attr1);
@@ -15900,11 +15900,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a summary element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder summary(Attr attr1, Attr attr2)
+        protected IDisposable summary(Attr attr1, Attr attr2)
         {
             StartTagRaw("summary");
             Attrs(attr1, attr2);
@@ -15913,11 +15913,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a summary element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder summary(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable summary(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("summary");
             Attrs(attr1, attr2, attr3);
@@ -15926,11 +15926,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a summary element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("summary");
             Attrs(attr1, attr2, attr3, attr4);
@@ -15939,11 +15939,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a summary element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("summary");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -15952,11 +15952,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a summary element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("summary");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -15965,11 +15965,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a summary element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("summary");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -15978,11 +15978,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a summary element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a summary element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable summary(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("summary");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -16175,10 +16175,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an audio element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder audio(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable audio(
             string id = null,
             string @class = null,
             string style = null,
@@ -16253,10 +16253,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an audio element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder audio(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable audio(params Attr[] attrs)
         {
             StartTagRaw("audio");
             Attrs(attrs);
@@ -16265,10 +16265,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an audio element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder audio(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable audio(IEnumerable<Attr> attrs)
         {
             StartTagRaw("audio");
             Attrs(attrs);
@@ -16277,11 +16277,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an audio element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder audio(Attr attr1)
+        protected IDisposable audio(Attr attr1)
         {
             StartTagRaw("audio");
             Attrs(attr1);
@@ -16290,11 +16290,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an audio element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder audio(Attr attr1, Attr attr2)
+        protected IDisposable audio(Attr attr1, Attr attr2)
         {
             StartTagRaw("audio");
             Attrs(attr1, attr2);
@@ -16303,11 +16303,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an audio element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder audio(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable audio(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("audio");
             Attrs(attr1, attr2, attr3);
@@ -16316,11 +16316,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an audio element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("audio");
             Attrs(attr1, attr2, attr3, attr4);
@@ -16329,11 +16329,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an audio element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("audio");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -16342,11 +16342,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an audio element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("audio");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -16355,11 +16355,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an audio element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("audio");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -16368,11 +16368,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an audio element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an audio element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable audio(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("audio");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -16381,10 +16381,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a video element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder video(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable video(
             string id = null,
             string @class = null,
             string style = null,
@@ -16474,10 +16474,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a video element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder video(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable video(params Attr[] attrs)
         {
             StartTagRaw("video");
             Attrs(attrs);
@@ -16486,10 +16486,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a video element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder video(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable video(IEnumerable<Attr> attrs)
         {
             StartTagRaw("video");
             Attrs(attrs);
@@ -16498,11 +16498,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a video element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder video(Attr attr1)
+        protected IDisposable video(Attr attr1)
         {
             StartTagRaw("video");
             Attrs(attr1);
@@ -16511,11 +16511,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a video element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder video(Attr attr1, Attr attr2)
+        protected IDisposable video(Attr attr1, Attr attr2)
         {
             StartTagRaw("video");
             Attrs(attr1, attr2);
@@ -16524,11 +16524,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a video element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder video(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable video(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("video");
             Attrs(attr1, attr2, attr3);
@@ -16537,11 +16537,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a video element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable video(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("video");
             Attrs(attr1, attr2, attr3, attr4);
@@ -16550,11 +16550,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a video element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("video");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -16563,11 +16563,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a video element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("video");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -16576,11 +16576,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a video element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("video");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -16589,11 +16589,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a video element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a video element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable video(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("video");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -16940,10 +16940,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an object element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder @object(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable @object(
             string id = null,
             string @class = null,
             string style = null,
@@ -17008,10 +17008,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an object element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder @object(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable @object(params Attr[] attrs)
         {
             StartTagRaw("object");
             Attrs(attrs);
@@ -17020,10 +17020,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an object element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder @object(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable @object(IEnumerable<Attr> attrs)
         {
             StartTagRaw("object");
             Attrs(attrs);
@@ -17032,11 +17032,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an object element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder @object(Attr attr1)
+        protected IDisposable @object(Attr attr1)
         {
             StartTagRaw("object");
             Attrs(attr1);
@@ -17045,11 +17045,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an object element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder @object(Attr attr1, Attr attr2)
+        protected IDisposable @object(Attr attr1, Attr attr2)
         {
             StartTagRaw("object");
             Attrs(attr1, attr2);
@@ -17058,11 +17058,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an object element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder @object(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable @object(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("object");
             Attrs(attr1, attr2, attr3);
@@ -17071,11 +17071,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an object element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("object");
             Attrs(attr1, attr2, attr3, attr4);
@@ -17084,11 +17084,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an object element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("object");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -17097,11 +17097,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an object element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("object");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -17110,11 +17110,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an object element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("object");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -17123,11 +17123,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write an object element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write an object element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable @object(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("object");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -17295,10 +17295,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a picture element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder picture(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable picture(
             string id = null,
             string @class = null,
             string style = null,
@@ -17338,10 +17338,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a picture element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder picture(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable picture(params Attr[] attrs)
         {
             StartTagRaw("picture");
             Attrs(attrs);
@@ -17350,10 +17350,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a picture element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder picture(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable picture(IEnumerable<Attr> attrs)
         {
             StartTagRaw("picture");
             Attrs(attrs);
@@ -17362,11 +17362,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a picture element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder picture(Attr attr1)
+        protected IDisposable picture(Attr attr1)
         {
             StartTagRaw("picture");
             Attrs(attr1);
@@ -17375,11 +17375,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a picture element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder picture(Attr attr1, Attr attr2)
+        protected IDisposable picture(Attr attr1, Attr attr2)
         {
             StartTagRaw("picture");
             Attrs(attr1, attr2);
@@ -17388,11 +17388,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a picture element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder picture(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable picture(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("picture");
             Attrs(attr1, attr2, attr3);
@@ -17401,11 +17401,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a picture element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("picture");
             Attrs(attr1, attr2, attr3, attr4);
@@ -17414,11 +17414,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a picture element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("picture");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -17427,11 +17427,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a picture element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("picture");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -17440,11 +17440,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a picture element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("picture");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -17453,11 +17453,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a picture element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a picture element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable picture(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("picture");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -17625,10 +17625,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a canvas element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder canvas(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable canvas(
             string id = null,
             string @class = null,
             string style = null,
@@ -17678,10 +17678,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a canvas element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder canvas(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable canvas(params Attr[] attrs)
         {
             StartTagRaw("canvas");
             Attrs(attrs);
@@ -17690,10 +17690,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a canvas element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder canvas(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable canvas(IEnumerable<Attr> attrs)
         {
             StartTagRaw("canvas");
             Attrs(attrs);
@@ -17702,11 +17702,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a canvas element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder canvas(Attr attr1)
+        protected IDisposable canvas(Attr attr1)
         {
             StartTagRaw("canvas");
             Attrs(attr1);
@@ -17715,11 +17715,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a canvas element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder canvas(Attr attr1, Attr attr2)
+        protected IDisposable canvas(Attr attr1, Attr attr2)
         {
             StartTagRaw("canvas");
             Attrs(attr1, attr2);
@@ -17728,11 +17728,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a canvas element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable canvas(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("canvas");
             Attrs(attr1, attr2, attr3);
@@ -17741,11 +17741,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a canvas element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("canvas");
             Attrs(attr1, attr2, attr3, attr4);
@@ -17754,11 +17754,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a canvas element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("canvas");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -17767,11 +17767,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a canvas element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("canvas");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -17780,11 +17780,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a canvas element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("canvas");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -17793,11 +17793,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a canvas element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a canvas element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable canvas(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("canvas");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -17806,10 +17806,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a bdi element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder bdi(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable bdi(
             string id = null,
             string @class = null,
             string style = null,
@@ -17854,10 +17854,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a bdi element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder bdi(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable bdi(params Attr[] attrs)
         {
             StartTagRaw("bdi");
             Attrs(attrs);
@@ -17866,10 +17866,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a bdi element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder bdi(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable bdi(IEnumerable<Attr> attrs)
         {
             StartTagRaw("bdi");
             Attrs(attrs);
@@ -17878,11 +17878,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a bdi element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder bdi(Attr attr1)
+        protected IDisposable bdi(Attr attr1)
         {
             StartTagRaw("bdi");
             Attrs(attr1);
@@ -17891,11 +17891,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a bdi element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder bdi(Attr attr1, Attr attr2)
+        protected IDisposable bdi(Attr attr1, Attr attr2)
         {
             StartTagRaw("bdi");
             Attrs(attr1, attr2);
@@ -17904,11 +17904,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a bdi element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable bdi(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("bdi");
             Attrs(attr1, attr2, attr3);
@@ -17917,11 +17917,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a bdi element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("bdi");
             Attrs(attr1, attr2, attr3, attr4);
@@ -17930,11 +17930,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a bdi element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("bdi");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -17943,11 +17943,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a bdi element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("bdi");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -17956,11 +17956,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a bdi element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("bdi");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -17969,11 +17969,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a bdi element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a bdi element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable bdi(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("bdi");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);
@@ -17982,10 +17982,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a bdo element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder bdo(
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable bdo(
             string id = null,
             string @class = null,
             string style = null,
@@ -18030,10 +18030,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a bdo element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder bdo(params Attr[] attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable bdo(params Attr[] attrs)
         {
             StartTagRaw("bdo");
             Attrs(attrs);
@@ -18042,10 +18042,10 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a bdo element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder bdo(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable bdo(IEnumerable<Attr> attrs)
         {
             StartTagRaw("bdo");
             Attrs(attrs);
@@ -18054,11 +18054,11 @@ namespace Eighty.Twenty
         }
         
         /// <summary>
-        /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a bdo element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder bdo(Attr attr1)
+        protected IDisposable bdo(Attr attr1)
         {
             StartTagRaw("bdo");
             Attrs(attr1);
@@ -18067,11 +18067,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a bdo element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder bdo(Attr attr1, Attr attr2)
+        protected IDisposable bdo(Attr attr1, Attr attr2)
         {
             StartTagRaw("bdo");
             Attrs(attr1, attr2);
@@ -18080,11 +18080,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a bdo element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3)
+        protected IDisposable bdo(Attr attr1, Attr attr2, Attr attr3)
         {
             StartTagRaw("bdo");
             Attrs(attr1, attr2, attr3);
@@ -18093,11 +18093,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a bdo element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
+        protected IDisposable bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4)
         {
             StartTagRaw("bdo");
             Attrs(attr1, attr2, attr3, attr4);
@@ -18106,11 +18106,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a bdo element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
+        protected IDisposable bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5)
         {
             StartTagRaw("bdo");
             Attrs(attr1, attr2, attr3, attr4, attr5);
@@ -18119,11 +18119,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a bdo element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
+        protected IDisposable bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6)
         {
             StartTagRaw("bdo");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6);
@@ -18132,11 +18132,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a bdo element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
+        protected IDisposable bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7)
         {
             StartTagRaw("bdo");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7);
@@ -18145,11 +18145,11 @@ namespace Eighty.Twenty
         }
 
         /// <summary>
-        /// Write a bdo element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write a bdo element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref="TagBuilder"/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref="IDisposable"/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
+        protected IDisposable bdo(Attr attr1, Attr attr2, Attr attr3, Attr attr4, Attr attr5, Attr attr6, Attr attr7, Attr attr8)
         {
             StartTagRaw("bdo");
             Attrs(attr1, attr2, attr3, attr4, attr5, attr6, attr7, attr8);

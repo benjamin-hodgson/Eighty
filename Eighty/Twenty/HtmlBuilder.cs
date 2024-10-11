@@ -120,8 +120,8 @@ public abstract partial class HtmlBuilder
     /// </summary>
     /// <param name="name">The tag name.</param>
     /// <param name="attrs">The attributes.</param>
-    /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
-    protected TagBuilder Tag(string name, params Attr[] attrs)
+    /// <returns>A <see cref="IDisposable"/> which MUST be disposed after setting the tag's children.</returns>
+    protected IDisposable Tag(string name, params Attr[] attrs)
     {
         if (name == null)
         {
@@ -144,8 +144,8 @@ public abstract partial class HtmlBuilder
     /// </summary>
     /// <param name="name">The tag name.</param>
     /// <param name="attrs">The attributes.</param>
-    /// <returns>A <see cref="TagBuilder"/> which MUST be disposed after setting the tag's children.</returns>
-    protected TagBuilder Tag(string name, IEnumerable<Attr> attrs)
+    /// <returns>A <see cref="IDisposable"/> which MUST be disposed after setting the tag's children.</returns>
+    protected IDisposable Tag(string name, IEnumerable<Attr> attrs)
     {
         if (name == null)
         {

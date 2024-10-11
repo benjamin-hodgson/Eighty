@@ -30,10 +30,10 @@ namespace Eighty.Twenty
     private static string TagDef(string name, string[] attrs)
         => $@"
         /// <summary>
-        /// Write {IndefiniteArticle(name)} {name} element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write {IndefiniteArticle(name)} {name} element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref=""TagBuilder""/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder {CsId(name)}({Params(attrs)}
+        /// <returns>A <see cref=""IDisposable""/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable {CsId(name)}({Params(attrs)}
         )
         {{
             StartTagRaw(""{name}"");
@@ -43,10 +43,10 @@ namespace Eighty.Twenty
         }}
 
         /// <summary>
-        /// Write {IndefiniteArticle(name)} {name} element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write {IndefiniteArticle(name)} {name} element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref=""TagBuilder""/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder {CsId(name)}(params Attr[] attrs)
+        /// <returns>A <see cref=""IDisposable""/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable {CsId(name)}(params Attr[] attrs)
         {{
             StartTagRaw(""{name}"");
             Attrs(attrs);
@@ -55,10 +55,10 @@ namespace Eighty.Twenty
         }}
 
         /// <summary>
-        /// Write {IndefiniteArticle(name)} {name} element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write {IndefiniteArticle(name)} {name} element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref=""TagBuilder""/> which MUST be disposed exactly once, immediately after the children have been written</returns>
-        protected TagBuilder {CsId(name)}(IEnumerable<Attr> attrs)
+        /// <returns>A <see cref=""IDisposable""/> which MUST be disposed immediately after the children have been written</returns>
+        protected IDisposable {CsId(name)}(IEnumerable<Attr> attrs)
         {{
             StartTagRaw(""{name}"");
             Attrs(attrs);
@@ -120,11 +120,11 @@ namespace Eighty.Twenty
     private static string TagAttrs(string name)
         => string.Join("\n", Enumerable.Range(1, 8).Select(n => $@"
         /// <summary>
-        /// Write {IndefiniteArticle(name)} {name} element. The returned value MUST be disposed exactly once, immediately after the children have been written.
+        /// Write {IndefiniteArticle(name)} {name} element. The returned value MUST be disposed immediately after the children have been written.
         /// </summary>
-        /// <returns>A <see cref=""TagBuilder""/> which MUST be disposed exactly once, immediately after the children have been written</returns>
+        /// <returns>A <see cref=""IDisposable""/> which MUST be disposed immediately after the children have been written</returns>
         [NoDoc]
-        protected TagBuilder {CsId(name)}({AttrParams(n)})
+        protected IDisposable {CsId(name)}({AttrParams(n)})
         {{
             StartTagRaw(""{name}"");
             Attrs({AttrArgs(n)});

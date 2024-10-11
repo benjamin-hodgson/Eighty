@@ -28,9 +28,9 @@ namespace Eighty.Twenty
         /// <summary>
         /// Write a tag which takes children.
         /// </summary>
-        /// <returns>A <see cref=""TagBuilder""/> which MUST be disposed after setting the tag's children.</returns>
+        /// <returns>A <see cref=""IDisposable""/> which MUST be disposed after setting the tag's children.</returns>
         [NoDoc]
-        protected TagBuilder Tag(string name, {AttrParams(number)})
+        protected IDisposable Tag(string name, {AttrParams(number)})
         {{
             StartTag(name);
             Attrs({AttrArgs(number)});
