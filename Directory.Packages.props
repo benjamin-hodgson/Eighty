@@ -7,7 +7,7 @@
         <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
         <PackageVersion Include="System.Buffers" Version="4.5.1" />
         <PackageVersion Include="System.Memory" Version="4.5.5" />
-        <PackageVersion Include="System.Collections.Immutable" Version="1.2.0" />
+        <PackageVersion Include="System.Collections.Immutable" Version="9.0.0" />
         <PackageVersion Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
         <PackageVersion Include="System.Text.Encodings.Web" Version="4.5.1" />
         <PackageVersion Include="System.Threading.Tasks.Extensions" Version="4.4.0" />
