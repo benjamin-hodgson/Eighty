@@ -68,68 +68,68 @@ public class AspNetCoreTests
     public async Task TestHtmlResult()
     {
         {
-            var response = await _client.GetAsync("Test/HtmlResult");
+            var response = await _client.GetAsync("Test/HtmlResult", TestContext.Current.CancellationToken);
             Assert.Equal(HttpStatusCode.PartialContent, response.StatusCode);
-            Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync());
+            Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync(TestContext.Current.CancellationToken));
         }
 
         {
-            var response = await _client.GetAsync("Test/AsyncHtmlResult");
+            var response = await _client.GetAsync("Test/AsyncHtmlResult", TestContext.Current.CancellationToken);
             Assert.Equal(HttpStatusCode.PartialContent, response.StatusCode);
-            Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync());
+            Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync(TestContext.Current.CancellationToken));
         }
     }
 
     [Fact]
     public async Task TestHtmlBuilderResult()
     {
-        var response = await _client.GetAsync("Test/HtmlBuilderResult");
+        var response = await _client.GetAsync("Test/HtmlBuilderResult", TestContext.Current.CancellationToken);
         Assert.Equal(HttpStatusCode.PartialContent, response.StatusCode);
-        Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync());
+        Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync(TestContext.Current.CancellationToken));
     }
 
     [Fact]
     public async Task TestHtmlRendererResult()
     {
         {
-            var response = await _client.GetAsync("Test/HtmlRendererResult");
+            var response = await _client.GetAsync("Test/HtmlRendererResult", TestContext.Current.CancellationToken);
             Assert.Equal(HttpStatusCode.PartialContent, response.StatusCode);
-            Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync());
+            Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync(TestContext.Current.CancellationToken));
         }
 
         {
-            var response = await _client.GetAsync("Test/AsyncHtmlRendererResult");
+            var response = await _client.GetAsync("Test/AsyncHtmlRendererResult", TestContext.Current.CancellationToken);
             Assert.Equal(HttpStatusCode.PartialContent, response.StatusCode);
-            Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync());
+            Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync(TestContext.Current.CancellationToken));
         }
     }
 
     [Fact]
     public async Task TestHtmlBuilderRendererResult()
     {
-        var response = await _client.GetAsync("Test/HtmlBuilderRendererResult");
+        var response = await _client.GetAsync("Test/HtmlBuilderRendererResult", TestContext.Current.CancellationToken);
         Assert.Equal(HttpStatusCode.PartialContent, response.StatusCode);
-        Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync());
+        Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync(TestContext.Current.CancellationToken));
     }
 
     [Fact]
     public async Task TestHtmlView()
     {
         {
-            var response = await _client.GetAsync("Test/HtmlView");
-            Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync());
+            var response = await _client.GetAsync("Test/HtmlView", TestContext.Current.CancellationToken);
+            Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync(TestContext.Current.CancellationToken));
         }
 
         {
-            var response = await _client.GetAsync("Test/AsyncHtmlView");
-            Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync());
+            var response = await _client.GetAsync("Test/AsyncHtmlView", TestContext.Current.CancellationToken);
+            Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync(TestContext.Current.CancellationToken));
         }
     }
 
     [Fact]
     public async Task TestHtmlBuilderView()
     {
-        var response = await _client.GetAsync("Test/HtmlBuilderView");
-        Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync());
+        var response = await _client.GetAsync("Test/HtmlBuilderView", TestContext.Current.CancellationToken);
+        Assert.Equal("<p></p>", await response.Content.ReadAsStringAsync(TestContext.Current.CancellationToken));
     }
 }
