@@ -11,5 +11,5 @@ public interface IHtmlBuilderRenderer<in TModel>
     /// </summary>
     /// <param name="model">The model.</param>
     /// <returns>A <see cref="HtmlBuilder"/>.</returns>
-    HtmlBuilder GetHtmlBuilder(TModel model);
+    public HtmlBuilder GetHtmlBuilder(TModel model);
 }

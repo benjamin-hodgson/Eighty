@@ -11,5 +11,5 @@ public interface IHtmlRenderer<in TModel>
     /// </summary>
     /// <param name="model">The model.</param>
     /// <returns>The HTML.</returns>
-    Html Render(TModel model);
+    public Html Render(TModel model);
 }
