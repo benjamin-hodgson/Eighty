@@ -2,7 +2,7 @@
 
     <ItemGroup>
         <PackageVersion Include="BenchmarkDotNet" Version="0.14.0" />
-        <PackageVersion Include="Microsoft.AspNetCore.TestHost" Version="9.0.1" />
+        <PackageVersion Include="Microsoft.AspNetCore.TestHost" Version="9.0.3" />
         <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
         <PackageVersion Include="Microsoft.Testing.Extensions.CodeCoverage" Version="17.14.2" />
         <PackageVersion Include="Microsoft.Testing.Extensions.TrxReport" Version="1.6.2" />
