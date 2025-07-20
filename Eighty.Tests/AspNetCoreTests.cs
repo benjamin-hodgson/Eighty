@@ -29,7 +29,7 @@ public class AspNetCoreTests
         _server = new TestServer(
             new WebHostBuilder()
                 .UseStartup<AspNetCore.TestApp.Startup>()
-                .UseSolutionRelativeContentRoot("Eighty.AspNetCore.TestApp")
+                .UseSolutionRelativeContentRoot("Eighty.AspNetCore.TestApp", "*.slnx")
         );
         _client = _server.CreateClient();
     }

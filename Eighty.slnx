@@ -1,0 +1,9 @@
+<Solution>
+    <Project Path="Eighty.AspNetCore.TestApp/Eighty.AspNetCore.TestApp.csproj" />
+    <Project Path="Eighty.AspNetCore/Eighty.AspNetCore.csproj" />
+    <Project Path="Eighty.Bench/Eighty.Bench.csproj" />
+    <Project Path="Eighty.CodeGen/Eighty.CodeGen.csproj" />
+    <Project Path="Eighty.Docs/Eighty.Docs.proj" Type="C#" />
+    <Project Path="Eighty.Tests/Eighty.Tests.csproj" />
+    <Project Path="Eighty/Eighty.csproj" />
+</Solution>
