@@ -10,6 +10,7 @@ using Eighty.Twenty;
 
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
+using Microsoft.Extensions.Hosting;
 
 using Xunit;
 
@@ -26,11 +27,17 @@ public class AspNetCoreTests
 
     public AspNetCoreTests()
     {
-        _server = new TestServer(
-            new WebHostBuilder()
-                .UseStartup<AspNetCore.TestApp.Startup>()
-                .UseSolutionRelativeContentRoot("Eighty.AspNetCore.TestApp", "*.slnx")
-        );
+        var host = Host.CreateDefaultBuilder()
+            .ConfigureWebHost(webHostBuilder =>
+            {
+                webHostBuilder
+                    .UseTestServer()
+                    .UseStartup<AspNetCore.TestApp.Startup>()
+                    .UseSolutionRelativeContentRoot("Eighty.AspNetCore.TestApp", "*.slnx");
+            })
+            .Build();
+        host.Start();
+        _server = host.GetTestServer();
         _client = _server.CreateClient();
     }
 

@@ -8,6 +8,7 @@ using BenchmarkDotNet.Attributes;
 
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
+using Microsoft.Extensions.Hosting;
 
 namespace Eighty.Bench;
 
@@ -18,11 +19,21 @@ public class WebAppBench : IDisposable
     private HttpClient? _client;
 
     [GlobalSetup]
-    public void Setup()
+    public async Task Setup()
     {
         var path = ThisFilePath();
         var contentRoot = Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(path))!, "Eighty.AspNetCore.TestApp");
-        _server = new TestServer(new WebHostBuilder().UseStartup<AspNetCore.TestApp.Startup>().UseContentRoot(contentRoot));
+        var host = Host.CreateDefaultBuilder()
+            .ConfigureWebHost(webHostBuilder =>
+            {
+                webHostBuilder
+                    .UseTestServer()
+                    .UseStartup<AspNetCore.TestApp.Startup>()
+                    .UseContentRoot(contentRoot);
+            })
+            .Build();
+        host.Start();
+        _server = host.GetTestServer();
         _client = _server.CreateClient();
     }
 
